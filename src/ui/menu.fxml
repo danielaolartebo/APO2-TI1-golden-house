@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="375.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="409.0" fitWidth="449.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pictures/Saved%20Pictures/Screenshots/2021-03-09%20(4).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Client session">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Create order" />
+                  <MenuItem mnemonicParsing="false" text="Export order report" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Employee session">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Account">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Create " />
+                              <MenuItem mnemonicParsing="false" text="Update " />
+                              <MenuItem mnemonicParsing="false" text="Delete " />
+                              <MenuItem mnemonicParsing="false" text="Disable " />
+                           </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+              <MenuItem mnemonicParsing="false" text="Ingredient">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Create  " />
+                            <MenuItem mnemonicParsing="false" text="Update " />
+                              <MenuItem mnemonicParsing="false" text="Delete " />
+                              <MenuItem mnemonicParsing="false" text="Disable " />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Product ">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Create " />
+                            <MenuItem mnemonicParsing="false" text="Update " />
+                              <MenuItem mnemonicParsing="false" text="Delete " />
+                              <MenuItem mnemonicParsing="false" text="Disable " />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Type of product">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Create " />
+                              <MenuItem mnemonicParsing="false" text="Update " />
+                              <MenuItem mnemonicParsing="false" text="Delete " />
+                              <MenuItem mnemonicParsing="false" text="Disable " />
+                           </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Restaurant list session">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Client's list" />
+                  <MenuItem mnemonicParsing="false" text="Order's list" />
+                  <MenuItem mnemonicParsing="false" text="Product's list">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Export product report" />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Employee's list">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Export employee report" />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Import ">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Client data" />
+                            <MenuItem mnemonicParsing="false" text="Product data" />
+                              <MenuItem mnemonicParsing="false" text="Order data" />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
