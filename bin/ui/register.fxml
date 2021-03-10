@@ -56,6 +56,11 @@
             <TextField fx:id="txtId" layoutX="234.0" layoutY="277.0" prefHeight="25.0" prefWidth="229.0" />
             <Button layoutX="234.0" layoutY="321.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="127.0" text="CREATE ACCOUNT" />
             <Button layoutX="364.0" layoutY="321.0" mnemonicParsing="false" onAction="#optGoBack" prefHeight="39.0" prefWidth="99.0" text="GO BACK" />
+            <Button layoutX="7.0" layoutY="360.0" mnemonicParsing="false" onAction="#sub2GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </center>

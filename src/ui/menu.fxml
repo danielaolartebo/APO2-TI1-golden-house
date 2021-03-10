@@ -25,9 +25,8 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Client session">
+          <Menu mnemonicParsing="false" text="Customer session">
             <items>
-              <MenuItem mnemonicParsing="false" text="Create order" />
                   <MenuItem mnemonicParsing="false" text="Export order report" />
             </items>
           </Menu>
@@ -41,6 +40,7 @@
                               <MenuItem mnemonicParsing="false" text="Update " />
                               <MenuItem mnemonicParsing="false" text="Delete " />
                               <MenuItem mnemonicParsing="false" text="Disable " />
+                              <MenuItem mnemonicParsing="false" onAction="#subSignIn" text="Sign in/Sign up" />
                            </items>
                         </MenuButton>
                      </graphic>
