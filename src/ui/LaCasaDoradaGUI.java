@@ -46,10 +46,10 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void optContinue(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
     	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
+    	Parent signInPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(signInPane);
     }
     
     @FXML
@@ -75,10 +75,7 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void subSignIn(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent signInPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(signInPane);
+    	
     }
     
     /*

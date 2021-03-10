@@ -1,11 +1,6 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public abstract class RestaurantMembers {
-	private List<ClientAccount> clients;
-	private List<EmployeeAccount> employees;
+public class RestaurantMembers {
 	
 	private String firstName;
 	private String lastName;
@@ -15,17 +10,7 @@ public abstract class RestaurantMembers {
 		this.firstName=firstName;
 		this.lastName = lastName;
 		this.id = id; //OPTIONAL
-		
-		clients = new ArrayList<>();
-		employees = new ArrayList<>();
-	}
-	
-	public void addClient(String firstName, String lastName, String id, String address, int phoneNumber, String observations) {
-		clients.add(new ClientAccount(firstName, lastName, id, address, phoneNumber, observations));
-	}
-	
-	public void addEmployee(String userName, String password, String firstName, String lastName, String id) {
-		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
+
 	}
 	
 	public String getFirstName() {
@@ -50,25 +35,6 @@ public abstract class RestaurantMembers {
 	
 	public void setId(String id) {
 		this.id=id;
-	}
-	
-	public List<ClientAccount> getClients(){
-		return clients; 
-	}
-	
-	public List<EmployeeAccount> getEmployees(){
-		return employees; 
-	}
-
-	public boolean validateEmployee(String userName, String password) {
-		boolean validate=false;
-		for(int i=0; i<employees.size() && !validate;i++) {
-			EmployeeAccount employee = employees.get(i);
-			if(employee.getUserName().equals(userName) && employee.getPassword().equals(password)) {
-				validate=true;
-			}
-		}
-		return validate;
 	}
 
 }

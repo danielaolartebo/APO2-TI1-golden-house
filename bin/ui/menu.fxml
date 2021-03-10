@@ -32,15 +32,15 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Employee session">
             <items>
+                  <MenuItem mnemonicParsing="false" text="Create order" />
                   <MenuItem mnemonicParsing="false" text="Account">
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Create " />
+                              <MenuItem mnemonicParsing="false" onAction="#subSignIn" text="Sign out" />
                               <MenuItem mnemonicParsing="false" text="Update " />
                               <MenuItem mnemonicParsing="false" text="Delete " />
                               <MenuItem mnemonicParsing="false" text="Disable " />
-                              <MenuItem mnemonicParsing="false" onAction="#subSignIn" text="Sign in/Sign up" />
                            </items>
                         </MenuButton>
                      </graphic>
