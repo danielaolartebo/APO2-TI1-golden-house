@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="409.0" fitWidth="449.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/Saved%20Pictures/Screenshots/2021-03-09%20(4).png" />
+                  <Image url="@2021-03-09%20(4).png" />
                </image>
             </ImageView>
          </children>
@@ -32,7 +32,16 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Employee session">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Create order" />
+                  <MenuItem mnemonicParsing="false" text="Order">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Create" />
+                            <MenuItem mnemonicParsing="false" text="Update Status" />
+                          </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
                   <MenuItem mnemonicParsing="false" text="Account">
                      <graphic>
                         <MenuButton mnemonicParsing="false">

@@ -8,7 +8,7 @@ public class LaCasaDorada {
 	private List<EmployeeAccount> employees;
 	private List<RestaurantProduct> products;
 	private List<RestaurantIngredient> ingredients;
-	private List<RestaurantIngredient> types;
+	private List<TypeOfProduct> types;
 	
 	public LaCasaDorada() {
 		
@@ -35,8 +35,8 @@ public class LaCasaDorada {
 		ingredients.add(new RestaurantIngredient (ingredientName));
 	}
 	
-	public void addTypeOfProduct(String ingredientName) {
-		ingredients.add(new RestaurantIngredient (ingredientName));
+	public void addTypeOfProduct(String typeName) {
+		types.add(new TypeOfProduct(typeName));
 	}
 	
 	public List<ClientAccount> getClients(){

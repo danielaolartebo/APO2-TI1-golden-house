@@ -10,6 +10,10 @@ import javafx.event.ActionEvent;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import model.ClientAccount;
 import model.LaCasaDorada;
 
 public class LaCasaDoradaGUI {
@@ -34,7 +38,67 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TextField txtPassword;
+    
+    
+    @FXML
+    private TextField txtIDCE;
 
+    @FXML
+    private TextField txtUsernameCE;
+
+    @FXML
+    private PasswordField txtPasswordCE;
+    
+    
+    //Clients list screen
+    @FXML
+    private TableView<ClientAccount> clients;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcNameClient;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcLastnameClient;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcIDClient;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcPhone;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcAdress;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcObservationClient;
+    
+    //End 
+    
+    //Order list screen
+    
+    @FXML
+    private TableView<?> orders;
+
+    @FXML
+    private TableColumn<?, ?> tcCode;
+
+    @FXML
+    private TableColumn<?, ?> tcClientOrder;
+
+    @FXML
+    private TableColumn<?, ?> tcEmployeeOrder;
+
+    @FXML
+    private TableColumn<?, ?> tcTimeOrder;
+
+    @FXML
+    private TableColumn<?, ?> tcOrderStatus;
+
+    @FXML
+    private TableColumn<?, ?> tcObservationOrder;
+    
+    //End
+    
 	
     public LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
@@ -102,6 +166,10 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(signInPane);
     }
     
+    @FXML
+    void optCreateAccount(ActionEvent event) {
+
+    }
     
     /*
      **************************************** SCREEN SIGN IN (sign-in.fxml) *******************************************************
@@ -126,6 +194,24 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    /*
+     **************************************** SCREEN CLIENT LIST (client-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    void goBackFromList(ActionEvent event) {
+
+    }
+    
+    /*
+     **************************************** SCREEN ORDER LIST (order-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    void goBackFromOrderList(ActionEvent event) {
+
     }
 
 }
