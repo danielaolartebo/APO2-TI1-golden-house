@@ -8,7 +8,11 @@ public class LaCasaDorada {
 	private List<EmployeeAccount> employees;
 	private List<RestaurantProduct> products;
 	private List<RestaurantIngredient> ingredients;
+<<<<<<< HEAD
 	private List<RestaurantTypeOfProduct> types;
+=======
+	private List<TypeOfProduct> types;
+>>>>>>> 027677bf722bfc52757371441915772842a95f14
 	
 	public LaCasaDorada() {
 		
@@ -35,8 +39,13 @@ public class LaCasaDorada {
 		ingredients.add(new RestaurantIngredient (ingredientName));
 	}
 	
+<<<<<<< HEAD
 	public void addTypeOfProduct(String productName) {
 		types.add(new RestaurantTypeOfProduct (productName));
+=======
+	public void addTypeOfProduct(String typeName) {
+		types.add(new TypeOfProduct(typeName));
+>>>>>>> 027677bf722bfc52757371441915772842a95f14
 	}
 	
 	public List<ClientAccount> getClients(){

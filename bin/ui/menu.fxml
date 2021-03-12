@@ -31,8 +31,13 @@
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                           <items>
+<<<<<<< HEAD
                             <MenuItem mnemonicParsing="false" onAction="#menuCreateOrder" text="Create" />
                             <MenuItem mnemonicParsing="false" onAction="#menuUpdateStatus" text="Update Status" />
+=======
+                            <MenuItem mnemonicParsing="false" text="Create" />
+                            <MenuItem mnemonicParsing="false" text="Update Status" />
+>>>>>>> 027677bf722bfc52757371441915772842a95f14
                           </items>
                         </MenuButton>
                      </graphic>
