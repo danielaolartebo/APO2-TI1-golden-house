@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane fx:id="customerListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="employeeListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -20,21 +19,19 @@
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="223.0" layoutY="16.0" text="Customer's list" textFill="WHITE">
+            <Label layoutX="223.0" layoutY="16.0" prefHeight="45.0" prefWidth="245.0" text="Employee's list" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
             <TableView layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
-              <columns>
-                <TableColumn fx:id="tcFirstNameCustomer" prefWidth="104.0" text="First name" />
-                <TableColumn fx:id="tcLastNameCustomer" prefWidth="93.0" text="Last name" />
-                  <TableColumn fx:id="tcIdCustomer" prefWidth="70.0" text="ID" />
-                  <TableColumn fx:id="tcAddressCustomer" prefWidth="232.0" text="Address" />
-                  <TableColumn fx:id="tcPhoneNumberCustomer" prefWidth="156.0" text="Phone number" />
-              </columns>
+               <columns>
+                  <TableColumn fx:id="tcFirstNameEmployee" prefWidth="243.0" text="First name" />
+                  <TableColumn fx:id="txLastNameEmployee" prefWidth="200.0" text="Last name" />
+                  <TableColumn fx:id="tcIdEmployee" prefWidth="212.0" text="ID" />
+               </columns>
             </TableView>
-            <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub3GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="59.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

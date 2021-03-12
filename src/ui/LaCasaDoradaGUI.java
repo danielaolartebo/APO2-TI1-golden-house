@@ -18,6 +18,18 @@ import model.LaCasaDorada;
 
 public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
+    
+	@FXML
+	private BorderPane employeeListPane;
+
+	@FXML
+    private BorderPane productListPane;
+
+	@FXML
+	private BorderPane orderListPane;
+	
+	@FXML
+	private BorderPane customerListPane;
 	
     @FXML
     private BorderPane createAccountPane;
@@ -41,13 +53,9 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TextField txtPassword;
-    
-<<<<<<< HEAD
+
     @FXML
     private BorderPane UpdateOrderStatusPane;
-
-
-=======
     
     @FXML
     private TextField txtIDCE;
@@ -58,59 +66,69 @@ public class LaCasaDoradaGUI {
     @FXML
     private PasswordField txtPasswordCE;
     
-    
-    //Clients list screen
-    @FXML
-    private TableView<ClientAccount> clients;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcNameClient;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcLastnameClient;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcIDClient;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcPhone;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcAdress;
-
-    @FXML
-    private TableColumn<ClientAccount, String> tcObservationClient;
-    
-    //End 
-    
-    //Order list screen
+    // CUSTOMER TABLE VIEW 
     
     @FXML
-    private TableView<?> orders;
+    private TableColumn<?, ?> tcFirstNameCustomer;
 
     @FXML
-    private TableColumn<?, ?> tcCode;
+    private TableColumn<?, ?> tcLastNameCustomer;
 
     @FXML
-    private TableColumn<?, ?> tcClientOrder;
+    private TableColumn<?, ?> tcIdCustomer;
+
+    @FXML
+    private TableColumn<?, ?> tcAddressCustomer;
+
+    @FXML
+    private TableColumn<?, ?> tcPhoneNumberCustomer;
+    
+    // ORDER LIST 
+    
+    @FXML
+    private TableColumn<?, ?> tcNumberOrder;
+
+    @FXML
+    private TableColumn<?, ?> txStatusOrder;
+
+    @FXML
+    private TableColumn<?, ?> tcProductsOrder;
+
+    @FXML
+    private TableColumn<?, ?> tcQuantityOrder;
 
     @FXML
     private TableColumn<?, ?> tcEmployeeOrder;
 
     @FXML
-    private TableColumn<?, ?> tcTimeOrder;
+    private TableColumn<?, ?> tcDateOrder;
 
     @FXML
-    private TableColumn<?, ?> tcOrderStatus;
+    private TableColumn<?, ?> txHourOrder;
 
     @FXML
-    private TableColumn<?, ?> tcObservationOrder;
+    private TableColumn<?, ?> tcObservationsOrder;
     
-    //End
+    // PRODUCT LIST
     
-	
->>>>>>> 027677bf722bfc52757371441915772842a95f14
-    public LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
+    @FXML
+    private TableColumn<?, ?> tcNameList;
+
+    @FXML
+    private TableColumn<?, ?> tcTypeList;
+
+    // EMPLOYEE LIST
+    
+    @FXML
+    private TableColumn<?, ?> tcFirstNameEmployee;
+
+    @FXML
+    private TableColumn<?, ?> txLastNameEmployee;
+
+    @FXML
+    private TableColumn<?, ?> tcIdEmployee;
+    
+    LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
     
@@ -194,23 +212,42 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(signInPane);
     }
     
-<<<<<<< HEAD
-=======
     @FXML
-    void optCreateAccount(ActionEvent event) {
+    public void menuCustomerList(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("customer-list.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent customerListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(customerListPane);
+    }
 
+    @FXML
+    public void menuEmployeeList(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employee-list.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent employeeListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(employeeListPane);
+    }
+
+    @FXML
+    public void menuOrderList(ActionEvent event) throws IOException{
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-list.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent orderListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(orderListPane);
+    }
+
+    @FXML
+    public void menuProductList(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent productListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(productListPane);
     }
     
     /*
      **************************************** SCREEN SIGN IN (sign-in.fxml) *******************************************************
      */
-    
-    @FXML
-    public void optLogIn(ActionEvent event) {
-
-    }
-
->>>>>>> 027677bf722bfc52757371441915772842a95f14
+   
     @FXML
     public void menuUpdateStatus(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-status.fxml"));
@@ -232,19 +269,30 @@ public class LaCasaDoradaGUI {
     }
     
     /*
-<<<<<<< HEAD
      *********************************** SCREEN UPDATE ORDER STATUS (order-status.fxml) ************************************************
      */
     
     @FXML
-    public void optUpdateStatus(ActionEvent event) {
-=======
-     **************************************** SCREEN CLIENT LIST (client-list.fxml) *******************************************************
-     */
+    public void sub7GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
     
     @FXML
-    void goBackFromList(ActionEvent event) {
-
+    public void optUpdateStatus(ActionEvent event) {
+    
+    }
+    /*
+     **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
+     */
+    @FXML
+    public void sub3GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
     }
     
     /*
@@ -252,11 +300,36 @@ public class LaCasaDoradaGUI {
      */
     
     @FXML
-    void goBackFromOrderList(ActionEvent event) {
-
+    public void sub4GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
     }
->>>>>>> 027677bf722bfc52757371441915772842a95f14
-
+    
+    /*
+     **************************************** SCREEN PRODUCT LIST (product-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    public void sub5GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
     }
+    
+    /*
+     **************************************** SCREEN EMPLOYEE LIST (employee-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    public void sub6GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+
    
 }

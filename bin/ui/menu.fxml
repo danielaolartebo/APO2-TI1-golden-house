@@ -31,13 +31,8 @@
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                           <items>
-<<<<<<< HEAD
                             <MenuItem mnemonicParsing="false" onAction="#menuCreateOrder" text="Create" />
                             <MenuItem mnemonicParsing="false" onAction="#menuUpdateStatus" text="Update Status" />
-=======
-                            <MenuItem mnemonicParsing="false" text="Create" />
-                            <MenuItem mnemonicParsing="false" text="Update Status" />
->>>>>>> 027677bf722bfc52757371441915772842a95f14
                           </items>
                         </MenuButton>
                      </graphic>
@@ -94,10 +89,10 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Restaurant session">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Customer's list" />
-                  <MenuItem mnemonicParsing="false" text="Order's list" />
-                  <MenuItem mnemonicParsing="false" text="Product's list" />
-                  <MenuItem mnemonicParsing="false" text="Employee's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuCustomerList" text="Customer's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOrderList" text="Order's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuProductList" text="Product's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuEmployeeList" text="Employee's list" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Import">

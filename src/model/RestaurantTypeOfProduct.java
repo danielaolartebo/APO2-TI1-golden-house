@@ -2,18 +2,18 @@ package model;
 
 public class RestaurantTypeOfProduct {
 	
-	private String productName;
+	private String typeName;
 	
-	public RestaurantTypeOfProduct(String productName) {
-		this.productName = productName;	
+	public RestaurantTypeOfProduct(String typeName) {
+		this.typeName = typeName;	
 	}
 
-	public String getIngredientName() {
-		return productName;
+	public String getTypeOfProduct() {
+		return typeName;
 	}
 	
-	public void setProductName(String productName) {
-		this.productName=productName;
+	public void setTypeOfProduct(String typeName) {
+		this.typeName=typeName;
 	}
 
 }

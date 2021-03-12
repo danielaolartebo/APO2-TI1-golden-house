@@ -51,6 +51,11 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
+            <Button layoutX="14.0" layoutY="374.0" mnemonicParsing="false" onAction="#sub7GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </center>

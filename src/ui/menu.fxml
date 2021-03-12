@@ -89,10 +89,10 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Restaurant session">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Customer's list" />
-                  <MenuItem mnemonicParsing="false" text="Order's list" />
-                  <MenuItem mnemonicParsing="false" text="Product's list" />
-                  <MenuItem mnemonicParsing="false" text="Employee's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuCustomerList" text="Customer's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOrderList" text="Order's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuProductList" text="Product's list" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuEmployeeList" text="Employee's list" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Import">
