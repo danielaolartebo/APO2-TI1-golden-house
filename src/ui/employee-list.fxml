@@ -31,7 +31,7 @@
                   <TableColumn fx:id="tcIdEmployee" prefWidth="212.0" text="ID" />
                </columns>
             </TableView>
-            <Button layoutX="59.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

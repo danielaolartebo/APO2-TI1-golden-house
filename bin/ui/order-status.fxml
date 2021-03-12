@@ -46,7 +46,7 @@
                </font>
             </Label>
             <TextField layoutX="271.0" layoutY="246.0" prefHeight="25.0" prefWidth="229.0" />
-            <Button layoutX="249.0" layoutY="321.0" mnemonicParsing="false" onAction="#optUpdateStatus" prefHeight="39.0" prefWidth="150.0" text="Update">
+            <Button layoutX="249.0" layoutY="321.0" mnemonicParsing="false" onAction="#optUpdateStatus" prefHeight="39.0" prefWidth="150.0" text="UPDATE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
