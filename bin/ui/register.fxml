@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="415.0" fitWidth="600.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/Saved%20Pictures/Screenshots/2021-03-09%20(13).png" />
+                  <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
             <Label layoutX="98.0" layoutY="28.0" text="Create employee account " textFill="WHITE">
@@ -39,9 +39,9 @@
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUsername" layoutX="234.0" layoutY="117.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtPassword" layoutX="234.0" layoutY="156.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtFirstName" layoutX="234.0" layoutY="198.0" prefHeight="25.0" prefWidth="229.0" />
+            <TextField fx:id="txtId" layoutX="234.0" layoutY="117.0" prefHeight="25.0" prefWidth="229.0" />
+            <TextField fx:id="txtUsername" layoutX="234.0" layoutY="156.0" prefHeight="25.0" prefWidth="229.0" />
+            <TextField fx:id="txtPassword" layoutX="234.0" layoutY="198.0" prefHeight="25.0" prefWidth="229.0" />
             <Button layoutX="267.0" layoutY="293.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="127.0" text="CREATE ACCOUNT" />
             <Button layoutX="7.0" layoutY="360.0" mnemonicParsing="false" onAction="#sub2GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>

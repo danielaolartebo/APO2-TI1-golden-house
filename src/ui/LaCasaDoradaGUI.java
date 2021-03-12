@@ -30,12 +30,18 @@ public class LaCasaDoradaGUI {
     private BorderPane signInPane;
 
     @FXML
+    private TextField txtId;
+
+    @FXML
     private TextField txtUsername;
 
     @FXML
     private TextField txtPassword;
+    
+    @FXML
+    private BorderPane UpdateOrderStatusPane;
 
-	
+
     public LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
@@ -60,13 +66,52 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("Daniela Olarte and Danilo Erazo \nAlgorithms II");
 	    alert.showAndWait();
     }
-    
     /*
-     ***************************************** SECOND SCREEN (menu.fxml) ************************************************************
+     **************************************** SECOND SCREEN SIGN IN (sign-in.fxml) *******************************************************
      */
     
     @FXML
-    public void subCreateOrder(ActionEvent event) throws IOException {
+    public void optLogIn(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+
+    @FXML
+    public void optSignUp(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("register.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent createAccountPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(createAccountPane);
+    }
+   
+    /*
+     ********************************** THIRD SCREEN CREATE EMPLOYEE ACCOUNT (register.fxml) ********************************************
+     */
+    
+    @FXML
+    public void sub2GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent signInPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(signInPane);
+    }
+    
+    @FXML
+    public void optCreateAccount(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    /*
+     *****************************************FOURTH SCREEN MENU (menu.fxml) ************************************************************
+     */
+    
+    @FXML
+    public void menuCreateOrder(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create-order.fxml"));
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
@@ -74,8 +119,19 @@ public class LaCasaDoradaGUI {
     }
     
     @FXML
-    public void subSignIn(ActionEvent event) throws IOException {
-    	
+    public void menuSingOut(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent signInPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(signInPane);
+    }
+    
+    @FXML
+    public void menuUpdateStatus(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-status.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent UpdateOrderStatusPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(UpdateOrderStatusPane);
     }
     
     /*
@@ -91,41 +147,12 @@ public class LaCasaDoradaGUI {
     }
     
     /*
-     ********************************** SCREEN CREATE EMPLOYEE ACCOUNT (register.fxml) ********************************************
+     *********************************** SCREEN UPDATE ORDER STATUS (order-status.fxml) ************************************************
      */
     
     @FXML
-    public void sub2GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent signInPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(signInPane);
-    }
-    
-    
-    /*
-     **************************************** SCREEN SIGN IN (sign-in.fxml) *******************************************************
-     */
-    
-    @FXML
-    public void optLogIn(ActionEvent event) {
+    public void optUpdateStatus(ActionEvent event) {
 
     }
-
-    @FXML
-    public void optSignUp(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("register.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent createAccountPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(createAccountPane);
-    }
-    
-    @FXML
-    public void sub1GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-
+   
 }

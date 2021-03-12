@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <Pane prefHeight="375.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+      <Pane prefHeight="449.0" prefWidth="359.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="409.0" fitWidth="449.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="435.0" fitWidth="393.0" layoutX="-4.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(4).png" />
                </image>
@@ -23,21 +23,16 @@
       </Pane>
    </center>
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar prefHeight="30.0" prefWidth="461.0" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Customer session">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Export order report" />
-            </items>
-          </Menu>
           <Menu mnemonicParsing="false" text="Employee session">
             <items>
                   <MenuItem mnemonicParsing="false" text="Order">
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Create" />
-                            <MenuItem mnemonicParsing="false" text="Update Status" />
+                            <MenuItem mnemonicParsing="false" onAction="#menuCreateOrder" text="Create" />
+                            <MenuItem mnemonicParsing="false" onAction="#menuUpdateStatus" text="Update Status" />
                           </items>
                         </MenuButton>
                      </graphic>
@@ -46,7 +41,7 @@
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                            <items>
-                              <MenuItem mnemonicParsing="false" onAction="#subSignIn" text="Sign out" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuSingOut" text="Sign out" />
                               <MenuItem mnemonicParsing="false" text="Update " />
                               <MenuItem mnemonicParsing="false" text="Delete " />
                               <MenuItem mnemonicParsing="false" text="Disable " />
@@ -92,39 +87,26 @@
                   </MenuItem>
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Restaurant list session">
+            <Menu mnemonicParsing="false" text="Restaurant session">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Client's list" />
+                  <MenuItem mnemonicParsing="false" text="Customer's list" />
                   <MenuItem mnemonicParsing="false" text="Order's list" />
-                  <MenuItem mnemonicParsing="false" text="Product's list">
-                     <graphic>
-                        <MenuButton mnemonicParsing="false">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Export product report" />
-                          </items>
-                        </MenuButton>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Employee's list">
-                     <graphic>
-                        <MenuButton mnemonicParsing="false">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Export employee report" />
-                          </items>
-                        </MenuButton>
-                     </graphic>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Import ">
-                     <graphic>
-                        <MenuButton mnemonicParsing="false">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Client data" />
-                            <MenuItem mnemonicParsing="false" text="Product data" />
-                              <MenuItem mnemonicParsing="false" text="Order data" />
-                          </items>
-                        </MenuButton>
-                     </graphic>
-                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Product's list" />
+                  <MenuItem mnemonicParsing="false" text="Employee's list" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Import">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Customer data" />
+                  <MenuItem mnemonicParsing="false" text="Order data" />
+                  <MenuItem mnemonicParsing="false" text="Product data" />
+                  <MenuItem mnemonicParsing="false" text="Employee data" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Export">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Employee report" />
+                  <MenuItem mnemonicParsing="false" text="Product report" />
                </items>
             </Menu>
         </menus>

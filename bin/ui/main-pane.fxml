@@ -18,7 +18,7 @@
          <children>
             <ImageView blendMode="ADD" fitHeight="391.0" fitWidth="294.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/Saved%20Pictures/Screenshots/2021-03-09%20(10).png" />
+                  <Image url="@2021-03-09%20(10).png" />
                </image>
                <cursor>
                   <Cursor fx:constant="MOVE" />
