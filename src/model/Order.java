@@ -11,12 +11,12 @@ public class Order {
 	private String observations;
 	private Status orderStatus;
 	
-	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String obsrv, Status order) {
+	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
 		this.setClient(client);
 		this.setEmployee(employee);
 		this.setCode(code);
 		this.setTime(time);
-		setObservations(obsrv);
+		setObservations(observations);
 		setOrderStatus(order);
 	}
 

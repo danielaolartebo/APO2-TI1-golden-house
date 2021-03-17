@@ -1,5 +1,6 @@
 package ui;
 
+import java.awt.MenuItem;
 import java.io.IOException;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXML;
@@ -9,13 +10,43 @@ import javafx.event.ActionEvent;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TableColumn;
 import model.LaCasaDorada;
 
 public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
 	
+	@FXML
+	private ChoiceBox<String> productTypes;
+
+	@FXML
+	private ChoiceBox<String> productIngredients;
+    
+	@FXML
+	private TextField productName;
+
+	@FXML
+	private TextField productPersonalPrice;
+
+	@FXML
+	private TextField productSharePrice;
+
+	@FXML
+	private SplitMenuButton productType;
+	
+	@FXML
+	private RadioButton optIngredient;
+
+	@FXML
+	private RadioButton optTypeOfProduct;
+	
+    @FXML
+    private TextField createIngredientName;
+
 	@FXML
     private BorderPane createCustomerPane;
 	
@@ -552,6 +583,23 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(menuPane);
     }
     
+    @FXML
+    public void optCreateIngredientTypeOfProduct(ActionEvent event) throws IOException{
+    	String name = createIngredientName.getText();
+    	System.out.println(name);
+    	
+    	String option = "";
+    	if(optIngredient.isSelected()){
+    		option = "Ingredient";
+    		laCasaDorada.addIngredient(name);
+    		
+    	}else if(optTypeOfProduct.isSelected()) {
+    		option = "Type of product";
+    		laCasaDorada.addTypeOfProduct(name);
+    	}
+    	System.out.println(option);
+    }
+    
     /*
      **************** SCREEN CREATE PRODUCT (create-product.fxml) *************************************************************************
      */
@@ -561,6 +609,40 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    @FXML
+    public void productCreateProduct(ActionEvent event) throws IOException{
+    	String name = productName.getText();
+    	System.out.println(name);
+    	
+    	productTypes.getItems().add("Main dish");
+    	productTypes.getItems().add("Additions");
+    	productTypes.getItems().add("drink");
+    	String dish = "";
+    	if(productTypes != null) {
+    		dish = productTypes.getValue().toString();
+    	}
+    	
+    	System.out.println(dish);
+    	
+    	int personalPrice = Integer.parseInt(productPersonalPrice.getText());
+    	System.out.println(personalPrice);
+    	
+    	int sharePrice = Integer.parseInt(productSharePrice.getText());
+    	System.out.println(sharePrice);
+    	
+    	int sizePrice[][] = new int [personalPrice][sharePrice];
+    	
+    	 // productIngredients.get
+    	String ingredients = "";
+    	if(productTypes != null) {
+    		ingredients = productIngredients.getValue().toString();
+    	}
+    	System.out.println(ingredients);
+    	
+    	laCasaDorada.addProduct(name, sizePrice);
+    	
     }
     
     /*
@@ -681,6 +763,41 @@ public class LaCasaDoradaGUI {
     /*
      ************************************************* ALERTS *************************************************************************
      */
+    @FXML
+    private void productCreatedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Product created");
+	    alert.setHeaderText("");
+	    alert.setContentText("Product has been created successfully");
+	    alert.showAndWait();
+    }
+    
+    @FXML
+    private void ingredientCreatedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Ingredient created");
+	    alert.setHeaderText("");
+	    alert.setContentText("Ingredient has been created successfully");
+	    alert.showAndWait();
+    }
+    
+    @FXML
+    private void typeOfProductCreatedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Type of product created");
+	    alert.setHeaderText("");
+	    alert.setContentText("Type of product has been created successfully");
+	    alert.showAndWait();
+    }
+    
+    @FXML
+    private void customerCreatedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Customer created");
+	    alert.setHeaderText("");
+	    alert.setContentText("Customer has been created successfully");
+	    alert.showAndWait();
+    }
     
     @FXML
     private void accountCreatedAlert() {

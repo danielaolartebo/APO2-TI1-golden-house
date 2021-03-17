@@ -1,14 +1,16 @@
 package model;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LaCasaDorada {
-	private List<ClientAccount> clients;
-	private List<EmployeeAccount> employees;
-	private List<RestaurantProduct> products;
-	private List<RestaurantIngredient> ingredients;
-	private List<RestaurantTypeOfProduct> types;
+	public List<ClientAccount> clients;
+	public List<EmployeeAccount> employees;
+	public List<RestaurantProduct> products;
+	public List<RestaurantIngredient> ingredients;
+	public List<RestaurantTypeOfProduct> types;
+	public List<Order> orders;
 
 	
 	public LaCasaDorada() {
@@ -18,6 +20,7 @@ public class LaCasaDorada {
 		products = new ArrayList<>();
 		ingredients = new ArrayList<>();
 		types = new ArrayList<>();
+		orders = new ArrayList<>();
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, int phoneNumber, String observations) {
@@ -28,8 +31,8 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String productName) {
-		products.add(new RestaurantProduct(productName));
+	public void addProduct(String productName, int[][] sizePrice) {
+		products.add(new RestaurantProduct(productName, sizePrice));
 	}
 	
 	public void addIngredient(String ingredientName) {
@@ -39,6 +42,10 @@ public class LaCasaDorada {
 	public void addTypeOfProduct(String typeName) {
 		types.add(new RestaurantTypeOfProduct(typeName));
 
+	}
+	
+	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
+		orders.add(new Order(client, employee, code, time, observations, order));
 	}
 	
 	public List<ClientAccount> getClients(){
