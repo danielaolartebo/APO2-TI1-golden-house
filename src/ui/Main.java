@@ -1,6 +1,6 @@
 package ui;
-import java.io.IOException;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -32,6 +32,7 @@ public class Main extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("La Casa Dorada");
 		primaryStage.show();
+       
 	}
 	
 }

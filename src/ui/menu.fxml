@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-
 <BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="449.0" prefWidth="359.0" BorderPane.alignment="CENTER">
@@ -43,8 +42,8 @@
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#menuSingOut" text="Sign out" />
                               <MenuItem mnemonicParsing="false" onAction="#menuUpdateEmployeeAccount" text="Update " />
-                              <MenuItem mnemonicParsing="false" text="Delete " />
-                              <MenuItem mnemonicParsing="false" onAction="#menu" text="Disable " />
+                              <MenuItem mnemonicParsing="false" onAction="#menuDeleteAccount" text="Delete " />
+                              <MenuItem mnemonicParsing="false" onAction="#menuDisableAccount" text="Disable " />
                            </items>
                         </MenuButton>
                      </graphic>
@@ -81,6 +80,15 @@
                               <MenuItem mnemonicParsing="false" onAction="#menuUpdateTypeOfProduct" text="Update " />
                               <MenuItem mnemonicParsing="false" onAction="#menuDeleteTypeOfProduct" text="Delete " />
                               <MenuItem mnemonicParsing="false" onAction="#menuDisableTypeOfProduct" text="Disable " />
+                           </items>
+                        </MenuButton>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Customer">
+                     <graphic>
+                        <MenuButton mnemonicParsing="false">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#menuCreateCustomer" text="Create" />
                            </items>
                         </MenuButton>
                      </graphic>
