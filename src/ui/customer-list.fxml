@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="customerListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -25,7 +24,7 @@
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <TableView layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbCustomerList" layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
               <columns>
                 <TableColumn fx:id="tcFirstNameCustomer" prefWidth="104.0" text="First name" />
                 <TableColumn fx:id="tcLastNameCustomer" prefWidth="93.0" text="Last name" />

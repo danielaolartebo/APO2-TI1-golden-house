@@ -8,12 +8,16 @@ public class RestaurantTypeOfProduct {
 		this.typeName = typeName;	
 	}
 
-	public String getTypeOfProduct() {
+	public String getTypeOfProductName() {
 		return typeName;
 	}
 	
-	public void setTypeOfProduct(String typeName) {
+	public void setTypeOfProductName(String typeName) {
 		this.typeName=typeName;
+	}
+	
+	public String toString() {
+		return typeName;
 	}
 
 }

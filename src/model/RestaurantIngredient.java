@@ -15,5 +15,9 @@ public class RestaurantIngredient {
 	public void setIngredientName(String ingredientName) {
 		this.ingredientName=ingredientName;
 	}
+	
+	public String toString() {
+		return ingredientName;
+	}
 
 }

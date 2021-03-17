@@ -27,7 +27,7 @@
             <TableView layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
                   <TableColumn fx:id="tcFirstNameEmployee" prefWidth="243.0" text="First name" />
-                  <TableColumn fx:id="txLastNameEmployee" prefWidth="200.0" text="Last name" />
+                  <TableColumn fx:id="tcLastNameEmployee" prefWidth="200.0" text="Last name" />
                   <TableColumn fx:id="tcIdEmployee" prefWidth="212.0" text="ID" />
                </columns>
             </TableView>

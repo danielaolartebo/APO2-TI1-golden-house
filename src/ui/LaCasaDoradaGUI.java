@@ -6,19 +6,43 @@ import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import model.ClientAccount;
+import model.EmployeeAccount;
 import model.LaCasaDorada;
+import model.Order;
+import model.RestaurantProduct;
 
 public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
+	
+
+	@FXML
+	private TextField COcustomerName;
+
+	@FXML
+	private TextField COemployeeName;
+
+	@FXML
+	private TextField COobservations;
+
+	@FXML
+	private ChoiceBox<String> COaddProduct;
+
+	@FXML
+	private ChoiceBox<String> COaddQuantity;
 	
 	@FXML
 	private ChoiceBox<String> productTypes;
@@ -151,64 +175,79 @@ public class LaCasaDoradaGUI {
     // CUSTOMER TABLE VIEW 
     
     @FXML
-    private TableColumn<?, ?> tcFirstNameCustomer;
+    private TableView<ClientAccount> tbCustomerList;
 
     @FXML
-    private TableColumn<?, ?> tcLastNameCustomer;
+    private TableColumn<ClientAccount, String> tcFirstNameCustomer;
 
     @FXML
-    private TableColumn<?, ?> tcIdCustomer;
+    private TableColumn<ClientAccount, String> tcLastNameCustomer;
 
     @FXML
-    private TableColumn<?, ?> tcAddressCustomer;
+    private TableColumn<ClientAccount, String> tcIdCustomer;
 
     @FXML
-    private TableColumn<?, ?> tcPhoneNumberCustomer;
+    private TableColumn<ClientAccount, String> tcAddressCustomer;
+
+    @FXML
+    private TableColumn<ClientAccount, String> tcPhoneNumberCustomer;
     
     // ORDER LIST 
-    
-    @FXML
-    private TableColumn<?, ?> tcNumberOrder;
 
     @FXML
-    private TableColumn<?, ?> txStatusOrder;
+    private TableView<Order> tbOrderList;
 
     @FXML
-    private TableColumn<?, ?> tcProductsOrder;
+    private TableColumn<Order, String> tcNumberOrder;
 
     @FXML
-    private TableColumn<?, ?> tcQuantityOrder;
+    private TableColumn<Order, String> txStatusOrder;
 
     @FXML
-    private TableColumn<?, ?> tcEmployeeOrder;
+    private TableColumn<Order, String> tcProductsOrder;
 
     @FXML
-    private TableColumn<?, ?> tcDateOrder;
+    private TableColumn<Order, String> tcQuantityOrder;
 
     @FXML
-    private TableColumn<?, ?> txHourOrder;
+    private TableColumn<Order, String> tcEmployeeOrder;
 
     @FXML
-    private TableColumn<?, ?> tcObservationsOrder;
+    private TableColumn<Order, String> tcDateOrder;
+
+    @FXML
+    private TableColumn<Order, String> txHourOrder;
+
+    @FXML
+    private TableColumn<Order, String> tcObservationsOrder;
+
     
     // PRODUCT LIST
     
     @FXML
-    private TableColumn<?, ?> tcNameList;
+    private TableView<RestaurantProduct> tbProductList;
 
     @FXML
-    private TableColumn<?, ?> tcTypeList;
+    private TableColumn<RestaurantProduct, String> tcNameList;
+
+    @FXML
+    private TableColumn<RestaurantProduct, String> tcTypeList;
+
 
     // EMPLOYEE LIST
+
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcEmployeeFirstName;
+
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcEmployeeLastName;
+
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcEmployeeId;
     
     @FXML
-    private TableColumn<?, ?> tcFirstNameEmployee;
-
-    @FXML
-    private TableColumn<?, ?> txLastNameEmployee;
-
-    @FXML
-    private TableColumn<?, ?> tcIdEmployee;
+    private TableView<EmployeeAccount> tbEmployeeList;
+    
     
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
@@ -333,6 +372,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent customerListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(customerListPane);
+    	initializeCustomerTableView();
     }
 
     @FXML
@@ -341,6 +381,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent employeeListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(employeeListPane);
+    	initializeEmployeeTableView();
     }
 
     @FXML
@@ -349,6 +390,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent orderListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(orderListPane);
+    	initializeOrderTableView();
     }
 
     @FXML
@@ -357,6 +399,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent productListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(productListPane);
+    	initializeProductTableView();
     }
     
     @FXML
@@ -509,6 +552,17 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(menuPane);
     }
     
+    @FXML
+    public void COoptAddProduct(ActionEvent event) throws IOException{
+
+    }
+    
+    @FXML
+    public void COcreateOrder(ActionEvent event) throws IOException{
+
+    }
+
+    
     /*
      *********************************** SCREEN UPDATE ORDER STATUS (order-status.fxml) ************************************************
      */
@@ -536,6 +590,19 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(menuPane);
     }
     
+    private void initializeCustomerTableView(){
+        ObservableList<ClientAccount> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getClients());
+        tbCustomerList.setItems(observableList);
+        
+        tcFirstNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("firstName"));
+        tcLastNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("lastName"));
+        tcIdCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("id"));
+        tcAddressCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("address"));
+        tcPhoneNumberCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("phoneNumber"));
+    }
+ 
+    
     /*
      **************************************** SCREEN ORDER LIST (order-list.fxml) *******************************************************
      */
@@ -546,6 +613,21 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    private void initializeOrderTableView(){
+        ObservableList<Order> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getOrders());
+        tbOrderList.setItems(observableList);
+        
+        tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderNumber"));
+        txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("status"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("products"));
+        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("quantity"));
+        tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("employee"));
+        tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderDate"));
+        txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderHour"));
+        tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
     }
     
     /*
@@ -560,6 +642,15 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(menuPane);
     }
     
+    private void initializeProductTableView(){
+        ObservableList<RestaurantProduct> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getProducts());
+        tbProductList.setItems(observableList);
+        
+        tcNameList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productName"));
+        tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productType"));
+    }
+    
     /*
      **************************************** SCREEN EMPLOYEE LIST (employee-list.fxml) *******************************************************
      */
@@ -570,6 +661,16 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    private void initializeEmployeeTableView(){
+        ObservableList<EmployeeAccount> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
+        tbEmployeeList.setItems(observableList);
+        
+        tcEmployeeFirstName.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("firstName"));
+        tcEmployeeLastName.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("lastName"));
+        tcEmployeeId.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("id"));
     }
     
     /*
@@ -592,10 +693,13 @@ public class LaCasaDoradaGUI {
     	if(optIngredient.isSelected()){
     		option = "Ingredient";
     		laCasaDorada.addIngredient(name);
+    		ingredientCreatedAlert();
+    		
     		
     	}else if(optTypeOfProduct.isSelected()) {
     		option = "Type of product";
     		laCasaDorada.addTypeOfProduct(name);
+    		typeOfProductCreatedAlert();
     	}
     	System.out.println(option);
     }
@@ -642,6 +746,8 @@ public class LaCasaDoradaGUI {
     	System.out.println(ingredients);
     	
     	laCasaDorada.addProduct(name, sizePrice);
+    	
+    	productCreatedAlert();
     	
     }
     

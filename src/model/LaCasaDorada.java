@@ -41,7 +41,6 @@ public class LaCasaDorada {
 
 	public void addTypeOfProduct(String typeName) {
 		types.add(new RestaurantTypeOfProduct(typeName));
-
 	}
 	
 	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
@@ -54,6 +53,69 @@ public class LaCasaDorada {
 	
 	public List<EmployeeAccount> getEmployees(){
 		return employees; 
+	}
+	
+	public List<Order> getOrders(){
+		return orders; 
+	}
+	
+	public List<RestaurantProduct> getProducts(){
+		return products; 
+	}
+	
+	public boolean validateOrder(String code) {
+		boolean validate=false;
+		for(int i=0; i<orders.size() && !validate;i++) {
+			Order order = orders.get(i);
+			if(order.getCode().equals(order.getCode())) {
+				validate=true;
+			}
+		}
+		return validate;
+	}
+	
+	public boolean validateClient(String id) {
+		boolean validate=false;
+		for(int i=0; i<clients.size() && !validate;i++) {
+			ClientAccount client = clients.get(i);
+			if(client.getFirstName().equals(client.getFirstName()) && client.getLastName().equals(client.getLastName())) {
+				validate=true;
+			}
+		}
+		return validate;
+	}
+	
+	public boolean validateIngredient(String ingredientName) {
+		boolean validate=false;
+		for(int i=0; i<ingredients.size() && !validate;i++) {
+			RestaurantIngredient ingredient = ingredients.get(i);
+			if(ingredient.getIngredientName().equals(ingredientName)) {
+				validate=true;
+			}
+		}
+		return validate;
+	}
+	
+	public boolean validateProduct(String productName) {
+		boolean validate=false;
+		for(int i=0; i<products.size() && !validate;i++) {
+			RestaurantProduct product = products.get(i);
+			if(product.getProductName().equals(productName)) {
+				validate=true;
+			}
+		}
+		return validate;
+	}
+	
+	public boolean validateTypeOfProduct(String typeName) {
+		boolean validate=false;
+		for(int i=0; i<types.size() && !validate;i++) {
+			RestaurantTypeOfProduct type = types.get(i);
+			if(type.getTypeOfProductName().equals(typeName)) {
+				validate=true;
+			}
+		}
+		return validate;
 	}
 
 	public boolean validateEmployee(String userName, String password) {

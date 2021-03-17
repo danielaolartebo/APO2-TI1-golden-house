@@ -24,4 +24,8 @@ public class RestaurantProduct {
 	public void setProductName(int[][] sizePrice) {
 		this.sizePrice=sizePrice;
 	}
+	
+	public String toString() {
+		return productName;
+	}
 }
