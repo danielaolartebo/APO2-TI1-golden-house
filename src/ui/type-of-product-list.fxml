@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="productListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="typeOfProductListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -19,23 +19,22 @@
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="242.0" layoutY="23.0" prefHeight="45.0" prefWidth="228.0" text="Product's list" textFill="WHITE">
+            <Label layoutX="175.0" layoutY="14.0" prefHeight="45.0" prefWidth="349.0" text="Type of product list" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <TableView fx:id="tbProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbTypeOfProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNameList" prefWidth="336.0" text="Name" />
-                  <TableColumn fx:id="tcTypeList" prefWidth="319.0" text="Type" />
+                  <TableColumn fx:id="tcTypeOfProductName" prefWidth="655.0" text="Name" />
                </columns>
             </TableView>
-            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub22GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="507.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
+            <Label layoutX="499.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

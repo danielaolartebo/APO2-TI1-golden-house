@@ -1,8 +1,13 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+
+import javafx.util.Callback;
 
 public class LaCasaDorada {
 	public List<ClientAccount> clients;
@@ -23,7 +28,7 @@ public class LaCasaDorada {
 		orders = new ArrayList<>();
 	}
 	
-	public void addClient(String firstName, String lastName, String id, String address, int phoneNumber, String observations) {
+	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) {
 		clients.add(new ClientAccount(firstName, lastName, id, address, phoneNumber, observations));
 	}
 	
@@ -31,7 +36,7 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String productName, int[][] sizePrice) {
+	public void addProduct(String productName, double[][] sizePrice) {
 		products.add(new RestaurantProduct(productName, sizePrice));
 	}
 	
@@ -61,6 +66,14 @@ public class LaCasaDorada {
 	
 	public List<RestaurantProduct> getProducts(){
 		return products; 
+	}
+	
+	public List<RestaurantIngredient> getIngredients(){
+		return ingredients; 
+	}
+	
+	public List<RestaurantTypeOfProduct> getTypeOfProducts(){
+		return types; 
 	}
 	
 	public boolean validateOrder(String code) {
@@ -127,6 +140,42 @@ public class LaCasaDorada {
 			}
 		}
 		return validate;
+	}
+
+	public void importEmployeeData(String fileName) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		String line = br.readLine();
+		while(line!=null) {
+			String[] parts = line.split(",");
+			addEmployee(parts[0], parts[1], parts[2], parts[3], parts[4]);
+			line = br.readLine();
+		}
+		br.close();
+	}
+
+	public void importCustomerData(String fileName) throws IOException{
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		String line = br.readLine();
+		while(line!=null) {
+			String[] parts = line.split(",");
+			addClient(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5]);
+			line = br.readLine();
+		}
+		br.close();
+		
+	}
+
+	public void importProductData(String fileName) throws IOException{
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		String line = br.readLine();
+		while(line!=null) {
+			String[] parts = line.split(",");
+			// double[][] sizePrice = Double[][].parseDouble(parts[1]);
+			// addProduct(parts[0], sizePrice);
+			line = br.readLine();
+		}
+		br.close();
+		
 	}
 	
 }

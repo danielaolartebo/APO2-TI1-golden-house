@@ -3,10 +3,10 @@ package model;
 public class ClientAccount extends RestaurantMembers{
 	
 		private String address;
-		private int phoneNumber;
+		private String phoneNumber;
 		private String observations;
 		
-		public ClientAccount(String firstName, String lastName, String id, String address, int phoneNumber, String observations) {
+		public ClientAccount(String firstName, String lastName, String id, String address, String phoneNumber, String observations) {
 			super(firstName, lastName, id);
 			this.address = address;
 			this.phoneNumber = phoneNumber;
@@ -21,11 +21,11 @@ public class ClientAccount extends RestaurantMembers{
 			this.address=address;
 		}
 		
-		public int getPhoneNumber() {
+		public String getPhoneNumber() {
 			return phoneNumber;
 		}
 		
-		public void setPhoneNumber(int phoneNumber) {
+		public void setPhoneNumber(String phoneNumber) {
 			this.phoneNumber=phoneNumber;
 		}
 		

@@ -9,11 +9,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="signInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+<BorderPane fx:id="signInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="404.0" fitWidth="600.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="427.0" fitWidth="698.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>

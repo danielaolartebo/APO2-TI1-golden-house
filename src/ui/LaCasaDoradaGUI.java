@@ -1,8 +1,9 @@
 package ui;
 
-import java.awt.MenuItem;
+import java.io.File;
 import java.io.IOException;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.FileChooser;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
@@ -23,12 +24,17 @@ import model.ClientAccount;
 import model.EmployeeAccount;
 import model.LaCasaDorada;
 import model.Order;
+import model.RestaurantIngredient;
 import model.RestaurantProduct;
+import model.RestaurantTypeOfProduct;
 
 public class LaCasaDoradaGUI {
+	
+	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
+	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
+	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
 	private LaCasaDorada laCasaDorada;
 	
-
 	@FXML
 	private TextField COcustomerName;
 
@@ -172,6 +178,9 @@ public class LaCasaDoradaGUI {
     @FXML
     private PasswordField txtPasswordCE;
     
+    @FXML
+    private BorderPane typeOfProductListPane;
+    
     // CUSTOMER TABLE VIEW 
     
     @FXML
@@ -248,10 +257,29 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableView<EmployeeAccount> tbEmployeeList;
     
+    // INGREDIENT LIST 
+    
+    @FXML
+    private BorderPane ingredientListPane;
+
+    @FXML
+    private TableView<RestaurantIngredient> tbIngredientList;
+
+    @FXML
+    private TableColumn<RestaurantIngredient, String> tcIngredientName;
+    
     
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
+    
+    // TYPE OF PRODUCT LIST 
+
+    @FXML
+    private TableView<RestaurantTypeOfProduct> tbTypeOfProductList;
+
+    @FXML
+    private TableColumn<RestaurantTypeOfProduct, String> tcTypeOfProductName;
     
     /*
      * *********************************** FIRST SCREEN (main-pane.fxml) ************************************************************
@@ -262,10 +290,6 @@ public class LaCasaDoradaGUI {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
     	fxmlLoader.setController(this);
     	Parent signInPane = (Parent) fxmlLoader.load();
-    	signInPane.minWidth(600);
-    	signInPane.maxWidth(600);
-    	signInPane.minHeight(371);
-    	signInPane.maxWidth(371);
     	mainPane.getChildren().setAll(signInPane);
     }
     
@@ -292,11 +316,10 @@ public class LaCasaDoradaGUI {
         	fxmlLoader.setController(this);
         	Parent menuPane = fxmlLoader.load();
         	mainPane.getChildren().setAll(menuPane);
-         
+
      	}else if(!laCasaDorada.validateEmployee(userName, password)) {
      		loginErrorAlert();
      	}
-
     }
 
     @FXML
@@ -404,10 +427,10 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void menuUpdateStatus(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-status.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-list.fxml"));
     	fxmlLoader.setController(this);
-    	Parent UpdateOrderStatusPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(UpdateOrderStatusPane);
+    	Parent orderListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(orderListPane);
     }
     
     @FXML
@@ -484,34 +507,38 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void menuUpdateProduct(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("update-product.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
     	fxmlLoader.setController(this);
     	Parent updateProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateProductPane);
+    	initializeProductTableView();
     }
     
     @FXML
     public void menuUpdateTypeOfProduct(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("update-ingredient-typeofproduct.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("type-of-product-list.fxml"));
     	fxmlLoader.setController(this);
     	Parent updateIngredientTypeOfProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateIngredientTypeOfProductPane);
+    	initializeTypeOfProductTableView();
     }
     
     @FXML
     public void menuUpdateIngredient(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("update-ingredient-typeofproduct.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ingredient-list.fxml"));
     	fxmlLoader.setController(this);
-    	Parent updateIngredientTypeOfProductPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(updateIngredientTypeOfProductPane);
+    	Parent ingredientListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(ingredientListPane);
+    	initializeIngredientTableView();
     }
     
     @FXML
     public void menuUpdateEmployeeAccount(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("update-employee-account.fxml"));
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employee-list.fxml"));
     	fxmlLoader.setController(this);
     	Parent updateEmployeeAccountPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateEmployeeAccountPane);
+    	initializeEmployeeTableView();
     }
     
     @FXML
@@ -674,6 +701,46 @@ public class LaCasaDoradaGUI {
     }
     
     /*
+     **************************************** SCREEN INGREDIENT LIST (ingredient-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    public void sub20GoBack(ActionEvent event) throws IOException{
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    private void initializeIngredientTableView(){
+        ObservableList<RestaurantIngredient> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
+        tbIngredientList.setItems(observableList);
+        
+        tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
+    }
+    
+    /*
+     **************************************** SCREEN TYPES OF PRODUCT LIST (type-of-product-list.fxml) *******************************************************
+     */
+    
+    @FXML
+    public void sub22GoBack(ActionEvent event) throws IOException{
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    private void initializeTypeOfProductTableView(){
+        ObservableList<RestaurantTypeOfProduct> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getTypeOfProducts());
+        tbTypeOfProductList.setItems(observableList);
+        
+        tcTypeOfProductName.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductName"));
+    }
+   
+    /*
      **************** SCREEN CREATE INGREDIENT OR TYPE OF PRODUCT (create-ingredient-typeofproduct.fxml) *****************************************
      */
     @FXML
@@ -736,7 +803,7 @@ public class LaCasaDoradaGUI {
     	int sharePrice = Integer.parseInt(productSharePrice.getText());
     	System.out.println(sharePrice);
     	
-    	int sizePrice[][] = new int [personalPrice][sharePrice];
+    	double[][] sizePrice = new double [personalPrice][sharePrice];
     	
     	 // productIngredients.get
     	String ingredients = "";
@@ -776,7 +843,7 @@ public class LaCasaDoradaGUI {
     }
     
     /*
-     **************** SCREEN UPDATE INGREDIENT OR TYPE OF PRODUCT (update-ingredient-typeofproduct.fxml) *****************************************
+     **************** SCREEN UPDATE INGREDIENT (ingredient-list.fxml) *****************************************
      */
     
     @FXML
@@ -788,7 +855,19 @@ public class LaCasaDoradaGUI {
     }
     
     /*
-     **************** SCREEN UPDATE PRODUCT (update-product.fxml) *************************************************************************
+     **************** SCREEN UPDATE TYPE OF PRODUCT (type-of-product-list.fxml) *****************************************
+     */
+    @FXML
+    public void sub21GoBack(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent menuPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    
+    /*
+     **************** SCREEN UPDATE PRODUCT (product-list.fxml) *************************************************************************
      */
     
     @FXML
@@ -800,7 +879,7 @@ public class LaCasaDoradaGUI {
     }
     
     /*
-     **************** SCREEN UPDATE EMPLOYEE ACCOUNT (update-product.fxml) *************************************************************************
+     **************** SCREEN UPDATE EMPLOYEE ACCOUNT (employee-list.fxml) *************************************************************************
      */
     
     @FXML
@@ -865,9 +944,67 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(menuPane);
     }
     
+    /*
+     ***************************************** OPTIONS IMPORT AND EXPORT *************************************************************************
+     */
+    
+    @FXML
+    public void exportEmployeeReport(ActionEvent event) throws IOException{
+
+    }
+
+    @FXML
+    public void exportProductReport(ActionEvent event) throws IOException{
+
+    }
+
+    @FXML
+    public void importCustomerData(ActionEvent event) throws IOException{
+    	FileChooser fileChooser = new FileChooser();
+    	fileChooser.setTitle("Open Resource File");
+    	File f = fileChooser.showOpenDialog(menuPane.getScene().getWindow());
+    	if(f!=null) {
+    		try {
+    			laCasaDorada.importCustomerData(f.getAbsolutePath());
+        		importSuccessAlert();
+    		}catch(IOException e){
+    			importErrorAlert();
+    		}
+    	}  	
+    }
+
+    @FXML
+    public void importEmployeeData(ActionEvent event) {
+    	FileChooser fileChooser = new FileChooser();
+    	fileChooser.setTitle("Open Resource File");
+    	File f = fileChooser.showOpenDialog(menuPane.getScene().getWindow());
+    	if(f!=null) {
+    		try {
+    			laCasaDorada.importEmployeeData(f.getAbsolutePath());
+        		importSuccessAlert();
+    		}catch(IOException e){
+    			importErrorAlert();
+    		}
+    	}  	
+    }
+
+    @FXML
+    public void importProductData(ActionEvent event) throws IOException{
+    	FileChooser fileChooser = new FileChooser();
+    	fileChooser.setTitle("Open Resource File");
+    	File f = fileChooser.showOpenDialog(menuPane.getScene().getWindow());
+    	if(f!=null) {
+    		try {
+    			laCasaDorada.importProductData(f.getAbsolutePath());
+        		importSuccessAlert();
+    		}catch(IOException e){
+    			importErrorAlert();
+    		}
+    	}  	
+    }
 
     /*
-     ************************************************* ALERTS *************************************************************************
+     **************************************************** ALERTS *************************************************************************
      */
     @FXML
     private void productCreatedAlert() {
@@ -929,6 +1066,24 @@ public class LaCasaDoradaGUI {
 	    alert.setTitle("Log in incorrect\"");
 	    alert.setHeaderText("");
 	    alert.setContentText("The username and password given are incorrect");
+	    alert.showAndWait();
+	}
+    
+    @FXML
+    private void importErrorAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Import Employee");
+	    alert.setHeaderText("");
+	    alert.setContentText("Employee data could not be imported");
+	    alert.showAndWait();
+	}
+    
+    @FXML
+    private void importSuccessAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Import Employee");
+	    alert.setHeaderText("");
+	    alert.setContentText("Employee data was imported successfully");
 	    alert.showAndWait();
 	}
 

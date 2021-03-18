@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="404.0" fitWidth="600.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="431.0" fitWidth="704.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>
@@ -40,7 +40,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

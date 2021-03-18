@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="createProductPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="createProductPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Label prefHeight="36.0" prefWidth="197.0" text="Create product" textFill="WHITE" BorderPane.alignment="CENTER">
          <font>
@@ -37,7 +37,7 @@
                         <Image url="@2021-03-09%20(4).png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub9GoBack" text="Go back" />
+                  <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#sub9GoBack" text="Go back" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">

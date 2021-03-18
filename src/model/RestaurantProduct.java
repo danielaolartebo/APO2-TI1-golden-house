@@ -2,9 +2,9 @@ package model;
 
 public class RestaurantProduct {
 	private String productName;
-	private int[][] sizePrice;
+	private double[][] sizePrice;
 	
-	public RestaurantProduct(String productName, int[][] sizePrice) {
+	public RestaurantProduct(String productName, double[][] sizePrice) {
 		this.productName = productName;	
 		this.sizePrice = sizePrice;
 	}
@@ -17,11 +17,11 @@ public class RestaurantProduct {
 		this.productName=productName;
 	}
 	
-	public int[][] getSizePrice() {
+	public double[][] getSizePrice() {
 		return sizePrice;
 	}
 	
-	public void setProductName(int[][] sizePrice) {
+	public void setProductName(double[][] sizePrice) {
 		this.sizePrice=sizePrice;
 	}
 	

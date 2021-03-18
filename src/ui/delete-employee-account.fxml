@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="deleteEmployeeAccountPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="deleteEmployeeAccountPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="468.0" fitWidth="611.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="430.0" fitWidth="677.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="160.0" layoutY="25.0" prefHeight="45.0" prefWidth="328.0" text="Delete employee account" textFill="WHITE">
+            <Label layoutX="161.0" layoutY="58.0" prefHeight="45.0" prefWidth="328.0" text="Delete employee account" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="25.0" />
                </font>
@@ -34,7 +34,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="363.0" mnemonicParsing="false" onAction="#sub16GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="14.0" layoutY="352.0" mnemonicParsing="false" onAction="#sub16GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="createOrderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="614.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="createOrderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="357.0" prefWidth="414.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="400.0" fitWidth="318.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="292.0" fitWidth="293.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(5).png" />
                </image>
@@ -34,7 +34,7 @@
                   <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
                </font>
             </Label>
-            <Button layoutY="342.0" mnemonicParsing="false" onAction="#subGoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#subGoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
