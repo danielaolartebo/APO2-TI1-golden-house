@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -24,6 +25,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import model.ClientAccount;
 import model.EmployeeAccount;
+import model.EmployeeStatus;
 import model.LaCasaDorada;
 import model.Order;
 import model.RestaurantIngredient;
@@ -249,7 +251,7 @@ public class LaCasaDoradaGUI {
 
 
     // EMPLOYEE LIST
-
+ 
     @FXML
     private TableColumn<EmployeeAccount, String> tcEmployeeFirstName;
 
@@ -261,6 +263,9 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private TableView<EmployeeAccount> tbEmployeeList;
+    
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcEmployeeStatus;
     
     // INGREDIENT LIST 
     
@@ -350,18 +355,12 @@ public class LaCasaDoradaGUI {
     @FXML
     public void optCreateAccount(ActionEvent event) throws IOException {
     	String userName=txtUsername.getText();
-    	System.out.println(userName);
-    	
     	String password=txtPassword.getText();
-    	System.out.println(password);
+    	String firstName=txtFirstName.getText(); 
+    	String lastName=txtLastName.getText();    	
+    	String id=txtId.getText();
     	
-    	String firstName=txtFirstName.getText();
-    	System.out.println(password);
-    	
-    	String lastName=txtLastName.getText();
-    	System.out.println(password);
-    	
-    	laCasaDorada.addEmployee(userName, password, firstName, lastName, lastName);
+    	laCasaDorada.addEmployee(userName, password, firstName, lastName, id);
     	
     	if (userName.isEmpty() || password.isEmpty() || firstName.isEmpty() || lastName.isEmpty()) {
         	validationErrorAlert();
@@ -732,6 +731,7 @@ public class LaCasaDoradaGUI {
         tcEmployeeFirstName.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("firstName"));
         tcEmployeeLastName.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("lastName"));
         tcEmployeeId.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("id"));
+        tcEmployeeStatus.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("employeeStatus"));
     }
     
     public void loadEmployeeTable(ActionEvent event) throws IOException {
@@ -751,6 +751,7 @@ public class LaCasaDoradaGUI {
     		this.tcEmployeeFirstName.setText(ea.getFirstName());
     		this.tcEmployeeLastName.setText(ea.getLastName());
     		this.tcEmployeeId.setText(ea.getId());
+
     	}	
     }
     
@@ -765,12 +766,25 @@ public class LaCasaDoradaGUI {
     		this.tbEmployeeList.refresh();
     		employeeWasDeletedAlert();
     	}
-    	
     }
 
     @FXML
     public void employeeDisableOpt(ActionEvent event) {
+    	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
+    	
+    	if(ea == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ea.setEmployeeStatus(EmployeeStatus.INACTIVE);
+    		this.tbEmployeeList.refresh();
+    		employeeWasDisableAlert();
+    	}
+    }
 
+	public void isEditable() {
+    	tcEmployeeFirstName.setEditable(true);
+    	tcEmployeeLastName.setEditable(true);
+    	tcEmployeeId.setEditable(true);
     }
     
     
@@ -1192,7 +1206,7 @@ public class LaCasaDoradaGUI {
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Error");
 	    alert.setHeaderText("");
-	    alert.setContentText("Select an option to delete");
+	    alert.setContentText("Select an option");
 	    alert.showAndWait();
 	}
     
@@ -1202,6 +1216,14 @@ public class LaCasaDoradaGUI {
 	    alert.setTitle("Delete employee");
 	    alert.setHeaderText("");
 	    alert.setContentText("Employee was deleted successfully");
+	    alert.showAndWait();
+	}
+    
+    private void employeeWasDisableAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Disable employee");
+	    alert.setHeaderText("");
+	    alert.setContentText("Employee was disable successfully");
 	    alert.showAndWait();
 	}
    

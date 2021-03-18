@@ -172,20 +172,19 @@ public class LaCasaDorada {
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = br.readLine();
 		while(line!=null) {
-			String[] parts = line.split(",");
-			// double[][] sizePrice = Double[][].parseDouble(parts[1]);
-			// addProduct(parts[0], sizePrice);
-
+		/*	String[] parts = line.split(",");
+			double[][] sizePrice = Double.parseDouble(parts[1]);
+			addProduct(parts[0], sizePrice); */
 			line = br.readLine();
 		}
 		br.close();
 		
-	}
+	} 
 	
 	public void exportEmployeeData(String fileName) throws FileNotFoundException{
         PrintWriter pw = new PrintWriter(fileName);
         for(EmployeeAccount empl : employees){
-          pw.println(empl.getUserName()+SEPARATE+empl.getPassword()+SEPARATE+empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId());
+          pw.println(empl.getUserName()+SEPARATE+empl.getPassword()+SEPARATE+empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
         }
         pw.close();
     }

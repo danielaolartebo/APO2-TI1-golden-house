@@ -24,11 +24,12 @@
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <TableView fx:id="tbEmployeeList" layoutY="61.0" onMouseClicked="#selectEmployee" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbEmployeeList" editable="true" layoutY="61.0" onMouseClicked="#selectEmployee" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcEmployeeFirstName" prefWidth="243.0" text="First name" />
-                  <TableColumn fx:id="tcEmployeeLastName" prefWidth="200.0" text="Last name" />
-                  <TableColumn fx:id="tcEmployeeId" prefWidth="212.0" text="ID" />
+                  <TableColumn fx:id="tcEmployeeFirstName" prefWidth="172.0" text="First name" />
+                  <TableColumn fx:id="tcEmployeeLastName" prefWidth="171.0" text="Last name" />
+                  <TableColumn fx:id="tcEmployeeId" prefWidth="151.0" text="ID" />
+                  <TableColumn fx:id="tcEmployeeStatus" maxWidth="162.0" prefWidth="162.0" text="Status" />
                </columns>
             </TableView>
             <Button layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
