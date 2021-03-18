@@ -24,11 +24,11 @@
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <TableView layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbEmployeeList" layoutY="61.0" onMouseClicked="#selectEmployee" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcFirstNameEmployee" prefWidth="243.0" text="First name" />
-                  <TableColumn fx:id="tcLastNameEmployee" prefWidth="200.0" text="Last name" />
-                  <TableColumn fx:id="tcIdEmployee" prefWidth="212.0" text="ID" />
+                  <TableColumn fx:id="tcEmployeeFirstName" prefWidth="243.0" text="First name" />
+                  <TableColumn fx:id="tcEmployeeLastName" prefWidth="200.0" text="Last name" />
+                  <TableColumn fx:id="tcEmployeeId" prefWidth="212.0" text="ID" />
                </columns>
             </TableView>
             <Button layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
@@ -41,6 +41,16 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
+            <Button layoutX="177.0" layoutY="332.0" mnemonicParsing="false" onAction="#employeeDeleteOpt" prefHeight="28.0" prefWidth="133.0" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="325.0" layoutY="332.0" mnemonicParsing="false" onAction="#employeeDisableOpt" prefHeight="28.0" prefWidth="138.0" text="DISABLE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </center>

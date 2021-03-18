@@ -32,8 +32,8 @@
                   <TableColumn fx:id="tcQuantityOrder" prefWidth="70.0" text="Quantity" />
                   <TableColumn fx:id="tcEmployeeOrder" prefWidth="83.0" text="Employee" />
                   <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="84.0" text="Date" />
-                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="43.0" text="Hour" />
-                  <TableColumn fx:id="tcObservationsOrder" minWidth="0.0" prefWidth="273.0" text="Observations" />
+                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="104.0" text="Hour" />
+                  <TableColumn fx:id="tcObservationsOrder" maxWidth="120.0" minWidth="0.0" prefWidth="212.0" text="Observations" />
                </columns>
             </TableView>
             <Button layoutX="53.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">

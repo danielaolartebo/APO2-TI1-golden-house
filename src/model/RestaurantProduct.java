@@ -1,6 +1,9 @@
 package model;
 
 public class RestaurantProduct {
+	
+	private RestaurantIngredient ingredients;
+	private RestaurantTypeOfProduct products;
 	private String productName;
 	private double[][] sizePrice;
 	

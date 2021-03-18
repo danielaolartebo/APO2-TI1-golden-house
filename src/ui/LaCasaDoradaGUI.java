@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
+import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
@@ -14,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
@@ -200,6 +202,9 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TableColumn<ClientAccount, String> tcPhoneNumberCustomer;
+    
+    @FXML
+    private TableColumn<ClientAccount, String> tcObservationsCustomer;
     
     // ORDER LIST 
 
@@ -403,7 +408,7 @@ public class LaCasaDoradaGUI {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employee-list.fxml"));
     	fxmlLoader.setController(this);
     	Parent employeeListPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(employeeListPane);
+    	mainPane.setCenter(employeeListPane);
     	initializeEmployeeTableView();
     }
 
@@ -431,6 +436,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent orderListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(orderListPane);
+    	initializeOrderTableView();
     }
     
     @FXML
@@ -627,6 +633,16 @@ public class LaCasaDoradaGUI {
         tcIdCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("id"));
         tcAddressCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("address"));
         tcPhoneNumberCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("phoneNumber"));
+        tcObservationsCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("observations"));
+    }
+    
+    public void loadCustomerTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("customer-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent customerListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(customerListPane);
+        initializeCustomerTableView();
     }
  
     
@@ -657,6 +673,15 @@ public class LaCasaDoradaGUI {
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
     }
     
+    public void loadOrderTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent orderListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(orderListPane);
+        initializeOrderTableView();
+    }
+    
     /*
      **************************************** SCREEN PRODUCT LIST (product-list.fxml) *******************************************************
      */
@@ -676,6 +701,15 @@ public class LaCasaDoradaGUI {
         
         tcNameList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productName"));
         tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productType"));
+    }
+    
+    public void loadProductTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent productListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(productListPane);
+        initializeProductTableView();
     }
     
     /*
@@ -700,6 +734,46 @@ public class LaCasaDoradaGUI {
         tcEmployeeId.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("id"));
     }
     
+    public void loadEmployeeTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employee-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent employeeListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(employeeListPane);
+        initializeEmployeeTableView();
+    }
+    
+    @FXML
+    public void selectEmployee(MouseEvent event) throws IOException {
+    	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
+    	
+    	if(ea != null) {
+    		this.tcEmployeeFirstName.setText(ea.getFirstName());
+    		this.tcEmployeeLastName.setText(ea.getLastName());
+    		this.tcEmployeeId.setText(ea.getId());
+    	}	
+    }
+    
+    @FXML
+    public void employeeDeleteOpt(ActionEvent event) {
+    	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
+    	
+    	if(ea == null) {
+    		selectAnOptionAlert();
+    	}else {
+    		this.laCasaDorada.getEmployees().remove(ea);
+    		this.tbEmployeeList.refresh();
+    		employeeWasDeletedAlert();
+    	}
+    	
+    }
+
+    @FXML
+    public void employeeDisableOpt(ActionEvent event) {
+
+    }
+    
+    
     /*
      **************************************** SCREEN INGREDIENT LIST (ingredient-list.fxml) *******************************************************
      */
@@ -720,6 +794,15 @@ public class LaCasaDoradaGUI {
         tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
     }
     
+    public void loadIngredientTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ingredient-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent ingredientListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(ingredientListPane);
+        initializeIngredientTableView();
+    }
+    
     /*
      **************************************** SCREEN TYPES OF PRODUCT LIST (type-of-product-list.fxml) *******************************************************
      */
@@ -738,6 +821,15 @@ public class LaCasaDoradaGUI {
         tbTypeOfProductList.setItems(observableList);
         
         tcTypeOfProductName.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductName"));
+    }
+    
+    public void loadTypesOfProductTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("types-of-product-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent typeOfProductListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(typeOfProductListPane);
+        initializeTypeOfProductTableView();
     }
    
     /*
@@ -950,12 +1042,20 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void exportEmployeeReport(ActionEvent event) throws IOException{
+    	FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().addAll(new ExtensionFilter("Text", "*.csv"));
+        File file = fc.showSaveDialog(menuPane.getScene().getWindow());
 
+        laCasaDorada.exportEmployeeData(file.getAbsolutePath());
     }
 
     @FXML
     public void exportProductReport(ActionEvent event) throws IOException{
+    	FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().addAll(new ExtensionFilter("Text", "*.csv"));
+        File file = fc.showSaveDialog(menuPane.getScene().getWindow());
 
+        laCasaDorada.exportProductData(file.getAbsolutePath());
     }
 
     @FXML
@@ -1086,5 +1186,23 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("Employee data was imported successfully");
 	    alert.showAndWait();
 	}
-
+    
+    @FXML
+    private void selectAnOptionAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Error");
+	    alert.setHeaderText("");
+	    alert.setContentText("Select an option to delete");
+	    alert.showAndWait();
+	}
+    
+    @FXML
+    private void employeeWasDeletedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Delete employee");
+	    alert.setHeaderText("");
+	    alert.setContentText("Employee was deleted successfully");
+	    alert.showAndWait();
+	}
+   
 }

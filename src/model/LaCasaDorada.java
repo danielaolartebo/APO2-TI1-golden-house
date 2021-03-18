@@ -1,15 +1,18 @@
 package model;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-import javafx.util.Callback;
-
 public class LaCasaDorada {
+	
+	private static final String SEPARATE=",";
+	
 	public List<ClientAccount> clients;
 	public List<EmployeeAccount> employees;
 	public List<RestaurantProduct> products;
@@ -172,10 +175,27 @@ public class LaCasaDorada {
 			String[] parts = line.split(",");
 			// double[][] sizePrice = Double[][].parseDouble(parts[1]);
 			// addProduct(parts[0], sizePrice);
+
 			line = br.readLine();
 		}
 		br.close();
 		
 	}
+	
+	public void exportEmployeeData(String fileName) throws FileNotFoundException{
+        PrintWriter pw = new PrintWriter(fileName);
+        for(EmployeeAccount empl : employees){
+          pw.println(empl.getUserName()+SEPARATE+empl.getPassword()+SEPARATE+empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId());
+        }
+        pw.close();
+    }
+	
+	public void exportProductData(String fileName) throws FileNotFoundException{
+        PrintWriter pw = new PrintWriter(fileName);
+        for(RestaurantProduct prod : products){
+          pw.println(prod.getProductName()+SEPARATE+prod.getSizePrice());
+        }
+        pw.close();
+    }
 	
 }
