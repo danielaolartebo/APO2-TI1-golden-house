@@ -165,7 +165,6 @@ public class LaCasaDorada {
 			line = br.readLine();
 		}
 		br.close();
-		
 	}
 
 	public void importProductData(String fileName) throws IOException{
@@ -176,6 +175,9 @@ public class LaCasaDorada {
 			double[][] sizePrice = Double.parseDouble(parts[1]);
 			addProduct(parts[0], sizePrice); */
 			line = br.readLine();
+			
+			//arraylist de tamaño
+			//arraylist de precio
 		}
 		br.close();
 		

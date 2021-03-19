@@ -52,9 +52,7 @@
                         <MenuButton mnemonicParsing="false">
                           <items>
                             <MenuItem mnemonicParsing="false" onAction="#menuCreateIngredient" text="Create  " />
-                            <MenuItem mnemonicParsing="false" onAction="#menuUpdateIngredient" text="Update " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDeleteIngredient" text="Delete " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDisableIngredient" text="Disable " />
+                            <MenuItem mnemonicParsing="false" onAction="#menuUpdateIngredient" text="Update/Delete/Disable" />
                           </items>
                         </MenuButton>
                      </graphic>
@@ -64,9 +62,7 @@
                         <MenuButton mnemonicParsing="false">
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#menuCreateTypeOfProduct" text="Create " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateTypeOfProduct" text="Update " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDeleteTypeOfProduct" text="Delete " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDisableTypeOfProduct" text="Disable " />
+                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateTypeOfProduct" text="Update/Delete/Disable" />
                            </items>
                         </MenuButton>
                      </graphic>
@@ -76,9 +72,7 @@
                         <MenuButton mnemonicParsing="false">
                           <items>
                             <MenuItem mnemonicParsing="false" onAction="#menuCreateProduct" text="Create " />
-                            <MenuItem mnemonicParsing="false" onAction="#menuUpdateProduct" text="Update " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDeleteProduct" text="Delete " />
-                              <MenuItem mnemonicParsing="false" onAction="#menuDisableProduct" text="Disable " />
+                            <MenuItem mnemonicParsing="false" onAction="#menuUpdateProduct" text="Update/Delete/Disable" />
                           </items>
                         </MenuButton>
                      </graphic>

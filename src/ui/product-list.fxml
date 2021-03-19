@@ -40,6 +40,16 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
+            <Button layoutX="195.0" layoutY="327.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="133.0" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="338.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDisableOpt" prefHeight="28.0" prefWidth="138.0" text="DISABLE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </center>

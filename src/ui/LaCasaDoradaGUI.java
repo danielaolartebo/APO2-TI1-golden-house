@@ -11,7 +11,6 @@ import javafx.scene.control.TextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -107,24 +106,9 @@ public class LaCasaDoradaGUI {
 
 	@FXML
 	private TextField txtLastName;
-
-	@FXML
-	private BorderPane deleteAllPane;
-	
-	@FXML
-    private BorderPane updateProductPane;
-	
-	@FXML
-	private BorderPane updateIngredientTypeOfProductPane;
-	
-	@FXML
-	private BorderPane disableEmployeeAccountPane;
 	
 	@FXML
 	private BorderPane createIngredientTypeOfProductPane;
-	
-	@FXML
-    private BorderPane updateEmployeeAccountPane;
 	
 	@FXML
 	private BorderPane createProductPane;
@@ -139,12 +123,6 @@ public class LaCasaDoradaGUI {
 	private BorderPane orderListPane;
 	
 	@FXML
-    private BorderPane disableAllPane;
-	
-	@FXML
-	private BorderPane deleteEmployeeAccountPane;
-	
-	@FXML
 	private BorderPane customerListPane;
 	
 	@FXML
@@ -152,6 +130,7 @@ public class LaCasaDoradaGUI {
     
 	@FXML
 	private BorderPane createOrderPane;
+	
 	@FXML
 	private BorderPane menuPane;
 	
@@ -169,9 +148,6 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TextField txtPassword;
-
-    @FXML
-    private BorderPane UpdateOrderStatusPane;
     
     @FXML
     private TextField txtIDCE;
@@ -593,24 +569,6 @@ public class LaCasaDoradaGUI {
     public void COcreateOrder(ActionEvent event) throws IOException{
 
     }
-
-    
-    /*
-     *********************************** SCREEN UPDATE ORDER STATUS (order-status.fxml) ************************************************
-     */
-    
-    @FXML
-    public void sub7GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    @FXML
-    public void optUpdateStatus(ActionEvent event) {
-    
-    }
     /*
      **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
      */
@@ -922,112 +880,6 @@ public class LaCasaDoradaGUI {
     	
     	productCreatedAlert();
     	
-    }
-    
-    /*
-     **************** SCREEN DELETE PRODUCT OR INGREDIENT OR TYPE OF PRODUCT (delete-all.fxml) *****************************************
-     */
-   
-    @FXML
-    public void sub10GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN DISABLE PRODUCT OR INGREDIENT OR TYPE OF PRODUCT (disable-all.fxml) *****************************************
-     */
-   
-    @FXML
-    public void sub11GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN UPDATE INGREDIENT (ingredient-list.fxml) *****************************************
-     */
-    
-    @FXML
-    public void sub12GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN UPDATE TYPE OF PRODUCT (type-of-product-list.fxml) *****************************************
-     */
-    @FXML
-    public void sub21GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    
-    /*
-     **************** SCREEN UPDATE PRODUCT (product-list.fxml) *************************************************************************
-     */
-    
-    @FXML
-    public void sub13GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN UPDATE EMPLOYEE ACCOUNT (employee-list.fxml) *************************************************************************
-     */
-    
-    @FXML
-    public void sub14GoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN DELETE EMPLOYEE ACCOUNT (delete-employee-account.fxml) *************************************************************************
-     */
-    
-    @FXML
-    public void optDeleteAccount(ActionEvent event) throws IOException{
-
-    }
-
-    @FXML
-    public void sub16GoBack(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    /*
-     **************** SCREEN DISABLE EMPLOYEE ACCOUNT (disable-employee-account.fxml) *************************************************************************
-     */
-    
-    @FXML
-    public void optDisableAccount(ActionEvent event) throws IOException{
-
-    }
-
-    @FXML
-    public void sub17GoBack(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
     }
     
     /*
