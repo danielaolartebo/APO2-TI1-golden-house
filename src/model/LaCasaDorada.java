@@ -51,7 +51,7 @@ public class LaCasaDorada {
 		types.add(new RestaurantTypeOfProduct(typeName));
 	}
 	
-	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
+	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, MembersStatus order) {
 		orders.add(new Order(client, employee, code, time, observations, order));
 	}
 	

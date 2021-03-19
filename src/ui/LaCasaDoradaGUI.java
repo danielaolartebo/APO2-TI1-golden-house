@@ -24,7 +24,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import model.ClientAccount;
 import model.EmployeeAccount;
-import model.EmployeeStatus;
+import model.MembersStatus;
 import model.LaCasaDorada;
 import model.Order;
 import model.RestaurantIngredient;
@@ -184,6 +184,9 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableColumn<ClientAccount, String> tcObservationsCustomer;
     
+    @FXML
+    private TableColumn<ClientAccount, String> tcStatusCustomer;
+    
     // ORDER LIST 
 
     @FXML
@@ -224,6 +227,16 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TableColumn<RestaurantProduct, String> tcTypeList;
+    
+    @FXML
+    private TableColumn<RestaurantProduct, String> tcStatusList;
+    
+    @FXML
+    private TableColumn<RestaurantProduct, String> tcSizeList;
+
+    @FXML
+    private TableColumn<RestaurantProduct, String> tcPriceList;
+
 
 
     // EMPLOYEE LIST
@@ -254,6 +267,9 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableColumn<RestaurantIngredient, String> tcIngredientName;
     
+    @FXML
+    private TableColumn<RestaurantIngredient, String> tcIngredientStatus;
+    
     
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
@@ -266,6 +282,13 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TableColumn<RestaurantTypeOfProduct, String> tcTypeOfProductName;
+    
+    @FXML
+    private TableColumn<RestaurantTypeOfProduct, String> tcTypeOfProductStatus;
+    
+    @FXML
+    private TableColumn<RestaurantTypeOfProduct, String> tcIngredientsList;
+
     
     /*
      * *********************************** FIRST SCREEN (main-pane.fxml) ************************************************************
@@ -601,6 +624,46 @@ public class LaCasaDoradaGUI {
         menuPane.setCenter(customerListPane);
         initializeCustomerTableView();
     }
+    
+    @FXML
+    public void selectCustomer(MouseEvent event) throws IOException {
+    	ClientAccount ca = this.tbCustomerList.getSelectionModel().getSelectedItem();
+    	
+    	if(ca != null) {
+    		this.tcFirstNameCustomer.setText(ca.getFirstName());
+    		this.tcLastNameCustomer.setText(ca.getLastName());
+    		this.tcIdCustomer.setText(ca.getId());
+    		this.tcAddressCustomer.setText(ca.getAddress());
+    		this.tcPhoneNumberCustomer.setText(ca.getPhoneNumber());
+    		this.tcObservationsCustomer.setText(ca.getObservations());
+    	}	
+    }
+    
+    @FXML
+    public void customerDeleteOpt(ActionEvent event) throws IOException{
+    	ClientAccount ca = this.tbCustomerList.getSelectionModel().getSelectedItem();
+    	
+    	if(ca == null) {
+    		selectAnOptionAlert();
+    	}else {
+    		this.laCasaDorada.getClients().remove(ca);
+    		this.tbCustomerList.refresh();
+    		customerWasDeletedAlert();
+    	}
+    }
+
+	@FXML
+    public void customerDisableOpt(ActionEvent event) throws IOException{
+		ClientAccount ca = this.tbCustomerList.getSelectionModel().getSelectedItem();
+    	
+    	if(ca == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ca.setCustomerStatus(MembersStatus.INACTIVE);
+    		this.tbCustomerList.refresh();
+    		customerWasDisableAlert();
+    	}
+    }
  
     
     /*
@@ -613,6 +676,15 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    }
+    
+    public void loadOrderTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-list.fxml"));
+        fxmlLoader.setController(this);
+        Parent orderListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(orderListPane);
+        initializeOrderTableView();
     }
     
     private void initializeOrderTableView(){
@@ -630,20 +702,43 @@ public class LaCasaDoradaGUI {
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
     }
     
-    public void loadOrderTable(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order-list.fxml"));
-        fxmlLoader.setController(this);
-        Parent orderListPane = fxmlLoader.load();
-        menuPane.getChildren().clear();
-        menuPane.setCenter(orderListPane);
-        initializeOrderTableView();
+    @FXML
+    public void selectOrder(MouseEvent event) throws IOException {
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or != null) {
+    		// this.tcNumberOrder.setText(or.get());
+    		// this.txStatusOrder.setText(or.getOrderStatus());
+    		// this.tcProductsOrder.setText(or.get());
+    		// this.tcQuantityOrder.setText(or.get());
+    		// this.tcEmployeeOrder.setText(or.get());
+    		// this.tcDateOrder.setText(or.get());
+    		// this.txHourOrder.setText(or.get());
+    		// this.tcObservationsOrder.setText(or.getObservations());
+    		
+    		//****TERMINAR
+    	}	
     }
+    
+    @FXML
+    public void orderUpdateStatus(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(MembersStatus.INACTIVE);
+    		this.tbCustomerList.refresh();
+    		orderWasUpdated();
+    	}
+    }
+
     
     /*
      **************************************** SCREEN PRODUCT LIST (product-list.fxml) *******************************************************
      */
-    
-    @FXML
+
+	@FXML
     public void sub5GoBack(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
     	fxmlLoader.setController(this);
@@ -658,6 +753,7 @@ public class LaCasaDoradaGUI {
         
         tcNameList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productName"));
         tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productType"));
+        //******COMPLETAR
     }
     
     public void loadProductTable(ActionEvent event) throws IOException {
@@ -669,11 +765,47 @@ public class LaCasaDoradaGUI {
         initializeProductTableView();
     }
     
+    @FXML
+    public void selectProduct(MouseEvent event) throws IOException {
+    	RestaurantProduct pr = this.tbProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(pr != null) {
+    		this.tcNameList.setText(pr.getProductName());
+    		// ****COMPLETAR*****
+    	}	
+    }
+    
+    @FXML
+    public void productDeleteOpt(ActionEvent event) throws IOException{
+    	RestaurantProduct pr = this.tbProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(pr == null) {
+    		selectAnOptionAlert();
+    	}else {
+    		this.laCasaDorada.getProducts().remove(pr);
+    		this.tbProductList.refresh();
+    		itemWasDeletedAlert();
+    	}
+    }
+
+	@FXML
+    public void productDisableOpt(ActionEvent event) throws IOException{
+		RestaurantProduct pr = this.tbProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(pr == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		pr.setProductStatus(MembersStatus.INACTIVE);
+    		this.tbProductList.refresh();
+    		itemWasDisableAlert();
+    	}
+    }
+    
     /*
      **************************************** SCREEN EMPLOYEE LIST (employee-list.fxml) *******************************************************
      */
-    
-    @FXML
+
+	@FXML
     public void sub6GoBack(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
     	fxmlLoader.setController(this);
@@ -709,7 +841,6 @@ public class LaCasaDoradaGUI {
     		this.tcEmployeeFirstName.setText(ea.getFirstName());
     		this.tcEmployeeLastName.setText(ea.getLastName());
     		this.tcEmployeeId.setText(ea.getId());
-
     	}	
     }
     
@@ -733,16 +864,10 @@ public class LaCasaDoradaGUI {
     	if(ea == null) {
     		selectAnOptionAlert();
     	}else{
-    		ea.setEmployeeStatus(EmployeeStatus.INACTIVE);
+    		ea.setEmployeeStatus(MembersStatus.INACTIVE);
     		this.tbEmployeeList.refresh();
     		employeeWasDisableAlert();
     	}
-    }
-
-	public void isEditable() {
-    	tcEmployeeFirstName.setEditable(true);
-    	tcEmployeeLastName.setEditable(true);
-    	tcEmployeeId.setEditable(true);
     }
     
     
@@ -764,6 +889,7 @@ public class LaCasaDoradaGUI {
         tbIngredientList.setItems(observableList);
         
         tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
+        tcIngredientStatus.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientStatus"));
     }
     
     public void loadIngredientTable(ActionEvent event) throws IOException {
@@ -775,11 +901,46 @@ public class LaCasaDoradaGUI {
         initializeIngredientTableView();
     }
     
+    @FXML
+    public void selectIngredient(MouseEvent event) throws IOException {
+    	RestaurantIngredient ri = this.tbIngredientList.getSelectionModel().getSelectedItem();
+    	
+    	if(ri != null) {
+    		this.tcEmployeeFirstName.setText(ri.getIngredientName());
+    	}	
+    }
+    
+    @FXML
+    public void ingredientDeleteOpt(ActionEvent event) throws IOException{
+    	RestaurantIngredient ri = this.tbIngredientList.getSelectionModel().getSelectedItem();
+    	
+    	if(ri == null) {
+    		selectAnOptionAlert();
+    	}else {
+    		this.laCasaDorada.getIngredients().remove(ri);
+    		this.tbIngredientList.refresh();
+    		itemWasDeletedAlert();
+    	}
+    }
+
+	@FXML
+    public void ingredientDisableOpt(ActionEvent event) throws IOException{
+		RestaurantIngredient ri = this.tbIngredientList.getSelectionModel().getSelectedItem();
+    	
+    	if(ri == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ri.setIngredientStatus(MembersStatus.INACTIVE);
+    		this.tbIngredientList.refresh();
+    		itemWasDisableAlert();
+    	}
+    }
+    
     /*
      **************************************** SCREEN TYPES OF PRODUCT LIST (type-of-product-list.fxml) *******************************************************
      */
-    
-    @FXML
+
+	@FXML
     public void sub22GoBack(ActionEvent event) throws IOException{
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
     	fxmlLoader.setController(this);
@@ -793,6 +954,7 @@ public class LaCasaDoradaGUI {
         tbTypeOfProductList.setItems(observableList);
         
         tcTypeOfProductName.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductName"));
+        tcTypeOfProductStatus.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductStatus"));
     }
     
     public void loadTypesOfProductTable(ActionEvent event) throws IOException {
@@ -802,6 +964,41 @@ public class LaCasaDoradaGUI {
         menuPane.getChildren().clear();
         menuPane.setCenter(typeOfProductListPane);
         initializeTypeOfProductTableView();
+    }
+    
+    @FXML
+    public void selectTypeOfProduct(MouseEvent event) throws IOException {
+    	RestaurantTypeOfProduct tp = this.tbTypeOfProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(tp != null) {
+    		this.tcTypeOfProductName.setText(tp.getTypeOfProductName());
+    	}	
+    }
+    
+    @FXML
+    public void typeOfProductDeleteOpt(ActionEvent event) throws IOException{
+    	RestaurantTypeOfProduct tp = this.tbTypeOfProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(tp == null) {
+    		selectAnOptionAlert();
+    	}else {
+    		this.laCasaDorada.getTypeOfProducts().remove(tp);
+    		this.tbTypeOfProductList.refresh();
+    		itemWasDeletedAlert();
+    	}
+    }
+
+    @FXML
+    public void typeOfProductDisableOpt(ActionEvent event) throws IOException{
+    	RestaurantTypeOfProduct tp = this.tbTypeOfProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(tp == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		tp.setTypeOfProductStatus(MembersStatus.INACTIVE);
+    		this.tbTypeOfProductList.refresh();
+    		itemWasDisableAlert();
+    	}
     }
    
     /*
@@ -1076,6 +1273,49 @@ public class LaCasaDoradaGUI {
 	    alert.setTitle("Disable employee");
 	    alert.setHeaderText("");
 	    alert.setContentText("Employee was disable successfully");
+	    alert.showAndWait();
+	}
+    
+    private void customerWasDeletedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Delete customer");
+	    alert.setHeaderText("");
+	    alert.setContentText("Customer was deleted successfully");
+	    alert.showAndWait();
+		
+	}
+    
+    private void customerWasDisableAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Disable customer");
+	    alert.setHeaderText("");
+	    alert.setContentText("Customer was disable successfully");
+	    alert.showAndWait();
+	}
+    
+    private void orderWasUpdated() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Updated order");
+	    alert.setHeaderText("");
+	    alert.setContentText("Order was updated");
+	    alert.showAndWait();
+		
+	}
+    
+    private void itemWasDeletedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Delete item");
+	    alert.setHeaderText("");
+	    alert.setContentText("Item was deleted");
+	    alert.showAndWait();
+		
+	}
+    
+    private void itemWasDisableAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Disable item");
+	    alert.setHeaderText("");
+	    alert.setContentText("item was disable successfully");
 	    alert.showAndWait();
 	}
    

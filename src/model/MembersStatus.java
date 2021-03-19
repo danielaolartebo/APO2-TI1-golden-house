@@ -1,5 +1,5 @@
 package model;
 
-public enum EmployeeStatus {
+public enum MembersStatus {
 	ACTIVE, INACTIVE
 }

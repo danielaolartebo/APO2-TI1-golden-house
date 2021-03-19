@@ -4,13 +4,13 @@ public class EmployeeAccount extends RestaurantMembers{
 	
 	private String userName;
 	private String password;
-	private EmployeeStatus employeeStatus;
+	private MembersStatus employeeStatus;
 	
 	public EmployeeAccount(String userName, String password, String firstName, String lastName, String id) {
 		super(firstName, lastName, id);
 		this.userName=userName;
 		this.password=password;
-		this.employeeStatus=EmployeeStatus.ACTIVE;
+		this.employeeStatus=MembersStatus.ACTIVE;
 
 	}
 	
@@ -29,11 +29,12 @@ public class EmployeeAccount extends RestaurantMembers{
 	public void setPassword(String password) {
 		this.password=password;
 	}
-	public EmployeeStatus getEmployeeStatus() {
+	
+	public MembersStatus getEmployeeStatus() {
 		return employeeStatus;
 	}
 	
-	public void setEmployeeStatus(EmployeeStatus employeeStatus) {
+	public void setEmployeeStatus(MembersStatus employeeStatus) {
 		this.employeeStatus=employeeStatus;
 	}
 	

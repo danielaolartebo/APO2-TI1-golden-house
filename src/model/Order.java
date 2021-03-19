@@ -3,21 +3,23 @@ package model;
 import java.sql.Date;
 
 public class Order {
+	
+	// ORDEN TIENE NUMERO, ESTADO, PRODUCTOS, CANTIDAD, EMPLEADO, FECHA, HORA Y OBSERVACIONES.
 
 	private ClientAccount client;
 	private EmployeeAccount employee;
 	private String code;
 	private Date time;
 	private String observations;
-	private Status orderStatus;
+	private MembersStatus order;
 	
-	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
+	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, MembersStatus order) {
 		this.setClient(client);
 		this.setEmployee(employee);
 		this.setCode(code);
 		this.setTime(time);
 		setObservations(observations);
-		setOrderStatus(order);
+		this.order=MembersStatus.ACTIVE;
 	}
 
 	public ClientAccount getClient() {
@@ -60,12 +62,12 @@ public class Order {
 		this.observations = observations;
 	}
 
-	public Status getOrderStatus() {
-		return orderStatus;
+	public MembersStatus getOrderStatus() {
+		return order;
 	}
-
-	public void setOrderStatus(Status orderStatus) {
-		this.orderStatus = orderStatus;
+	
+	public void setOrderStatus(MembersStatus order) {
+		this.order=order;
 	}
 	
 }

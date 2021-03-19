@@ -26,8 +26,12 @@
             </Label>
             <TableView fx:id="tbProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNameList" prefWidth="336.0" text="Name" />
-                  <TableColumn fx:id="tcTypeList" prefWidth="319.0" text="Type" />
+                  <TableColumn fx:id="tcNameList" prefWidth="102.0" text="Name" />
+                  <TableColumn fx:id="tcTypeList" prefWidth="97.0" text="Type" />
+                  <TableColumn fx:id="tcIngredientsList" maxWidth="275.0" prefWidth="126.0" text="Ingredients" />
+                  <TableColumn fx:id="tcSizeList" maxWidth="150.0" prefWidth="117.0" text="Size" />
+                  <TableColumn fx:id="tcPriceList" maxWidth="151.0" prefWidth="112.0" text="Price" />
+                  <TableColumn fx:id="tcStatusList" maxWidth="134.0" prefWidth="121.0" text="Status" />
                </columns>
             </TableView>
             <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
@@ -40,7 +44,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="195.0" layoutY="327.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="133.0" text="DELETE">
+            <Button layoutX="195.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="133.0" text="DELETE">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

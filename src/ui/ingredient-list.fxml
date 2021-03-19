@@ -26,7 +26,8 @@
             </Label>
             <TableView fx:id="tbIngredientList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcIngredientName" prefWidth="655.0" text="Name" />
+                  <TableColumn fx:id="tcIngredientName" prefWidth="323.0" text="Name" />
+                  <TableColumn fx:id="tcIngredientStatus" maxWidth="350.0" prefWidth="987.0" text="Status" />
                </columns>
             </TableView>
             <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub20GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">

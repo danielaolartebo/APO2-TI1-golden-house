@@ -5,12 +5,14 @@ public class ClientAccount extends RestaurantMembers{
 		private String address;
 		private String phoneNumber;
 		private String observations;
+		private MembersStatus customerStatus;
 		
 		public ClientAccount(String firstName, String lastName, String id, String address, String phoneNumber, String observations) {
 			super(firstName, lastName, id);
 			this.address = address;
 			this.phoneNumber = phoneNumber;
 			this.observations=observations;
+			this.customerStatus=MembersStatus.ACTIVE;
 		}
 	
 		public String getAddress() {
@@ -35,6 +37,14 @@ public class ClientAccount extends RestaurantMembers{
 		
 		public void setObservations(String observations) {
 			this.observations=observations;
+		}
+		
+		public MembersStatus getCustomerStatus() {
+			return customerStatus;
+		}
+		
+		public void setCustomerStatus(MembersStatus customerStatus) {
+			this.customerStatus=customerStatus;
 		}
 
 }

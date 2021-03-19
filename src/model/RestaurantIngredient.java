@@ -3,9 +3,11 @@ package model;
 public class RestaurantIngredient {
 	
 	private String ingredientName;
+	private MembersStatus ingredientStatus;
 	
 	public RestaurantIngredient(String ingredientName) {
 		this.ingredientName = ingredientName;	
+		this.ingredientStatus=MembersStatus.ACTIVE;
 	}
 
 	public String getIngredientName() {
@@ -18,6 +20,14 @@ public class RestaurantIngredient {
 	
 	public String toString() {
 		return ingredientName;
+	}
+
+	public MembersStatus getIngredientStatus() {
+		return ingredientStatus;
+	}
+	
+	public void setIngredientStatus(MembersStatus ingredientStatus) {
+		this.ingredientStatus=ingredientStatus;
 	}
 
 }
