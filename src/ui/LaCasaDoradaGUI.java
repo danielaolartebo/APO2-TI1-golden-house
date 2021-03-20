@@ -19,6 +19,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
@@ -41,6 +43,12 @@ public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
 	
 	@FXML
+	private TextField productPrice;
+
+	@FXML
+	private RadioButton optSize;
+	
+	@FXML
 	private TextField COcustomerName;
 
 	@FXML
@@ -48,6 +56,15 @@ public class LaCasaDoradaGUI {
 
 	@FXML
 	private TextField COobservations;
+	
+	@FXML
+    private ComboBox<String> productSize;
+
+    @FXML
+    private ComboBox<String> productIngredients;
+
+    @FXML
+    private ComboBox<String> productTypes;
 
 	@FXML
 	private ChoiceBox<String> COaddProduct;
@@ -55,12 +72,6 @@ public class LaCasaDoradaGUI {
 	@FXML
 	private ChoiceBox<String> COaddQuantity;
 	
-	@FXML
-	private ChoiceBox<String> productTypes;
-
-	@FXML
-	private ChoiceBox<String> productIngredients;
-    
 	@FXML
 	private TextField productName;
 
@@ -607,9 +618,11 @@ public class LaCasaDoradaGUI {
     public void COcreateOrder(ActionEvent event) throws IOException{
 
     }
+    
     /*
      **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
      */
+    
     @FXML
     public void sub3GoBack(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
@@ -1078,11 +1091,15 @@ public class LaCasaDoradaGUI {
     		option = "Type of product";
     		laCasaDorada.addTypeOfProduct(name);
     		typeOfProductCreatedAlert();
+    	}else if(optSize.isSelected()) {
+    		option = "Size";
+    		laCasaDorada.addSize(name);
+    		sizeCreatedAlert();
     	}
     	System.out.println(option);
     }
-    
-    /*
+
+	/*
      **************** SCREEN CREATE PRODUCT (create-product.fxml) *************************************************************************
      */
     @FXML
@@ -1116,7 +1133,6 @@ public class LaCasaDoradaGUI {
     	
     	double[][] sizePrice = new double [personalPrice][sharePrice];
     	
-    	 // productIngredients.get
     	String ingredients = "";
     	if(productTypes != null) {
     		ingredients = productIngredients.getValue().toString();
@@ -1127,6 +1143,14 @@ public class LaCasaDoradaGUI {
     	
     	productCreatedAlert();
     	
+    }
+    
+    @FXML
+    public void createNewSize(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create-ingredient-typeofproduct.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent createIngredientTypeOfProductPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(createIngredientTypeOfProductPane);
     }
     
     /*
@@ -1236,6 +1260,14 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("Ingredient has been created successfully");
 	    alert.showAndWait();
     }
+    
+    private void sizeCreatedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Size created");
+	    alert.setHeaderText("");
+	    alert.setContentText("Size has been created successfully");
+	    alert.showAndWait();
+	}
     
     @FXML
     private void typeOfProductCreatedAlert() {

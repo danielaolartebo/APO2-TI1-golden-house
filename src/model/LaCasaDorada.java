@@ -19,6 +19,7 @@ public class LaCasaDorada {
 	public List<RestaurantIngredient> ingredients;
 	public List<RestaurantTypeOfProduct> types;
 	public List<Order> orders;
+	public List<Size> sizes;
 
 	
 	public LaCasaDorada() {
@@ -29,6 +30,7 @@ public class LaCasaDorada {
 		ingredients = new ArrayList<>();
 		types = new ArrayList<>();
 		orders = new ArrayList<>();
+		sizes = new ArrayList<>();
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) {
@@ -49,6 +51,10 @@ public class LaCasaDorada {
 
 	public void addTypeOfProduct(String typeName) {
 		types.add(new RestaurantTypeOfProduct(typeName));
+	}
+	
+	public void addSize(String sizeName) {
+		sizes.add(new Size(sizeName));
 	}
 	
 	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, MembersStatus order) {

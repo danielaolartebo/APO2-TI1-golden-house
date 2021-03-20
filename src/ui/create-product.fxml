@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
@@ -66,25 +66,25 @@
                            </font>
                         </Label>
                         <TextField fx:id="productName" prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" />
-                        <Label text="Personal price:" textFill="WHITE" GridPane.rowIndex="2">
+                        <Label textFill="WHITE" GridPane.rowIndex="2">
                            <font>
                               <Font name="Segoe UI Black" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="productPersonalPrice" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label text="Shared price:" textFill="WHITE" GridPane.rowIndex="3">
-                           <font>
-                              <Font name="Segoe UI Black" size="12.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="productSharePrice" prefHeight="25.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="productPrice" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Label text="Ingredients:" textFill="WHITE" GridPane.rowIndex="4">
                            <font>
                               <Font name="Segoe UI Black" size="14.0" />
                            </font>
                         </Label>
-                        <ChoiceBox fx:id="productTypes" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <ChoiceBox fx:id="productIngredients" layoutX="142.0" layoutY="47.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox fx:id="productSize" prefHeight="25.0" prefWidth="97.0" promptText="Select size" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="productIngredients" layoutX="10.0" layoutY="80.0" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox fx:id="productTypes" layoutX="142.0" layoutY="144.0" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#createNewSize" prefHeight="25.0" prefWidth="119.0" text="Create new size" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
                      </children>
                   </GridPane>
                   <Button layoutX="207.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Add">
