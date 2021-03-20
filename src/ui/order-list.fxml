@@ -53,12 +53,12 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <MenuButton layoutX="335.0" layoutY="331.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Select">
+            <MenuButton layoutX="335.0" layoutY="331.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Select">
               <items>
-                <MenuItem fx:id="statusRequested" mnemonicParsing="false" text="Requested" />
-                <MenuItem fx:id="statusProcessed" mnemonicParsing="false" text="Processed" />
-                  <MenuItem fx:id="statusSent" mnemonicParsing="false" text="Sent" />
-                  <MenuItem fx:id="statusDelivered" mnemonicParsing="false" text="Delivered" />
+                <MenuItem mnemonicParsing="false" onAction="#statusRequested" text="Requested" />
+                <MenuItem mnemonicParsing="false" onAction="#statusProcessed" text="Processed" />
+                  <MenuItem mnemonicParsing="false" onAction="#statusSent" text="Sent" />
+                  <MenuItem mnemonicParsing="false" onAction="#statusDelivered" text="Delivered" />
               </items>
             </MenuButton>
          </children>

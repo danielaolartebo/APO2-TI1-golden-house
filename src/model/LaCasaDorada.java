@@ -13,13 +13,14 @@ public class LaCasaDorada {
 	
 	private static final String SEPARATE=",";
 	
-	public List<ClientAccount> clients;
-	public List<EmployeeAccount> employees;
-	public List<RestaurantProduct> products;
-	public List<RestaurantIngredient> ingredients;
-	public List<RestaurantTypeOfProduct> types;
-	public List<Order> orders;
-	public List<Size> sizes;
+	private List<ClientAccount> clients;
+	private List<EmployeeAccount> employees;
+	private List<RestaurantProduct> products;
+	private List<RestaurantIngredient> ingredients;
+	private List<RestaurantTypeOfProduct> types;
+	private List<Order> orders;
+	private List<Size> sizes;
+	private List<SystemUser> users;
 
 	
 	public LaCasaDorada() {
@@ -31,6 +32,11 @@ public class LaCasaDorada {
 		types = new ArrayList<>();
 		orders = new ArrayList<>();
 		sizes = new ArrayList<>();
+		users = new ArrayList<>();
+	}
+	
+	public void addUsers(String userName, String password, String firstName, String lastName, String id) {
+		users.add(new SystemUser(userName, password, firstName, lastName, id));
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) {
@@ -41,8 +47,8 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String productName, double[][] sizePrice) {
-		products.add(new RestaurantProduct(productName, sizePrice));
+	public void addProduct(String name, String typeOfProduct, String sizeOfProduct, double priceOfProduct, String ingredientsOfProduct) {
+		products.add(new RestaurantProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct));
 	}
 	
 	public void addIngredient(String ingredientName) {
@@ -140,11 +146,22 @@ public class LaCasaDorada {
 		return validate;
 	}
 
-	public boolean validateEmployee(String userName, String password) {
+	public boolean validateEmployee(String firstName, String lastName) {
 		boolean validate=false;
 		for(int i=0; i<employees.size() && !validate;i++) {
 			EmployeeAccount employee = employees.get(i);
-			if(employee.getUserName().equals(userName) && employee.getPassword().equals(password)) {
+			if(employee.getFirstName().equals(firstName) && employee.getLastName().equals(lastName)) {
+				validate=true;
+			}
+		}
+		return validate;
+	}
+	
+	public boolean validateUser(String userName, String password) {
+		boolean validate=false;
+		for(int i=0; i<users.size() && !validate;i++) {
+			SystemUser user = users.get(i);
+			if(user.getUserName().equals(userName) && user.getPassword().equals(password)) {
 				validate=true;
 			}
 		}
@@ -177,13 +194,10 @@ public class LaCasaDorada {
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = br.readLine();
 		while(line!=null) {
-		/*	String[] parts = line.split(",");
-			double[][] sizePrice = Double.parseDouble(parts[1]);
-			addProduct(parts[0], sizePrice); */
+			String[] parts = line.split(",");
+			double priceOfProduct = Double.parseDouble(parts[3]);
+			addProduct(parts[0], parts[1], parts[2], priceOfProduct, parts[4]);
 			line = br.readLine();
-			
-			//arraylist de tamaño
-			//arraylist de precio
 		}
 		br.close();
 		
@@ -192,7 +206,7 @@ public class LaCasaDorada {
 	public void exportEmployeeData(String fileName) throws FileNotFoundException{
         PrintWriter pw = new PrintWriter(fileName);
         for(EmployeeAccount empl : employees){
-          pw.println(empl.getUserName()+SEPARATE+empl.getPassword()+SEPARATE+empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
+          pw.println(empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
         }
         pw.close();
     }
@@ -200,7 +214,7 @@ public class LaCasaDorada {
 	public void exportProductData(String fileName) throws FileNotFoundException{
         PrintWriter pw = new PrintWriter(fileName);
         for(RestaurantProduct prod : products){
-          pw.println(prod.getProductName()+SEPARATE+prod.getSizePrice());
+          pw.println(prod.getProductName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
         }
         pw.close();
     }
