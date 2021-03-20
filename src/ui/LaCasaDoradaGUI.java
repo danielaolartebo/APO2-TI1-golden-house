@@ -32,6 +32,7 @@ import model.Order;
 import model.RestaurantIngredient;
 import model.RestaurantProduct;
 import model.RestaurantTypeOfProduct;
+import model.Status;
 
 public class LaCasaDoradaGUI {
 	
@@ -41,19 +42,40 @@ public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
 	
 	@FXML
+	private MenuItem statusRequested;
+
+	@FXML
+	private MenuItem statusProcessed;
+
+	@FXML
+	private MenuItem statusSent;
+
+	@FXML
+	private MenuItem statusDelivered;
+	    
+	@FXML
+    private ChoiceBox<String> orderNewStatus;
+	
+	@FXML
+	private TextField COobservations;
+
+	@FXML
+	private TextField COaddQuantity;
+
+	@FXML
+	private ComboBox<String> COaddProduct;
+
+	@FXML
+	private ComboBox<String> COcustomerName;
+
+	@FXML
+	private ComboBox<String> COemployeeName;
+	
+	@FXML
 	private TextField productPrice;
 
 	@FXML
 	private RadioButton optSize;
-	
-	@FXML
-	private TextField COcustomerName;
-
-	@FXML
-	private TextField COemployeeName;
-
-	@FXML
-	private TextField COobservations;
 	
 	@FXML
     private ComboBox<String> productSize;
@@ -63,13 +85,7 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private ComboBox<String> productTypes;
-
-	@FXML
-	private ChoiceBox<String> COaddProduct;
-
-	@FXML
-	private ChoiceBox<String> COaddQuantity;
-	
+    
 	@FXML
 	private TextField productName;
 
@@ -740,7 +756,7 @@ public class LaCasaDoradaGUI {
     	if(or == null) {
     		selectAnOptionAlert();
     	}else{
-    		or.setOrderStatus(MembersStatus.INACTIVE);
+    		or.setOrderStatus(Status.DELIVERED);
     		this.tbCustomerList.refresh();
     		orderWasUpdated();
     	}

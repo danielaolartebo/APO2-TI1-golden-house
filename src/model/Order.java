@@ -11,15 +11,15 @@ public class Order {
 	private String code;
 	private Date time;
 	private String observations;
-	private MembersStatus order;
+	private Status order;
 	
-	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, MembersStatus order) {
+	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
 		this.setClient(client);
 		this.setEmployee(employee);
 		this.setCode(code);
 		this.setTime(time);
 		setObservations(observations);
-		this.order=MembersStatus.ACTIVE;
+		this.order=Status.REQUESTED;
 	}
 
 	public ClientAccount getClient() {
@@ -62,11 +62,11 @@ public class Order {
 		this.observations = observations;
 	}
 
-	public MembersStatus getOrderStatus() {
+	public Status getOrderStatus() {
 		return order;
 	}
 	
-	public void setOrderStatus(MembersStatus order) {
+	public void setOrderStatus(Status order) {
 		this.order=order;
 	}
 	
