@@ -1,5 +1,6 @@
 package ui;
 
+import javafx.event.EventHandler;
 import java.io.File;
 import java.io.IOException;
 import javafx.scene.layout.BorderPane;
@@ -15,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
@@ -255,6 +257,19 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private TableColumn<EmployeeAccount, String> tcEmployeeStatus;
+    
+    @FXML
+    private TextField tcEmployeeChangeName;
+    
+    @FXML
+    private TextField tcEmployeeChangeLastName;
+    
+    @FXML
+    private TextField tcEmployeeChangeID;
+    
+    @FXML
+    private TextField tcEmployeeChangeStatus;
+    
     
     // INGREDIENT LIST 
     
@@ -822,7 +837,42 @@ public class LaCasaDoradaGUI {
         tcEmployeeLastName.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("lastName"));
         tcEmployeeId.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("id"));
         tcEmployeeStatus.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("employeeStatus"));
-    }
+        
+        tcEmployeeFirstName.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcEmployeeLastName.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcEmployeeId.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        tcEmployeeFirstName.setOnEditCommit(data -> {
+            System.out.println("Nuevo Nombre: " +  data.getNewValue());
+            System.out.println("Antiguo Nombre: " + data.getOldValue());
+
+            EmployeeAccount ea = data.getRowValue();
+            ea.setFirstName(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcEmployeeLastName.setOnEditCommit(data -> {
+            System.out.println("Nuevo Nombre: " +  data.getNewValue());
+            System.out.println("Antiguo Nombre: " + data.getOldValue());
+
+            EmployeeAccount ea = data.getRowValue();
+            ea.setLastName(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcEmployeeId.setOnEditCommit(data -> {
+            System.out.println("Nuevo Nombre: " +  data.getNewValue());
+            System.out.println("Antiguo Nombre: " + data.getOldValue());
+
+            EmployeeAccount ea = data.getRowValue();
+            ea.setId(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        }
     
     public void loadEmployeeTable(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employee-list.fxml"));
