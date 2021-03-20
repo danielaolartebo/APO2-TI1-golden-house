@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +20,7 @@
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="65.0" layoutY="42.0" prefHeight="45.0" prefWidth="519.0" text="Create ingredient/type of product/size" textFill="WHITE">
+            <Label layoutX="65.0" layoutY="42.0" prefHeight="45.0" prefWidth="519.0" text="Create ingredient/type of product" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="26.0" />
                </font>
@@ -30,8 +31,11 @@
                </font>
             </Label>
             <TextField fx:id="createIngredientName" layoutX="131.0" layoutY="192.0" prefHeight="25.0" prefWidth="136.0" />
-            <RadioButton fx:id="optIngredient" layoutX="49.0" layoutY="133.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="216.0" style="-fx-background-color: white;" text="Ingredient" />
-            <RadioButton fx:id="optTypeOfProduct" layoutX="387.0" layoutY="133.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="234.0" style="-fx-background-color: white;" text="Type of product" />
+            <RadioButton fx:id="optIngredient" layoutX="49.0" layoutY="133.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="216.0" style="-fx-background-color: white;" text="Ingredient">
+               <toggleGroup>
+                  <ToggleGroup fx:id="createoption" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="optTypeOfProduct" layoutX="387.0" layoutY="133.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="234.0" style="-fx-background-color: white;" text="Type of product" toggleGroup="$createoption" />
             <Button layoutX="260.0" layoutY="285.0" mnemonicParsing="false" onAction="#optCreateIngredientTypeOfProduct" prefHeight="25.0" prefWidth="127.0" text="CREATE">
                <font>
                   <Font name="System Bold" size="15.0" />

@@ -8,6 +8,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -40,6 +41,9 @@ public class LaCasaDoradaGUI {
 	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
 	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
 	private LaCasaDorada laCasaDorada;
+	
+	@FXML
+    private ToggleGroup createoption;
 	
 	@FXML
     private TextField createTypeOfProduct;    
@@ -482,6 +486,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createProductPane);
+    	
+    	setUpAddIngredientandTypeOfProduct();
     }
 
     @FXML
@@ -1176,7 +1182,7 @@ public class LaCasaDoradaGUI {
     }
    
     /*
-     **************** SCREEN CREATE INGREDIENT OR TYPE OF PRODUCT (create-ingredient-typeofproduct.fxml) *****************************************
+     ************************* SCREEN CREATE INGREDIENT OR TYPE OF PRODUCT (create-ingredient-typeofproduct.fxml) *****************************************
      */
     @FXML
     public void sub8GoBack(ActionEvent event) throws IOException {
@@ -1246,8 +1252,6 @@ public class LaCasaDoradaGUI {
     	for(int j=0; j<laCasaDorada.getTypeOfProducts().size();j++) {
     		productIngredients.getItems().add(laCasaDorada.getTypeOfProducts().get(j).getTypeOfProductName());
     	}
-    	
-    	
     	
     }
     
@@ -1367,14 +1371,6 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("Ingredient has been created successfully");
 	    alert.showAndWait();
     }
-    
-    private void sizeCreatedAlert() {
-    	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Size created");
-	    alert.setHeaderText("");
-	    alert.setContentText("Size has been created successfully");
-	    alert.showAndWait();
-	}
     
     @FXML
     private void typeOfProductCreatedAlert() {
