@@ -17,6 +17,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
@@ -53,6 +54,15 @@ public class LaCasaDoradaGUI {
 
 	@FXML
 	private TextField COobservations;
+	
+	@FXML
+    private ComboBox<String> productSize;
+
+    @FXML
+    private ComboBox<String> productIngredients;
+
+    @FXML
+    private ComboBox<String> productTypes;
 
 	@FXML
 	private ChoiceBox<String> COaddProduct;
@@ -60,12 +70,6 @@ public class LaCasaDoradaGUI {
 	@FXML
 	private ChoiceBox<String> COaddQuantity;
 	
-	@FXML
-	private ChoiceBox<String> productTypes;
-
-	@FXML
-	private ChoiceBox<String> productIngredients;
-    
 	@FXML
 	private TextField productName;
 
