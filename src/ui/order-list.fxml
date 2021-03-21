@@ -21,39 +21,39 @@
                   <Image url="@../../../TI1-la-casa-dorada/src/ui/2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="269.0" layoutY="22.0" text="Order's list" textFill="WHITE">
+            <Label layoutX="214.0" layoutY="22.0" prefHeight="45.0" prefWidth="274.0" text="Lista de ordenes" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
             <TableView fx:id="tbOrderList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNumberOrder" prefWidth="70.0" text="Number" />
-                  <TableColumn fx:id="txStatusOrder" prefWidth="58.0" text="Status" />
-                  <TableColumn fx:id="tcProductsOrder" prefWidth="67.0" text="Products" />
-                  <TableColumn fx:id="tcQuantityOrder" prefWidth="70.0" text="Quantity" />
-                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="83.0" text="Employee" />
-                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="84.0" text="Date" />
-                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="104.0" text="Hour" />
-                  <TableColumn fx:id="tcObservationsOrder" maxWidth="120.0" minWidth="0.0" prefWidth="212.0" text="Observations" />
+                  <TableColumn fx:id="tcNumberOrder" prefWidth="70.0" text="#" />
+                  <TableColumn fx:id="txStatusOrder" prefWidth="58.0" text="Estado" />
+                  <TableColumn fx:id="tcProductsOrder" prefWidth="67.0" text="Productos" />
+                  <TableColumn fx:id="tcQuantityOrder" prefWidth="70.0" text="Cantidad" />
+                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="83.0" text="Empleado" />
+                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="84.0" text="Fecha" />
+                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="104.0" text="Hora" />
+                  <TableColumn fx:id="tcObservationsOrder" maxWidth="120.0" minWidth="0.0" prefWidth="212.0" text="Observaciones" />
                </columns>
             </TableView>
-            <Button layoutX="53.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="53.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="513.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
+            <Label layoutX="492.0" layoutY="341.0" prefHeight="17.0" prefWidth="156.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="219.0" layoutY="333.0" prefHeight="27.0" prefWidth="109.0" style="-fx-background-color: white;" text="Select new status:">
+            <Label layoutX="180.0" layoutY="333.0" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: white;" text="Seleccione nuevo estado:">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <MenuButton layoutX="335.0" layoutY="331.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Select">
+            <MenuButton layoutX="335.0" layoutY="331.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Seleccionar">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#statusRequested" text="Requested" />
                 <MenuItem mnemonicParsing="false" onAction="#statusProcessed" text="Processed" />

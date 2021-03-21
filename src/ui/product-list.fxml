@@ -19,42 +19,42 @@
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="242.0" layoutY="23.0" prefHeight="45.0" prefWidth="228.0" text="Product's list" textFill="WHITE">
+            <Label layoutX="174.0" layoutY="23.0" prefHeight="45.0" prefWidth="296.0" text="Lista de productos" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
             <TableView fx:id="tbProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNameList" prefWidth="102.0" text="Name" />
-                  <TableColumn fx:id="tcTypeList" prefWidth="97.0" text="Type" />
-                  <TableColumn fx:id="tcIngredientsList" maxWidth="275.0" prefWidth="126.0" text="Ingredients" />
-                  <TableColumn fx:id="tcSizeList" maxWidth="150.0" prefWidth="117.0" text="Size" />
-                  <TableColumn fx:id="tcPriceList" maxWidth="151.0" prefWidth="112.0" text="Price" />
-                  <TableColumn fx:id="tcStatusList" maxWidth="134.0" prefWidth="121.0" text="Status" />
+                  <TableColumn fx:id="tcNameList" prefWidth="102.0" text="Nombre" />
+                  <TableColumn fx:id="tcTypeList" prefWidth="97.0" text="Tipo" />
+                  <TableColumn fx:id="tcIngredientsList" maxWidth="275.0" prefWidth="126.0" text="Ingredientes" />
+                  <TableColumn fx:id="tcSizeList" maxWidth="150.0" prefWidth="117.0" text="Tamaño" />
+                  <TableColumn fx:id="tcPriceList" maxWidth="151.0" prefWidth="112.0" text="Precio" />
+                  <TableColumn fx:id="tcStatusList" maxWidth="134.0" prefWidth="121.0" text="Estado" />
                </columns>
             </TableView>
-            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="507.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
+            <Label layoutX="490.0" layoutY="341.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="195.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="91.0" text="DELETE">
+            <Button layoutX="186.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="91.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="293.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDisableOpt" prefHeight="28.0" prefWidth="88.0" text="DISABLE">
+            <Button layoutX="286.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="389.0" layoutY="329.0" mnemonicParsing="false" onAction="#productEnableOpt" prefHeight="28.0" prefWidth="87.0" text="ENABLE">
+            <Button layoutX="389.0" layoutY="329.0" mnemonicParsing="false" onAction="#productEnableOpt" prefHeight="28.0" prefWidth="87.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

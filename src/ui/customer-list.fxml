@@ -19,43 +19,43 @@
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="223.0" layoutY="16.0" text="Customer's list" textFill="WHITE">
+            <Label layoutX="208.0" layoutY="16.0" prefHeight="45.0" prefWidth="265.0" text="Lista de clientes" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
             <TableView fx:id="tbCustomerList" layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
               <columns>
-                <TableColumn fx:id="tcFirstNameCustomer" prefWidth="89.0" text="First name" />
-                <TableColumn fx:id="tcLastNameCustomer" prefWidth="90.0" text="Last name" />
+                <TableColumn fx:id="tcFirstNameCustomer" prefWidth="89.0" text="Nombre" />
+                <TableColumn fx:id="tcLastNameCustomer" prefWidth="90.0" text="Apellido" />
                   <TableColumn fx:id="tcIdCustomer" prefWidth="77.0" text="ID" />
-                  <TableColumn fx:id="tcAddressCustomer" prefWidth="132.0" text="Address" />
-                  <TableColumn fx:id="tcPhoneNumberCustomer" minWidth="0.0" prefWidth="92.0" text="Phone number" />
-                  <TableColumn fx:id="tcObservationsCustomer" maxWidth="199.0" prefWidth="86.0" text="Observations" />
-                  <TableColumn fx:id="tcStatusCustomer" maxWidth="199.0" prefWidth="100.0" text="Status" />
+                  <TableColumn fx:id="tcAddressCustomer" prefWidth="132.0" text="Dirección" />
+                  <TableColumn fx:id="tcPhoneNumberCustomer" minWidth="0.0" prefWidth="92.0" text="Telefono" />
+                  <TableColumn fx:id="tcObservationsCustomer" maxWidth="199.0" prefWidth="86.0" text="Observaciones" />
+                  <TableColumn fx:id="tcStatusCustomer" maxWidth="199.0" prefWidth="100.0" text="Estado" />
               </columns>
             </TableView>
-            <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub3GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub3GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="513.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
+            <Label layoutX="496.0" layoutY="341.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="195.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerDeleteOpt" prefHeight="28.0" prefWidth="80.0" text="DELETE">
+            <Button layoutX="187.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerDeleteOpt" prefHeight="28.0" prefWidth="80.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="283.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerDisableOpt" prefHeight="28.0" prefWidth="86.0" text="DISABLE">
+            <Button layoutX="274.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="378.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerEnableOpt" prefHeight="29.0" prefWidth="89.0" text="ENABLE">
+            <Button layoutX="378.0" layoutY="332.0" mnemonicParsing="false" onAction="#customerEnableOpt" prefHeight="29.0" prefWidth="89.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
