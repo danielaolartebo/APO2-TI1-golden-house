@@ -47,6 +47,7 @@
                         <MenuButton mnemonicParsing="false">
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#menuCreateCustomer" text="Crear" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateCustomer" text="Actualizar/Eliminar/Deshabilitar" />
                            </items>
                         </MenuButton>
                      </graphic>
