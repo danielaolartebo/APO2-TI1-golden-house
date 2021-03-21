@@ -661,8 +661,8 @@ public class LaCasaDoradaGUI {
     		COaddProduct.getItems().add(laCasaDorada.getOrders().get(i).getProduct().getName());
     		}
     	
-    	for(int i=0; i<laCasaDorada.getClients().size();i++) {
-         	COcustomerName.getItems().add(laCasaDorada.getClients().get(i).getFirstName());	
+    	for(int j=0; j<laCasaDorada.getClients().size();j++) {
+         	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
          	}
     	
         for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
