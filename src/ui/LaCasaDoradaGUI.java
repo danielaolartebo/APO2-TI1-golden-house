@@ -994,6 +994,9 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getEmployees().remove(ea);
     		this.tbEmployeeList.refresh();
     		employeeWasDeletedAlert();
+    		ObservableList<EmployeeAccount> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
+            tbEmployeeList.setItems(observableList);
     	}
     }
 
@@ -1200,6 +1203,7 @@ public class LaCasaDoradaGUI {
     	if(optIngredient.isSelected()){
     		option = "Ingredient";
     		laCasaDorada.addIngredient(ingredientName);
+    		createIngredientName.clear();
     		if (ingredientName.isEmpty()) {
     			validationErrorAlert();
     		}else {
@@ -1208,6 +1212,7 @@ public class LaCasaDoradaGUI {
     	}else if(optTypeOfProduct.isSelected()) {
     		option = "Type of product";
     		laCasaDorada.addTypeOfProduct(typeName);
+    		createTypeOfProduct.clear();
     		if (typeName.isEmpty()) {
     			validationErrorAlert();
     		}else {
