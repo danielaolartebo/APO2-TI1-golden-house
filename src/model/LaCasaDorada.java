@@ -47,8 +47,8 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, String priceOfProduct) {
-		products.add(new RestaurantProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct));
+	public void addProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) {
+		products.add(new RestaurantProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct));
 	}
 	
 	public void addIngredient(String ingredientName) {
@@ -63,8 +63,8 @@ public class LaCasaDorada {
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, String observations) {
-		orders.add(new Order(client, product, employee, code, time, observations));
+	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, double quantity, String observations) {
+		orders.add(new Order(client, product, employee, code, time, quantity, observations));
 	}
 	
 	public List<ClientAccount> getClients(){
@@ -128,7 +128,7 @@ public class LaCasaDorada {
 		boolean validate=false;
 		for(int i=0; i<products.size() && !validate;i++) {
 			RestaurantProduct product = products.get(i);
-			if(product.getProductName().equals(productName)) {
+			if(product.getName().equals(productName)) {
 				validate=true;
 			}
 		}
@@ -195,8 +195,8 @@ public class LaCasaDorada {
 		String line = br.readLine();
 		while(line!=null) {
 			String[] parts = line.split(",");
-			double priceOfProduct = Double.parseDouble(parts[3]);
-			addProduct(parts[0], parts[1], parts[2], parts[3], parts[4]);
+			double priceOfProduct = Double.parseDouble(parts[4]);
+			addProduct(parts[0], parts[1], parts[2], parts[3], priceOfProduct);
 			line = br.readLine();
 		}
 		br.close();
@@ -214,9 +214,41 @@ public class LaCasaDorada {
 	public void exportProductData(String fileName) throws FileNotFoundException{
         PrintWriter pw = new PrintWriter(fileName);
         for(RestaurantProduct prod : products){
-          pw.println(prod.getProductName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
+          pw.println(prod.getName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
         }
         pw.close();
     }
+	
+	public ClientAccount findClient(String firstName, String lastName, String id){
+		ClientAccount tempName=null;
+		for (int i=0; i < clients.size();i++) {
+			if(clients.get(i).getFirstName().equals(firstName) && clients.get(i).getLastName().equals(lastName) && clients.get(i).getId().equals(id)) {
+				tempName = clients.get(i);
+			}
+		}
+		return tempName;
+	}
+	
+	public EmployeeAccount findEmployee(String firstName){
+		EmployeeAccount tempName=null;
+		for (int i=0; i < employees.size();i++) {
+			if(employees.get(i).getFirstName().equals(firstName)) {
+				tempName = employees.get(i);
+			}
+		}
+		return tempName;
+	}
+	
+	public RestaurantProduct findProduct(String name){
+		RestaurantProduct tempProduct=null;
+		for (int i=0; i < products.size();i++) {
+			if(products.get(i).getName().equals(name)) {
+				tempProduct = products.get(i);
+			}
+		}
+		return tempProduct;
+	}
+	
+
 	
 }
