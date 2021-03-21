@@ -63,8 +63,8 @@ public class LaCasaDorada {
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
-		orders.add(new Order(client, employee, code, time, observations, order));
+	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, String observations) {
+		orders.add(new Order(client, product, employee, code, time, observations));
 	}
 	
 	public List<ClientAccount> getClients(){

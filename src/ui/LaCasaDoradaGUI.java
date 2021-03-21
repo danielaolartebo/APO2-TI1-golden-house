@@ -2,6 +2,8 @@ package ui;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
+
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
@@ -619,9 +621,47 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void COcreateOrder(ActionEvent event) throws IOException{
-
+    	/*String client = COcustomerName.getSelectionModel().getSelectedItem();
+    	String product = COaddProduct.getSelectionModel().getSelectedItem();
+    	String employee = COemployeeName.getSelectionModel().getSelectedItem();
+    	String code;
+    	Date time;
+    	String observations = COobservations.getText();
+    	
+    	
+    	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty()) {
+        	validationErrorAlert();
+        }else{
+        	productCreatedAlert();
+        }
+    	
+    	laCasaDorada.addOrder(client, product, employee, code, time, observations);*/
     }
     
+    public int generateCode() {
+    	return 1000000+1;
+    }
+    
+    public void setUpAddOrder() {
+    	for(int i=0; i<laCasaDorada.getOrders().size();i++) {
+    		COaddProduct.getItems().add(laCasaDorada.getOrders().get(i).getProduct().getProductName());
+    		
+    	}
+    }
+    	
+    public void setUpAddCustomer() {
+       	for(int i=0; i<laCasaDorada.getClients().size();i++) {
+       		COcustomerName.getItems().add(laCasaDorada.getClients().get(i).getFirstName());
+       		
+       	}
+    }
+       	
+     public void setUpAddEmployee() {
+         for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
+           	COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
+           		
+        }   	
+    }
     /*
      **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
      */

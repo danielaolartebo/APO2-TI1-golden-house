@@ -8,13 +8,15 @@ public class Order {
 
 	private ClientAccount client;
 	private EmployeeAccount employee;
+	private RestaurantProduct product;
 	private String code;
 	private Date time;
 	private String observations;
 	private Status order;
 	
-	public Order(ClientAccount client, EmployeeAccount employee, String code, Date time, String observations, Status order) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, String observations) {
 		this.setClient(client);
+		this.setProduct(product);
 		this.setEmployee(employee);
 		this.setCode(code);
 		this.setTime(time);
@@ -68,6 +70,14 @@ public class Order {
 	
 	public void setOrderStatus(Status order) {
 		this.order=order;
+	}
+
+	public RestaurantProduct getProduct() {
+		return product;
+	}
+
+	public void setProduct(RestaurantProduct product) {
+		this.product = product;
 	}
 	
 }
