@@ -47,7 +47,7 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String name, String typeOfProduct, String sizeOfProduct, double priceOfProduct, String ingredientsOfProduct) {
+	public void addProduct(String name, String typeOfProduct, String sizeOfProduct, String priceOfProduct, String ingredientsOfProduct) {
 		products.add(new RestaurantProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct));
 	}
 	
@@ -196,7 +196,7 @@ public class LaCasaDorada {
 		while(line!=null) {
 			String[] parts = line.split(",");
 			double priceOfProduct = Double.parseDouble(parts[3]);
-			addProduct(parts[0], parts[1], parts[2], priceOfProduct, parts[4]);
+			addProduct(parts[0], parts[1], parts[2], parts[3], parts[4]);
 			line = br.readLine();
 		}
 		br.close();

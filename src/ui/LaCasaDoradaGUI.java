@@ -258,6 +258,9 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TableColumn<RestaurantProduct, String> tcPriceList;
+    
+    @FXML
+    private TableColumn<RestaurantProduct, String> tcIngredientsList;
 
 
 
@@ -321,8 +324,6 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableColumn<RestaurantTypeOfProduct, String> tcTypeOfProductStatus;
     
-    @FXML
-    private TableColumn<RestaurantTypeOfProduct, String> tcIngredientsList;
 
     
     /*
@@ -843,9 +844,62 @@ public class LaCasaDoradaGUI {
         observableList = FXCollections.observableArrayList(laCasaDorada.getProducts());
         tbProductList.setItems(observableList);
         
-        tcNameList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productName"));
-        tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productType"));
-        //******COMPLETAR
+        tcNameList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("name"));
+        tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("typeOfProduct"));
+        tcIngredientsList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("ingredientsOfProduct"));
+        tcSizeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("sizeOfProduct"));
+        tcPriceList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("priceOfProduct"));
+        tcStatusList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productStatus"));
+        
+        tcNameList.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantProduct ea = data.getRowValue();
+            ea.setProductName(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcTypeList.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantProduct ea = data.getRowValue();
+            ea.setTypeOfProduct(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcIngredientsList.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantProduct ea = data.getRowValue();
+            ea.setIngredientsOfProduct(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcSizeList.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantProduct ea = data.getRowValue();
+            ea.setSizeOfProduct(data.getNewValue());
+
+            System.out.println(ea);
+        });
+        
+        tcPriceList.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantProduct ea = data.getRowValue();
+            ea.setPriceOfProduct(data.getNewValue());
+
+            System.out.println(ea);
+        });
     }
     
     public void loadProductTable(ActionEvent event) throws IOException {
@@ -863,7 +917,10 @@ public class LaCasaDoradaGUI {
     	
     	if(pr != null) {
     		this.tcNameList.setText(pr.getProductName());
-    		// ****COMPLETAR*****
+    		this.tcTypeList.setText(pr.getTypeOfProduct());
+    		this.tcIngredientsList.setText(pr.getIngredientsOfProduct());
+    		this.tcSizeList.setText(pr.getSizeOfProduct());
+    		this.tcPriceList.setText(pr.getPriceOfProduct());
     	}	
     }
     
@@ -1238,10 +1295,10 @@ public class LaCasaDoradaGUI {
     	String name = productName.getText();
     	String typeOfProduct = productTypes.getSelectionModel().getSelectedItem();
     	String sizeOfProduct = productSize.getSelectionModel().getSelectedItem();
-    	double priceOfProduct = Double.parseDouble(productPrice.getText());
+    	String priceOfProduct = productPrice.getText();
     	String ingredientsOfProduct = productIngredients.getValue().toString();
     	
-    	if (name.isEmpty() || typeOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct==0 || ingredientsOfProduct.isEmpty()) {
+    	if (name.isEmpty() || typeOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct.isEmpty() || ingredientsOfProduct.isEmpty()) {
         	validationErrorAlert();
         }else{
         	productCreatedAlert();

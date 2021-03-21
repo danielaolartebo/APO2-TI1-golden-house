@@ -7,11 +7,11 @@ public class RestaurantProduct {
 	private String name;
 	private String typeOfProduct;
 	private String sizeOfProduct;
-	private double priceOfProduct;
+	private String priceOfProduct;
 	private String ingredientsOfProduct;
 	private MembersStatus productStatus;
 	
-	public RestaurantProduct(String name, String typeOfProduct, String sizeOfProduct, double priceOfProduct, String ingredientsOfProduct) {
+	public RestaurantProduct(String name, String typeOfProduct, String sizeOfProduct, String priceOfProduct, String ingredientsOfProduct) {
 		this.name = name;	
 		this.productStatus=MembersStatus.ACTIVE;
 	}
@@ -28,6 +28,10 @@ public class RestaurantProduct {
 		return typeOfProduct;
 	}
 	
+	public void setTypeOfProduct(String typeOfProduct) {
+		this.typeOfProduct=typeOfProduct;
+	}
+	
 	public String getSizeOfProduct() {
 		return sizeOfProduct;
 	}
@@ -37,11 +41,11 @@ public class RestaurantProduct {
 	}
 	
 	
-	public double getPriceOfProduct() {
+	public String getPriceOfProduct() {
 		return priceOfProduct;
 	}
 	
-	public void setPriceOfProduct(double priceOfProduct) {
+	public void setPriceOfProduct(String priceOfProduct) {
 		this.priceOfProduct=priceOfProduct;
 	}
 	
