@@ -18,39 +18,39 @@
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="123.0" layoutY="14.0" text="Create employee account" textFill="WHITE">
+            <Label layoutX="123.0" layoutY="14.0" text="Crear cuenta de empleados" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <Label layoutX="56.0" layoutY="80.0" prefHeight="34.0" prefWidth="113.0" text="Username:" textFill="WHITE">
+            <Label layoutX="77.0" layoutY="80.0" prefHeight="34.0" prefWidth="92.0" text="Usuario:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="52.0" layoutY="123.0" prefHeight="34.0" prefWidth="113.0" text=" Password:" textFill="WHITE">
+            <Label layoutX="45.0" layoutY="123.0" prefHeight="34.0" prefWidth="120.0" text="Contraseña:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
             <TextField fx:id="txtUsername" layoutX="206.0" layoutY="85.0" prefHeight="25.0" prefWidth="229.0" />
             <TextField fx:id="txtPassword" layoutX="206.0" layoutY="128.0" prefHeight="25.0" prefWidth="229.0" />
-            <Button layoutX="271.0" layoutY="300.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="99.0" text="CREATE">
+            <Button layoutX="271.0" layoutY="300.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="99.0" text="CREAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="56.0" layoutY="169.0" prefHeight="34.0" prefWidth="113.0" text="First name:" textFill="WHITE">
+            <Label layoutX="73.0" layoutY="169.0" prefHeight="34.0" prefWidth="96.0" text="Nombre:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="208.0" prefHeight="34.0" prefWidth="102.0" text="Last name:" textFill="WHITE">
+            <Label layoutX="69.0" layoutY="208.0" prefHeight="34.0" prefWidth="91.0" text="Apellido:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
