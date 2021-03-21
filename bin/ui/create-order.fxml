@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,7 +16,7 @@
    <center>
       <Pane prefHeight="357.0" prefWidth="414.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="292.0" fitWidth="293.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="281.0" fitWidth="258.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(5).png" />
                </image>
@@ -39,6 +41,12 @@
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
+            <TableView fx:id="miniTbCreateOrder" layoutX="271.0" layoutY="58.0" prefHeight="122.0" prefWidth="150.0" style="-fx-background-color: black;">
+              <columns>
+                <TableColumn fx:id="miniTcProduct" prefWidth="91.0" text="Product" />
+                <TableColumn fx:id="miniTcQuantity" prefWidth="59.0" text="Quantity" />
+              </columns>
+            </TableView>
          </children>
       </Pane>
    </center>
