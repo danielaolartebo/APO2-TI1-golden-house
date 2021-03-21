@@ -355,9 +355,9 @@ public class LaCasaDoradaGUI {
     @FXML
     public void showAbout(ActionEvent event) {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("La Casa Dorada Menu");
+	    alert.setTitle("La Casa Dorada ");
 	    alert.setHeaderText("Credits");
-	    alert.setContentText("Daniela Olarte \nAlgorithms II");
+	    alert.setContentText("Daniela Olarte y Santiago Gutierrez \nAlgorithms II");
 	    alert.showAndWait();
     }
     
