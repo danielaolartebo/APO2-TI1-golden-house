@@ -47,7 +47,7 @@ public class LaCasaDorada {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
 	}
 	
-	public void addProduct(String name, String typeOfProduct, String sizeOfProduct, String priceOfProduct, String ingredientsOfProduct) {
+	public void addProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, String priceOfProduct) {
 		products.add(new RestaurantProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct));
 	}
 	

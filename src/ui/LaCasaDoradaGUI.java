@@ -68,12 +68,9 @@ public class LaCasaDoradaGUI {
 	
 	@FXML
 	private TextField productPrice;
-
-	@FXML
-	private RadioButton optSize;
 	
 	@FXML
-    private ComboBox<String> productSize;
+    private TextField productSize;
 
     @FXML
     private ComboBox<String> productIngredients;
@@ -83,12 +80,6 @@ public class LaCasaDoradaGUI {
     
 	@FXML
 	private TextField productName;
-
-	@FXML
-	private TextField productPersonalPrice;
-
-	@FXML
-	private TextField productSharePrice;
 
 	@FXML
 	private SplitMenuButton productType;
@@ -1294,17 +1285,18 @@ public class LaCasaDoradaGUI {
     public void productCreateProduct(ActionEvent event) throws IOException{
     	String name = productName.getText();
     	String typeOfProduct = productTypes.getSelectionModel().getSelectedItem();
-    	String sizeOfProduct = productSize.getSelectionModel().getSelectedItem();
+    	String ingredientsOfProduct = productIngredients.getSelectionModel().getSelectedItem();
+    	String sizeOfProduct = productSize.getText();
     	String priceOfProduct = productPrice.getText();
-    	String ingredientsOfProduct = productIngredients.getValue().toString();
     	
-    	if (name.isEmpty() || typeOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct.isEmpty() || ingredientsOfProduct.isEmpty()) {
+    	
+    	if (name.isEmpty() || typeOfProduct.isEmpty() || ingredientsOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct.isEmpty()) {
         	validationErrorAlert();
         }else{
         	productCreatedAlert();
         }
     	
-    	laCasaDorada.addProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct);
+    	laCasaDorada.addProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct);
     }
     
     public void setUpAddIngredientandTypeOfProduct() {

@@ -11,8 +11,12 @@ public class RestaurantProduct {
 	private String ingredientsOfProduct;
 	private MembersStatus productStatus;
 	
-	public RestaurantProduct(String name, String typeOfProduct, String sizeOfProduct, String priceOfProduct, String ingredientsOfProduct) {
-		this.name = name;	
+	public RestaurantProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, String priceOfProduct) {
+		this.name = name;
+		this.typeOfProduct=typeOfProduct;
+		this.ingredientsOfProduct=ingredientsOfProduct;
+		this.sizeOfProduct=sizeOfProduct;
+		this.priceOfProduct=priceOfProduct;
 		this.productStatus=MembersStatus.ACTIVE;
 	}
 
