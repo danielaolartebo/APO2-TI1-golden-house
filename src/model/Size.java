@@ -14,4 +14,8 @@ public class Size {
 	public void setSizeName(String sizeName) {
 		this.sizeName=sizeName;
 	}
+	
+	public String toString() {
+		return sizeName;
+	}
 }

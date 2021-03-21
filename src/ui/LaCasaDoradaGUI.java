@@ -1,6 +1,5 @@
 package ui;
 
-import javafx.event.EventHandler;
 import java.io.File;
 import java.io.IOException;
 import javafx.scene.layout.BorderPane;
@@ -9,6 +8,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -20,7 +20,6 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
@@ -34,6 +33,7 @@ import model.Order;
 import model.RestaurantIngredient;
 import model.RestaurantProduct;
 import model.RestaurantTypeOfProduct;
+import model.Status;
 
 public class LaCasaDoradaGUI {
 	
@@ -43,19 +43,34 @@ public class LaCasaDoradaGUI {
 	private LaCasaDorada laCasaDorada;
 	
 	@FXML
+    private ToggleGroup createoption;
+	
+	@FXML
+    private TextField createTypeOfProduct;    
+	
+	@FXML
+    private ChoiceBox<String> orderNewStatus;
+	
+	@FXML
+	private TextField COobservations;
+
+	@FXML
+	private TextField COaddQuantity;
+
+	@FXML
+	private ComboBox<String> COaddProduct;
+
+	@FXML
+	private ComboBox<String> COcustomerName;
+
+	@FXML
+	private ComboBox<String> COemployeeName;
+	
+	@FXML
 	private TextField productPrice;
 
 	@FXML
 	private RadioButton optSize;
-	
-	@FXML
-	private TextField COcustomerName;
-
-	@FXML
-	private TextField COemployeeName;
-
-	@FXML
-	private TextField COobservations;
 	
 	@FXML
     private ComboBox<String> productSize;
@@ -65,13 +80,7 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private ComboBox<String> productTypes;
-
-	@FXML
-	private ChoiceBox<String> COaddProduct;
-
-	@FXML
-	private ChoiceBox<String> COaddQuantity;
-	
+    
 	@FXML
 	private TextField productName;
 
@@ -477,6 +486,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createProductPane);
+    	
+    	setUpAddIngredientandTypeOfProduct();
     }
 
     @FXML
@@ -692,6 +703,19 @@ public class LaCasaDoradaGUI {
     		customerWasDisableAlert();
     	}
     }
+	
+	@FXML
+    public void customerEnableOpt(ActionEvent event) throws IOException{
+		ClientAccount ca = this.tbCustomerList.getSelectionModel().getSelectedItem();
+    	
+    	if(ca == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ca.setCustomerStatus(MembersStatus.ACTIVE);
+    		this.tbCustomerList.refresh();
+    		itemWasEnableAlert();
+    	}
+    }
  
     
     /*
@@ -749,17 +773,57 @@ public class LaCasaDoradaGUI {
     }
     
     @FXML
-    public void orderUpdateStatus(ActionEvent event) throws IOException{
+    public void statusDelivered(ActionEvent event) throws IOException{
     	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
     	
     	if(or == null) {
     		selectAnOptionAlert();
     	}else{
-    		or.setOrderStatus(MembersStatus.INACTIVE);
+    		or.setOrderStatus(Status.DELIVERED);
     		this.tbCustomerList.refresh();
     		orderWasUpdated();
     	}
     }
+
+    @FXML
+    public void statusProcessed(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.PROCESSED);
+    		this.tbCustomerList.refresh();
+    		orderWasUpdated();
+    	}
+    }
+
+    @FXML
+    public void statusRequested(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.REQUESTED);
+    		this.tbCustomerList.refresh();
+    		orderWasUpdated();
+    	}
+    }
+    
+    @FXML
+    public void statusSent(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.SENT);
+    		this.tbCustomerList.refresh();
+    		orderWasUpdated();
+    	}
+    }
+
 
     
     /*
@@ -828,6 +892,19 @@ public class LaCasaDoradaGUI {
     		itemWasDisableAlert();
     	}
     }
+	
+	 @FXML
+	 public void productEnableOpt(ActionEvent event) throws IOException{
+		 RestaurantProduct pr = this.tbProductList.getSelectionModel().getSelectedItem();
+	    	
+	    	if(pr == null) {
+	    		selectAnOptionAlert();
+	    	}else{
+	    		pr.setProductStatus(MembersStatus.ACTIVE);
+	    		this.tbProductList.refresh();
+	    		itemWasEnableAlert();
+	    	}
+	 }
     
     /*
      **************************************** SCREEN EMPLOYEE LIST (employee-list.fxml) *******************************************************
@@ -856,8 +933,8 @@ public class LaCasaDoradaGUI {
         tcEmployeeId.setCellFactory(TextFieldTableCell.forTableColumn());
         
         tcEmployeeFirstName.setOnEditCommit(data -> {
-            System.out.println("Nuevo Nombre: " +  data.getNewValue());
-            System.out.println("Antiguo Nombre: " + data.getOldValue());
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
 
             EmployeeAccount ea = data.getRowValue();
             ea.setFirstName(data.getNewValue());
@@ -866,8 +943,8 @@ public class LaCasaDoradaGUI {
         });
         
         tcEmployeeLastName.setOnEditCommit(data -> {
-            System.out.println("Nuevo Nombre: " +  data.getNewValue());
-            System.out.println("Antiguo Nombre: " + data.getOldValue());
+            System.out.println("New last name: " +  data.getNewValue());
+            System.out.println("Old last name: " + data.getOldValue());
 
             EmployeeAccount ea = data.getRowValue();
             ea.setLastName(data.getNewValue());
@@ -876,8 +953,8 @@ public class LaCasaDoradaGUI {
         });
         
         tcEmployeeId.setOnEditCommit(data -> {
-            System.out.println("Nuevo Nombre: " +  data.getNewValue());
-            System.out.println("Antiguo Nombre: " + data.getOldValue());
+            System.out.println("New ID: " +  data.getNewValue());
+            System.out.println("Old ID: " + data.getOldValue());
 
             EmployeeAccount ea = data.getRowValue();
             ea.setId(data.getNewValue());
@@ -908,7 +985,7 @@ public class LaCasaDoradaGUI {
     }
     
     @FXML
-    public void employeeDeleteOpt(ActionEvent event) {
+    public void employeeDeleteOpt(ActionEvent event) throws IOException{
     	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
     	
     	if(ea == null) {
@@ -921,7 +998,7 @@ public class LaCasaDoradaGUI {
     }
 
     @FXML
-    public void employeeDisableOpt(ActionEvent event) {
+    public void employeeDisableOpt(ActionEvent event) throws IOException{
     	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
     	
     	if(ea == null) {
@@ -932,6 +1009,20 @@ public class LaCasaDoradaGUI {
     		employeeWasDisableAlert();
     	}
     }
+    
+    @FXML
+    public void employeeEnableOpt(ActionEvent event) throws IOException{
+    	EmployeeAccount ea = this.tbEmployeeList.getSelectionModel().getSelectedItem();
+    	
+    	if(ea == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ea.setEmployeeStatus(MembersStatus.ACTIVE);
+    		this.tbEmployeeList.refresh();
+    		itemWasEnableAlert();
+    	}
+    }
+
     
     
     /*
@@ -996,6 +1087,19 @@ public class LaCasaDoradaGUI {
     		ri.setIngredientStatus(MembersStatus.INACTIVE);
     		this.tbIngredientList.refresh();
     		itemWasDisableAlert();
+    	}
+    }
+	
+	@FXML
+    public void ingredientEnableOpt(ActionEvent event) throws IOException{
+		RestaurantIngredient ri = this.tbIngredientList.getSelectionModel().getSelectedItem();
+    	
+    	if(ri == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		ri.setIngredientStatus(MembersStatus.ACTIVE);
+    		this.tbIngredientList.refresh();
+    		itemWasEnableAlert();
     	}
     }
     
@@ -1063,9 +1167,22 @@ public class LaCasaDoradaGUI {
     		itemWasDisableAlert();
     	}
     }
+    
+    @FXML
+    public void typeOfProductEnableOpt(ActionEvent event) throws IOException{
+    	RestaurantTypeOfProduct tp = this.tbTypeOfProductList.getSelectionModel().getSelectedItem();
+    	
+    	if(tp == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		tp.setTypeOfProductStatus(MembersStatus.ACTIVE);
+    		this.tbTypeOfProductList.refresh();
+    		 itemWasEnableAlert();
+    	}
+    }
    
     /*
-     **************** SCREEN CREATE INGREDIENT OR TYPE OF PRODUCT (create-ingredient-typeofproduct.fxml) *****************************************
+     ************************* SCREEN CREATE INGREDIENT OR TYPE OF PRODUCT (create-ingredient-typeofproduct.fxml) *****************************************
      */
     @FXML
     public void sub8GoBack(ActionEvent event) throws IOException {
@@ -1077,24 +1194,25 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void optCreateIngredientTypeOfProduct(ActionEvent event) throws IOException{
-    	String name = createIngredientName.getText();
-    	System.out.println(name);
-    	
+    	String ingredientName = createIngredientName.getText();
+    	String typeName = createTypeOfProduct.getText();
     	String option = "";
     	if(optIngredient.isSelected()){
     		option = "Ingredient";
-    		laCasaDorada.addIngredient(name);
-    		ingredientCreatedAlert();
-    		
-    		
+    		laCasaDorada.addIngredient(ingredientName);
+    		if (ingredientName.isEmpty()) {
+    			validationErrorAlert();
+    		}else {
+    			ingredientCreatedAlert();
+    		}
     	}else if(optTypeOfProduct.isSelected()) {
     		option = "Type of product";
-    		laCasaDorada.addTypeOfProduct(name);
-    		typeOfProductCreatedAlert();
-    	}else if(optSize.isSelected()) {
-    		option = "Size";
-    		laCasaDorada.addSize(name);
-    		sizeCreatedAlert();
+    		laCasaDorada.addTypeOfProduct(typeName);
+    		if (typeName.isEmpty()) {
+    			validationErrorAlert();
+    		}else {
+    			typeOfProductCreatedAlert();
+    		}
     	}
     	System.out.println(option);
     }
@@ -1113,56 +1231,49 @@ public class LaCasaDoradaGUI {
     @FXML
     public void productCreateProduct(ActionEvent event) throws IOException{
     	String name = productName.getText();
-    	System.out.println(name);
+    	String typeOfProduct = productTypes.getSelectionModel().getSelectedItem();
+    	String sizeOfProduct = productSize.getSelectionModel().getSelectedItem();
+    	double priceOfProduct = Double.parseDouble(productPrice.getText());
+    	String ingredientsOfProduct = productIngredients.getValue().toString();
     	
-    	productTypes.getItems().add("Main dish");
-    	productTypes.getItems().add("Additions");
-    	productTypes.getItems().add("drink");
-    	String dish = "";
-    	if(productTypes != null) {
-    		dish = productTypes.getValue().toString();
-    	}
+    	if (name.isEmpty() || typeOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct==0 || ingredientsOfProduct.isEmpty()) {
+        	validationErrorAlert();
+        }else{
+        	productCreatedAlert();
+        }
     	
-    	System.out.println(dish);
-    	
-    	int personalPrice = Integer.parseInt(productPersonalPrice.getText());
-    	System.out.println(personalPrice);
-    	
-    	int sharePrice = Integer.parseInt(productSharePrice.getText());
-    	System.out.println(sharePrice);
-    	
-    	double[][] sizePrice = new double [personalPrice][sharePrice];
-    	
-    	String ingredients = "";
-    	if(productTypes != null) {
-    		ingredients = productIngredients.getValue().toString();
-    	}
-    	System.out.println(ingredients);
-    	
-    	laCasaDorada.addProduct(name, sizePrice);
-    	
-    	productCreatedAlert();
-    	
+    	laCasaDorada.addProduct(name, typeOfProduct, sizeOfProduct, priceOfProduct, ingredientsOfProduct);
     }
     
-    @FXML
-    public void createNewSize(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create-ingredient-typeofproduct.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent createIngredientTypeOfProductPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(createIngredientTypeOfProductPane);
+    public void setUpAddIngredientandTypeOfProduct() {
+    	for(int i=0; i<laCasaDorada.getIngredients().size();i++) {
+    		productTypes.getItems().add(laCasaDorada.getIngredients().get(i).getIngredientName());
+    	}
+    	for(int j=0; j<laCasaDorada.getTypeOfProducts().size();j++) {
+    		productIngredients.getItems().add(laCasaDorada.getTypeOfProducts().get(j).getTypeOfProductName());
+    	}
+    	
     }
     
     /*
-     **************** SCREEN CREATE CUSTOMER (create-customer.fxml) *************************************************************************
+     ****************************** SCREEN CREATE CUSTOMER (create-customer.fxml) *************************************************************************
      */
     
     @FXML
     public void optCreateCustomerAccount(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
+    	String firstName=txtCxFirstName.getText();
+    	String lastName=txtCxLastName.getText();
+    	String id=txtCxId.getText();
+    	String address=txtCxAddress.getText();
+    	String phoneNumber=txtCxPhoneNumber.getText();
+    	String observations=txtCxObservations.getText();
+    	
+
+    	if (firstName.isEmpty() || lastName.isEmpty() || id.isEmpty() || address.isEmpty() || phoneNumber.isEmpty() || observations.isEmpty()) {
+        	validationErrorAlert();
+        }else{
+        	customerCreatedAlert();
+        }
     }
 
     @FXML
@@ -1260,14 +1371,6 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("Ingredient has been created successfully");
 	    alert.showAndWait();
     }
-    
-    private void sizeCreatedAlert() {
-    	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Size created");
-	    alert.setHeaderText("");
-	    alert.setContentText("Size has been created successfully");
-	    alert.showAndWait();
-	}
     
     @FXML
     private void typeOfProductCreatedAlert() {
@@ -1397,7 +1500,15 @@ public class LaCasaDoradaGUI {
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Disable item");
 	    alert.setHeaderText("");
-	    alert.setContentText("item was disable successfully");
+	    alert.setContentText("Item was disable successfully");
+	    alert.showAndWait();
+	}
+    
+    private void itemWasEnableAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Disable item");
+	    alert.setHeaderText("");
+	    alert.setContentText("Item was enable successfully");
 	    alert.showAndWait();
 	}
    
