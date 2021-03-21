@@ -42,6 +42,27 @@ public class LaCasaDoradaGUI {
 	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
 	private LaCasaDorada laCasaDorada;
 	
+	// MINI TABLE VIEW IN CREATE PRODUCT SCREEN 
+	
+	@FXML
+	private TableView<RestaurantIngredient> miniTbCreateProduct;
+
+	@FXML
+	private TableColumn<RestaurantIngredient, String> miniTcIngredients;
+	
+	// MINI TABLE VIEW IN CREATE ORDER SCREEN
+
+	@FXML
+	private TableView<RestaurantProduct> miniTbCreateOrder;
+
+	@FXML
+	private TableColumn<RestaurantProduct, String> miniTcProduct;
+
+	@FXML
+	private TableColumn<RestaurantProduct, String> miniTcQuantity;
+	
+	//******************************************************
+
 	@FXML
     private ToggleGroup createoption;
 	
