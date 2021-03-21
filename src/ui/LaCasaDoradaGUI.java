@@ -596,23 +596,6 @@ public class LaCasaDoradaGUI {
     }
     
     @FXML
-    public void menuDeleteAccount(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("delete-employee-account.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent deleteEmployeeAccountPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(deleteEmployeeAccountPane);
-    }
-
-
-    @FXML
-    public void menuDisableAccount(ActionEvent event) throws IOException{
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("disable-employee-account.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent disableEmployeeAccountPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(disableEmployeeAccountPane);
-    }
-    
-    @FXML
     public void menuCreateCustomer(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create-customer.fxml"));
     	fxmlLoader.setController(this);
@@ -1432,81 +1415,81 @@ public class LaCasaDoradaGUI {
     @FXML
     private void productCreatedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Product created");
+	    alert.setTitle("Producto creado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Product has been created successfully");
+	    alert.setContentText("El producto ha sido creado satisfactoriamente");
 	    alert.showAndWait();
     }
     
     @FXML
     private void ingredientCreatedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Ingredient created");
+	    alert.setTitle("Ingrediente creado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Ingredient has been created successfully");
+	    alert.setContentText("El ingrediente ha sido creado");
 	    alert.showAndWait();
     }
     
     @FXML
     private void typeOfProductCreatedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Type of product created");
+	    alert.setTitle("Tipo de producto creado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Type of product has been created successfully");
+	    alert.setContentText("El tipo de producto ha sido creado satisfactoriamente");
 	    alert.showAndWait();
     }
     
     @FXML
     private void customerCreatedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Customer created");
+	    alert.setTitle("Cliente creado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Customer has been created successfully");
+	    alert.setContentText("El cliente ha sido creado satisfactoriamente");
 	    alert.showAndWait();
     }
     
     @FXML
     private void accountCreatedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Account created");
+	    alert.setTitle("Cuenta creada");
 	    alert.setHeaderText("");
-	    alert.setContentText("New account has been created");
+	    alert.setContentText("Nueva cuenta ha sido creada");
 	    alert.showAndWait();
     }
     
     @FXML
     private void validationErrorAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Validation error");
+	    alert.setTitle("Error de validación");
 	    alert.setHeaderText("");
-	    alert.setContentText("You must fill each field in the form");
+	    alert.setContentText("Llene todos los espacios");
 	    alert.showAndWait();
     }
     
     @FXML
     private void loginErrorAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Log in incorrect\"");
+	    alert.setTitle("Log in incorrecto");
 	    alert.setHeaderText("");
-	    alert.setContentText("The username and password given are incorrect");
+	    alert.setContentText("El usuario o contraseña no coinciden");
 	    alert.showAndWait();
 	}
     
     @FXML
     private void importErrorAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Import Employee");
+	    alert.setTitle("Import empleado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Employee data could not be imported");
+	    alert.setContentText("El empleado no pudo ser importado");
 	    alert.showAndWait();
 	}
     
     @FXML
     private void importSuccessAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Import Employee");
+	    alert.setTitle("Importar empleado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Employee data was imported successfully");
+	    alert.setContentText("El empleado fue importado satisfactoriamente");
 	    alert.showAndWait();
 	}
     
@@ -1515,75 +1498,75 @@ public class LaCasaDoradaGUI {
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Error");
 	    alert.setHeaderText("");
-	    alert.setContentText("Select an option");
+	    alert.setContentText("Seleccione una opción");
 	    alert.showAndWait();
 	}
     
     @FXML
     private void employeeWasDeletedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Delete employee");
+	    alert.setTitle("Eliminar empleado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Employee was deleted successfully");
+	    alert.setContentText("El empleado fue eliminado satisfactoriamente");
 	    alert.showAndWait();
 	}
     
     private void employeeWasDisableAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Disable employee");
+	    alert.setTitle("Deshabilitar empleado");
 	    alert.setHeaderText("");
-	    alert.setContentText("Employee was disable successfully");
+	    alert.setContentText("El empleado fue deshabilitado satisfactoriamente");
 	    alert.showAndWait();
 	}
     
     private void customerWasDeletedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Delete customer");
+	    alert.setTitle("Eliminar cliente");
 	    alert.setHeaderText("");
-	    alert.setContentText("Customer was deleted successfully");
+	    alert.setContentText("El cliente fue eliminado satisfactoriamente");
 	    alert.showAndWait();
 		
 	}
     
     private void customerWasDisableAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Disable customer");
+	    alert.setTitle("Deshabilitar cliente");
 	    alert.setHeaderText("");
-	    alert.setContentText("Customer was disable successfully");
+	    alert.setContentText("El cliente fue deshabilitado satisfactoriamente");
 	    alert.showAndWait();
 	}
     
     private void orderWasUpdated() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Updated order");
+	    alert.setTitle("Actualizar orden");
 	    alert.setHeaderText("");
-	    alert.setContentText("Order was updated");
+	    alert.setContentText("La orden fue actualizada satisfactoriamente");
 	    alert.showAndWait();
 		
 	}
     
     private void itemWasDeletedAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Delete item");
+	    alert.setTitle("Eliminar item");
 	    alert.setHeaderText("");
-	    alert.setContentText("Item was deleted");
+	    alert.setContentText("El item fue eliminado satisfactoriamente");
 	    alert.showAndWait();
 		
 	}
     
     private void itemWasDisableAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Disable item");
+	    alert.setTitle("Deshabilitar item");
 	    alert.setHeaderText("");
-	    alert.setContentText("Item was disable successfully");
+	    alert.setContentText("El item fue deshabilitado satisfactoriamente");
 	    alert.showAndWait();
 	}
     
     private void itemWasEnableAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Disable item");
+	    alert.setTitle("Habilitar item");
 	    alert.setHeaderText("");
-	    alert.setContentText("Item was enable successfully");
+	    alert.setContentText("El item fue habilitado satisfactoriamente");
 	    alert.showAndWait();
 	}
    

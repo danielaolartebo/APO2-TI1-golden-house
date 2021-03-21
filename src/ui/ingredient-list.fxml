@@ -19,38 +19,38 @@
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="212.0" layoutY="15.0" prefHeight="45.0" prefWidth="270.0" text="Ingredient's list" textFill="WHITE">
+            <Label layoutX="169.0" layoutY="14.0" prefHeight="45.0" prefWidth="330.0" text="Lista de ingredientes" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
             <TableView fx:id="tbIngredientList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcIngredientName" prefWidth="323.0" text="Name" />
-                  <TableColumn fx:id="tcIngredientStatus" maxWidth="350.0" prefWidth="987.0" text="Status" />
+                  <TableColumn fx:id="tcIngredientName" prefWidth="323.0" text="Nombre" />
+                  <TableColumn fx:id="tcIngredientStatus" maxWidth="350.0" prefWidth="987.0" text="Estado" />
                </columns>
             </TableView>
-            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub20GoBack" prefHeight="15.0" prefWidth="76.0" text="Go back">
+            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub20GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="499.0" layoutY="341.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: white;" text="Double click to update">
+            <Label layoutX="479.0" layoutY="341.0" prefHeight="17.0" prefWidth="155.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="195.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientDeleteOpt" prefHeight="28.0" prefWidth="83.0" text="DELETE">
+            <Button layoutX="188.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientDeleteOpt" prefHeight="28.0" prefWidth="83.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="288.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientDisableOpt" prefHeight="28.0" prefWidth="84.0" text="DISABLE">
+            <Button layoutX="280.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="383.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientEnableOpt" prefHeight="29.0" prefWidth="79.0" text="ENABLE">
+            <Button layoutX="383.0" layoutY="332.0" mnemonicParsing="false" onAction="#ingredientEnableOpt" prefHeight="29.0" prefWidth="79.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

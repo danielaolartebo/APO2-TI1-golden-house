@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="signInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -19,29 +18,29 @@
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="123.0" layoutY="14.0" text="Sign in to La Casa Dorada" textFill="WHITE">
+            <Label layoutX="123.0" layoutY="14.0" text="Ingresar a La Casa Dorada" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <Label layoutX="91.0" layoutY="128.0" prefHeight="34.0" prefWidth="113.0" text="Username:" textFill="WHITE">
+            <Label layoutX="113.0" layoutY="128.0" prefHeight="34.0" prefWidth="91.0" text="Usuario:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="83.0" layoutY="176.0" prefHeight="34.0" prefWidth="113.0" text=" Password:" textFill="WHITE">
+            <Label layoutX="83.0" layoutY="176.0" prefHeight="34.0" prefWidth="113.0" text="Contraseña:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
             <TextField fx:id="txtUsername" layoutX="224.0" layoutY="132.0" prefHeight="25.0" prefWidth="229.0" />
             <TextField fx:id="txtPassword" layoutX="224.0" layoutY="180.0" prefHeight="25.0" prefWidth="229.0" />
-            <Button layoutX="224.0" layoutY="280.0" mnemonicParsing="false" onAction="#optLogIn" prefHeight="39.0" prefWidth="99.0" text="LOG IN">
+            <Button layoutX="224.0" layoutY="280.0" mnemonicParsing="false" onAction="#optLogIn" prefHeight="39.0" prefWidth="99.0" text="INGRESAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="354.0" layoutY="280.0" mnemonicParsing="false" onAction="#optSignUp" prefHeight="39.0" prefWidth="99.0" text="SIGN UP">
+            <Button layoutX="354.0" layoutY="280.0" mnemonicParsing="false" onAction="#optSignUp" prefHeight="39.0" prefWidth="99.0" text="REGISTRAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -14,7 +14,7 @@
    <center>
       <Pane prefHeight="391.0" prefWidth="285.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="287.0" layoutY="268.0" mnemonicParsing="false" onAction="#optContinue" prefHeight="31.0" prefWidth="108.0" text="Continue" textAlignment="CENTER">
+            <Button layoutX="287.0" layoutY="268.0" mnemonicParsing="false" onAction="#optContinue" prefHeight="31.0" prefWidth="108.0" text="Continuar" textAlignment="CENTER">
                <font>
                   <Font name="Bodoni MT Black" size="16.0" />
                </font>
@@ -30,7 +30,7 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="Ayuda">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
             </items>
