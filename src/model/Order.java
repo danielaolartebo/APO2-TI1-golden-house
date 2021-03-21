@@ -11,15 +11,17 @@ public class Order {
 	private RestaurantProduct product;
 	private String code;
 	private Date time;
+	private double quantity;
 	private String observations;
 	private Status order;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, String observations) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, double quantity, String observations) {
 		this.setClient(client);
 		this.setProduct(product);
 		this.setEmployee(employee);
 		this.setCode(code);
 		this.setTime(time);
+		this.setQuantity(quantity);
 		setObservations(observations);
 		this.order=Status.REQUESTED;
 	}
@@ -78,6 +80,14 @@ public class Order {
 
 	public void setProduct(RestaurantProduct product) {
 		this.product = product;
+	}
+
+	public double getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(double quantity) {
+		this.quantity = quantity;
 	}
 	
 }
