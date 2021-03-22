@@ -32,7 +32,7 @@
                   <TableColumn fx:id="tcAddressCustomer" prefWidth="108.0" text="Dirección" />
                   <TableColumn fx:id="tcPhoneNumberCustomer" minWidth="0.0" prefWidth="85.0" text="Telefono" />
                   <TableColumn fx:id="tcObservationsCustomer" maxWidth="199.0" prefWidth="117.0" text="Observaciones" />
-                  <TableColumn fx:id="tcStatusCustomer" maxWidth="199.0" prefWidth="89.0" text="Estado" />
+                  <TableColumn fx:id="tcStatusCustomer" maxWidth="199.0" prefWidth="88.0" text="Estado" />
               </columns>
             </TableView>
             <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub3GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
