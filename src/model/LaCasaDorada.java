@@ -124,11 +124,11 @@ public class LaCasaDorada {
 		return validate;
 	}
 	
-	public boolean validateProduct(String productName) {
+	public boolean validateProduct(String name) {
 		boolean validate=false;
 		for(int i=0; i<products.size() && !validate;i++) {
 			RestaurantProduct product = products.get(i);
-			if(product.getName().equals(productName)) {
+			if(product.getName().equals(name)) {
 				validate=true;
 			}
 		}

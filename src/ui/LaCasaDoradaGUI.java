@@ -271,7 +271,7 @@ public class LaCasaDoradaGUI {
     private TableColumn<RestaurantProduct, String> tcSizeList;
 
     @FXML
-    private TableColumn<RestaurantProduct, String> tcPriceList;
+    private TableColumn<RestaurantProduct, Double> tcPriceList;
     
     @FXML
     private TableColumn<RestaurantProduct, String> tcIngredientsList;
@@ -409,12 +409,11 @@ public class LaCasaDoradaGUI {
     	String lastName=txtLastName.getText();    	
     	String id=txtId.getText();
     	
-    	laCasaDorada.addEmployee(userName, password, firstName, lastName, id);
-    	
     	if (userName.isEmpty() || password.isEmpty() || firstName.isEmpty() || lastName.isEmpty()) {
         	validationErrorAlert();
         }else{
         	accountCreatedAlert();
+        	laCasaDorada.addEmployee(userName, password, firstName, lastName, id);
 	    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
 	    	fxmlLoader.setController(this);
 	    	Parent signInPane = fxmlLoader.load();
@@ -425,6 +424,10 @@ public class LaCasaDoradaGUI {
     /*
      *****************************************FOURTH SCREEN MENU (menu.fxml) ************************************************************
      */
+<<<<<<< HEAD
+=======
+
+>>>>>>> ae7293a040898ebc0b79f89ae345207fd0a66190
     
     @FXML
     public void menuSingOut(ActionEvent event) throws IOException {
@@ -476,6 +479,9 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
+    	setUpAddClient();
+    	setUpAddOrder();
+    	setUpAddEmployee();
     }
     
     @FXML
@@ -563,7 +569,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent customerListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(customerListPane);
-    	initializeEmployeeTableView();
+    	initializeCustomerTableView();
     }
    
     /*
@@ -602,10 +608,11 @@ public class LaCasaDoradaGUI {
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
+        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName), code, time, quantity,observations);
         	productCreatedAlert();
         }
     	
-    	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName), code, time, quantity,observations);
+    	
     	
     }
     
@@ -614,14 +621,16 @@ public class LaCasaDoradaGUI {
     }
     
     public void setUpAddOrder() {
-    	for(int i=0; i<laCasaDorada.getOrders().size();i++) {
-    		COaddProduct.getItems().add(laCasaDorada.getOrders().get(i).getProduct().getName());
+    	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
+    		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
     		}
-    	
-    	for(int i=0; i<laCasaDorada.getClients().size();i++) {
-         	COcustomerName.getItems().add(laCasaDorada.getClients().get(i).getFirstName());	
+    }
+    public void setUpAddClient() {	
+    	for(int j=0; j<laCasaDorada.getClients().size();j++) {
+         	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
          	}
-    	
+    }	
+    public void setUpAddEmployee() {
         for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
              COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
     		}
@@ -651,6 +660,74 @@ public class LaCasaDoradaGUI {
         tcAddressCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("address"));
         tcPhoneNumberCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("phoneNumber"));
         tcObservationsCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("observations"));
+        
+        tcFirstNameCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcLastNameCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcIdCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcAddressCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcPhoneNumberCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcObservationsCustomer.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        tcFirstNameCustomer.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setFirstName(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
+        tcLastNameCustomer.setOnEditCommit(data -> {
+            System.out.println("New lastname: " +  data.getNewValue());
+            System.out.println("Old  lastname: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setLastName(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
+        tcIdCustomer.setOnEditCommit(data -> {
+            System.out.println("New ID: " +  data.getNewValue());
+            System.out.println("Old ID: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setId(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
+        tcAddressCustomer.setOnEditCommit(data -> {
+            System.out.println("New address: " +  data.getNewValue());
+            System.out.println("Old address: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setAddress(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
+        tcPhoneNumberCustomer.setOnEditCommit(data -> {
+            System.out.println("New phone number: " +  data.getNewValue());
+            System.out.println("Old phone number: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setPhoneNumber(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
+        tcObservationsCustomer.setOnEditCommit(data -> {
+            System.out.println("New observation: " +  data.getNewValue());
+            System.out.println("Old observation: " + data.getOldValue());
+
+            ClientAccount ca = data.getRowValue();
+            ca.setObservations(data.getNewValue());
+
+            System.out.println(ca);
+        });
+        
     }
     
     public void loadCustomerTable(ActionEvent event) throws IOException {
@@ -845,47 +922,52 @@ public class LaCasaDoradaGUI {
         tcTypeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("typeOfProduct"));
         tcIngredientsList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("ingredientsOfProduct"));
         tcSizeList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("sizeOfProduct"));
-        tcPriceList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("priceOfProduct"));
+        tcPriceList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, Double>("priceOfProduct"));
         tcStatusList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productStatus"));
+        
+        tcNameList.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcTypeList.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcIngredientsList.setCellFactory(TextFieldTableCell.forTableColumn());
+        tcSizeList.setCellFactory(TextFieldTableCell.forTableColumn());
         
         tcNameList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
-            RestaurantProduct ea = data.getRowValue();
-            ea.setName(data.getNewValue());
+            RestaurantProduct pr = data.getRowValue();
+            pr.setName(data.getNewValue());
 
-            System.out.println(ea);
+            System.out.println(pr);
         });
         
         tcTypeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
-            RestaurantProduct ea = data.getRowValue();
-            ea.setTypeOfProduct(data.getNewValue());
+            RestaurantProduct pr = data.getRowValue();
+            pr.setTypeOfProduct(data.getNewValue());
 
-            System.out.println(ea);
+            System.out.println(pr);
         });
         
         tcIngredientsList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
-            RestaurantProduct ea = data.getRowValue();
-            ea.setIngredientsOfProduct(data.getNewValue());
+            RestaurantProduct pr = data.getRowValue();
+            pr.setIngredientsOfProduct(data.getNewValue());
 
-            System.out.println(ea);
+            System.out.println(pr);
         });
         
         tcSizeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
-            RestaurantProduct ea = data.getRowValue();
-            ea.setSizeOfProduct(data.getNewValue());
+            RestaurantProduct pr = data.getRowValue();
+            pr.setSizeOfProduct(data.getNewValue());
 
-            System.out.println(ea);
+            System.out.println(pr);
         });
         
     }
@@ -1289,10 +1371,11 @@ public class LaCasaDoradaGUI {
     	if (name.isEmpty() || typeOfProduct.isEmpty() || ingredientsOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct==0) {
         	validationErrorAlert();
         }else{
+        	laCasaDorada.addProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct);
         	productCreatedAlert();
         }
     	
-    	laCasaDorada.addProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct);
+    	
     }
     
     public void setUpAddIngredientandTypeOfProduct() {
@@ -1318,10 +1401,11 @@ public class LaCasaDoradaGUI {
     	String phoneNumber=txtCxPhoneNumber.getText();
     	String observations=txtCxObservations.getText();
     	
-
+    	
     	if (firstName.isEmpty() || lastName.isEmpty() || id.isEmpty() || address.isEmpty() || phoneNumber.isEmpty() || observations.isEmpty()) {
         	validationErrorAlert();
         }else{
+        	laCasaDorada.addClient(firstName, lastName, id, address, phoneNumber, observations);
         	customerCreatedAlert();
         }
     }
