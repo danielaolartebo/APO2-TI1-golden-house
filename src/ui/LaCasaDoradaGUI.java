@@ -425,20 +425,6 @@ public class LaCasaDoradaGUI {
     /*
      *****************************************FOURTH SCREEN MENU (menu.fxml) ************************************************************
      */
-<<<<<<< HEAD
-=======
-   
-    @FXML
-    public void menuCreateOrder(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("create-order.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent createOrderPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(createOrderPane);
-    	
-    	setUpAddOrder();
-    	
-    }
->>>>>>> 4348989436db7260628d2bea8a7232407ba82f21
     
     @FXML
     public void menuSingOut(ActionEvent event) throws IOException {
