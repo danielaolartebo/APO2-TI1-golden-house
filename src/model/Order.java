@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Order {
 	
@@ -10,12 +11,12 @@ public class Order {
 	private EmployeeAccount employee;
 	private RestaurantProduct product;
 	private String code;
-	private Date time;
+	private LocalDate time;
 	private double quantity;
 	private String observations;
 	private Status order;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, double quantity, String observations) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate time, double quantity, String observations) {
 		this.setClient(client);
 		this.setProduct(product);
 		this.setEmployee(employee);
@@ -50,11 +51,11 @@ public class Order {
 		this.code = code;
 	}
 
-	public Date getTime() {
+	public LocalDate getTime() {
 		return time;
 	}
 
-	public void setTime(Date time) {
+	public void setTime(LocalDate time) {
 		this.time = time;
 	}
 

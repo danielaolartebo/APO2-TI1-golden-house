@@ -3,6 +3,8 @@ package ui;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
@@ -596,12 +598,12 @@ public class LaCasaDoradaGUI {
     	String product = COaddProduct.getSelectionModel().getSelectedItem();
     	String employee = COemployeeName.getSelectionModel().getSelectedItem();
     	String code = null;
-    	Date time = new Date(10, 1, 0);
+    	LocalDate time = LocalDate.now();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
     	
     	String observations = COobservations.getText();
     	
-    	
+   
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
@@ -610,6 +612,10 @@ public class LaCasaDoradaGUI {
         }
     	
     	
+    	
+    }
+    
+    public void generateDate() {
     	
     }
     
@@ -821,8 +827,8 @@ public class LaCasaDoradaGUI {
         tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("products"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("employee"));
-        tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderDate"));
-        txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderHour"));
+        tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
+        txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
     }
     
