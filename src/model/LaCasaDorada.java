@@ -230,10 +230,10 @@ public class LaCasaDorada {
 		return tempName;
 	}
 	
-	public EmployeeAccount findEmployee(String firstName){
+	public EmployeeAccount findEmployee(String firstName, String lastName, String id){
 		EmployeeAccount tempName=null;
 		for (int i=0; i < employees.size();i++) {
-			if(employees.get(i).getFirstName().equals(firstName)) {
+			if(employees.get(i).getFirstName().equals(firstName) && employees.get(i).getLastName().equals(lastName) && employees.get(i).getId().equals(id)) {
 				tempName = employees.get(i);
 			}
 		}
@@ -241,8 +241,9 @@ public class LaCasaDorada {
 	}
 	
 	public RestaurantProduct findProduct(String name){
+		boolean found = false;
 		RestaurantProduct tempProduct=null;
-		for (int i=0; i < products.size();i++) {
+		for (int i=0; i < products.size() && !found;i++) {
 			if(products.get(i).getName().equals(name)) {
 				tempProduct = products.get(i);
 			}
@@ -250,6 +251,15 @@ public class LaCasaDorada {
 		return tempProduct;
 	}
 	
-
+	public RestaurantIngredient findIngredient(String ingredientName) {
+		boolean found = false;
+		RestaurantIngredient tempIng = null;
+		for(int i=0; i <ingredients.size() && !found; i++) {
+			if(ingredients.get(i).getIngredientName().equals(ingredientName)) {
+				tempIng = ingredients.get(i);
+			}
+		}
+		return tempIng;
+	}
 	
 }
