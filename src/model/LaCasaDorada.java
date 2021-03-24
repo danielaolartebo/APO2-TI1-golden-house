@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class LaCasaDorada {
 	private List<Order> orders;
 	private List<Size> sizes;
 	private List<SystemUser> users;
+	private List<ProductQuantity> productQuantity;
 
 	
 	public LaCasaDorada() {
@@ -33,6 +36,7 @@ public class LaCasaDorada {
 		orders = new ArrayList<>();
 		sizes = new ArrayList<>();
 		users = new ArrayList<>();
+		productQuantity = new ArrayList<>();
 	}
 	
 	public void addUsers(String userName, String password, String firstName, String lastName, String id) {
@@ -63,8 +67,8 @@ public class LaCasaDorada {
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, Date time, double quantity, String observations) {
-		orders.add(new Order(client, product, employee, code, time, quantity, observations));
+	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
+		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
 	}
 	
 	public List<ClientAccount> getClients(){
@@ -89,6 +93,10 @@ public class LaCasaDorada {
 	
 	public List<RestaurantTypeOfProduct> getTypeOfProducts(){
 		return types; 
+	}
+	
+	public List<ProductQuantity> getProductQuantity(){
+		return productQuantity;
 	}
 	
 	public boolean validateOrder(String code) {
