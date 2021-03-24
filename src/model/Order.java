@@ -18,6 +18,8 @@ public class Order {
 	private String observations;
 	private Status order;
 	private int number;
+	private String nameEmployee;
+	private String nameProduct;
 	
 	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
 		this.setClient(client);
@@ -30,6 +32,9 @@ public class Order {
 		setObservations(observations);
 		this.order=Status.REQUESTED;
 		this.setNumber(number);
+		nameEmployee = employee.getFirstName();
+		nameProduct = product.getName();
+		
 	}
 
 	public ClientAccount getClient() {
@@ -111,7 +116,21 @@ public class Order {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-	
 
+	public String getNameEmployee() {
+		return nameEmployee;
+	}
+
+	public void setNameEmployee(String nameEmployee) {
+		this.nameEmployee = nameEmployee;
+	}
+
+	public String getNameProduct() {
+		return nameProduct;
+	}
+
+	public void setNameProduct(String nameProduct) {
+		this.nameProduct = nameProduct;
+	}
 	
 }

@@ -24,6 +24,7 @@ public class LaCasaDorada {
 	private List<Size> sizes;
 	private List<SystemUser> users;
 	private List<ProductQuantity> productQuantity;
+	private int numberList;
 
 	
 	public LaCasaDorada() {
@@ -37,6 +38,8 @@ public class LaCasaDorada {
 		sizes = new ArrayList<>();
 		users = new ArrayList<>();
 		productQuantity = new ArrayList<>();
+		numberList=0;
+		
 	}
 	
 	public void addUsers(String userName, String password, String firstName, String lastName, String id) {
@@ -237,11 +240,15 @@ public class LaCasaDorada {
 		return tempName;
 	}
 	
-	public EmployeeAccount findEmployee(String firstName, String lastName, String id){
+	public EmployeeAccount findEmployee(String firstName){
 		EmployeeAccount tempName=null;
-		for (int i=0; i < employees.size();i++) {
-			if(employees.get(i).getFirstName().equals(firstName) && employees.get(i).getLastName().equals(lastName) && employees.get(i).getId().equals(id)) {
+		boolean found = false;
+		System.out.println(firstName);
+		for (int i=0; i < employees.size() && !found;i++) {
+			if(employees.get(i).getFirstName().equals(firstName)) {
 				tempName = employees.get(i);
+				found = true;
+				System.out.println("Encontré empleado");
 			}
 		}
 		return tempName;
@@ -250,9 +257,12 @@ public class LaCasaDorada {
 	public RestaurantProduct findProduct(String name){
 		boolean found = false;
 		RestaurantProduct tempProduct=null;
+		System.out.println(name);
 		for (int i=0; i < products.size() && !found;i++) {
 			if(products.get(i).getName().equals(name)) {
 				tempProduct = products.get(i);
+				found = true;
+				System.out.println("Encontré Producto");
 			}
 		}
 		return tempProduct;
@@ -268,5 +278,12 @@ public class LaCasaDorada {
 		}
 		return tempIng;
 	}
+
+	public int getNumberList() {
+		return numberList;
+	}
 	
+	public void setNumberList(int numberList) {
+		this.numberList=numberList;
+	}
 }
