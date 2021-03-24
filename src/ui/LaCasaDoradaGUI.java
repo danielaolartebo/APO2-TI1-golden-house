@@ -768,23 +768,70 @@ public class LaCasaDoradaGUI {
         observableList = FXCollections.observableArrayList(laCasaDorada.getOrders());
         tbOrderList.setItems(observableList);
         
-        tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderNumber"));
+        tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("status"));
-        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("products"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("employee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
     }
-    
+	
     @FXML
     public void selectOrder(MouseEvent event) throws IOException {
     	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
     	
     	if(or != null) {
-    		//COMPLETAR
+    		this.tcNumberOrder.setText(String.valueOf(or.getNumber()));
+    		this.tcProductsOrder.setText(or.getProduct().getName());
+    		this.tcQuantityOrder.setText(String.valueOf(or.getQuantity()));
+    		this.tcEmployeeOrder.setText(or.getEmployee().getFirstName());
+    		this.tcDateOrder.setText(String.valueOf(or.getDate()));
+    		this.txHourOrder.setText(String.valueOf(or.getTime()));
+    		this.tcObservationsOrder.setText(or.getObservations());
     	}	
+    }
+    
+    @FXML
+    public void statusRequested(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.REQUESTED);
+    		this.tbOrderList.refresh();
+    		orderWasUpdated();
+    	}
+    } 
+
+    @FXML
+    public void statusProcessed(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.PROCESSED);
+    		this.tbOrderList.refresh();
+    		orderWasUpdated();
+    	}
+    }
+
+    
+    
+    @FXML
+    public void statusSent(ActionEvent event) throws IOException{
+    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(or == null) {
+    		selectAnOptionAlert();
+    	}else{
+    		or.setOrderStatus(Status.SENT);
+    		this.tbOrderList.refresh();
+    		orderWasUpdated();
+    	}
     }
     
     @FXML
@@ -795,50 +842,10 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		or.setOrderStatus(Status.DELIVERED);
-    		this.tbCustomerList.refresh();
+    		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
     }
-
-    @FXML
-    public void statusProcessed(ActionEvent event) throws IOException{
-    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
-    	
-    	if(or == null) {
-    		selectAnOptionAlert();
-    	}else{
-    		or.setOrderStatus(Status.PROCESSED);
-    		this.tbCustomerList.refresh();
-    		orderWasUpdated();
-    	}
-    }
-
-    @FXML
-    public void statusRequested(ActionEvent event) throws IOException{
-    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
-    	
-    	if(or == null) {
-    		selectAnOptionAlert();
-    	}else{
-    		or.setOrderStatus(Status.REQUESTED);
-    		this.tbCustomerList.refresh();
-    		orderWasUpdated();
-    	}
-    }
-    
-    @FXML
-    public void statusSent(ActionEvent event) throws IOException{
-    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
-    	
-    	if(or == null) {
-    		selectAnOptionAlert();
-    	}else{
-    		or.setOrderStatus(Status.SENT);
-    		this.tbCustomerList.refresh();
-    		orderWasUpdated();
-    	}
-    }
-
 
     
     /*
@@ -1379,23 +1386,26 @@ public class LaCasaDoradaGUI {
     	String product = COaddProduct.getSelectionModel().getSelectedItem();
     	String employee = COemployeeName.getSelectionModel().getSelectedItem();
     	String code = null;
-    	LocalDate time = LocalDate.now();
+    	LocalDate date = LocalDate.now();
+    	LocalTime time = LocalTime.now();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
     	String observations = COobservations.getText();
-    	
-    	
+    	int number = 0;
+    	for(int i=0; i<laCasaDorada.getOrders().size(); i++) {
+    		number++;
+    	}
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
-        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName, lastName, id), code, time, quantity,observations);
+        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName, lastName, id), code, date, time, quantity,observations, number);
         	productCreatedAlert();
         }
     }
     
     
     
-    public int generateCode() {
-    	return 1000000+1;
+    public int count(int count) {
+    	return count++;
     }
     
     public void setUpAddOrder() {

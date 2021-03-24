@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,8 +67,8 @@ public class LaCasaDorada {
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate time, double quantity, String observations) {
-		orders.add(new Order(client, product, employee, code, time, quantity, observations));
+	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
+		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
 	}
 	
 	public List<ClientAccount> getClients(){

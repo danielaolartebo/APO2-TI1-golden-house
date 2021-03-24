@@ -2,6 +2,7 @@ package model;
 
 import java.sql.Date;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Order {
 	
@@ -11,20 +12,24 @@ public class Order {
 	private EmployeeAccount employee;
 	private RestaurantProduct product;
 	private String code;
-	private LocalDate time;
+	private LocalDate date;
+	private LocalTime time;
 	private double quantity;
 	private String observations;
 	private Status order;
+	private int number;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate time, double quantity, String observations) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
 		this.setClient(client);
 		this.setProduct(product);
 		this.setEmployee(employee);
 		this.setCode(code);
+		this.setDate(date);
 		this.setTime(time);
 		this.setQuantity(quantity);
 		setObservations(observations);
 		this.order=Status.REQUESTED;
+		this.setNumber(number);
 	}
 
 	public ClientAccount getClient() {
@@ -51,12 +56,12 @@ public class Order {
 		this.code = code;
 	}
 
-	public LocalDate getTime() {
-		return time;
+	public LocalDate getDate() {
+		return date;
 	}
 
-	public void setTime(LocalDate time) {
-		this.time = time;
+	public void setDate(LocalDate date) {
+		this.date = date;
 	}
 
 	public String getObservations() {
@@ -89,6 +94,22 @@ public class Order {
 
 	public void setQuantity(double quantity) {
 		this.quantity = quantity;
+	}
+
+	public LocalTime getTime() {
+		return time;
+	}
+
+	public void setTime(LocalTime time) {
+		this.time = time;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	
 
