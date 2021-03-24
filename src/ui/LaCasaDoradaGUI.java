@@ -34,6 +34,7 @@ import model.EmployeeAccount;
 import model.MembersStatus;
 import model.LaCasaDorada;
 import model.Order;
+import model.ProductQuantity;
 import model.RestaurantIngredient;
 import model.RestaurantProduct;
 import model.RestaurantTypeOfProduct;
@@ -57,13 +58,13 @@ public class LaCasaDoradaGUI {
 	// MINI TABLE VIEW IN CREATE ORDER SCREEN
 
 	@FXML
-	private TableView<Order> miniTbCreateOrder;
+	private TableView<ProductQuantity> miniTbCreateOrder;
 
 	@FXML
-	private TableColumn<Order, String> miniTcProduct;
+	private TableColumn<ProductQuantity, String> miniTcProduct;
 
 	@FXML
-	private TableColumn<Order, Double> miniTcQuantity;
+	private TableColumn<ProductQuantity, Double> miniTcQuantity;
 	
 	//******************************************************
 
@@ -326,7 +327,7 @@ public class LaCasaDoradaGUI {
     
     private ObservableList<RestaurantIngredient> temp;
     
-    private ObservableList<Order> temp2;
+    private ObservableList<RestaurantProduct> temp2;
     
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
@@ -480,12 +481,13 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
+    	
     	setUpAddClient();
     	setUpAddOrder();
     	setUpAddEmployee();
-    	
     	initializeMiniOrderTableView();
     }
+
     
     @FXML
     public void menuCreateIngredient(ActionEvent event) throws IOException {
@@ -577,78 +579,12 @@ public class LaCasaDoradaGUI {
     	initializeCustomerTableView();
     }
    
-<<<<<<< HEAD
+
     /*
      *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
      */
     
-    @FXML
-    public void subGoBack(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
-    	fxmlLoader.setController(this);
-    	Parent menuPane = fxmlLoader.load();
-    	mainPane.getChildren().setAll(menuPane);
-    }
-    
-    @FXML
-    public void COoptAddProduct(ActionEvent event) throws IOException{
-
-    }
-    
-    @FXML
-    public void COcreateOrder(ActionEvent event) throws IOException{
-    	String firstName = null;
-    	String lastName = null;
-    	String id = null;
-    	String name = null;
-    	String client = COcustomerName.getSelectionModel().getSelectedItem();
-    	String product = COaddProduct.getSelectionModel().getSelectedItem();
-    	String employee = COemployeeName.getSelectionModel().getSelectedItem();
-    	String code = null;
-    	LocalDate time = LocalDate.now();
-    	double quantity = Double.parseDouble(COaddQuantity.getText());
-    	
-    	String observations = COobservations.getText();
-    	
    
-    	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
-        	validationErrorAlert();
-        }else{
-        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName), code, time, quantity,observations);
-        	productCreatedAlert();
-        }
-    	
-    	
-    	
-    }
-    
-    public void generateDate() {
-    	
-    }
-    
-    public int generateCode() {
-    	return 1000000+1;
-    }
-    
-    public void setUpAddOrder() {
-    	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
-    		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
-    		}
-    }
-    public void setUpAddClient() {	
-    	for(int j=0; j<laCasaDorada.getClients().size();j++) {
-         	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
-         	}
-    }	
-    public void setUpAddEmployee() {
-        for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
-             COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
-    		}
-    }
-    	
-=======
->>>>>>> c581079c2b17c3696ec05e0dd951f6a941ebf94c
-    
     /*
      **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
      */
@@ -1423,6 +1359,8 @@ public class LaCasaDoradaGUI {
      *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
      */
     
+
+    
     @FXML
     public void subGoBack(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
@@ -1441,7 +1379,7 @@ public class LaCasaDoradaGUI {
     	String product = COaddProduct.getSelectionModel().getSelectedItem();
     	String employee = COemployeeName.getSelectionModel().getSelectedItem();
     	String code = null;
-    	Date time = new Date(10, 1, 0);
+    	LocalDate time = LocalDate.now();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
     	String observations = COobservations.getText();
     	
@@ -1476,17 +1414,35 @@ public class LaCasaDoradaGUI {
     		}
     }
     
-    private void initializeMiniOrderTableView(){
+    @FXML
+    public void COoptAddProduct(ActionEvent event) throws IOException{
     	
-    	temp2 = FXCollections.observableArrayList();
-    	miniTbCreateOrder.setItems(temp2);
+    	if(!COaddProduct.getSelectionModel().getSelectedItem().equals("")) {
+   		 temp2.add(laCasaDorada.findProduct(COaddProduct.getSelectionModel().getSelectedItem()));
+   	}if(!COaddQuantity.getText().equals("")) {
+   		//
+   	}
+   	miniTbCreateOrder.refresh();
+    }
+    
+    private void initializeMiniOrderTableView(){
+    	ObservableList<ProductQuantity> temp2;
+        temp2 = FXCollections.observableArrayList();
+        miniTbCreateOrder.setItems(temp2);
         
-    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
-    	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
+    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("product"));
+    	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double>("quantity"));
        
     	miniTcProduct.setCellFactory(TextFieldTableCell.forTableColumn());
     }
+   
+    public void selectMiniProduct(MouseEvent event) throws IOException {
+    	ProductQuantity mrp = this.miniTbCreateOrder.getSelectionModel().getSelectedItem();
     	
+    	if(mrp != null) {
+    		this.miniTcProduct.setText(mrp.getNameProduct());
+    	}	
+    }
     
     /*
      ****************************** SCREEN CREATE CUSTOMER (create-customer.fxml) *************************************************************************

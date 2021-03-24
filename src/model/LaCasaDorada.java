@@ -22,6 +22,7 @@ public class LaCasaDorada {
 	private List<Order> orders;
 	private List<Size> sizes;
 	private List<SystemUser> users;
+	private List<ProductQuantity> productQuantity;
 
 	
 	public LaCasaDorada() {
@@ -34,6 +35,7 @@ public class LaCasaDorada {
 		orders = new ArrayList<>();
 		sizes = new ArrayList<>();
 		users = new ArrayList<>();
+		productQuantity = new ArrayList<>();
 	}
 	
 	public void addUsers(String userName, String password, String firstName, String lastName, String id) {
@@ -90,6 +92,10 @@ public class LaCasaDorada {
 	
 	public List<RestaurantTypeOfProduct> getTypeOfProducts(){
 		return types; 
+	}
+	
+	public List<ProductQuantity> getProductQuantity(){
+		return productQuantity;
 	}
 	
 	public boolean validateOrder(String code) {

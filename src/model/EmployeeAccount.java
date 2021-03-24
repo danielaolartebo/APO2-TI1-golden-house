@@ -1,7 +1,13 @@
 package model;
 
-public class EmployeeAccount extends RestaurantMembers{
+import java.io.Serializable;
+
+public class EmployeeAccount extends RestaurantMembers implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MembersStatus employeeStatus;
 	
 	public EmployeeAccount(String userName, String password, String firstName, String lastName, String id) {
