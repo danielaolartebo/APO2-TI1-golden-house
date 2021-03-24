@@ -1,6 +1,5 @@
 package model;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -20,16 +19,16 @@ public class Order {
 	private int number;
 	
 	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
-		this.setClient(client);
-		this.setProduct(product);
-		this.setEmployee(employee);
-		this.setCode(code);
-		this.setDate(date);
-		this.setTime(time);
-		this.setQuantity(quantity);
-		setObservations(observations);
+		this.client=client;
+		this.product=product;
+		this.employee=employee;
+		this.code=code;
+		this.date=date;
+		this.time=time;
+		this.quantity=quantity;
+		this.observations=observations;
 		this.order=Status.REQUESTED;
-		this.setNumber(number);
+		this.number=number;
 	}
 
 	public ClientAccount getClient() {

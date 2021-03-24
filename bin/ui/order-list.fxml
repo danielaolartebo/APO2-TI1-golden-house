@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -26,41 +24,49 @@
                   <Font name="Segoe UI Black" size="32.0" />
                </font>
             </Label>
-            <TableView fx:id="tbOrderList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbOrderList" layoutX="-2.0" layoutY="61.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNumberOrder" prefWidth="70.0" text="#" />
-                  <TableColumn fx:id="txStatusOrder" prefWidth="58.0" text="Estado" />
-                  <TableColumn fx:id="tcProductsOrder" prefWidth="67.0" text="Productos" />
-                  <TableColumn fx:id="tcQuantityOrder" prefWidth="70.0" text="Cantidad" />
-                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="83.0" text="Empleado" />
-                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="84.0" text="Fecha" />
-                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="104.0" text="Hora" />
-                  <TableColumn fx:id="tcObservationsOrder" maxWidth="120.0" minWidth="0.0" prefWidth="212.0" text="Observaciones" />
+                  <TableColumn fx:id="tcNumberOrder" prefWidth="38.0" text="#" />
+                  <TableColumn fx:id="tcCustomerOrder" prefWidth="65.0" text="Cliente" />
+                  <TableColumn fx:id="txStatusOrder" prefWidth="64.0" text="Estado" />
+                  <TableColumn fx:id="tcProductsOrder" prefWidth="88.0" text="Productos" />
+                  <TableColumn fx:id="tcQuantityOrder" prefWidth="60.0" text="Cantidad" />
+                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="72.0" text="Empleado" />
+                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="81.0" text="Fecha" />
+                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="78.0" text="Hora" />
+                  <TableColumn fx:id="tcObservationsOrder" maxWidth="146.0" minWidth="0.0" prefWidth="109.0" text="Observaciones" />
                </columns>
             </TableView>
-            <Button layoutX="53.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="8.0" layoutY="325.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="30.0" prefWidth="80.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="492.0" layoutY="341.0" prefHeight="17.0" prefWidth="156.0" style="-fx-background-color: white;" text="Doble click para actualizar">
+            <Label layoutX="488.0" layoutY="332.0" prefHeight="17.0" prefWidth="156.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="180.0" layoutY="333.0" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: white;" text="Seleccione nuevo estado:">
+            <Button layoutX="101.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusRequested" prefHeight="10.0" prefWidth="85.0" text="SOLICITADO">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold Italic" size="10.0" />
                </font>
-            </Label>
-            <MenuButton layoutX="335.0" layoutY="331.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="108.0" text="Seleccionar">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#statusRequested" text="Requested" />
-                <MenuItem mnemonicParsing="false" onAction="#statusProcessed" text="Processed" />
-                  <MenuItem mnemonicParsing="false" onAction="#statusSent" text="Sent" />
-                  <MenuItem mnemonicParsing="false" onAction="#statusDelivered" text="Delivered" />
-              </items>
-            </MenuButton>
+            </Button>
+            <Button layoutX="196.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusProcessed" prefHeight="10.0" prefWidth="85.0" text="EN PROGRESO">
+               <font>
+                  <Font name="System Bold Italic" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="292.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusSent" prefHeight="10.0" prefWidth="85.0" text="ENVIADO">
+               <font>
+                  <Font name="System Bold Italic" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="386.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusDelivered" prefHeight="10.0" prefWidth="85.0" text="ENTREGADO">
+               <font>
+                  <Font name="System Bold Italic" size="10.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </center>
