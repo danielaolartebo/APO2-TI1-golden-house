@@ -22,6 +22,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
@@ -64,6 +65,8 @@ public class LaCasaDoradaGUI {
 	private TableColumn<Order, Double> miniTcQuantity;
 	
 	//******************************************************
+	@FXML
+	private Label totalOrder;
 
 	@FXML
     private ToggleGroup createoption;
@@ -478,9 +481,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
-    	setUpAddClient();
+    	
     	setUpAddOrder();
-    	setUpAddEmployee();
     	
     	initializeMiniOrderTableView();
     }
@@ -1381,8 +1383,12 @@ public class LaCasaDoradaGUI {
         }
     }
     
-    
-    
+    public double total(double quantity, double priceOfProduct) {
+    	double total=0;
+    	total = quantity * priceOfProduct;
+    	totalOrder.setText(String.valueOf(total));
+		return total;
+    }
     public int generateCode() {
     	return 1000000+1;
     }
@@ -1390,17 +1396,14 @@ public class LaCasaDoradaGUI {
     public void setUpAddOrder() {
     	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
     		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
-    		}
-    }
-    public void setUpAddClient() {	
+    	}
     	for(int j=0; j<laCasaDorada.getClients().size();j++) {
          	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
-         	}
-    }	
-    public void setUpAddEmployee() {
-        for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
-             COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
-    		}
+        }
+    	for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
+            COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
+   		}
+    	
     }
     
     private void initializeMiniOrderTableView(){

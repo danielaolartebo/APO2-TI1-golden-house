@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="createCustomerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="428.0" fitWidth="670.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2021-03-09%20(13).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="213.0" layoutY="14.0" text="Crear cliente" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="214.0" prefHeight="34.0" prefWidth="92.0" text="Telefono:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="180.0" prefHeight="34.0" prefWidth="94.0" text="Dirección:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCxFirstName" layoutX="199.0" layoutY="73.0" prefHeight="25.0" prefWidth="272.0" />
+            <TextField fx:id="txtCxLastName" layoutX="199.0" layoutY="111.0" prefHeight="25.0" prefWidth="271.0" />
+            <Button layoutX="271.0" layoutY="300.0" mnemonicParsing="false" onAction="#optCreateCustomerAccount" prefHeight="39.0" prefWidth="99.0" text="CREAR">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub18GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="86.0" layoutY="68.0" prefHeight="34.0" prefWidth="89.0" text="Nombre:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="107.0" prefHeight="34.0" prefWidth="87.0" text="Apellido:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="145.0" prefHeight="34.0" prefWidth="34.0" text="ID:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCxId" layoutX="199.0" layoutY="149.0" prefHeight="25.0" prefWidth="272.0" />
+            <TextField fx:id="txtCxAddress" layoutX="199.0" layoutY="184.0" prefHeight="25.0" prefWidth="273.0" />
+            <TextField fx:id="txtCxPhoneNumber" layoutX="199.0" layoutY="218.0" prefHeight="25.0" prefWidth="270.0" />
+            <TextField fx:id="txtCxObservations" layoutX="199.0" layoutY="252.0" prefHeight="25.0" prefWidth="271.0" />
+            <Label layoutX="29.0" layoutY="248.0" prefHeight="34.0" prefWidth="139.0" text="Observaciones:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

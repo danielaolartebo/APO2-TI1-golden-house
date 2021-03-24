@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="createProductPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label prefHeight="36.0" prefWidth="197.0" text="Crear producto" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="25.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.3" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="187.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="24.0" layoutY="47.0" text="La Casa Dorada" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="176.0" fitWidth="146.0" layoutX="15.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@2021-03-09%20(4).png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#sub9GoBack" text="Atrás" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+               <children>
+                  <GridPane layoutX="162.0" layoutY="33.0" prefHeight="162.0" prefWidth="253.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="113.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="103.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Nombre:" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tipo de producto:" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI Black" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="productName" prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" />
+                        <Label textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Black" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="productPrice" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Ingredientes:" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="productIngredients" layoutX="10.0" layoutY="80.0" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox fx:id="productTypes" layoutX="142.0" layoutY="144.0" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label layoutX="10.0" layoutY="51.0" text="Tamaño:" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Black" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="84.0" text="Precio:" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Black" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="productSize" alignment="CENTER" layoutX="142.0" layoutY="112.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button layoutX="296.0" layoutY="208.0" mnemonicParsing="false" onAction="#optAddIngredient" prefHeight="25.0" prefWidth="119.0" text="Añadir">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="148.0" layoutY="262.0" mnemonicParsing="false" onAction="#productCreateProduct" prefHeight="31.0" prefWidth="104.0" text="CREAR">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="miniTbCreateProduct" layoutX="20.0" layoutY="88.0" prefHeight="120.0" prefWidth="109.0" style="-fx-background-color: black;">
+                     <columns>
+                        <TableColumn fx:id="miniTcIngredients" prefWidth="108.0" text="Ingredientes" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>
