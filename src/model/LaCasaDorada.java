@@ -73,8 +73,8 @@ public class LaCasaDorada {
 		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
 	}
 	
-	public void addProductQuantity(RestaurantProduct p, Order q) {
-		productQuantity.add(new ProductQuantity(p, q));
+	public void addProductQuantity(RestaurantProduct p, double quantity) {
+		productQuantity.add(new ProductQuantity(p, quantity));
 	}
 	
 	public List<ClientAccount> getClients(){

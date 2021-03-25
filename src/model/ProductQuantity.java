@@ -2,15 +2,14 @@ package model;
 
 public class ProductQuantity {
 	
-	private Order q;
 	private RestaurantProduct p;
 	private String nameProduct;
 	private double quantity;
 	
-	public ProductQuantity(RestaurantProduct p, Order q) {
+	public ProductQuantity(RestaurantProduct p, double quantity) {
 		
 		nameProduct=p.getName();
-		quantity=q.getQuantity();
+		this.quantity=quantity;
 	}
 
 	public double getQuantity() {
@@ -29,13 +28,6 @@ public class ProductQuantity {
 		this.nameProduct = nameProduct;
 	}
 
-	public Order getQ() {
-		return q;
-	}
-
-	public void setQ(Order q) {
-		this.q = q;
-	}
 
 	public RestaurantProduct getP() {
 		return p;

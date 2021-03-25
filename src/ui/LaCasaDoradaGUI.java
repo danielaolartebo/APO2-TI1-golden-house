@@ -1435,9 +1435,10 @@ public class LaCasaDoradaGUI {
     		validationErrorAlert();
     	}else {
     		System.out.println(quantity);
-    		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product),laCasaDorada.findQuantity(quantity));
-    		miniTbCreateOrder.refresh();
+    		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product), quantity);
+    		
     	}
+    	miniTbCreateOrder.refresh();
     }
     
     private void initializeMiniOrderTableView(){
@@ -1445,7 +1446,7 @@ public class LaCasaDoradaGUI {
         observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
         miniTbCreateOrder.setItems(observableList);
         
-    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("nameProduct"));
+    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("product"));
     	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double>("quantity"));
        
     	miniTcProduct.setCellFactory(TextFieldTableCell.forTableColumn());
