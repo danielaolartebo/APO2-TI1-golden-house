@@ -73,6 +73,10 @@ public class LaCasaDorada {
 		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
 	}
 	
+	public void addProductQuantity(RestaurantProduct p, Order q) {
+		productQuantity.add(new ProductQuantity(p, q));
+	}
+	
 	public List<ClientAccount> getClients(){
 		return clients; 
 	}
@@ -99,6 +103,14 @@ public class LaCasaDorada {
 	
 	public List<ProductQuantity> getProductQuantity(){
 		return productQuantity;
+	}
+	
+	public int getNumberList() {
+		return numberList;
+	}
+	
+	public void setNumberList(int numberList) {
+		this.numberList=numberList;
 	}
 	
 	public boolean validateOrder(String code) {
@@ -277,12 +289,17 @@ public class LaCasaDorada {
 		}
 		return tempIng;
 	}
-
-	public int getNumberList() {
-		return numberList;
-	}
 	
-	public void setNumberList(int numberList) {
-		this.numberList=numberList;
+	public Order findQuantity(double quantity) {
+		Order tempQuantity= null;
+		System.out.println(quantity);
+		for(int i=1; i<orders.size() || i<2; i++) {
+			if(orders.get(i).getQuantity()==quantity) {
+				tempQuantity = orders.get(i);
+				System.out.println("Encontre la cantidad");
+			}
+		}
+		return tempQuantity;
 	}
+
 }

@@ -326,8 +326,6 @@ public class LaCasaDoradaGUI {
     
     private ObservableList<RestaurantIngredient> temp;
     
-    private ObservableList<RestaurantProduct> temp2;
-    
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
@@ -1428,20 +1426,26 @@ public class LaCasaDoradaGUI {
     @FXML
     public void COoptAddProduct(ActionEvent event) throws IOException{
     	
-    	if(!COaddProduct.getSelectionModel().getSelectedItem().equals("")) {
-   		 temp2.add(laCasaDorada.findProduct(COaddProduct.getSelectionModel().getSelectedItem()));
-   	}if(!COaddQuantity.getText().equals("")) {
-   		//
-   	}
-   	miniTbCreateOrder.refresh();
+    	String product = COaddProduct.getValue();
+    	double quantity = Double.parseDouble(COaddQuantity.getText());
+    	
+    	System.out.println(product);
+    	System.out.println(quantity); 
+    	if(product.isEmpty() || quantity==0) {
+    		validationErrorAlert();
+    	}else {
+    		System.out.println(quantity);
+    		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product),laCasaDorada.findQuantity(quantity));
+    		miniTbCreateOrder.refresh();
+    	}
     }
     
     private void initializeMiniOrderTableView(){
-    	ObservableList<ProductQuantity> temp2;
-        temp2 = FXCollections.observableArrayList();
-        miniTbCreateOrder.setItems(temp2);
+    	ObservableList<ProductQuantity> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
+        miniTbCreateOrder.setItems(observableList);
         
-    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("product"));
+    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("nameProduct"));
     	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double>("quantity"));
        
     	miniTcProduct.setCellFactory(TextFieldTableCell.forTableColumn());
@@ -1452,6 +1456,7 @@ public class LaCasaDoradaGUI {
     	
     	if(mrp != null) {
     		this.miniTcProduct.setText(mrp.getNameProduct());
+    		this.miniTcQuantity.setText(String.valueOf(mrp.getQuantity()));
     	}	
     }
     
