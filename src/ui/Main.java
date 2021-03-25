@@ -5,6 +5,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import model.LaCasaDorada;
 
@@ -16,6 +18,19 @@ public class Main extends Application{
 	public Main() throws IOException {
 		laCasaDorada = new LaCasaDorada();
 		laCasaDoradaGUI = new LaCasaDoradaGUI(laCasaDorada);
+		
+		try {
+			laCasaDorada.loadEmployeeData();
+			laCasaDorada.loadCustomerData();
+			laCasaDorada.loadProductData();
+		} catch (ClassNotFoundException | IOException e) {
+			e.printStackTrace();
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Error");
+			alert.setHeaderText("");
+			alert.setContentText("No se pudo cargar datos del archivo");
+			alert.showAndWait();
+		}
 	}
 	
 	public static void main(String[] args) {
