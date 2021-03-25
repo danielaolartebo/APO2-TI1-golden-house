@@ -21,19 +21,23 @@ public class Order {
 	private String nameProduct;
 	
 	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
-		this.setClient(client);
-		this.setProduct(product);
-		this.setEmployee(employee);
-		this.setCode(code);
-		this.setDate(date);
-		this.setTime(time);
-		this.setQuantity(quantity);
-		setObservations(observations);
+		this.client=client;
+		this.product=product;
+		this.employee=employee;
+		this.code=code;
+		this.date=date;
+		this.time=time;
+		this.quantity=quantity;
+		this.observations=observations;
 		this.order=Status.REQUESTED;
+<<<<<<< HEAD
 		this.setNumber(number);
 		nameEmployee = employee.getFirstName();
 		nameProduct = product.getName();
 		
+=======
+		this.number=number;
+>>>>>>> 80d557667afa4ea17ceddb759bb68fb2f706f1dc
 	}
 
 	public ClientAccount getClient() {

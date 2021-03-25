@@ -1,7 +1,10 @@
 package model;
 
-public class ClientAccount extends RestaurantMembers{
-	
+import java.io.Serializable;
+
+public class ClientAccount extends RestaurantMembers implements Serializable{
+
+	private static final long serialVersionUID = 1;
 		private String address;
 		private String phoneNumber;
 		private String observations;

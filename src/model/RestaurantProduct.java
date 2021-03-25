@@ -1,9 +1,10 @@
 package model;
 
-public class RestaurantProduct {
-	
-	// PRODUCTO TIENE NOMBRE, TIPO, INGREDIENTES, TAMAÑO, PRECIO Y ESTADO.
+import java.io.Serializable;
 
+public class RestaurantProduct implements Serializable{
+
+	private static final long serialVersionUID = 1;
 	private String name;
 	private String typeOfProduct;
 	private String sizeOfProduct;

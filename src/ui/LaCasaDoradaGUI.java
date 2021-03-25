@@ -23,6 +23,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
@@ -40,10 +41,7 @@ import model.RestaurantTypeOfProduct;
 import model.Status;
 
 public class LaCasaDoradaGUI {
-	
-	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
-	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
-	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
+
 	private LaCasaDorada laCasaDorada;
 	
 	// MINI TABLE VIEW IN CREATE PRODUCT SCREEN 
@@ -66,6 +64,8 @@ public class LaCasaDoradaGUI {
 	private TableColumn<ProductQuantity, Double> miniTcQuantity;
 	
 	//******************************************************
+	@FXML
+	private Label totalOrder;
 
 	@FXML
     private ToggleGroup createoption;
@@ -229,6 +229,10 @@ public class LaCasaDoradaGUI {
 
     @FXML
     private TableView<Order> tbOrderList;
+    
+    @FXML
+    private TableColumn<Order, String> tcCustomerOrder;
+
 
     @FXML
     private TableColumn<Order, String> tcNumberOrder;
@@ -240,7 +244,7 @@ public class LaCasaDoradaGUI {
     private TableColumn<Order, String> tcProductsOrder;
 
     @FXML
-    private TableColumn<Order, String> tcQuantityOrder;
+    private TableColumn<Order, Double> tcQuantityOrder;
 
     @FXML
     private TableColumn<Order, String> tcEmployeeOrder;
@@ -478,10 +482,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
-    	
-    	setUpAddClient();
+
     	setUpAddOrder();
-    	setUpAddEmployee();
     	initializeMiniOrderTableView();
     }
 
@@ -575,12 +577,6 @@ public class LaCasaDoradaGUI {
     	mainPane.getChildren().setAll(customerListPane);
     	initializeCustomerTableView();
     }
-   
-
-    /*
-     *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
-     */
-    
    
     /*
      **************************************** SCREEN CUSTOMER LIST (customer-list.fxml) *******************************************************
@@ -709,6 +705,9 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getClients().remove(ca);
     		this.tbCustomerList.refresh();
     		customerWasDeletedAlert();
+    		ObservableList<ClientAccount> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getClients());
+            tbCustomerList.setItems(observableList);
     	}
     }
 
@@ -766,10 +765,18 @@ public class LaCasaDoradaGUI {
         tbOrderList.setItems(observableList);
         
         tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));
+<<<<<<< HEAD
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
         tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameProduct"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
+=======
+        txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("order"));
+        tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("client"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
+        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
+        tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("employee"));
+>>>>>>> 80d557667afa4ea17ceddb759bb68fb2f706f1dc
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
@@ -782,7 +789,12 @@ public class LaCasaDoradaGUI {
     	
     	if(or != null) {
     		this.tcNumberOrder.setText(String.valueOf(or.getNumber()));
+<<<<<<< HEAD
     		this.tcProductsOrder.setText(or.getNameProduct());
+=======
+    		this.tcCustomerOrder.setText(String.valueOf(or.getClient()));
+    		this.tcProductsOrder.setText(or.getProduct().getName());
+>>>>>>> 80d557667afa4ea17ceddb759bb68fb2f706f1dc
     		this.tcQuantityOrder.setText(String.valueOf(or.getQuantity()));
     		this.tcEmployeeOrder.setText(or.getNameEmployee());
     		this.tcDateOrder.setText(String.valueOf(or.getDate()));
@@ -949,6 +961,9 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getProducts().remove(pr);
     		this.tbProductList.refresh();
     		itemWasDeletedAlert();
+    		ObservableList<RestaurantProduct> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getProducts());
+            tbProductList.setItems(observableList);
     	}
     }
 
@@ -1149,6 +1164,9 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getIngredients().remove(ri);
     		this.tbIngredientList.refresh();
     		itemWasDeletedAlert();
+    		ObservableList<RestaurantIngredient> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
+            tbIngredientList.setItems(observableList);
     	}
     }
 
@@ -1227,6 +1245,9 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getTypeOfProducts().remove(tp);
     		this.tbTypeOfProductList.refresh();
     		itemWasDeletedAlert();
+    		ObservableList<RestaurantTypeOfProduct> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getTypeOfProducts());
+            tbTypeOfProductList.setItems(observableList);
     	}
     }
 
@@ -1295,7 +1316,7 @@ public class LaCasaDoradaGUI {
     }
 
 	/*
-     **************** SCREEN CREATE PRODUCT (create-product.fxml) *************************************************************************
+     ************************************ SCREEN CREATE PRODUCT (create-product.fxml) *************************************************************************
      */
     @FXML
     public void sub9GoBack(ActionEvent event) throws IOException {
@@ -1318,6 +1339,7 @@ public class LaCasaDoradaGUI {
         	validationErrorAlert();
         }else{
         	laCasaDorada.addProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct);
+        	productName.clear(); productSize.clear(); productPrice.clear(); 
         	productCreatedAlert();
         }
     	
@@ -1363,9 +1385,7 @@ public class LaCasaDoradaGUI {
     /*
      *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
      */
-    
-
-    
+   
     @FXML
     public void subGoBack(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
@@ -1393,15 +1413,28 @@ public class LaCasaDoradaGUI {
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
+<<<<<<< HEAD
         	System.out.println(employee);
         	System.out.println(product);
         	System.out.println(firstName);
         	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number);
+=======
+        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName, lastName, id), code, date, time, quantity,observations, number);
+        	COaddQuantity.clear(); COobservations.clear();
+>>>>>>> 80d557667afa4ea17ceddb759bb68fb2f706f1dc
         	productCreatedAlert();
         }
     }
     
-    
+    public double total(double quantity, double priceOfProduct) {
+    	double total=0;
+    	total = quantity * priceOfProduct;
+    	totalOrder.setText(String.valueOf(total));
+		return total;
+    }
+    public int generateCode() {
+    	return 1000000+1;
+    }
     
     public int count(int count) {
     	return count++;
@@ -1410,17 +1443,14 @@ public class LaCasaDoradaGUI {
     public void setUpAddOrder() {
     	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
     		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
-    		}
-    }
-    public void setUpAddClient() {	
+    	}
     	for(int j=0; j<laCasaDorada.getClients().size();j++) {
          	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
-         	}
-    }	
-    public void setUpAddEmployee() {
-        for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
-             COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
-    		}
+        }
+    	for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
+            COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
+   		}
+    	
     }
     
     @FXML
@@ -1479,6 +1509,7 @@ public class LaCasaDoradaGUI {
         	validationErrorAlert();
         }else{
         	laCasaDorada.addClient(firstName, lastName, id, address, phoneNumber, observations);
+        	txtCxFirstName.clear(); txtCxLastName.clear(); txtCxId.clear(); txtCxAddress.clear(); txtCxPhoneNumber.clear(); txtCxObservations.clear();
         	customerCreatedAlert();
         }
     }
