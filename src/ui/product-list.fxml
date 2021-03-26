@@ -10,51 +10,51 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="productListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="productListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="404.0" fitWidth="660.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="657.0" fitWidth="1093.0" layoutX="-35.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="174.0" layoutY="23.0" prefHeight="45.0" prefWidth="296.0" text="Lista de productos" textFill="WHITE">
+            <Label layoutX="210.0" layoutY="25.0" prefHeight="60.0" prefWidth="413.0" text="Lista de productos" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <TableView fx:id="tbProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbProductList" layoutY="85.0" prefHeight="408.0" prefWidth="808.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNameList" prefWidth="102.0" text="Nombre" />
-                  <TableColumn fx:id="tcTypeList" prefWidth="97.0" text="Tipo" />
-                  <TableColumn fx:id="tcIngredientsList" maxWidth="275.0" prefWidth="126.0" text="Ingredientes" />
-                  <TableColumn fx:id="tcSizeList" maxWidth="150.0" prefWidth="117.0" text="Tamaño" />
-                  <TableColumn fx:id="tcPriceList" maxWidth="151.0" prefWidth="112.0" text="Precio" />
-                  <TableColumn fx:id="tcStatusList" maxWidth="134.0" prefWidth="121.0" text="Estado" />
+                  <TableColumn fx:id="tcNameList" prefWidth="118.0" text="Nombre" />
+                  <TableColumn fx:id="tcTypeList" prefWidth="138.99998474121094" text="Tipo" />
+                  <TableColumn fx:id="tcIngredientsList" maxWidth="275.0" prefWidth="139.00001525878906" text="Ingredientes" />
+                  <TableColumn fx:id="tcSizeList" maxWidth="201.00003051757812" prefWidth="163.6666259765625" text="Tamaño" />
+                  <TableColumn fx:id="tcPriceList" maxWidth="222.66668701171875" prefWidth="108.3333740234375" text="Precio" />
+                  <TableColumn fx:id="tcStatusList" maxWidth="253.0" prefWidth="142.33331298828125" text="Estado" />
                </columns>
             </TableView>
-            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="16.0" layoutY="525.0" mnemonicParsing="false" onAction="#sub5GoBack" prefHeight="35.0" prefWidth="88.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="490.0" layoutY="341.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Doble click para actualizar">
+            <Label layoutX="629.0" layoutY="533.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="186.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="28.0" prefWidth="91.0" text="ELIMINAR">
+            <Button layoutX="160.0" layoutY="526.0" mnemonicParsing="false" onAction="#productDeleteOpt" prefHeight="32.0" prefWidth="85.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="286.0" layoutY="329.0" mnemonicParsing="false" onAction="#productDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
+            <Button layoutX="322.0" layoutY="526.0" mnemonicParsing="false" onAction="#productDisableOpt" prefHeight="32.0" prefWidth="97.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="389.0" layoutY="329.0" mnemonicParsing="false" onAction="#productEnableOpt" prefHeight="28.0" prefWidth="87.0" text="HABILITAR">
+            <Button layoutX="429.0" layoutY="525.0" mnemonicParsing="false" onAction="#productEnableOpt" prefHeight="32.0" prefWidth="102.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

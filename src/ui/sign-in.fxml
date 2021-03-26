@@ -9,38 +9,38 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="signInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="signInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="427.0" fitWidth="698.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="818.0" fitWidth="966.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="123.0" layoutY="14.0" text="Ingresar a La Casa Dorada" textFill="WHITE">
+            <Label layoutX="144.0" layoutY="26.0" text="Ingresar a La Casa Dorada" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <Label layoutX="113.0" layoutY="128.0" prefHeight="34.0" prefWidth="91.0" text="Usuario:" textFill="WHITE">
+            <Label layoutX="185.0" layoutY="195.0" prefHeight="34.0" prefWidth="103.0" text="Usuario:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="83.0" layoutY="176.0" prefHeight="34.0" prefWidth="113.0" text="Contraseña:" textFill="WHITE">
+            <Label layoutX="151.0" layoutY="272.0" prefHeight="34.0" prefWidth="136.0" text="Contraseña:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUsername" layoutX="224.0" layoutY="132.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtPassword" layoutX="224.0" layoutY="180.0" prefHeight="25.0" prefWidth="229.0" />
-            <Button layoutX="224.0" layoutY="280.0" mnemonicParsing="false" onAction="#optLogIn" prefHeight="39.0" prefWidth="99.0" text="INGRESAR">
+            <TextField fx:id="txtUsername" layoutX="324.0" layoutY="193.0" prefHeight="35.0" prefWidth="263.0" />
+            <TextField fx:id="txtPassword" layoutX="322.0" layoutY="274.0" prefHeight="35.0" prefWidth="262.0" />
+            <Button layoutX="320.0" layoutY="366.0" mnemonicParsing="false" onAction="#optLogIn" prefHeight="48.0" prefWidth="116.0" text="INGRESAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="354.0" layoutY="280.0" mnemonicParsing="false" onAction="#optSignUp" prefHeight="39.0" prefWidth="99.0" text="REGISTRAR">
+            <Button layoutX="469.0" layoutY="366.0" mnemonicParsing="false" onAction="#optSignUp" prefHeight="48.0" prefWidth="116.0" text="REGISTRAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

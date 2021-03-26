@@ -9,62 +9,62 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="createCustomerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="createCustomerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="428.0" fitWidth="670.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="695.0" fitWidth="967.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
-            <Label layoutX="213.0" layoutY="14.0" text="Crear cliente" textFill="WHITE">
+            <Label layoutX="322.0" layoutY="6.0" prefHeight="62.0" prefWidth="284.0" text="Crear cliente" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="43.0" />
                </font>
             </Label>
-            <Label layoutX="83.0" layoutY="214.0" prefHeight="34.0" prefWidth="92.0" text="Telefono:" textFill="WHITE">
-               <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="76.0" layoutY="180.0" prefHeight="34.0" prefWidth="94.0" text="Dirección:" textFill="WHITE">
+            <Label layoutX="182.0" layoutY="336.0" prefHeight="34.0" prefWidth="92.0" text="Telefono:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="txtCxFirstName" layoutX="199.0" layoutY="73.0" prefHeight="25.0" prefWidth="272.0" />
-            <TextField fx:id="txtCxLastName" layoutX="199.0" layoutY="111.0" prefHeight="25.0" prefWidth="271.0" />
-            <Button layoutX="271.0" layoutY="300.0" mnemonicParsing="false" onAction="#optCreateCustomerAccount" prefHeight="39.0" prefWidth="99.0" text="CREAR">
+            <Label layoutX="181.0" layoutY="283.0" prefHeight="34.0" prefWidth="94.0" text="Dirección:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCxFirstName" layoutX="324.0" layoutY="126.0" prefHeight="32.0" prefWidth="320.0" />
+            <TextField fx:id="txtCxLastName" layoutX="324.0" layoutY="181.0" prefHeight="32.0" prefWidth="320.0" />
+            <Button layoutX="428.0" layoutY="484.0" mnemonicParsing="false" onAction="#optCreateCustomerAccount" prefHeight="41.0" prefWidth="127.0" text="CREAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub18GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="18.0" layoutY="547.0" mnemonicParsing="false" onAction="#sub18GoBack" prefHeight="33.0" prefWidth="88.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="86.0" layoutY="68.0" prefHeight="34.0" prefWidth="89.0" text="Nombre:" textFill="WHITE">
+            <Label layoutX="184.0" layoutY="125.0" prefHeight="34.0" prefWidth="89.0" text="Nombre:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="83.0" layoutY="107.0" prefHeight="34.0" prefWidth="87.0" text="Apellido:" textFill="WHITE">
+            <Label layoutX="184.0" layoutY="180.0" prefHeight="34.0" prefWidth="87.0" text="Apellido:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="137.0" layoutY="145.0" prefHeight="34.0" prefWidth="34.0" text="ID:" textFill="WHITE">
+            <Label layoutX="238.0" layoutY="230.0" prefHeight="34.0" prefWidth="34.0" text="ID:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="txtCxId" layoutX="199.0" layoutY="149.0" prefHeight="25.0" prefWidth="272.0" />
-            <TextField fx:id="txtCxAddress" layoutX="199.0" layoutY="184.0" prefHeight="25.0" prefWidth="273.0" />
-            <TextField fx:id="txtCxPhoneNumber" layoutX="199.0" layoutY="218.0" prefHeight="25.0" prefWidth="270.0" />
-            <TextField fx:id="txtCxObservations" layoutX="199.0" layoutY="252.0" prefHeight="25.0" prefWidth="271.0" />
-            <Label layoutX="29.0" layoutY="248.0" prefHeight="34.0" prefWidth="139.0" text="Observaciones:" textFill="WHITE">
+            <TextField fx:id="txtCxId" layoutX="322.0" layoutY="231.0" prefHeight="32.0" prefWidth="320.0" />
+            <TextField fx:id="txtCxAddress" layoutX="322.0" layoutY="284.0" prefHeight="32.0" prefWidth="320.0" />
+            <TextField fx:id="txtCxPhoneNumber" layoutX="322.0" layoutY="337.0" prefHeight="32.0" prefWidth="320.0" />
+            <TextField fx:id="txtCxObservations" layoutX="322.0" layoutY="387.0" prefHeight="32.0" prefWidth="320.0" />
+            <Label layoutX="135.0" layoutY="386.0" prefHeight="34.0" prefWidth="139.0" text="Observaciones:" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>

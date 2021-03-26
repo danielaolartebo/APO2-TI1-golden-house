@@ -9,60 +9,60 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="364.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="431.0" fitWidth="704.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="802.0" fitWidth="960.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
             <Label layoutX="123.0" layoutY="14.0" text="Crear cuenta de empleados" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <Label layoutX="77.0" layoutY="80.0" prefHeight="34.0" prefWidth="92.0" text="Usuario:" textFill="WHITE">
+            <Label layoutX="148.0" layoutY="139.0" prefHeight="34.0" prefWidth="92.0" text="Usuario:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="45.0" layoutY="123.0" prefHeight="34.0" prefWidth="120.0" text="Contraseña:" textFill="WHITE">
+            <Label layoutX="118.0" layoutY="207.0" prefHeight="34.0" prefWidth="130.0" text="Contraseña:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUsername" layoutX="206.0" layoutY="85.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtPassword" layoutX="206.0" layoutY="128.0" prefHeight="25.0" prefWidth="229.0" />
-            <Button layoutX="271.0" layoutY="300.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="99.0" text="CREAR">
+            <TextField fx:id="txtUsername" layoutX="320.0" layoutY="137.0" prefHeight="35.0" prefWidth="290.0" />
+            <TextField fx:id="txtPassword" layoutX="323.0" layoutY="205.0" prefHeight="35.0" prefWidth="290.0" />
+            <Button layoutX="345.0" layoutY="474.0" mnemonicParsing="false" onAction="#optCreateAccount" prefHeight="39.0" prefWidth="132.0" text="CREAR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="27.0" layoutY="525.0" mnemonicParsing="false" onAction="#sub15GoBack" prefHeight="36.0" prefWidth="91.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="73.0" layoutY="169.0" prefHeight="34.0" prefWidth="96.0" text="Nombre:" textFill="WHITE">
+            <Label layoutX="150.0" layoutY="264.0" prefHeight="34.0" prefWidth="104.0" text="Nombre:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="208.0" prefHeight="34.0" prefWidth="91.0" text="Apellido:" textFill="WHITE">
+            <Label layoutX="143.0" layoutY="332.0" prefHeight="34.0" prefWidth="119.0" text="Apellido:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="123.0" layoutY="249.0" prefHeight="34.0" prefWidth="38.0" text="ID:" textFill="WHITE">
+            <Label layoutX="205.0" layoutY="390.0" prefHeight="34.0" prefWidth="38.0" text="ID:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="txtFirstName" layoutX="206.0" layoutY="174.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtLastName" layoutX="206.0" layoutY="213.0" prefHeight="25.0" prefWidth="229.0" />
-            <TextField fx:id="txtId" layoutX="206.0" layoutY="254.0" prefHeight="25.0" prefWidth="229.0" />
+            <TextField fx:id="txtFirstName" layoutX="323.0" layoutY="263.0" prefHeight="35.0" prefWidth="290.0" />
+            <TextField fx:id="txtLastName" layoutX="321.0" layoutY="330.0" prefHeight="35.0" prefWidth="290.0" />
+            <TextField fx:id="txtId" layoutX="323.0" layoutY="388.0" prefHeight="35.0" prefWidth="290.0" />
          </children>
       </Pane>
    </center>
