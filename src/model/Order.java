@@ -30,7 +30,7 @@ public class Order {
 		this.time=time;
 		this.quantity=quantity;
 		this.observations=observations;
-		this.order=Status.REQUESTED;
+		this.order=Status.SOLICITADO;
 
 		this.setNumber(number);
 		nameEmployee = employee.getFirstName();

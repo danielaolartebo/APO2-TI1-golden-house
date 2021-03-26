@@ -7,7 +7,7 @@ public class RestaurantTypeOfProduct {
 	
 	public RestaurantTypeOfProduct(String typeName) {
 		this.typeName = typeName;	
-		this.typeOfProductStatus=MembersStatus.ACTIVE;
+		this.typeOfProductStatus=MembersStatus.ACTIVA;
 	}
 
 	public String getTypeOfProductName() {

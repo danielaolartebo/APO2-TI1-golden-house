@@ -1,5 +1,5 @@
 package model;
 
 public enum Status {
-	REQUESTED, PROCESSED, SENT, DELIVERED
+	SOLICITADO, EN_PROCESO, ENVIADO, ENTREGADO
 }

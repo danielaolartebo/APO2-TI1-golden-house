@@ -1,5 +1,5 @@
 package model;
 
 public enum MembersStatus {
-	ACTIVE, INACTIVE
+	ACTIVA, INACTIVA
 }

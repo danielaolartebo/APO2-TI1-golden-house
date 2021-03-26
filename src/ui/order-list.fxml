@@ -31,13 +31,14 @@
                   <TableColumn fx:id="tcProductsOrder" prefWidth="88.0" text="Productos" />
                   <TableColumn fx:id="tcQuantityOrder" prefWidth="60.0" text="Cantidad" />
                   <TableColumn fx:id="tcEmployeeOrder" prefWidth="72.0" text="Empleado" />
-                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="81.0" text="Fecha" />
-                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="78.0" text="Hora" />
-                  <TableColumn fx:id="tcObservationsOrder" maxWidth="146.0" minWidth="0.0" prefWidth="109.0" text="Observaciones" />
-                  <TableColumn fx:id="txStatusOrder" prefWidth="64.0" text="Estado" />
+                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="55.0" text="Fecha" />
+                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="75.0" text="Hora" />
+                  <TableColumn fx:id="tcObservationsOrder" maxWidth="146.0" minWidth="0.0" prefWidth="92.0" text="Observaciones" />
+                  <TableColumn fx:id="txStatusOrder" prefWidth="60.0" text="Estado" />
+                  <TableColumn fx:id="txStatusOrder1" prefWidth="50.0" text="Precio" />
                </columns>
             </TableView>
-            <Button layoutX="8.0" layoutY="325.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="30.0" prefWidth="80.0" text="Atrás">
+            <Button layoutX="6.0" layoutY="334.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="20.0" prefWidth="59.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
@@ -47,22 +48,27 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="101.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusRequested" prefHeight="10.0" prefWidth="85.0" text="SOLICITADO">
+            <Button layoutX="73.0" layoutY="329.0" mnemonicParsing="false" onAction="#statusRequested" prefHeight="23.0" prefWidth="78.0" text="SOLICITADO">
                <font>
                   <Font name="System Bold Italic" size="10.0" />
                </font>
             </Button>
-            <Button layoutX="196.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusProcessed" prefHeight="10.0" prefWidth="85.0" text="EN PROGRESO">
+            <Button layoutX="157.0" layoutY="329.0" mnemonicParsing="false" onAction="#statusProcessed" prefHeight="23.0" prefWidth="85.0" text="EN PROGRESO">
                <font>
                   <Font name="System Bold Italic" size="10.0" />
                </font>
             </Button>
-            <Button layoutX="292.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusSent" prefHeight="10.0" prefWidth="85.0" text="ENVIADO">
+            <Button layoutX="248.0" layoutY="329.0" mnemonicParsing="false" onAction="#statusSent" prefHeight="23.0" prefWidth="63.0" text="ENVIADO">
                <font>
                   <Font name="System Bold Italic" size="10.0" />
                </font>
             </Button>
-            <Button layoutX="386.0" layoutY="328.0" mnemonicParsing="false" onAction="#statusDelivered" prefHeight="10.0" prefWidth="85.0" text="ENTREGADO">
+            <Button layoutX="318.0" layoutY="329.0" mnemonicParsing="false" onAction="#statusDelivered" prefHeight="23.0" prefWidth="78.0" text="ENTREGADO">
+               <font>
+                  <Font name="System Bold Italic" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="417.0" layoutY="329.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="23.0" prefWidth="65.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold Italic" size="10.0" />
                </font>

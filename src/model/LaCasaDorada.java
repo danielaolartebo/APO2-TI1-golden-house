@@ -58,7 +58,7 @@ public class LaCasaDorada {
 		saveEmployeeData();
 	}
 	
-	public void addProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) throws IOException {
+	public void addProduct(String name, String typeOfProduct, String[] ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) throws IOException {
 		products.add(new RestaurantProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct));
 		saveProductData();
 	}
@@ -117,6 +117,17 @@ public class LaCasaDorada {
 	
 	public void setNumberList(int numberList) {
 		this.numberList=numberList;
+	}
+	
+	public boolean verifyRemoveIngredientInOrder(RestaurantIngredient ingredient) {
+		boolean found=false;
+		for(int i=0; i<products.size() && !found; i++) {
+			String [] arrayIngredients=products.get(i).getIngredientsOfProductArray();
+			for(int j=0; j<arrayIngredients.length && !found; j++) {
+				if (arrayIngredients[j].equals(ingredient.getIngredientName())) found=true;
+			}
+		}
+		return found;
 	}
 	
 	public boolean validateOrder(String code) {
@@ -213,8 +224,9 @@ public class LaCasaDorada {
 		String line = br.readLine();
 		while(line!=null) {
 			String[] parts = line.split(",");
-			double priceOfProduct = Double.parseDouble(parts[4]);
-			addProduct(parts[0], parts[1], parts[2], parts[3], priceOfProduct);
+			double priceOfProduct = Double.parseDouble(parts[4]); 
+			String[] ingredientOfProduct = parts[2].split("-");
+			addProduct(parts[0], parts[1], ingredientOfProduct, parts[3], priceOfProduct);
 			line = br.readLine();
 		}
 		br.close();

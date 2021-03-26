@@ -7,7 +7,7 @@ public class RestaurantIngredient {
 	
 	public RestaurantIngredient(String ingredientName) {
 		this.ingredientName = ingredientName;	
-		this.ingredientStatus=MembersStatus.ACTIVE;
+		this.ingredientStatus=MembersStatus.ACTIVA;
 	}
 
 	public String getIngredientName() {
