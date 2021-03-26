@@ -242,7 +242,7 @@ public class LaCasaDoradaGUI {
     private TableColumn<Order, String> txStatusOrder;
 
     @FXML
-    private TableColumn<Order, String> tcProductsOrder;
+    private TableColumn<Order, String[]> tcProductsOrder;
 
     @FXML
     private TableColumn<Order, Double> tcQuantityOrder;
@@ -769,7 +769,7 @@ public class LaCasaDoradaGUI {
         
         tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));   
         tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameClient"));
-        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String[]>("product"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
@@ -785,7 +785,7 @@ public class LaCasaDoradaGUI {
     	if(or != null) {
     		this.tcNumberOrder.setText(String.valueOf(or.getNumber()));
 
-    		this.tcProductsOrder.setText(or.getNameProduct());
+    		this.tcProductsOrder.setText(String.valueOf(or.getNameProduct()));
 
     		this.tcCustomerOrder.setText(or.getNameClient());
     		this.tcProductsOrder.setText(or.getProduct().getName());
@@ -883,7 +883,7 @@ public class LaCasaDoradaGUI {
         tcSizeList.setCellFactory(TextFieldTableCell.forTableColumn());
         
         
-        tcNameList.setOnEditCommit(data -> {
+        /*tcNameList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
@@ -891,7 +891,7 @@ public class LaCasaDoradaGUI {
             pr.setName(data.getNewValue());
 
             System.out.println(pr);
-        });
+        });*/
         
         tcTypeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
@@ -1331,6 +1331,7 @@ public class LaCasaDoradaGUI {
     	double priceOfProduct = Double.parseDouble(productPrice.getText());
     	
     	
+   
     	ArrayList<RestaurantIngredient> ingredients = new ArrayList<>(miniTbCreateProduct.getItems());
     	String [] ingredientsProducts=new String [ingredients.size()];
     	
@@ -1411,9 +1412,6 @@ public class LaCasaDoradaGUI {
     	int number = laCasaDorada.getNumberList();
     	number+=1;	
     	laCasaDorada.setNumberList(number);
-    	
-    	
-    	
     	
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();

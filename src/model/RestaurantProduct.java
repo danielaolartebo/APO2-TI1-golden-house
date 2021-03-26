@@ -21,9 +21,11 @@ public class RestaurantProduct implements Serializable{
 		this.priceOfProduct=priceOfProduct;
 		this.productStatus=MembersStatus.ACTIVA;
 	}
-
+	
+	
+	
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	public void setName(String name) {
