@@ -301,19 +301,7 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private TableColumn<EmployeeAccount, String> tcEmployeeStatus;
-    
-    @FXML
-    private TextField tcEmployeeChangeName;
-    
-    @FXML
-    private TextField tcEmployeeChangeLastName;
-    
-    @FXML
-    private TextField tcEmployeeChangeID;
-    
-    @FXML
-    private TextField tcEmployeeChangeStatus;
-    
+
     
     // INGREDIENT LIST 
     
@@ -329,7 +317,9 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableColumn<RestaurantIngredient, String> tcIngredientStatus;
     
+    @FXML
     private ObservableList<RestaurantIngredient> temp;
+
     
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
@@ -483,10 +473,14 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
-    	
-    	miniTbCreateOrder.refresh();
+
     	setUpAddOrder();
     	initializeMiniOrderTableView();
+    	
+    	ObservableList<ProductQuantity> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
+        miniTbCreateOrder.setItems(observableList);
+        observableList.clear();
     }
 
     
@@ -798,6 +792,19 @@ public class LaCasaDoradaGUI {
     	}	
     }
     
+    public void loadMiniProductTable(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("order.fxml"));
+        fxmlLoader.setController(this);
+        Parent ordertListPane = fxmlLoader.load();
+        menuPane.getChildren().clear();
+        menuPane.setCenter(ordertListPane);
+        initializeMiniOrderTableView();
+        
+        ObservableList<ProductQuantity> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
+        miniTbCreateOrder.setItems(observableList);
+    }
+    
     @FXML
     public void statusRequested(ActionEvent event) throws IOException{
     	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
@@ -879,7 +886,6 @@ public class LaCasaDoradaGUI {
         
         tcNameList.setCellFactory(TextFieldTableCell.forTableColumn());
         tcTypeList.setCellFactory(TextFieldTableCell.forTableColumn());
-       //  tcIngredientsList.setCellFactory(TextFieldTableCell.forTableColumn());
         tcSizeList.setCellFactory(TextFieldTableCell.forTableColumn());
         
         
@@ -1129,6 +1135,18 @@ public class LaCasaDoradaGUI {
         
         tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
         tcIngredientStatus.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientStatus"));
+        
+        tcIngredientName.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        tcIngredientName.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantIngredient ri = data.getRowValue();
+            ri.setIngredientName(data.getNewValue());
+
+            System.out.println(ri);
+        });
     }
     
     public void loadIngredientTable(ActionEvent event) throws IOException {
@@ -1145,7 +1163,7 @@ public class LaCasaDoradaGUI {
     	RestaurantIngredient ri = this.tbIngredientList.getSelectionModel().getSelectedItem();
     	
     	if(ri != null) {
-    		this.tcEmployeeFirstName.setText(ri.getIngredientName());
+    		this.tcIngredientName.setText(ri.getIngredientName());
     	}	
     }
     
@@ -1413,12 +1431,9 @@ public class LaCasaDoradaGUI {
     	laCasaDorada.setNumberList(number);
     	
     	
-    	
-    	
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
-        	
         	System.out.println(employee);
         	System.out.println(product);
         	System.out.println(client);
@@ -1484,7 +1499,6 @@ public class LaCasaDoradaGUI {
     		ObservableList<ProductQuantity> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
             miniTbCreateOrder.setItems(observableList);
-            
     	}
     	
     }
@@ -1511,14 +1525,29 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void deleteOrder(ActionEvent event) {
+    	Order ro = this.tbOrderList.getSelectionModel().getSelectedItem();
+    	
+    	if(ro == null) {
+    		selectAnOptionAlert();
+    	}else if(ro.getOrderStatus()==Status.ENTREGADO){
+    		this.laCasaDorada.getOrders().remove(ro);
+    		this.tbOrderList.refresh();
+    		itemWasDeletedAlert();
+    		ObservableList<Order> observableList;
+    		observableList = FXCollections.observableArrayList(laCasaDorada.getOrders());
+    		tbOrderList.setItems(observableList);
+    	}else {
+    		itemCannotBeDeletedAlert();
+    	} 
 
     }
     
     /*
      ****************************** SCREEN CREATE CUSTOMER (create-customer.fxml) *************************************************************************
      */
-    
-    @FXML
+ 
+
+	@FXML
     public void optCreateCustomerAccount(ActionEvent event) throws IOException{
     	String firstName=txtCxFirstName.getText();
     	String lastName=txtCxLastName.getText();
@@ -1772,5 +1801,13 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("El item fue habilitado satisfactoriamente");
 	    alert.showAndWait();
 	}
+    
+    private void itemCannotBeDeletedAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Eliminar item error");
+	    alert.setHeaderText("");
+	    alert.setContentText("El item no se puede eliminar porque está en uso");
+	    alert.showAndWait();
+   	}
    
 }
