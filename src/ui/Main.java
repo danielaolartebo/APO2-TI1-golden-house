@@ -48,10 +48,10 @@ public class Main extends Application{
 		primaryStage.setTitle("La Casa Dorada");
 		primaryStage.show();
 		
-		primaryStage.setMinHeight(600);
-        primaryStage.setMinWidth(800);
-        primaryStage.setMaxWidth(800);        
-        primaryStage.setMaxHeight(600);
+		primaryStage.setMinHeight(640);
+        primaryStage.setMinWidth(820);
+        primaryStage.setMaxWidth(820);        
+        primaryStage.setMaxHeight(640);
 
        
 	}

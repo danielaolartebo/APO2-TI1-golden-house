@@ -10,47 +10,47 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="typeOfProductListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="typeOfProductListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="404.0" fitWidth="660.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="787.0" fitWidth="1104.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="161.0" layoutY="14.0" prefHeight="45.0" prefWidth="429.0" text="Lista de tipo de productos" textFill="WHITE">
+            <Label layoutX="119.0" layoutY="20.0" prefHeight="60.0" prefWidth="553.0" text="Lista de tipo de productos" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <TableView fx:id="tbTypeOfProductList" layoutY="60.0" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbTypeOfProductList" layoutX="-4.0" layoutY="97.0" prefHeight="408.0" prefWidth="804.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcTypeOfProductName" maxWidth="350.0" prefWidth="655.0" text="Nombre" />
-                  <TableColumn fx:id="tcTypeOfProductStatus" maxWidth="350.0" prefWidth="655.0" text="Estado" />
+                  <TableColumn fx:id="tcTypeOfProductName" maxWidth="420.66668701171875" prefWidth="420.66668701171875" text="Nombre" />
+                  <TableColumn fx:id="tcTypeOfProductStatus" maxWidth="453.0" prefWidth="382.33331298828125" text="Estado" />
                </columns>
             </TableView>
-            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#sub22GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="13.0" layoutY="533.0" mnemonicParsing="false" onAction="#sub22GoBack" prefHeight="31.0" prefWidth="91.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="481.0" layoutY="341.0" prefHeight="17.0" prefWidth="153.0" style="-fx-background-color: white;" text="Doble click para actualizar">
+            <Label layoutX="634.0" layoutY="539.0" prefHeight="17.0" prefWidth="153.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="188.0" layoutY="329.0" mnemonicParsing="false" onAction="#typeOfProductDeleteOpt" prefHeight="28.0" prefWidth="74.0" text="ELIMINAR">
+            <Button layoutX="190.0" layoutY="534.0" mnemonicParsing="false" onAction="#typeOfProductDeleteOpt" prefHeight="32.0" prefWidth="80.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="270.0" layoutY="329.0" mnemonicParsing="false" onAction="#typeOfProductDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
+            <Button layoutX="338.0" layoutY="534.0" mnemonicParsing="false" onAction="#typeOfProductDisableOpt" prefHeight="32.0" prefWidth="102.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="375.0" layoutY="329.0" mnemonicParsing="false" onAction="#typeOfProductEnableOpt" prefHeight="29.0" prefWidth="79.0" text="HABILITAR">
+            <Button layoutX="456.0" layoutY="533.0" mnemonicParsing="false" onAction="#typeOfProductEnableOpt" prefHeight="32.0" prefWidth="80.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

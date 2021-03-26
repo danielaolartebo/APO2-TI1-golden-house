@@ -10,49 +10,49 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="employeeListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="employeeListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="404.0" fitWidth="660.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="625.0" fitWidth="1102.0" layoutX="-22.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-11%20(2).png" />
                </image>
             </ImageView>
-            <Label layoutX="203.0" layoutY="16.0" prefHeight="45.0" prefWidth="319.0" text="Lista de empleados" textFill="WHITE">
+            <Label layoutX="226.0" layoutY="35.0" prefHeight="60.0" prefWidth="426.0" text="Lista de empleados" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Black" size="32.0" />
+                  <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <TableView fx:id="tbEmployeeList" editable="true" layoutY="61.0" onMouseClicked="#selectEmployee" prefHeight="271.0" prefWidth="656.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbEmployeeList" editable="true" layoutX="1.0" layoutY="107.0" onMouseClicked="#selectEmployee" prefHeight="395.0" prefWidth="801.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcEmployeeFirstName" prefWidth="172.0" text="Nombre" />
-                  <TableColumn fx:id="tcEmployeeLastName" prefWidth="171.0" text="Apellido" />
-                  <TableColumn fx:id="tcEmployeeId" prefWidth="151.0" text="ID" />
-                  <TableColumn fx:id="tcEmployeeStatus" maxWidth="162.0" prefWidth="162.0" text="Estado" />
+                  <TableColumn fx:id="tcEmployeeFirstName" prefWidth="224.0" text="Nombre" />
+                  <TableColumn fx:id="tcEmployeeLastName" prefWidth="191.0" text="Apellido" />
+                  <TableColumn fx:id="tcEmployeeId" prefWidth="206.99996948242188" text="ID" />
+                  <TableColumn fx:id="tcEmployeeStatus" maxWidth="306.0" prefWidth="178.00003051757812" text="Estado" />
                </columns>
             </TableView>
-            <Button layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="14.0" layoutY="511.0" mnemonicParsing="false" onAction="#sub6GoBack" prefHeight="33.0" prefWidth="91.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="500.0" layoutY="341.0" prefHeight="17.0" prefWidth="150.0" style="-fx-background-color: white;" text="Doble click para actualizar">
+            <Label layoutX="636.0" layoutY="519.0" prefHeight="17.0" prefWidth="150.0" style="-fx-background-color: white;" text="Doble click para actualizar">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="177.0" layoutY="332.0" mnemonicParsing="false" onAction="#employeeDeleteOpt" prefHeight="28.0" prefWidth="96.0" text="ELIMINAR">
+            <Button layoutX="164.0" layoutY="513.0" mnemonicParsing="false" onAction="#employeeDeleteOpt" prefHeight="28.0" prefWidth="96.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="284.0" layoutY="332.0" mnemonicParsing="false" onAction="#employeeDisableOpt" prefHeight="28.0" prefWidth="98.0" text="DESHABILITAR">
+            <Button layoutX="341.0" layoutY="513.0" mnemonicParsing="false" onAction="#employeeDisableOpt" prefHeight="28.0" prefWidth="98.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="389.0" layoutY="332.0" mnemonicParsing="false" onAction="#employeeEnableOpt" prefHeight="28.0" prefWidth="97.0" text="HABILITAR">
+            <Button layoutX="451.0" layoutY="513.0" mnemonicParsing="false" onAction="#employeeEnableOpt" prefHeight="28.0" prefWidth="97.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>

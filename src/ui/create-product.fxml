@@ -39,7 +39,7 @@
                         <Image url="@2021-03-09%20(4).png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="10.0" layoutY="511.0" mnemonicParsing="false" onAction="#sub9GoBack" prefHeight="29.0" prefWidth="65.0" text="Atrás" />
+                  <Button layoutX="7.0" layoutY="485.0" mnemonicParsing="false" onAction="#sub9GoBack" prefHeight="29.0" prefWidth="65.0" text="Atrás" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
