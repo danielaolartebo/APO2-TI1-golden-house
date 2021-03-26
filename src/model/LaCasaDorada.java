@@ -17,9 +17,9 @@ import java.util.List;
 
 public class LaCasaDorada {
 	
-	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
-	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
-	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
+	public final static String SAVE_PATH_FILE1 = "Employee-data.sgv";
+	public final static String SAVE_PATH_FILE2 = "Customer-data.sgv";
+	public final static String SAVE_PATH_FILE3 = "Product-data.sgv";
 	
 	private static final String SEPARATE=",";
 	
