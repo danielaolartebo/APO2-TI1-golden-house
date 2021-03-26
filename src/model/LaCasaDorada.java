@@ -17,9 +17,9 @@ import java.util.List;
 
 public class LaCasaDorada {
 	
-	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
-	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
-	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
+	public final static String SAVE_PATH_FILE1 = "Employee-data.sgv";
+	public final static String SAVE_PATH_FILE2 = "Customer-data.sgv";
+	public final static String SAVE_PATH_FILE3 = "Product-data.sgv";
 	
 	private static final String SEPARATE=",";
 	
@@ -379,4 +379,26 @@ public class LaCasaDorada {
 		return loaded;
 	}
 
+<<<<<<< HEAD
+=======
+	/*public double burbleSort() {
+		double bestPrice;
+		boolean found = true;
+			for(int i=1; i < products.size() && found; i++ ) {
+			found = false;
+				for (int j=0; j<products.size()-1; j++) {
+				if(products.get(j).getPriceOfProduct()>products.get(j+1).getPriceOfProduct()) {
+					double temp = products.get(j).getPriceOfProduct();
+					array[j]=array[j+1];
+					array[j+1]=temp;
+					num++;
+					changed = true;
+					
+				}			
+			}
+		}
+		
+		return bestPrice;
+	}*/
+>>>>>>> ae604e4601508207f668166872cde1146272f568
 }
