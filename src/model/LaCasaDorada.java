@@ -357,10 +357,23 @@ public class LaCasaDorada {
 		return loaded;
 	}
 
-	/*public productQuantity totalPrice(double quantity, double price) {
-		productQuantity total;
-		double totalPrice = Double.parseDouble(total);
-		totalPrice = quantity*price;
-		return total;
+	/*public double burbleSort() {
+		double bestPrice;
+		boolean found = true;
+			for(int i=1; i < products.size() && found; i++ ) {
+			found = false;
+				for (int j=0; j<products.size()-1; j++) {
+				if(products.get(j).getPriceOfProduct()>products.get(j+1).getPriceOfProduct()) {
+					double temp = products.get(j).getPriceOfProduct();
+					array[j]=array[j+1];
+					array[j+1]=temp;
+					num++;
+					changed = true;
+					
+				}			
+			}
+		}
+		
+		return bestPrice;
 	}*/
 }
