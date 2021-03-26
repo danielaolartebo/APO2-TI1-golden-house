@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="449.0" prefWidth="359.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="335.0" fitWidth="333.0" layoutX="149.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="600.0" fitWidth="572.0" layoutX="134.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(4).png" />
                </image>
             </ImageView>
-            <Button layoutX="549.0" layoutY="294.0" mnemonicParsing="false" onAction="#menuSingOut" prefHeight="22.0" prefWidth="86.0" text="SALIR">
+            <Button layoutX="716.0" layoutY="510.0" mnemonicParsing="false" onAction="#menuSingOut" prefHeight="22.0" prefWidth="86.0" text="SALIR">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -29,7 +29,7 @@
       </Pane>
    </center>
    <top>
-      <MenuBar prefHeight="30.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+      <MenuBar prefHeight="30.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="Sesión empleados">
             <items>

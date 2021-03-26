@@ -12,44 +12,59 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="createOrderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="createOrderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="357.0" prefWidth="414.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="281.0" fitWidth="258.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="347.0" fitWidth="333.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2021-03-09%20(5).png" />
                </image>
             </ImageView>
-            <Label layoutX="337.0" layoutY="180.0" prefHeight="26.0" prefWidth="116.0" text="Nombre del cliente:" textFill="WHITE">
+            <Label layoutX="410.0" layoutY="294.0" prefHeight="26.0" prefWidth="135.0" text="Nombre del cliente:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="323.0" layoutY="212.0" prefHeight="26.0" prefWidth="134.0" text="Nombre del empleado:" textFill="WHITE">
+            <Label layoutX="390.0" layoutY="344.0" prefHeight="26.0" prefWidth="162.0" text="Nombre del empleado:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="364.0" layoutY="244.0" prefHeight="26.0" prefWidth="93.0" text="Observaciones:" textFill="WHITE">
+            <Label layoutX="444.0" layoutY="391.0" prefHeight="26.0" prefWidth="108.0" text="Observaciones:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#subGoBack" prefHeight="15.0" prefWidth="76.0" text="Atrás">
+            <Button layoutX="23.0" layoutY="554.0" mnemonicParsing="false" onAction="#subGoBack" prefHeight="32.0" prefWidth="90.0" text="Atrás">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <TableView fx:id="miniTbCreateOrder" layoutX="271.0" layoutY="58.0" prefHeight="122.0" prefWidth="150.0" style="-fx-background-color: black;">
+            <TableView fx:id="miniTbCreateOrder" layoutX="347.0" layoutY="105.0" prefHeight="171.0" prefWidth="150.0" style="-fx-background-color: black;">
               <columns>
                 <TableColumn fx:id="miniTcProduct" prefWidth="77.0" text="Producto" />
                 <TableColumn fx:id="miniTcQuantity" prefWidth="73.0" text="Cantidad" />
               </columns>
             </TableView>
-            <Label layoutX="415.0" layoutY="270.0" prefHeight="26.0" prefWidth="42.0" text="Total:" textFill="WHITE">
+            <Label layoutX="505.0" layoutY="449.0" prefHeight="26.0" prefWidth="45.0" text="Total:" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="245.0" layoutY="13.0" prefHeight="51.0" prefWidth="243.0" text="Crear orden" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="518.0" layoutY="105.0" prefHeight="17.0" prefWidth="78.0" text="Producto:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="519.0" layoutY="148.0" prefHeight="26.0" prefWidth="74.0" text="Cantidad:" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
                </font>
             </Label>
          </children>
@@ -58,39 +73,24 @@
    <right>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="-44.0" layoutY="14.0" text="Crear orden" textFill="WHITE">
-               <font>
-                  <Font name="Segoe UI Black" size="32.0" />
-               </font>
-            </Label>
-            <Button layoutX="9.0" layoutY="315.0" mnemonicParsing="false" onAction="#COcreateOrder" prefHeight="25.0" prefWidth="127.0" text="CREAR">
+            <Button layoutX="-27.0" layoutY="495.0" mnemonicParsing="false" onAction="#COcreateOrder" prefHeight="39.0" prefWidth="144.0" text="CREAR">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Label layoutX="-19.0" layoutY="114.0" prefHeight="26.0" prefWidth="60.0" text="Cantidad:" textFill="WHITE">
-               <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="-16.0" layoutY="79.0" prefHeight="17.0" prefWidth="61.0" text="Producto:" textFill="WHITE">
-               <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
-               </font>
-            </Label>
-            <TextField fx:id="COobservations" layoutX="38.0" layoutY="243.0" prefHeight="25.0" prefWidth="151.0" />
-            <Button layoutX="58.0" layoutY="147.0" mnemonicParsing="false" onAction="#COoptAddProduct" text="Añadir producto">
+            <TextField fx:id="COobservations" layoutX="-16.0" layoutY="386.0" prefHeight="32.0" prefWidth="180.0" />
+            <Button layoutX="19.0" layoutY="200.0" mnemonicParsing="false" onAction="#COoptAddProduct" text="Añadir producto">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <TextField fx:id="COaddQuantity" layoutX="38.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
-            <ComboBox fx:id="COaddProduct" layoutX="38.0" layoutY="75.0" prefWidth="150.0" />
-            <ComboBox fx:id="COcustomerName" layoutX="38.0" layoutY="180.0" prefWidth="150.0" />
-            <ComboBox fx:id="COemployeeName" layoutX="38.0" layoutY="212.0" prefWidth="150.0" />
-            <Label fx:id="totalOrder" layoutX="40.0" layoutY="268.0" prefHeight="26.0" prefWidth="149.0" textFill="WHITE">
+            <TextField fx:id="COaddQuantity" layoutY="149.0" prefHeight="25.0" prefWidth="149.0" />
+            <ComboBox fx:id="COaddProduct" layoutX="-1.0" layoutY="100.0" prefWidth="150.0" />
+            <ComboBox fx:id="COcustomerName" layoutX="-16.0" layoutY="284.0" prefHeight="32.0" prefWidth="180.0" />
+            <ComboBox fx:id="COemployeeName" layoutX="-16.0" layoutY="337.0" prefHeight="32.0" prefWidth="180.0" />
+            <Label fx:id="totalOrder" layoutX="-16.0" layoutY="437.0" prefHeight="26.0" prefWidth="149.0" textFill="WHITE">
                <font>
-                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
                </font>
             </Label>
          </children>
