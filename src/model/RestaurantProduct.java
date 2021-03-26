@@ -1,6 +1,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class RestaurantProduct implements Serializable{
 
@@ -9,16 +10,16 @@ public class RestaurantProduct implements Serializable{
 	private String typeOfProduct;
 	private String sizeOfProduct;
 	private double priceOfProduct;
-	private String ingredientsOfProduct;
+	private String[] ingredientsOfProduct;
 	private MembersStatus productStatus;
 	
-	public RestaurantProduct(String name, String typeOfProduct, String ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) {
+	public RestaurantProduct(String name, String typeOfProduct, String[] ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) {
 		this.name = name;
 		this.typeOfProduct=typeOfProduct;
 		this.ingredientsOfProduct=ingredientsOfProduct;
 		this.sizeOfProduct=sizeOfProduct;
 		this.priceOfProduct=priceOfProduct;
-		this.productStatus=MembersStatus.ACTIVE;
+		this.productStatus=MembersStatus.ACTIVA;
 	}
 
 	public String getName() {
@@ -55,10 +56,16 @@ public class RestaurantProduct implements Serializable{
 	}
 	
 	public String getIngredientsOfProduct() {
-		return ingredientsOfProduct;
+		String toString=Arrays.toString(ingredientsOfProduct);
+		return toString;
 	}
 	
-	public void setIngredientsOfProduct(String ingredientsOfProduct) {
+	public String[] getIngredientsOfProductArray() {
+		return this.ingredientsOfProduct;
+	}
+
+	
+	public void setIngredientsOfProduct(String[] ingredientsOfProduct) {
 		this.ingredientsOfProduct=ingredientsOfProduct;
 	}
 	

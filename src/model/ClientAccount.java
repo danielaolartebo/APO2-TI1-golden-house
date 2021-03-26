@@ -15,7 +15,7 @@ public class ClientAccount extends RestaurantMembers implements Serializable{
 			this.address = address;
 			this.phoneNumber = phoneNumber;
 			this.observations=observations;
-			this.customerStatus=MembersStatus.ACTIVE;
+			this.customerStatus=MembersStatus.ACTIVA;
 		}
 	
 		public String getAddress() {
