@@ -88,7 +88,7 @@
             <ComboBox fx:id="COaddProduct" layoutX="-1.0" layoutY="100.0" prefWidth="150.0" />
             <ComboBox fx:id="COcustomerName" layoutX="-16.0" layoutY="284.0" prefHeight="32.0" prefWidth="180.0" />
             <ComboBox fx:id="COemployeeName" layoutX="-16.0" layoutY="337.0" prefHeight="32.0" prefWidth="180.0" />
-            <Label fx:id="totalOrder" layoutX="-16.0" layoutY="437.0" prefHeight="26.0" prefWidth="149.0" textFill="WHITE">
+            <Label fx:id="totalOrder" layoutX="-16.0" layoutY="450.0" prefHeight="26.0" prefWidth="149.0" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
                </font>

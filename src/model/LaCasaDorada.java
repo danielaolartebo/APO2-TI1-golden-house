@@ -119,12 +119,22 @@ public class LaCasaDorada {
 		this.numberList=numberList;
 	}
 	
+/*	public boolean verifyRemoveProductInOrder(RestaurantProduct product) {
+		boolean found=false;
+		for (int i=0; i<orders.size() && !found; i++) {
+			String[] arrayProducts=orders.get(i).
+					
+		}
+		return found;
+	}  */
+	
 	public boolean verifyRemoveIngredientInOrder(RestaurantIngredient ingredient) {
 		boolean found=false;
 		for(int i=0; i<products.size() && !found; i++) {
 			String [] arrayIngredients=products.get(i).getIngredientsOfProductArray();
 			for(int j=0; j<arrayIngredients.length && !found; j++) {
-				if (arrayIngredients[j].equals(ingredient.getIngredientName())) found=true;
+				if (arrayIngredients[j].equals(ingredient.getIngredientName())) 
+					found=true;
 			}
 		}
 		return found;
@@ -369,6 +379,8 @@ public class LaCasaDorada {
 		return loaded;
 	}
 
+<<<<<<< HEAD
+=======
 	/*public double burbleSort() {
 		double bestPrice;
 		boolean found = true;
@@ -388,4 +400,5 @@ public class LaCasaDorada {
 		
 		return bestPrice;
 	}*/
+>>>>>>> ae604e4601508207f668166872cde1146272f568
 }
