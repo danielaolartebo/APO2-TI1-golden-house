@@ -329,8 +329,6 @@ public class LaCasaDoradaGUI {
     
     private ObservableList<RestaurantIngredient> temp;
     
-    private ObservableList<RestaurantProduct> temp2;
-    
     LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
@@ -483,7 +481,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
-
+    	
+    	miniTbCreateOrder.refresh();
     	setUpAddOrder();
     	initializeMiniOrderTableView();
     }
@@ -504,6 +503,7 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent createProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createProductPane);
+    	
     	
     	setUpAddIngredientandTypeOfProduct();
     	initializeMiniProductTableView();
@@ -765,16 +765,15 @@ public class LaCasaDoradaGUI {
         observableList = FXCollections.observableArrayList(laCasaDorada.getOrders());
         tbOrderList.setItems(observableList);
         
-        tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));
-        txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("order"));
-        tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("client"));
+        tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));   
+        tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameClient"));
         tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
-        tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("employee"));
+        tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
-        
+        txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
     }
 	
     @FXML
@@ -783,10 +782,14 @@ public class LaCasaDoradaGUI {
     	
     	if(or != null) {
     		this.tcNumberOrder.setText(String.valueOf(or.getNumber()));
-    		this.tcCustomerOrder.setText(String.valueOf(or.getClient()));
+
+    		this.tcProductsOrder.setText(or.getNameProduct());
+
+    		this.tcCustomerOrder.setText(or.getNameClient());
     		this.tcProductsOrder.setText(or.getProduct().getName());
+
     		this.tcQuantityOrder.setText(String.valueOf(or.getQuantity()));
-    		this.tcEmployeeOrder.setText(or.getEmployee().getFirstName());
+    		this.tcEmployeeOrder.setText(or.getNameEmployee());
     		this.tcDateOrder.setText(String.valueOf(or.getDate()));
     		this.txHourOrder.setText(String.valueOf(or.getTime()));
     		this.tcObservationsOrder.setText(or.getObservations());
@@ -1386,29 +1389,35 @@ public class LaCasaDoradaGUI {
     
     @FXML
     public void COcreateOrder(ActionEvent event) throws IOException{
-    	String firstName = null;
-    	String lastName = null;
-    	String id = null;
-    	String name = null;
-    	String client = COcustomerName.getSelectionModel().getSelectedItem();
-    	String product = COaddProduct.getSelectionModel().getSelectedItem();
-    	String employee = COemployeeName.getSelectionModel().getSelectedItem();
+
+    	String client = COcustomerName.getValue();
+    	String product = COaddProduct.getValue();
+    	String employee = COemployeeName.getValue();
     	String code = null;
     	LocalDate date = LocalDate.now();
     	LocalTime time = LocalTime.now();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
     	String observations = COobservations.getText();
-    	int number = 0;
-    	for(int i=0; i<laCasaDorada.getOrders().size(); i++) {
-    		number++;
-    	}
+    	int number = laCasaDorada.getNumberList();
+    	number+=1;	
+    	laCasaDorada.setNumberList(number);
+    	
+    	
+    	
+    	
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
-        	laCasaDorada.addOrder(laCasaDorada.findClient(firstName, lastName, id), laCasaDorada.findProduct(name), laCasaDorada.findEmployee(firstName, lastName, id), code, date, time, quantity,observations, number);
+        	
+        	System.out.println(employee);
+        	System.out.println(product);
+        	System.out.println(client);
+        	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number);
         	COaddQuantity.clear(); COobservations.clear();
         	productCreatedAlert();
         }
+    	
+    	
     }
     
     public double total(double quantity, double priceOfProduct) {
@@ -1441,20 +1450,41 @@ public class LaCasaDoradaGUI {
     @FXML
     public void COoptAddProduct(ActionEvent event) throws IOException{
     	
-    	if(!COaddProduct.getSelectionModel().getSelectedItem().equals("")) {
-   		 temp2.add(laCasaDorada.findProduct(COaddProduct.getSelectionModel().getSelectedItem()));
-   	}if(!COaddQuantity.getText().equals("")) {
-   		//
-   	}
-   	miniTbCreateOrder.refresh();
+    	String product = COaddProduct.getValue();
+    	double quantity = Double.parseDouble(COaddQuantity.getText());
+    	double price = 0;
+    	for(int i=0; i<laCasaDorada.getProducts().size() ;i++) {
+    		price = laCasaDorada.getProducts().get(i).getPriceOfProduct();
+    		
+    	}
+    	double priceTotal = price*quantity;
+    	
+    	System.out.println(product);
+    	System.out.println(priceTotal); 
+    	
+    	
+    	if(product.isEmpty() || quantity==0) {
+    		validationErrorAlert();
+    	}else {
+    		System.out.println(quantity);
+    		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product), quantity, laCasaDorada.findPrice(price));
+    		
+    		miniTbCreateOrder.refresh();
+    		totalOrder.setText(String.valueOf(priceTotal));
+    		ObservableList<ProductQuantity> observableList;
+            observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
+            miniTbCreateOrder.setItems(observableList);
+            
+    	}
+    	
     }
     
     private void initializeMiniOrderTableView(){
-    	ObservableList<ProductQuantity> temp2;
-        temp2 = FXCollections.observableArrayList();
-        miniTbCreateOrder.setItems(temp2);
+    	ObservableList<ProductQuantity> observableList;
+        observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
+        miniTbCreateOrder.setItems(observableList);
         
-    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("product"));
+    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("nameProduct"));
     	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double>("quantity"));
        
     	miniTcProduct.setCellFactory(TextFieldTableCell.forTableColumn());
@@ -1465,6 +1495,7 @@ public class LaCasaDoradaGUI {
     	
     	if(mrp != null) {
     		this.miniTcProduct.setText(mrp.getNameProduct());
+    		this.miniTcQuantity.setText(String.valueOf(mrp.getQuantity()));
     	}	
     }
     

@@ -30,8 +30,8 @@ public class LaCasaDorada {
 	private List<RestaurantTypeOfProduct> types;
 	private List<Order> orders;
 	private List<Size> sizes;
-	private List<SystemUser> users;
 	private List<ProductQuantity> productQuantity;
+	private int numberList;
 
 	
 	public LaCasaDorada() {
@@ -43,12 +43,9 @@ public class LaCasaDorada {
 		types = new ArrayList<>();
 		orders = new ArrayList<>();
 		sizes = new ArrayList<>();
-		users = new ArrayList<>();
 		productQuantity = new ArrayList<>();
-	}
-	
-	public void addUsers(String userName, String password, String firstName, String lastName, String id) {
-		users.add(new SystemUser(userName, password, firstName, lastName, id));
+		numberList=0;
+		
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) throws IOException {
@@ -82,6 +79,10 @@ public class LaCasaDorada {
 		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
 	}
 	
+	public void addProductQuantity(RestaurantProduct p, double quantity, RestaurantProduct pr) {
+		productQuantity.add(new ProductQuantity(p, quantity, pr));
+	}
+	
 	public List<ClientAccount> getClients(){
 		return clients; 
 	}
@@ -108,6 +109,14 @@ public class LaCasaDorada {
 	
 	public List<ProductQuantity> getProductQuantity(){
 		return productQuantity;
+	}
+	
+	public int getNumberList() {
+		return numberList;
+	}
+	
+	public void setNumberList(int numberList) {
+		this.numberList=numberList;
 	}
 	
 	public boolean validateOrder(String code) {
@@ -165,27 +174,17 @@ public class LaCasaDorada {
 		return validate;
 	}
 
-	public boolean validateEmployee(String firstName, String lastName) {
+	public boolean validateEmployee(String userName, String password) {
 		boolean validate=false;
 		for(int i=0; i<employees.size() && !validate;i++) {
 			EmployeeAccount employee = employees.get(i);
-			if(employee.getFirstName().equals(firstName) && employee.getLastName().equals(lastName)) {
+			if(employee.getUserName().equals(userName) && employee.getPassword().equals(password)) {
 				validate=true;
 			}
 		}
 		return validate;
 	}
 	
-	public boolean validateUser(String userName, String password) {
-		boolean validate=false;
-		for(int i=0; i<users.size() && !validate;i++) {
-			SystemUser user = users.get(i);
-			if(user.getUserName().equals(userName) && user.getPassword().equals(password)) {
-				validate=true;
-			}
-		}
-		return validate;
-	}
 
 	public void importEmployeeData(String fileName) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -238,21 +237,25 @@ public class LaCasaDorada {
         pw.close();
     }
 	
-	public ClientAccount findClient(String firstName, String lastName, String id){
+	public ClientAccount findClient(String firstName){
 		ClientAccount tempName=null;
 		for (int i=0; i < clients.size();i++) {
-			if(clients.get(i).getFirstName().equals(firstName) && clients.get(i).getLastName().equals(lastName) && clients.get(i).getId().equals(id)) {
+			if(clients.get(i).getFirstName().equals(firstName)) {
 				tempName = clients.get(i);
 			}
 		}
 		return tempName;
 	}
 	
-	public EmployeeAccount findEmployee(String firstName, String lastName, String id){
+	public EmployeeAccount findEmployee(String firstName){
 		EmployeeAccount tempName=null;
-		for (int i=0; i < employees.size();i++) {
-			if(employees.get(i).getFirstName().equals(firstName) && employees.get(i).getLastName().equals(lastName) && employees.get(i).getId().equals(id)) {
+		boolean found = false;
+		System.out.println(firstName);
+		for (int i=0; i < employees.size() && !found;i++) {
+			if(employees.get(i).getFirstName().equals(firstName)) {
 				tempName = employees.get(i);
+				found = true;
+				System.out.println("Encontré empleado");
 			}
 		}
 		return tempName;
@@ -261,9 +264,12 @@ public class LaCasaDorada {
 	public RestaurantProduct findProduct(String name){
 		boolean found = false;
 		RestaurantProduct tempProduct=null;
+		System.out.println(name);
 		for (int i=0; i < products.size() && !found;i++) {
 			if(products.get(i).getName().equals(name)) {
 				tempProduct = products.get(i);
+				found = true;
+				System.out.println("Encontré Producto");
 			}
 		}
 		return tempProduct;
@@ -280,6 +286,20 @@ public class LaCasaDorada {
 		return tempIng;
 	}
 	
+
+	public RestaurantProduct findPrice(double priceOfProduct) {
+		RestaurantProduct tempPrice= null;
+		System.out.println(priceOfProduct);
+		for(int i=1; i<products.size() || i<2; i++) {
+			if(products.get(i).getPriceOfProduct()==priceOfProduct) {
+				tempPrice = products.get(i);
+				System.out.println("Encontre el precio ");
+			}
+		}
+		return tempPrice;
+	}
+
+
 	public void saveEmployeeData() throws IOException{
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream (SAVE_PATH_FILE1));
 		oos.writeObject(employees);
@@ -336,4 +356,11 @@ public class LaCasaDorada {
 		}
 		return loaded;
 	}
+
+	/*public productQuantity totalPrice(double quantity, double price) {
+		productQuantity total;
+		double totalPrice = Double.parseDouble(total);
+		totalPrice = quantity*price;
+		return total;
+	}*/
 }

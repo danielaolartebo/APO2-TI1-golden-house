@@ -28,13 +28,13 @@
                <columns>
                   <TableColumn fx:id="tcNumberOrder" prefWidth="38.0" text="#" />
                   <TableColumn fx:id="tcCustomerOrder" prefWidth="65.0" text="Cliente" />
-                  <TableColumn fx:id="txStatusOrder" prefWidth="64.0" text="Estado" />
                   <TableColumn fx:id="tcProductsOrder" prefWidth="88.0" text="Productos" />
                   <TableColumn fx:id="tcQuantityOrder" prefWidth="60.0" text="Cantidad" />
                   <TableColumn fx:id="tcEmployeeOrder" prefWidth="72.0" text="Empleado" />
                   <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="81.0" text="Fecha" />
                   <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="78.0" text="Hora" />
                   <TableColumn fx:id="tcObservationsOrder" maxWidth="146.0" minWidth="0.0" prefWidth="109.0" text="Observaciones" />
+                  <TableColumn fx:id="txStatusOrder" prefWidth="64.0" text="Estado" />
                </columns>
             </TableView>
             <Button layoutX="8.0" layoutY="325.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="30.0" prefWidth="80.0" text="Atrás">
