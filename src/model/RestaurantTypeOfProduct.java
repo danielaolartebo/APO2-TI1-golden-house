@@ -30,4 +30,9 @@ public class RestaurantTypeOfProduct {
 		this.typeOfProductStatus = typeOfProductStatus;
 	}
 
+	public String[] getTypeOfProductNameArray() {
+		
+		return null;
+	}
+
 }
