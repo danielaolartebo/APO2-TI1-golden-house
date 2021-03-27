@@ -242,7 +242,10 @@ public class LaCasaDoradaGUI {
     private TableColumn<Order, String> txStatusOrder;
 
     @FXML
-    private TableColumn<Order, String[]> tcProductsOrder;
+    private TableColumn<Order, Double> txStatusOrder1;
+    
+    @FXML
+    private TableColumn<Order, String> tcProductsOrder;
 
     @FXML
     private TableColumn<Order, Double> tcQuantityOrder;
@@ -480,7 +483,7 @@ public class LaCasaDoradaGUI {
     	ObservableList<ProductQuantity> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
         miniTbCreateOrder.setItems(observableList);
-        observableList.clear();
+        observableList.removeAll(observableList);
     }
 
     
@@ -763,13 +766,14 @@ public class LaCasaDoradaGUI {
         
         tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));   
         tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameClient"));
-        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String[]>("product"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
         tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
+        txStatusOrder1.setCellValueFactory(new PropertyValueFactory<Order, Double>("price"));
     }
 	
     @FXML
@@ -1431,10 +1435,7 @@ public class LaCasaDoradaGUI {
     	number+=1;	
     	laCasaDorada.setNumberList(number);
     	
-<<<<<<< HEAD
-=======
-    	
->>>>>>> 222f645211a4878529eb125f1cd4ffe90ee966d4
+
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
         }else{
@@ -1449,20 +1450,7 @@ public class LaCasaDoradaGUI {
     	
     }
     
-    public double total(double quantity, double priceOfProduct) {
-    	double total=0;
-    	total = quantity * priceOfProduct;
-    	totalOrder.setText(String.valueOf(total));
-		return total;
-    }
-    public int generateCode() {
-    	return 1000000+1;
-    }
-    
-    public int count(int count) {
-    	return count++;
-    }
-    
+
     public void setUpAddOrder() {
     	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
     		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
@@ -1482,15 +1470,17 @@ public class LaCasaDoradaGUI {
     	String product = COaddProduct.getValue();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
     	double price = 0;
+    	double priceT=laCasaDorada.getPriceTotal();
     	for(int i=0; i<laCasaDorada.getProducts().size() ;i++) {
+    		if(laCasaDorada.getProducts().get(i).getName().equals(product)) {
     		price = laCasaDorada.getProducts().get(i).getPriceOfProduct();
-    		
+    		}
     	}
     	double priceTotal = price*quantity;
-    	
     	System.out.println(product);
     	System.out.println(priceTotal); 
-    	
+    	priceT=priceTotal+priceT;
+    	laCasaDorada.setPriceTotal(priceT);
     	
     	if(product.isEmpty() || quantity==0) {
     		validationErrorAlert();
@@ -1499,13 +1489,14 @@ public class LaCasaDoradaGUI {
     		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product), quantity, laCasaDorada.findPrice(price));
     		
     		miniTbCreateOrder.refresh();
-    		totalOrder.setText(String.valueOf(priceTotal));
+    		totalOrder.setText(String.valueOf(priceT));
     		ObservableList<ProductQuantity> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
             miniTbCreateOrder.setItems(observableList);
     	}
     	
     }
+    
     
     private void initializeMiniOrderTableView(){
     	ObservableList<ProductQuantity> observableList;
