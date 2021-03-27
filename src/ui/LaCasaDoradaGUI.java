@@ -1173,14 +1173,15 @@ public class LaCasaDoradaGUI {
     	
     	if(ri == null) {
     		selectAnOptionAlert();
-    	}else {
-    		laCasaDorada.verifyRemoveIngredientInOrder(ri);
+    	}else if(laCasaDorada.verifyRemoveIngredientInOrder(ri)){
     		this.laCasaDorada.getIngredients().remove(ri);
     		this.tbIngredientList.refresh();
     		itemWasDeletedAlert();
     		ObservableList<RestaurantIngredient> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
             tbIngredientList.setItems(observableList);
+    	}else {
+    		itemCannotBeDeletedAlert();
     	}
     }
 

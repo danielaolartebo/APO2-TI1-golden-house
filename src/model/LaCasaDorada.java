@@ -17,9 +17,9 @@ import java.util.List;
 
 public class LaCasaDorada {
 	
-	public final static String SAVE_PATH_FILE1 = "Employee-data.sgv";
-	public final static String SAVE_PATH_FILE2 = "Customer-data.sgv";
-	public final static String SAVE_PATH_FILE3 = "Product-data.sgv";
+	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
+	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
+	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
 	
 	private static final String SEPARATE=",";
 	
@@ -32,6 +32,7 @@ public class LaCasaDorada {
 	private List<Size> sizes;
 	private List<ProductQuantity> productQuantity;
 	private int numberList;
+	private double priceTotal;
 
 	
 	public LaCasaDorada() {
@@ -45,7 +46,7 @@ public class LaCasaDorada {
 		sizes = new ArrayList<>();
 		productQuantity = new ArrayList<>();
 		numberList=0;
-		
+		setPriceTotal(0);
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) throws IOException {
@@ -118,6 +119,15 @@ public class LaCasaDorada {
 	public void setNumberList(int numberList) {
 		this.numberList=numberList;
 	}
+	
+	public double getPriceTotal() {
+		return priceTotal;
+	}
+
+	public void setPriceTotal(double priceTotal) {
+		this.priceTotal = priceTotal;
+	}
+
 	
 /*	public boolean verifyRemoveProductInOrder(RestaurantProduct product) {
 		boolean found=false;
@@ -312,7 +322,7 @@ public class LaCasaDorada {
 	public RestaurantProduct findPrice(double priceOfProduct) {
 		RestaurantProduct tempPrice= null;
 		System.out.println(priceOfProduct);
-		for(int i=1; i<products.size() || i<2; i++) {
+		for(int i=0; i<products.size(); i++) {
 			if(products.get(i).getPriceOfProduct()==priceOfProduct) {
 				tempPrice = products.get(i);
 				System.out.println("Encontre el precio ");
@@ -379,8 +389,8 @@ public class LaCasaDorada {
 		return loaded;
 	}
 
-<<<<<<< HEAD
-=======
+
+
 	/*public double burbleSort() {
 		double bestPrice;
 		boolean found = true;
@@ -400,5 +410,5 @@ public class LaCasaDorada {
 		
 		return bestPrice;
 	}*/
->>>>>>> ae604e4601508207f668166872cde1146272f568
+
 }
