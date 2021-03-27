@@ -13,6 +13,7 @@ public class ProductQuantity {
 		nameProduct=p.getName();
 		this.quantity=quantity;
 		price=pr.getPriceOfProduct();
+		
 	}
 
 	public double getQuantity() {
