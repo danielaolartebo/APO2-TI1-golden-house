@@ -24,7 +24,7 @@
                   <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <TableView fx:id="tbIngredientList" layoutY="112.0" prefHeight="386.0" prefWidth="804.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbIngredientList" editable="true" layoutY="112.0" prefHeight="386.0" prefWidth="804.0" style="-fx-background-color: black;">
                <columns>
                   <TableColumn fx:id="tcIngredientName" prefWidth="424.33331298828125" text="Nombre" />
                   <TableColumn fx:id="tcIngredientStatus" maxWidth="378.0" prefWidth="378.0" text="Estado" />

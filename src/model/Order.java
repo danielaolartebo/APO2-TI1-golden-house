@@ -17,11 +17,12 @@ public class Order {
 	private String observations;
 	private Status order;
 	private int number;
+	private double priceTotal;
 	private String nameEmployee;
 	private String nameProduct;
 	private String nameClient;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal) {
 		this.client=client;
 		this.product=product;
 		this.employee=employee;
@@ -37,6 +38,7 @@ public class Order {
 		nameProduct = product.getName();
 		nameClient= client.getFirstName();
 		this.number=number;
+		this.priceTotal=priceTotal;
 
 	}
 
@@ -142,6 +144,14 @@ public class Order {
 
 	public void setNameClient(String nameClient) {
 		this.nameClient = nameClient;
+	}
+
+	public double getPriceTotal() {
+		return priceTotal;
+	}
+
+	public void setPriceTotal(double priceTotal) {
+		this.priceTotal = priceTotal;
 	}
 
 }

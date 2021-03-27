@@ -47,6 +47,7 @@ public class LaCasaDorada {
 		productQuantity = new ArrayList<>();
 		numberList=0;
 		setPriceTotal(0);
+		
 	}
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) throws IOException {
@@ -76,8 +77,8 @@ public class LaCasaDorada {
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number) {
-		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number));
+	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal) {
+		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number, priceTotal));
 	}
 	
 	public void addProductQuantity(RestaurantProduct p, double quantity, RestaurantProduct pr) {
@@ -253,21 +254,7 @@ public class LaCasaDorada {
 		
 	} 
 	
-	public void exportEmployeeData(String fileName) throws FileNotFoundException{
-        PrintWriter pw = new PrintWriter(fileName);
-        for(EmployeeAccount empl : employees){
-          pw.println(empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
-        }
-        pw.close();
-    }
 	
-	public void exportProductData(String fileName) throws FileNotFoundException{
-        PrintWriter pw = new PrintWriter(fileName);
-        for(RestaurantProduct prod : products){
-          pw.println(prod.getName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
-        }
-        pw.close();
-    }
 	
 	public ClientAccount findClient(String firstName){
 		ClientAccount tempName=null;
@@ -330,7 +317,22 @@ public class LaCasaDorada {
 		}
 		return tempPrice;
 	}
-
+	
+	public void exportEmployeeData() throws IOException{
+        PrintWriter pw = new PrintWriter(SAVE_PATH_FILE1);
+        for(EmployeeAccount empl : employees){
+          pw.println(empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
+        }
+        pw.close();
+    }
+	
+	public void exportProductData(String fileName) throws FileNotFoundException{
+        PrintWriter pw = new PrintWriter(fileName);
+        for(RestaurantProduct prod : products){
+          pw.println(prod.getName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
+        }
+        pw.close();
+    }
 
 	public void saveEmployeeData() throws IOException{
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream (SAVE_PATH_FILE1));
@@ -410,4 +412,12 @@ public class LaCasaDorada {
 		}
 		
 		return bestPrice;
+<<<<<<< HEAD
 	}*/
+=======
+	}*/
+
+
+}
+
+>>>>>>> 999768fc49169a848cfc16ce863a1a9ea48f55aa
