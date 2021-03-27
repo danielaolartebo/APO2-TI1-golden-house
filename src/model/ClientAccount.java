@@ -4,7 +4,11 @@ import java.io.Serializable;
 
 public class ClientAccount extends RestaurantMembers implements Serializable{
 
-	private static final long serialVersionUID = 1;
+		
+		/**
+	 * 
+	 */
+		private static final long serialVersionUID = 2L;
 		private String address;
 		private String phoneNumber;
 		private String observations;

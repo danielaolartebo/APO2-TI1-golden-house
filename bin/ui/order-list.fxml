@@ -24,7 +24,7 @@
                   <Font name="Segoe UI Black" size="42.0" />
                </font>
             </Label>
-            <TableView fx:id="tbOrderList" layoutX="-2.0" layoutY="95.0" prefHeight="386.0" prefWidth="800.0" style="-fx-background-color: black;">
+            <TableView fx:id="tbOrderList" editable="true" layoutX="-2.0" layoutY="95.0" prefHeight="386.0" prefWidth="800.0" style="-fx-background-color: black;">
                <columns>
                   <TableColumn fx:id="tcNumberOrder" prefWidth="62.0" text="#" />
                   <TableColumn fx:id="tcCustomerOrder" prefWidth="78.33333587646484" text="Cliente" />

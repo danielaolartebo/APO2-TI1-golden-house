@@ -4,7 +4,10 @@ import java.io.Serializable;
 
 public class EmployeeAccount extends RestaurantMembers implements Serializable{
 
-	private static final long serialVersionUID = 1;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MembersStatus employeeStatus;
 	private String userName;
 	private String password;

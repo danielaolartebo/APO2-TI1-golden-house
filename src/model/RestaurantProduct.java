@@ -5,7 +5,11 @@ import java.util.Arrays;
 
 public class RestaurantProduct implements Serializable{
 
-	private static final long serialVersionUID = 1;
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3L;
 	private String name;
 	private String typeOfProduct;
 	private String sizeOfProduct;

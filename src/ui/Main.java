@@ -20,8 +20,8 @@ public class Main extends Application{
 		laCasaDoradaGUI = new LaCasaDoradaGUI(laCasaDorada);
 		
 		try {
-			//laCasaDorada.loadEmployeeData();
-			//laCasaDorada.loadCustomerData();
+			laCasaDorada.loadEmployeeData();
+			laCasaDorada.loadCustomerData();
 			laCasaDorada.loadProductData();
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
