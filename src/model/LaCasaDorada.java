@@ -388,6 +388,7 @@ public class LaCasaDorada {
 		}
 		return loaded;
 	}
+}
 
 
 
@@ -410,9 +411,3 @@ public class LaCasaDorada {
 		
 		return bestPrice;
 	}*/
-
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 29bbb17c72144cd4bb8bc8588f782fadb4a9a861

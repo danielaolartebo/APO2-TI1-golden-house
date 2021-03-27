@@ -65,6 +65,13 @@ public class LaCasaDoradaGUI {
 	private TableColumn<ProductQuantity, Double> miniTcQuantity;
 	
 	//******************************************************
+	
+	@FXML
+    private Label searchingTime;
+	
+	@FXML
+	private TextField txtCustomerName;
+	 
 	@FXML
 	private Label totalOrder;
 
@@ -736,6 +743,11 @@ public class LaCasaDoradaGUI {
     		itemWasEnableAlert();
     	}
     }
+	
+	@FXML
+    public void searchCustomer(ActionEvent event) throws IOException{
+
+    }
  
     
     /*
@@ -1392,7 +1404,7 @@ public class LaCasaDoradaGUI {
     }
     
     
-    private void initializeMiniProductTableView(){
+    private void initializeMiniProductTableView() throws IOException{
     	
     	temp = FXCollections.observableArrayList();
     	miniTbCreateProduct.setItems(temp);
@@ -1409,6 +1421,7 @@ public class LaCasaDoradaGUI {
     		this.miniTcIngredients.setText(mri.getIngredientName());
     	}	
     }
+    
     /*
      *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
      */
@@ -1446,9 +1459,8 @@ public class LaCasaDoradaGUI {
         	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number);
         	COaddQuantity.clear(); COobservations.clear();
         	productCreatedAlert();
+        	miniTbCreateOrder.refresh();
         }
-    	
-    	
     }
     
 

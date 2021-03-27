@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="660.0" fitWidth="941.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@2021-03-09%20(13).png" />
+                  <Image url="@../../docs/2021-03-09%20(13).png" />
                </image>
             </ImageView>
             <Label layoutX="216.0" layoutY="46.0" prefHeight="45.0" prefWidth="586.0" text="Crear ingredientes/tipo de producto" textFill="WHITE">

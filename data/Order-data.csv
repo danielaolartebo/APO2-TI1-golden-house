@@ -1,0 +1,1001 @@
+numero,cliente,productos_cantidad,empleado,fecha,hora,observaciones,estado,precio
+1,Bliss,Fib N9 - Prague Powder,Addie,2/2/2021,10:56 PM,jcb,ACTIVA,$14649.51
+2,Leupold,Sugar - Splenda Sweetener,Cull,8/29/2020,6:19 AM,switch,ACTIVA,$13521.93
+3,Doro,Bread Base - Goodhearth,Doreen,4/13/2020,4:42 PM,americanexpress,ACTIVA,$7124.34
+4,Jaquith,Sole - Iqf,Bevan,4/12/2020,1:23 PM,solo,ACTIVA,$5488.47
+5,Basia,Grapefruit - Pink,Myrilla,10/26/2020,4:48 AM,jcb,ACTIVA,$16493.40
+6,Hallsy,Corn - Mini,Theodosia,1/17/2021,4:27 AM,diners-club-carte-blanche,ACTIVA,$6267.53
+7,Neale,Island Oasis - Peach Daiquiri,Amelina,5/25/2020,11:06 PM,jcb,ACTIVA,$17497.82
+8,Sophia,Orange Roughy 6/8 Oz,Pegeen,6/18/2020,9:23 AM,maestro,ACTIVA,$19587.13
+9,Aime,"Wine - Red, Marechal Foch",Beilul,3/31/2020,12:29 AM,mastercard,ACTIVA,$13371.40
+10,Seana,Kippers - Smoked,Dorelia,11/1/2020,2:11 AM,laser,ACTIVA,$6426.71
+11,Guenna,Bread - Focaccia Quarter,Dyanna,12/6/2020,11:33 AM,visa,ACTIVA,$10372.20
+12,Niko,Wine - Beaujolais Villages,Carlene,4/21/2020,11:01 PM,instapayment,ACTIVA,$6575.62
+13,Hercule,Ice Cream - Fudge Bars,Othilia,11/17/2020,9:23 PM,diners-club-enroute,ACTIVA,$16506.04
+14,Cletus,Crackers - Soda / Saltins,Penni,6/29/2020,1:06 AM,switch,ACTIVA,$18093.85
+15,Alisa,Pie Shells 10,Shandy,12/11/2020,2:16 PM,jcb,ACTIVA,$8519.25
+16,Damian,Beef - Montreal Smoked Brisket,Anatole,5/16/2020,8:13 PM,diners-club-carte-blanche,ACTIVA,$14666.60
+17,Kayla,Pork - Caul Fat,Nevile,11/26/2020,8:10 PM,jcb,ACTIVA,$8182.28
+18,Red,Bread - 10 Grain Parisian,Brittney,12/3/2020,7:26 AM,china-unionpay,ACTIVA,$5500.16
+19,Merrile,Wine - Champagne Brut Veuve,Bea,12/3/2020,1:05 AM,instapayment,ACTIVA,$14007.71
+20,Jammal,Cocoa Feuilletine,Westbrooke,6/9/2020,6:39 AM,laser,ACTIVA,$6182.06
+21,Danice,Flour - Cake,Alfie,7/13/2020,1:48 AM,visa,ACTIVA,$19129.26
+22,Sharlene,Flower - Carnations,Siegfried,7/16/2020,5:10 PM,diners-club-carte-blanche,ACTIVA,$19823.99
+23,Luz,Sausage - Blood Pudding,Paton,9/22/2020,4:22 AM,visa-electron,ACTIVA,$14151.30
+24,Wally,"Nut - Almond, Blanched, Whole",Adorne,6/29/2020,9:38 PM,diners-club-enroute,ACTIVA,$14155.08
+25,Michelina,Gooseberry,Zarah,12/12/2020,10:03 PM,visa-electron,ACTIVA,$16942.88
+26,Fey,"Chestnuts - Whole,canned",Marsh,10/24/2020,10:17 AM,jcb,ACTIVA,$11045.13
+27,Brooks,Bread Base - Toscano,Ignace,2/14/2021,7:33 PM,china-unionpay,ACTIVA,$13765.76
+28,Dionysus,Bacardi Raspberry,Janith,1/12/2021,8:30 PM,jcb,ACTIVA,$4827.66
+29,Cly,"Pasta - Lasagne, Fresh",Cointon,1/31/2021,2:18 PM,jcb,ACTIVA,$19208.91
+30,Tad,Wine - Clavet Saint Emilion,Madonna,10/10/2020,7:14 AM,jcb,ACTIVA,$13123.94
+31,Brnaba,Salmon Steak - Cohoe 8 Oz,Ellwood,2/16/2021,2:04 AM,mastercard,ACTIVA,$7127.60
+32,Shay,Cheese - Ricotta,Lisette,5/13/2020,12:21 AM,maestro,ACTIVA,$15002.57
+33,Celestyna,Cheese - Valancey,Helenelizabeth,4/24/2020,6:39 AM,diners-club-international,ACTIVA,$13332.86
+34,Ahmed,"Shrimp - Baby, Cold Water",Alta,8/25/2020,11:06 PM,diners-club-international,ACTIVA,$15496.82
+35,Lethia,Salmon Steak - Cohoe 6 Oz,Robinet,1/23/2021,11:00 PM,jcb,ACTIVA,$7491.44
+36,Dave,"Veal - Tenderloin, Untrimmed",Aeriel,9/4/2020,6:51 PM,maestro,ACTIVA,$18526.94
+37,Jenda,Wine - Two Oceans Sauvignon,Glad,5/6/2020,2:27 PM,diners-club-international,ACTIVA,$7459.63
+38,Melodee,Cheese - Pont Couvert,Jaquith,8/7/2020,5:04 PM,switch,ACTIVA,$9554.41
+39,Allys,Sherbet - Raspberry,Caroljean,8/27/2020,9:44 AM,jcb,ACTIVA,$15066.85
+40,Chanda,Russian Prince,Abraham,7/20/2020,3:41 PM,americanexpress,ACTIVA,$11500.82
+41,Aeriell,Transfer Sheets,Violetta,11/20/2020,2:00 AM,visa-electron,ACTIVA,$4432.23
+42,Jarvis,"Juice - Clamato, 341 Ml",Phaedra,7/24/2020,11:08 AM,china-unionpay,ACTIVA,$19609.79
+43,Gisela,Cassis,Aguste,9/27/2020,12:38 PM,jcb,ACTIVA,$16239.41
+44,Antonina,Dehydrated Kelp Kombo,Leif,1/2/2021,11:06 PM,mastercard,ACTIVA,$9080.92
+45,Scarlett,Flour - Rye,Willie,9/9/2020,7:16 AM,visa,ACTIVA,$19556.98
+46,Gertrude,"Water - Mineral, Carbonated",Lindy,7/15/2020,6:00 AM,diners-club-enroute,ACTIVA,$6212.71
+47,Conroy,Cheese - Colby,Mathias,11/21/2020,12:22 PM,diners-club-carte-blanche,ACTIVA,$12914.88
+48,Whitman,"Pork - Tenderloin, Fresh",Bay,12/3/2020,10:03 AM,maestro,ACTIVA,$12941.87
+49,Cristy,Parsley - Dried,Bevin,7/23/2020,4:09 AM,jcb,ACTIVA,$13086.46
+50,Teddie,Wine - Fat Bastard Merlot,Hortensia,12/16/2020,2:59 AM,jcb,ACTIVA,$10655.11
+51,Lammond,Appetizer - Cheese Bites,Arturo,6/19/2020,3:02 AM,jcb,ACTIVA,$10184.24
+52,Farrand,Crab - Meat,Dasha,7/15/2020,6:39 PM,jcb,ACTIVA,$13057.86
+53,Jilli,Sugar - Icing,Jerrilee,9/19/2020,7:37 AM,jcb,ACTIVA,$13885.41
+54,Monica,"Pasta - Lasagna, Dry",Eden,7/21/2020,11:55 AM,jcb,ACTIVA,$13521.17
+55,Nil,Scallop - St. Jaques,Fiorenze,12/8/2020,8:47 PM,switch,ACTIVA,$16662.91
+56,Kylila,"Veal - Round, Eye Of",Torin,1/22/2021,6:24 PM,jcb,ACTIVA,$19566.26
+57,Felicio,Island Oasis - Magarita Mix,Ingram,3/22/2021,5:21 AM,jcb,ACTIVA,$9172.24
+58,Cynthia,Cookies - Amaretto,Corrie,1/23/2021,7:17 AM,diners-club-enroute,ACTIVA,$4309.54
+59,Fiann,Carbonated Water - Blackcherry,David,2/6/2021,12:28 AM,jcb,ACTIVA,$15216.42
+60,Odette,"Nut - Pistachio, Shelled",Simone,6/4/2020,3:45 PM,americanexpress,ACTIVA,$5161.12
+61,Margo,Lobster - Tail 6 Oz,Carrissa,6/16/2020,9:04 AM,jcb,ACTIVA,$10103.97
+62,Mackenzie,Mushroom - King Eryingii,Gregor,1/27/2021,6:47 AM,laser,ACTIVA,$19879.31
+63,Harrison,Oysters - Smoked,Sayers,12/4/2020,9:56 PM,jcb,ACTIVA,$8552.69
+64,Yul,Salt And Pepper Mix - Black,Daren,12/5/2020,12:45 PM,visa-electron,ACTIVA,$16716.62
+65,Jessie,Munchies Honey Sweet Trail Mix,Iosep,6/19/2020,9:36 PM,bankcard,ACTIVA,$18315.66
+66,Isabeau,Bread - Corn Muffaletta,Madelene,12/25/2020,8:46 AM,americanexpress,ACTIVA,$12466.38
+67,Casper,Bols Melon Liqueur,Ced,6/30/2020,9:03 PM,mastercard,ACTIVA,$16011.08
+68,Mabelle,"Rum - Spiced, Captain Morgan",Blanch,1/24/2021,4:05 AM,mastercard,ACTIVA,$13027.31
+69,Ardra,Cod - Black Whole Fillet,Christoper,2/3/2021,4:41 PM,visa,ACTIVA,$9594.99
+70,Karina,Bread - Sour Batard,Holly,12/5/2020,2:36 AM,jcb,ACTIVA,$11016.20
+71,Ulrika,Napkin Colour,Tamar,10/20/2020,6:02 AM,jcb,ACTIVA,$14419.86
+72,Tessi,"Juice - Clam, 46 Oz",Andra,5/25/2020,5:33 AM,maestro,ACTIVA,$8471.00
+73,Benedict,Compound - Strawberry,Melina,6/4/2020,8:14 PM,jcb,ACTIVA,$4135.39
+74,Germain,Pomegranates,Brigid,7/5/2020,9:23 AM,jcb,ACTIVA,$13929.85
+75,Aguste,Pate Pans Yellow,Ennis,10/26/2020,3:43 PM,switch,ACTIVA,$18612.55
+76,Zena,Muffin - Mix - Creme Brule 15l,Clarinda,12/5/2020,3:01 PM,jcb,ACTIVA,$17650.43
+77,Cissy,"Nut - Pine Nuts, Whole",Danna,3/27/2020,1:30 AM,china-unionpay,ACTIVA,$11018.11
+78,Kate,Bag Clear 10 Lb,Ham,8/17/2020,9:53 AM,mastercard,ACTIVA,$11557.93
+79,Luigi,Puree - Mango,Kennie,12/14/2020,2:26 AM,laser,ACTIVA,$9420.85
+80,Tove,Curry Powder,Elias,4/14/2020,5:52 PM,jcb,ACTIVA,$7669.86
+81,Artemus,"Lemonade - Mandarin, 591 Ml",Hildegaard,1/12/2021,4:57 AM,jcb,ACTIVA,$8430.73
+82,Carlie,Lettuce - Lambs Mash,Elwira,5/25/2020,3:55 AM,jcb,ACTIVA,$17640.62
+83,Hermon,Trueblue - Blueberry Cranberry,Mavis,9/4/2020,7:36 PM,jcb,ACTIVA,$6936.22
+84,Kaycee,Soupcontfoam16oz 116con,Rriocard,1/23/2021,4:52 PM,jcb,ACTIVA,$11967.06
+85,Alix,Cheese - Gouda,Antonio,7/17/2020,1:58 AM,bankcard,ACTIVA,$19944.13
+86,Rodolphe,Anisette - Mcguiness,Ruthann,11/6/2020,3:17 AM,jcb,ACTIVA,$16021.44
+87,Eolanda,Ham - Proscuitto,Billy,7/18/2020,1:41 PM,mastercard,ACTIVA,$12238.74
+88,Clarita,"Tart Shells - Sweet, 4",Corabelle,8/30/2020,8:35 AM,jcb,ACTIVA,$7098.38
+89,Katerina,Lid - 3oz Med Rec,Merissa,4/14/2020,1:37 PM,laser,ACTIVA,$7989.79
+90,Auberta,Juice - Orange 1.89l,Domeniga,11/30/2020,2:38 AM,jcb,ACTIVA,$11156.37
+91,Marchelle,Curry Paste - Madras,Kelcie,7/13/2020,11:10 AM,bankcard,ACTIVA,$16278.96
+92,Deva,"Tabasco Sauce, 2 Oz",Tiffy,6/8/2020,11:23 PM,jcb,ACTIVA,$13278.02
+93,Alecia,Tart - Pecan Butter Squares,Simonette,6/9/2020,3:47 PM,bankcard,ACTIVA,$16777.68
+94,Andra,"Flour - Corn, Fine",Kala,6/23/2020,9:42 AM,diners-club-us-ca,ACTIVA,$10386.85
+95,Clyve,"Chocolate - Pistoles, Lactee, Milk",Helaina,3/1/2021,1:40 AM,jcb,ACTIVA,$13954.40
+96,Nada,Cheese - Mozzarella,Mathias,3/22/2021,3:40 AM,switch,ACTIVA,$8544.90
+97,Ichabod,Bagel - Ched Chs Presliced,Sandi,6/5/2020,4:33 PM,jcb,ACTIVA,$7485.06
+98,Nelle,Maple Syrup,Claretta,2/6/2021,12:16 PM,switch,ACTIVA,$4001.15
+99,Rena,Mushroom - Portebello,Katee,2/27/2021,11:26 PM,jcb,ACTIVA,$4936.52
+100,Rowena,Truffle - Whole Black Peeled,Erik,6/30/2020,7:26 PM,switch,ACTIVA,$9106.13
+101,Leslie,Oil - Olive,Caria,5/1/2020,11:39 AM,jcb,ACTIVA,$4934.33
+102,Frans,Oil - Peanut,Eada,11/13/2020,8:09 AM,instapayment,ACTIVA,$15768.76
+103,Marlo,Gherkin,Meagan,4/17/2020,11:03 AM,jcb,ACTIVA,$19892.96
+104,Ada,Kiwi,Mary,7/2/2020,3:53 PM,mastercard,ACTIVA,$4698.39
+105,Row,"Fish - Scallops, Cold Smoked",Mark,6/27/2020,7:46 AM,switch,ACTIVA,$10854.38
+106,Farr,Cheese - Montery Jack,Arri,3/21/2021,9:24 AM,visa-electron,ACTIVA,$4954.91
+107,Iolanthe,Wine - Sauvignon Blanc Oyster,Yoko,4/17/2020,4:43 PM,mastercard,ACTIVA,$11610.28
+108,Harold,Flounder - Fresh,Rafaela,12/11/2020,12:29 PM,laser,ACTIVA,$14520.12
+109,Rod,Grand Marnier,Read,12/13/2020,3:30 PM,switch,ACTIVA,$13923.89
+110,Olivette,"Bread - Sticks, Thin, Plain",Franciskus,10/20/2020,11:46 AM,switch,ACTIVA,$11263.00
+111,Ivy,Compound - Mocha,Solly,8/23/2020,9:29 PM,jcb,ACTIVA,$16550.98
+112,Pansy,Sterno - Chafing Dish Fuel,Garey,12/10/2020,3:20 PM,jcb,ACTIVA,$18959.60
+113,Dierdre,Potatoes - Peeled,Maridel,8/28/2020,6:19 PM,diners-club-us-ca,ACTIVA,$15342.24
+114,Zeke,Fib N9 - Prague Powder,Louis,4/27/2020,5:50 AM,diners-club-us-ca,ACTIVA,$9144.59
+115,Berk,Paper Towel Touchless,Hobart,1/12/2021,3:24 PM,jcb,ACTIVA,$9028.01
+116,Udall,Liquid Aminios Acid - Braggs,Remington,8/18/2020,9:02 PM,diners-club-enroute,ACTIVA,$6658.69
+117,Thorndike,"Dill - Primerba, Paste",Cordy,6/3/2020,8:53 AM,china-unionpay,ACTIVA,$8223.79
+118,Clarie,Wooden Mop Handle,Boyd,2/10/2021,10:25 AM,mastercard,ACTIVA,$5272.82
+119,Nancie,Veal - Slab Bacon,Jackie,4/5/2020,3:23 PM,americanexpress,ACTIVA,$5410.08
+120,Maurizia,Cheese - Taleggio D.o.p.,Barnard,7/18/2020,8:17 AM,mastercard,ACTIVA,$10443.07
+121,Celisse,Melon - Cantaloupe,Gerrilee,5/16/2020,12:41 AM,bankcard,ACTIVA,$7899.32
+122,Liza,Plate Pie Foil,Tedda,5/24/2020,6:44 AM,mastercard,ACTIVA,$4180.57
+123,Hubert,Isomalt,Fidela,12/27/2020,12:24 PM,americanexpress,ACTIVA,$15635.63
+124,Jasmine,"Oil - Shortening,liqud, Fry",Alano,3/19/2021,10:05 PM,bankcard,ACTIVA,$10368.91
+125,Robby,Lamb Tenderloin Nz Fr,Dougie,4/20/2020,4:07 PM,instapayment,ACTIVA,$16694.54
+126,Mozelle,Pear - Asian,Else,7/9/2020,11:31 AM,laser,ACTIVA,$9829.54
+127,Carolee,Schnappes Peppermint - Walker,Ira,9/15/2020,2:03 AM,jcb,ACTIVA,$18763.54
+128,Candice,"Wine - White, Riesling, Henry Of",Bailey,10/23/2020,5:58 AM,bankcard,ACTIVA,$18991.81
+129,Norry,Tofu - Firm,Gaultiero,3/4/2021,11:16 PM,mastercard,ACTIVA,$18345.40
+130,Gage,Bread - Sour Batard,Barrett,12/12/2020,5:02 AM,diners-club-enroute,ACTIVA,$17603.29
+131,Chiquita,Lobster - Tail 6 Oz,Roselin,1/28/2021,5:12 PM,diners-club-us-ca,ACTIVA,$8638.97
+132,Geneva,"Chicken - Diced, Cooked",Kori,5/14/2020,2:24 AM,jcb,ACTIVA,$13513.78
+133,Merna,Olive - Spread Tapenade,Virgie,9/19/2020,6:54 AM,americanexpress,ACTIVA,$18499.02
+134,Blake,Glaze - Apricot,Florida,9/1/2020,7:11 PM,jcb,ACTIVA,$19365.14
+135,Udale,Bacardi Breezer - Tropical,Monica,6/19/2020,1:45 AM,jcb,ACTIVA,$19021.86
+136,Abdel,Wonton Wrappers,Daffie,3/5/2021,5:21 PM,jcb,ACTIVA,$8534.82
+137,Phillipe,V8 Pet,Sebastian,1/17/2021,4:40 PM,jcb,ACTIVA,$14025.90
+138,Hogan,Milk - Chocolate 500ml,Bryon,10/20/2020,10:44 PM,mastercard,ACTIVA,$7017.98
+139,Lucais,Cornflakes,Dianne,10/22/2020,2:35 AM,jcb,ACTIVA,$6732.69
+140,Darbie,Towel Multifold,Carolan,3/23/2021,3:17 AM,diners-club-carte-blanche,ACTIVA,$18058.56
+141,Silas,Piping Jelly - All Colours,Arnoldo,12/20/2020,3:07 PM,switch,ACTIVA,$11427.65
+142,Stephanie,Clams - Bay,Tersina,5/21/2020,9:22 AM,jcb,ACTIVA,$5480.45
+143,Maurice,Cookie - Oatmeal,Ulysses,10/16/2020,2:34 AM,jcb,ACTIVA,$11876.86
+144,Bogey,Soup - Campbells Chili,Adler,3/11/2021,6:46 AM,jcb,ACTIVA,$8158.59
+145,Heloise,Extract - Lemon,Aurilia,4/24/2020,1:51 AM,diners-club-carte-blanche,ACTIVA,$9523.97
+146,Madeline,"Pasta - Lasagna Noodle, Frozen",Ruttger,3/1/2021,4:57 AM,jcb,ACTIVA,$12107.91
+147,Thane,Pepper - Red Bell,Louisette,6/18/2020,10:00 AM,mastercard,ACTIVA,$4082.45
+148,Torrance,Lumpfish Black,Desmund,9/10/2020,3:53 PM,visa-electron,ACTIVA,$4056.45
+149,Neilla,Soup Campbells Beef With Veg,Sheelagh,10/20/2020,2:37 AM,visa,ACTIVA,$19247.69
+150,Amaleta,Cattail Hearts,Rozalin,6/9/2020,9:35 PM,jcb,ACTIVA,$7514.17
+151,Olga,"Coffee - Beans, Whole",Adolf,9/6/2020,6:00 PM,jcb,ACTIVA,$5000.94
+152,Dulsea,"Appetizer - Mini Egg Roll, Shrimp",Brendon,4/16/2020,3:09 PM,china-unionpay,ACTIVA,$14618.28
+153,Winnah,Mushrooms - Honey,Samantha,7/28/2020,2:41 AM,jcb,ACTIVA,$18046.73
+154,Aubrey,Apple - Fuji,Archambault,8/29/2020,3:52 PM,jcb,ACTIVA,$13352.08
+155,Dunn,Bay Leaf Fresh,Welch,9/29/2020,3:20 AM,jcb,ACTIVA,$19161.44
+156,Leonhard,Trout - Smoked,Devland,2/11/2021,1:05 AM,mastercard,ACTIVA,$11950.68
+157,Moyra,Eggplant - Asian,Cookie,2/20/2021,11:44 AM,laser,ACTIVA,$16685.75
+158,Georgy,Sage Ground Wiberg,Janet,7/28/2020,1:42 PM,diners-club-enroute,ACTIVA,$12229.64
+159,Florella,Flour - Semolina,Lars,2/24/2021,6:28 AM,diners-club-enroute,ACTIVA,$18932.37
+160,Norma,Potatoes - Parissienne,Killian,7/19/2020,7:33 PM,mastercard,ACTIVA,$10814.56
+161,Twila,Bread - Flat Bread,Judy,1/7/2021,9:07 AM,jcb,ACTIVA,$9373.56
+162,Wally,"Soup - Campbells, Cream Of",Ignatius,2/6/2021,6:42 AM,visa-electron,ACTIVA,$18553.87
+163,Brett,Table Cloth 62x114 White,Florella,1/3/2021,1:09 PM,americanexpress,ACTIVA,$4613.96
+164,Billie,"Wine - White, Cooking",Avram,10/31/2020,6:09 PM,jcb,ACTIVA,$18456.71
+165,Neysa,Ecolab Crystal Fusion,Monah,1/27/2021,12:44 AM,visa-electron,ACTIVA,$19862.09
+166,Rosalie,Bonito Flakes - Toku Katsuo,Keeley,2/16/2021,11:25 AM,diners-club-enroute,ACTIVA,$18228.26
+167,Kerry,Blouse / Shirt / Sweater,Devondra,2/7/2021,5:53 PM,maestro,ACTIVA,$11231.67
+168,Tabb,"Nut - Pine Nuts, Whole",Zorana,2/4/2021,11:55 AM,mastercard,ACTIVA,$9025.63
+169,Elnar,Vegetable - Base,Thea,6/30/2020,6:06 AM,visa-electron,ACTIVA,$4436.60
+170,Byrle,"Cod - Salted, Boneless",Darby,1/2/2021,9:59 PM,jcb,ACTIVA,$10114.36
+171,Sibeal,Mints - Striped Red,Allx,11/10/2020,10:08 PM,americanexpress,ACTIVA,$9766.65
+172,Margarette,Crab Brie In Phyllo,Raynor,8/11/2020,10:03 AM,switch,ACTIVA,$17585.33
+173,Ashia,Pork - Ham Hocks - Smoked,Fernando,5/4/2020,7:32 AM,mastercard,ACTIVA,$16665.73
+174,Desiree,"Bread - Roll, Calabrese",Fern,9/8/2020,3:15 PM,mastercard,ACTIVA,$16143.48
+175,Saunderson,Table Cloth 54x54 White,Lorrie,6/13/2020,11:30 AM,switch,ACTIVA,$11081.48
+176,Deane,Beer - Paulaner Hefeweisse,Blondy,9/26/2020,6:13 AM,visa,ACTIVA,$18839.45
+177,Jami,Wine - Manischewitz Concord,Talya,8/19/2020,3:15 PM,switch,ACTIVA,$11156.36
+178,Bruce,Silicone Paper 16.5x24,Zena,7/27/2020,11:31 PM,instapayment,ACTIVA,$13917.72
+179,Marice,Tray - 12in Rnd Blk,Janelle,10/16/2020,6:03 PM,jcb,ACTIVA,$11044.70
+180,Max,Instant Coffee,Ellie,12/20/2020,9:48 PM,bankcard,ACTIVA,$18760.31
+181,Peyter,Bread Ww Cluster,Roanna,2/28/2021,7:05 AM,jcb,ACTIVA,$10598.81
+182,Ellwood,"Yogurt - Blueberry, 175 Gr",Tuesday,4/24/2020,3:13 PM,diners-club-carte-blanche,ACTIVA,$16628.29
+183,Dawna,Beer - Blue,Sonja,2/14/2021,11:15 PM,diners-club-us-ca,ACTIVA,$8679.16
+184,Nils,Puree - Pear,Uta,9/23/2020,10:03 PM,bankcard,ACTIVA,$14477.34
+185,Cele,"Lid - High Heat, Super Clear",Man,4/12/2020,7:39 PM,china-unionpay,ACTIVA,$10325.47
+186,Kitti,Muffin Mix - Morning Glory,Annadiana,10/10/2020,4:33 PM,jcb,ACTIVA,$14104.84
+187,Jena,Lettuce - Belgian Endive,Gaspar,6/14/2020,7:31 PM,mastercard,ACTIVA,$19087.96
+188,Werner,Soup Campbells Beef With Veg,Carly,2/18/2021,5:07 PM,china-unionpay,ACTIVA,$12983.21
+189,Lizette,Mix - Cocktail Ice Cream,Gwenneth,6/13/2020,7:38 PM,mastercard,ACTIVA,$14476.29
+190,Theo,"Chocolate - Pistoles, Lactee, Milk",Godfrey,5/13/2020,1:54 AM,jcb,ACTIVA,$4065.26
+191,Maurise,Island Oasis - Pina Colada,Neille,1/24/2021,12:31 PM,jcb,ACTIVA,$19486.68
+192,Cristabel,The Pop Shoppe - Cream Soda,Verney,11/28/2020,9:39 AM,china-unionpay,ACTIVA,$19720.07
+193,Godfree,"Brandy - Orange, Mc Guiness",Augustus,7/12/2020,8:41 PM,diners-club-carte-blanche,ACTIVA,$16158.94
+194,Torrie,Lime Cordial - Roses,Mamie,1/4/2021,12:24 AM,switch,ACTIVA,$19601.88
+195,Kris,Milk - Condensed,Emery,5/5/2020,7:14 AM,americanexpress,ACTIVA,$11646.83
+196,Ulrike,Chocolate - Dark,Bernadette,10/7/2020,11:24 AM,maestro,ACTIVA,$6880.90
+197,Joshuah,Appetizer - Smoked Salmon / Dill,Kordula,8/7/2020,1:37 PM,maestro,ACTIVA,$14586.76
+198,Yance,Wine - Casillero Del Diablo,Alica,5/9/2020,12:15 PM,jcb,ACTIVA,$13946.02
+199,Lodovico,Yoplait Drink,Amalle,5/25/2020,12:43 PM,jcb,ACTIVA,$6821.60
+200,Rivalee,Ecolab - Balanced Fusion,Glyn,1/16/2021,4:46 PM,americanexpress,ACTIVA,$9570.78
+201,Berkly,Cheese - Oka,Ban,11/3/2020,4:52 PM,switch,ACTIVA,$10736.88
+202,Thorny,Ice Cream - Turtles Stick Bar,Brodie,1/24/2021,1:22 AM,jcb,ACTIVA,$11710.47
+203,Dode,Appetizer - Chicken Satay,Adorne,10/28/2020,1:01 AM,jcb,ACTIVA,$5339.85
+204,Jemmy,"Wine - White, Gewurtzraminer",Marcelle,4/26/2020,9:13 PM,china-unionpay,ACTIVA,$6191.49
+205,Alisander,Mayonnaise,Tiena,6/29/2020,3:32 AM,jcb,ACTIVA,$15925.08
+206,Irene,"Split Peas - Yellow, Dry",Barbi,9/13/2020,9:23 AM,visa-electron,ACTIVA,$5557.47
+207,Garfield,Island Oasis - Peach Daiquiri,Lexis,2/6/2021,2:31 PM,diners-club-carte-blanche,ACTIVA,$10257.87
+208,Garreth,Remy Red Berry Infusion,Diena,7/15/2020,4:59 PM,switch,ACTIVA,$6551.32
+209,Karleen,Bagel - 12 Grain Preslice,Kinsley,9/23/2020,12:30 AM,mastercard,ACTIVA,$18505.68
+210,Lolita,"Yogurt - Cherry, 175 Gr",Diandra,1/31/2021,8:34 PM,maestro,ACTIVA,$11298.97
+211,Sherlocke,Cucumber - Pickling Ontario,Tobias,4/7/2020,4:18 PM,maestro,ACTIVA,$11849.41
+212,Kalinda,Chips Potato Salt Vinegar 43g,Gwenny,10/8/2020,10:48 AM,maestro,ACTIVA,$6150.08
+213,Hoyt,Arrowroot,Robby,1/20/2021,9:01 PM,jcb,ACTIVA,$9303.73
+214,Jermayne,Tuna - Sushi Grade,Basile,12/6/2020,2:46 AM,jcb,ACTIVA,$16023.45
+215,Barrett,Table Cloth 72x144 White,Kathi,11/29/2020,11:48 PM,jcb,ACTIVA,$12752.59
+216,Liz,Jerusalem Artichoke,Dallon,11/21/2020,9:12 PM,jcb,ACTIVA,$12910.36
+217,Samara,Bag - Regular Kraft 20 Lb,Anallese,9/12/2020,9:59 AM,diners-club-carte-blanche,ACTIVA,$11380.60
+218,Oriana,Ham Black Forest,Dallas,8/17/2020,2:39 PM,visa,ACTIVA,$10643.99
+219,Horten,Longos - Grilled Veg Sandwiches,Jeramie,7/1/2020,3:56 PM,china-unionpay,ACTIVA,$19106.78
+220,Mayne,Puree - Blackcurrant,Elfrieda,10/17/2020,9:47 PM,bankcard,ACTIVA,$4383.74
+221,Bord,Halibut - Steaks,Ella,4/13/2020,10:01 AM,switch,ACTIVA,$6906.24
+222,Giana,"Beef - Ground, Extra Lean, Fresh",Elinor,1/3/2021,1:43 PM,mastercard,ACTIVA,$12712.34
+223,Miles,Browning Caramel Glace,Frayda,8/19/2020,12:44 PM,jcb,ACTIVA,$10455.56
+224,Hilly,Squid - U - 10 Thailand,Nikolaos,1/5/2021,12:27 PM,mastercard,ACTIVA,$11823.86
+225,Bobbette,Veal - Striploin,Obie,3/11/2021,9:33 PM,jcb,ACTIVA,$7028.59
+226,Andres,Puff Pastry - Sheets,Myrta,7/21/2020,8:31 AM,jcb,ACTIVA,$18966.50
+227,Ajay,Soap - Pine Sol Floor Cleaner,Kriste,10/30/2020,9:58 PM,jcb,ACTIVA,$19531.01
+228,Kenny,Cheese - Sheep Milk,Sybilla,7/14/2020,7:20 AM,mastercard,ACTIVA,$8753.27
+229,Ruthe,Wine - Segura Viudas Aria Brut,Tobie,4/24/2020,7:08 AM,jcb,ACTIVA,$19979.85
+230,Douglas,Jameson - Irish Whiskey,Donnajean,4/7/2020,12:48 PM,maestro,ACTIVA,$4745.32
+231,Eirena,Wine - Rosso Del Veronese Igt,Lion,1/25/2021,7:45 AM,visa-electron,ACTIVA,$11231.50
+232,Nicolina,Wanton Wrap,Wilmar,1/8/2021,9:10 PM,china-unionpay,ACTIVA,$11441.46
+233,Hobey,Tart - Raisin And Pecan,Vassili,11/13/2020,7:36 PM,jcb,ACTIVA,$10852.11
+234,Nike,Brandy Cherry - Mcguinness,Melodie,1/9/2021,8:03 AM,diners-club-carte-blanche,ACTIVA,$18995.69
+235,Blinni,Wheat - Soft Kernal Of Wheat,Prescott,12/5/2020,8:42 PM,jcb,ACTIVA,$11209.34
+236,Brannon,Zucchini - Yellow,Charlean,2/9/2021,5:10 PM,visa-electron,ACTIVA,$14463.93
+237,Bendicty,Sloe Gin - Mcguinness,Jasmin,11/8/2020,7:15 PM,mastercard,ACTIVA,$14520.86
+238,Austina,"Pepper - Paprika, Spanish",Viviyan,11/23/2020,4:41 PM,visa,ACTIVA,$18905.67
+239,Adria,Oysters - Smoked,Marshall,11/5/2020,1:14 AM,americanexpress,ACTIVA,$16174.83
+240,Natasha,Ice Cream - Strawberry,Pascal,6/17/2020,1:24 PM,mastercard,ACTIVA,$11873.11
+241,Leontine,Cookies - Assorted,Brier,4/6/2020,7:58 PM,maestro,ACTIVA,$14661.13
+242,Byrle,Instant Coffee,Chadd,11/3/2020,3:33 PM,mastercard,ACTIVA,$4084.75
+243,Sydney,Pie Filling - Apple,Hartley,6/19/2020,7:58 PM,diners-club-enroute,ACTIVA,$15720.29
+244,Friedrich,"Wine - Red, Concha Y Toro",Madelaine,6/18/2020,11:56 PM,americanexpress,ACTIVA,$19381.96
+245,Lurleen,Wine - Vidal Icewine Magnotta,Lauren,12/19/2020,11:40 AM,diners-club-enroute,ACTIVA,$9628.71
+246,Emma,"Tarragon - Primerba, Paste",Reggis,4/24/2020,6:05 AM,instapayment,ACTIVA,$18830.33
+247,Channa,"Veal - Leg, Provimi - 50 Lb Max",Glynn,7/23/2020,7:10 PM,jcb,ACTIVA,$7749.73
+248,Star,"Wine - Red, Concha Y Toro",Krishnah,9/15/2020,11:02 PM,solo,ACTIVA,$6656.70
+249,Michaeline,"Bag - Bread, White, Plain",Brig,7/7/2020,7:52 AM,jcb,ACTIVA,$14190.81
+250,Alexei,Maple Syrup,Regina,4/26/2020,5:54 PM,visa,ACTIVA,$19642.31
+251,Parke,Wine - Blue Nun Qualitatswein,Dorena,5/6/2020,4:18 AM,jcb,ACTIVA,$17476.18
+252,Crystal,Chutney Sauce - Mango,Shelley,5/22/2020,4:15 PM,visa-electron,ACTIVA,$17433.97
+253,Goddart,Puree - Mango,Jerad,9/11/2020,8:48 AM,americanexpress,ACTIVA,$13623.16
+254,Nealon,Cheese - Stilton,Rosanna,12/6/2020,5:41 PM,visa-electron,ACTIVA,$16766.18
+255,Gianni,Container - Clear 32 Oz,Liza,6/27/2020,2:32 AM,maestro,ACTIVA,$4581.20
+256,Vlad,Spice - Pepper Portions,Kellie,7/10/2020,4:29 AM,jcb,ACTIVA,$10371.16
+257,Rosetta,Fond - Neutral,Danny,4/25/2020,11:45 AM,jcb,ACTIVA,$13032.25
+258,Hercule,Tea - English Breakfast,Pip,11/23/2020,4:55 AM,diners-club-enroute,ACTIVA,$18795.21
+259,Lenna,"Pepper - White, Whole",Cinnamon,4/12/2020,10:37 AM,switch,ACTIVA,$11118.51
+260,Sara,Miso Paste White,Gianina,7/8/2020,2:35 AM,jcb,ACTIVA,$5747.45
+261,Blair,Tomatoes Tear Drop,Francesca,9/21/2020,1:35 AM,mastercard,ACTIVA,$19794.37
+262,Brandice,Bread - Hamburger Buns,Leah,2/15/2021,11:03 PM,diners-club-us-ca,ACTIVA,$15661.55
+263,Perla,Onions - Spanish,Cynthie,12/27/2020,11:36 AM,jcb,ACTIVA,$16465.87
+264,Gussy,Chinese Foods - Thick Noodles,Harry,8/14/2020,12:34 AM,switch,ACTIVA,$7114.53
+265,Nelli,Oxtail - Cut,Sylas,2/5/2021,5:10 AM,jcb,ACTIVA,$4823.13
+266,Conan,Pear - Asian,Lucky,12/31/2020,8:30 PM,jcb,ACTIVA,$10167.03
+267,Liva,Wine - Stoneliegh Sauvignon,Daisi,3/31/2020,8:37 PM,jcb,ACTIVA,$10096.42
+268,Rosella,The Pop Shoppe - Grape,Melany,6/2/2020,11:55 PM,jcb,ACTIVA,$11123.66
+269,Sophey,Canadian Emmenthal,Carmine,4/18/2020,12:52 AM,jcb,ACTIVA,$7953.29
+270,Goldarina,Cut Wakame - Hanawakaba,Moishe,8/24/2020,4:58 PM,jcb,ACTIVA,$7301.80
+271,Hazel,Apricots Fresh,Tedda,2/15/2021,12:11 AM,americanexpress,ACTIVA,$6372.87
+272,Cord,Mangostein,Gae,7/3/2020,7:01 AM,visa-electron,ACTIVA,$10654.11
+273,Pennie,"Wine - White, Chardonnay",Emmalynne,7/15/2020,6:15 AM,visa-electron,ACTIVA,$13507.80
+274,Liliane,Wine - Conde De Valdemar,Cobbie,9/12/2020,1:48 AM,jcb,ACTIVA,$7444.51
+275,Gaelan,Breakfast Quesadillas,Cate,9/17/2020,11:27 PM,switch,ACTIVA,$15317.50
+276,Ula,Cheese - Grie Des Champ,Den,11/4/2020,6:25 PM,jcb,ACTIVA,$4326.24
+277,Consolata,"Apple - Delicious, Red",Maxy,5/10/2020,10:21 PM,bankcard,ACTIVA,$7197.31
+278,Skylar,Ecolab - Hobart Washarm End Cap,Lorilyn,1/9/2021,10:26 PM,jcb,ACTIVA,$7080.78
+279,Pascale,Crackers Cheez It,Jerome,8/4/2020,11:11 AM,jcb,ACTIVA,$4345.67
+280,Branden,Mayonnaise - Individual Pkg,Nadya,10/3/2020,3:32 PM,jcb,ACTIVA,$11977.58
+281,Terra,"Tuna - Canned, Flaked, Light",Winnie,9/10/2020,8:18 AM,jcb,ACTIVA,$15526.54
+282,Miof mela,Russian Prince,Curt,2/5/2021,12:51 AM,diners-club-us-ca,ACTIVA,$13612.60
+283,Rosemonde,Beans - Kidney White,William,7/3/2020,2:18 PM,americanexpress,ACTIVA,$18820.10
+284,Desiri,Soho Lychee Liqueur,Janela,3/7/2021,6:12 AM,bankcard,ACTIVA,$4030.01
+285,Marysa,Fondant - Icing,Pansy,3/8/2021,3:28 PM,jcb,ACTIVA,$15337.93
+286,Peyter,"Turkey - Breast, Boneless Sk On",Bertine,4/21/2020,7:15 PM,bankcard,ACTIVA,$18001.89
+287,Lorelei,"Cookies - Oreo, 4 Pack",Ignazio,11/2/2020,1:26 PM,jcb,ACTIVA,$10237.03
+288,Garrett,Beer - True North Lager,Morty,7/11/2020,6:11 PM,switch,ACTIVA,$11243.45
+289,Bianka,Rice Paper,Antonietta,10/3/2020,5:32 AM,americanexpress,ACTIVA,$12227.93
+290,Nicolina,"Cup - 3.5oz, Foam",Carley,11/18/2020,5:25 AM,jcb,ACTIVA,$11693.54
+291,Brita,Cornish Hen,Angelle,6/22/2020,11:45 AM,visa,ACTIVA,$6665.06
+292,Broderick,Broom Handle,Monica,8/7/2020,11:17 AM,jcb,ACTIVA,$4692.37
+293,Elset,Nantucket - Pomegranate Pear,Rafaelita,1/4/2021,5:51 PM,jcb,ACTIVA,$4600.45
+294,Concettina,Cheese - Valancey,Brice,8/5/2020,12:46 PM,visa,ACTIVA,$17428.96
+295,Vilhelmina,Petit Baguette,Lorraine,3/17/2021,7:59 AM,mastercard,ACTIVA,$6573.15
+296,Shirlene,Bread Crumbs - Japanese Style,Lyndel,11/15/2020,5:49 AM,jcb,ACTIVA,$9745.39
+297,Gerta,Sprite - 355 Ml,Raoul,12/28/2020,1:54 PM,jcb,ACTIVA,$10051.30
+298,Gwenora,Wine - Piper Heidsieck Brut,Cecilia,8/28/2020,10:58 PM,jcb,ACTIVA,$8751.73
+299,Hayden,Vinegar - White Wine,Udall,4/21/2020,8:53 PM,jcb,ACTIVA,$13880.95
+300,Iorgos,"Mop Head - Cotton, 24 Oz",Agathe,8/25/2020,11:30 PM,jcb,ACTIVA,$7500.61
+301,Vincenz,"Octopus - Baby, Cleaned",Nolan,12/1/2020,6:16 PM,jcb,ACTIVA,$16997.58
+302,Ansell,Browning Caramel Glace,Bettina,3/8/2021,5:45 PM,jcb,ACTIVA,$17647.64
+303,Letta,Soup Campbells Split Pea And Ham,Valida,8/25/2020,12:01 AM,jcb,ACTIVA,$7944.26
+304,Rancell,Squash - Butternut,Emory,1/3/2021,7:50 PM,maestro,ACTIVA,$8095.10
+305,Ferdinand,Plasticspoonblack,Dell,2/12/2021,7:49 AM,visa-electron,ACTIVA,$10626.91
+306,Sib,"Chilli Paste, Hot Sambal Oelek",Friedrick,5/25/2020,9:39 PM,jcb,ACTIVA,$15012.14
+307,Che,Garbag Bags - Black,Shelden,2/14/2021,4:00 PM,switch,ACTIVA,$6583.37
+308,Udell,Island Oasis - Raspberry,Manda,2/14/2021,11:28 PM,china-unionpay,ACTIVA,$19134.26
+309,Leroy,Dehydrated Kelp Kombo,Alecia,9/10/2020,9:37 PM,jcb,ACTIVA,$15319.54
+310,Rebeka,Carrots - Mini Red Organic,Josey,3/2/2021,9:35 PM,mastercard,ACTIVA,$10600.67
+311,Aloysia,"Turkey - Breast, Smoked",Alleyn,2/13/2021,7:58 AM,jcb,ACTIVA,$17191.08
+312,Georgia,Whmis Spray Bottle Graduated,Joyann,12/22/2020,12:03 PM,jcb,ACTIVA,$5803.59
+313,Tawsha,Otomegusa Dashi Konbu,Uri,1/4/2021,12:55 PM,jcb,ACTIVA,$14054.32
+314,Sampson,Wine - Delicato Merlot,Lazarus,6/12/2020,2:59 AM,jcb,ACTIVA,$9173.34
+315,Vernor,Rice Wine - Aji Mirin,Adriano,1/1/2021,11:45 AM,solo,ACTIVA,$18660.16
+316,Collen,Aspic - Clear,Helge,3/7/2021,1:41 PM,jcb,ACTIVA,$4206.42
+317,Jayson,"Pork - Tenderloin, Fresh",Roanne,4/24/2020,11:54 AM,maestro,ACTIVA,$6662.28
+318,Melosa,Pants Custom Dry Clean,Corbie,8/1/2020,8:07 PM,jcb,ACTIVA,$16053.41
+319,Danella,Muffin Hinge Container 6,Muffin,9/4/2020,4:05 PM,visa,ACTIVA,$6953.40
+320,Mandi,Muffin - Zero Transfat,Janine,6/21/2020,8:58 AM,jcb,ACTIVA,$12750.11
+321,Arleyne,Ginger - Pickled,Iorgos,12/23/2020,6:21 AM,jcb,ACTIVA,$4163.74
+322,Francisco,Wine - Champagne Brut Veuve,Dunn,8/18/2020,4:54 AM,visa-electron,ACTIVA,$4989.37
+323,Trude,"Bread - White, Sliced",Prescott,5/5/2020,9:49 PM,jcb,ACTIVA,$6293.77
+324,Dominic,Poppy Seed,Brandi,5/13/2020,6:20 AM,china-unionpay,ACTIVA,$13440.49
+325,Ramonda,Appetizer - Smoked Salmon / Dill,Ethe,4/1/2020,9:14 AM,jcb,ACTIVA,$17611.29
+326,Janel,Pheasants - Whole,Bealle,4/7/2020,4:30 PM,jcb,ACTIVA,$17017.65
+327,Jemima,Nectarines,Esme,3/7/2021,5:10 PM,jcb,ACTIVA,$6146.63
+328,Aubrey,"Octopus - Baby, Cleaned",Katey,10/1/2020,3:07 PM,jcb,ACTIVA,$15046.35
+329,Elsinore,Wine - Malbec Trapiche Reserve,Barrett,4/14/2020,4:19 PM,jcb,ACTIVA,$8096.50
+330,Ephrayim,Muffin - Mix - Bran And Maple 15l,Karl,6/12/2020,12:25 PM,bankcard,ACTIVA,$10486.70
+331,Sayers,Bread - Kimel Stick Poly,Borg,3/5/2021,2:56 AM,jcb,ACTIVA,$14212.94
+332,Brook,Strawberries - California,Conan,1/2/2021,11:40 AM,diners-club-us-ca,ACTIVA,$4172.87
+333,Tye,Broccoli - Fresh,Ruby,5/4/2020,11:41 AM,diners-club-enroute,ACTIVA,$18457.49
+334,Christalle,Lettuce - Green Leaf,Gram,6/11/2020,2:07 AM,jcb,ACTIVA,$4599.49
+335,Francesco,"Crab - Claws, 26 - 30",Lonna,8/7/2020,4:53 AM,jcb,ACTIVA,$6586.35
+336,Emmey,Cookies - Englishbay Wht,Flss,8/21/2020,7:18 PM,switch,ACTIVA,$5927.43
+337,Kayla,Pepper - Gypsy Pepper,Ina,11/6/2020,3:01 AM,americanexpress,ACTIVA,$9376.91
+338,Inger,Sherry - Dry,Taylor,11/28/2020,3:40 AM,mastercard,ACTIVA,$17882.11
+339,Monti,Beans - Fava Fresh,Hillie,8/4/2020,9:54 AM,jcb,ACTIVA,$13302.62
+340,Carny,Egg - Salad Premix,Wain,1/15/2021,2:48 AM,laser,ACTIVA,$11191.91
+341,Merridie,Assorted Desserts,Therese,2/23/2021,6:23 AM,jcb,ACTIVA,$5016.88
+342,Davidson,"Lamb - Leg, Diced",Adriaens,8/16/2020,6:32 AM,diners-club-carte-blanche,ACTIVA,$13367.65
+343,Anna,Soup - Campbells Asian Noodle,Dorita,9/4/2020,11:35 AM,diners-club-enroute,ACTIVA,$10390.82
+344,Neile,"Wine - White, Pelee Island",Tanner,9/4/2020,11:50 AM,jcb,ACTIVA,$11769.06
+345,Ranique,Carbonated Water - Strawberry,Pren,3/16/2021,9:00 PM,visa-electron,ACTIVA,$19543.70
+346,Nert,Wanton Wrap,Ryan,11/1/2020,9:44 AM,mastercard,ACTIVA,$8080.56
+347,Eve,Bagel - Plain,Dell,10/13/2020,12:03 AM,jcb,ACTIVA,$16031.52
+348,Edita,Cheese - Augre Des Champs,Gypsy,3/25/2021,10:44 PM,mastercard,ACTIVA,$9479.89
+349,Sid,Bread - Multigrain Oval,Nesta,11/1/2020,2:30 AM,jcb,ACTIVA,$19332.84
+350,Evvy,Syrup - Chocolate,Moyra,12/2/2020,5:26 AM,china-unionpay,ACTIVA,$6688.47
+351,Muffin,Olive - Spread Tapenade,Lowrance,1/7/2021,9:19 PM,americanexpress,ACTIVA,$7551.71
+352,Emmeline,Instant Coffee,Stuart,6/10/2020,11:03 AM,visa,ACTIVA,$13233.90
+353,Rickie,Mustard - Seed,Bernadette,10/24/2020,11:34 PM,jcb,ACTIVA,$11681.57
+354,Chere,Bread - Rye,Ralina,12/9/2020,8:59 AM,jcb,ACTIVA,$9520.61
+355,Faythe,Carroway Seed,Netty,10/28/2020,7:20 AM,jcb,ACTIVA,$15250.90
+356,Huntlee,Cloves - Ground,Luis,3/31/2020,2:30 PM,visa,ACTIVA,$6944.42
+357,Norman,Ham Black Forest,Babbette,4/21/2020,5:56 PM,china-unionpay,ACTIVA,$18151.45
+358,Cam,Pork - Backs - Boneless,Sidoney,8/30/2020,4:25 PM,visa-electron,ACTIVA,$4259.99
+359,Chico,Longos - Chicken Caeser Salad,Archie,7/3/2020,9:58 AM,jcb,ACTIVA,$7220.49
+360,Giffie,Veal - Bones,Rita,5/9/2020,5:02 AM,jcb,ACTIVA,$15678.38
+361,Greta,Bread - Crusty Italian Poly,Daisi,8/22/2020,10:44 AM,jcb,ACTIVA,$18076.07
+362,Moore,Cream - 10%,Aldric,8/23/2020,5:25 PM,mastercard,ACTIVA,$12078.95
+363,Donetta,Extract - Almond,Ambrosi,8/1/2020,3:32 AM,visa-electron,ACTIVA,$7798.69
+364,Mahmud,Relish,Corbin,3/24/2021,1:24 PM,visa-electron,ACTIVA,$19448.90
+365,Reidar,Celery,Rozele,6/13/2020,11:55 AM,jcb,ACTIVA,$12952.07
+366,Flory,"Chocolate - Pistoles, Lactee, Milk",Alexi,11/5/2020,1:39 PM,maestro,ACTIVA,$17021.99
+367,Jacquelin,Wine - Masi Valpolocell,Shandy,3/6/2021,8:45 AM,jcb,ACTIVA,$19172.47
+368,Cornela,Tuna - Bluefin,Ogdon,8/7/2020,10:28 AM,mastercard,ACTIVA,$10044.62
+369,Tallie,Pepper - Gypsy Pepper,Bobbi,10/13/2020,2:23 PM,jcb,ACTIVA,$5223.81
+370,Jennette,Soup - Tomato Mush. Florentine,Johnath,6/10/2020,5:36 AM,visa,ACTIVA,$11937.36
+371,Emmye,"Wine - White, Ej Gallo",Lib,11/2/2020,1:07 AM,mastercard,ACTIVA,$18493.74
+372,Petunia,Eggwhite Frozen,Dedie,4/20/2020,3:10 PM,jcb,ACTIVA,$18764.45
+373,Ninetta,Extract - Raspberry,Mariette,3/24/2021,3:11 PM,mastercard,ACTIVA,$9452.30
+374,Blondelle,Salt And Pepper Mix - Black,Dall,7/31/2020,2:21 PM,diners-club-carte-blanche,ACTIVA,$19121.46
+375,Courtenay,Lettuce - Lolla Rosa,Ashlen,7/3/2020,5:39 AM,solo,ACTIVA,$13708.35
+376,Amalle,Wine - Rosso Del Veronese Igt,Zuzana,12/16/2020,3:41 PM,visa-electron,ACTIVA,$8983.38
+377,Jacquie,"Wine - White, Colubia Cresh",Rosy,2/3/2021,12:37 AM,jcb,ACTIVA,$13609.51
+378,Killy,Blue Curacao - Marie Brizard,Mireielle,8/26/2020,6:46 AM,jcb,ACTIVA,$18513.46
+379,Marietta,Eggplant - Asian,Sayres,10/24/2020,5:23 PM,visa,ACTIVA,$16265.52
+380,Avigdor,Corn - Mini,Amitie,10/19/2020,8:03 AM,americanexpress,ACTIVA,$9082.66
+381,Doloritas,Avocado,Hilarius,4/15/2020,8:33 AM,maestro,ACTIVA,$13018.98
+382,Aubree,Grapefruit - White,Leonerd,2/6/2021,4:03 PM,bankcard,ACTIVA,$10532.71
+383,Clemens,"Pasta - Lasagne, Fresh",Lyell,9/12/2020,10:07 PM,maestro,ACTIVA,$14573.64
+384,Jarvis,Pie Shells 10,Cly,10/31/2020,3:52 PM,mastercard,ACTIVA,$14815.04
+385,Aubrey,"Potatoes - Instant, Mashed",Georgeta,2/2/2021,2:58 AM,jcb,ACTIVA,$17131.92
+386,Stu,Muskox - French Rack,Lenette,6/19/2020,12:35 AM,diners-club-carte-blanche,ACTIVA,$13109.43
+387,Murdoch,Bagel - Whole White Sesame,Lavinia,10/24/2020,9:37 AM,jcb,ACTIVA,$11064.97
+388,Rebekkah,Bread - Mini Hamburger Bun,Brittney,7/7/2020,11:12 PM,visa-electron,ACTIVA,$18850.69
+389,Modestia,Stock - Fish,Paddy,2/19/2021,7:22 PM,jcb,ACTIVA,$10346.08
+390,Philippine,Roe - Flying Fish,Byrann,8/7/2020,5:55 PM,maestro,ACTIVA,$6237.33
+391,Renee,Pastry - Key Limepoppy Seed Tea,Manon,9/1/2020,7:45 AM,maestro,ACTIVA,$4259.16
+392,Nonnah,Lettuce - Green Leaf,Garvin,2/11/2021,5:25 PM,mastercard,ACTIVA,$9851.01
+393,Othella,"Plate - Foam, Bread And Butter",Derron,1/13/2021,5:24 AM,jcb,ACTIVA,$5921.45
+394,Evangeline,"Plate - Foam, Bread And Butter",Rhiamon,12/11/2020,2:16 AM,jcb,ACTIVA,$16821.15
+395,Godiva,Milk - Buttermilk,Madelena,8/6/2020,11:23 PM,jcb,ACTIVA,$10566.54
+396,Laverna,Sauerkraut,Rozalie,9/9/2020,8:47 AM,switch,ACTIVA,$13128.46
+397,Wheeler,Cheese - Victor Et Berthold,Josi,1/7/2021,8:42 AM,jcb,ACTIVA,$13640.17
+398,Vic,Pate - Peppercorn,Eimile,1/1/2021,12:54 PM,jcb,ACTIVA,$11467.86
+399,Pepi,Duck - Breast,Gonzales,9/2/2020,1:09 AM,bankcard,ACTIVA,$19772.14
+400,Erhart,Danishes - Mini Cheese,Brunhilde,12/8/2020,2:12 AM,bankcard,ACTIVA,$10862.41
+401,Ailina,"Wine - White, Lindemans Bin 95",Twila,9/12/2020,10:37 PM,visa-electron,ACTIVA,$6995.74
+402,Baron,Food Colouring - Red,Marya,4/30/2020,7:29 AM,jcb,ACTIVA,$9688.98
+403,Roch,Triple Sec - Mcguinness,Mavis,4/22/2020,11:42 AM,diners-club-enroute,ACTIVA,$16709.89
+404,Ichabod,Cabbage - Red,Hamish,2/12/2021,3:29 PM,mastercard,ACTIVA,$15593.12
+405,Jenni,"Pork - Butt, Boneless",Adan,9/18/2020,9:13 PM,diners-club-enroute,ACTIVA,$17459.38
+406,Noni,Piping - Bags Quizna,Rogers,4/3/2020,10:25 PM,jcb,ACTIVA,$4390.41
+407,Jarrett,Tart - Butter Plain Squares,Arlin,4/11/2020,8:51 AM,jcb,ACTIVA,$17598.30
+408,Otto,Pastry - Baked Cinnamon Stick,Doroteya,3/31/2020,3:16 AM,maestro,ACTIVA,$18759.92
+409,Meier,Veal - Eye Of Round,Tully,8/10/2020,2:05 AM,jcb,ACTIVA,$11007.85
+410,Iolande,Devonshire Cream,Alfi,8/29/2020,9:58 PM,jcb,ACTIVA,$14678.21
+411,Erhart,Juice - Lagoon Mango,Rourke,6/13/2020,3:04 AM,diners-club-enroute,ACTIVA,$4763.97
+412,Catina,"Nut - Chestnuts, Whole",Stearn,5/13/2020,11:02 AM,americanexpress,ACTIVA,$14255.82
+413,Sharleen,"Stock - Chicken, White",Tarah,2/16/2021,10:14 PM,visa-electron,ACTIVA,$17589.20
+414,Anitra,Parsnip,Bonny,4/4/2020,11:50 AM,mastercard,ACTIVA,$16179.51
+415,Phineas,"Oranges - Navel, 72",Kelly,12/5/2020,2:09 PM,diners-club-carte-blanche,ACTIVA,$13613.59
+416,Abramo,Vinegar - White,Denni,1/10/2021,9:55 AM,jcb,ACTIVA,$11871.12
+417,Nicko,Basil - Fresh,Babita,9/13/2020,4:46 PM,jcb,ACTIVA,$5130.84
+418,Tomi,Wild Boar - Tenderloin,Berkie,3/29/2020,2:18 PM,visa,ACTIVA,$4488.97
+419,Kevon,"Jam - Marmalade, Orange",Les,12/21/2020,12:25 PM,diners-club-enroute,ACTIVA,$15947.00
+420,Derry,"Sauce - Bernaise, Mix",Salvador,1/21/2021,3:17 AM,diners-club-international,ACTIVA,$7849.43
+421,Quinton,Jagermeister,Emylee,2/23/2021,10:21 AM,visa,ACTIVA,$4681.75
+422,Jonathon,Canadian Emmenthal,Bret,10/19/2020,12:15 AM,diners-club-carte-blanche,ACTIVA,$10052.90
+423,Berthe,Sauce - Ranch Dressing,Lora,10/18/2020,10:24 PM,jcb,ACTIVA,$15516.94
+424,Lilas,Puree - Mocha,Karalynn,6/17/2020,6:17 PM,mastercard,ACTIVA,$15017.94
+425,Mischa,Lemon Grass,Dennie,3/27/2020,1:16 AM,china-unionpay,ACTIVA,$15831.00
+426,Bobette,Rum - Mount Gay Eclipes,Virgie,12/23/2020,5:34 AM,jcb,ACTIVA,$16620.32
+427,Shane,Rootbeer,Florencia,2/8/2021,3:49 PM,bankcard,ACTIVA,$18818.34
+428,Temple,Taro Root,Grethel,11/4/2020,4:49 PM,jcb,ACTIVA,$18845.02
+429,Mair,Soho Lychee Liqueur,Clementius,4/24/2020,5:09 PM,bankcard,ACTIVA,$16160.21
+430,Jenni,Lemon Pepper,D'arcy,8/16/2020,12:14 AM,mastercard,ACTIVA,$18470.55
+431,Minta,"Juice - Cranberry, 341 Ml",Maggy,12/5/2020,11:38 PM,diners-club-international,ACTIVA,$14599.20
+432,Cynthea,Pork - Smoked Back Bacon,Alfredo,12/17/2020,10:26 PM,jcb,ACTIVA,$17390.75
+433,Michel,Muskox - French Rack,Con,12/2/2020,7:27 AM,americanexpress,ACTIVA,$15932.45
+434,Marjie,Capon - Whole,Court,9/24/2020,6:47 PM,visa,ACTIVA,$15450.38
+435,Jackquelin,Wine - Magnotta - Bel Paese White,York,1/20/2021,8:27 PM,switch,ACTIVA,$5210.76
+436,Essa,Tamarind Paste,Cecily,5/5/2020,1:03 PM,visa-electron,ACTIVA,$15139.50
+437,Marian,Mushroom - Morel Frozen,Sherilyn,3/18/2021,3:23 AM,diners-club-enroute,ACTIVA,$5107.59
+438,Efren,Cheese - Pied De Vents,Jaimie,5/7/2020,10:17 PM,mastercard,ACTIVA,$9045.54
+439,Tedd,Sauce - Mint,Clerkclaude,7/11/2020,7:37 PM,mastercard,ACTIVA,$8989.43
+440,Rory,Steampan - Foil,Akim,3/2/2021,6:03 AM,jcb,ACTIVA,$10436.16
+441,Jennine,Gelatine Leaves - Bulk,Westbrook,9/10/2020,11:13 AM,maestro,ACTIVA,$16144.99
+442,Agretha,Coffee - Egg Nog Capuccino,Clerkclaude,6/10/2020,9:48 PM,bankcard,ACTIVA,$15885.98
+443,Loretta,"Cheese - Romano, Grated",Germaine,9/15/2020,12:54 AM,jcb,ACTIVA,$10287.34
+444,Sabra,Island Oasis - Wildberry,Ailina,3/7/2021,6:18 PM,jcb,ACTIVA,$11102.75
+445,Lilla,Soup - Campbells - Chicken Noodle,Norah,12/6/2020,6:06 AM,diners-club-enroute,ACTIVA,$18089.93
+446,Abdul,Banana Turning,Hadria,4/6/2020,9:53 AM,jcb,ACTIVA,$7448.28
+447,Jolynn,Soup Knorr Chili With Beans,Etta,8/20/2020,1:27 PM,maestro,ACTIVA,$18293.02
+448,Rosalia,Pineapple - Regular,Pascal,6/28/2020,7:35 PM,jcb,ACTIVA,$7884.15
+449,Alys,Arrowroot,Valery,9/25/2020,9:04 PM,jcb,ACTIVA,$10629.20
+450,Shelby,Milk - Buttermilk,Tripp,2/5/2021,12:46 AM,americanexpress,ACTIVA,$14427.75
+451,Norina,Ham - Cooked Italian,Morris,12/21/2020,9:59 AM,visa-electron,ACTIVA,$6673.39
+452,Carlota,Berry Brulee,Bondie,11/28/2020,6:26 PM,jcb,ACTIVA,$5593.71
+453,Huey,Dried Figs,Merle,11/22/2020,1:49 PM,mastercard,ACTIVA,$10074.18
+454,Fredrick,Sprouts - China Rose,Saxe,6/13/2020,7:16 AM,diners-club-enroute,ACTIVA,$18676.45
+455,Denise,Juice - Apple 284ml,Kippie,1/26/2021,6:50 AM,americanexpress,ACTIVA,$8596.53
+456,Sylvia,Quiche Assorted,Kelwin,1/16/2021,9:48 PM,mastercard,ACTIVA,$17895.94
+457,Darryl,Soup - Campbells Beef Noodle,Teodoor,10/23/2020,3:39 PM,mastercard,ACTIVA,$8138.75
+458,Boothe,Pop - Club Soda Can,Fielding,2/4/2021,5:28 PM,jcb,ACTIVA,$11581.01
+459,Gardner,Cheese - Stilton,Pancho,12/24/2020,8:56 PM,diners-club-enroute,ACTIVA,$10355.42
+460,Jacobo,"Noodles - Cellophane, Thin",Isadora,2/3/2021,2:43 PM,jcb,ACTIVA,$18978.34
+461,Maxwell,Sword Pick Asst,Casey,2/12/2021,11:55 AM,jcb,ACTIVA,$14855.48
+462,Carleen,Cocktail Napkin Blue,Gaylord,1/13/2021,7:56 AM,diners-club-enroute,ACTIVA,$7826.60
+463,Waldon,Olives - Morracan Dired,Bevvy,8/9/2020,10:14 AM,mastercard,ACTIVA,$5911.40
+464,Herc,Bread Bowl Plain,Kacie,3/12/2021,10:10 PM,mastercard,ACTIVA,$6365.13
+465,Colette,Bread - French Baquette,Torey,9/2/2020,7:54 PM,jcb,ACTIVA,$9337.91
+466,Quillan,Bandage - Fexible 1x3,Matteo,4/3/2020,2:06 PM,diners-club-international,ACTIVA,$12310.33
+467,Curtice,Wine - Magnotta - Pinot Gris Sr,Sayers,12/13/2020,12:30 AM,diners-club-enroute,ACTIVA,$13154.48
+468,Kiah,Beer - Maudite,Jermaine,11/27/2020,9:45 AM,maestro,ACTIVA,$17813.53
+469,Gaultiero,Juice - Orange 1.89l,Shannon,5/30/2020,11:25 AM,jcb,ACTIVA,$13431.15
+470,Eleonora,Lettuce - California Mix,Carola,3/2/2021,3:10 AM,jcb,ACTIVA,$6592.58
+471,Raven,Wine - Sogrape Mateus Rose,Constancy,9/21/2020,4:26 AM,jcb,ACTIVA,$10236.91
+472,Lorita,Mint - Fresh,Cob,5/6/2020,6:31 AM,jcb,ACTIVA,$14884.61
+473,Ruthe,Cookie Trail Mix,Amalle,3/5/2021,10:57 AM,jcb,ACTIVA,$18248.73
+474,Frankie,Wine - Segura Viudas Aria Brut,Elisabetta,11/13/2020,7:23 PM,jcb,ACTIVA,$13987.72
+475,Gamaliel,Bag - Clear 7 Lb,Georgine,9/22/2020,7:59 AM,china-unionpay,ACTIVA,$10530.56
+476,Janeta,"Sauce - Soya, Dark",Vinson,8/2/2020,8:51 PM,jcb,ACTIVA,$12460.63
+477,Doria,Sausage - Blood Pudding,Iormina,10/16/2020,8:10 PM,jcb,ACTIVA,$9795.32
+478,Reid,Clam - Cherrystone,Millicent,8/14/2020,1:40 AM,china-unionpay,ACTIVA,$6586.43
+479,Maddalena,Bread - English Muffin,Hirsch,10/29/2020,10:51 AM,maestro,ACTIVA,$16753.57
+480,Ivory,Grenadillo,Carrol,2/21/2021,4:54 AM,jcb,ACTIVA,$8417.48
+481,Dallis,Beer - Sleemans Cream Ale,Odelia,11/8/2020,1:33 AM,jcb,ACTIVA,$5289.16
+482,Alford,Carbonated Water - White Grape,Samuele,3/7/2021,12:58 AM,maestro,ACTIVA,$6167.09
+483,Prudi,Steel Wool S.o.s,Krishna,10/26/2020,4:42 AM,diners-club-enroute,ACTIVA,$10457.02
+484,Delly,Pastry - Plain Baked Croissant,Andreas,6/11/2020,11:11 PM,jcb,ACTIVA,$8744.05
+485,Fiann,Temperature Recording Station,Genny,7/18/2020,9:00 AM,china-unionpay,ACTIVA,$13226.57
+486,Giselbert,Bagel - 12 Grain Preslice,Kathryne,9/21/2020,11:37 PM,visa,ACTIVA,$10400.95
+487,Garik,Wine - Prem Select Charddonany,Megen,8/6/2020,5:15 PM,jcb,ACTIVA,$12991.10
+488,Fabian,Cream Of Tartar,Fredia,7/26/2020,8:55 AM,jcb,ACTIVA,$7740.40
+489,Marika,"Beef - Outside, Round",Odette,1/21/2021,6:52 AM,visa-electron,ACTIVA,$14875.58
+490,Devondra,Soup Campbells - Tomato Bisque,Rogers,5/22/2020,8:00 PM,mastercard,ACTIVA,$9151.00
+491,Udell,"Nut - Pecan, Halves",Dall,1/4/2021,8:00 PM,jcb,ACTIVA,$13922.75
+492,Hermon,Chick Peas - Dried,Cullie,3/16/2021,11:04 PM,maestro,ACTIVA,$9895.53
+493,Mae,Beef - Tender Tips,Lexi,10/12/2020,4:44 AM,maestro,ACTIVA,$6001.33
+494,Rabbi,Squid - U 5,Brnaba,10/15/2020,8:54 AM,jcb,ACTIVA,$10888.53
+495,Linnie,Beer - Sleemans Honey Brown,Derril,3/8/2021,1:26 PM,visa-electron,ACTIVA,$9944.34
+496,Brenn,Cherries - Frozen,Rutger,11/8/2020,12:32 AM,visa-electron,ACTIVA,$19213.33
+497,Ilise,Sping Loaded Cup Dispenser,Nahum,8/10/2020,12:36 PM,americanexpress,ACTIVA,$19714.91
+498,Johann,"Pail - 15l White, With Handle",Oberon,3/19/2021,1:02 AM,jcb,ACTIVA,$7408.39
+499,Vincent,Creme De Cacao White,Darice,6/14/2020,5:12 PM,jcb,ACTIVA,$19566.81
+500,Yelena,Muffin Mix - Blueberry,Dionysus,8/14/2020,5:57 AM,diners-club-carte-blanche,ACTIVA,$7208.94
+501,Amby,Steampan - Half Size Shallow,Ruperto,11/21/2020,6:42 AM,jcb,ACTIVA,$13619.45
+502,Gussie,Jack Daniels,Edouard,3/27/2020,1:12 PM,bankcard,ACTIVA,$4342.69
+503,Chip,Tea - Earl Grey,Ferdy,6/9/2020,6:28 PM,jcb,ACTIVA,$15152.81
+504,Inga,Wine - Zinfandel Rosenblum,Julian,9/15/2020,11:30 PM,instapayment,ACTIVA,$4878.91
+505,Karlotta,Eel Fresh,Cal,6/17/2020,9:44 PM,china-unionpay,ACTIVA,$14642.64
+506,Babara,"Cake Circle, Paprus",Hamilton,8/5/2020,10:47 PM,jcb,ACTIVA,$7925.02
+507,Gaby,"Nut - Almond, Blanched, Sliced",Alyson,1/2/2021,12:25 PM,switch,ACTIVA,$15488.06
+508,Darsie,"Pasta - Fettuccine, Dry",Chip,6/7/2020,9:11 PM,jcb,ACTIVA,$5541.96
+509,Cammy,Beef - Top Sirloin - Aaa,Addy,3/24/2021,2:07 AM,jcb,ACTIVA,$15434.60
+510,Timothy,"Cheese - Boursin, Garlic / Herbs",Letta,1/3/2021,10:23 AM,diners-club-enroute,ACTIVA,$8989.72
+511,Leonie,"Nut - Pine Nuts, Whole",Teirtza,10/2/2020,10:52 PM,jcb,ACTIVA,$9980.71
+512,Dido,Beer - Original Organic Lager,Dino,7/8/2020,12:04 AM,jcb,ACTIVA,$12299.65
+513,Shurlocke,"Pasta - Fusili, Dry",Valentine,2/19/2021,4:39 PM,mastercard,ACTIVA,$6763.11
+514,Nessie,Bread Base - Gold Formel,Pippa,10/16/2020,7:05 AM,jcb,ACTIVA,$4107.54
+515,Mollee,Spaghetti Squash,Susie,4/1/2020,7:39 AM,switch,ACTIVA,$19676.85
+516,Nelle,Wine - Tribal Sauvignon,Sidonia,6/14/2020,5:26 AM,jcb,ACTIVA,$16804.18
+517,Paton,Devonshire Cream,Bartholemy,2/14/2021,4:37 PM,maestro,ACTIVA,$15726.19
+518,Garner,General Purpose Trigger,Nanice,9/7/2020,7:13 AM,jcb,ACTIVA,$12216.89
+519,Balduin,Apple - Macintosh,Nilson,9/22/2020,3:13 AM,jcb,ACTIVA,$17853.61
+520,Zsazsa,Soup - Campbells Chili,Eustacia,6/26/2020,6:42 AM,switch,ACTIVA,$11147.07
+521,Florencia,Bandage - Fexible 1x3,Lanny,10/15/2020,10:33 AM,jcb,ACTIVA,$9462.79
+522,Susana,"Liners - Banana, Paper",Giordano,7/24/2020,10:03 PM,diners-club-us-ca,ACTIVA,$7366.22
+523,Annamarie,Cake - Miini Cheesecake Cherry,Hasheem,8/17/2020,3:29 AM,jcb,ACTIVA,$5704.78
+524,Kristofer,Bread - Multigrain,Danie,1/12/2021,10:15 AM,mastercard,ACTIVA,$13613.59
+525,Rance,Chocolate Bar - Coffee Crisp,Kary,4/9/2020,5:38 AM,laser,ACTIVA,$19333.60
+526,Lyndy,Rambutan,Belita,4/11/2020,9:35 AM,jcb,ACTIVA,$5698.85
+527,Kareem,Pancetta,Dennie,10/3/2020,6:44 PM,mastercard,ACTIVA,$16820.61
+528,Sigmund,Sardines,Verla,5/21/2020,10:38 AM,visa-electron,ACTIVA,$17619.54
+529,Robbie,Pan Grease,Banky,5/11/2020,8:23 AM,jcb,ACTIVA,$10997.42
+530,Priscella,"Pepper - Red, Finger Hot",Shelbi,11/6/2020,4:57 PM,jcb,ACTIVA,$17145.70
+531,Ware,Sauce - Caesar Dressing,Brady,3/28/2020,3:55 PM,diners-club-enroute,ACTIVA,$17040.15
+532,Bianca,Cakes Assorted,Giulia,11/13/2020,2:56 PM,diners-club-carte-blanche,ACTIVA,$11154.50
+533,Taddeo,Paper Towel Touchless,Baryram,5/11/2020,7:45 PM,jcb,ACTIVA,$11265.23
+534,Phaedra,Foam Tray S2,Joli,10/28/2020,1:18 PM,diners-club-us-ca,ACTIVA,$14378.86
+535,Timothea,Bread - Flat Bread,Cristionna,12/20/2020,2:01 AM,switch,ACTIVA,$10694.09
+536,Paulie,Coffee Caramel Biscotti,Candy,9/6/2020,2:35 PM,maestro,ACTIVA,$14955.23
+537,Dorey,Dc - Sakura Fu,Vladamir,8/24/2020,4:32 AM,switch,ACTIVA,$12303.32
+538,Amalia,Cleaner - Lime Away,Crysta,8/24/2020,12:43 PM,visa-electron,ACTIVA,$13598.41
+539,Jenine,Appetizer - Escargot Puff,Kerstin,11/6/2020,6:32 PM,bankcard,ACTIVA,$12767.41
+540,Gratia,Gatorade - Fruit Punch,Lidia,2/7/2021,10:44 PM,switch,ACTIVA,$13333.28
+541,Isa,Muffin - Blueberry Individual,Armin,7/8/2020,7:23 AM,jcb,ACTIVA,$14149.06
+542,Gabbie,Beer - Muskoka Cream Ale,Stillmann,11/15/2020,4:12 PM,solo,ACTIVA,$6244.12
+543,Alaine,"Veal - Tenderloin, Untrimmed",Jeanelle,8/5/2020,8:05 AM,americanexpress,ACTIVA,$18158.10
+544,Iggie,Oven Mitts - 15 Inch,Barbara,12/17/2020,10:09 PM,jcb,ACTIVA,$17843.60
+545,Rosalia,"Coke - Classic, 355 Ml",Ernaline,2/20/2021,5:06 PM,americanexpress,ACTIVA,$9878.15
+546,Guillema,Shrimp - Black Tiger 26/30,Bartholomeus,4/20/2020,1:49 AM,jcb,ACTIVA,$8964.33
+547,Emilia,"Pork - Loin, Boneless",Burk,5/23/2020,2:43 AM,americanexpress,ACTIVA,$8944.91
+548,Stacy,Sobe - Liz Blizz,Dominica,2/7/2021,2:35 AM,instapayment,ACTIVA,$12952.02
+549,Jacquie,Pepper - Jalapeno,Tammara,3/27/2020,8:38 AM,jcb,ACTIVA,$4942.27
+550,Gaylord,Sugar - Individual Portions,Dolly,9/3/2020,5:27 AM,mastercard,ACTIVA,$12728.13
+551,Hildegaard,"Pasta - Cannelloni, Sheets, Fresh",Bertine,10/6/2020,5:48 AM,solo,ACTIVA,$8551.07
+552,Lorine,Bagel - Everything Presliced,Pascale,11/14/2020,3:50 AM,switch,ACTIVA,$17499.67
+553,Chance,Chocolate Bar - Oh Henry,Yul,7/12/2020,9:51 AM,jcb,ACTIVA,$15727.44
+554,Rachael,Coffee - Espresso,Susan,3/29/2020,7:30 AM,jcb,ACTIVA,$9250.78
+555,Ritchie,Ginger - Pickled,Dacie,10/24/2020,5:44 AM,switch,ACTIVA,$14947.89
+556,Brigit,Wine - Jafflin Bourgongone,Minor,7/25/2020,3:06 AM,jcb,ACTIVA,$7171.22
+557,Rebeca,Grapes - Red,Melvin,11/5/2020,12:28 AM,visa-electron,ACTIVA,$12280.28
+558,Sharlene,"Crab - Dungeness, Whole",Sloan,3/17/2021,8:53 PM,maestro,ACTIVA,$7700.88
+559,Jeramie,"Pasta - Fettuccine, Dry",Amandie,10/22/2020,4:25 AM,jcb,ACTIVA,$11215.13
+560,Archibaldo,Curry Powder,Billie,6/6/2020,8:05 AM,laser,ACTIVA,$14495.87
+561,Neville,Marjoram - Fresh,Ev,7/11/2020,11:22 AM,diners-club-carte-blanche,ACTIVA,$14789.55
+562,Brook,Onions - Pearl,Mendie,1/17/2021,11:54 PM,jcb,ACTIVA,$13744.68
+563,Doretta,"Wine - White, Colubia Cresh",Mahala,6/21/2020,6:21 AM,instapayment,ACTIVA,$8794.81
+564,Kary,"Soup - Cream Of Broccoli, Dry",Alys,8/5/2020,6:53 PM,americanexpress,ACTIVA,$11311.76
+565,Lewes,Peas - Frozen,Clari,5/30/2020,12:20 PM,jcb,ACTIVA,$11506.54
+566,Corby,Arizona - Plum Green Tea,Becca,11/7/2020,4:38 AM,jcb,ACTIVA,$6018.70
+567,Aloysia,Pur Source,Rustin,4/10/2020,5:48 PM,jcb,ACTIVA,$19366.46
+568,Quinn,"Beef - Tenderlion, Center Cut",Kalil,7/11/2020,11:45 AM,solo,ACTIVA,$18149.58
+569,Barnett,"Veal - Inside, Choice",Bud,9/13/2020,5:33 AM,visa-electron,ACTIVA,$18928.39
+570,Harriet,"Veal - Chops, Split, Frenched",Tallulah,7/7/2020,4:18 AM,jcb,ACTIVA,$19318.02
+571,Constancy,"Cheese - Brie, Cups 125g",Shoshanna,1/5/2021,4:46 PM,jcb,ACTIVA,$19679.32
+572,Gerardo,Coconut - Whole,Arron,2/4/2021,5:53 AM,jcb,ACTIVA,$14627.06
+573,Selinda,Calvados - Boulard,Lacee,6/27/2020,7:16 AM,jcb,ACTIVA,$8975.82
+574,Alis,Hold Up Tool Storage Rack,Maybelle,9/13/2020,10:10 PM,jcb,ACTIVA,$14181.90
+575,Ly,Bok Choy - Baby,Ezmeralda,9/5/2020,7:23 AM,jcb,ACTIVA,$11951.49
+576,Jameson,"Cake Circle, Foil, Scallop",Jillene,10/1/2020,3:42 PM,maestro,ACTIVA,$15325.99
+577,Maudie,Eggplant - Baby,Tamma,10/4/2020,7:25 AM,mastercard,ACTIVA,$17748.81
+578,Kathie,Cheese - Victor Et Berthold,Odessa,11/22/2020,6:22 AM,switch,ACTIVA,$17857.10
+579,Berenice,Salt - Sea,Walliw,5/26/2020,1:55 PM,jcb,ACTIVA,$13618.75
+580,Freda,Cheese - Cottage Cheese,Rubetta,8/26/2020,9:21 AM,americanexpress,ACTIVA,$17456.40
+581,Jaquenetta,Cake - Miini Cheesecake Cherry,Harris,4/28/2020,12:48 PM,jcb,ACTIVA,$5508.54
+582,Lothaire,Pheasants - Whole,Stesha,1/6/2021,3:46 PM,jcb,ACTIVA,$15577.74
+583,Curcio,Container Clear 8 Oz,Salmon,8/30/2020,4:24 PM,jcb,ACTIVA,$15496.63
+584,Raleigh,Turnip - White,Brandice,10/8/2020,11:52 PM,diners-club-carte-blanche,ACTIVA,$4368.85
+585,Novelia,Apple - Royal Gala,Syman,7/20/2020,8:43 AM,americanexpress,ACTIVA,$10201.98
+586,Adelle,Wine - Touraine Azay - Le - Rideau,Alayne,5/7/2020,1:35 AM,jcb,ACTIVA,$8140.34
+587,Quinton,Jicama,Eba,6/16/2020,4:58 PM,bankcard,ACTIVA,$13071.82
+588,Alexandrina,"Flour - Bran, Red",Blanch,6/7/2020,6:12 PM,china-unionpay,ACTIVA,$4997.83
+589,Elfie,"Soup - Clam Chowder, Dry Mix",Sheela,6/10/2020,10:25 AM,mastercard,ACTIVA,$5149.57
+590,Dyana,Rice - Aborio,Leoline,11/29/2020,9:09 PM,jcb,ACTIVA,$5232.49
+591,Dion,Wine - Rioja Campo Viejo,Ly,7/16/2020,10:54 AM,americanexpress,ACTIVA,$6417.62
+592,Paloma,"Pork - Bacon, Sliced",Ruben,2/3/2021,5:17 PM,visa,ACTIVA,$12193.31
+593,Joanne,Beef Ground Medium,Steffane,7/5/2020,10:13 PM,china-unionpay,ACTIVA,$6448.60
+594,Abra,Carbonated Water - White Grape,Pam,3/15/2021,11:54 AM,jcb,ACTIVA,$19989.72
+595,Lyon,Dried Apple,Sanders,3/1/2021,10:27 PM,solo,ACTIVA,$12672.84
+596,Burt,Pepper - Jalapeno,Pooh,9/21/2020,2:32 PM,jcb,ACTIVA,$19647.87
+597,Kurt,Water - Green Tea Refresher,Giorgia,4/9/2020,1:51 PM,china-unionpay,ACTIVA,$18855.32
+598,Idelle,Oil - Safflower,Odilia,10/3/2020,3:31 AM,laser,ACTIVA,$17091.76
+599,Aileen,Sour Cream,Gabi,1/27/2021,7:26 PM,diners-club-carte-blanche,ACTIVA,$14998.78
+600,Rad,Bread - Hamburger Buns,Lotta,8/28/2020,6:01 AM,diners-club-enroute,ACTIVA,$6457.85
+601,Matilda,Beer - Original Organic Lager,Beckie,3/12/2021,8:08 AM,jcb,ACTIVA,$7708.89
+602,Juline,Wheat - Soft Kernal Of Wheat,Leonardo,5/15/2020,9:47 AM,bankcard,ACTIVA,$16755.61
+603,Richmound,Grapes - Black,Stacia,8/19/2020,4:26 PM,jcb,ACTIVA,$13151.81
+604,Saxe,Juice - Propel Sport,Glad,12/20/2020,11:03 PM,diners-club-carte-blanche,ACTIVA,$7608.34
+605,Jennica,Longos - Penne With Pesto,Cherrita,8/25/2020,8:41 PM,maestro,ACTIVA,$6847.33
+606,Morgana,"Soup - Cream Of Broccoli, Dry",Abbey,5/8/2020,5:19 PM,visa-electron,ACTIVA,$8846.66
+607,Iver,Pectin,Lee,5/7/2020,3:05 PM,jcb,ACTIVA,$8681.15
+608,Addison,"Beef - Ox Tail, Frozen",Amelia,6/22/2020,9:08 PM,bankcard,ACTIVA,$17918.56
+609,Aindrea,"Pepper - Paprika, Hungarian",Seward,1/19/2021,11:48 AM,maestro,ACTIVA,$16513.52
+610,Kingsley,"Wine - Red, Concha Y Toro",Winthrop,11/4/2020,10:21 AM,mastercard,ACTIVA,$17651.22
+611,Kirstyn,Glaze - Apricot,Ellery,10/10/2020,10:44 AM,mastercard,ACTIVA,$6991.29
+612,Becka,Red Pepper Paste,Hendrika,3/22/2021,2:35 PM,jcb,ACTIVA,$9933.46
+613,Godard,Gelatine Leaves - Envelopes,Granville,4/24/2020,6:35 PM,jcb,ACTIVA,$19777.90
+614,Niki,Beef - Ground Lean Fresh,Jessey,3/12/2021,7:44 PM,americanexpress,ACTIVA,$19504.48
+615,Kristine,Extract - Raspberry,Marten,11/12/2020,2:13 PM,maestro,ACTIVA,$9778.31
+616,Randolph,"Lamb - Leg, Diced",Roselia,12/22/2020,2:43 AM,jcb,ACTIVA,$15367.54
+617,Elsy,"Sugar - Sweet N Low, Individual",Skell,3/18/2021,5:36 PM,solo,ACTIVA,$12434.75
+618,Karlotte,Chocolate - Dark,Elladine,4/13/2020,10:24 PM,jcb,ACTIVA,$12953.22
+619,Blakelee,Apple - Royal Gala,Leanora,12/7/2020,2:35 PM,laser,ACTIVA,$14208.73
+620,Grace,Longos - Grilled Salmon With Bbq,Matthias,1/17/2021,6:15 AM,maestro,ACTIVA,$9605.81
+621,Cord,"Lamb - Pieces, Diced",Gertrud,3/26/2021,8:16 PM,switch,ACTIVA,$16606.89
+622,Kennett,Chicken - Wieners,Glenn,10/2/2020,8:43 AM,jcb,ACTIVA,$6128.17
+623,Osmund,Soap - Mr.clean Floor Soap,Marlane,12/29/2020,7:02 AM,maestro,ACTIVA,$19030.95
+624,Omar,"Beets - Candy Cane, Organic",Vivyanne,3/23/2021,9:56 AM,americanexpress,ACTIVA,$14817.44
+625,Hildegarde,Creme De Menthe Green,Athena,7/5/2020,8:27 AM,visa,ACTIVA,$5752.62
+626,Laverna,Wine - Stoneliegh Sauvignon,Mab,12/28/2020,5:15 PM,mastercard,ACTIVA,$19306.75
+627,Robbi,Foam Cup 6 Oz,Tymothy,8/28/2020,10:54 AM,maestro,ACTIVA,$11116.68
+628,Anya,"Yeast - Fresh, Fleischman",Alwin,1/15/2021,11:00 PM,jcb,ACTIVA,$6514.61
+629,Annissa,Soup - Tomato Mush. Florentine,Lianne,10/8/2020,6:39 PM,visa-electron,ACTIVA,$5729.09
+630,Danny,Napkin Colour,Lisle,3/10/2021,7:25 AM,jcb,ACTIVA,$19172.14
+631,Kermit,Beer - True North Strong Ale,Morena,4/3/2020,2:56 AM,jcb,ACTIVA,$17256.81
+632,Ethelda,Veal - Osso Bucco,Maurits,12/23/2020,10:08 AM,bankcard,ACTIVA,$11044.24
+633,Loralee,"Chilli Paste, Ginger Garlic",Charmain,3/25/2021,3:59 AM,diners-club-carte-blanche,ACTIVA,$11872.15
+634,Ellette,Wine - Duboeuf Beaujolais,Arni,9/2/2020,4:29 AM,switch,ACTIVA,$10284.76
+635,Caye,Sugar - White Packet,Zaneta,2/2/2021,10:56 PM,americanexpress,ACTIVA,$4483.09
+636,Cad,Scallops - 10/20,Colin,2/7/2021,3:51 AM,visa-electron,ACTIVA,$12089.62
+637,Dov,Wine - Jaboulet Cotes Du Rhone,Lethia,1/26/2021,7:54 AM,jcb,ACTIVA,$9137.76
+638,Birch,Bread - Dark Rye,Siusan,6/28/2020,10:47 AM,bankcard,ACTIVA,$10549.60
+639,Kalli,Chinese Foods - Chicken,Sue,10/26/2020,12:34 AM,switch,ACTIVA,$5727.56
+640,Alvan,"Jam - Raspberry,jar",Stoddard,6/27/2020,6:21 PM,mastercard,ACTIVA,$10189.84
+641,Maurita,Table Cloth 54x54 White,Skippie,10/17/2020,11:47 AM,jcb,ACTIVA,$9090.96
+642,Netta,Ostrich - Prime Cut,Ingeborg,2/16/2021,6:17 AM,jcb,ACTIVA,$18741.27
+643,Reinaldos,"Zucchini - Mini, Green",Vania,8/31/2020,6:09 PM,jcb,ACTIVA,$10075.71
+644,Cornela,Chinese Foods - Pepper Beef,Larry,6/17/2020,4:30 PM,diners-club-carte-blanche,ACTIVA,$14986.63
+645,Delmor,Island Oasis - Sweet And Sour Mix,Christabella,4/24/2020,1:08 AM,mastercard,ACTIVA,$5947.21
+646,Ronna,Plastic Wrap,Emmery,7/29/2020,2:49 AM,switch,ACTIVA,$14239.08
+647,Evey,Calypso - Black Cherry Lemonade,Morganne,11/30/2020,5:46 AM,diners-club-carte-blanche,ACTIVA,$7287.99
+648,Karol,Milk 2% 500 Ml,Annmarie,8/25/2020,3:09 AM,switch,ACTIVA,$10473.79
+649,Jamesy,Syrup - Pancake,Datha,2/14/2021,3:18 PM,jcb,ACTIVA,$14035.69
+650,Pavla,Beef - Top Butt Aaa,Loren,6/29/2020,8:27 PM,jcb,ACTIVA,$15696.42
+651,Gay,Veal - Slab Bacon,Christal,8/26/2020,5:53 PM,jcb,ACTIVA,$5693.83
+652,Fletch,Longos - Penne With Pesto,Erika,4/22/2020,4:39 PM,jcb,ACTIVA,$19950.00
+653,Gabi,Muffin Mix - Banana Nut,Jillian,2/12/2021,1:39 PM,diners-club-us-ca,ACTIVA,$7411.98
+654,Johnathon,Shiro Miso,Laraine,3/8/2021,3:07 PM,diners-club-carte-blanche,ACTIVA,$4669.49
+655,Viola,Blue Curacao - Marie Brizard,Clarey,11/13/2020,7:38 AM,jcb,ACTIVA,$11133.81
+656,Morton,"Rum - Light, Captain Morgan",Norina,10/22/2020,12:29 PM,switch,ACTIVA,$10572.85
+657,Sharleen,Red Pepper Paste,Cross,11/6/2020,9:10 PM,diners-club-carte-blanche,ACTIVA,$10673.32
+658,Gert,Cheese - Cheddarsliced,Tootsie,6/9/2020,4:41 PM,jcb,ACTIVA,$16417.58
+659,Clim,"Potatoes - Purple, Organic",Yorgo,5/6/2020,5:34 PM,jcb,ACTIVA,$7486.71
+660,Walt,Butter - Unsalted,Bartholomeo,5/31/2020,6:56 AM,jcb,ACTIVA,$8127.44
+661,Romain,Green Scrubbie Pad H.duty,Godfree,10/5/2020,7:13 AM,bankcard,ACTIVA,$5799.48
+662,Marty,Buffalo - Striploin,Bordy,11/7/2020,5:43 PM,jcb,ACTIVA,$15049.93
+663,Eugenio,Beans - Butter Lrg Lima,Rebeca,1/6/2021,12:39 AM,jcb,ACTIVA,$14923.35
+664,Tuesday,Pan Grease,Beverie,5/20/2020,10:38 AM,jcb,ACTIVA,$16315.40
+665,Neda,Wine - Acient Coast Caberne,Rance,9/22/2020,3:22 PM,visa-electron,ACTIVA,$6875.99
+666,Edna,"Lemonade - Island Tea, 591 Ml",Craggy,12/5/2020,6:37 AM,visa-electron,ACTIVA,$15507.62
+667,Fredrick,Oil - Macadamia,Carree,4/29/2020,11:17 AM,mastercard,ACTIVA,$10067.04
+668,Gae,Hot Choc Vending,Luella,4/12/2020,8:43 PM,jcb,ACTIVA,$9566.44
+669,Marji,Sauce - Hoisin,Deanne,8/8/2020,1:07 PM,jcb,ACTIVA,$19941.69
+670,Antoinette,Croissants Thaw And Serve,Michaella,4/2/2020,3:09 AM,jcb,ACTIVA,$8649.31
+671,Amaleta,Arctic Char - Fillets,Isiahi,2/27/2021,10:13 AM,diners-club-international,ACTIVA,$13511.53
+672,Jerri,Oil - Sesame,Eloisa,4/21/2020,7:44 AM,jcb,ACTIVA,$11130.97
+673,Renie,Chick Peas - Canned,Mercy,10/1/2020,11:48 PM,jcb,ACTIVA,$11184.55
+674,Eward,Bok Choy - Baby,Scottie,8/15/2020,9:33 PM,mastercard,ACTIVA,$19852.33
+675,Cory,Bread - Pita,Anya,5/3/2020,4:16 AM,instapayment,ACTIVA,$12786.86
+676,Haze,Wine - Merlot Vina Carmen,Delia,7/19/2020,4:41 AM,jcb,ACTIVA,$17375.47
+677,Dulcine,"Beef - Kindney, Whole",Maisey,12/20/2020,8:39 AM,americanexpress,ACTIVA,$9863.17
+678,Brien,Cheese - Brie,Daisey,2/12/2021,10:19 AM,jcb,ACTIVA,$4526.90
+679,Vitoria,Soup Campbells - Tomato Bisque,Lesley,5/2/2020,8:03 PM,maestro,ACTIVA,$9554.67
+680,Josias,Madeira,Leonhard,6/13/2020,4:24 AM,jcb,ACTIVA,$11545.98
+681,Camille,Avocado,Ellynn,7/9/2020,5:33 AM,jcb,ACTIVA,$16911.17
+682,Markos,Halibut - Fletches,Hewitt,7/21/2020,8:47 AM,china-unionpay,ACTIVA,$7184.84
+683,Joana,Cookies - Englishbay Chochip,Alec,10/23/2020,10:11 AM,jcb,ACTIVA,$10534.75
+684,Coriss,Turnip - Wax,Dannie,3/9/2021,12:41 AM,visa,ACTIVA,$6586.52
+685,Jolie,"Lamb - Loin, Trimmed, Boneless",Sula,3/23/2021,7:32 AM,china-unionpay,ACTIVA,$14150.71
+686,Alexina,Yucca,Darell,5/8/2020,5:05 PM,china-unionpay,ACTIVA,$17611.56
+687,Malynda,Wine - Peller Estates Late,Felita,11/17/2020,1:44 AM,jcb,ACTIVA,$19503.66
+688,Milissent,Beef - Tenderloin,Clyve,5/18/2020,12:54 AM,diners-club-international,ACTIVA,$18510.74
+689,Pepita,Pork - Hock And Feet Attached,Mac,1/7/2021,11:16 AM,jcb,ACTIVA,$17258.42
+690,Filia,Sobe - Green Tea,Lalo,7/28/2020,8:17 PM,diners-club-carte-blanche,ACTIVA,$14039.55
+691,Cthrine,Table Cloth - 53x69 Colour,Audre,8/4/2020,3:07 PM,jcb,ACTIVA,$19439.32
+692,Cliff,Neckerchief Blck,Guinevere,12/17/2020,3:37 AM,jcb,ACTIVA,$16754.81
+693,Benjamen,"Yogurt - Cherry, 175 Gr",Mendie,6/8/2020,8:04 PM,visa-electron,ACTIVA,$19928.88
+694,Dulsea,Cake Slab,Doy,12/7/2020,8:43 PM,maestro,ACTIVA,$13303.72
+695,Cordie,"Water, Tap",Ardella,11/10/2020,8:33 PM,jcb,ACTIVA,$8350.95
+696,Amara,"Nut - Pecan, Halves",Myer,10/25/2020,8:32 AM,jcb,ACTIVA,$10939.87
+697,Nance,Lettuce - Baby Salad Greens,Ingelbert,10/12/2020,6:40 AM,diners-club-enroute,ACTIVA,$19345.13
+698,Ansel,"Bread - Pumpernickle, Rounds",Mendy,7/22/2020,12:14 PM,jcb,ACTIVA,$12737.00
+699,Warden,"Sauce - White, Mix",David,3/17/2021,1:17 AM,jcb,ACTIVA,$5419.88
+700,Hermy,Rice - Basmati,Jacinthe,11/15/2020,9:29 PM,jcb,ACTIVA,$6051.41
+701,Glynn,"Mustard - Dry, Powder",Paige,3/10/2021,3:16 AM,visa,ACTIVA,$19256.00
+702,Alberto,Rice - Jasmine Sented,Wiatt,11/16/2020,9:20 PM,jcb,ACTIVA,$15032.65
+703,Rab,Lamb - Loin Chops,Obadias,3/27/2020,9:37 AM,jcb,ACTIVA,$13588.36
+704,Deidre,Squash - Acorn,Nadeen,11/11/2020,6:03 PM,diners-club-carte-blanche,ACTIVA,$5150.59
+705,Delmore,External Supplier,Ludvig,8/11/2020,9:11 PM,americanexpress,ACTIVA,$15345.63
+706,Clem,Ecolab - Hobart Upr Prewash Arm,Cristian,6/26/2020,3:53 PM,visa,ACTIVA,$9999.79
+707,Roshelle,"Tart Shells - Savory, 4",Shela,6/29/2020,6:00 PM,jcb,ACTIVA,$9649.77
+708,Lila,"Quail - Eggs, Fresh",Rubina,1/31/2021,3:20 PM,diners-club-international,ACTIVA,$9392.76
+709,Mel,"Crab - Claws, 26 - 30",Agustin,6/18/2020,7:15 PM,china-unionpay,ACTIVA,$9916.42
+710,Aurlie,"Sauce - White, Mix",Stormy,5/18/2020,4:05 PM,mastercard,ACTIVA,$6754.24
+711,Davida,Bread - Olive,Cindi,9/13/2020,12:11 PM,mastercard,ACTIVA,$17637.73
+712,Sandye,Island Oasis - Lemonade,Keane,1/14/2021,4:28 PM,mastercard,ACTIVA,$7200.43
+713,Oliver,"Nut - Pecan, Halves",Chickie,1/28/2021,11:39 AM,mastercard,ACTIVA,$6685.23
+714,Zebulon,Pepper - Red Thai,Larine,7/19/2020,4:37 PM,jcb,ACTIVA,$5272.30
+715,Griz,Muffin - Bran Ind Wrpd,Stevie,10/3/2020,3:49 PM,jcb,ACTIVA,$12767.60
+716,Ingeberg,Cheese - Comte,Margeaux,12/21/2020,12:42 AM,mastercard,ACTIVA,$11270.57
+717,Johanna,Pork - Back Ribs,Brandise,1/22/2021,12:47 PM,bankcard,ACTIVA,$11030.97
+718,Mendie,Veal - Loin,Hollie,2/19/2021,4:42 PM,jcb,ACTIVA,$7566.21
+719,Aldwin,Lemon Pepper,Silva,9/8/2020,4:22 AM,china-unionpay,ACTIVA,$8373.09
+720,Elyse,Appetizer - Lobster Phyllo Roll,Norbert,12/5/2020,2:48 PM,jcb,ACTIVA,$9554.05
+721,Ceciley,Wine - Puligny Montrachet A.,Torrence,10/14/2020,1:57 AM,mastercard,ACTIVA,$5513.13
+722,Dirk,Pepper - Gypsy Pepper,Duky,12/18/2020,10:44 AM,bankcard,ACTIVA,$19248.15
+723,Tibold,"Fish - Base, Bouillion",Sonia,7/28/2020,3:05 AM,jcb,ACTIVA,$11493.72
+724,Selia,Roe - White Fish,Doyle,5/3/2020,5:23 PM,maestro,ACTIVA,$14077.85
+725,Colene,Cheese - Gouda,Netta,10/9/2020,6:19 PM,visa-electron,ACTIVA,$17039.83
+726,Wendel,Beer - Paulaner Hefeweisse,Odey,5/11/2020,8:25 PM,jcb,ACTIVA,$6044.49
+727,Guillermo,Tea - Herbal I Love Lemon,Carney,1/23/2021,2:47 PM,maestro,ACTIVA,$11009.22
+728,Vaclav,Wine - Savigny - Les - Beaune,Hoebart,4/23/2020,1:54 AM,jcb,ACTIVA,$8247.44
+729,Guinevere,Monkfish Fresh - Skin Off,Husein,2/21/2021,11:11 PM,bankcard,ACTIVA,$14683.33
+730,Caresa,Puff Pastry - Sheets,Ginni,8/27/2020,12:32 AM,switch,ACTIVA,$5955.41
+731,Terrie,"Doilies - 7, Paper",Joice,5/11/2020,11:18 PM,switch,ACTIVA,$13983.27
+732,Carmita,Anchovy In Oil,Maurie,5/6/2020,6:24 PM,americanexpress,ACTIVA,$13522.66
+733,Stephannie,Crab - Meat,Geordie,8/29/2020,11:30 PM,jcb,ACTIVA,$4677.25
+734,Clare,Pails With Lids,Ezmeralda,6/27/2020,6:33 AM,switch,ACTIVA,$11533.29
+735,Paxton,Wine - Magnotta - Pinot Gris Sr,Darby,8/21/2020,12:46 AM,jcb,ACTIVA,$19799.79
+736,Griffin,Fond - Chocolate,Gaylord,12/12/2020,7:46 PM,laser,ACTIVA,$18894.26
+737,Alex,Yucca,Salomi,2/19/2021,4:29 AM,diners-club-enroute,ACTIVA,$5243.12
+738,Manolo,Beef Dry Aged Tenderloin Aaa,Anita,8/10/2020,9:15 PM,diners-club-enroute,ACTIVA,$9476.20
+739,Tine,Hersey Shakes,Emmott,6/23/2020,12:53 AM,jcb,ACTIVA,$11477.04
+740,Carlynn,Fib N9 - Prague Powder,Layne,4/29/2020,12:03 AM,laser,ACTIVA,$19059.14
+741,Wang,"Cheese - Mozzarella, Buffalo",Margery,10/6/2020,6:57 PM,jcb,ACTIVA,$14167.04
+742,Sharlene,Dc Hikiage Hira Huba,Flory,1/30/2021,6:22 AM,switch,ACTIVA,$9790.53
+743,Amelina,Beef - Flank Steak,Hali,9/25/2020,9:58 AM,diners-club-carte-blanche,ACTIVA,$9657.10
+744,Carolina,Juice - Ocean Spray Cranberry,Rory,10/24/2020,6:24 AM,mastercard,ACTIVA,$15856.52
+745,Arleyne,Ginger - Ground,Shelli,6/3/2020,1:06 PM,jcb,ACTIVA,$7790.33
+746,Geri,Lamb Leg - Bone - In Nz,Avrit,1/8/2021,5:01 AM,jcb,ACTIVA,$18002.16
+747,Fredericka,Container - Clear 16 Oz,Sigfrid,6/19/2020,11:54 AM,jcb,ACTIVA,$16282.52
+748,Tamra,Chicken - Soup Base,Catharine,2/1/2021,12:26 AM,maestro,ACTIVA,$19440.62
+749,Alma,Ice Cream - Strawberry,Thane,7/17/2020,12:22 AM,bankcard,ACTIVA,$10590.20
+750,Tamqrah,Poppy Seed,Breena,1/5/2021,1:17 PM,americanexpress,ACTIVA,$11135.10
+751,Nathan,Syrup - Monin - Granny Smith,Danna,5/31/2020,3:52 PM,jcb,ACTIVA,$12344.75
+752,Courtney,Cotton Wet Mop 16 Oz,Rosamund,1/31/2021,2:52 AM,americanexpress,ACTIVA,$8341.04
+753,Dorothea,Watercress,Andrey,1/31/2021,5:37 AM,jcb,ACTIVA,$19869.83
+754,Sheilakathryn,Sorrel - Fresh,Otto,1/10/2021,7:07 AM,visa-electron,ACTIVA,$16848.68
+755,Lockwood,Olive - Spread Tapenade,Darice,3/30/2020,10:15 AM,jcb,ACTIVA,$11670.21
+756,Drugi,"Juice - Pineapple, 341 Ml",Fraze,12/14/2020,6:29 AM,jcb,ACTIVA,$17474.82
+757,Ivonne,"Beef - Tongue, Fresh",Kennedy,10/23/2020,3:02 AM,americanexpress,ACTIVA,$19264.54
+758,Maryellen,"Tomatoes - Vine Ripe, Yellow",Catarina,11/22/2020,6:06 PM,jcb,ACTIVA,$9059.45
+759,Saundra,Beef - Flank Steak,Elwin,2/27/2021,10:56 PM,jcb,ACTIVA,$4015.12
+760,Walden,Sprouts - Onion,Sande,7/1/2020,3:35 AM,jcb,ACTIVA,$16234.98
+761,Elspeth,"Beans - Kidney, Canned",Marylinda,6/11/2020,6:42 PM,bankcard,ACTIVA,$19595.53
+762,Saundra,Food Colouring - Pink,Roddie,9/25/2020,10:57 AM,jcb,ACTIVA,$9096.02
+763,Karim,"Crush - Grape, 355 Ml",Mitzi,5/4/2020,2:47 PM,diners-club-enroute,ACTIVA,$9992.51
+764,Velma,"Beans - Navy, Dry",Bliss,5/29/2020,4:49 AM,diners-club-carte-blanche,ACTIVA,$9581.57
+765,Bondy,Longos - Burritos,Ibby,10/29/2020,11:47 PM,visa-electron,ACTIVA,$9810.42
+766,Mady,Nantucket - 518ml,Marya,3/7/2021,9:46 PM,maestro,ACTIVA,$18741.81
+767,Brittani,Cranberries - Dry,Tonya,7/18/2020,11:13 AM,jcb,ACTIVA,$9948.25
+768,Dominga,Beer - Camerons Cream Ale,Deeanne,9/13/2020,3:04 PM,jcb,ACTIVA,$16982.14
+769,Johnette,Steampan - Half Size Shallow,Dorothy,7/9/2020,7:46 AM,jcb,ACTIVA,$9293.28
+770,Suki,Yeast Dry - Fleischman,Rikki,11/1/2020,11:57 AM,americanexpress,ACTIVA,$16881.43
+771,Antonia,"Wine - Red, Mosaic Zweigelt",Baxy,11/1/2020,3:20 PM,diners-club-carte-blanche,ACTIVA,$10275.80
+772,Arvie,Lid - 3oz Med Rec,Arabella,9/19/2020,4:56 AM,diners-club-enroute,ACTIVA,$13030.90
+773,Cherilynn,"Soup - Canadian Pea, Dry Mix",Dougy,8/6/2020,11:06 AM,bankcard,ACTIVA,$5697.57
+774,Sharron,Cinnamon - Stick,Marv,7/14/2020,9:15 PM,visa,ACTIVA,$17023.43
+775,Valerie,"Pasta - Penne, Rigate, Dry",Bryce,3/19/2021,10:14 AM,maestro,ACTIVA,$5217.87
+776,Miquela,Beef - Short Ribs,Kristian,3/5/2021,8:42 AM,jcb,ACTIVA,$12207.14
+777,Zorina,Bandage - Fexible 1x3,Matthew,9/3/2020,9:07 AM,americanexpress,ACTIVA,$17936.24
+778,Danie,Beans - Green,Devlin,6/4/2020,5:34 AM,jcb,ACTIVA,$11308.24
+779,Antone,Petite Baguette,Hinze,1/25/2021,9:20 PM,bankcard,ACTIVA,$15234.22
+780,Rowney,Rolled Oats,Meris,9/28/2020,8:53 PM,switch,ACTIVA,$9177.83
+781,Una,Lamb Shoulder Boneless Nz,Gustie,5/20/2020,2:28 PM,china-unionpay,ACTIVA,$17495.39
+782,Marin,Dried Cherries,Myrtia,10/26/2020,8:19 PM,jcb,ACTIVA,$18662.69
+783,Hermon,"Oil - Shortening,liqud, Fry",Daveen,8/16/2020,11:19 PM,visa,ACTIVA,$12508.46
+784,Augustin,"Plate - Foam, Bread And Butter",Avrom,3/30/2020,6:22 AM,americanexpress,ACTIVA,$13731.12
+785,Aleen,Lumpfish Black,Kristan,2/15/2021,5:43 PM,jcb,ACTIVA,$7589.10
+786,Engelbert,Pate - Cognac,Saunderson,1/27/2021,9:11 PM,instapayment,ACTIVA,$15269.20
+787,Erl,Onions - Red,Merrily,3/6/2021,5:38 PM,instapayment,ACTIVA,$7075.61
+788,Tybi,Mousse - Banana Chocolate,Octavius,9/21/2020,4:11 AM,jcb,ACTIVA,$12334.33
+789,Camala,Duck - Legs,Pamela,3/1/2021,4:27 AM,jcb,ACTIVA,$13522.57
+790,Leigha,Glaze - Clear,Mata,8/26/2020,12:56 AM,jcb,ACTIVA,$11820.28
+791,Renate,Cookies Almond Hazelnut,Minnie,2/19/2021,8:42 PM,jcb,ACTIVA,$9051.77
+792,Arnold,"Oil - Shortening,liqud, Fry",Archibald,8/16/2020,4:27 PM,jcb,ACTIVA,$18512.23
+793,Burnard,Compound - Pear,Vinni,2/18/2021,9:28 AM,jcb,ACTIVA,$9990.57
+794,Sadella,Veal Inside - Provimi,Clevie,8/23/2020,4:08 AM,mastercard,ACTIVA,$9955.66
+795,Calhoun,"Pasta - Fettuccine, Dry",Petr,3/25/2021,4:57 AM,jcb,ACTIVA,$5378.69
+796,Reid,Bread - Italian Corn Meal Poly,Rosalind,3/7/2021,8:18 PM,jcb,ACTIVA,$9378.72
+797,Bruce,Tuna - Fresh,Simone,2/7/2021,12:30 PM,diners-club-enroute,ACTIVA,$11276.69
+798,Wilhelmine,Rice - Wild,Barbara,1/26/2021,7:43 PM,diners-club-carte-blanche,ACTIVA,$8097.60
+799,Boycie,Burger Veggie,Crystie,2/6/2021,4:02 PM,mastercard,ACTIVA,$7170.52
+800,Mariya,Cabbage - Nappa,Adela,9/7/2020,1:46 AM,visa-electron,ACTIVA,$17489.66
+801,Idaline,Plums - Red,Michell,6/27/2020,11:14 AM,americanexpress,ACTIVA,$9814.64
+802,Griffy,Shrimp - Tiger 21/25,Eliza,6/23/2020,4:39 PM,jcb,ACTIVA,$17707.74
+803,Dora,"Juice - Pineapple, 341 Ml",Humfried,7/6/2020,10:13 AM,jcb,ACTIVA,$7071.21
+804,Dick,"Wine - White, Schroder And Schyl",Neron,5/3/2020,1:21 PM,diners-club-carte-blanche,ACTIVA,$11229.30
+805,Jerrilyn,Pears - Anjou,Diane,6/27/2020,9:46 PM,diners-club-us-ca,ACTIVA,$12042.87
+806,Norbert,"Pepper - Chipotle, Canned",Cathrin,9/22/2020,8:35 PM,americanexpress,ACTIVA,$4573.09
+807,Caralie,Bandage - Flexible Neon,Shandy,9/23/2020,5:46 AM,jcb,ACTIVA,$19813.90
+808,Kris,Pastry - Cheese Baked Scones,Smitty,9/5/2020,1:49 AM,visa,ACTIVA,$15362.17
+809,Cissy,Beer - Paulaner Hefeweisse,Maressa,8/21/2020,11:37 AM,visa-electron,ACTIVA,$4878.20
+810,Leonhard,Water - Spring Water 500ml,Siana,4/13/2020,3:40 PM,jcb,ACTIVA,$12419.04
+811,Ingunna,"Trout - Rainbow, Frozen",Mordecai,2/6/2021,1:08 AM,bankcard,ACTIVA,$16529.14
+812,Bea,Nantucket Apple Juice,Legra,9/13/2020,1:19 AM,diners-club-carte-blanche,ACTIVA,$8803.54
+813,Bradan,Beef - Bresaola,Nancee,3/26/2021,12:00 PM,diners-club-carte-blanche,ACTIVA,$9172.83
+814,Gay,Cookies Almond Hazelnut,Leyla,8/26/2020,8:57 AM,bankcard,ACTIVA,$17872.76
+815,Kris,Turkey Tenderloin Frozen,Corie,8/18/2020,6:33 PM,mastercard,ACTIVA,$14193.44
+816,Jarid,Crackers - Melba Toast,Wain,9/23/2020,3:02 AM,maestro,ACTIVA,$17506.06
+817,Carmelita,Pork - Hock And Feet Attached,Kellsie,7/15/2020,4:48 AM,mastercard,ACTIVA,$12184.73
+818,Dalia,Cheese - Blue,Adda,9/22/2020,8:00 AM,jcb,ACTIVA,$11376.18
+819,Gates,Garbage Bag - Clear,Boyce,7/11/2020,1:26 AM,instapayment,ACTIVA,$6319.03
+820,Gloriane,Icecream - Dstk Cml And Fdg,Marjie,5/31/2020,12:31 PM,jcb,ACTIVA,$5321.87
+821,Milty,Cheese - Goat,Nancey,3/17/2021,1:12 PM,jcb,ACTIVA,$11716.81
+822,Calvin,Wine - Puligny Montrachet A.,Aloysius,12/19/2020,9:00 AM,diners-club-carte-blanche,ACTIVA,$8995.32
+823,Maude,"Lemonade - Kiwi, 591 Ml",Ranna,11/11/2020,5:35 AM,china-unionpay,ACTIVA,$14174.32
+824,Husain,Chicken - Bones,Cornelle,7/29/2020,3:27 PM,instapayment,ACTIVA,$5020.97
+825,Jerome,True - Vue Containers,Ad,4/26/2020,6:00 PM,mastercard,ACTIVA,$4067.88
+826,Aron,Pork Loin Cutlets,Myrle,6/15/2020,9:48 PM,jcb,ACTIVA,$17380.61
+827,Stanleigh,Onions Granulated,Mellie,10/7/2020,5:39 AM,jcb,ACTIVA,$4796.19
+828,Frayda,Muffin - Mix - Creme Brule 15l,Hetty,2/13/2021,10:42 PM,bankcard,ACTIVA,$13888.84
+829,Killy,Lobster - Base,Mikael,9/19/2020,5:46 PM,switch,ACTIVA,$16783.79
+830,Ola,Flour - Cake,Jeannie,2/24/2021,11:19 PM,diners-club-enroute,ACTIVA,$19242.06
+831,Gilberte,"Juice - Orange, Concentrate",Mandel,7/21/2020,2:03 AM,jcb,ACTIVA,$15909.55
+832,Stefa,"Trout - Hot Smkd, Dbl Fillet",Jacinthe,9/13/2020,6:12 PM,mastercard,ACTIVA,$17096.17
+833,Jeralee,Chips Potato Salt Vinegar 43g,Melicent,11/20/2020,12:52 AM,jcb,ACTIVA,$16695.26
+834,Adey,Glove - Cutting,Romonda,12/21/2020,6:56 PM,mastercard,ACTIVA,$7696.49
+835,Nathalia,Curry Powder Madras,Kassie,11/17/2020,11:28 PM,diners-club-carte-blanche,ACTIVA,$8955.73
+836,Delano,Cookie Dough - Chocolate Chip,Charita,11/24/2020,11:56 PM,jcb,ACTIVA,$13581.77
+837,Rubin,Sauce - Hollandaise,Josi,12/23/2020,4:45 AM,jcb,ACTIVA,$5235.88
+838,Corey,Coffee - Almond Amaretto,Antoine,9/17/2020,2:24 PM,maestro,ACTIVA,$14150.31
+839,Pavla,Food Colouring - Orange,Eddy,11/25/2020,6:50 AM,jcb,ACTIVA,$10900.40
+840,Terry,"Wine - White, Antinore Orvieto",Barrie,6/22/2020,7:00 AM,mastercard,ACTIVA,$4738.36
+841,Mela,Mix - Cappucino Cocktail,Min,11/13/2020,2:16 PM,jcb,ACTIVA,$12572.07
+842,Maurita,Mcgillicuddy Vanilla Schnap,Cilka,5/11/2020,2:27 AM,jcb,ACTIVA,$9567.76
+843,Erskine,Black Currants,Lorrie,9/18/2020,3:27 AM,jcb,ACTIVA,$10056.26
+844,Daffi,Pear - Halves,Harriette,7/29/2020,11:13 AM,laser,ACTIVA,$11370.86
+845,Iormina,Mussels - Frozen,Mady,8/1/2020,3:12 PM,jcb,ACTIVA,$4103.53
+846,Ivory,"Mushroom - Morels, Dry",Tricia,5/17/2020,2:22 AM,diners-club-carte-blanche,ACTIVA,$11181.26
+847,Violante,Blueberries,Dulcie,7/2/2020,9:38 AM,jcb,ACTIVA,$4084.15
+848,Ysabel,Bread Cranberry Foccacia,Tiler,5/4/2020,2:04 AM,china-unionpay,ACTIVA,$5295.25
+849,Hendrika,Energy Drink Red Bull,Rosmunda,5/26/2020,10:49 AM,jcb,ACTIVA,$6402.48
+850,Mercedes,Salad Dressing,Gabie,4/3/2020,1:54 AM,mastercard,ACTIVA,$10735.95
+851,Collete,Tuna - Sushi Grade,Lanie,3/15/2021,4:15 PM,jcb,ACTIVA,$14505.31
+852,Christa,Muffin Mix - Blueberry,Tildie,9/12/2020,6:30 PM,jcb,ACTIVA,$8087.72
+853,Port,Pate - Cognac,Gae,5/18/2020,10:37 AM,visa-electron,ACTIVA,$7569.80
+854,Leo,Carbonated Water - Strawberry,Sean,5/21/2020,3:37 AM,diners-club-enroute,ACTIVA,$14928.83
+855,Barbabas,Wine - Touraine Azay - Le - Rideau,Eilis,1/18/2021,11:01 PM,switch,ACTIVA,$13840.41
+856,Lucie,Sugar - Brown,Buddie,5/14/2020,2:32 PM,jcb,ACTIVA,$8722.73
+857,Kellia,Cookie Double Choco,Orrin,5/10/2020,6:06 AM,maestro,ACTIVA,$19972.32
+858,Berton,"Tray - Foam, Square 4 - S",Martie,12/17/2020,7:50 PM,jcb,ACTIVA,$8807.79
+859,Ulysses,"Vodka - Lemon, Absolut",Kalinda,8/24/2020,2:04 PM,jcb,ACTIVA,$15807.20
+860,Feliza,Crab - Imitation Flakes,Harp,8/30/2020,9:55 PM,visa-electron,ACTIVA,$11951.45
+861,Celene,Juice - Lagoon Mango,Lotti,8/8/2020,2:51 PM,china-unionpay,ACTIVA,$8875.03
+862,Gwenora,Chef Hat 25cm,Esther,3/14/2021,10:03 PM,jcb,ACTIVA,$19489.12
+863,Oliviero,"Olives - Black, Pitted",Lenard,1/10/2021,5:15 PM,jcb,ACTIVA,$18709.18
+864,Lester,Raspberries - Frozen,Tammara,10/22/2020,12:04 PM,switch,ACTIVA,$16653.79
+865,Olga,Cheese - Wine,Ned,10/5/2020,7:38 AM,visa-electron,ACTIVA,$11489.18
+866,Debora,Sambuca - Ramazzotti,Alastair,5/19/2020,12:16 PM,americanexpress,ACTIVA,$13756.93
+867,Alidia,Bagel - Plain,Hayyim,4/3/2020,7:33 PM,laser,ACTIVA,$18885.20
+868,Ranna,Glycerine,Padraig,6/8/2020,3:39 PM,diners-club-carte-blanche,ACTIVA,$18170.93
+869,Corbie,Squid U5 - Thailand,Kary,8/29/2020,12:35 AM,jcb,ACTIVA,$8846.72
+870,Wylma,Beer - Heinekin,Ida,1/8/2021,1:47 AM,jcb,ACTIVA,$8758.99
+871,Alicia,"Beef - Tongue, Fresh",Carina,8/22/2020,7:46 AM,diners-club-us-ca,ACTIVA,$10928.43
+872,Susette,Pepper - Red Bell,Woodrow,12/16/2020,6:01 AM,mastercard,ACTIVA,$9249.56
+873,Daren,Bagelers - Cinn / Brown Sugar,Catlee,3/18/2021,12:24 AM,jcb,ACTIVA,$17729.90
+874,Thane,Coffee - Decafenated,Paige,11/1/2020,4:24 AM,americanexpress,ACTIVA,$7583.89
+875,Emmalyn,Beer - Camerons Auburn,Valli,5/28/2020,11:48 PM,jcb,ACTIVA,$18733.16
+876,Beryle,"Nut - Cashews, Whole, Raw",Cchaddie,8/5/2020,5:11 AM,jcb,ACTIVA,$17247.77
+877,Celle,"Yogurt - Banana, 175 Gr",Kass,5/3/2020,8:08 PM,diners-club-carte-blanche,ACTIVA,$11599.44
+878,Frasquito,Coffee Cup 8oz 5338cd,Gibby,5/11/2020,10:42 PM,switch,ACTIVA,$16026.64
+879,Jed,Fudge - Chocolate Fudge,Blinni,1/14/2021,10:33 PM,mastercard,ACTIVA,$19005.07
+880,Marjorie,Bread - French Stick,Dyanne,6/24/2020,9:55 AM,instapayment,ACTIVA,$7245.61
+881,Billie,Almonds Ground Blanched,Iolanthe,7/7/2020,9:54 AM,mastercard,ACTIVA,$5282.97
+882,Jarvis,Spice - Chili Powder Mexican,Kerwin,3/16/2021,4:42 AM,switch,ACTIVA,$14687.25
+883,Noel,Carbonated Water - Peach,Cass,3/21/2021,11:46 AM,diners-club-carte-blanche,ACTIVA,$18179.71
+884,Sada,Cranberries - Fresh,Dre,8/14/2020,8:41 PM,maestro,ACTIVA,$12056.23
+885,Lavinia,"Cherries - Bing, Canned",Murry,8/28/2020,8:17 PM,jcb,ACTIVA,$19880.93
+886,Juieta,Plastic Wrap,Earl,4/21/2020,2:20 PM,china-unionpay,ACTIVA,$17393.44
+887,Bev,Bar Mix - Lime,Ody,9/11/2020,3:31 AM,mastercard,ACTIVA,$16560.36
+888,Aubert,Mushroom - Crimini,Pauletta,8/15/2020,5:53 PM,jcb,ACTIVA,$15011.51
+889,Anette,"Pasta - Penne, Rigate, Dry",Gifford,11/22/2020,10:01 PM,jcb,ACTIVA,$9967.56
+890,Danya,"Basil - Dry, Rubbed",Alis,8/30/2020,11:07 AM,jcb,ACTIVA,$10284.45
+891,Kennith,Pan Grease,Padget,8/29/2020,7:23 PM,jcb,ACTIVA,$8432.49
+892,Nadya,Juice - Orange 1.89l,Molly,2/13/2021,2:27 AM,diners-club-carte-blanche,ACTIVA,$16323.31
+893,Melinde,"Veal - Chops, Split, Frenched",Arleta,9/12/2020,1:49 PM,jcb,ACTIVA,$7109.54
+894,Raviv,Filter - Coffee,Lalo,7/5/2020,11:48 PM,visa-electron,ACTIVA,$5036.42
+895,Gordan,Sage - Rubbed,Gabrila,3/26/2021,3:43 PM,jcb,ACTIVA,$8910.57
+896,Christabel,Bread - Olive Dinner Roll,Helen,12/9/2020,5:51 PM,instapayment,ACTIVA,$9190.34
+897,Roxane,Wine - Ej Gallo Sierra Valley,Jarred,12/16/2020,10:06 PM,jcb,ACTIVA,$10773.66
+898,Rich,Coffee Cup 12oz 5342cd,Geoffry,5/27/2020,9:21 AM,jcb,ACTIVA,$8487.08
+899,Dallis,Eggroll,Clywd,9/27/2020,2:46 AM,mastercard,ACTIVA,$19798.29
+900,Maud,Cream - 18%,Kerrie,12/3/2020,1:54 AM,visa-electron,ACTIVA,$5591.47
+901,Pearline,Salmon - Sockeye Raw,Rogerio,8/7/2020,3:36 AM,mastercard,ACTIVA,$19756.28
+902,Merlina,Juice - Prune,Roosevelt,5/26/2020,7:31 PM,jcb,ACTIVA,$19040.32
+903,Andriette,Assorted Desserts,Hube,7/25/2020,12:08 AM,jcb,ACTIVA,$10804.74
+904,Appolonia,"Nut - Pine Nuts, Whole",Ellene,5/12/2020,1:55 AM,visa-electron,ACTIVA,$14585.79
+905,Clarine,Puree - Strawberry,Arnaldo,12/22/2020,8:20 PM,china-unionpay,ACTIVA,$5982.54
+906,Jarrett,Icecream - Dstk Strw Chseck,Alma,8/1/2020,3:36 AM,visa,ACTIVA,$19926.74
+907,Ramona,Wine - Segura Viudas Aria Brut,Ahmed,6/23/2020,5:32 AM,americanexpress,ACTIVA,$18240.82
+908,Fara,Pepper - Red Thai,Rowe,1/1/2021,11:16 PM,switch,ACTIVA,$10997.44
+909,Audry,Dates,Nikolas,11/16/2020,2:02 PM,visa-electron,ACTIVA,$4426.11
+910,Amitie,Sauce - Ranch Dressing,Fionna,1/8/2021,5:00 AM,bankcard,ACTIVA,$10609.92
+911,Oona,Beans - Green,Orland,11/29/2020,10:39 PM,jcb,ACTIVA,$15670.46
+912,Dore,"Mushroom - Chanterelle, Dry",Darcee,11/5/2020,7:36 AM,maestro,ACTIVA,$8669.45
+913,Leonie,Compound - Strawberry,Barthel,2/20/2021,9:47 PM,jcb,ACTIVA,$11910.91
+914,Olin,Sour Puss Sour Apple,Hilly,11/29/2020,2:49 PM,jcb,ACTIVA,$8826.33
+915,Myrtice,Cup - 4oz Translucent,Gilles,6/30/2020,6:33 PM,visa,ACTIVA,$6996.28
+916,Johnathon,Wine - Sauvignon Blanc Oyster,Danica,10/10/2020,10:29 AM,jcb,ACTIVA,$5585.87
+917,Megan,Filter - Coffee,Tiena,9/12/2020,12:40 AM,diners-club-enroute,ACTIVA,$5171.30
+918,Llewellyn,Ecolab - Lime - A - Way 4/4 L,Penny,5/26/2020,6:01 PM,jcb,ACTIVA,$11675.90
+919,Edythe,"Pork - Loin, Bone - In",Daisy,12/18/2020,3:34 PM,diners-club-enroute,ACTIVA,$14590.27
+920,Iolande,Artichokes - Jerusalem,Norby,8/30/2020,6:34 PM,jcb,ACTIVA,$14490.61
+921,Syman,Cabbage - Nappa,Grethel,12/12/2020,7:37 AM,solo,ACTIVA,$12265.11
+922,Wilfrid,Wine - Jafflin Bourgongone,Adara,10/5/2020,7:07 PM,jcb,ACTIVA,$14450.16
+923,Thadeus,Squash - Acorn,Kirsti,4/10/2020,11:33 AM,bankcard,ACTIVA,$11113.35
+924,Kellyann,"Cheese - Havarti, Roasted Garlic",Celinda,5/29/2020,3:03 AM,bankcard,ACTIVA,$11041.50
+925,Dirk,Paste - Black Olive,Afton,6/1/2020,1:39 AM,diners-club-us-ca,ACTIVA,$14633.11
+926,Boigie,Foam Tray S2,Drugi,5/12/2020,7:15 PM,jcb,ACTIVA,$17626.66
+927,Jonah,Bagels Poppyseed,Matthaeus,3/15/2021,10:20 AM,jcb,ACTIVA,$13342.00
+928,Britt,Savory,Zenia,9/19/2020,5:33 AM,bankcard,ACTIVA,$18218.44
+929,Rae,Lamb Shoulder Boneless Nz,Lanny,12/23/2020,3:03 AM,visa-electron,ACTIVA,$6325.64
+930,Ursula,Cheese - Roquefort Pappillon,Jonis,7/13/2020,3:29 AM,jcb,ACTIVA,$16275.23
+931,Claudian,Beef - Sushi Flat Iron Steak,Papagena,5/30/2020,6:59 AM,americanexpress,ACTIVA,$12914.29
+932,Nerissa,Bouq All Italian - Primerba,Megen,12/19/2020,10:44 AM,bankcard,ACTIVA,$19188.17
+933,Ingaborg,Fudge - Cream Fudge,Elora,10/29/2020,2:32 PM,bankcard,ACTIVA,$13021.65
+934,Stephanus,Persimmons,Yorker,5/12/2020,6:15 PM,diners-club-carte-blanche,ACTIVA,$16403.18
+935,Bette-ann,Buttons,Richie,12/5/2020,1:40 AM,mastercard,ACTIVA,$19729.15
+936,Vincent,Juice - Orangina,Constantine,2/1/2021,11:46 PM,bankcard,ACTIVA,$13874.38
+937,Chrystel,"Wine - White, Riesling, Semi - Dry",Elly,3/16/2021,6:00 PM,jcb,ACTIVA,$13824.32
+938,Thorin,Sauce - Oyster,Addie,5/6/2020,4:37 PM,visa-electron,ACTIVA,$16691.10
+939,Grazia,Milk - Condensed,Neel,3/8/2021,7:25 AM,jcb,ACTIVA,$7561.31
+940,Chicky,Bar - Granola Trail Mix Fruit Nut,Saul,1/26/2021,1:02 AM,jcb,ACTIVA,$6990.93
+941,Terri,Dried Peach,Early,2/4/2021,3:57 PM,jcb,ACTIVA,$17441.19
+942,Ailbert,Grapes - Green,Sam,5/20/2020,5:01 AM,bankcard,ACTIVA,$18309.24
+943,Martin,Wine - Coteaux Du Tricastin Ac,Deloria,7/2/2020,10:30 PM,maestro,ACTIVA,$10402.47
+944,Liuka,Cleaner - Pine Sol,Lida,7/7/2020,5:43 PM,laser,ACTIVA,$5020.30
+945,Ruthanne,Wine - Chardonnay South,Andros,7/15/2020,1:10 PM,jcb,ACTIVA,$6155.34
+946,Jo ann,Soup - Campbells - Chicken Noodle,Hyacinthie,12/25/2020,2:33 AM,diners-club-enroute,ACTIVA,$11415.90
+947,Aprilette,"Red Snapper - Fresh, Whole",Arlyne,7/6/2020,7:36 AM,jcb,ACTIVA,$7944.60
+948,Libbi,Cookie - Oatmeal,Cam,4/15/2020,1:14 AM,jcb,ACTIVA,$10688.40
+949,Cherin,"Juice - Grapefruit, 341 Ml",Frederick,12/20/2020,9:29 AM,instapayment,ACTIVA,$5519.85
+950,Janeva,"Lamb - Loin, Trimmed, Boneless",Valentin,4/21/2020,5:21 PM,maestro,ACTIVA,$11844.87
+951,Rickie,Beans - Green,Ashley,3/1/2021,8:55 PM,americanexpress,ACTIVA,$9805.01
+952,Livvy,Gatorade - Orange,Trefor,12/1/2020,2:31 AM,switch,ACTIVA,$13787.15
+953,Josee,Beer - Heinekin,Karmen,7/5/2020,10:03 AM,jcb,ACTIVA,$13234.57
+954,Sophronia,Cookie Dough - Oatmeal Rasin,Nevile,2/9/2021,7:31 PM,jcb,ACTIVA,$6653.58
+955,Cassaundra,Cookie Dough - Double,Sibyl,6/5/2020,8:48 PM,diners-club-enroute,ACTIVA,$4673.77
+956,Aldridge,Beans - Butter Lrg Lima,Lorrie,2/24/2021,2:02 PM,diners-club-carte-blanche,ACTIVA,$8482.26
+957,Brander,"Olives - Black, Pitted",Christos,10/2/2020,3:07 PM,jcb,ACTIVA,$7457.83
+958,Bibby,Cookie - Dough Variety,Kelly,6/5/2020,6:10 AM,jcb,ACTIVA,$12345.59
+959,Madlen,Melon - Honey Dew,Carmencita,11/18/2020,1:49 AM,maestro,ACTIVA,$7316.43
+960,Baily,Spice - Pepper Portions,Nevin,11/6/2020,6:20 AM,jcb,ACTIVA,$7465.77
+961,Brendan,Lamb - Loin Chops,Alfonse,6/15/2020,6:04 PM,jcb,ACTIVA,$15382.01
+962,Amata,Pickles - Gherkins,Giacobo,6/22/2020,11:06 PM,jcb,ACTIVA,$14887.96
+963,Melodee,Cheese - Parmesan Cubes,Ulla,3/22/2021,8:09 AM,jcb,ACTIVA,$18515.42
+964,Levi,"Ecolab - Orange Frc, Cleaner",Thaine,7/19/2020,3:18 PM,maestro,ACTIVA,$11513.09
+965,Hugo,Carbonated Water - Strawberry,Madelyn,7/12/2020,2:45 AM,bankcard,ACTIVA,$18194.56
+966,Caty,Oven Mitt - 13 Inch,Brianna,6/27/2020,9:18 PM,bankcard,ACTIVA,$10363.97
+967,Gill,"Bread - Pullman, Sliced",Hercules,8/31/2020,10:03 PM,diners-club-enroute,ACTIVA,$19173.04
+968,Dorey,Cups 10oz Trans,Merrilee,3/30/2020,12:20 AM,jcb,ACTIVA,$8866.48
+969,Drusi,Lettuce - Frisee,Sara,10/10/2020,11:53 PM,jcb,ACTIVA,$10465.82
+970,Bevon,Cheese - Feta,Tabbie,11/3/2020,6:51 PM,jcb,ACTIVA,$11840.81
+971,Rhodia,Wine - Guy Sage Touraine,Dena,11/12/2020,11:44 AM,visa-electron,ACTIVA,$8429.18
+972,Glori,Brandy Apricot,Donovan,3/22/2021,4:30 AM,china-unionpay,ACTIVA,$4814.09
+973,Ody,"Wine - Mas Chicet Rose, Vintage",Orel,4/6/2020,12:12 PM,jcb,ACTIVA,$13409.88
+974,Inna,Pork - Bones,Koral,9/24/2020,3:20 AM,instapayment,ACTIVA,$16481.26
+975,Goldarina,Pomegranates,Idalia,10/5/2020,2:37 PM,visa-electron,ACTIVA,$10759.36
+976,Morris,Salmon - Fillets,Alyse,3/16/2021,11:57 AM,jcb,ACTIVA,$12798.57
+977,Joly,Oxtail - Cut,Milicent,11/15/2020,8:51 AM,switch,ACTIVA,$17222.43
+978,Alisha,Beer - Labatt Blue,Daphne,4/3/2020,4:21 PM,jcb,ACTIVA,$10643.40
+979,Morgana,Vaccum Bag 10x13,Miner,3/27/2020,10:52 PM,jcb,ACTIVA,$4196.12
+980,Wandie,Wine - Alsace Riesling Reserve,Paula,7/3/2020,11:12 PM,china-unionpay,ACTIVA,$11485.94
+981,Wendie,Potatoes - Idaho 80 Count,Claresta,2/7/2021,4:25 AM,diners-club-enroute,ACTIVA,$8566.73
+982,Hermie,Peach - Fresh,Donall,12/25/2020,3:03 PM,jcb,ACTIVA,$4280.52
+983,Brew,Coffee - Almond Amaretto,Betty,4/7/2020,9:26 PM,jcb,ACTIVA,$4003.38
+984,Cyndie,Sprite - 355 Ml,Jeffy,11/27/2020,1:32 AM,mastercard,ACTIVA,$18504.90
+985,Sigvard,"Tendrils - Baby Pea, Organic",Mace,7/23/2020,5:28 AM,jcb,ACTIVA,$17357.04
+986,Diego,"Chicken - Leg, Boneless",Eba,8/26/2020,12:16 AM,diners-club-enroute,ACTIVA,$15733.17
+987,Betteann,Silicone Paper 16.5x24,Gradeigh,3/26/2021,4:59 AM,maestro,ACTIVA,$5545.77
+988,Gaven,Jello - Assorted,Josephina,9/10/2020,8:09 AM,jcb,ACTIVA,$6321.01
+989,Parke,Lettuce - Red Leaf,Brandea,3/4/2021,6:08 PM,mastercard,ACTIVA,$6935.92
+990,Kristin,Carbonated Water - Cherry,Omero,10/6/2020,12:36 AM,mastercard,ACTIVA,$7128.55
+991,Rosabel,Soup - French Onion,Aila,2/25/2021,4:50 PM,jcb,ACTIVA,$5502.24
+992,Marney,Venison - Ground,Bald,8/24/2020,9:09 PM,bankcard,ACTIVA,$13177.28
+993,Ferdinand,Squid - Breaded,Bella,6/27/2020,4:33 AM,jcb,ACTIVA,$8889.60
+994,Reba,Onions - Red,Jody,10/31/2020,9:32 AM,jcb,ACTIVA,$9051.65
+995,Tiebold,Parsley - Fresh,Guglielma,11/22/2020,2:34 AM,jcb,ACTIVA,$15020.38
+996,Jacquelin,"Turkey - Whole, Fresh",Ross,3/3/2021,10:51 PM,switch,ACTIVA,$8526.29
+997,Melisa,Thyme - Fresh,Christen,7/24/2020,9:35 PM,jcb,ACTIVA,$14984.46
+998,Sidney,"Pork - Sausage, Medium",Rancell,11/24/2020,2:04 PM,visa-electron,ACTIVA,$15897.31
+999,Hans,Tea - Herbal Orange Spice,Ted,8/29/2020,10:29 PM,bankcard,ACTIVA,$17633.37
+1000,Shayla,Salmon Atl.whole 8 - 10 Lb,Diana,8/13/2020,10:02 AM,diners-club-international,ACTIVA,$14550.13

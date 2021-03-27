@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -16,7 +17,7 @@
          <children>
             <ImageView fitHeight="688.0" fitWidth="1103.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@2021-03-11%20(2).png" />
+                  <Image url="@../../docs/2021-03-11%20(2).png" />
                </image>
             </ImageView>
             <Label layoutX="208.0" layoutY="16.0" prefHeight="58.0" prefWidth="352.0" text="Lista de clientes" textFill="WHITE">
@@ -45,21 +46,34 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="190.0" layoutY="533.0" mnemonicParsing="false" onAction="#customerDeleteOpt" prefHeight="28.0" prefWidth="80.0" text="ELIMINAR">
+            <Button layoutX="117.0" layoutY="533.0" mnemonicParsing="false" onAction="#customerDeleteOpt" prefHeight="28.0" prefWidth="80.0" text="ELIMINAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="356.0" layoutY="533.0" mnemonicParsing="false" onAction="#customerDisableOpt" prefHeight="28.0" prefWidth="99.0" text="DESHABILITAR">
+            <Button layoutX="208.0" layoutY="533.0" mnemonicParsing="false" onAction="#customerDisableOpt" prefHeight="28.0" prefWidth="99.0" text="DESHABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="475.0" layoutY="531.0" mnemonicParsing="false" onAction="#customerEnableOpt" prefHeight="29.0" prefWidth="89.0" text="HABILITAR">
+            <Button layoutX="315.0" layoutY="533.0" mnemonicParsing="false" onAction="#customerEnableOpt" prefHeight="29.0" prefWidth="89.0" text="HABILITAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
+            <TextField fx:id="txtCustomerName" layoutX="434.0" layoutY="535.0" />
+            <Label layoutX="450.0" layoutY="515.0" prefHeight="17.0" prefWidth="116.0" text="Nombre del cliente:" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="474.0" layoutY="567.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="14.0" prefWidth="69.0" text="BUSCAR">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="632.0" layoutY="14.0" prefHeight="17.0" prefWidth="127.0" text="Tiempo de búsqueda:" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="searchingTime" layoutX="661.0" layoutY="34.0" prefHeight="24.0" prefWidth="82.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </center>
