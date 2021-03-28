@@ -73,10 +73,7 @@ public class LaCasaDoradaGUI {
 	
 	@FXML
 	private TextField txtCustomerName;
-<<<<<<< HEAD
-	 
-=======
->>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
+
 
 	@FXML
 	private Label totalOrder;
@@ -513,6 +510,8 @@ public class LaCasaDoradaGUI {
         observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
         miniTbCreateOrder.setItems(observableList);
         observableList.removeAll(observableList);
+        laCasaDorada.getProductQuantity().clear();
+    	laCasaDorada.setPriceTotal(0);
     }
 
     
@@ -801,13 +800,12 @@ public class LaCasaDoradaGUI {
         tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));   
         tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameClient"));
         tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
-        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
-        txStatusOrder1.setCellValueFactory(new PropertyValueFactory<Order, Double>("price"));
+        txStatusOrder1.setCellValueFactory(new PropertyValueFactory<Order, Double>("priceTotal"));
     }
 	
     @FXML
@@ -1165,10 +1163,7 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeIngredientTableView(){
-<<<<<<< HEAD
 
-=======
->>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
         ObservableList<RestaurantIngredient> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
         tbIngredientList.setItems(observableList);
@@ -1177,10 +1172,7 @@ public class LaCasaDoradaGUI {
         ObservableList<RestaurantIngredient> observableListIngredient;
         observableListIngredient = FXCollections.observableArrayList(laCasaDorada.getIngredients());
         tbIngredientList.setItems(observableListIngredient);
-<<<<<<< HEAD
 
-=======
->>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
         
         tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
         tcIngredientStatus.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientStatus"));
@@ -1470,6 +1462,8 @@ public class LaCasaDoradaGUI {
     	fxmlLoader.setController(this);
     	Parent menuPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(menuPane);
+    	laCasaDorada.getProductQuantity().clear();
+    	laCasaDorada.setPriceTotal(0);
     }
     
     @FXML
@@ -1486,7 +1480,7 @@ public class LaCasaDoradaGUI {
     	int number = laCasaDorada.getNumberList();
     	number+=1;	
     	laCasaDorada.setNumberList(number);
-    	
+    	double priceTotal = Double.parseDouble(totalOrder.getText());
 
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
@@ -1494,7 +1488,9 @@ public class LaCasaDoradaGUI {
         	System.out.println(employee);
         	System.out.println(product);
         	System.out.println(client);
-        	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number, quantity);
+        	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number, priceTotal);
+        	laCasaDorada.getProductQuantity().clear();
+        	laCasaDorada.setPriceTotal(0);
         	COaddQuantity.clear(); COobservations.clear();
         	productCreatedAlert();
         	saveData();

@@ -22,7 +22,7 @@ public class Order implements Serializable{
 	private String nameProduct;
 	private String nameClient;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal) {
+	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal){
 		this.client=client;
 		this.product=product;
 		this.employee=employee;

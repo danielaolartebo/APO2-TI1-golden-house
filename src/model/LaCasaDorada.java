@@ -1,14 +1,9 @@
 package model;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -331,66 +326,6 @@ public class LaCasaDorada implements Serializable{
         pw.close();
     }
 
-	public void saveEmployeeData() throws IOException{
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream (SAVE_PATH_FILE1));
-		oos.writeObject(employees);
-		oos.close();
-	}
-	
-	public void saveCustomerrData() throws IOException{
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream (SAVE_PATH_FILE2));
-		oos.writeObject(clients);
-		oos.close();
-	}
-	
-	public void saveProductData() throws IOException{
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream (SAVE_PATH_FILE3));
-		oos.writeObject(products);
-		oos.close();
-	}
-	
-	@SuppressWarnings("unchecked")
-	public boolean loadEmployeeData() throws IOException, ClassNotFoundException{
-		File f = new File(SAVE_PATH_FILE1);
-		boolean loaded = false;
-		if(f.exists()) {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
-			employees = (List<EmployeeAccount>)ois.readObject();
-			ois.close();
-			loaded = true;
-		}
-		return loaded;
-	}
-	
-	@SuppressWarnings("unchecked")
-	public boolean loadCustomerData() throws IOException, ClassNotFoundException{
-		File f = new File(SAVE_PATH_FILE2);
-		boolean loaded = false;
-		if(f.exists()) {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
-			clients = (List<ClientAccount>)ois.readObject();
-			ois.close();
-			loaded = true;
-		}
-		return loaded;
-	}
-	
-	@SuppressWarnings("unchecked")
-	public boolean loadProductData() throws IOException, ClassNotFoundException{
-		File f = new File(SAVE_PATH_FILE3);
-		boolean loaded = false;
-		if(f.exists()) {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
-			products = (List<RestaurantProduct>)ois.readObject();
-			ois.close();
-			loaded = true;
-		}
-		return loaded;
-		}
-
-
-
-
 	
 	public void sortByIngredientName() {
 		
@@ -410,11 +345,6 @@ public class LaCasaDorada implements Serializable{
 	}
 
 
-		
-	
-
-
-
 	public void sortByPrice() { 
 		for(int i=1; i<products.size();i++) {
 			int j=i-1;
@@ -427,9 +357,6 @@ public class LaCasaDorada implements Serializable{
 		}
 
 	}
-
-
-	
 
 	
 	public void sortByTypeName() {
