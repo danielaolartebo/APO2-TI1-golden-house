@@ -26,7 +26,7 @@
             </Label>
             <TableView fx:id="tbOrderList" editable="true" layoutX="-2.0" layoutY="95.0" prefHeight="386.0" prefWidth="800.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNumberOrder" prefWidth="62.0" text="#" />
+                  <TableColumn fx:id="tcNumberOrder" prefWidth="62.0" text="Código" />
                   <TableColumn fx:id="tcCustomerOrder" prefWidth="78.33333587646484" text="Cliente" />
                   <TableColumn fx:id="tcProductsOrder" prefWidth="145.60000610351562" text="Productos/Cantidad" />
                   <TableColumn fx:id="tcEmployeeOrder" prefWidth="91.20001220703125" text="Empleado" />

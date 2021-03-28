@@ -5,10 +5,6 @@ import java.util.Arrays;
 
 public class RestaurantProduct implements Serializable{
 
-	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 3L;
 	private String name;
 	private String typeOfProduct;
@@ -25,8 +21,6 @@ public class RestaurantProduct implements Serializable{
 		this.priceOfProduct=priceOfProduct;
 		this.productStatus=MembersStatus.ACTIVA;
 	}
-	
-	
 	
 	public String getName() {
 		return this.name;
@@ -82,9 +76,5 @@ public class RestaurantProduct implements Serializable{
 	
 	public void setProductStatus(MembersStatus productStatus) {
 		this.productStatus=productStatus;
-	}
-	
-	public String toString() {
-		return name;
 	}
 }

@@ -17,10 +17,6 @@ public class RestaurantIngredient {
 	public void setIngredientName(String ingredientName) {
 		this.ingredientName=ingredientName;
 	}
-	
-	public String toString() {
-		return ingredientName;
-	}
 
 	public MembersStatus getIngredientStatus() {
 		return ingredientStatus;

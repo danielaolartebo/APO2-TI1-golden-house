@@ -18,21 +18,12 @@ public class RestaurantTypeOfProduct {
 		this.typeName=typeName;
 	}
 	
-	public String toString() {
-		return typeName;
-	}
-	
 	public MembersStatus getTypeOfProductStatus() {
 		return typeOfProductStatus;
 	}
 
 	public void setTypeOfProductStatus(MembersStatus typeOfProductStatus) {
 		this.typeOfProductStatus = typeOfProductStatus;
-	}
-
-	public String[] getTypeOfProductNameArray() {
-		
-		return null;
 	}
 
 }

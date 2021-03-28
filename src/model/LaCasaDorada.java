@@ -17,7 +17,7 @@ import java.util.List;
 
 public class LaCasaDorada {
 	
-	public final static String SAVE_PATH_FILE1 = "Employee-data.csv";
+	public final static String SAVE_PATH_FILE1 = "Order-data.csv";
 	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
 	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
 	
@@ -389,8 +389,9 @@ public class LaCasaDorada {
 			loaded = true;
 		}
 		return loaded;
+		}
+
 	}
-}
 
 
 
@@ -412,12 +413,7 @@ public class LaCasaDorada {
 		}
 		
 		return bestPrice;
-<<<<<<< HEAD
-	}*/
-=======
 	}*/
 
 
-}
 
->>>>>>> 999768fc49169a848cfc16ce863a1a9ea48f55aa
