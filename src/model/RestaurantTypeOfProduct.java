@@ -20,10 +20,6 @@ public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProdu
 		this.typeName=typeName;
 	}
 	
-	public String toString() {
-		return typeName;
-	}
-	
 	public MembersStatus getTypeOfProductStatus() {
 		return typeOfProductStatus;
 	}
@@ -31,6 +27,7 @@ public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProdu
 	public void setTypeOfProductStatus(MembersStatus typeOfProductStatus) {
 		this.typeOfProductStatus = typeOfProductStatus;
 	}
+
 
 	public String[] getTypeOfProductNameArray() {
 		
@@ -55,3 +52,6 @@ public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProdu
 	
 	
 }	
+
+
+
