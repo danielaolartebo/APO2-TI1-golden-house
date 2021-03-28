@@ -1,7 +1,12 @@
 package ui;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -68,7 +73,10 @@ public class LaCasaDoradaGUI {
 	
 	@FXML
 	private TextField txtCustomerName;
+<<<<<<< HEAD
 	 
+=======
+>>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
 
 	@FXML
 	private Label totalOrder;
@@ -328,11 +336,6 @@ public class LaCasaDoradaGUI {
     @FXML
     private ObservableList<RestaurantIngredient> temp;
 
-    
-    LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
-    	laCasaDorada = lcd;
-	}
-    
     // TYPE OF PRODUCT LIST 
 
     @FXML
@@ -344,11 +347,32 @@ public class LaCasaDoradaGUI {
     @FXML
     private TableColumn<RestaurantTypeOfProduct, String> tcTypeOfProductStatus;
     
-
+    public final static String SAVE_PATH_FILE = "data.laCasaDorada.csv";
+    
+    LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
+    	laCasaDorada = lcd;
+	}
+    
+    public void saveData() throws FileNotFoundException, IOException{
+    	ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(SAVE_PATH_FILE));
+    	oos.writeObject(laCasaDorada);
+    	oos.close();
+    }
+    
+    public void loadData() throws IOException, ClassNotFoundException{
+    	File f = new File (SAVE_PATH_FILE);
+    	if(f.exists()) {
+    		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(SAVE_PATH_FILE));
+    		laCasaDorada = (LaCasaDorada)ois.readObject();
+    		ois.close();
+    	}
+    }
     
     /*
      * *********************************** FIRST SCREEN (main-pane.fxml) ************************************************************
      */
+    
+
     
     @FXML
     public void optContinue(ActionEvent event) throws IOException{
@@ -741,6 +765,11 @@ public class LaCasaDoradaGUI {
     		itemWasEnableAlert();
     	}
     }
+	
+	@FXML
+	public void searchCustomer(ActionEvent event) throws IOException{
+
+	}
  
     
     /*
@@ -902,30 +931,24 @@ public class LaCasaDoradaGUI {
         /*tcNameList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
-
             RestaurantProduct pr = data.getRowValue();
             pr.setName(data.getNewValue());
-
             System.out.println(pr);
         });*/
         
         /*tcTypeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
-
             RestaurantProduct pr = data.getRowValue();
             pr.setTypeOfProduct(data.getNewValue());
-
             System.out.println(pr);
         });*/
         
     /*    tcIngredientsList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
-
             RestaurantProduct pr = data.getRowValue();
             pr.setIngredientsOfProduct(data.getNewValue());
-
             System.out.println(pr);   
         });  */
         
@@ -1142,7 +1165,10 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeIngredientTableView(){
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
         ObservableList<RestaurantIngredient> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
         tbIngredientList.setItems(observableList);
@@ -1151,7 +1177,10 @@ public class LaCasaDoradaGUI {
         ObservableList<RestaurantIngredient> observableListIngredient;
         observableListIngredient = FXCollections.observableArrayList(laCasaDorada.getIngredients());
         tbIngredientList.setItems(observableListIngredient);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
         
         tcIngredientName.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientName"));
         tcIngredientStatus.setCellValueFactory(new PropertyValueFactory<RestaurantIngredient, String>("ingredientStatus"));
@@ -1339,6 +1368,7 @@ public class LaCasaDoradaGUI {
     			validationErrorAlert();
     		}else {
     			ingredientCreatedAlert();
+    			saveData();
     		}
     	}else if(optTypeOfProduct.isSelected()) {
     		option = "Type of product";
@@ -1348,6 +1378,7 @@ public class LaCasaDoradaGUI {
     			validationErrorAlert();
     		}else {
     			typeOfProductCreatedAlert();
+    			saveData();
     		}
     	}
     	System.out.println(option);
@@ -1387,6 +1418,7 @@ public class LaCasaDoradaGUI {
         	laCasaDorada.addProduct(name, typeOfProduct, ingredientsProducts, sizeOfProduct, priceOfProduct);
         	productName.clear(); productSize.clear(); productPrice.clear(); 
         	productCreatedAlert();
+        	saveData();
         }
     	
     	
@@ -1465,6 +1497,7 @@ public class LaCasaDoradaGUI {
         	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number, quantity);
         	COaddQuantity.clear(); COobservations.clear();
         	productCreatedAlert();
+        	saveData();
         }
     	
     	
@@ -1578,6 +1611,7 @@ public class LaCasaDoradaGUI {
         	laCasaDorada.addClient(firstName, lastName, id, address, phoneNumber, observations);
         	txtCxFirstName.clear(); txtCxLastName.clear(); txtCxId.clear(); txtCxAddress.clear(); txtCxPhoneNumber.clear(); txtCxObservations.clear();
         	customerCreatedAlert();
+        	saveData();
         }
     }
 
@@ -1594,10 +1628,12 @@ public class LaCasaDoradaGUI {
      */
     
     @FXML
-    public void exportEmployeeReport(ActionEvent event) throws IOException{
-    	
-        laCasaDorada.exportEmployeeData();
-        
+    public void exportEmployeeReport(ActionEvent event) throws IOException{ 
+    	FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().addAll(new ExtensionFilter("Text", "*.csv"));
+        File file = fc.showSaveDialog(menuPane.getScene().getWindow());
+
+        laCasaDorada.exportEmployeeData(file.getAbsolutePath());
     }
 
     @FXML
@@ -1625,13 +1661,13 @@ public class LaCasaDoradaGUI {
     }
 
     @FXML
-    public void importEmployeeData(ActionEvent event) {
+    public void importOrderData(ActionEvent event) {
     	FileChooser fileChooser = new FileChooser();
     	fileChooser.setTitle("Open Resource File");
     	File f = fileChooser.showOpenDialog(menuPane.getScene().getWindow());
     	if(f!=null) {
     		try {
-    			laCasaDorada.importEmployeeData(f.getAbsolutePath());
+    			laCasaDorada.importOrderData(f.getAbsolutePath());
         		importSuccessAlert();
     		}catch(IOException e){
     			importErrorAlert();

@@ -10,18 +10,17 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class LaCasaDorada {
-	
-	public final static String SAVE_PATH_FILE1 = "Order-data.csv";
-	public final static String SAVE_PATH_FILE2 = "Customer-data.csv";
-	public final static String SAVE_PATH_FILE3 = "Product-data.csv";
-	
+public class LaCasaDorada implements Serializable{
+
+	private static final long serialVersionUID = 1;
+
 	private static final String SEPARATE=",";
 	
 	private List<ClientAccount> clients;
@@ -53,17 +52,14 @@ public class LaCasaDorada {
 	
 	public void addClient(String firstName, String lastName, String id, String address, String phoneNumber, String observations) throws IOException {
 		clients.add(new ClientAccount(firstName, lastName, id, address, phoneNumber, observations));
-		saveCustomerrData();
 	}
 	
 	public void addEmployee(String userName, String password, String firstName, String lastName, String id) throws IOException {
 		employees.add(new EmployeeAccount(userName, password, firstName, lastName, id));
-		saveEmployeeData();
 	}
 	
 	public void addProduct(String name, String typeOfProduct, String[] ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) throws IOException {
 		products.add(new RestaurantProduct(name, typeOfProduct, ingredientsOfProduct, sizeOfProduct, priceOfProduct));
-		saveProductData();
 	}
 	
 	public void addIngredient(String ingredientName) {
@@ -219,15 +215,15 @@ public class LaCasaDorada {
 	}
 	
 
-	public void importEmployeeData(String fileName) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(fileName));
+	public void importOrderData(String fileName) throws IOException {
+	/*	BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = br.readLine();
 		while(line!=null) {
 			String[] parts = line.split(",");
 			addEmployee(parts[0], parts[1], parts[2], parts[3], parts[4]);
 			line = br.readLine();
 		}
-		br.close();
+		br.close(); */
 	}
 
 	public void importCustomerData(String fileName) throws IOException{
@@ -319,8 +315,8 @@ public class LaCasaDorada {
 		return tempPrice;
 	}
 	
-	public void exportEmployeeData() throws IOException{
-        PrintWriter pw = new PrintWriter(SAVE_PATH_FILE1);
+	public void exportEmployeeData(String fileName) throws IOException{
+        PrintWriter pw = new PrintWriter(fileName);
         for(EmployeeAccount empl : employees){
           pw.println(empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
         }
@@ -394,10 +390,11 @@ public class LaCasaDorada {
 
 
 
+
 	
 	public void sortByIngredientName() {
 		
-		for(int i=0; i < ingredients.size();i++) {
+	for(int i=0; i < ingredients.size();i++) {
 			int posMin = i;
 			for(int j=i+1; j< ingredients.size();j++) {
 				if(ingredients.get(j).getNameIngredient()>ingredients.get(posMin).getNameIngredient()) {
@@ -408,12 +405,17 @@ public class LaCasaDorada {
 			ingredients.set(posMin, ingredients.get(i));
 			ingredients.set(i, aux);
 			
+
 		}
 	}
 
 
+		
+	
 
-	public void sortByPrice() {
+
+
+	public void sortByPrice() { 
 		for(int i=1; i<products.size();i++) {
 			int j=i-1;
 			RestaurantProduct pr = products.get(i);
@@ -423,6 +425,7 @@ public class LaCasaDorada {
 			}
 			products.set(j+1, pr);
 		}
+
 	}
 
 
@@ -437,5 +440,8 @@ public class LaCasaDorada {
 		EmployeeComparator emp = new EmployeeComparator();
 		Collections.sort(employees, emp);		
 	}
-}
 
+
+
+		
+}

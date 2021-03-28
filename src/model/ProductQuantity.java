@@ -1,7 +1,10 @@
 package model;
 
-public class ProductQuantity {
-	
+import java.io.Serializable;
+
+public class ProductQuantity implements Serializable{
+
+	private static final long serialVersionUID = 1;
 	private RestaurantProduct p;
 	private String nameProduct;
 	private double quantity;

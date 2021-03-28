@@ -1,7 +1,15 @@
 package model;
 
-public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProduct> {
+import java.io.Serializable;
+public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProduct>, Serializable {
 	
+
+
+
+
+
+	private static final long serialVersionUID = 1;
+
 	private String typeName;
 	private MembersStatus typeOfProductStatus;
 	private char nameType;

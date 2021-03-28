@@ -1,15 +1,20 @@
 package model;
 
-public class RestaurantIngredient {
-	
+import java.io.Serializable;
+
+public class RestaurantIngredient implements Serializable{
+
+	private static final long serialVersionUID = 1;
 	private String ingredientName;
 	private MembersStatus ingredientStatus;
-	private char nameIngredient;
 	
 	public RestaurantIngredient(String ingredientName) {
 		this.ingredientName = ingredientName;	
 		this.ingredientStatus=MembersStatus.ACTIVA;
+<<<<<<< HEAD
 		nameIngredient=getIngredientName().charAt(0);
+=======
+>>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
 	}
 
 	public String getIngredientName() {
@@ -28,6 +33,7 @@ public class RestaurantIngredient {
 		this.ingredientStatus=ingredientStatus;
 	}
 
+<<<<<<< HEAD
 	public char getNameIngredient() {
 		return nameIngredient;
 	}
@@ -36,4 +42,6 @@ public class RestaurantIngredient {
 		this.nameIngredient = nameIngredient;
 	}
 	
+=======
+>>>>>>> 87ff2b26ce2e08886bb54caebd99d9dad2e88a20
 }
