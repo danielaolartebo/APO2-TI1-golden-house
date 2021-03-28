@@ -1,12 +1,12 @@
 package model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Order {
+public class Order implements Serializable{
 	
-	// ORDEN TIENE NUMERO, ESTADO, PRODUCTOS, CANTIDAD, EMPLEADO, FECHA, HORA Y OBSERVACIONES.
-
+	private static final long serialVersionUID = 1;
 	private ClientAccount client;
 	private EmployeeAccount employee;
 	private RestaurantProduct product;

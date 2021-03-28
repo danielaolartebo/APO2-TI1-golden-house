@@ -20,9 +20,7 @@ public class Main extends Application{
 		laCasaDoradaGUI = new LaCasaDoradaGUI(laCasaDorada);
 		
 		try {
-			//laCasaDorada.loadEmployeeData();
-			//laCasaDorada.loadCustomerData();
-			laCasaDorada.loadProductData();
+			laCasaDoradaGUI.loadData();
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
 			Alert alert = new Alert(AlertType.INFORMATION);
@@ -30,7 +28,7 @@ public class Main extends Application{
 			alert.setHeaderText("");
 			alert.setContentText("No se pudo cargar datos del archivo");
 			alert.showAndWait();
-		}
+		} 
 	}
 	
 	public static void main(String[] args) {

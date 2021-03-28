@@ -1,7 +1,10 @@
 package model;
 
-public class RestaurantTypeOfProduct {
-	
+import java.io.Serializable;
+
+public class RestaurantTypeOfProduct implements Serializable{
+
+	private static final long serialVersionUID = 1;
 	private String typeName;
 	private MembersStatus typeOfProductStatus;
 	

@@ -1,7 +1,10 @@
 package model;
 
-public class RestaurantMembers {
+import java.io.Serializable;
+
+public class RestaurantMembers implements Serializable{
 	
+	private static final long serialVersionUID = 1;
 	private String firstName;
 	private String lastName;
 	private String id;

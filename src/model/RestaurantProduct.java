@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class RestaurantProduct implements Serializable{
 
-	private static final long serialVersionUID = 3L;
+	private static final long serialVersionUID = 1;
 	private String name;
 	private String typeOfProduct;
 	private String sizeOfProduct;
@@ -77,8 +77,6 @@ public class RestaurantProduct implements Serializable{
 	public void setProductStatus(MembersStatus productStatus) {
 		this.productStatus=productStatus;
 	}
-<<<<<<< HEAD
-=======
 	
 	public String toString() {
 		return name;
@@ -93,6 +91,5 @@ public class RestaurantProduct implements Serializable{
 			return -1;
 		}
 	}
-	
->>>>>>> 725a634e3fab61bf051d4b45e3dae8dded8f0192
+
 }
