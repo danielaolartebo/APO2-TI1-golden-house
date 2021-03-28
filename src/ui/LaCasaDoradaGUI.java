@@ -65,13 +65,6 @@ public class LaCasaDoradaGUI {
 	private TableColumn<ProductQuantity, Double> miniTcQuantity;
 	
 	//******************************************************
-	
-	@FXML
-    private Label searchingTime;
-	
-	@FXML
-	private TextField txtCustomerName;
-	 
 	@FXML
 	private Label totalOrder;
 
@@ -739,11 +732,6 @@ public class LaCasaDoradaGUI {
     		itemWasEnableAlert();
     	}
     }
-	
-	@FXML
-    public void searchCustomer(ActionEvent event) throws IOException{
-
-    }
  
     
     /*
@@ -884,6 +872,7 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeProductTableView(){
+    	laCasaDorada.sortByPrice();
         ObservableList<RestaurantProduct> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getProducts());
         tbProductList.setItems(observableList);
@@ -910,7 +899,7 @@ public class LaCasaDoradaGUI {
             System.out.println(pr);
         });*/
         
-        tcTypeList.setOnEditCommit(data -> {
+        /*tcTypeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
 
@@ -918,7 +907,7 @@ public class LaCasaDoradaGUI {
             pr.setTypeOfProduct(data.getNewValue());
 
             System.out.println(pr);
-        });
+        });*/
         
     /*    tcIngredientsList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
@@ -973,6 +962,7 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getProducts().remove(pr);
     		this.tbProductList.refresh();
     		itemWasDeletedAlert();
+    		laCasaDorada.sortByPrice();
     		ObservableList<RestaurantProduct> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getProducts());
             tbProductList.setItems(observableList);
@@ -1140,6 +1130,7 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeIngredientTableView(){
+    	laCasaDorada.sortByIngredientName();
         ObservableList<RestaurantIngredient> observableListIngredient;
         observableListIngredient = FXCollections.observableArrayList(laCasaDorada.getIngredients());
         tbIngredientList.setItems(observableListIngredient);
@@ -1189,6 +1180,7 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getIngredients().remove(ri);
     		this.tbIngredientList.refresh();
     		itemWasDeletedAlert();
+    		laCasaDorada.sortByIngredientName();
     		ObservableList<RestaurantIngredient> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
             tbIngredientList.setItems(observableList);
@@ -1400,7 +1392,7 @@ public class LaCasaDoradaGUI {
     }
     
     
-    private void initializeMiniProductTableView() throws IOException{
+    private void initializeMiniProductTableView(){
     	
     	temp = FXCollections.observableArrayList();
     	miniTbCreateProduct.setItems(temp);
@@ -1417,7 +1409,6 @@ public class LaCasaDoradaGUI {
     		this.miniTcIngredients.setText(mri.getIngredientName());
     	}	
     }
-    
     /*
      *********************************** SCREEN CREATE ORDER (create-order.fxml) ************************************************
      */
@@ -1460,8 +1451,9 @@ public class LaCasaDoradaGUI {
             laCasaDorada.setPriceTotal(0);
         	COaddQuantity.clear(); COobservations.clear();
         	productCreatedAlert();
-        	miniTbCreateOrder.refresh();
         }
+    	
+    	
     }
     
 

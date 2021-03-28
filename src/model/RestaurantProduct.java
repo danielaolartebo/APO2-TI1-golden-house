@@ -87,4 +87,15 @@ public class RestaurantProduct implements Serializable{
 	public String toString() {
 		return name;
 	}
+	
+	public int compareByPrice(RestaurantProduct otherPrice) {
+		if(priceOfProduct==otherPrice.getPriceOfProduct()) {
+			return 0;
+		}else if(priceOfProduct>otherPrice.getPriceOfProduct()) {
+			return 1;
+		}else {
+			return -1;
+		}
+	}
+	
 }

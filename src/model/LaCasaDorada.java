@@ -390,34 +390,36 @@ public class LaCasaDorada {
 		}
 		return loaded;
 	}
-}
-
-
-
-	/*public double burbleSort() {
-		double bestPrice;
-		boolean found = true;
-			for(int i=1; i < products.size() && found; i++ ) {
-			found = false;
-				for (int j=0; j<products.size()-1; j++) {
-				if(products.get(j).getPriceOfProduct()>products.get(j+1).getPriceOfProduct()) {
-					double temp = products.get(j).getPriceOfProduct();
-					array[j]=array[j+1];
-					array[j+1]=temp;
-					num++;
-					changed = true;
-					
-				}			
+	
+	public void sortByIngredientName() {
+		
+		for(int i=0; i < ingredients.size();i++) {
+			int posMin = i;
+			for(int j=i+1; j< ingredients.size();j++) {
+				if(ingredients.get(j).getNameIngredient()<ingredients.get(posMin).getNameIngredient()) {
+					posMin = j;
+				}
 			}
+			RestaurantIngredient aux = ingredients.get(i);
+			ingredients.set(i, ingredients.get(posMin));
+			ingredients.set(posMin, aux);
+			
+		}
+	}
+
+
+	public void sortByPrice() {
+		for(int i=1; i<products.size();i++) {
+			int j=i-1;
+			RestaurantProduct pr = products.get(i);
+			while(j>=0 && pr.compareByPrice(products.get(j))<0) {
+				products.set(j+1, products.get(j));
+				j--;
+			}
+			products.set(j+1, pr);
 		}
 		
-		return bestPrice;
-<<<<<<< HEAD
-	}*/
-=======
-	}*/
-
+	}
 
 }
 
->>>>>>> 999768fc49169a848cfc16ce863a1a9ea48f55aa
