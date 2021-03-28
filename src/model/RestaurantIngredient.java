@@ -9,7 +9,7 @@ public class RestaurantIngredient {
 	public RestaurantIngredient(String ingredientName) {
 		this.ingredientName = ingredientName;	
 		this.ingredientStatus=MembersStatus.ACTIVA;
-		this.ingredientName = getIngredientName();
+		nameIngredient=getIngredientName().charAt(0);
 	}
 
 	public String getIngredientName() {
@@ -33,7 +33,7 @@ public class RestaurantIngredient {
 	}
 
 	public char getNameIngredient() {
-		return ingredientName.charAt(0);
+		return nameIngredient;
 	}
 
 	public void setNameIngredient(char nameIngredient) {

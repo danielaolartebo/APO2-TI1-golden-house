@@ -1,13 +1,15 @@
 package model;
 
-public class RestaurantTypeOfProduct {
+public class RestaurantTypeOfProduct implements Comparable<RestaurantTypeOfProduct> {
 	
 	private String typeName;
 	private MembersStatus typeOfProductStatus;
+	private char nameType;
 	
 	public RestaurantTypeOfProduct(String typeName) {
 		this.typeName = typeName;	
 		this.typeOfProductStatus=MembersStatus.ACTIVA;
+		this.nameType=getTypeOfProductName().charAt(0);
 	}
 
 	public String getTypeOfProductName() {
@@ -34,5 +36,22 @@ public class RestaurantTypeOfProduct {
 		
 		return null;
 	}
+	
+	public char getNameType() {
+		return nameType;
+	}
 
-}
+	@Override
+	public int compareTo(RestaurantTypeOfProduct o) {
+		if(nameType==o.getNameType()) {
+		return 0;
+		}else if(nameType>o.getNameType()) {
+			return 1;
+		}else {
+			return -1;
+		}
+	}
+	
+	
+	
+}	

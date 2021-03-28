@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LaCasaDorada {
@@ -396,13 +397,13 @@ public class LaCasaDorada {
 		for(int i=0; i < ingredients.size();i++) {
 			int posMin = i;
 			for(int j=i+1; j< ingredients.size();j++) {
-				if(ingredients.get(j).getNameIngredient()<ingredients.get(posMin).getNameIngredient()) {
+				if(ingredients.get(j).getNameIngredient()>ingredients.get(posMin).getNameIngredient()) {
 					posMin = j;
 				}
 			}
-			RestaurantIngredient aux = ingredients.get(i);
-			ingredients.set(i, ingredients.get(posMin));
-			ingredients.set(posMin, aux);
+			RestaurantIngredient aux = ingredients.get(posMin);
+			ingredients.set(posMin, ingredients.get(i));
+			ingredients.set(i, aux);
 			
 		}
 	}
@@ -420,6 +421,14 @@ public class LaCasaDorada {
 		}
 		
 	}
-
+	
+	public void sortByTypeName() {
+		Collections.sort(types);
+	}
+	
+	public void sortByEmployeeName() {
+		EmployeeComparator emp = new EmployeeComparator();
+		Collections.sort(employees, emp);		
+	}
 }
 

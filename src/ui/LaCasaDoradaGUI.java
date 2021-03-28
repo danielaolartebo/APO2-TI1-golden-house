@@ -1008,6 +1008,7 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeEmployeeTableView(){
+    	laCasaDorada.sortByEmployeeName();
         ObservableList<EmployeeAccount> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
         tbEmployeeList.setItems(observableList);
@@ -1083,6 +1084,7 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getEmployees().remove(ea);
     		this.tbEmployeeList.refresh();
     		employeeWasDeletedAlert();
+    		laCasaDorada.sortByEmployeeName();
     		ObservableList<EmployeeAccount> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
             tbEmployeeList.setItems(observableList);
@@ -1228,6 +1230,7 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeTypeOfProductTableView(){
+    	laCasaDorada.sortByTypeName();
         ObservableList<RestaurantTypeOfProduct> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getTypeOfProducts());
         tbTypeOfProductList.setItems(observableList);
@@ -1264,6 +1267,7 @@ public class LaCasaDoradaGUI {
     		this.laCasaDorada.getTypeOfProducts().remove(tp);
     		this.tbTypeOfProductList.refresh();
     		itemWasDeletedAlert();
+    		laCasaDorada.sortByTypeName();
     		ObservableList<RestaurantTypeOfProduct> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getTypeOfProducts());
             tbTypeOfProductList.setItems(observableList);
