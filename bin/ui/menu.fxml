@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="600.0" fitWidth="572.0" layoutX="134.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../docs/2021-03-09%20(4).png" />
+                  <Image url="@2021-03-09%20(4).png" />
                </image>
             </ImageView>
             <Button layoutX="716.0" layoutY="510.0" mnemonicParsing="false" onAction="#menuSingOut" prefHeight="22.0" prefWidth="86.0" text="SALIR">

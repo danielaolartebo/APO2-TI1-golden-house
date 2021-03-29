@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="695.0" fitWidth="967.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../docs/2021-03-09%20(13).png" />
+                  <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
             <Label layoutX="322.0" layoutY="6.0" prefHeight="62.0" prefWidth="284.0" text="Crear cliente" textFill="WHITE">

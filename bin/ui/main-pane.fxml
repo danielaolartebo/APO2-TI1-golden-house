@@ -21,7 +21,7 @@
             </Button>
             <ImageView fitHeight="238.0" fitWidth="800.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../docs/2021-03-09%20(8).png" />
+                  <Image url="@2021-03-09%20(8).png" />
                </image>
             </ImageView>
          </children>
