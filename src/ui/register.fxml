@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="802.0" fitWidth="960.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../docs/2021-03-09%20(13).png" />
+                  <Image url="@2021-03-09%20(13).png" />
                </image>
             </ImageView>
             <Label layoutX="123.0" layoutY="14.0" text="Crear cuenta de empleados" textFill="WHITE">
