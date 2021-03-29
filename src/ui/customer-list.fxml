@@ -63,7 +63,7 @@
             </Button>
             <TextField fx:id="txtCustomerName" layoutX="434.0" layoutY="535.0" />
             <Label layoutX="450.0" layoutY="515.0" prefHeight="17.0" prefWidth="116.0" text="Nombre del cliente:" textAlignment="CENTER" textFill="WHITE" />
-            <Button layoutX="474.0" layoutY="567.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="14.0" prefWidth="69.0" text="BUSCAR">
+            <Button layoutX="434.0" layoutY="567.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="14.0" prefWidth="69.0" text="BUSCAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
@@ -72,6 +72,16 @@
             <Label fx:id="searchingTime" layoutX="661.0" layoutY="34.0" prefHeight="24.0" prefWidth="82.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="513.0" layoutY="567.0" mnemonicParsing="false" onAction="#cleanTable" prefHeight="14.0" prefWidth="69.0" text="LIMPIAR">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="602.0" layoutY="566.0" prefHeight="26.0" prefWidth="201.0" style="-fx-background-color: white;" text="Click en limpiar para reiniciar tabla">
+               <font>
+                  <Font name="System Bold" size="12.0" />
                </font>
             </Label>
          </children>

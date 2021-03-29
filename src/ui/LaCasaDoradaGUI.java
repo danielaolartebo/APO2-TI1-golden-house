@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.List;
 
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
@@ -210,6 +211,9 @@ public class LaCasaDoradaGUI {
     @FXML
     private BorderPane typeOfProductListPane;
     
+    @FXML
+    private Label searchingTime;
+    
     // CUSTOMER TABLE VIEW 
     
     @FXML
@@ -235,6 +239,7 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private TableColumn<ClientAccount, String> tcStatusCustomer;
+    
     
     // ORDER LIST 
 
@@ -314,6 +319,24 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private TableColumn<EmployeeAccount, String> tcEmployeeStatus;
+    
+    // USER LIST
+    
+    @FXML
+    private BorderPane userListPane;
+
+    @FXML
+    private TableView<EmployeeAccount> tbUserList;
+
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcUserNameList;
+
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcPasswordList;
+    
+    @FXML
+    private TableColumn<EmployeeAccount, String> tcStatusUserList;
+
 
     
     // INGREDIENT LIST 
@@ -438,16 +461,20 @@ public class LaCasaDoradaGUI {
     	
     	if (userName.isEmpty() || password.isEmpty() || firstName.isEmpty() || lastName.isEmpty()) {
         	validationErrorAlert();
-        }else{
+        }else if(laCasaDorada.validateUser(userName)) {
+        	
         	accountCreatedAlert();
         	laCasaDorada.addEmployee(userName, password, firstName, lastName, id);
-	    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
-	    	fxmlLoader.setController(this);
-	    	Parent signInPane = fxmlLoader.load();
-	    	mainPane.getChildren().setAll(signInPane);
-        }
-    }
-    
+        	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
+        	fxmlLoader.setController(this);
+        	Parent signInPane = fxmlLoader.load();
+        	mainPane.getChildren().setAll(signInPane);
+        	}else {
+        		employeeValidationAlert();
+        	}
+       	}
+        	
+        
     /*
      *****************************************FOURTH SCREEN MENU (menu.fxml) ************************************************************
      */
@@ -598,6 +625,15 @@ public class LaCasaDoradaGUI {
     }
     
     @FXML
+    public void menuUpdateUser(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("user-list.fxml"));
+    	fxmlLoader.setController(this);
+    	Parent userListPane = fxmlLoader.load();
+    	mainPane.getChildren().setAll(userListPane);
+    	initializeUserTableView();
+    }
+    
+    @FXML
     public void menuUpdateCustomer(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("customer-list.fxml"));
     	fxmlLoader.setController(this);
@@ -732,6 +768,7 @@ public class LaCasaDoradaGUI {
     	}else {
     		this.laCasaDorada.getClients().remove(ca);
     		this.tbCustomerList.refresh();
+    		saveData();
     		customerWasDeletedAlert();
     		ObservableList<ClientAccount> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getClients());
@@ -767,10 +804,79 @@ public class LaCasaDoradaGUI {
 	
 	@FXML
 	public void searchCustomer(ActionEvent event) throws IOException{
-
+		int pos = -1;
+		int i = 0;
+		int j = laCasaDorada.getClients().size()-1;
+		String name= txtCustomerName.getText();
+		
+		long start = System.nanoTime();
+		while(i<=j && pos<0) {
+			int m = (i+j)/2;
+				if(laCasaDorada.getClients().get(m).getFirstName().equals(name)) {
+				pos = m;
+				 ObservableList<ClientAccount> observableList;
+			        observableList = FXCollections.observableArrayList(laCasaDorada.getClients().get(m));
+			        tbCustomerList.setItems(observableList);
+			        
+			        tcFirstNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("firstName"));
+			        tcLastNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("lastName"));
+			        tcIdCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("id"));
+			        tcAddressCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("address"));
+			        tcPhoneNumberCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("phoneNumber"));
+			        tcObservationsCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("observations"));
+			        tcStatusCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("customerStatus"));
+				}else if(name.compareToIgnoreCase(laCasaDorada.getClients().get(m).getFirstName())>0) {
+				i = m+1;
+				}else {
+				j = m-1;
+			}
+		}
+		long end = System.nanoTime();
+		if(pos>=0) {
+			searchingTime.setText(String.valueOf(end-start));
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+		    alert.setTitle("Encontrando el cliente");
+		    alert.setHeaderText("");
+		    alert.setContentText("Cliente encontrado \n"
+		    		+" La busqueda tardó: "+(end-start)+" nanosegundos.");
+		    alert.showAndWait();
+		    
+		   
+	        
+	        
+		}
 	}
- 
-    
+	
+	@FXML
+	public void cleanTable(ActionEvent event) {
+		initializeCustomerTableView();
+    }
+	
+	/*public int binarySearch(List<ClientAccount> nameClient, String saving) {
+		
+		
+		int pos = -1;
+		int i = 0;
+		int j = laCasaDorada.getClients().size();
+
+
+		while(i<=j && pos<0) {
+			int m = (i+j)/2;
+				if(nameClient==saving) {
+				pos = m;
+				}else if(saving.compareTo(nameClient)<0) {
+				j = m+1;
+				}else {
+				i = m-1;
+			}
+		}
+
+		return pos;
+	}*/
+	
+	
+	
     /*
      **************************************** SCREEN ORDER LIST (order-list.fxml) *******************************************************
      */
@@ -804,8 +910,22 @@ public class LaCasaDoradaGUI {
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
+        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
         txStatusOrder1.setCellValueFactory(new PropertyValueFactory<Order, Double>("priceTotal"));
+        
+        tcObservationsOrder.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        
+        tcObservationsOrder.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+            Order or = data.getRowValue();
+            or.setObservations(data.getNewValue());
+            System.out.println(or);
+        });
+        
+       
     }
 	
     @FXML
@@ -922,34 +1042,19 @@ public class LaCasaDoradaGUI {
         tcStatusList.setCellValueFactory(new PropertyValueFactory<RestaurantProduct, String>("productStatus"));
         
         tcNameList.setCellFactory(TextFieldTableCell.forTableColumn());
-        tcTypeList.setCellFactory(TextFieldTableCell.forTableColumn());
         tcSizeList.setCellFactory(TextFieldTableCell.forTableColumn());
+       // tcPriceList.setCellFactory(String.format("a", TextFieldTableCell.forTableColumn()));
         
         
-        /*tcNameList.setOnEditCommit(data -> {
+        tcNameList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
             RestaurantProduct pr = data.getRowValue();
             pr.setName(data.getNewValue());
             System.out.println(pr);
-        });*/
+        });
         
-        /*tcTypeList.setOnEditCommit(data -> {
-            System.out.println("New first name: " +  data.getNewValue());
-            System.out.println("Old first name: " + data.getOldValue());
-            RestaurantProduct pr = data.getRowValue();
-            pr.setTypeOfProduct(data.getNewValue());
-            System.out.println(pr);
-        });*/
-        
-    /*    tcIngredientsList.setOnEditCommit(data -> {
-            System.out.println("New first name: " +  data.getNewValue());
-            System.out.println("Old first name: " + data.getOldValue());
-            RestaurantProduct pr = data.getRowValue();
-            pr.setIngredientsOfProduct(data.getNewValue());
-            System.out.println(pr);   
-        });  */
-        
+       
         tcSizeList.setOnEditCommit(data -> {
             System.out.println("New first name: " +  data.getNewValue());
             System.out.println("Old first name: " + data.getOldValue());
@@ -1148,7 +1253,103 @@ public class LaCasaDoradaGUI {
     	}
     }
 
+    /*
+     **************************************** SCREEN USER LIST (user-list.fxml) *******************************************************
+     */
     
+		@FXML
+	    public void sub30GoBack(ActionEvent event) throws IOException {
+		 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+	    	fxmlLoader.setController(this);
+	    	Parent menuPane = fxmlLoader.load();
+	    	mainPane.getChildren().setAll(menuPane);
+	    }
+	 	
+		private void initializeUserTableView(){
+	        ObservableList<EmployeeAccount> observableList;
+	        observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
+	        tbUserList.setItems(observableList);
+	        
+	        tcUserNameList.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("userName"));   
+	        tcPasswordList.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("password"));
+	        tcStatusUserList.setCellValueFactory(new PropertyValueFactory<EmployeeAccount, String>("employeeStatus"));
+	        
+	        tcUserNameList.setCellFactory(TextFieldTableCell.forTableColumn());
+	        tcPasswordList.setCellFactory(TextFieldTableCell.forTableColumn());
+	        
+	        
+	        tcUserNameList.setOnEditCommit(data -> {
+	            System.out.println("New first name: " +  data.getNewValue());
+	            System.out.println("Old first name: " + data.getOldValue());
+
+	            EmployeeAccount su = data.getRowValue();
+	            su.setUserName(data.getNewValue());
+
+	            System.out.println(su);
+	        });
+	        
+	        tcPasswordList.setOnEditCommit(data -> {
+	            System.out.println("New last name: " +  data.getNewValue());
+	            System.out.println("Old last name: " + data.getOldValue());
+
+	            EmployeeAccount su = data.getRowValue();
+	            su.setPassword(data.getNewValue());
+
+	            System.out.println(su);
+	        });
+	    }
+		
+		@FXML
+	    public void selectUser(MouseEvent event) throws IOException {
+	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
+	    	
+	    	if(su != null) {
+	    		this.tcUserNameList.setText(su.getFirstName());
+	    		this.tcPasswordList.setText(su.getLastName());
+	    	}	
+	    }
+		
+	    @FXML
+	    public void userDeleteOpt(ActionEvent event) {
+	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
+	    	
+	    	if(su == null) {
+	    		selectAnOptionAlert();
+	    	}else {
+	    		this.laCasaDorada.getEmployees().remove(su);
+	    		this.tbUserList.refresh();
+	    		employeeWasDeletedAlert();	    		
+	    		ObservableList<EmployeeAccount> observableList;
+	            observableList = FXCollections.observableArrayList(laCasaDorada.getEmployees());
+	            tbUserList.setItems(observableList);
+	    	}
+	    }
+
+	    @FXML
+	    public void userDisableOpt(ActionEvent event) {
+	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
+	    	
+	    	if(su == null) {
+	    		selectAnOptionAlert();
+	    	}else{
+	    		su.setEmployeeStatus(MembersStatus.INACTIVA);
+	    		this.tbUserList.refresh();
+	    		employeeWasDisableAlert();
+	    	}
+	    }
+
+	    @FXML
+	    public void userEnableOpt(ActionEvent event) {
+	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
+	    	
+	    	if(su == null) {
+	    		selectAnOptionAlert();
+	    	}else{
+	    		su.setEmployeeStatus(MembersStatus.ACTIVA);
+	    		this.tbUserList.refresh();
+	    		itemWasEnableAlert();
+	    	}
+	    }
     
     /*
      **************************************** SCREEN INGREDIENT LIST (ingredient-list.fxml) *******************************************************
@@ -1163,10 +1364,6 @@ public class LaCasaDoradaGUI {
     }
     
     private void initializeIngredientTableView(){
-
-        ObservableList<RestaurantIngredient> observableList;
-        observableList = FXCollections.observableArrayList(laCasaDorada.getIngredients());
-        tbIngredientList.setItems(observableList);
 
     	laCasaDorada.sortByIngredientName();
         ObservableList<RestaurantIngredient> observableListIngredient;
@@ -1354,22 +1551,24 @@ public class LaCasaDoradaGUI {
     	String option = "";
     	if(optIngredient.isSelected()){
     		option = "Ingredient";
-    		laCasaDorada.addIngredient(ingredientName);
-    		createIngredientName.clear();
+    		
     		if (ingredientName.isEmpty()) {
     			validationErrorAlert();
     		}else {
     			ingredientCreatedAlert();
+    			laCasaDorada.addIngredient(ingredientName);
+        		createIngredientName.clear();
     			saveData();
     		}
     	}else if(optTypeOfProduct.isSelected()) {
     		option = "Type of product";
-    		laCasaDorada.addTypeOfProduct(typeName);
-    		createTypeOfProduct.clear();
+    		
     		if (typeName.isEmpty()) {
     			validationErrorAlert();
     		}else {
     			typeOfProductCreatedAlert();
+    			laCasaDorada.addTypeOfProduct(typeName);
+        		createTypeOfProduct.clear();
     			saveData();
     		}
     	}
@@ -1785,6 +1984,15 @@ public class LaCasaDoradaGUI {
 	    alert.setTitle("Eliminar empleado");
 	    alert.setHeaderText("");
 	    alert.setContentText("El empleado fue eliminado satisfactoriamente");
+	    alert.showAndWait();
+	}
+    
+    @FXML
+    private void employeeValidationAlert() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Error crear cuenta");
+	    alert.setHeaderText("");
+	    alert.setContentText("El nombre de usuario escogido ya existe");
 	    alert.showAndWait();
 	}
     

@@ -197,7 +197,16 @@ public class LaCasaDorada implements Serializable{
 		}
 		return validate;
 	}
-
+	
+	public boolean validateUser(String userName) {
+		boolean found=true;
+    	for(int i=0;i<employees.size() && found;i++) {
+    		if(userName.equals(employees.get(i).getUserName())) {
+    			found = false;
+    		}
+    	}
+    	return found;
+	}
 	public boolean validateEmployee(String userName, String password) {
 		boolean validate=false;
 		for(int i=0; i<employees.size() && !validate;i++) {
@@ -328,19 +337,17 @@ public class LaCasaDorada implements Serializable{
 
 	
 	public void sortByIngredientName() {
-		
-	for(int i=0; i < ingredients.size();i++) {
-			int posMin = i;
-			for(int j=i+1; j< ingredients.size();j++) {
-				if(ingredients.get(j).getNameIngredient()>ingredients.get(posMin).getNameIngredient()) {
-					posMin = j;
+		boolean changed=true;
+	for(int i=1; i < ingredients.size() && changed;i++) {
+			changed = false;
+			for(int j=0; j< ingredients.size()-1;j++) {
+				if(ingredients.get(j).getIngredientName().compareToIgnoreCase(ingredients.get(j+1).getIngredientName())<0) {
+					RestaurantIngredient temp = ingredients.get(j);
+					ingredients.set(j,ingredients.get(j+1));
+					ingredients.set(j+1, temp);
+					changed = true;
 				}
 			}
-			RestaurantIngredient aux = ingredients.get(posMin);
-			ingredients.set(posMin, ingredients.get(i));
-			ingredients.set(i, aux);
-			
-
 		}
 	}
 
@@ -367,7 +374,6 @@ public class LaCasaDorada implements Serializable{
 		EmployeeComparator emp = new EmployeeComparator();
 		Collections.sort(employees, emp);		
 	}
-
 
 
 		

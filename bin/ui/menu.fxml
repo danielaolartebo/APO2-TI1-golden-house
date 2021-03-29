@@ -37,7 +37,8 @@
                      <graphic>
                         <MenuButton mnemonicParsing="false">
                            <items>
-                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateEmployeeAccount" text="Actualizar/Eliminar/Deshabilitar" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateEmployeeAccount" text="Actualizar lista de empleados" />
+                              <MenuItem mnemonicParsing="false" onAction="#menuUpdateUser" text="Actualizar lista de usuarios" />
                            </items>
                         </MenuButton>
                      </graphic>

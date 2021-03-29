@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="userListPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="617.0" fitWidth="1095.0" layoutX="-14.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../docs/2021-03-11%20(2).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="198.0" layoutY="43.0" prefHeight="60.0" prefWidth="458.0" text="Lista de Usuarios" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="42.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbUserList" editable="true" layoutY="112.0" prefHeight="386.0" prefWidth="804.0" style="-fx-background-color: black;">
+               <columns>
+                  <TableColumn fx:id="tcUserNameList" prefWidth="291.1999389529228" text="Nombre de usuario" />
+                  <TableColumn fx:id="tcPasswordList" maxWidth="525.5999755859375" prefWidth="355.199951171875" text="Contraseña" />
+                  <TableColumn fx:id="tcStatusUserList" maxWidth="354.39996337890625" prefWidth="157.60003662109375" text="Estado" />
+               </columns>
+            </TableView>
+            <Button layoutX="36.0" layoutY="516.0" mnemonicParsing="false" onAction="#sub30GoBack" prefHeight="37.0" prefWidth="103.0" text="Atrás">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="631.0" layoutY="522.0" prefHeight="17.0" prefWidth="155.0" style="-fx-background-color: white;" text="Doble click para actualizar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="228.0" layoutY="519.0" mnemonicParsing="false" onAction="#userDeleteOpt" prefHeight="28.0" prefWidth="83.0" text="ELIMINAR">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="353.0" layoutY="519.0" mnemonicParsing="false" onAction="#userDisableOpt" prefHeight="28.0" prefWidth="95.0" text="DESHABILITAR">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="473.0" layoutY="517.0" mnemonicParsing="false" onAction="#userEnableOpt" prefHeight="32.0" prefWidth="87.0" text="HABILITAR">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
