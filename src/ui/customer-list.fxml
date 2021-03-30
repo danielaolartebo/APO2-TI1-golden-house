@@ -61,9 +61,9 @@
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <TextField fx:id="txtCustomerName" layoutX="434.0" layoutY="535.0" />
-            <Label layoutX="450.0" layoutY="515.0" prefHeight="17.0" prefWidth="116.0" text="Nombre del cliente:" textAlignment="CENTER" textFill="WHITE" />
-            <Button layoutX="434.0" layoutY="567.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="14.0" prefWidth="69.0" text="BUSCAR">
+            <TextField fx:id="txtCustomerName" layoutX="425.0" layoutY="535.0" prefHeight="25.0" prefWidth="135.0" />
+            <Label layoutX="435.0" layoutY="515.0" prefHeight="17.0" prefWidth="116.0" text="Nombre del cliente:" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="417.0" layoutY="567.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="14.0" prefWidth="69.0" text="BUSCAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
@@ -74,12 +74,12 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Button layoutX="513.0" layoutY="567.0" mnemonicParsing="false" onAction="#cleanTable" prefHeight="14.0" prefWidth="69.0" text="LIMPIAR">
+            <Button layoutX="499.0" layoutY="567.0" mnemonicParsing="false" onAction="#cleanTable" prefHeight="14.0" prefWidth="69.0" text="LIMPIAR">
                <font>
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Label layoutX="602.0" layoutY="566.0" prefHeight="26.0" prefWidth="201.0" style="-fx-background-color: white;" text="Click en limpiar para reiniciar tabla">
+            <Label layoutX="595.0" layoutY="566.0" prefHeight="26.0" prefWidth="201.0" style="-fx-background-color: white;" text="Click en limpiar para reiniciar tabla">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

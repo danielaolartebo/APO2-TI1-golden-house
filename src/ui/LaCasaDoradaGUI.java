@@ -10,7 +10,9 @@ import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
@@ -47,8 +49,10 @@ import model.RestaurantProduct;
 import model.RestaurantTypeOfProduct;
 import model.Status;
 
-public class LaCasaDoradaGUI {
-
+public class LaCasaDoradaGUI implements Runnable{
+	
+	String hours,minutes, seconds;
+	Thread show;
 	private LaCasaDorada laCasaDorada;
 	
 	// MINI TABLE VIEW IN CREATE PRODUCT SCREEN 
@@ -213,6 +217,12 @@ public class LaCasaDoradaGUI {
     
     @FXML
     private Label searchingTime;
+    
+    @FXML
+    private Label txtDateUpdate;
+
+    @FXML
+    private Label txtHourUpdate;
     
     // CUSTOMER TABLE VIEW 
     
@@ -425,7 +435,10 @@ public class LaCasaDoradaGUI {
         	fxmlLoader.setController(this);
         	Parent menuPane = fxmlLoader.load();
         	mainPane.getChildren().setAll(menuPane);
-
+        	
+        	txtDateUpdate.setText(laCasaDorada.dateUpdate());
+        	run();
+        	
      	}else if(!laCasaDorada.validateEmployee(userName, password)) {
      		loginErrorAlert();
      	}
@@ -784,6 +797,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ca.setCustomerStatus(MembersStatus.INACTIVA);
+    		saveData();
     		this.tbCustomerList.refresh();
     		customerWasDisableAlert();
     	}
@@ -797,6 +811,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ca.setCustomerStatus(MembersStatus.ACTIVA);
+    		saveData();
     		this.tbCustomerList.refresh();
     		itemWasEnableAlert();
     	}
@@ -852,28 +867,6 @@ public class LaCasaDoradaGUI {
 	public void cleanTable(ActionEvent event) {
 		initializeCustomerTableView();
     }
-	
-	/*public int binarySearch(List<ClientAccount> nameClient, String saving) {
-		
-		
-		int pos = -1;
-		int i = 0;
-		int j = laCasaDorada.getClients().size();
-
-
-		while(i<=j && pos<0) {
-			int m = (i+j)/2;
-				if(nameClient==saving) {
-				pos = m;
-				}else if(saving.compareTo(nameClient)<0) {
-				j = m+1;
-				}else {
-				i = m-1;
-			}
-		}
-
-		return pos;
-	}*/
 	
 	
 	
@@ -969,6 +962,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		or.setOrderStatus(Status.SOLICITADO);
+    		saveData();
     		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
@@ -982,6 +976,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		or.setOrderStatus(Status.EN_PROCESO);
+    		saveData();
     		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
@@ -997,6 +992,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		or.setOrderStatus(Status.ENVIADO);
+    		saveData();
     		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
@@ -1010,6 +1006,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		or.setOrderStatus(Status.ENTREGADO);
+    		saveData();
     		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
@@ -1096,6 +1093,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else {
     		this.laCasaDorada.getProducts().remove(pr);
+    		saveData();
     		this.tbProductList.refresh();
     		itemWasDeletedAlert();
     		laCasaDorada.sortByPrice();
@@ -1113,6 +1111,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		pr.setProductStatus(MembersStatus.INACTIVA);
+    		saveData();
     		this.tbProductList.refresh();
     		itemWasDisableAlert();
     	}
@@ -1126,6 +1125,7 @@ public class LaCasaDoradaGUI {
 	    		selectAnOptionAlert();
 	    	}else{
 	    		pr.setProductStatus(MembersStatus.ACTIVA);
+	    		saveData();
 	    		this.tbProductList.refresh();
 	    		itemWasEnableAlert();
 	    	}
@@ -1218,6 +1218,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else {
     		this.laCasaDorada.getEmployees().remove(ea);
+    		saveData();
     		this.tbEmployeeList.refresh();
     		employeeWasDeletedAlert();
     		laCasaDorada.sortByEmployeeName();
@@ -1235,6 +1236,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ea.setEmployeeStatus(MembersStatus.INACTIVA);
+    		saveData();
     		this.tbEmployeeList.refresh();
     		employeeWasDisableAlert();
     	}
@@ -1248,6 +1250,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ea.setEmployeeStatus(MembersStatus.ACTIVA);
+    		saveData();
     		this.tbEmployeeList.refresh();
     		itemWasEnableAlert();
     	}
@@ -1310,13 +1313,14 @@ public class LaCasaDoradaGUI {
 	    }
 		
 	    @FXML
-	    public void userDeleteOpt(ActionEvent event) {
+	    public void userDeleteOpt(ActionEvent event) throws FileNotFoundException, IOException {
 	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
 	    	
 	    	if(su == null) {
 	    		selectAnOptionAlert();
 	    	}else {
 	    		this.laCasaDorada.getEmployees().remove(su);
+	    		saveData();
 	    		this.tbUserList.refresh();
 	    		employeeWasDeletedAlert();	    		
 	    		ObservableList<EmployeeAccount> observableList;
@@ -1326,26 +1330,28 @@ public class LaCasaDoradaGUI {
 	    }
 
 	    @FXML
-	    public void userDisableOpt(ActionEvent event) {
+	    public void userDisableOpt(ActionEvent event) throws FileNotFoundException, IOException {
 	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
 	    	
 	    	if(su == null) {
 	    		selectAnOptionAlert();
 	    	}else{
 	    		su.setEmployeeStatus(MembersStatus.INACTIVA);
+	    		saveData();
 	    		this.tbUserList.refresh();
 	    		employeeWasDisableAlert();
 	    	}
 	    }
 
 	    @FXML
-	    public void userEnableOpt(ActionEvent event) {
+	    public void userEnableOpt(ActionEvent event) throws FileNotFoundException, IOException {
 	    	EmployeeAccount su = this.tbUserList.getSelectionModel().getSelectedItem();
 	    	
 	    	if(su == null) {
 	    		selectAnOptionAlert();
 	    	}else{
 	    		su.setEmployeeStatus(MembersStatus.ACTIVA);
+	    		saveData();
 	    		this.tbUserList.refresh();
 	    		itemWasEnableAlert();
 	    	}
@@ -1413,6 +1419,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else if(laCasaDorada.verifyRemoveIngredientInOrder(ri)){
     		this.laCasaDorada.getIngredients().remove(ri);
+    		saveData();
     		this.tbIngredientList.refresh();
     		itemWasDeletedAlert();
     		laCasaDorada.sortByIngredientName();
@@ -1432,6 +1439,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ri.setIngredientStatus(MembersStatus.INACTIVA);
+    		saveData();
     		this.tbIngredientList.refresh();
     		itemWasDisableAlert();
     	}
@@ -1445,6 +1453,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		ri.setIngredientStatus(MembersStatus.ACTIVA);
+    		saveData();
     		this.tbIngredientList.refresh();
     		itemWasEnableAlert();
     	}
@@ -1498,6 +1507,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else {
     		this.laCasaDorada.getTypeOfProducts().remove(tp);
+    		saveData();
     		this.tbTypeOfProductList.refresh();
     		itemWasDeletedAlert();
     		laCasaDorada.sortByTypeName();
@@ -1515,6 +1525,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		tp.setTypeOfProductStatus(MembersStatus.INACTIVA);
+    		saveData();
     		this.tbTypeOfProductList.refresh();
     		itemWasDisableAlert();
     	}
@@ -1528,6 +1539,7 @@ public class LaCasaDoradaGUI {
     		selectAnOptionAlert();
     	}else{
     		tp.setTypeOfProductStatus(MembersStatus.ACTIVA);
+    		saveData();
     		this.tbTypeOfProductList.refresh();
     		 itemWasEnableAlert();
     	}
@@ -1617,10 +1629,14 @@ public class LaCasaDoradaGUI {
     
     public void setUpAddIngredientandTypeOfProduct() throws IOException{
     	for(int i=0; i<laCasaDorada.getIngredients().size();i++) {
-    		productIngredients.getItems().add(laCasaDorada.getIngredients().get(i).getIngredientName());
+    		if(laCasaDorada.getIngredients().get(i).getIngredientStatus()!=MembersStatus.INACTIVA) {
+    			productIngredients.getItems().add(laCasaDorada.getIngredients().get(i).getIngredientName());
+    		}
     	}
     	for(int j=0; j<laCasaDorada.getTypeOfProducts().size();j++) {
-    		productTypes.getItems().add(laCasaDorada.getTypeOfProducts().get(j).getTypeOfProductName());
+    		if(laCasaDorada.getTypeOfProducts().get(j).getTypeOfProductStatus()!=MembersStatus.INACTIVA) {
+    			productTypes.getItems().add(laCasaDorada.getTypeOfProducts().get(j).getTypeOfProductName());
+    		}
     	}
     	
     }
@@ -1701,14 +1717,20 @@ public class LaCasaDoradaGUI {
 
     public void setUpAddOrder() {
     	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
+    		if(laCasaDorada.getProducts().get(i).getProductStatus()!=MembersStatus.INACTIVA) {
     		COaddProduct.getItems().add(laCasaDorada.getProducts().get(i).getName());
+    		}
     	}
     	for(int j=0; j<laCasaDorada.getClients().size();j++) {
+    		if(laCasaDorada.getClients().get(j).getCustomerStatus()!=MembersStatus.INACTIVA) {
          	COcustomerName.getItems().add(laCasaDorada.getClients().get(j).getFirstName());	
+    		}
         }
     	for(int i=0; i<laCasaDorada.getEmployees().size();i++) {
+    		if(laCasaDorada.getEmployees().get(i).getEmployeeStatus()!=MembersStatus.INACTIVA) {
             COemployeeName.getItems().add(laCasaDorada.getEmployees().get(i).getFirstName());
-   		}
+    		}
+    	}
     	
     }
     
@@ -2062,5 +2084,29 @@ public class LaCasaDoradaGUI {
 	    alert.setContentText("El item no se puede eliminar porque está en uso");
 	    alert.showAndWait();
    	}
+    
+    public void hourUpdate() {
+    	LocalTime hour = LocalTime.now();
+    	System.out.println(hour);
+		/*Calendar calendar = new GregorianCalendar();
+		Date hour = new Date();
+		calendar.setTime(hour);
+		hours=calendar.get(Calendar.HOUR_OF_DAY)>9?""+ calendar.get(Calendar.HOUR_OF_DAY):"0"+calendar.get(Calendar.HOUR_OF_DAY);
+		minutes=calendar.get(Calendar.MINUTE)>9?""+calendar.get(Calendar.MINUTE):"0"+calendar.get(Calendar.MINUTE);
+		seconds=calendar.get(Calendar.SECOND)>9?""+calendar.get(Calendar.SECOND):"0"+calendar.get(Calendar.SECOND);*/
+	}
+
+	@Override
+	public void run() {
+		LocalTime hour = LocalTime.now();
+    	System.out.println(hour);
+		Thread current=Thread.currentThread();
+		while(current==show) {
+			
+			txtHourUpdate.setText(String.valueOf(hour.getHour())+String.valueOf(hour.getMinute())+String.valueOf(hour.getSecond()));
+		}
+	}
+    
+	
    
 }

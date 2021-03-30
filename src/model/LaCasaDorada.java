@@ -6,14 +6,17 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class LaCasaDorada implements Serializable{
-
+	
+	
 	private static final long serialVersionUID = 1;
 
 	private static final String SEPARATE=",";
@@ -26,7 +29,7 @@ public class LaCasaDorada implements Serializable{
 	private List<Order> orders;
 	private List<Size> sizes;
 	private List<ProductQuantity> productQuantity;
-	private int numberList;
+ 	private int numberList;
 	private double priceTotal;
 
 	
@@ -105,6 +108,7 @@ public class LaCasaDorada implements Serializable{
 		return productQuantity;
 	}
 	
+
 	public int getNumberList() {
 		return numberList;
 	}
@@ -375,6 +379,18 @@ public class LaCasaDorada implements Serializable{
 		Collections.sort(employees, emp);		
 	}
 
+	public String dateUpdate() {
+		
+		Date dateUpdate = new Date();
+		SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/YYYY");
+		return formatDate.format(dateUpdate);
+		
+		
+	}
 
+	
+	
+	
+	
 		
 }
