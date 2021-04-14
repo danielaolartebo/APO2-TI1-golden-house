@@ -3,17 +3,18 @@ package model;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Arrays;
 
 public class Order implements Serializable{
 	
 	private static final long serialVersionUID = 1;
 	private ClientAccount client;
 	private EmployeeAccount employee;
-	private RestaurantProduct product;
+	private String[] product;
 	private String code;
 	private LocalDate date;
 	private LocalTime time;
-	private double quantity;
+	private double[] quantity;
 	private String observations;
 	private Status order;
 	private int number;
@@ -22,7 +23,7 @@ public class Order implements Serializable{
 	private String nameProduct;
 	private String nameClient;
 	
-	public Order(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal){
+	public Order(ClientAccount client, String[] product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double[] quantity, String observations, int number, double priceTotal){
 		this.client=client;
 		this.product=product;
 		this.employee=employee;
@@ -35,7 +36,6 @@ public class Order implements Serializable{
 
 		this.setNumber(number);
 		nameEmployee = employee.getFirstName();
-		nameProduct = product.getName();
 		nameClient= client.getFirstName();
 		this.number=number;
 		this.priceTotal=priceTotal;
@@ -89,20 +89,30 @@ public class Order implements Serializable{
 	public void setOrderStatus(Status order) {
 		this.order=order;
 	}
-
-	public RestaurantProduct getProduct() {
-		return product;
+	
+	public String getProduct() {
+		String toString = Arrays.toString(product);
+		return toString;
+	}
+	
+	public String[] getProductArray() {
+		return this.product;
 	}
 
-	public void setProduct(RestaurantProduct product) {
+	public void setProduct(String[] product) {
 		this.product = product;
 	}
-
-	public double getQuantity() {
-		return quantity;
+	
+	public String getQuantity() {
+		String toString = Arrays.toString(quantity);
+		return toString;
+	}
+	
+	public double[] getQuantityArray() {
+		return this.quantity;
 	}
 
-	public void setQuantity(double quantity) {
+	public void setQuantity(double[] quantity) {
 		this.quantity = quantity;
 	}
 

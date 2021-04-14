@@ -37,6 +37,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import model.ClientAccount;
 import model.EmployeeAccount;
@@ -49,7 +50,7 @@ import model.RestaurantProduct;
 import model.RestaurantTypeOfProduct;
 import model.Status;
 
-public class LaCasaDoradaGUI implements Runnable{
+public class LaCasaDoradaGUI{
 	
 	String hours,minutes, seconds;
 	Thread show;
@@ -69,17 +70,19 @@ public class LaCasaDoradaGUI implements Runnable{
 	private TableView<ProductQuantity> miniTbCreateOrder;
 
 	@FXML
-	private TableColumn<ProductQuantity, String> miniTcProduct;
+	private TableColumn<ProductQuantity, String[]> miniTcProduct;
 
 	@FXML
-	private TableColumn<ProductQuantity, Double> miniTcQuantity;
+	private TableColumn<ProductQuantity, Double[]> miniTcQuantity;
 	
 	//******************************************************
 	
 	@FXML
 	private TextField txtCustomerName;
 
-
+	@FXML
+	private TextField COsearchCustomer;
+	
 	@FXML
 	private Label totalOrder;
 
@@ -188,6 +191,9 @@ public class LaCasaDoradaGUI implements Runnable{
 	@FXML
 	private BorderPane menuPane;
 	
+	@FXML
+    private Label timeSearch;
+	
     @FXML
     private BorderPane mainPane;
 	
@@ -270,10 +276,10 @@ public class LaCasaDoradaGUI implements Runnable{
     private TableColumn<Order, Double> txStatusOrder1;
     
     @FXML
-    private TableColumn<Order, String> tcProductsOrder;
+    private TableColumn<Order, String[]> tcProductsOrder;
 
     @FXML
-    private TableColumn<Order, Double> tcQuantityOrder;
+    private TableColumn<Order, Double[]> tcQuantityOrder;
 
     @FXML
     private TableColumn<Order, String> tcEmployeeOrder;
@@ -379,7 +385,7 @@ public class LaCasaDoradaGUI implements Runnable{
     
     public final static String SAVE_PATH_FILE = "data.laCasaDorada.csv";
     
-    LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
+    public LaCasaDoradaGUI(LaCasaDorada lcd) throws IOException{
     	laCasaDorada = lcd;
 	}
     
@@ -437,7 +443,6 @@ public class LaCasaDoradaGUI implements Runnable{
         	mainPane.getChildren().setAll(menuPane);
         	
         	txtDateUpdate.setText(laCasaDorada.dateUpdate());
-        	run();
         	
      	}else if(!laCasaDorada.validateEmployee(userName, password)) {
      		loginErrorAlert();
@@ -668,9 +673,11 @@ public class LaCasaDoradaGUI implements Runnable{
     }
     
     private void initializeCustomerTableView(){
+    	laCasaDorada.sortByLastNameClients();
         ObservableList<ClientAccount> observableList;
         observableList = FXCollections.observableArrayList(laCasaDorada.getClients());
         tbCustomerList.setItems(observableList);
+        
         
         tcFirstNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("firstName"));
         tcLastNameCustomer.setCellValueFactory(new PropertyValueFactory<ClientAccount, String>("lastName"));
@@ -829,6 +836,7 @@ public class LaCasaDoradaGUI implements Runnable{
 			int m = (i+j)/2;
 				if(laCasaDorada.getClients().get(m).getFirstName().equals(name)) {
 				pos = m;
+				laCasaDorada.sortByLastNameClients();
 				 ObservableList<ClientAccount> observableList;
 			        observableList = FXCollections.observableArrayList(laCasaDorada.getClients().get(m));
 			        tbCustomerList.setItems(observableList);
@@ -898,16 +906,41 @@ public class LaCasaDoradaGUI implements Runnable{
         
         tcNumberOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("number"));   
         tcCustomerOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameClient"));
-        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("product"));
+        tcProductsOrder.setCellValueFactory(new PropertyValueFactory<Order, String[]>("product"));
         tcEmployeeOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("nameEmployee"));
         tcDateOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("date"));
         txHourOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("time"));
         tcObservationsOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("observations"));
-        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double>("quantity"));
+        tcQuantityOrder.setCellValueFactory(new PropertyValueFactory<Order, Double[]>("quantity"));
         txStatusOrder.setCellValueFactory(new PropertyValueFactory<Order, String>("orderStatus"));
         txStatusOrder1.setCellValueFactory(new PropertyValueFactory<Order, Double>("priceTotal"));
         
         tcObservationsOrder.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        tbOrderList.setRowFactory( tv -> {
+            TableRow<Order> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+                	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
+                	fxmlLoader.setController(this);
+                	Parent updateProductPane;
+					try {
+						updateProductPane = fxmlLoader.load();
+						mainPane.getChildren().setAll(updateProductPane);
+	                	initializeProductTableView();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+                	
+                	/*FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
+                	fxmlLoader.setController(this);
+                	Parent updateProductPane = fxmlLoader.load();
+                	mainPane.getChildren().setAll(updateProductPane);
+                	initializeProductTableView();*/
+                }
+            });
+            return row ;
+        });
         
         
         tcObservationsOrder.setOnEditCommit(data -> {
@@ -931,7 +964,6 @@ public class LaCasaDoradaGUI implements Runnable{
     		this.tcProductsOrder.setText(String.valueOf(or.getNameProduct()));
 
     		this.tcCustomerOrder.setText(or.getNameClient());
-    		this.tcProductsOrder.setText(or.getProduct().getName());
 
     		this.tcQuantityOrder.setText(String.valueOf(or.getQuantity()));
     		this.tcEmployeeOrder.setText(or.getNameEmployee());
@@ -1417,7 +1449,7 @@ public class LaCasaDoradaGUI implements Runnable{
     	
     	if(ri == null) {
     		selectAnOptionAlert();
-    	}else if(laCasaDorada.verifyRemoveIngredientInOrder(ri)){
+    	}else if(!laCasaDorada.verifyRemoveIngredientInOrder(ri.getIngredientName())){
     		this.laCasaDorada.getIngredients().remove(ri);
     		saveData();
     		this.tbIngredientList.refresh();
@@ -1505,7 +1537,7 @@ public class LaCasaDoradaGUI implements Runnable{
     	
     	if(tp == null) {
     		selectAnOptionAlert();
-    	}else {
+    	}else if(!laCasaDorada.verifyRemoveTypeInOrder(tp.getTypeOfProductName())){
     		this.laCasaDorada.getTypeOfProducts().remove(tp);
     		saveData();
     		this.tbTypeOfProductList.refresh();
@@ -1514,6 +1546,8 @@ public class LaCasaDoradaGUI implements Runnable{
     		ObservableList<RestaurantTypeOfProduct> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getTypeOfProducts());
             tbTypeOfProductList.setItems(observableList);
+    	}else {
+    		itemCannotBeDeletedAlert();
     	}
     }
 
@@ -1598,7 +1632,7 @@ public class LaCasaDoradaGUI implements Runnable{
     	mainPane.getChildren().setAll(menuPane);
     }
     
-    @FXML
+
     public void productCreateProduct(ActionEvent event) throws IOException{
     	String name = productName.getText();
     	String typeOfProduct = productTypes.getSelectionModel().getSelectedItem();
@@ -1613,6 +1647,7 @@ public class LaCasaDoradaGUI implements Runnable{
     	
     	for (int i=0;i<ingredients.size();i++) {
     		ingredientsProducts[i]=ingredients.get(i).getIngredientName();
+    		
     	}
     	
     	if (name.isEmpty() || typeOfProduct.isEmpty() || ingredientsOfProduct.isEmpty() || sizeOfProduct.isEmpty() || priceOfProduct==0) {
@@ -1696,6 +1731,19 @@ public class LaCasaDoradaGUI implements Runnable{
     	number+=1;	
     	laCasaDorada.setNumberList(number);
     	double priceTotal = Double.parseDouble(totalOrder.getText());
+    	
+    	ArrayList<ProductQuantity> productName = new ArrayList<>(miniTbCreateOrder.getItems());
+    	String [] nameProduct=new String [productName.size()];
+    	
+    	for (int i=0;i<productName.size();i++) {
+    		nameProduct[i]=productName.get(i).getNameProduct();	
+    	}
+    	ArrayList<ProductQuantity> quant = new ArrayList<>(miniTbCreateOrder.getItems());
+    	double [] quantity1 =new double [quant.size()];
+    	
+    	for (int i=0;i<quant.size();i++) {
+    		quantity1[i]= quant.get(i).getQuantity();	
+    	}
 
     	if (client.isEmpty() || product.isEmpty() || employee.isEmpty() || observations.isEmpty() || quantity==0) {
         	validationErrorAlert();
@@ -1703,7 +1751,7 @@ public class LaCasaDoradaGUI implements Runnable{
         	System.out.println(employee);
         	System.out.println(product);
         	System.out.println(client);
-        	laCasaDorada.addOrder(laCasaDorada.findClient(client), laCasaDorada.findProduct(product), laCasaDorada.findEmployee(employee), code, date, time, quantity,observations, number, priceTotal);
+        	laCasaDorada.addOrder(laCasaDorada.findClient(client), nameProduct , laCasaDorada.findEmployee(employee), code, date, time, quantity1,observations, number, priceTotal);
         	laCasaDorada.getProductQuantity().clear();
         	laCasaDorada.setPriceTotal(0);
         	COaddQuantity.clear(); COobservations.clear();
@@ -1714,7 +1762,44 @@ public class LaCasaDoradaGUI implements Runnable{
     	
     }
     
-
+    
+    @FXML
+    public void searchClient(ActionEvent event) {
+    	int pos = -1;
+		int i = 0;
+		int j = laCasaDorada.getClients().size()-1;
+		String nameCustomer= COsearchCustomer.getText();
+		
+		long start = System.nanoTime();
+		while(i<=j && pos<0) {
+			int m = (i+j)/2;
+				if(laCasaDorada.getClients().get(m).getFirstName().equals(nameCustomer)) {
+				pos = m;
+				COcustomerName.getSelectionModel().select(laCasaDorada.getClients().get(m).getFirstName());
+				}else if(nameCustomer.compareToIgnoreCase(laCasaDorada.getClients().get(m).getFirstName())>0) {
+				i = m+1;
+				}else {
+				j = m-1;
+			}
+		}
+		long end = System.nanoTime();
+		if(pos>=0) {
+			timeSearch.setText(String.valueOf(end-start));
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+		    alert.setTitle("Encontrando el cliente");
+		    alert.setHeaderText("");
+		    alert.setContentText("Cliente encontrado \n"
+		    		+" La busqueda tardó: "+(end-start)+" nanosegundos.");
+		    alert.showAndWait();
+		    
+		   
+	        
+	        
+		}
+    }
+    
+    
     public void setUpAddOrder() {
     	for(int i=0; i<laCasaDorada.getProducts().size();i++) {
     		if(laCasaDorada.getProducts().get(i).getProductStatus()!=MembersStatus.INACTIVA) {
@@ -1739,6 +1824,7 @@ public class LaCasaDoradaGUI implements Runnable{
     	
     	String product = COaddProduct.getValue();
     	double quantity = Double.parseDouble(COaddQuantity.getText());
+    	
     	double price = 0;
     	double priceT=laCasaDorada.getPriceTotal();
     	for(int i=0; i<laCasaDorada.getProducts().size() ;i++) {
@@ -1756,13 +1842,14 @@ public class LaCasaDoradaGUI implements Runnable{
     		validationErrorAlert();
     	}else {
     		System.out.println(quantity);
-    		laCasaDorada.addProductQuantity(laCasaDorada.findProduct(product), quantity, laCasaDorada.findPrice(price));
+    		laCasaDorada.addProductQuantity(product, quantity, laCasaDorada.findPrice(price));
     		
     		miniTbCreateOrder.refresh();
     		totalOrder.setText(String.valueOf(priceT));
     		ObservableList<ProductQuantity> observableList;
             observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
             miniTbCreateOrder.setItems(observableList);
+            
     	}
     	
     }
@@ -1773,10 +1860,9 @@ public class LaCasaDoradaGUI implements Runnable{
         observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
         miniTbCreateOrder.setItems(observableList);
         
-    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String>("nameProduct"));
-    	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double>("quantity"));
+    	miniTcProduct.setCellValueFactory(new PropertyValueFactory<ProductQuantity, String[]>("nameProduct"));
+    	miniTcQuantity.setCellValueFactory(new PropertyValueFactory<ProductQuantity, Double[]>("quantity"));
        
-    	miniTcProduct.setCellFactory(TextFieldTableCell.forTableColumn());
     }
    
     public void selectMiniProduct(MouseEvent event) throws IOException {
@@ -2095,18 +2181,6 @@ public class LaCasaDoradaGUI implements Runnable{
 		minutes=calendar.get(Calendar.MINUTE)>9?""+calendar.get(Calendar.MINUTE):"0"+calendar.get(Calendar.MINUTE);
 		seconds=calendar.get(Calendar.SECOND)>9?""+calendar.get(Calendar.SECOND):"0"+calendar.get(Calendar.SECOND);*/
 	}
-
-	@Override
-	public void run() {
-		LocalTime hour = LocalTime.now();
-    	System.out.println(hour);
-		Thread current=Thread.currentThread();
-		while(current==show) {
-			
-			txtHourUpdate.setText(String.valueOf(hour.getHour())+String.valueOf(hour.getMinute())+String.valueOf(hour.getSecond()));
-		}
-	}
-    
 	
    
 }
