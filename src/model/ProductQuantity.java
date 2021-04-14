@@ -1,6 +1,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class ProductQuantity implements Serializable{
 
@@ -11,14 +12,15 @@ public class ProductQuantity implements Serializable{
 	private RestaurantProduct pr;
 	private double price;
 	
-	public ProductQuantity(RestaurantProduct p, double quantity, RestaurantProduct pr) {
+	public ProductQuantity(String nameProduct, double quantity, RestaurantProduct pr) {
 		
-		nameProduct=p.getName();
+		this.nameProduct=nameProduct;
 		this.quantity=quantity;
 		price=pr.getPriceOfProduct();
 		
 	}
 
+	
 	public double getQuantity() {
 		return quantity;
 	}
@@ -26,7 +28,8 @@ public class ProductQuantity implements Serializable{
 	public void setQuantity(double quantity) {
 		this.quantity = quantity;
 	}
-
+	
+	
 	public String getNameProduct() {
 		return nameProduct;
 	}

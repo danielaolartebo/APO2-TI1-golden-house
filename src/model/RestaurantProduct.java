@@ -63,7 +63,7 @@ public class RestaurantProduct implements Serializable{
 	public String[] getIngredientsOfProductArray() {
 		return this.ingredientsOfProduct;
 	}
-
+	
 	
 	public void setIngredientsOfProduct(String[] ingredientsOfProduct) {
 		this.ingredientsOfProduct=ingredientsOfProduct;

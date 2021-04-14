@@ -6,14 +6,18 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class LaCasaDorada implements Serializable{
-
+	
+	
 	private static final long serialVersionUID = 1;
 
 	private static final String SEPARATE=",";
@@ -26,7 +30,7 @@ public class LaCasaDorada implements Serializable{
 	private List<Order> orders;
 	private List<Size> sizes;
 	private List<ProductQuantity> productQuantity;
-	private int numberList;
+ 	private int numberList;
 	private double priceTotal;
 
 	
@@ -69,12 +73,12 @@ public class LaCasaDorada implements Serializable{
 		sizes.add(new Size(sizeName));
 	}
 	
-	public void addOrder(ClientAccount client, RestaurantProduct product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double quantity, String observations, int number, double priceTotal) {
+	public void addOrder(ClientAccount client, String[] product, EmployeeAccount employee, String code, LocalDate date, LocalTime time, double[] quantity, String observations, int number, double priceTotal) {
 		orders.add(new Order(client, product, employee, code, date, time, quantity, observations, number, priceTotal));
 	}
 	
-	public void addProductQuantity(RestaurantProduct p, double quantity, RestaurantProduct pr) {
-		productQuantity.add(new ProductQuantity(p, quantity, pr));
+	public void addProductQuantity(String nameProduct, double quantity, RestaurantProduct pr) {
+		productQuantity.add(new ProductQuantity(nameProduct, quantity, pr));
 	}
 	
 	public List<ClientAccount> getClients(){
@@ -105,6 +109,7 @@ public class LaCasaDorada implements Serializable{
 		return productQuantity;
 	}
 	
+
 	public int getNumberList() {
 		return numberList;
 	}
@@ -131,13 +136,27 @@ public class LaCasaDorada implements Serializable{
 		return found;
 	}  */
 	
-	public boolean verifyRemoveIngredientInOrder(RestaurantIngredient ingredient) {
+	public boolean verifyRemoveIngredientInOrder(String ingredient) {
 		boolean found=false;
 		for(int i=0; i<products.size() && !found; i++) {
-			String [] arrayIngredients=products.get(i).getIngredientsOfProductArray();
-			for(int j=0; j<arrayIngredients.length && !found; j++) {
-				if (arrayIngredients[j].equals(ingredient.getIngredientName())) 
-					found=true;
+				String[] arrayIngredients=products.get(i).getIngredientsOfProductArray();
+				String toString = Arrays.toString(arrayIngredients);
+				System.out.println(toString);
+				System.out.println(ingredient);
+				for(int j=0; j<arrayIngredients.length && !found; j++) {
+				if (arrayIngredients[j].equals(ingredient)) { 
+					found=true;			
+				}
+			}
+		}
+		return found;
+	}
+	
+	public boolean verifyRemoveTypeInOrder(String type) {
+		boolean found=false;
+		for(int i=0; i<products.size() && !found; i++) {
+				if (products.get(i).getTypeOfProduct().equals(type)) { 
+					found=true;			
 			}
 		}
 		return found;
@@ -197,7 +216,16 @@ public class LaCasaDorada implements Serializable{
 		}
 		return validate;
 	}
-
+	
+	public boolean validateUser(String userName) {
+		boolean found=true;
+    	for(int i=0;i<employees.size() && found;i++) {
+    		if(userName.equals(employees.get(i).getUserName())) {
+    			found = false;
+    		}
+    	}
+    	return found;
+	}
 	public boolean validateEmployee(String userName, String password) {
 		boolean validate=false;
 		for(int i=0; i<employees.size() && !validate;i++) {
@@ -209,18 +237,20 @@ public class LaCasaDorada implements Serializable{
 		return validate;
 	}
 	
-
+	
 	public void importOrderData(String fileName) throws IOException {
-	/*	BufferedReader br = new BufferedReader(new FileReader(fileName));
-		String line = br.readLine();
+		/*BufferedReader or = new BufferedReader(new FileReader(fileName));
+		String line = or.readLine();
 		while(line!=null) {
 			String[] parts = line.split(",");
-			addEmployee(parts[0], parts[1], parts[2], parts[3], parts[4]);
+			String[] products = parts[1].split("-");
+			double[] quantity = ;
+			addOrder(parts[0], products, parts[2], parts[3], parts[4], parts[5], );
 			line = br.readLine();
 		}
 		br.close(); */
 	}
-
+	//client, product, employee, code, date, time, quantity, observations, number, priceTotal
 	public void importCustomerData(String fileName) throws IOException{
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = br.readLine();
@@ -328,23 +358,34 @@ public class LaCasaDorada implements Serializable{
 
 	
 	public void sortByIngredientName() {
-		
-	for(int i=0; i < ingredients.size();i++) {
-			int posMin = i;
-			for(int j=i+1; j< ingredients.size();j++) {
-				if(ingredients.get(j).getNameIngredient()>ingredients.get(posMin).getNameIngredient()) {
-					posMin = j;
+		boolean changed=true;
+	for(int i=1; i < ingredients.size() && changed;i++) {
+			changed = false;
+			for(int j=0; j< ingredients.size()-1;j++) {
+				if(ingredients.get(j).getIngredientName().compareToIgnoreCase(ingredients.get(j+1).getIngredientName())<0) {
+					RestaurantIngredient temp = ingredients.get(j);
+					ingredients.set(j,ingredients.get(j+1));
+					ingredients.set(j+1, temp);
+					changed = true;
 				}
 			}
-			RestaurantIngredient aux = ingredients.get(posMin);
-			ingredients.set(posMin, ingredients.get(i));
-			ingredients.set(i, aux);
-			
-
 		}
 	}
 
-
+	public void sortByLastNameClients() {
+		boolean changed=true;
+	for(int i=1; i < clients.size() && changed;i++) {
+			changed = false;
+			for(int j=0; j< clients.size()-1;j++) {
+				if(clients.get(j).getLastName().compareToIgnoreCase(clients.get(j+1).getLastName())<0) {
+					ClientAccount temp = clients.get(j);
+					clients.set(j,clients.get(j+1));
+					clients.set(j+1, temp);
+					changed = true;
+				}
+			}
+		}
+	}
 	public void sortByPrice() { 
 		for(int i=1; i<products.size();i++) {
 			int j=i-1;
@@ -368,7 +409,18 @@ public class LaCasaDorada implements Serializable{
 		Collections.sort(employees, emp);		
 	}
 
+	public String dateUpdate() {
+		
+		Date dateUpdate = new Date();
+		SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/YYYY");
+		return formatDate.format(dateUpdate);
+		
+		
+	}
 
-
+	
+	
+	
+	
 		
 }

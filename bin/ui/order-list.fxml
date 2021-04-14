@@ -26,15 +26,16 @@
             </Label>
             <TableView fx:id="tbOrderList" editable="true" layoutX="-2.0" layoutY="95.0" prefHeight="386.0" prefWidth="800.0" style="-fx-background-color: black;">
                <columns>
-                  <TableColumn fx:id="tcNumberOrder" prefWidth="62.0" text="Código" />
-                  <TableColumn fx:id="tcCustomerOrder" prefWidth="78.33333587646484" text="Cliente" />
-                  <TableColumn fx:id="tcProductsOrder" prefWidth="145.60000610351562" text="Productos/Cantidad" />
-                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="91.20001220703125" text="Empleado" />
-                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" text="Fecha" />
-                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="54.39996337890625" text="Hora" />
-                  <TableColumn fx:id="tcObservationsOrder" maxWidth="156.0" minWidth="0.0" prefWidth="114.4000244140625" text="Observaciones" />
-                  <TableColumn fx:id="txStatusOrder" prefWidth="83.20001220703125" text="Estado" />
-                  <TableColumn fx:id="txStatusOrder1" prefWidth="90.400146484375" text="Precio" />
+                  <TableColumn fx:id="tcNumberOrder" prefWidth="47.99996876716614" text="Código" />
+                  <TableColumn fx:id="tcCustomerOrder" prefWidth="72.79999160766602" text="Cliente" />
+                  <TableColumn fx:id="tcProductsOrder" prefWidth="86.4000244140625" text="Productos" />
+                  <TableColumn fx:id="tcQuantityOrder" prefWidth="57.59996032714844" text="Cantidad" />
+                  <TableColumn fx:id="tcEmployeeOrder" prefWidth="147.99993896484375" text="Empleado" />
+                  <TableColumn fx:id="tcDateOrder" minWidth="0.0" prefWidth="53.5999755859375" text="Fecha" />
+                  <TableColumn fx:id="txHourOrder" minWidth="0.0" prefWidth="60.800048828125" text="Hora" />
+                  <TableColumn fx:id="tcObservationsOrder" maxWidth="213.5999755859375" minWidth="0.0" prefWidth="101.5999755859375" text="Observaciones" />
+                  <TableColumn fx:id="txStatusOrder" prefWidth="81.5999755859375" text="Estado" />
+                  <TableColumn fx:id="txStatusOrder1" prefWidth="88.0" text="Precio" />
                </columns>
             </TableView>
             <Button layoutX="5.0" layoutY="517.0" mnemonicParsing="false" onAction="#sub4GoBack" prefHeight="28.0" prefWidth="76.0" text="Atrás">
