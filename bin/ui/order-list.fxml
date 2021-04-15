@@ -48,11 +48,6 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="114.0" layoutY="514.0" mnemonicParsing="false" onAction="#statusRequested" prefHeight="30.0" prefWidth="85.0" text="SOLICITADO">
-               <font>
-                  <Font name="System Bold Italic" size="10.0" />
-               </font>
-            </Button>
             <Button layoutX="210.0" layoutY="513.0" mnemonicParsing="false" onAction="#statusProcessed" prefHeight="30.0" prefWidth="85.0" text="EN PROGRESO">
                <font>
                   <Font name="System Bold Italic" size="10.0" />

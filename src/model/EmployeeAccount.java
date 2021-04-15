@@ -14,7 +14,9 @@ public class EmployeeAccount extends RestaurantMembers implements Serializable{
 		this.userName=userName;
 		this.password=password;
 		this.employeeStatus=MembersStatus.ACTIVA;
-
+	}
+	public EmployeeAccount(String firstName) {
+		super(firstName, null, null);
 	}
 
 	public MembersStatus getEmployeeStatus() {

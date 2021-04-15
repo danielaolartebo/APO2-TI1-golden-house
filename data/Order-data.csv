@@ -1,1001 +1,1000 @@
-numero,cliente,productos_cantidad,empleado,fecha,hora,observaciones,estado,precio
-1,Bliss,Fib N9 - Prague Powder,Addie,2/2/2021,10:56 PM,jcb,ACTIVA,$14649.51
-2,Leupold,Sugar - Splenda Sweetener,Cull,8/29/2020,6:19 AM,switch,ACTIVA,$13521.93
-3,Doro,Bread Base - Goodhearth,Doreen,4/13/2020,4:42 PM,americanexpress,ACTIVA,$7124.34
-4,Jaquith,Sole - Iqf,Bevan,4/12/2020,1:23 PM,solo,ACTIVA,$5488.47
-5,Basia,Grapefruit - Pink,Myrilla,10/26/2020,4:48 AM,jcb,ACTIVA,$16493.40
-6,Hallsy,Corn - Mini,Theodosia,1/17/2021,4:27 AM,diners-club-carte-blanche,ACTIVA,$6267.53
-7,Neale,Island Oasis - Peach Daiquiri,Amelina,5/25/2020,11:06 PM,jcb,ACTIVA,$17497.82
-8,Sophia,Orange Roughy 6/8 Oz,Pegeen,6/18/2020,9:23 AM,maestro,ACTIVA,$19587.13
-9,Aime,"Wine - Red, Marechal Foch",Beilul,3/31/2020,12:29 AM,mastercard,ACTIVA,$13371.40
-10,Seana,Kippers - Smoked,Dorelia,11/1/2020,2:11 AM,laser,ACTIVA,$6426.71
-11,Guenna,Bread - Focaccia Quarter,Dyanna,12/6/2020,11:33 AM,visa,ACTIVA,$10372.20
-12,Niko,Wine - Beaujolais Villages,Carlene,4/21/2020,11:01 PM,instapayment,ACTIVA,$6575.62
-13,Hercule,Ice Cream - Fudge Bars,Othilia,11/17/2020,9:23 PM,diners-club-enroute,ACTIVA,$16506.04
-14,Cletus,Crackers - Soda / Saltins,Penni,6/29/2020,1:06 AM,switch,ACTIVA,$18093.85
-15,Alisa,Pie Shells 10,Shandy,12/11/2020,2:16 PM,jcb,ACTIVA,$8519.25
-16,Damian,Beef - Montreal Smoked Brisket,Anatole,5/16/2020,8:13 PM,diners-club-carte-blanche,ACTIVA,$14666.60
-17,Kayla,Pork - Caul Fat,Nevile,11/26/2020,8:10 PM,jcb,ACTIVA,$8182.28
-18,Red,Bread - 10 Grain Parisian,Brittney,12/3/2020,7:26 AM,china-unionpay,ACTIVA,$5500.16
-19,Merrile,Wine - Champagne Brut Veuve,Bea,12/3/2020,1:05 AM,instapayment,ACTIVA,$14007.71
-20,Jammal,Cocoa Feuilletine,Westbrooke,6/9/2020,6:39 AM,laser,ACTIVA,$6182.06
-21,Danice,Flour - Cake,Alfie,7/13/2020,1:48 AM,visa,ACTIVA,$19129.26
-22,Sharlene,Flower - Carnations,Siegfried,7/16/2020,5:10 PM,diners-club-carte-blanche,ACTIVA,$19823.99
-23,Luz,Sausage - Blood Pudding,Paton,9/22/2020,4:22 AM,visa-electron,ACTIVA,$14151.30
-24,Wally,"Nut - Almond, Blanched, Whole",Adorne,6/29/2020,9:38 PM,diners-club-enroute,ACTIVA,$14155.08
-25,Michelina,Gooseberry,Zarah,12/12/2020,10:03 PM,visa-electron,ACTIVA,$16942.88
-26,Fey,"Chestnuts - Whole,canned",Marsh,10/24/2020,10:17 AM,jcb,ACTIVA,$11045.13
-27,Brooks,Bread Base - Toscano,Ignace,2/14/2021,7:33 PM,china-unionpay,ACTIVA,$13765.76
-28,Dionysus,Bacardi Raspberry,Janith,1/12/2021,8:30 PM,jcb,ACTIVA,$4827.66
-29,Cly,"Pasta - Lasagne, Fresh",Cointon,1/31/2021,2:18 PM,jcb,ACTIVA,$19208.91
-30,Tad,Wine - Clavet Saint Emilion,Madonna,10/10/2020,7:14 AM,jcb,ACTIVA,$13123.94
-31,Brnaba,Salmon Steak - Cohoe 8 Oz,Ellwood,2/16/2021,2:04 AM,mastercard,ACTIVA,$7127.60
-32,Shay,Cheese - Ricotta,Lisette,5/13/2020,12:21 AM,maestro,ACTIVA,$15002.57
-33,Celestyna,Cheese - Valancey,Helenelizabeth,4/24/2020,6:39 AM,diners-club-international,ACTIVA,$13332.86
-34,Ahmed,"Shrimp - Baby, Cold Water",Alta,8/25/2020,11:06 PM,diners-club-international,ACTIVA,$15496.82
-35,Lethia,Salmon Steak - Cohoe 6 Oz,Robinet,1/23/2021,11:00 PM,jcb,ACTIVA,$7491.44
-36,Dave,"Veal - Tenderloin, Untrimmed",Aeriel,9/4/2020,6:51 PM,maestro,ACTIVA,$18526.94
-37,Jenda,Wine - Two Oceans Sauvignon,Glad,5/6/2020,2:27 PM,diners-club-international,ACTIVA,$7459.63
-38,Melodee,Cheese - Pont Couvert,Jaquith,8/7/2020,5:04 PM,switch,ACTIVA,$9554.41
-39,Allys,Sherbet - Raspberry,Caroljean,8/27/2020,9:44 AM,jcb,ACTIVA,$15066.85
-40,Chanda,Russian Prince,Abraham,7/20/2020,3:41 PM,americanexpress,ACTIVA,$11500.82
-41,Aeriell,Transfer Sheets,Violetta,11/20/2020,2:00 AM,visa-electron,ACTIVA,$4432.23
-42,Jarvis,"Juice - Clamato, 341 Ml",Phaedra,7/24/2020,11:08 AM,china-unionpay,ACTIVA,$19609.79
-43,Gisela,Cassis,Aguste,9/27/2020,12:38 PM,jcb,ACTIVA,$16239.41
-44,Antonina,Dehydrated Kelp Kombo,Leif,1/2/2021,11:06 PM,mastercard,ACTIVA,$9080.92
-45,Scarlett,Flour - Rye,Willie,9/9/2020,7:16 AM,visa,ACTIVA,$19556.98
-46,Gertrude,"Water - Mineral, Carbonated",Lindy,7/15/2020,6:00 AM,diners-club-enroute,ACTIVA,$6212.71
-47,Conroy,Cheese - Colby,Mathias,11/21/2020,12:22 PM,diners-club-carte-blanche,ACTIVA,$12914.88
-48,Whitman,"Pork - Tenderloin, Fresh",Bay,12/3/2020,10:03 AM,maestro,ACTIVA,$12941.87
-49,Cristy,Parsley - Dried,Bevin,7/23/2020,4:09 AM,jcb,ACTIVA,$13086.46
-50,Teddie,Wine - Fat Bastard Merlot,Hortensia,12/16/2020,2:59 AM,jcb,ACTIVA,$10655.11
-51,Lammond,Appetizer - Cheese Bites,Arturo,6/19/2020,3:02 AM,jcb,ACTIVA,$10184.24
-52,Farrand,Crab - Meat,Dasha,7/15/2020,6:39 PM,jcb,ACTIVA,$13057.86
-53,Jilli,Sugar - Icing,Jerrilee,9/19/2020,7:37 AM,jcb,ACTIVA,$13885.41
-54,Monica,"Pasta - Lasagna, Dry",Eden,7/21/2020,11:55 AM,jcb,ACTIVA,$13521.17
-55,Nil,Scallop - St. Jaques,Fiorenze,12/8/2020,8:47 PM,switch,ACTIVA,$16662.91
-56,Kylila,"Veal - Round, Eye Of",Torin,1/22/2021,6:24 PM,jcb,ACTIVA,$19566.26
-57,Felicio,Island Oasis - Magarita Mix,Ingram,3/22/2021,5:21 AM,jcb,ACTIVA,$9172.24
-58,Cynthia,Cookies - Amaretto,Corrie,1/23/2021,7:17 AM,diners-club-enroute,ACTIVA,$4309.54
-59,Fiann,Carbonated Water - Blackcherry,David,2/6/2021,12:28 AM,jcb,ACTIVA,$15216.42
-60,Odette,"Nut - Pistachio, Shelled",Simone,6/4/2020,3:45 PM,americanexpress,ACTIVA,$5161.12
-61,Margo,Lobster - Tail 6 Oz,Carrissa,6/16/2020,9:04 AM,jcb,ACTIVA,$10103.97
-62,Mackenzie,Mushroom - King Eryingii,Gregor,1/27/2021,6:47 AM,laser,ACTIVA,$19879.31
-63,Harrison,Oysters - Smoked,Sayers,12/4/2020,9:56 PM,jcb,ACTIVA,$8552.69
-64,Yul,Salt And Pepper Mix - Black,Daren,12/5/2020,12:45 PM,visa-electron,ACTIVA,$16716.62
-65,Jessie,Munchies Honey Sweet Trail Mix,Iosep,6/19/2020,9:36 PM,bankcard,ACTIVA,$18315.66
-66,Isabeau,Bread - Corn Muffaletta,Madelene,12/25/2020,8:46 AM,americanexpress,ACTIVA,$12466.38
-67,Casper,Bols Melon Liqueur,Ced,6/30/2020,9:03 PM,mastercard,ACTIVA,$16011.08
-68,Mabelle,"Rum - Spiced, Captain Morgan",Blanch,1/24/2021,4:05 AM,mastercard,ACTIVA,$13027.31
-69,Ardra,Cod - Black Whole Fillet,Christoper,2/3/2021,4:41 PM,visa,ACTIVA,$9594.99
-70,Karina,Bread - Sour Batard,Holly,12/5/2020,2:36 AM,jcb,ACTIVA,$11016.20
-71,Ulrika,Napkin Colour,Tamar,10/20/2020,6:02 AM,jcb,ACTIVA,$14419.86
-72,Tessi,"Juice - Clam, 46 Oz",Andra,5/25/2020,5:33 AM,maestro,ACTIVA,$8471.00
-73,Benedict,Compound - Strawberry,Melina,6/4/2020,8:14 PM,jcb,ACTIVA,$4135.39
-74,Germain,Pomegranates,Brigid,7/5/2020,9:23 AM,jcb,ACTIVA,$13929.85
-75,Aguste,Pate Pans Yellow,Ennis,10/26/2020,3:43 PM,switch,ACTIVA,$18612.55
-76,Zena,Muffin - Mix - Creme Brule 15l,Clarinda,12/5/2020,3:01 PM,jcb,ACTIVA,$17650.43
-77,Cissy,"Nut - Pine Nuts, Whole",Danna,3/27/2020,1:30 AM,china-unionpay,ACTIVA,$11018.11
-78,Kate,Bag Clear 10 Lb,Ham,8/17/2020,9:53 AM,mastercard,ACTIVA,$11557.93
-79,Luigi,Puree - Mango,Kennie,12/14/2020,2:26 AM,laser,ACTIVA,$9420.85
-80,Tove,Curry Powder,Elias,4/14/2020,5:52 PM,jcb,ACTIVA,$7669.86
-81,Artemus,"Lemonade - Mandarin, 591 Ml",Hildegaard,1/12/2021,4:57 AM,jcb,ACTIVA,$8430.73
-82,Carlie,Lettuce - Lambs Mash,Elwira,5/25/2020,3:55 AM,jcb,ACTIVA,$17640.62
-83,Hermon,Trueblue - Blueberry Cranberry,Mavis,9/4/2020,7:36 PM,jcb,ACTIVA,$6936.22
-84,Kaycee,Soupcontfoam16oz 116con,Rriocard,1/23/2021,4:52 PM,jcb,ACTIVA,$11967.06
-85,Alix,Cheese - Gouda,Antonio,7/17/2020,1:58 AM,bankcard,ACTIVA,$19944.13
-86,Rodolphe,Anisette - Mcguiness,Ruthann,11/6/2020,3:17 AM,jcb,ACTIVA,$16021.44
-87,Eolanda,Ham - Proscuitto,Billy,7/18/2020,1:41 PM,mastercard,ACTIVA,$12238.74
-88,Clarita,"Tart Shells - Sweet, 4",Corabelle,8/30/2020,8:35 AM,jcb,ACTIVA,$7098.38
-89,Katerina,Lid - 3oz Med Rec,Merissa,4/14/2020,1:37 PM,laser,ACTIVA,$7989.79
-90,Auberta,Juice - Orange 1.89l,Domeniga,11/30/2020,2:38 AM,jcb,ACTIVA,$11156.37
-91,Marchelle,Curry Paste - Madras,Kelcie,7/13/2020,11:10 AM,bankcard,ACTIVA,$16278.96
-92,Deva,"Tabasco Sauce, 2 Oz",Tiffy,6/8/2020,11:23 PM,jcb,ACTIVA,$13278.02
-93,Alecia,Tart - Pecan Butter Squares,Simonette,6/9/2020,3:47 PM,bankcard,ACTIVA,$16777.68
-94,Andra,"Flour - Corn, Fine",Kala,6/23/2020,9:42 AM,diners-club-us-ca,ACTIVA,$10386.85
-95,Clyve,"Chocolate - Pistoles, Lactee, Milk",Helaina,3/1/2021,1:40 AM,jcb,ACTIVA,$13954.40
-96,Nada,Cheese - Mozzarella,Mathias,3/22/2021,3:40 AM,switch,ACTIVA,$8544.90
-97,Ichabod,Bagel - Ched Chs Presliced,Sandi,6/5/2020,4:33 PM,jcb,ACTIVA,$7485.06
-98,Nelle,Maple Syrup,Claretta,2/6/2021,12:16 PM,switch,ACTIVA,$4001.15
-99,Rena,Mushroom - Portebello,Katee,2/27/2021,11:26 PM,jcb,ACTIVA,$4936.52
-100,Rowena,Truffle - Whole Black Peeled,Erik,6/30/2020,7:26 PM,switch,ACTIVA,$9106.13
-101,Leslie,Oil - Olive,Caria,5/1/2020,11:39 AM,jcb,ACTIVA,$4934.33
-102,Frans,Oil - Peanut,Eada,11/13/2020,8:09 AM,instapayment,ACTIVA,$15768.76
-103,Marlo,Gherkin,Meagan,4/17/2020,11:03 AM,jcb,ACTIVA,$19892.96
-104,Ada,Kiwi,Mary,7/2/2020,3:53 PM,mastercard,ACTIVA,$4698.39
-105,Row,"Fish - Scallops, Cold Smoked",Mark,6/27/2020,7:46 AM,switch,ACTIVA,$10854.38
-106,Farr,Cheese - Montery Jack,Arri,3/21/2021,9:24 AM,visa-electron,ACTIVA,$4954.91
-107,Iolanthe,Wine - Sauvignon Blanc Oyster,Yoko,4/17/2020,4:43 PM,mastercard,ACTIVA,$11610.28
-108,Harold,Flounder - Fresh,Rafaela,12/11/2020,12:29 PM,laser,ACTIVA,$14520.12
-109,Rod,Grand Marnier,Read,12/13/2020,3:30 PM,switch,ACTIVA,$13923.89
-110,Olivette,"Bread - Sticks, Thin, Plain",Franciskus,10/20/2020,11:46 AM,switch,ACTIVA,$11263.00
-111,Ivy,Compound - Mocha,Solly,8/23/2020,9:29 PM,jcb,ACTIVA,$16550.98
-112,Pansy,Sterno - Chafing Dish Fuel,Garey,12/10/2020,3:20 PM,jcb,ACTIVA,$18959.60
-113,Dierdre,Potatoes - Peeled,Maridel,8/28/2020,6:19 PM,diners-club-us-ca,ACTIVA,$15342.24
-114,Zeke,Fib N9 - Prague Powder,Louis,4/27/2020,5:50 AM,diners-club-us-ca,ACTIVA,$9144.59
-115,Berk,Paper Towel Touchless,Hobart,1/12/2021,3:24 PM,jcb,ACTIVA,$9028.01
-116,Udall,Liquid Aminios Acid - Braggs,Remington,8/18/2020,9:02 PM,diners-club-enroute,ACTIVA,$6658.69
-117,Thorndike,"Dill - Primerba, Paste",Cordy,6/3/2020,8:53 AM,china-unionpay,ACTIVA,$8223.79
-118,Clarie,Wooden Mop Handle,Boyd,2/10/2021,10:25 AM,mastercard,ACTIVA,$5272.82
-119,Nancie,Veal - Slab Bacon,Jackie,4/5/2020,3:23 PM,americanexpress,ACTIVA,$5410.08
-120,Maurizia,Cheese - Taleggio D.o.p.,Barnard,7/18/2020,8:17 AM,mastercard,ACTIVA,$10443.07
-121,Celisse,Melon - Cantaloupe,Gerrilee,5/16/2020,12:41 AM,bankcard,ACTIVA,$7899.32
-122,Liza,Plate Pie Foil,Tedda,5/24/2020,6:44 AM,mastercard,ACTIVA,$4180.57
-123,Hubert,Isomalt,Fidela,12/27/2020,12:24 PM,americanexpress,ACTIVA,$15635.63
-124,Jasmine,"Oil - Shortening,liqud, Fry",Alano,3/19/2021,10:05 PM,bankcard,ACTIVA,$10368.91
-125,Robby,Lamb Tenderloin Nz Fr,Dougie,4/20/2020,4:07 PM,instapayment,ACTIVA,$16694.54
-126,Mozelle,Pear - Asian,Else,7/9/2020,11:31 AM,laser,ACTIVA,$9829.54
-127,Carolee,Schnappes Peppermint - Walker,Ira,9/15/2020,2:03 AM,jcb,ACTIVA,$18763.54
-128,Candice,"Wine - White, Riesling, Henry Of",Bailey,10/23/2020,5:58 AM,bankcard,ACTIVA,$18991.81
-129,Norry,Tofu - Firm,Gaultiero,3/4/2021,11:16 PM,mastercard,ACTIVA,$18345.40
-130,Gage,Bread - Sour Batard,Barrett,12/12/2020,5:02 AM,diners-club-enroute,ACTIVA,$17603.29
-131,Chiquita,Lobster - Tail 6 Oz,Roselin,1/28/2021,5:12 PM,diners-club-us-ca,ACTIVA,$8638.97
-132,Geneva,"Chicken - Diced, Cooked",Kori,5/14/2020,2:24 AM,jcb,ACTIVA,$13513.78
-133,Merna,Olive - Spread Tapenade,Virgie,9/19/2020,6:54 AM,americanexpress,ACTIVA,$18499.02
-134,Blake,Glaze - Apricot,Florida,9/1/2020,7:11 PM,jcb,ACTIVA,$19365.14
-135,Udale,Bacardi Breezer - Tropical,Monica,6/19/2020,1:45 AM,jcb,ACTIVA,$19021.86
-136,Abdel,Wonton Wrappers,Daffie,3/5/2021,5:21 PM,jcb,ACTIVA,$8534.82
-137,Phillipe,V8 Pet,Sebastian,1/17/2021,4:40 PM,jcb,ACTIVA,$14025.90
-138,Hogan,Milk - Chocolate 500ml,Bryon,10/20/2020,10:44 PM,mastercard,ACTIVA,$7017.98
-139,Lucais,Cornflakes,Dianne,10/22/2020,2:35 AM,jcb,ACTIVA,$6732.69
-140,Darbie,Towel Multifold,Carolan,3/23/2021,3:17 AM,diners-club-carte-blanche,ACTIVA,$18058.56
-141,Silas,Piping Jelly - All Colours,Arnoldo,12/20/2020,3:07 PM,switch,ACTIVA,$11427.65
-142,Stephanie,Clams - Bay,Tersina,5/21/2020,9:22 AM,jcb,ACTIVA,$5480.45
-143,Maurice,Cookie - Oatmeal,Ulysses,10/16/2020,2:34 AM,jcb,ACTIVA,$11876.86
-144,Bogey,Soup - Campbells Chili,Adler,3/11/2021,6:46 AM,jcb,ACTIVA,$8158.59
-145,Heloise,Extract - Lemon,Aurilia,4/24/2020,1:51 AM,diners-club-carte-blanche,ACTIVA,$9523.97
-146,Madeline,"Pasta - Lasagna Noodle, Frozen",Ruttger,3/1/2021,4:57 AM,jcb,ACTIVA,$12107.91
-147,Thane,Pepper - Red Bell,Louisette,6/18/2020,10:00 AM,mastercard,ACTIVA,$4082.45
-148,Torrance,Lumpfish Black,Desmund,9/10/2020,3:53 PM,visa-electron,ACTIVA,$4056.45
-149,Neilla,Soup Campbells Beef With Veg,Sheelagh,10/20/2020,2:37 AM,visa,ACTIVA,$19247.69
-150,Amaleta,Cattail Hearts,Rozalin,6/9/2020,9:35 PM,jcb,ACTIVA,$7514.17
-151,Olga,"Coffee - Beans, Whole",Adolf,9/6/2020,6:00 PM,jcb,ACTIVA,$5000.94
-152,Dulsea,"Appetizer - Mini Egg Roll, Shrimp",Brendon,4/16/2020,3:09 PM,china-unionpay,ACTIVA,$14618.28
-153,Winnah,Mushrooms - Honey,Samantha,7/28/2020,2:41 AM,jcb,ACTIVA,$18046.73
-154,Aubrey,Apple - Fuji,Archambault,8/29/2020,3:52 PM,jcb,ACTIVA,$13352.08
-155,Dunn,Bay Leaf Fresh,Welch,9/29/2020,3:20 AM,jcb,ACTIVA,$19161.44
-156,Leonhard,Trout - Smoked,Devland,2/11/2021,1:05 AM,mastercard,ACTIVA,$11950.68
-157,Moyra,Eggplant - Asian,Cookie,2/20/2021,11:44 AM,laser,ACTIVA,$16685.75
-158,Georgy,Sage Ground Wiberg,Janet,7/28/2020,1:42 PM,diners-club-enroute,ACTIVA,$12229.64
-159,Florella,Flour - Semolina,Lars,2/24/2021,6:28 AM,diners-club-enroute,ACTIVA,$18932.37
-160,Norma,Potatoes - Parissienne,Killian,7/19/2020,7:33 PM,mastercard,ACTIVA,$10814.56
-161,Twila,Bread - Flat Bread,Judy,1/7/2021,9:07 AM,jcb,ACTIVA,$9373.56
-162,Wally,"Soup - Campbells, Cream Of",Ignatius,2/6/2021,6:42 AM,visa-electron,ACTIVA,$18553.87
-163,Brett,Table Cloth 62x114 White,Florella,1/3/2021,1:09 PM,americanexpress,ACTIVA,$4613.96
-164,Billie,"Wine - White, Cooking",Avram,10/31/2020,6:09 PM,jcb,ACTIVA,$18456.71
-165,Neysa,Ecolab Crystal Fusion,Monah,1/27/2021,12:44 AM,visa-electron,ACTIVA,$19862.09
-166,Rosalie,Bonito Flakes - Toku Katsuo,Keeley,2/16/2021,11:25 AM,diners-club-enroute,ACTIVA,$18228.26
-167,Kerry,Blouse / Shirt / Sweater,Devondra,2/7/2021,5:53 PM,maestro,ACTIVA,$11231.67
-168,Tabb,"Nut - Pine Nuts, Whole",Zorana,2/4/2021,11:55 AM,mastercard,ACTIVA,$9025.63
-169,Elnar,Vegetable - Base,Thea,6/30/2020,6:06 AM,visa-electron,ACTIVA,$4436.60
-170,Byrle,"Cod - Salted, Boneless",Darby,1/2/2021,9:59 PM,jcb,ACTIVA,$10114.36
-171,Sibeal,Mints - Striped Red,Allx,11/10/2020,10:08 PM,americanexpress,ACTIVA,$9766.65
-172,Margarette,Crab Brie In Phyllo,Raynor,8/11/2020,10:03 AM,switch,ACTIVA,$17585.33
-173,Ashia,Pork - Ham Hocks - Smoked,Fernando,5/4/2020,7:32 AM,mastercard,ACTIVA,$16665.73
-174,Desiree,"Bread - Roll, Calabrese",Fern,9/8/2020,3:15 PM,mastercard,ACTIVA,$16143.48
-175,Saunderson,Table Cloth 54x54 White,Lorrie,6/13/2020,11:30 AM,switch,ACTIVA,$11081.48
-176,Deane,Beer - Paulaner Hefeweisse,Blondy,9/26/2020,6:13 AM,visa,ACTIVA,$18839.45
-177,Jami,Wine - Manischewitz Concord,Talya,8/19/2020,3:15 PM,switch,ACTIVA,$11156.36
-178,Bruce,Silicone Paper 16.5x24,Zena,7/27/2020,11:31 PM,instapayment,ACTIVA,$13917.72
-179,Marice,Tray - 12in Rnd Blk,Janelle,10/16/2020,6:03 PM,jcb,ACTIVA,$11044.70
-180,Max,Instant Coffee,Ellie,12/20/2020,9:48 PM,bankcard,ACTIVA,$18760.31
-181,Peyter,Bread Ww Cluster,Roanna,2/28/2021,7:05 AM,jcb,ACTIVA,$10598.81
-182,Ellwood,"Yogurt - Blueberry, 175 Gr",Tuesday,4/24/2020,3:13 PM,diners-club-carte-blanche,ACTIVA,$16628.29
-183,Dawna,Beer - Blue,Sonja,2/14/2021,11:15 PM,diners-club-us-ca,ACTIVA,$8679.16
-184,Nils,Puree - Pear,Uta,9/23/2020,10:03 PM,bankcard,ACTIVA,$14477.34
-185,Cele,"Lid - High Heat, Super Clear",Man,4/12/2020,7:39 PM,china-unionpay,ACTIVA,$10325.47
-186,Kitti,Muffin Mix - Morning Glory,Annadiana,10/10/2020,4:33 PM,jcb,ACTIVA,$14104.84
-187,Jena,Lettuce - Belgian Endive,Gaspar,6/14/2020,7:31 PM,mastercard,ACTIVA,$19087.96
-188,Werner,Soup Campbells Beef With Veg,Carly,2/18/2021,5:07 PM,china-unionpay,ACTIVA,$12983.21
-189,Lizette,Mix - Cocktail Ice Cream,Gwenneth,6/13/2020,7:38 PM,mastercard,ACTIVA,$14476.29
-190,Theo,"Chocolate - Pistoles, Lactee, Milk",Godfrey,5/13/2020,1:54 AM,jcb,ACTIVA,$4065.26
-191,Maurise,Island Oasis - Pina Colada,Neille,1/24/2021,12:31 PM,jcb,ACTIVA,$19486.68
-192,Cristabel,The Pop Shoppe - Cream Soda,Verney,11/28/2020,9:39 AM,china-unionpay,ACTIVA,$19720.07
-193,Godfree,"Brandy - Orange, Mc Guiness",Augustus,7/12/2020,8:41 PM,diners-club-carte-blanche,ACTIVA,$16158.94
-194,Torrie,Lime Cordial - Roses,Mamie,1/4/2021,12:24 AM,switch,ACTIVA,$19601.88
-195,Kris,Milk - Condensed,Emery,5/5/2020,7:14 AM,americanexpress,ACTIVA,$11646.83
-196,Ulrike,Chocolate - Dark,Bernadette,10/7/2020,11:24 AM,maestro,ACTIVA,$6880.90
-197,Joshuah,Appetizer - Smoked Salmon / Dill,Kordula,8/7/2020,1:37 PM,maestro,ACTIVA,$14586.76
-198,Yance,Wine - Casillero Del Diablo,Alica,5/9/2020,12:15 PM,jcb,ACTIVA,$13946.02
-199,Lodovico,Yoplait Drink,Amalle,5/25/2020,12:43 PM,jcb,ACTIVA,$6821.60
-200,Rivalee,Ecolab - Balanced Fusion,Glyn,1/16/2021,4:46 PM,americanexpress,ACTIVA,$9570.78
-201,Berkly,Cheese - Oka,Ban,11/3/2020,4:52 PM,switch,ACTIVA,$10736.88
-202,Thorny,Ice Cream - Turtles Stick Bar,Brodie,1/24/2021,1:22 AM,jcb,ACTIVA,$11710.47
-203,Dode,Appetizer - Chicken Satay,Adorne,10/28/2020,1:01 AM,jcb,ACTIVA,$5339.85
-204,Jemmy,"Wine - White, Gewurtzraminer",Marcelle,4/26/2020,9:13 PM,china-unionpay,ACTIVA,$6191.49
-205,Alisander,Mayonnaise,Tiena,6/29/2020,3:32 AM,jcb,ACTIVA,$15925.08
-206,Irene,"Split Peas - Yellow, Dry",Barbi,9/13/2020,9:23 AM,visa-electron,ACTIVA,$5557.47
-207,Garfield,Island Oasis - Peach Daiquiri,Lexis,2/6/2021,2:31 PM,diners-club-carte-blanche,ACTIVA,$10257.87
-208,Garreth,Remy Red Berry Infusion,Diena,7/15/2020,4:59 PM,switch,ACTIVA,$6551.32
-209,Karleen,Bagel - 12 Grain Preslice,Kinsley,9/23/2020,12:30 AM,mastercard,ACTIVA,$18505.68
-210,Lolita,"Yogurt - Cherry, 175 Gr",Diandra,1/31/2021,8:34 PM,maestro,ACTIVA,$11298.97
-211,Sherlocke,Cucumber - Pickling Ontario,Tobias,4/7/2020,4:18 PM,maestro,ACTIVA,$11849.41
-212,Kalinda,Chips Potato Salt Vinegar 43g,Gwenny,10/8/2020,10:48 AM,maestro,ACTIVA,$6150.08
-213,Hoyt,Arrowroot,Robby,1/20/2021,9:01 PM,jcb,ACTIVA,$9303.73
-214,Jermayne,Tuna - Sushi Grade,Basile,12/6/2020,2:46 AM,jcb,ACTIVA,$16023.45
-215,Barrett,Table Cloth 72x144 White,Kathi,11/29/2020,11:48 PM,jcb,ACTIVA,$12752.59
-216,Liz,Jerusalem Artichoke,Dallon,11/21/2020,9:12 PM,jcb,ACTIVA,$12910.36
-217,Samara,Bag - Regular Kraft 20 Lb,Anallese,9/12/2020,9:59 AM,diners-club-carte-blanche,ACTIVA,$11380.60
-218,Oriana,Ham Black Forest,Dallas,8/17/2020,2:39 PM,visa,ACTIVA,$10643.99
-219,Horten,Longos - Grilled Veg Sandwiches,Jeramie,7/1/2020,3:56 PM,china-unionpay,ACTIVA,$19106.78
-220,Mayne,Puree - Blackcurrant,Elfrieda,10/17/2020,9:47 PM,bankcard,ACTIVA,$4383.74
-221,Bord,Halibut - Steaks,Ella,4/13/2020,10:01 AM,switch,ACTIVA,$6906.24
-222,Giana,"Beef - Ground, Extra Lean, Fresh",Elinor,1/3/2021,1:43 PM,mastercard,ACTIVA,$12712.34
-223,Miles,Browning Caramel Glace,Frayda,8/19/2020,12:44 PM,jcb,ACTIVA,$10455.56
-224,Hilly,Squid - U - 10 Thailand,Nikolaos,1/5/2021,12:27 PM,mastercard,ACTIVA,$11823.86
-225,Bobbette,Veal - Striploin,Obie,3/11/2021,9:33 PM,jcb,ACTIVA,$7028.59
-226,Andres,Puff Pastry - Sheets,Myrta,7/21/2020,8:31 AM,jcb,ACTIVA,$18966.50
-227,Ajay,Soap - Pine Sol Floor Cleaner,Kriste,10/30/2020,9:58 PM,jcb,ACTIVA,$19531.01
-228,Kenny,Cheese - Sheep Milk,Sybilla,7/14/2020,7:20 AM,mastercard,ACTIVA,$8753.27
-229,Ruthe,Wine - Segura Viudas Aria Brut,Tobie,4/24/2020,7:08 AM,jcb,ACTIVA,$19979.85
-230,Douglas,Jameson - Irish Whiskey,Donnajean,4/7/2020,12:48 PM,maestro,ACTIVA,$4745.32
-231,Eirena,Wine - Rosso Del Veronese Igt,Lion,1/25/2021,7:45 AM,visa-electron,ACTIVA,$11231.50
-232,Nicolina,Wanton Wrap,Wilmar,1/8/2021,9:10 PM,china-unionpay,ACTIVA,$11441.46
-233,Hobey,Tart - Raisin And Pecan,Vassili,11/13/2020,7:36 PM,jcb,ACTIVA,$10852.11
-234,Nike,Brandy Cherry - Mcguinness,Melodie,1/9/2021,8:03 AM,diners-club-carte-blanche,ACTIVA,$18995.69
-235,Blinni,Wheat - Soft Kernal Of Wheat,Prescott,12/5/2020,8:42 PM,jcb,ACTIVA,$11209.34
-236,Brannon,Zucchini - Yellow,Charlean,2/9/2021,5:10 PM,visa-electron,ACTIVA,$14463.93
-237,Bendicty,Sloe Gin - Mcguinness,Jasmin,11/8/2020,7:15 PM,mastercard,ACTIVA,$14520.86
-238,Austina,"Pepper - Paprika, Spanish",Viviyan,11/23/2020,4:41 PM,visa,ACTIVA,$18905.67
-239,Adria,Oysters - Smoked,Marshall,11/5/2020,1:14 AM,americanexpress,ACTIVA,$16174.83
-240,Natasha,Ice Cream - Strawberry,Pascal,6/17/2020,1:24 PM,mastercard,ACTIVA,$11873.11
-241,Leontine,Cookies - Assorted,Brier,4/6/2020,7:58 PM,maestro,ACTIVA,$14661.13
-242,Byrle,Instant Coffee,Chadd,11/3/2020,3:33 PM,mastercard,ACTIVA,$4084.75
-243,Sydney,Pie Filling - Apple,Hartley,6/19/2020,7:58 PM,diners-club-enroute,ACTIVA,$15720.29
-244,Friedrich,"Wine - Red, Concha Y Toro",Madelaine,6/18/2020,11:56 PM,americanexpress,ACTIVA,$19381.96
-245,Lurleen,Wine - Vidal Icewine Magnotta,Lauren,12/19/2020,11:40 AM,diners-club-enroute,ACTIVA,$9628.71
-246,Emma,"Tarragon - Primerba, Paste",Reggis,4/24/2020,6:05 AM,instapayment,ACTIVA,$18830.33
-247,Channa,"Veal - Leg, Provimi - 50 Lb Max",Glynn,7/23/2020,7:10 PM,jcb,ACTIVA,$7749.73
-248,Star,"Wine - Red, Concha Y Toro",Krishnah,9/15/2020,11:02 PM,solo,ACTIVA,$6656.70
-249,Michaeline,"Bag - Bread, White, Plain",Brig,7/7/2020,7:52 AM,jcb,ACTIVA,$14190.81
-250,Alexei,Maple Syrup,Regina,4/26/2020,5:54 PM,visa,ACTIVA,$19642.31
-251,Parke,Wine - Blue Nun Qualitatswein,Dorena,5/6/2020,4:18 AM,jcb,ACTIVA,$17476.18
-252,Crystal,Chutney Sauce - Mango,Shelley,5/22/2020,4:15 PM,visa-electron,ACTIVA,$17433.97
-253,Goddart,Puree - Mango,Jerad,9/11/2020,8:48 AM,americanexpress,ACTIVA,$13623.16
-254,Nealon,Cheese - Stilton,Rosanna,12/6/2020,5:41 PM,visa-electron,ACTIVA,$16766.18
-255,Gianni,Container - Clear 32 Oz,Liza,6/27/2020,2:32 AM,maestro,ACTIVA,$4581.20
-256,Vlad,Spice - Pepper Portions,Kellie,7/10/2020,4:29 AM,jcb,ACTIVA,$10371.16
-257,Rosetta,Fond - Neutral,Danny,4/25/2020,11:45 AM,jcb,ACTIVA,$13032.25
-258,Hercule,Tea - English Breakfast,Pip,11/23/2020,4:55 AM,diners-club-enroute,ACTIVA,$18795.21
-259,Lenna,"Pepper - White, Whole",Cinnamon,4/12/2020,10:37 AM,switch,ACTIVA,$11118.51
-260,Sara,Miso Paste White,Gianina,7/8/2020,2:35 AM,jcb,ACTIVA,$5747.45
-261,Blair,Tomatoes Tear Drop,Francesca,9/21/2020,1:35 AM,mastercard,ACTIVA,$19794.37
-262,Brandice,Bread - Hamburger Buns,Leah,2/15/2021,11:03 PM,diners-club-us-ca,ACTIVA,$15661.55
-263,Perla,Onions - Spanish,Cynthie,12/27/2020,11:36 AM,jcb,ACTIVA,$16465.87
-264,Gussy,Chinese Foods - Thick Noodles,Harry,8/14/2020,12:34 AM,switch,ACTIVA,$7114.53
-265,Nelli,Oxtail - Cut,Sylas,2/5/2021,5:10 AM,jcb,ACTIVA,$4823.13
-266,Conan,Pear - Asian,Lucky,12/31/2020,8:30 PM,jcb,ACTIVA,$10167.03
-267,Liva,Wine - Stoneliegh Sauvignon,Daisi,3/31/2020,8:37 PM,jcb,ACTIVA,$10096.42
-268,Rosella,The Pop Shoppe - Grape,Melany,6/2/2020,11:55 PM,jcb,ACTIVA,$11123.66
-269,Sophey,Canadian Emmenthal,Carmine,4/18/2020,12:52 AM,jcb,ACTIVA,$7953.29
-270,Goldarina,Cut Wakame - Hanawakaba,Moishe,8/24/2020,4:58 PM,jcb,ACTIVA,$7301.80
-271,Hazel,Apricots Fresh,Tedda,2/15/2021,12:11 AM,americanexpress,ACTIVA,$6372.87
-272,Cord,Mangostein,Gae,7/3/2020,7:01 AM,visa-electron,ACTIVA,$10654.11
-273,Pennie,"Wine - White, Chardonnay",Emmalynne,7/15/2020,6:15 AM,visa-electron,ACTIVA,$13507.80
-274,Liliane,Wine - Conde De Valdemar,Cobbie,9/12/2020,1:48 AM,jcb,ACTIVA,$7444.51
-275,Gaelan,Breakfast Quesadillas,Cate,9/17/2020,11:27 PM,switch,ACTIVA,$15317.50
-276,Ula,Cheese - Grie Des Champ,Den,11/4/2020,6:25 PM,jcb,ACTIVA,$4326.24
-277,Consolata,"Apple - Delicious, Red",Maxy,5/10/2020,10:21 PM,bankcard,ACTIVA,$7197.31
-278,Skylar,Ecolab - Hobart Washarm End Cap,Lorilyn,1/9/2021,10:26 PM,jcb,ACTIVA,$7080.78
-279,Pascale,Crackers Cheez It,Jerome,8/4/2020,11:11 AM,jcb,ACTIVA,$4345.67
-280,Branden,Mayonnaise - Individual Pkg,Nadya,10/3/2020,3:32 PM,jcb,ACTIVA,$11977.58
-281,Terra,"Tuna - Canned, Flaked, Light",Winnie,9/10/2020,8:18 AM,jcb,ACTIVA,$15526.54
-282,Miof mela,Russian Prince,Curt,2/5/2021,12:51 AM,diners-club-us-ca,ACTIVA,$13612.60
-283,Rosemonde,Beans - Kidney White,William,7/3/2020,2:18 PM,americanexpress,ACTIVA,$18820.10
-284,Desiri,Soho Lychee Liqueur,Janela,3/7/2021,6:12 AM,bankcard,ACTIVA,$4030.01
-285,Marysa,Fondant - Icing,Pansy,3/8/2021,3:28 PM,jcb,ACTIVA,$15337.93
-286,Peyter,"Turkey - Breast, Boneless Sk On",Bertine,4/21/2020,7:15 PM,bankcard,ACTIVA,$18001.89
-287,Lorelei,"Cookies - Oreo, 4 Pack",Ignazio,11/2/2020,1:26 PM,jcb,ACTIVA,$10237.03
-288,Garrett,Beer - True North Lager,Morty,7/11/2020,6:11 PM,switch,ACTIVA,$11243.45
-289,Bianka,Rice Paper,Antonietta,10/3/2020,5:32 AM,americanexpress,ACTIVA,$12227.93
-290,Nicolina,"Cup - 3.5oz, Foam",Carley,11/18/2020,5:25 AM,jcb,ACTIVA,$11693.54
-291,Brita,Cornish Hen,Angelle,6/22/2020,11:45 AM,visa,ACTIVA,$6665.06
-292,Broderick,Broom Handle,Monica,8/7/2020,11:17 AM,jcb,ACTIVA,$4692.37
-293,Elset,Nantucket - Pomegranate Pear,Rafaelita,1/4/2021,5:51 PM,jcb,ACTIVA,$4600.45
-294,Concettina,Cheese - Valancey,Brice,8/5/2020,12:46 PM,visa,ACTIVA,$17428.96
-295,Vilhelmina,Petit Baguette,Lorraine,3/17/2021,7:59 AM,mastercard,ACTIVA,$6573.15
-296,Shirlene,Bread Crumbs - Japanese Style,Lyndel,11/15/2020,5:49 AM,jcb,ACTIVA,$9745.39
-297,Gerta,Sprite - 355 Ml,Raoul,12/28/2020,1:54 PM,jcb,ACTIVA,$10051.30
-298,Gwenora,Wine - Piper Heidsieck Brut,Cecilia,8/28/2020,10:58 PM,jcb,ACTIVA,$8751.73
-299,Hayden,Vinegar - White Wine,Udall,4/21/2020,8:53 PM,jcb,ACTIVA,$13880.95
-300,Iorgos,"Mop Head - Cotton, 24 Oz",Agathe,8/25/2020,11:30 PM,jcb,ACTIVA,$7500.61
-301,Vincenz,"Octopus - Baby, Cleaned",Nolan,12/1/2020,6:16 PM,jcb,ACTIVA,$16997.58
-302,Ansell,Browning Caramel Glace,Bettina,3/8/2021,5:45 PM,jcb,ACTIVA,$17647.64
-303,Letta,Soup Campbells Split Pea And Ham,Valida,8/25/2020,12:01 AM,jcb,ACTIVA,$7944.26
-304,Rancell,Squash - Butternut,Emory,1/3/2021,7:50 PM,maestro,ACTIVA,$8095.10
-305,Ferdinand,Plasticspoonblack,Dell,2/12/2021,7:49 AM,visa-electron,ACTIVA,$10626.91
-306,Sib,"Chilli Paste, Hot Sambal Oelek",Friedrick,5/25/2020,9:39 PM,jcb,ACTIVA,$15012.14
-307,Che,Garbag Bags - Black,Shelden,2/14/2021,4:00 PM,switch,ACTIVA,$6583.37
-308,Udell,Island Oasis - Raspberry,Manda,2/14/2021,11:28 PM,china-unionpay,ACTIVA,$19134.26
-309,Leroy,Dehydrated Kelp Kombo,Alecia,9/10/2020,9:37 PM,jcb,ACTIVA,$15319.54
-310,Rebeka,Carrots - Mini Red Organic,Josey,3/2/2021,9:35 PM,mastercard,ACTIVA,$10600.67
-311,Aloysia,"Turkey - Breast, Smoked",Alleyn,2/13/2021,7:58 AM,jcb,ACTIVA,$17191.08
-312,Georgia,Whmis Spray Bottle Graduated,Joyann,12/22/2020,12:03 PM,jcb,ACTIVA,$5803.59
-313,Tawsha,Otomegusa Dashi Konbu,Uri,1/4/2021,12:55 PM,jcb,ACTIVA,$14054.32
-314,Sampson,Wine - Delicato Merlot,Lazarus,6/12/2020,2:59 AM,jcb,ACTIVA,$9173.34
-315,Vernor,Rice Wine - Aji Mirin,Adriano,1/1/2021,11:45 AM,solo,ACTIVA,$18660.16
-316,Collen,Aspic - Clear,Helge,3/7/2021,1:41 PM,jcb,ACTIVA,$4206.42
-317,Jayson,"Pork - Tenderloin, Fresh",Roanne,4/24/2020,11:54 AM,maestro,ACTIVA,$6662.28
-318,Melosa,Pants Custom Dry Clean,Corbie,8/1/2020,8:07 PM,jcb,ACTIVA,$16053.41
-319,Danella,Muffin Hinge Container 6,Muffin,9/4/2020,4:05 PM,visa,ACTIVA,$6953.40
-320,Mandi,Muffin - Zero Transfat,Janine,6/21/2020,8:58 AM,jcb,ACTIVA,$12750.11
-321,Arleyne,Ginger - Pickled,Iorgos,12/23/2020,6:21 AM,jcb,ACTIVA,$4163.74
-322,Francisco,Wine - Champagne Brut Veuve,Dunn,8/18/2020,4:54 AM,visa-electron,ACTIVA,$4989.37
-323,Trude,"Bread - White, Sliced",Prescott,5/5/2020,9:49 PM,jcb,ACTIVA,$6293.77
-324,Dominic,Poppy Seed,Brandi,5/13/2020,6:20 AM,china-unionpay,ACTIVA,$13440.49
-325,Ramonda,Appetizer - Smoked Salmon / Dill,Ethe,4/1/2020,9:14 AM,jcb,ACTIVA,$17611.29
-326,Janel,Pheasants - Whole,Bealle,4/7/2020,4:30 PM,jcb,ACTIVA,$17017.65
-327,Jemima,Nectarines,Esme,3/7/2021,5:10 PM,jcb,ACTIVA,$6146.63
-328,Aubrey,"Octopus - Baby, Cleaned",Katey,10/1/2020,3:07 PM,jcb,ACTIVA,$15046.35
-329,Elsinore,Wine - Malbec Trapiche Reserve,Barrett,4/14/2020,4:19 PM,jcb,ACTIVA,$8096.50
-330,Ephrayim,Muffin - Mix - Bran And Maple 15l,Karl,6/12/2020,12:25 PM,bankcard,ACTIVA,$10486.70
-331,Sayers,Bread - Kimel Stick Poly,Borg,3/5/2021,2:56 AM,jcb,ACTIVA,$14212.94
-332,Brook,Strawberries - California,Conan,1/2/2021,11:40 AM,diners-club-us-ca,ACTIVA,$4172.87
-333,Tye,Broccoli - Fresh,Ruby,5/4/2020,11:41 AM,diners-club-enroute,ACTIVA,$18457.49
-334,Christalle,Lettuce - Green Leaf,Gram,6/11/2020,2:07 AM,jcb,ACTIVA,$4599.49
-335,Francesco,"Crab - Claws, 26 - 30",Lonna,8/7/2020,4:53 AM,jcb,ACTIVA,$6586.35
-336,Emmey,Cookies - Englishbay Wht,Flss,8/21/2020,7:18 PM,switch,ACTIVA,$5927.43
-337,Kayla,Pepper - Gypsy Pepper,Ina,11/6/2020,3:01 AM,americanexpress,ACTIVA,$9376.91
-338,Inger,Sherry - Dry,Taylor,11/28/2020,3:40 AM,mastercard,ACTIVA,$17882.11
-339,Monti,Beans - Fava Fresh,Hillie,8/4/2020,9:54 AM,jcb,ACTIVA,$13302.62
-340,Carny,Egg - Salad Premix,Wain,1/15/2021,2:48 AM,laser,ACTIVA,$11191.91
-341,Merridie,Assorted Desserts,Therese,2/23/2021,6:23 AM,jcb,ACTIVA,$5016.88
-342,Davidson,"Lamb - Leg, Diced",Adriaens,8/16/2020,6:32 AM,diners-club-carte-blanche,ACTIVA,$13367.65
-343,Anna,Soup - Campbells Asian Noodle,Dorita,9/4/2020,11:35 AM,diners-club-enroute,ACTIVA,$10390.82
-344,Neile,"Wine - White, Pelee Island",Tanner,9/4/2020,11:50 AM,jcb,ACTIVA,$11769.06
-345,Ranique,Carbonated Water - Strawberry,Pren,3/16/2021,9:00 PM,visa-electron,ACTIVA,$19543.70
-346,Nert,Wanton Wrap,Ryan,11/1/2020,9:44 AM,mastercard,ACTIVA,$8080.56
-347,Eve,Bagel - Plain,Dell,10/13/2020,12:03 AM,jcb,ACTIVA,$16031.52
-348,Edita,Cheese - Augre Des Champs,Gypsy,3/25/2021,10:44 PM,mastercard,ACTIVA,$9479.89
-349,Sid,Bread - Multigrain Oval,Nesta,11/1/2020,2:30 AM,jcb,ACTIVA,$19332.84
-350,Evvy,Syrup - Chocolate,Moyra,12/2/2020,5:26 AM,china-unionpay,ACTIVA,$6688.47
-351,Muffin,Olive - Spread Tapenade,Lowrance,1/7/2021,9:19 PM,americanexpress,ACTIVA,$7551.71
-352,Emmeline,Instant Coffee,Stuart,6/10/2020,11:03 AM,visa,ACTIVA,$13233.90
-353,Rickie,Mustard - Seed,Bernadette,10/24/2020,11:34 PM,jcb,ACTIVA,$11681.57
-354,Chere,Bread - Rye,Ralina,12/9/2020,8:59 AM,jcb,ACTIVA,$9520.61
-355,Faythe,Carroway Seed,Netty,10/28/2020,7:20 AM,jcb,ACTIVA,$15250.90
-356,Huntlee,Cloves - Ground,Luis,3/31/2020,2:30 PM,visa,ACTIVA,$6944.42
-357,Norman,Ham Black Forest,Babbette,4/21/2020,5:56 PM,china-unionpay,ACTIVA,$18151.45
-358,Cam,Pork - Backs - Boneless,Sidoney,8/30/2020,4:25 PM,visa-electron,ACTIVA,$4259.99
-359,Chico,Longos - Chicken Caeser Salad,Archie,7/3/2020,9:58 AM,jcb,ACTIVA,$7220.49
-360,Giffie,Veal - Bones,Rita,5/9/2020,5:02 AM,jcb,ACTIVA,$15678.38
-361,Greta,Bread - Crusty Italian Poly,Daisi,8/22/2020,10:44 AM,jcb,ACTIVA,$18076.07
-362,Moore,Cream - 10%,Aldric,8/23/2020,5:25 PM,mastercard,ACTIVA,$12078.95
-363,Donetta,Extract - Almond,Ambrosi,8/1/2020,3:32 AM,visa-electron,ACTIVA,$7798.69
-364,Mahmud,Relish,Corbin,3/24/2021,1:24 PM,visa-electron,ACTIVA,$19448.90
-365,Reidar,Celery,Rozele,6/13/2020,11:55 AM,jcb,ACTIVA,$12952.07
-366,Flory,"Chocolate - Pistoles, Lactee, Milk",Alexi,11/5/2020,1:39 PM,maestro,ACTIVA,$17021.99
-367,Jacquelin,Wine - Masi Valpolocell,Shandy,3/6/2021,8:45 AM,jcb,ACTIVA,$19172.47
-368,Cornela,Tuna - Bluefin,Ogdon,8/7/2020,10:28 AM,mastercard,ACTIVA,$10044.62
-369,Tallie,Pepper - Gypsy Pepper,Bobbi,10/13/2020,2:23 PM,jcb,ACTIVA,$5223.81
-370,Jennette,Soup - Tomato Mush. Florentine,Johnath,6/10/2020,5:36 AM,visa,ACTIVA,$11937.36
-371,Emmye,"Wine - White, Ej Gallo",Lib,11/2/2020,1:07 AM,mastercard,ACTIVA,$18493.74
-372,Petunia,Eggwhite Frozen,Dedie,4/20/2020,3:10 PM,jcb,ACTIVA,$18764.45
-373,Ninetta,Extract - Raspberry,Mariette,3/24/2021,3:11 PM,mastercard,ACTIVA,$9452.30
-374,Blondelle,Salt And Pepper Mix - Black,Dall,7/31/2020,2:21 PM,diners-club-carte-blanche,ACTIVA,$19121.46
-375,Courtenay,Lettuce - Lolla Rosa,Ashlen,7/3/2020,5:39 AM,solo,ACTIVA,$13708.35
-376,Amalle,Wine - Rosso Del Veronese Igt,Zuzana,12/16/2020,3:41 PM,visa-electron,ACTIVA,$8983.38
-377,Jacquie,"Wine - White, Colubia Cresh",Rosy,2/3/2021,12:37 AM,jcb,ACTIVA,$13609.51
-378,Killy,Blue Curacao - Marie Brizard,Mireielle,8/26/2020,6:46 AM,jcb,ACTIVA,$18513.46
-379,Marietta,Eggplant - Asian,Sayres,10/24/2020,5:23 PM,visa,ACTIVA,$16265.52
-380,Avigdor,Corn - Mini,Amitie,10/19/2020,8:03 AM,americanexpress,ACTIVA,$9082.66
-381,Doloritas,Avocado,Hilarius,4/15/2020,8:33 AM,maestro,ACTIVA,$13018.98
-382,Aubree,Grapefruit - White,Leonerd,2/6/2021,4:03 PM,bankcard,ACTIVA,$10532.71
-383,Clemens,"Pasta - Lasagne, Fresh",Lyell,9/12/2020,10:07 PM,maestro,ACTIVA,$14573.64
-384,Jarvis,Pie Shells 10,Cly,10/31/2020,3:52 PM,mastercard,ACTIVA,$14815.04
-385,Aubrey,"Potatoes - Instant, Mashed",Georgeta,2/2/2021,2:58 AM,jcb,ACTIVA,$17131.92
-386,Stu,Muskox - French Rack,Lenette,6/19/2020,12:35 AM,diners-club-carte-blanche,ACTIVA,$13109.43
-387,Murdoch,Bagel - Whole White Sesame,Lavinia,10/24/2020,9:37 AM,jcb,ACTIVA,$11064.97
-388,Rebekkah,Bread - Mini Hamburger Bun,Brittney,7/7/2020,11:12 PM,visa-electron,ACTIVA,$18850.69
-389,Modestia,Stock - Fish,Paddy,2/19/2021,7:22 PM,jcb,ACTIVA,$10346.08
-390,Philippine,Roe - Flying Fish,Byrann,8/7/2020,5:55 PM,maestro,ACTIVA,$6237.33
-391,Renee,Pastry - Key Limepoppy Seed Tea,Manon,9/1/2020,7:45 AM,maestro,ACTIVA,$4259.16
-392,Nonnah,Lettuce - Green Leaf,Garvin,2/11/2021,5:25 PM,mastercard,ACTIVA,$9851.01
-393,Othella,"Plate - Foam, Bread And Butter",Derron,1/13/2021,5:24 AM,jcb,ACTIVA,$5921.45
-394,Evangeline,"Plate - Foam, Bread And Butter",Rhiamon,12/11/2020,2:16 AM,jcb,ACTIVA,$16821.15
-395,Godiva,Milk - Buttermilk,Madelena,8/6/2020,11:23 PM,jcb,ACTIVA,$10566.54
-396,Laverna,Sauerkraut,Rozalie,9/9/2020,8:47 AM,switch,ACTIVA,$13128.46
-397,Wheeler,Cheese - Victor Et Berthold,Josi,1/7/2021,8:42 AM,jcb,ACTIVA,$13640.17
-398,Vic,Pate - Peppercorn,Eimile,1/1/2021,12:54 PM,jcb,ACTIVA,$11467.86
-399,Pepi,Duck - Breast,Gonzales,9/2/2020,1:09 AM,bankcard,ACTIVA,$19772.14
-400,Erhart,Danishes - Mini Cheese,Brunhilde,12/8/2020,2:12 AM,bankcard,ACTIVA,$10862.41
-401,Ailina,"Wine - White, Lindemans Bin 95",Twila,9/12/2020,10:37 PM,visa-electron,ACTIVA,$6995.74
-402,Baron,Food Colouring - Red,Marya,4/30/2020,7:29 AM,jcb,ACTIVA,$9688.98
-403,Roch,Triple Sec - Mcguinness,Mavis,4/22/2020,11:42 AM,diners-club-enroute,ACTIVA,$16709.89
-404,Ichabod,Cabbage - Red,Hamish,2/12/2021,3:29 PM,mastercard,ACTIVA,$15593.12
-405,Jenni,"Pork - Butt, Boneless",Adan,9/18/2020,9:13 PM,diners-club-enroute,ACTIVA,$17459.38
-406,Noni,Piping - Bags Quizna,Rogers,4/3/2020,10:25 PM,jcb,ACTIVA,$4390.41
-407,Jarrett,Tart - Butter Plain Squares,Arlin,4/11/2020,8:51 AM,jcb,ACTIVA,$17598.30
-408,Otto,Pastry - Baked Cinnamon Stick,Doroteya,3/31/2020,3:16 AM,maestro,ACTIVA,$18759.92
-409,Meier,Veal - Eye Of Round,Tully,8/10/2020,2:05 AM,jcb,ACTIVA,$11007.85
-410,Iolande,Devonshire Cream,Alfi,8/29/2020,9:58 PM,jcb,ACTIVA,$14678.21
-411,Erhart,Juice - Lagoon Mango,Rourke,6/13/2020,3:04 AM,diners-club-enroute,ACTIVA,$4763.97
-412,Catina,"Nut - Chestnuts, Whole",Stearn,5/13/2020,11:02 AM,americanexpress,ACTIVA,$14255.82
-413,Sharleen,"Stock - Chicken, White",Tarah,2/16/2021,10:14 PM,visa-electron,ACTIVA,$17589.20
-414,Anitra,Parsnip,Bonny,4/4/2020,11:50 AM,mastercard,ACTIVA,$16179.51
-415,Phineas,"Oranges - Navel, 72",Kelly,12/5/2020,2:09 PM,diners-club-carte-blanche,ACTIVA,$13613.59
-416,Abramo,Vinegar - White,Denni,1/10/2021,9:55 AM,jcb,ACTIVA,$11871.12
-417,Nicko,Basil - Fresh,Babita,9/13/2020,4:46 PM,jcb,ACTIVA,$5130.84
-418,Tomi,Wild Boar - Tenderloin,Berkie,3/29/2020,2:18 PM,visa,ACTIVA,$4488.97
-419,Kevon,"Jam - Marmalade, Orange",Les,12/21/2020,12:25 PM,diners-club-enroute,ACTIVA,$15947.00
-420,Derry,"Sauce - Bernaise, Mix",Salvador,1/21/2021,3:17 AM,diners-club-international,ACTIVA,$7849.43
-421,Quinton,Jagermeister,Emylee,2/23/2021,10:21 AM,visa,ACTIVA,$4681.75
-422,Jonathon,Canadian Emmenthal,Bret,10/19/2020,12:15 AM,diners-club-carte-blanche,ACTIVA,$10052.90
-423,Berthe,Sauce - Ranch Dressing,Lora,10/18/2020,10:24 PM,jcb,ACTIVA,$15516.94
-424,Lilas,Puree - Mocha,Karalynn,6/17/2020,6:17 PM,mastercard,ACTIVA,$15017.94
-425,Mischa,Lemon Grass,Dennie,3/27/2020,1:16 AM,china-unionpay,ACTIVA,$15831.00
-426,Bobette,Rum - Mount Gay Eclipes,Virgie,12/23/2020,5:34 AM,jcb,ACTIVA,$16620.32
-427,Shane,Rootbeer,Florencia,2/8/2021,3:49 PM,bankcard,ACTIVA,$18818.34
-428,Temple,Taro Root,Grethel,11/4/2020,4:49 PM,jcb,ACTIVA,$18845.02
-429,Mair,Soho Lychee Liqueur,Clementius,4/24/2020,5:09 PM,bankcard,ACTIVA,$16160.21
-430,Jenni,Lemon Pepper,D'arcy,8/16/2020,12:14 AM,mastercard,ACTIVA,$18470.55
-431,Minta,"Juice - Cranberry, 341 Ml",Maggy,12/5/2020,11:38 PM,diners-club-international,ACTIVA,$14599.20
-432,Cynthea,Pork - Smoked Back Bacon,Alfredo,12/17/2020,10:26 PM,jcb,ACTIVA,$17390.75
-433,Michel,Muskox - French Rack,Con,12/2/2020,7:27 AM,americanexpress,ACTIVA,$15932.45
-434,Marjie,Capon - Whole,Court,9/24/2020,6:47 PM,visa,ACTIVA,$15450.38
-435,Jackquelin,Wine - Magnotta - Bel Paese White,York,1/20/2021,8:27 PM,switch,ACTIVA,$5210.76
-436,Essa,Tamarind Paste,Cecily,5/5/2020,1:03 PM,visa-electron,ACTIVA,$15139.50
-437,Marian,Mushroom - Morel Frozen,Sherilyn,3/18/2021,3:23 AM,diners-club-enroute,ACTIVA,$5107.59
-438,Efren,Cheese - Pied De Vents,Jaimie,5/7/2020,10:17 PM,mastercard,ACTIVA,$9045.54
-439,Tedd,Sauce - Mint,Clerkclaude,7/11/2020,7:37 PM,mastercard,ACTIVA,$8989.43
-440,Rory,Steampan - Foil,Akim,3/2/2021,6:03 AM,jcb,ACTIVA,$10436.16
-441,Jennine,Gelatine Leaves - Bulk,Westbrook,9/10/2020,11:13 AM,maestro,ACTIVA,$16144.99
-442,Agretha,Coffee - Egg Nog Capuccino,Clerkclaude,6/10/2020,9:48 PM,bankcard,ACTIVA,$15885.98
-443,Loretta,"Cheese - Romano, Grated",Germaine,9/15/2020,12:54 AM,jcb,ACTIVA,$10287.34
-444,Sabra,Island Oasis - Wildberry,Ailina,3/7/2021,6:18 PM,jcb,ACTIVA,$11102.75
-445,Lilla,Soup - Campbells - Chicken Noodle,Norah,12/6/2020,6:06 AM,diners-club-enroute,ACTIVA,$18089.93
-446,Abdul,Banana Turning,Hadria,4/6/2020,9:53 AM,jcb,ACTIVA,$7448.28
-447,Jolynn,Soup Knorr Chili With Beans,Etta,8/20/2020,1:27 PM,maestro,ACTIVA,$18293.02
-448,Rosalia,Pineapple - Regular,Pascal,6/28/2020,7:35 PM,jcb,ACTIVA,$7884.15
-449,Alys,Arrowroot,Valery,9/25/2020,9:04 PM,jcb,ACTIVA,$10629.20
-450,Shelby,Milk - Buttermilk,Tripp,2/5/2021,12:46 AM,americanexpress,ACTIVA,$14427.75
-451,Norina,Ham - Cooked Italian,Morris,12/21/2020,9:59 AM,visa-electron,ACTIVA,$6673.39
-452,Carlota,Berry Brulee,Bondie,11/28/2020,6:26 PM,jcb,ACTIVA,$5593.71
-453,Huey,Dried Figs,Merle,11/22/2020,1:49 PM,mastercard,ACTIVA,$10074.18
-454,Fredrick,Sprouts - China Rose,Saxe,6/13/2020,7:16 AM,diners-club-enroute,ACTIVA,$18676.45
-455,Denise,Juice - Apple 284ml,Kippie,1/26/2021,6:50 AM,americanexpress,ACTIVA,$8596.53
-456,Sylvia,Quiche Assorted,Kelwin,1/16/2021,9:48 PM,mastercard,ACTIVA,$17895.94
-457,Darryl,Soup - Campbells Beef Noodle,Teodoor,10/23/2020,3:39 PM,mastercard,ACTIVA,$8138.75
-458,Boothe,Pop - Club Soda Can,Fielding,2/4/2021,5:28 PM,jcb,ACTIVA,$11581.01
-459,Gardner,Cheese - Stilton,Pancho,12/24/2020,8:56 PM,diners-club-enroute,ACTIVA,$10355.42
-460,Jacobo,"Noodles - Cellophane, Thin",Isadora,2/3/2021,2:43 PM,jcb,ACTIVA,$18978.34
-461,Maxwell,Sword Pick Asst,Casey,2/12/2021,11:55 AM,jcb,ACTIVA,$14855.48
-462,Carleen,Cocktail Napkin Blue,Gaylord,1/13/2021,7:56 AM,diners-club-enroute,ACTIVA,$7826.60
-463,Waldon,Olives - Morracan Dired,Bevvy,8/9/2020,10:14 AM,mastercard,ACTIVA,$5911.40
-464,Herc,Bread Bowl Plain,Kacie,3/12/2021,10:10 PM,mastercard,ACTIVA,$6365.13
-465,Colette,Bread - French Baquette,Torey,9/2/2020,7:54 PM,jcb,ACTIVA,$9337.91
-466,Quillan,Bandage - Fexible 1x3,Matteo,4/3/2020,2:06 PM,diners-club-international,ACTIVA,$12310.33
-467,Curtice,Wine - Magnotta - Pinot Gris Sr,Sayers,12/13/2020,12:30 AM,diners-club-enroute,ACTIVA,$13154.48
-468,Kiah,Beer - Maudite,Jermaine,11/27/2020,9:45 AM,maestro,ACTIVA,$17813.53
-469,Gaultiero,Juice - Orange 1.89l,Shannon,5/30/2020,11:25 AM,jcb,ACTIVA,$13431.15
-470,Eleonora,Lettuce - California Mix,Carola,3/2/2021,3:10 AM,jcb,ACTIVA,$6592.58
-471,Raven,Wine - Sogrape Mateus Rose,Constancy,9/21/2020,4:26 AM,jcb,ACTIVA,$10236.91
-472,Lorita,Mint - Fresh,Cob,5/6/2020,6:31 AM,jcb,ACTIVA,$14884.61
-473,Ruthe,Cookie Trail Mix,Amalle,3/5/2021,10:57 AM,jcb,ACTIVA,$18248.73
-474,Frankie,Wine - Segura Viudas Aria Brut,Elisabetta,11/13/2020,7:23 PM,jcb,ACTIVA,$13987.72
-475,Gamaliel,Bag - Clear 7 Lb,Georgine,9/22/2020,7:59 AM,china-unionpay,ACTIVA,$10530.56
-476,Janeta,"Sauce - Soya, Dark",Vinson,8/2/2020,8:51 PM,jcb,ACTIVA,$12460.63
-477,Doria,Sausage - Blood Pudding,Iormina,10/16/2020,8:10 PM,jcb,ACTIVA,$9795.32
-478,Reid,Clam - Cherrystone,Millicent,8/14/2020,1:40 AM,china-unionpay,ACTIVA,$6586.43
-479,Maddalena,Bread - English Muffin,Hirsch,10/29/2020,10:51 AM,maestro,ACTIVA,$16753.57
-480,Ivory,Grenadillo,Carrol,2/21/2021,4:54 AM,jcb,ACTIVA,$8417.48
-481,Dallis,Beer - Sleemans Cream Ale,Odelia,11/8/2020,1:33 AM,jcb,ACTIVA,$5289.16
-482,Alford,Carbonated Water - White Grape,Samuele,3/7/2021,12:58 AM,maestro,ACTIVA,$6167.09
-483,Prudi,Steel Wool S.o.s,Krishna,10/26/2020,4:42 AM,diners-club-enroute,ACTIVA,$10457.02
-484,Delly,Pastry - Plain Baked Croissant,Andreas,6/11/2020,11:11 PM,jcb,ACTIVA,$8744.05
-485,Fiann,Temperature Recording Station,Genny,7/18/2020,9:00 AM,china-unionpay,ACTIVA,$13226.57
-486,Giselbert,Bagel - 12 Grain Preslice,Kathryne,9/21/2020,11:37 PM,visa,ACTIVA,$10400.95
-487,Garik,Wine - Prem Select Charddonany,Megen,8/6/2020,5:15 PM,jcb,ACTIVA,$12991.10
-488,Fabian,Cream Of Tartar,Fredia,7/26/2020,8:55 AM,jcb,ACTIVA,$7740.40
-489,Marika,"Beef - Outside, Round",Odette,1/21/2021,6:52 AM,visa-electron,ACTIVA,$14875.58
-490,Devondra,Soup Campbells - Tomato Bisque,Rogers,5/22/2020,8:00 PM,mastercard,ACTIVA,$9151.00
-491,Udell,"Nut - Pecan, Halves",Dall,1/4/2021,8:00 PM,jcb,ACTIVA,$13922.75
-492,Hermon,Chick Peas - Dried,Cullie,3/16/2021,11:04 PM,maestro,ACTIVA,$9895.53
-493,Mae,Beef - Tender Tips,Lexi,10/12/2020,4:44 AM,maestro,ACTIVA,$6001.33
-494,Rabbi,Squid - U 5,Brnaba,10/15/2020,8:54 AM,jcb,ACTIVA,$10888.53
-495,Linnie,Beer - Sleemans Honey Brown,Derril,3/8/2021,1:26 PM,visa-electron,ACTIVA,$9944.34
-496,Brenn,Cherries - Frozen,Rutger,11/8/2020,12:32 AM,visa-electron,ACTIVA,$19213.33
-497,Ilise,Sping Loaded Cup Dispenser,Nahum,8/10/2020,12:36 PM,americanexpress,ACTIVA,$19714.91
-498,Johann,"Pail - 15l White, With Handle",Oberon,3/19/2021,1:02 AM,jcb,ACTIVA,$7408.39
-499,Vincent,Creme De Cacao White,Darice,6/14/2020,5:12 PM,jcb,ACTIVA,$19566.81
-500,Yelena,Muffin Mix - Blueberry,Dionysus,8/14/2020,5:57 AM,diners-club-carte-blanche,ACTIVA,$7208.94
-501,Amby,Steampan - Half Size Shallow,Ruperto,11/21/2020,6:42 AM,jcb,ACTIVA,$13619.45
-502,Gussie,Jack Daniels,Edouard,3/27/2020,1:12 PM,bankcard,ACTIVA,$4342.69
-503,Chip,Tea - Earl Grey,Ferdy,6/9/2020,6:28 PM,jcb,ACTIVA,$15152.81
-504,Inga,Wine - Zinfandel Rosenblum,Julian,9/15/2020,11:30 PM,instapayment,ACTIVA,$4878.91
-505,Karlotta,Eel Fresh,Cal,6/17/2020,9:44 PM,china-unionpay,ACTIVA,$14642.64
-506,Babara,"Cake Circle, Paprus",Hamilton,8/5/2020,10:47 PM,jcb,ACTIVA,$7925.02
-507,Gaby,"Nut - Almond, Blanched, Sliced",Alyson,1/2/2021,12:25 PM,switch,ACTIVA,$15488.06
-508,Darsie,"Pasta - Fettuccine, Dry",Chip,6/7/2020,9:11 PM,jcb,ACTIVA,$5541.96
-509,Cammy,Beef - Top Sirloin - Aaa,Addy,3/24/2021,2:07 AM,jcb,ACTIVA,$15434.60
-510,Timothy,"Cheese - Boursin, Garlic / Herbs",Letta,1/3/2021,10:23 AM,diners-club-enroute,ACTIVA,$8989.72
-511,Leonie,"Nut - Pine Nuts, Whole",Teirtza,10/2/2020,10:52 PM,jcb,ACTIVA,$9980.71
-512,Dido,Beer - Original Organic Lager,Dino,7/8/2020,12:04 AM,jcb,ACTIVA,$12299.65
-513,Shurlocke,"Pasta - Fusili, Dry",Valentine,2/19/2021,4:39 PM,mastercard,ACTIVA,$6763.11
-514,Nessie,Bread Base - Gold Formel,Pippa,10/16/2020,7:05 AM,jcb,ACTIVA,$4107.54
-515,Mollee,Spaghetti Squash,Susie,4/1/2020,7:39 AM,switch,ACTIVA,$19676.85
-516,Nelle,Wine - Tribal Sauvignon,Sidonia,6/14/2020,5:26 AM,jcb,ACTIVA,$16804.18
-517,Paton,Devonshire Cream,Bartholemy,2/14/2021,4:37 PM,maestro,ACTIVA,$15726.19
-518,Garner,General Purpose Trigger,Nanice,9/7/2020,7:13 AM,jcb,ACTIVA,$12216.89
-519,Balduin,Apple - Macintosh,Nilson,9/22/2020,3:13 AM,jcb,ACTIVA,$17853.61
-520,Zsazsa,Soup - Campbells Chili,Eustacia,6/26/2020,6:42 AM,switch,ACTIVA,$11147.07
-521,Florencia,Bandage - Fexible 1x3,Lanny,10/15/2020,10:33 AM,jcb,ACTIVA,$9462.79
-522,Susana,"Liners - Banana, Paper",Giordano,7/24/2020,10:03 PM,diners-club-us-ca,ACTIVA,$7366.22
-523,Annamarie,Cake - Miini Cheesecake Cherry,Hasheem,8/17/2020,3:29 AM,jcb,ACTIVA,$5704.78
-524,Kristofer,Bread - Multigrain,Danie,1/12/2021,10:15 AM,mastercard,ACTIVA,$13613.59
-525,Rance,Chocolate Bar - Coffee Crisp,Kary,4/9/2020,5:38 AM,laser,ACTIVA,$19333.60
-526,Lyndy,Rambutan,Belita,4/11/2020,9:35 AM,jcb,ACTIVA,$5698.85
-527,Kareem,Pancetta,Dennie,10/3/2020,6:44 PM,mastercard,ACTIVA,$16820.61
-528,Sigmund,Sardines,Verla,5/21/2020,10:38 AM,visa-electron,ACTIVA,$17619.54
-529,Robbie,Pan Grease,Banky,5/11/2020,8:23 AM,jcb,ACTIVA,$10997.42
-530,Priscella,"Pepper - Red, Finger Hot",Shelbi,11/6/2020,4:57 PM,jcb,ACTIVA,$17145.70
-531,Ware,Sauce - Caesar Dressing,Brady,3/28/2020,3:55 PM,diners-club-enroute,ACTIVA,$17040.15
-532,Bianca,Cakes Assorted,Giulia,11/13/2020,2:56 PM,diners-club-carte-blanche,ACTIVA,$11154.50
-533,Taddeo,Paper Towel Touchless,Baryram,5/11/2020,7:45 PM,jcb,ACTIVA,$11265.23
-534,Phaedra,Foam Tray S2,Joli,10/28/2020,1:18 PM,diners-club-us-ca,ACTIVA,$14378.86
-535,Timothea,Bread - Flat Bread,Cristionna,12/20/2020,2:01 AM,switch,ACTIVA,$10694.09
-536,Paulie,Coffee Caramel Biscotti,Candy,9/6/2020,2:35 PM,maestro,ACTIVA,$14955.23
-537,Dorey,Dc - Sakura Fu,Vladamir,8/24/2020,4:32 AM,switch,ACTIVA,$12303.32
-538,Amalia,Cleaner - Lime Away,Crysta,8/24/2020,12:43 PM,visa-electron,ACTIVA,$13598.41
-539,Jenine,Appetizer - Escargot Puff,Kerstin,11/6/2020,6:32 PM,bankcard,ACTIVA,$12767.41
-540,Gratia,Gatorade - Fruit Punch,Lidia,2/7/2021,10:44 PM,switch,ACTIVA,$13333.28
-541,Isa,Muffin - Blueberry Individual,Armin,7/8/2020,7:23 AM,jcb,ACTIVA,$14149.06
-542,Gabbie,Beer - Muskoka Cream Ale,Stillmann,11/15/2020,4:12 PM,solo,ACTIVA,$6244.12
-543,Alaine,"Veal - Tenderloin, Untrimmed",Jeanelle,8/5/2020,8:05 AM,americanexpress,ACTIVA,$18158.10
-544,Iggie,Oven Mitts - 15 Inch,Barbara,12/17/2020,10:09 PM,jcb,ACTIVA,$17843.60
-545,Rosalia,"Coke - Classic, 355 Ml",Ernaline,2/20/2021,5:06 PM,americanexpress,ACTIVA,$9878.15
-546,Guillema,Shrimp - Black Tiger 26/30,Bartholomeus,4/20/2020,1:49 AM,jcb,ACTIVA,$8964.33
-547,Emilia,"Pork - Loin, Boneless",Burk,5/23/2020,2:43 AM,americanexpress,ACTIVA,$8944.91
-548,Stacy,Sobe - Liz Blizz,Dominica,2/7/2021,2:35 AM,instapayment,ACTIVA,$12952.02
-549,Jacquie,Pepper - Jalapeno,Tammara,3/27/2020,8:38 AM,jcb,ACTIVA,$4942.27
-550,Gaylord,Sugar - Individual Portions,Dolly,9/3/2020,5:27 AM,mastercard,ACTIVA,$12728.13
-551,Hildegaard,"Pasta - Cannelloni, Sheets, Fresh",Bertine,10/6/2020,5:48 AM,solo,ACTIVA,$8551.07
-552,Lorine,Bagel - Everything Presliced,Pascale,11/14/2020,3:50 AM,switch,ACTIVA,$17499.67
-553,Chance,Chocolate Bar - Oh Henry,Yul,7/12/2020,9:51 AM,jcb,ACTIVA,$15727.44
-554,Rachael,Coffee - Espresso,Susan,3/29/2020,7:30 AM,jcb,ACTIVA,$9250.78
-555,Ritchie,Ginger - Pickled,Dacie,10/24/2020,5:44 AM,switch,ACTIVA,$14947.89
-556,Brigit,Wine - Jafflin Bourgongone,Minor,7/25/2020,3:06 AM,jcb,ACTIVA,$7171.22
-557,Rebeca,Grapes - Red,Melvin,11/5/2020,12:28 AM,visa-electron,ACTIVA,$12280.28
-558,Sharlene,"Crab - Dungeness, Whole",Sloan,3/17/2021,8:53 PM,maestro,ACTIVA,$7700.88
-559,Jeramie,"Pasta - Fettuccine, Dry",Amandie,10/22/2020,4:25 AM,jcb,ACTIVA,$11215.13
-560,Archibaldo,Curry Powder,Billie,6/6/2020,8:05 AM,laser,ACTIVA,$14495.87
-561,Neville,Marjoram - Fresh,Ev,7/11/2020,11:22 AM,diners-club-carte-blanche,ACTIVA,$14789.55
-562,Brook,Onions - Pearl,Mendie,1/17/2021,11:54 PM,jcb,ACTIVA,$13744.68
-563,Doretta,"Wine - White, Colubia Cresh",Mahala,6/21/2020,6:21 AM,instapayment,ACTIVA,$8794.81
-564,Kary,"Soup - Cream Of Broccoli, Dry",Alys,8/5/2020,6:53 PM,americanexpress,ACTIVA,$11311.76
-565,Lewes,Peas - Frozen,Clari,5/30/2020,12:20 PM,jcb,ACTIVA,$11506.54
-566,Corby,Arizona - Plum Green Tea,Becca,11/7/2020,4:38 AM,jcb,ACTIVA,$6018.70
-567,Aloysia,Pur Source,Rustin,4/10/2020,5:48 PM,jcb,ACTIVA,$19366.46
-568,Quinn,"Beef - Tenderlion, Center Cut",Kalil,7/11/2020,11:45 AM,solo,ACTIVA,$18149.58
-569,Barnett,"Veal - Inside, Choice",Bud,9/13/2020,5:33 AM,visa-electron,ACTIVA,$18928.39
-570,Harriet,"Veal - Chops, Split, Frenched",Tallulah,7/7/2020,4:18 AM,jcb,ACTIVA,$19318.02
-571,Constancy,"Cheese - Brie, Cups 125g",Shoshanna,1/5/2021,4:46 PM,jcb,ACTIVA,$19679.32
-572,Gerardo,Coconut - Whole,Arron,2/4/2021,5:53 AM,jcb,ACTIVA,$14627.06
-573,Selinda,Calvados - Boulard,Lacee,6/27/2020,7:16 AM,jcb,ACTIVA,$8975.82
-574,Alis,Hold Up Tool Storage Rack,Maybelle,9/13/2020,10:10 PM,jcb,ACTIVA,$14181.90
-575,Ly,Bok Choy - Baby,Ezmeralda,9/5/2020,7:23 AM,jcb,ACTIVA,$11951.49
-576,Jameson,"Cake Circle, Foil, Scallop",Jillene,10/1/2020,3:42 PM,maestro,ACTIVA,$15325.99
-577,Maudie,Eggplant - Baby,Tamma,10/4/2020,7:25 AM,mastercard,ACTIVA,$17748.81
-578,Kathie,Cheese - Victor Et Berthold,Odessa,11/22/2020,6:22 AM,switch,ACTIVA,$17857.10
-579,Berenice,Salt - Sea,Walliw,5/26/2020,1:55 PM,jcb,ACTIVA,$13618.75
-580,Freda,Cheese - Cottage Cheese,Rubetta,8/26/2020,9:21 AM,americanexpress,ACTIVA,$17456.40
-581,Jaquenetta,Cake - Miini Cheesecake Cherry,Harris,4/28/2020,12:48 PM,jcb,ACTIVA,$5508.54
-582,Lothaire,Pheasants - Whole,Stesha,1/6/2021,3:46 PM,jcb,ACTIVA,$15577.74
-583,Curcio,Container Clear 8 Oz,Salmon,8/30/2020,4:24 PM,jcb,ACTIVA,$15496.63
-584,Raleigh,Turnip - White,Brandice,10/8/2020,11:52 PM,diners-club-carte-blanche,ACTIVA,$4368.85
-585,Novelia,Apple - Royal Gala,Syman,7/20/2020,8:43 AM,americanexpress,ACTIVA,$10201.98
-586,Adelle,Wine - Touraine Azay - Le - Rideau,Alayne,5/7/2020,1:35 AM,jcb,ACTIVA,$8140.34
-587,Quinton,Jicama,Eba,6/16/2020,4:58 PM,bankcard,ACTIVA,$13071.82
-588,Alexandrina,"Flour - Bran, Red",Blanch,6/7/2020,6:12 PM,china-unionpay,ACTIVA,$4997.83
-589,Elfie,"Soup - Clam Chowder, Dry Mix",Sheela,6/10/2020,10:25 AM,mastercard,ACTIVA,$5149.57
-590,Dyana,Rice - Aborio,Leoline,11/29/2020,9:09 PM,jcb,ACTIVA,$5232.49
-591,Dion,Wine - Rioja Campo Viejo,Ly,7/16/2020,10:54 AM,americanexpress,ACTIVA,$6417.62
-592,Paloma,"Pork - Bacon, Sliced",Ruben,2/3/2021,5:17 PM,visa,ACTIVA,$12193.31
-593,Joanne,Beef Ground Medium,Steffane,7/5/2020,10:13 PM,china-unionpay,ACTIVA,$6448.60
-594,Abra,Carbonated Water - White Grape,Pam,3/15/2021,11:54 AM,jcb,ACTIVA,$19989.72
-595,Lyon,Dried Apple,Sanders,3/1/2021,10:27 PM,solo,ACTIVA,$12672.84
-596,Burt,Pepper - Jalapeno,Pooh,9/21/2020,2:32 PM,jcb,ACTIVA,$19647.87
-597,Kurt,Water - Green Tea Refresher,Giorgia,4/9/2020,1:51 PM,china-unionpay,ACTIVA,$18855.32
-598,Idelle,Oil - Safflower,Odilia,10/3/2020,3:31 AM,laser,ACTIVA,$17091.76
-599,Aileen,Sour Cream,Gabi,1/27/2021,7:26 PM,diners-club-carte-blanche,ACTIVA,$14998.78
-600,Rad,Bread - Hamburger Buns,Lotta,8/28/2020,6:01 AM,diners-club-enroute,ACTIVA,$6457.85
-601,Matilda,Beer - Original Organic Lager,Beckie,3/12/2021,8:08 AM,jcb,ACTIVA,$7708.89
-602,Juline,Wheat - Soft Kernal Of Wheat,Leonardo,5/15/2020,9:47 AM,bankcard,ACTIVA,$16755.61
-603,Richmound,Grapes - Black,Stacia,8/19/2020,4:26 PM,jcb,ACTIVA,$13151.81
-604,Saxe,Juice - Propel Sport,Glad,12/20/2020,11:03 PM,diners-club-carte-blanche,ACTIVA,$7608.34
-605,Jennica,Longos - Penne With Pesto,Cherrita,8/25/2020,8:41 PM,maestro,ACTIVA,$6847.33
-606,Morgana,"Soup - Cream Of Broccoli, Dry",Abbey,5/8/2020,5:19 PM,visa-electron,ACTIVA,$8846.66
-607,Iver,Pectin,Lee,5/7/2020,3:05 PM,jcb,ACTIVA,$8681.15
-608,Addison,"Beef - Ox Tail, Frozen",Amelia,6/22/2020,9:08 PM,bankcard,ACTIVA,$17918.56
-609,Aindrea,"Pepper - Paprika, Hungarian",Seward,1/19/2021,11:48 AM,maestro,ACTIVA,$16513.52
-610,Kingsley,"Wine - Red, Concha Y Toro",Winthrop,11/4/2020,10:21 AM,mastercard,ACTIVA,$17651.22
-611,Kirstyn,Glaze - Apricot,Ellery,10/10/2020,10:44 AM,mastercard,ACTIVA,$6991.29
-612,Becka,Red Pepper Paste,Hendrika,3/22/2021,2:35 PM,jcb,ACTIVA,$9933.46
-613,Godard,Gelatine Leaves - Envelopes,Granville,4/24/2020,6:35 PM,jcb,ACTIVA,$19777.90
-614,Niki,Beef - Ground Lean Fresh,Jessey,3/12/2021,7:44 PM,americanexpress,ACTIVA,$19504.48
-615,Kristine,Extract - Raspberry,Marten,11/12/2020,2:13 PM,maestro,ACTIVA,$9778.31
-616,Randolph,"Lamb - Leg, Diced",Roselia,12/22/2020,2:43 AM,jcb,ACTIVA,$15367.54
-617,Elsy,"Sugar - Sweet N Low, Individual",Skell,3/18/2021,5:36 PM,solo,ACTIVA,$12434.75
-618,Karlotte,Chocolate - Dark,Elladine,4/13/2020,10:24 PM,jcb,ACTIVA,$12953.22
-619,Blakelee,Apple - Royal Gala,Leanora,12/7/2020,2:35 PM,laser,ACTIVA,$14208.73
-620,Grace,Longos - Grilled Salmon With Bbq,Matthias,1/17/2021,6:15 AM,maestro,ACTIVA,$9605.81
-621,Cord,"Lamb - Pieces, Diced",Gertrud,3/26/2021,8:16 PM,switch,ACTIVA,$16606.89
-622,Kennett,Chicken - Wieners,Glenn,10/2/2020,8:43 AM,jcb,ACTIVA,$6128.17
-623,Osmund,Soap - Mr.clean Floor Soap,Marlane,12/29/2020,7:02 AM,maestro,ACTIVA,$19030.95
-624,Omar,"Beets - Candy Cane, Organic",Vivyanne,3/23/2021,9:56 AM,americanexpress,ACTIVA,$14817.44
-625,Hildegarde,Creme De Menthe Green,Athena,7/5/2020,8:27 AM,visa,ACTIVA,$5752.62
-626,Laverna,Wine - Stoneliegh Sauvignon,Mab,12/28/2020,5:15 PM,mastercard,ACTIVA,$19306.75
-627,Robbi,Foam Cup 6 Oz,Tymothy,8/28/2020,10:54 AM,maestro,ACTIVA,$11116.68
-628,Anya,"Yeast - Fresh, Fleischman",Alwin,1/15/2021,11:00 PM,jcb,ACTIVA,$6514.61
-629,Annissa,Soup - Tomato Mush. Florentine,Lianne,10/8/2020,6:39 PM,visa-electron,ACTIVA,$5729.09
-630,Danny,Napkin Colour,Lisle,3/10/2021,7:25 AM,jcb,ACTIVA,$19172.14
-631,Kermit,Beer - True North Strong Ale,Morena,4/3/2020,2:56 AM,jcb,ACTIVA,$17256.81
-632,Ethelda,Veal - Osso Bucco,Maurits,12/23/2020,10:08 AM,bankcard,ACTIVA,$11044.24
-633,Loralee,"Chilli Paste, Ginger Garlic",Charmain,3/25/2021,3:59 AM,diners-club-carte-blanche,ACTIVA,$11872.15
-634,Ellette,Wine - Duboeuf Beaujolais,Arni,9/2/2020,4:29 AM,switch,ACTIVA,$10284.76
-635,Caye,Sugar - White Packet,Zaneta,2/2/2021,10:56 PM,americanexpress,ACTIVA,$4483.09
-636,Cad,Scallops - 10/20,Colin,2/7/2021,3:51 AM,visa-electron,ACTIVA,$12089.62
-637,Dov,Wine - Jaboulet Cotes Du Rhone,Lethia,1/26/2021,7:54 AM,jcb,ACTIVA,$9137.76
-638,Birch,Bread - Dark Rye,Siusan,6/28/2020,10:47 AM,bankcard,ACTIVA,$10549.60
-639,Kalli,Chinese Foods - Chicken,Sue,10/26/2020,12:34 AM,switch,ACTIVA,$5727.56
-640,Alvan,"Jam - Raspberry,jar",Stoddard,6/27/2020,6:21 PM,mastercard,ACTIVA,$10189.84
-641,Maurita,Table Cloth 54x54 White,Skippie,10/17/2020,11:47 AM,jcb,ACTIVA,$9090.96
-642,Netta,Ostrich - Prime Cut,Ingeborg,2/16/2021,6:17 AM,jcb,ACTIVA,$18741.27
-643,Reinaldos,"Zucchini - Mini, Green",Vania,8/31/2020,6:09 PM,jcb,ACTIVA,$10075.71
-644,Cornela,Chinese Foods - Pepper Beef,Larry,6/17/2020,4:30 PM,diners-club-carte-blanche,ACTIVA,$14986.63
-645,Delmor,Island Oasis - Sweet And Sour Mix,Christabella,4/24/2020,1:08 AM,mastercard,ACTIVA,$5947.21
-646,Ronna,Plastic Wrap,Emmery,7/29/2020,2:49 AM,switch,ACTIVA,$14239.08
-647,Evey,Calypso - Black Cherry Lemonade,Morganne,11/30/2020,5:46 AM,diners-club-carte-blanche,ACTIVA,$7287.99
-648,Karol,Milk 2% 500 Ml,Annmarie,8/25/2020,3:09 AM,switch,ACTIVA,$10473.79
-649,Jamesy,Syrup - Pancake,Datha,2/14/2021,3:18 PM,jcb,ACTIVA,$14035.69
-650,Pavla,Beef - Top Butt Aaa,Loren,6/29/2020,8:27 PM,jcb,ACTIVA,$15696.42
-651,Gay,Veal - Slab Bacon,Christal,8/26/2020,5:53 PM,jcb,ACTIVA,$5693.83
-652,Fletch,Longos - Penne With Pesto,Erika,4/22/2020,4:39 PM,jcb,ACTIVA,$19950.00
-653,Gabi,Muffin Mix - Banana Nut,Jillian,2/12/2021,1:39 PM,diners-club-us-ca,ACTIVA,$7411.98
-654,Johnathon,Shiro Miso,Laraine,3/8/2021,3:07 PM,diners-club-carte-blanche,ACTIVA,$4669.49
-655,Viola,Blue Curacao - Marie Brizard,Clarey,11/13/2020,7:38 AM,jcb,ACTIVA,$11133.81
-656,Morton,"Rum - Light, Captain Morgan",Norina,10/22/2020,12:29 PM,switch,ACTIVA,$10572.85
-657,Sharleen,Red Pepper Paste,Cross,11/6/2020,9:10 PM,diners-club-carte-blanche,ACTIVA,$10673.32
-658,Gert,Cheese - Cheddarsliced,Tootsie,6/9/2020,4:41 PM,jcb,ACTIVA,$16417.58
-659,Clim,"Potatoes - Purple, Organic",Yorgo,5/6/2020,5:34 PM,jcb,ACTIVA,$7486.71
-660,Walt,Butter - Unsalted,Bartholomeo,5/31/2020,6:56 AM,jcb,ACTIVA,$8127.44
-661,Romain,Green Scrubbie Pad H.duty,Godfree,10/5/2020,7:13 AM,bankcard,ACTIVA,$5799.48
-662,Marty,Buffalo - Striploin,Bordy,11/7/2020,5:43 PM,jcb,ACTIVA,$15049.93
-663,Eugenio,Beans - Butter Lrg Lima,Rebeca,1/6/2021,12:39 AM,jcb,ACTIVA,$14923.35
-664,Tuesday,Pan Grease,Beverie,5/20/2020,10:38 AM,jcb,ACTIVA,$16315.40
-665,Neda,Wine - Acient Coast Caberne,Rance,9/22/2020,3:22 PM,visa-electron,ACTIVA,$6875.99
-666,Edna,"Lemonade - Island Tea, 591 Ml",Craggy,12/5/2020,6:37 AM,visa-electron,ACTIVA,$15507.62
-667,Fredrick,Oil - Macadamia,Carree,4/29/2020,11:17 AM,mastercard,ACTIVA,$10067.04
-668,Gae,Hot Choc Vending,Luella,4/12/2020,8:43 PM,jcb,ACTIVA,$9566.44
-669,Marji,Sauce - Hoisin,Deanne,8/8/2020,1:07 PM,jcb,ACTIVA,$19941.69
-670,Antoinette,Croissants Thaw And Serve,Michaella,4/2/2020,3:09 AM,jcb,ACTIVA,$8649.31
-671,Amaleta,Arctic Char - Fillets,Isiahi,2/27/2021,10:13 AM,diners-club-international,ACTIVA,$13511.53
-672,Jerri,Oil - Sesame,Eloisa,4/21/2020,7:44 AM,jcb,ACTIVA,$11130.97
-673,Renie,Chick Peas - Canned,Mercy,10/1/2020,11:48 PM,jcb,ACTIVA,$11184.55
-674,Eward,Bok Choy - Baby,Scottie,8/15/2020,9:33 PM,mastercard,ACTIVA,$19852.33
-675,Cory,Bread - Pita,Anya,5/3/2020,4:16 AM,instapayment,ACTIVA,$12786.86
-676,Haze,Wine - Merlot Vina Carmen,Delia,7/19/2020,4:41 AM,jcb,ACTIVA,$17375.47
-677,Dulcine,"Beef - Kindney, Whole",Maisey,12/20/2020,8:39 AM,americanexpress,ACTIVA,$9863.17
-678,Brien,Cheese - Brie,Daisey,2/12/2021,10:19 AM,jcb,ACTIVA,$4526.90
-679,Vitoria,Soup Campbells - Tomato Bisque,Lesley,5/2/2020,8:03 PM,maestro,ACTIVA,$9554.67
-680,Josias,Madeira,Leonhard,6/13/2020,4:24 AM,jcb,ACTIVA,$11545.98
-681,Camille,Avocado,Ellynn,7/9/2020,5:33 AM,jcb,ACTIVA,$16911.17
-682,Markos,Halibut - Fletches,Hewitt,7/21/2020,8:47 AM,china-unionpay,ACTIVA,$7184.84
-683,Joana,Cookies - Englishbay Chochip,Alec,10/23/2020,10:11 AM,jcb,ACTIVA,$10534.75
-684,Coriss,Turnip - Wax,Dannie,3/9/2021,12:41 AM,visa,ACTIVA,$6586.52
-685,Jolie,"Lamb - Loin, Trimmed, Boneless",Sula,3/23/2021,7:32 AM,china-unionpay,ACTIVA,$14150.71
-686,Alexina,Yucca,Darell,5/8/2020,5:05 PM,china-unionpay,ACTIVA,$17611.56
-687,Malynda,Wine - Peller Estates Late,Felita,11/17/2020,1:44 AM,jcb,ACTIVA,$19503.66
-688,Milissent,Beef - Tenderloin,Clyve,5/18/2020,12:54 AM,diners-club-international,ACTIVA,$18510.74
-689,Pepita,Pork - Hock And Feet Attached,Mac,1/7/2021,11:16 AM,jcb,ACTIVA,$17258.42
-690,Filia,Sobe - Green Tea,Lalo,7/28/2020,8:17 PM,diners-club-carte-blanche,ACTIVA,$14039.55
-691,Cthrine,Table Cloth - 53x69 Colour,Audre,8/4/2020,3:07 PM,jcb,ACTIVA,$19439.32
-692,Cliff,Neckerchief Blck,Guinevere,12/17/2020,3:37 AM,jcb,ACTIVA,$16754.81
-693,Benjamen,"Yogurt - Cherry, 175 Gr",Mendie,6/8/2020,8:04 PM,visa-electron,ACTIVA,$19928.88
-694,Dulsea,Cake Slab,Doy,12/7/2020,8:43 PM,maestro,ACTIVA,$13303.72
-695,Cordie,"Water, Tap",Ardella,11/10/2020,8:33 PM,jcb,ACTIVA,$8350.95
-696,Amara,"Nut - Pecan, Halves",Myer,10/25/2020,8:32 AM,jcb,ACTIVA,$10939.87
-697,Nance,Lettuce - Baby Salad Greens,Ingelbert,10/12/2020,6:40 AM,diners-club-enroute,ACTIVA,$19345.13
-698,Ansel,"Bread - Pumpernickle, Rounds",Mendy,7/22/2020,12:14 PM,jcb,ACTIVA,$12737.00
-699,Warden,"Sauce - White, Mix",David,3/17/2021,1:17 AM,jcb,ACTIVA,$5419.88
-700,Hermy,Rice - Basmati,Jacinthe,11/15/2020,9:29 PM,jcb,ACTIVA,$6051.41
-701,Glynn,"Mustard - Dry, Powder",Paige,3/10/2021,3:16 AM,visa,ACTIVA,$19256.00
-702,Alberto,Rice - Jasmine Sented,Wiatt,11/16/2020,9:20 PM,jcb,ACTIVA,$15032.65
-703,Rab,Lamb - Loin Chops,Obadias,3/27/2020,9:37 AM,jcb,ACTIVA,$13588.36
-704,Deidre,Squash - Acorn,Nadeen,11/11/2020,6:03 PM,diners-club-carte-blanche,ACTIVA,$5150.59
-705,Delmore,External Supplier,Ludvig,8/11/2020,9:11 PM,americanexpress,ACTIVA,$15345.63
-706,Clem,Ecolab - Hobart Upr Prewash Arm,Cristian,6/26/2020,3:53 PM,visa,ACTIVA,$9999.79
-707,Roshelle,"Tart Shells - Savory, 4",Shela,6/29/2020,6:00 PM,jcb,ACTIVA,$9649.77
-708,Lila,"Quail - Eggs, Fresh",Rubina,1/31/2021,3:20 PM,diners-club-international,ACTIVA,$9392.76
-709,Mel,"Crab - Claws, 26 - 30",Agustin,6/18/2020,7:15 PM,china-unionpay,ACTIVA,$9916.42
-710,Aurlie,"Sauce - White, Mix",Stormy,5/18/2020,4:05 PM,mastercard,ACTIVA,$6754.24
-711,Davida,Bread - Olive,Cindi,9/13/2020,12:11 PM,mastercard,ACTIVA,$17637.73
-712,Sandye,Island Oasis - Lemonade,Keane,1/14/2021,4:28 PM,mastercard,ACTIVA,$7200.43
-713,Oliver,"Nut - Pecan, Halves",Chickie,1/28/2021,11:39 AM,mastercard,ACTIVA,$6685.23
-714,Zebulon,Pepper - Red Thai,Larine,7/19/2020,4:37 PM,jcb,ACTIVA,$5272.30
-715,Griz,Muffin - Bran Ind Wrpd,Stevie,10/3/2020,3:49 PM,jcb,ACTIVA,$12767.60
-716,Ingeberg,Cheese - Comte,Margeaux,12/21/2020,12:42 AM,mastercard,ACTIVA,$11270.57
-717,Johanna,Pork - Back Ribs,Brandise,1/22/2021,12:47 PM,bankcard,ACTIVA,$11030.97
-718,Mendie,Veal - Loin,Hollie,2/19/2021,4:42 PM,jcb,ACTIVA,$7566.21
-719,Aldwin,Lemon Pepper,Silva,9/8/2020,4:22 AM,china-unionpay,ACTIVA,$8373.09
-720,Elyse,Appetizer - Lobster Phyllo Roll,Norbert,12/5/2020,2:48 PM,jcb,ACTIVA,$9554.05
-721,Ceciley,Wine - Puligny Montrachet A.,Torrence,10/14/2020,1:57 AM,mastercard,ACTIVA,$5513.13
-722,Dirk,Pepper - Gypsy Pepper,Duky,12/18/2020,10:44 AM,bankcard,ACTIVA,$19248.15
-723,Tibold,"Fish - Base, Bouillion",Sonia,7/28/2020,3:05 AM,jcb,ACTIVA,$11493.72
-724,Selia,Roe - White Fish,Doyle,5/3/2020,5:23 PM,maestro,ACTIVA,$14077.85
-725,Colene,Cheese - Gouda,Netta,10/9/2020,6:19 PM,visa-electron,ACTIVA,$17039.83
-726,Wendel,Beer - Paulaner Hefeweisse,Odey,5/11/2020,8:25 PM,jcb,ACTIVA,$6044.49
-727,Guillermo,Tea - Herbal I Love Lemon,Carney,1/23/2021,2:47 PM,maestro,ACTIVA,$11009.22
-728,Vaclav,Wine - Savigny - Les - Beaune,Hoebart,4/23/2020,1:54 AM,jcb,ACTIVA,$8247.44
-729,Guinevere,Monkfish Fresh - Skin Off,Husein,2/21/2021,11:11 PM,bankcard,ACTIVA,$14683.33
-730,Caresa,Puff Pastry - Sheets,Ginni,8/27/2020,12:32 AM,switch,ACTIVA,$5955.41
-731,Terrie,"Doilies - 7, Paper",Joice,5/11/2020,11:18 PM,switch,ACTIVA,$13983.27
-732,Carmita,Anchovy In Oil,Maurie,5/6/2020,6:24 PM,americanexpress,ACTIVA,$13522.66
-733,Stephannie,Crab - Meat,Geordie,8/29/2020,11:30 PM,jcb,ACTIVA,$4677.25
-734,Clare,Pails With Lids,Ezmeralda,6/27/2020,6:33 AM,switch,ACTIVA,$11533.29
-735,Paxton,Wine - Magnotta - Pinot Gris Sr,Darby,8/21/2020,12:46 AM,jcb,ACTIVA,$19799.79
-736,Griffin,Fond - Chocolate,Gaylord,12/12/2020,7:46 PM,laser,ACTIVA,$18894.26
-737,Alex,Yucca,Salomi,2/19/2021,4:29 AM,diners-club-enroute,ACTIVA,$5243.12
-738,Manolo,Beef Dry Aged Tenderloin Aaa,Anita,8/10/2020,9:15 PM,diners-club-enroute,ACTIVA,$9476.20
-739,Tine,Hersey Shakes,Emmott,6/23/2020,12:53 AM,jcb,ACTIVA,$11477.04
-740,Carlynn,Fib N9 - Prague Powder,Layne,4/29/2020,12:03 AM,laser,ACTIVA,$19059.14
-741,Wang,"Cheese - Mozzarella, Buffalo",Margery,10/6/2020,6:57 PM,jcb,ACTIVA,$14167.04
-742,Sharlene,Dc Hikiage Hira Huba,Flory,1/30/2021,6:22 AM,switch,ACTIVA,$9790.53
-743,Amelina,Beef - Flank Steak,Hali,9/25/2020,9:58 AM,diners-club-carte-blanche,ACTIVA,$9657.10
-744,Carolina,Juice - Ocean Spray Cranberry,Rory,10/24/2020,6:24 AM,mastercard,ACTIVA,$15856.52
-745,Arleyne,Ginger - Ground,Shelli,6/3/2020,1:06 PM,jcb,ACTIVA,$7790.33
-746,Geri,Lamb Leg - Bone - In Nz,Avrit,1/8/2021,5:01 AM,jcb,ACTIVA,$18002.16
-747,Fredericka,Container - Clear 16 Oz,Sigfrid,6/19/2020,11:54 AM,jcb,ACTIVA,$16282.52
-748,Tamra,Chicken - Soup Base,Catharine,2/1/2021,12:26 AM,maestro,ACTIVA,$19440.62
-749,Alma,Ice Cream - Strawberry,Thane,7/17/2020,12:22 AM,bankcard,ACTIVA,$10590.20
-750,Tamqrah,Poppy Seed,Breena,1/5/2021,1:17 PM,americanexpress,ACTIVA,$11135.10
-751,Nathan,Syrup - Monin - Granny Smith,Danna,5/31/2020,3:52 PM,jcb,ACTIVA,$12344.75
-752,Courtney,Cotton Wet Mop 16 Oz,Rosamund,1/31/2021,2:52 AM,americanexpress,ACTIVA,$8341.04
-753,Dorothea,Watercress,Andrey,1/31/2021,5:37 AM,jcb,ACTIVA,$19869.83
-754,Sheilakathryn,Sorrel - Fresh,Otto,1/10/2021,7:07 AM,visa-electron,ACTIVA,$16848.68
-755,Lockwood,Olive - Spread Tapenade,Darice,3/30/2020,10:15 AM,jcb,ACTIVA,$11670.21
-756,Drugi,"Juice - Pineapple, 341 Ml",Fraze,12/14/2020,6:29 AM,jcb,ACTIVA,$17474.82
-757,Ivonne,"Beef - Tongue, Fresh",Kennedy,10/23/2020,3:02 AM,americanexpress,ACTIVA,$19264.54
-758,Maryellen,"Tomatoes - Vine Ripe, Yellow",Catarina,11/22/2020,6:06 PM,jcb,ACTIVA,$9059.45
-759,Saundra,Beef - Flank Steak,Elwin,2/27/2021,10:56 PM,jcb,ACTIVA,$4015.12
-760,Walden,Sprouts - Onion,Sande,7/1/2020,3:35 AM,jcb,ACTIVA,$16234.98
-761,Elspeth,"Beans - Kidney, Canned",Marylinda,6/11/2020,6:42 PM,bankcard,ACTIVA,$19595.53
-762,Saundra,Food Colouring - Pink,Roddie,9/25/2020,10:57 AM,jcb,ACTIVA,$9096.02
-763,Karim,"Crush - Grape, 355 Ml",Mitzi,5/4/2020,2:47 PM,diners-club-enroute,ACTIVA,$9992.51
-764,Velma,"Beans - Navy, Dry",Bliss,5/29/2020,4:49 AM,diners-club-carte-blanche,ACTIVA,$9581.57
-765,Bondy,Longos - Burritos,Ibby,10/29/2020,11:47 PM,visa-electron,ACTIVA,$9810.42
-766,Mady,Nantucket - 518ml,Marya,3/7/2021,9:46 PM,maestro,ACTIVA,$18741.81
-767,Brittani,Cranberries - Dry,Tonya,7/18/2020,11:13 AM,jcb,ACTIVA,$9948.25
-768,Dominga,Beer - Camerons Cream Ale,Deeanne,9/13/2020,3:04 PM,jcb,ACTIVA,$16982.14
-769,Johnette,Steampan - Half Size Shallow,Dorothy,7/9/2020,7:46 AM,jcb,ACTIVA,$9293.28
-770,Suki,Yeast Dry - Fleischman,Rikki,11/1/2020,11:57 AM,americanexpress,ACTIVA,$16881.43
-771,Antonia,"Wine - Red, Mosaic Zweigelt",Baxy,11/1/2020,3:20 PM,diners-club-carte-blanche,ACTIVA,$10275.80
-772,Arvie,Lid - 3oz Med Rec,Arabella,9/19/2020,4:56 AM,diners-club-enroute,ACTIVA,$13030.90
-773,Cherilynn,"Soup - Canadian Pea, Dry Mix",Dougy,8/6/2020,11:06 AM,bankcard,ACTIVA,$5697.57
-774,Sharron,Cinnamon - Stick,Marv,7/14/2020,9:15 PM,visa,ACTIVA,$17023.43
-775,Valerie,"Pasta - Penne, Rigate, Dry",Bryce,3/19/2021,10:14 AM,maestro,ACTIVA,$5217.87
-776,Miquela,Beef - Short Ribs,Kristian,3/5/2021,8:42 AM,jcb,ACTIVA,$12207.14
-777,Zorina,Bandage - Fexible 1x3,Matthew,9/3/2020,9:07 AM,americanexpress,ACTIVA,$17936.24
-778,Danie,Beans - Green,Devlin,6/4/2020,5:34 AM,jcb,ACTIVA,$11308.24
-779,Antone,Petite Baguette,Hinze,1/25/2021,9:20 PM,bankcard,ACTIVA,$15234.22
-780,Rowney,Rolled Oats,Meris,9/28/2020,8:53 PM,switch,ACTIVA,$9177.83
-781,Una,Lamb Shoulder Boneless Nz,Gustie,5/20/2020,2:28 PM,china-unionpay,ACTIVA,$17495.39
-782,Marin,Dried Cherries,Myrtia,10/26/2020,8:19 PM,jcb,ACTIVA,$18662.69
-783,Hermon,"Oil - Shortening,liqud, Fry",Daveen,8/16/2020,11:19 PM,visa,ACTIVA,$12508.46
-784,Augustin,"Plate - Foam, Bread And Butter",Avrom,3/30/2020,6:22 AM,americanexpress,ACTIVA,$13731.12
-785,Aleen,Lumpfish Black,Kristan,2/15/2021,5:43 PM,jcb,ACTIVA,$7589.10
-786,Engelbert,Pate - Cognac,Saunderson,1/27/2021,9:11 PM,instapayment,ACTIVA,$15269.20
-787,Erl,Onions - Red,Merrily,3/6/2021,5:38 PM,instapayment,ACTIVA,$7075.61
-788,Tybi,Mousse - Banana Chocolate,Octavius,9/21/2020,4:11 AM,jcb,ACTIVA,$12334.33
-789,Camala,Duck - Legs,Pamela,3/1/2021,4:27 AM,jcb,ACTIVA,$13522.57
-790,Leigha,Glaze - Clear,Mata,8/26/2020,12:56 AM,jcb,ACTIVA,$11820.28
-791,Renate,Cookies Almond Hazelnut,Minnie,2/19/2021,8:42 PM,jcb,ACTIVA,$9051.77
-792,Arnold,"Oil - Shortening,liqud, Fry",Archibald,8/16/2020,4:27 PM,jcb,ACTIVA,$18512.23
-793,Burnard,Compound - Pear,Vinni,2/18/2021,9:28 AM,jcb,ACTIVA,$9990.57
-794,Sadella,Veal Inside - Provimi,Clevie,8/23/2020,4:08 AM,mastercard,ACTIVA,$9955.66
-795,Calhoun,"Pasta - Fettuccine, Dry",Petr,3/25/2021,4:57 AM,jcb,ACTIVA,$5378.69
-796,Reid,Bread - Italian Corn Meal Poly,Rosalind,3/7/2021,8:18 PM,jcb,ACTIVA,$9378.72
-797,Bruce,Tuna - Fresh,Simone,2/7/2021,12:30 PM,diners-club-enroute,ACTIVA,$11276.69
-798,Wilhelmine,Rice - Wild,Barbara,1/26/2021,7:43 PM,diners-club-carte-blanche,ACTIVA,$8097.60
-799,Boycie,Burger Veggie,Crystie,2/6/2021,4:02 PM,mastercard,ACTIVA,$7170.52
-800,Mariya,Cabbage - Nappa,Adela,9/7/2020,1:46 AM,visa-electron,ACTIVA,$17489.66
-801,Idaline,Plums - Red,Michell,6/27/2020,11:14 AM,americanexpress,ACTIVA,$9814.64
-802,Griffy,Shrimp - Tiger 21/25,Eliza,6/23/2020,4:39 PM,jcb,ACTIVA,$17707.74
-803,Dora,"Juice - Pineapple, 341 Ml",Humfried,7/6/2020,10:13 AM,jcb,ACTIVA,$7071.21
-804,Dick,"Wine - White, Schroder And Schyl",Neron,5/3/2020,1:21 PM,diners-club-carte-blanche,ACTIVA,$11229.30
-805,Jerrilyn,Pears - Anjou,Diane,6/27/2020,9:46 PM,diners-club-us-ca,ACTIVA,$12042.87
-806,Norbert,"Pepper - Chipotle, Canned",Cathrin,9/22/2020,8:35 PM,americanexpress,ACTIVA,$4573.09
-807,Caralie,Bandage - Flexible Neon,Shandy,9/23/2020,5:46 AM,jcb,ACTIVA,$19813.90
-808,Kris,Pastry - Cheese Baked Scones,Smitty,9/5/2020,1:49 AM,visa,ACTIVA,$15362.17
-809,Cissy,Beer - Paulaner Hefeweisse,Maressa,8/21/2020,11:37 AM,visa-electron,ACTIVA,$4878.20
-810,Leonhard,Water - Spring Water 500ml,Siana,4/13/2020,3:40 PM,jcb,ACTIVA,$12419.04
-811,Ingunna,"Trout - Rainbow, Frozen",Mordecai,2/6/2021,1:08 AM,bankcard,ACTIVA,$16529.14
-812,Bea,Nantucket Apple Juice,Legra,9/13/2020,1:19 AM,diners-club-carte-blanche,ACTIVA,$8803.54
-813,Bradan,Beef - Bresaola,Nancee,3/26/2021,12:00 PM,diners-club-carte-blanche,ACTIVA,$9172.83
-814,Gay,Cookies Almond Hazelnut,Leyla,8/26/2020,8:57 AM,bankcard,ACTIVA,$17872.76
-815,Kris,Turkey Tenderloin Frozen,Corie,8/18/2020,6:33 PM,mastercard,ACTIVA,$14193.44
-816,Jarid,Crackers - Melba Toast,Wain,9/23/2020,3:02 AM,maestro,ACTIVA,$17506.06
-817,Carmelita,Pork - Hock And Feet Attached,Kellsie,7/15/2020,4:48 AM,mastercard,ACTIVA,$12184.73
-818,Dalia,Cheese - Blue,Adda,9/22/2020,8:00 AM,jcb,ACTIVA,$11376.18
-819,Gates,Garbage Bag - Clear,Boyce,7/11/2020,1:26 AM,instapayment,ACTIVA,$6319.03
-820,Gloriane,Icecream - Dstk Cml And Fdg,Marjie,5/31/2020,12:31 PM,jcb,ACTIVA,$5321.87
-821,Milty,Cheese - Goat,Nancey,3/17/2021,1:12 PM,jcb,ACTIVA,$11716.81
-822,Calvin,Wine - Puligny Montrachet A.,Aloysius,12/19/2020,9:00 AM,diners-club-carte-blanche,ACTIVA,$8995.32
-823,Maude,"Lemonade - Kiwi, 591 Ml",Ranna,11/11/2020,5:35 AM,china-unionpay,ACTIVA,$14174.32
-824,Husain,Chicken - Bones,Cornelle,7/29/2020,3:27 PM,instapayment,ACTIVA,$5020.97
-825,Jerome,True - Vue Containers,Ad,4/26/2020,6:00 PM,mastercard,ACTIVA,$4067.88
-826,Aron,Pork Loin Cutlets,Myrle,6/15/2020,9:48 PM,jcb,ACTIVA,$17380.61
-827,Stanleigh,Onions Granulated,Mellie,10/7/2020,5:39 AM,jcb,ACTIVA,$4796.19
-828,Frayda,Muffin - Mix - Creme Brule 15l,Hetty,2/13/2021,10:42 PM,bankcard,ACTIVA,$13888.84
-829,Killy,Lobster - Base,Mikael,9/19/2020,5:46 PM,switch,ACTIVA,$16783.79
-830,Ola,Flour - Cake,Jeannie,2/24/2021,11:19 PM,diners-club-enroute,ACTIVA,$19242.06
-831,Gilberte,"Juice - Orange, Concentrate",Mandel,7/21/2020,2:03 AM,jcb,ACTIVA,$15909.55
-832,Stefa,"Trout - Hot Smkd, Dbl Fillet",Jacinthe,9/13/2020,6:12 PM,mastercard,ACTIVA,$17096.17
-833,Jeralee,Chips Potato Salt Vinegar 43g,Melicent,11/20/2020,12:52 AM,jcb,ACTIVA,$16695.26
-834,Adey,Glove - Cutting,Romonda,12/21/2020,6:56 PM,mastercard,ACTIVA,$7696.49
-835,Nathalia,Curry Powder Madras,Kassie,11/17/2020,11:28 PM,diners-club-carte-blanche,ACTIVA,$8955.73
-836,Delano,Cookie Dough - Chocolate Chip,Charita,11/24/2020,11:56 PM,jcb,ACTIVA,$13581.77
-837,Rubin,Sauce - Hollandaise,Josi,12/23/2020,4:45 AM,jcb,ACTIVA,$5235.88
-838,Corey,Coffee - Almond Amaretto,Antoine,9/17/2020,2:24 PM,maestro,ACTIVA,$14150.31
-839,Pavla,Food Colouring - Orange,Eddy,11/25/2020,6:50 AM,jcb,ACTIVA,$10900.40
-840,Terry,"Wine - White, Antinore Orvieto",Barrie,6/22/2020,7:00 AM,mastercard,ACTIVA,$4738.36
-841,Mela,Mix - Cappucino Cocktail,Min,11/13/2020,2:16 PM,jcb,ACTIVA,$12572.07
-842,Maurita,Mcgillicuddy Vanilla Schnap,Cilka,5/11/2020,2:27 AM,jcb,ACTIVA,$9567.76
-843,Erskine,Black Currants,Lorrie,9/18/2020,3:27 AM,jcb,ACTIVA,$10056.26
-844,Daffi,Pear - Halves,Harriette,7/29/2020,11:13 AM,laser,ACTIVA,$11370.86
-845,Iormina,Mussels - Frozen,Mady,8/1/2020,3:12 PM,jcb,ACTIVA,$4103.53
-846,Ivory,"Mushroom - Morels, Dry",Tricia,5/17/2020,2:22 AM,diners-club-carte-blanche,ACTIVA,$11181.26
-847,Violante,Blueberries,Dulcie,7/2/2020,9:38 AM,jcb,ACTIVA,$4084.15
-848,Ysabel,Bread Cranberry Foccacia,Tiler,5/4/2020,2:04 AM,china-unionpay,ACTIVA,$5295.25
-849,Hendrika,Energy Drink Red Bull,Rosmunda,5/26/2020,10:49 AM,jcb,ACTIVA,$6402.48
-850,Mercedes,Salad Dressing,Gabie,4/3/2020,1:54 AM,mastercard,ACTIVA,$10735.95
-851,Collete,Tuna - Sushi Grade,Lanie,3/15/2021,4:15 PM,jcb,ACTIVA,$14505.31
-852,Christa,Muffin Mix - Blueberry,Tildie,9/12/2020,6:30 PM,jcb,ACTIVA,$8087.72
-853,Port,Pate - Cognac,Gae,5/18/2020,10:37 AM,visa-electron,ACTIVA,$7569.80
-854,Leo,Carbonated Water - Strawberry,Sean,5/21/2020,3:37 AM,diners-club-enroute,ACTIVA,$14928.83
-855,Barbabas,Wine - Touraine Azay - Le - Rideau,Eilis,1/18/2021,11:01 PM,switch,ACTIVA,$13840.41
-856,Lucie,Sugar - Brown,Buddie,5/14/2020,2:32 PM,jcb,ACTIVA,$8722.73
-857,Kellia,Cookie Double Choco,Orrin,5/10/2020,6:06 AM,maestro,ACTIVA,$19972.32
-858,Berton,"Tray - Foam, Square 4 - S",Martie,12/17/2020,7:50 PM,jcb,ACTIVA,$8807.79
-859,Ulysses,"Vodka - Lemon, Absolut",Kalinda,8/24/2020,2:04 PM,jcb,ACTIVA,$15807.20
-860,Feliza,Crab - Imitation Flakes,Harp,8/30/2020,9:55 PM,visa-electron,ACTIVA,$11951.45
-861,Celene,Juice - Lagoon Mango,Lotti,8/8/2020,2:51 PM,china-unionpay,ACTIVA,$8875.03
-862,Gwenora,Chef Hat 25cm,Esther,3/14/2021,10:03 PM,jcb,ACTIVA,$19489.12
-863,Oliviero,"Olives - Black, Pitted",Lenard,1/10/2021,5:15 PM,jcb,ACTIVA,$18709.18
-864,Lester,Raspberries - Frozen,Tammara,10/22/2020,12:04 PM,switch,ACTIVA,$16653.79
-865,Olga,Cheese - Wine,Ned,10/5/2020,7:38 AM,visa-electron,ACTIVA,$11489.18
-866,Debora,Sambuca - Ramazzotti,Alastair,5/19/2020,12:16 PM,americanexpress,ACTIVA,$13756.93
-867,Alidia,Bagel - Plain,Hayyim,4/3/2020,7:33 PM,laser,ACTIVA,$18885.20
-868,Ranna,Glycerine,Padraig,6/8/2020,3:39 PM,diners-club-carte-blanche,ACTIVA,$18170.93
-869,Corbie,Squid U5 - Thailand,Kary,8/29/2020,12:35 AM,jcb,ACTIVA,$8846.72
-870,Wylma,Beer - Heinekin,Ida,1/8/2021,1:47 AM,jcb,ACTIVA,$8758.99
-871,Alicia,"Beef - Tongue, Fresh",Carina,8/22/2020,7:46 AM,diners-club-us-ca,ACTIVA,$10928.43
-872,Susette,Pepper - Red Bell,Woodrow,12/16/2020,6:01 AM,mastercard,ACTIVA,$9249.56
-873,Daren,Bagelers - Cinn / Brown Sugar,Catlee,3/18/2021,12:24 AM,jcb,ACTIVA,$17729.90
-874,Thane,Coffee - Decafenated,Paige,11/1/2020,4:24 AM,americanexpress,ACTIVA,$7583.89
-875,Emmalyn,Beer - Camerons Auburn,Valli,5/28/2020,11:48 PM,jcb,ACTIVA,$18733.16
-876,Beryle,"Nut - Cashews, Whole, Raw",Cchaddie,8/5/2020,5:11 AM,jcb,ACTIVA,$17247.77
-877,Celle,"Yogurt - Banana, 175 Gr",Kass,5/3/2020,8:08 PM,diners-club-carte-blanche,ACTIVA,$11599.44
-878,Frasquito,Coffee Cup 8oz 5338cd,Gibby,5/11/2020,10:42 PM,switch,ACTIVA,$16026.64
-879,Jed,Fudge - Chocolate Fudge,Blinni,1/14/2021,10:33 PM,mastercard,ACTIVA,$19005.07
-880,Marjorie,Bread - French Stick,Dyanne,6/24/2020,9:55 AM,instapayment,ACTIVA,$7245.61
-881,Billie,Almonds Ground Blanched,Iolanthe,7/7/2020,9:54 AM,mastercard,ACTIVA,$5282.97
-882,Jarvis,Spice - Chili Powder Mexican,Kerwin,3/16/2021,4:42 AM,switch,ACTIVA,$14687.25
-883,Noel,Carbonated Water - Peach,Cass,3/21/2021,11:46 AM,diners-club-carte-blanche,ACTIVA,$18179.71
-884,Sada,Cranberries - Fresh,Dre,8/14/2020,8:41 PM,maestro,ACTIVA,$12056.23
-885,Lavinia,"Cherries - Bing, Canned",Murry,8/28/2020,8:17 PM,jcb,ACTIVA,$19880.93
-886,Juieta,Plastic Wrap,Earl,4/21/2020,2:20 PM,china-unionpay,ACTIVA,$17393.44
-887,Bev,Bar Mix - Lime,Ody,9/11/2020,3:31 AM,mastercard,ACTIVA,$16560.36
-888,Aubert,Mushroom - Crimini,Pauletta,8/15/2020,5:53 PM,jcb,ACTIVA,$15011.51
-889,Anette,"Pasta - Penne, Rigate, Dry",Gifford,11/22/2020,10:01 PM,jcb,ACTIVA,$9967.56
-890,Danya,"Basil - Dry, Rubbed",Alis,8/30/2020,11:07 AM,jcb,ACTIVA,$10284.45
-891,Kennith,Pan Grease,Padget,8/29/2020,7:23 PM,jcb,ACTIVA,$8432.49
-892,Nadya,Juice - Orange 1.89l,Molly,2/13/2021,2:27 AM,diners-club-carte-blanche,ACTIVA,$16323.31
-893,Melinde,"Veal - Chops, Split, Frenched",Arleta,9/12/2020,1:49 PM,jcb,ACTIVA,$7109.54
-894,Raviv,Filter - Coffee,Lalo,7/5/2020,11:48 PM,visa-electron,ACTIVA,$5036.42
-895,Gordan,Sage - Rubbed,Gabrila,3/26/2021,3:43 PM,jcb,ACTIVA,$8910.57
-896,Christabel,Bread - Olive Dinner Roll,Helen,12/9/2020,5:51 PM,instapayment,ACTIVA,$9190.34
-897,Roxane,Wine - Ej Gallo Sierra Valley,Jarred,12/16/2020,10:06 PM,jcb,ACTIVA,$10773.66
-898,Rich,Coffee Cup 12oz 5342cd,Geoffry,5/27/2020,9:21 AM,jcb,ACTIVA,$8487.08
-899,Dallis,Eggroll,Clywd,9/27/2020,2:46 AM,mastercard,ACTIVA,$19798.29
-900,Maud,Cream - 18%,Kerrie,12/3/2020,1:54 AM,visa-electron,ACTIVA,$5591.47
-901,Pearline,Salmon - Sockeye Raw,Rogerio,8/7/2020,3:36 AM,mastercard,ACTIVA,$19756.28
-902,Merlina,Juice - Prune,Roosevelt,5/26/2020,7:31 PM,jcb,ACTIVA,$19040.32
-903,Andriette,Assorted Desserts,Hube,7/25/2020,12:08 AM,jcb,ACTIVA,$10804.74
-904,Appolonia,"Nut - Pine Nuts, Whole",Ellene,5/12/2020,1:55 AM,visa-electron,ACTIVA,$14585.79
-905,Clarine,Puree - Strawberry,Arnaldo,12/22/2020,8:20 PM,china-unionpay,ACTIVA,$5982.54
-906,Jarrett,Icecream - Dstk Strw Chseck,Alma,8/1/2020,3:36 AM,visa,ACTIVA,$19926.74
-907,Ramona,Wine - Segura Viudas Aria Brut,Ahmed,6/23/2020,5:32 AM,americanexpress,ACTIVA,$18240.82
-908,Fara,Pepper - Red Thai,Rowe,1/1/2021,11:16 PM,switch,ACTIVA,$10997.44
-909,Audry,Dates,Nikolas,11/16/2020,2:02 PM,visa-electron,ACTIVA,$4426.11
-910,Amitie,Sauce - Ranch Dressing,Fionna,1/8/2021,5:00 AM,bankcard,ACTIVA,$10609.92
-911,Oona,Beans - Green,Orland,11/29/2020,10:39 PM,jcb,ACTIVA,$15670.46
-912,Dore,"Mushroom - Chanterelle, Dry",Darcee,11/5/2020,7:36 AM,maestro,ACTIVA,$8669.45
-913,Leonie,Compound - Strawberry,Barthel,2/20/2021,9:47 PM,jcb,ACTIVA,$11910.91
-914,Olin,Sour Puss Sour Apple,Hilly,11/29/2020,2:49 PM,jcb,ACTIVA,$8826.33
-915,Myrtice,Cup - 4oz Translucent,Gilles,6/30/2020,6:33 PM,visa,ACTIVA,$6996.28
-916,Johnathon,Wine - Sauvignon Blanc Oyster,Danica,10/10/2020,10:29 AM,jcb,ACTIVA,$5585.87
-917,Megan,Filter - Coffee,Tiena,9/12/2020,12:40 AM,diners-club-enroute,ACTIVA,$5171.30
-918,Llewellyn,Ecolab - Lime - A - Way 4/4 L,Penny,5/26/2020,6:01 PM,jcb,ACTIVA,$11675.90
-919,Edythe,"Pork - Loin, Bone - In",Daisy,12/18/2020,3:34 PM,diners-club-enroute,ACTIVA,$14590.27
-920,Iolande,Artichokes - Jerusalem,Norby,8/30/2020,6:34 PM,jcb,ACTIVA,$14490.61
-921,Syman,Cabbage - Nappa,Grethel,12/12/2020,7:37 AM,solo,ACTIVA,$12265.11
-922,Wilfrid,Wine - Jafflin Bourgongone,Adara,10/5/2020,7:07 PM,jcb,ACTIVA,$14450.16
-923,Thadeus,Squash - Acorn,Kirsti,4/10/2020,11:33 AM,bankcard,ACTIVA,$11113.35
-924,Kellyann,"Cheese - Havarti, Roasted Garlic",Celinda,5/29/2020,3:03 AM,bankcard,ACTIVA,$11041.50
-925,Dirk,Paste - Black Olive,Afton,6/1/2020,1:39 AM,diners-club-us-ca,ACTIVA,$14633.11
-926,Boigie,Foam Tray S2,Drugi,5/12/2020,7:15 PM,jcb,ACTIVA,$17626.66
-927,Jonah,Bagels Poppyseed,Matthaeus,3/15/2021,10:20 AM,jcb,ACTIVA,$13342.00
-928,Britt,Savory,Zenia,9/19/2020,5:33 AM,bankcard,ACTIVA,$18218.44
-929,Rae,Lamb Shoulder Boneless Nz,Lanny,12/23/2020,3:03 AM,visa-electron,ACTIVA,$6325.64
-930,Ursula,Cheese - Roquefort Pappillon,Jonis,7/13/2020,3:29 AM,jcb,ACTIVA,$16275.23
-931,Claudian,Beef - Sushi Flat Iron Steak,Papagena,5/30/2020,6:59 AM,americanexpress,ACTIVA,$12914.29
-932,Nerissa,Bouq All Italian - Primerba,Megen,12/19/2020,10:44 AM,bankcard,ACTIVA,$19188.17
-933,Ingaborg,Fudge - Cream Fudge,Elora,10/29/2020,2:32 PM,bankcard,ACTIVA,$13021.65
-934,Stephanus,Persimmons,Yorker,5/12/2020,6:15 PM,diners-club-carte-blanche,ACTIVA,$16403.18
-935,Bette-ann,Buttons,Richie,12/5/2020,1:40 AM,mastercard,ACTIVA,$19729.15
-936,Vincent,Juice - Orangina,Constantine,2/1/2021,11:46 PM,bankcard,ACTIVA,$13874.38
-937,Chrystel,"Wine - White, Riesling, Semi - Dry",Elly,3/16/2021,6:00 PM,jcb,ACTIVA,$13824.32
-938,Thorin,Sauce - Oyster,Addie,5/6/2020,4:37 PM,visa-electron,ACTIVA,$16691.10
-939,Grazia,Milk - Condensed,Neel,3/8/2021,7:25 AM,jcb,ACTIVA,$7561.31
-940,Chicky,Bar - Granola Trail Mix Fruit Nut,Saul,1/26/2021,1:02 AM,jcb,ACTIVA,$6990.93
-941,Terri,Dried Peach,Early,2/4/2021,3:57 PM,jcb,ACTIVA,$17441.19
-942,Ailbert,Grapes - Green,Sam,5/20/2020,5:01 AM,bankcard,ACTIVA,$18309.24
-943,Martin,Wine - Coteaux Du Tricastin Ac,Deloria,7/2/2020,10:30 PM,maestro,ACTIVA,$10402.47
-944,Liuka,Cleaner - Pine Sol,Lida,7/7/2020,5:43 PM,laser,ACTIVA,$5020.30
-945,Ruthanne,Wine - Chardonnay South,Andros,7/15/2020,1:10 PM,jcb,ACTIVA,$6155.34
-946,Jo ann,Soup - Campbells - Chicken Noodle,Hyacinthie,12/25/2020,2:33 AM,diners-club-enroute,ACTIVA,$11415.90
-947,Aprilette,"Red Snapper - Fresh, Whole",Arlyne,7/6/2020,7:36 AM,jcb,ACTIVA,$7944.60
-948,Libbi,Cookie - Oatmeal,Cam,4/15/2020,1:14 AM,jcb,ACTIVA,$10688.40
-949,Cherin,"Juice - Grapefruit, 341 Ml",Frederick,12/20/2020,9:29 AM,instapayment,ACTIVA,$5519.85
-950,Janeva,"Lamb - Loin, Trimmed, Boneless",Valentin,4/21/2020,5:21 PM,maestro,ACTIVA,$11844.87
-951,Rickie,Beans - Green,Ashley,3/1/2021,8:55 PM,americanexpress,ACTIVA,$9805.01
-952,Livvy,Gatorade - Orange,Trefor,12/1/2020,2:31 AM,switch,ACTIVA,$13787.15
-953,Josee,Beer - Heinekin,Karmen,7/5/2020,10:03 AM,jcb,ACTIVA,$13234.57
-954,Sophronia,Cookie Dough - Oatmeal Rasin,Nevile,2/9/2021,7:31 PM,jcb,ACTIVA,$6653.58
-955,Cassaundra,Cookie Dough - Double,Sibyl,6/5/2020,8:48 PM,diners-club-enroute,ACTIVA,$4673.77
-956,Aldridge,Beans - Butter Lrg Lima,Lorrie,2/24/2021,2:02 PM,diners-club-carte-blanche,ACTIVA,$8482.26
-957,Brander,"Olives - Black, Pitted",Christos,10/2/2020,3:07 PM,jcb,ACTIVA,$7457.83
-958,Bibby,Cookie - Dough Variety,Kelly,6/5/2020,6:10 AM,jcb,ACTIVA,$12345.59
-959,Madlen,Melon - Honey Dew,Carmencita,11/18/2020,1:49 AM,maestro,ACTIVA,$7316.43
-960,Baily,Spice - Pepper Portions,Nevin,11/6/2020,6:20 AM,jcb,ACTIVA,$7465.77
-961,Brendan,Lamb - Loin Chops,Alfonse,6/15/2020,6:04 PM,jcb,ACTIVA,$15382.01
-962,Amata,Pickles - Gherkins,Giacobo,6/22/2020,11:06 PM,jcb,ACTIVA,$14887.96
-963,Melodee,Cheese - Parmesan Cubes,Ulla,3/22/2021,8:09 AM,jcb,ACTIVA,$18515.42
-964,Levi,"Ecolab - Orange Frc, Cleaner",Thaine,7/19/2020,3:18 PM,maestro,ACTIVA,$11513.09
-965,Hugo,Carbonated Water - Strawberry,Madelyn,7/12/2020,2:45 AM,bankcard,ACTIVA,$18194.56
-966,Caty,Oven Mitt - 13 Inch,Brianna,6/27/2020,9:18 PM,bankcard,ACTIVA,$10363.97
-967,Gill,"Bread - Pullman, Sliced",Hercules,8/31/2020,10:03 PM,diners-club-enroute,ACTIVA,$19173.04
-968,Dorey,Cups 10oz Trans,Merrilee,3/30/2020,12:20 AM,jcb,ACTIVA,$8866.48
-969,Drusi,Lettuce - Frisee,Sara,10/10/2020,11:53 PM,jcb,ACTIVA,$10465.82
-970,Bevon,Cheese - Feta,Tabbie,11/3/2020,6:51 PM,jcb,ACTIVA,$11840.81
-971,Rhodia,Wine - Guy Sage Touraine,Dena,11/12/2020,11:44 AM,visa-electron,ACTIVA,$8429.18
-972,Glori,Brandy Apricot,Donovan,3/22/2021,4:30 AM,china-unionpay,ACTIVA,$4814.09
-973,Ody,"Wine - Mas Chicet Rose, Vintage",Orel,4/6/2020,12:12 PM,jcb,ACTIVA,$13409.88
-974,Inna,Pork - Bones,Koral,9/24/2020,3:20 AM,instapayment,ACTIVA,$16481.26
-975,Goldarina,Pomegranates,Idalia,10/5/2020,2:37 PM,visa-electron,ACTIVA,$10759.36
-976,Morris,Salmon - Fillets,Alyse,3/16/2021,11:57 AM,jcb,ACTIVA,$12798.57
-977,Joly,Oxtail - Cut,Milicent,11/15/2020,8:51 AM,switch,ACTIVA,$17222.43
-978,Alisha,Beer - Labatt Blue,Daphne,4/3/2020,4:21 PM,jcb,ACTIVA,$10643.40
-979,Morgana,Vaccum Bag 10x13,Miner,3/27/2020,10:52 PM,jcb,ACTIVA,$4196.12
-980,Wandie,Wine - Alsace Riesling Reserve,Paula,7/3/2020,11:12 PM,china-unionpay,ACTIVA,$11485.94
-981,Wendie,Potatoes - Idaho 80 Count,Claresta,2/7/2021,4:25 AM,diners-club-enroute,ACTIVA,$8566.73
-982,Hermie,Peach - Fresh,Donall,12/25/2020,3:03 PM,jcb,ACTIVA,$4280.52
-983,Brew,Coffee - Almond Amaretto,Betty,4/7/2020,9:26 PM,jcb,ACTIVA,$4003.38
-984,Cyndie,Sprite - 355 Ml,Jeffy,11/27/2020,1:32 AM,mastercard,ACTIVA,$18504.90
-985,Sigvard,"Tendrils - Baby Pea, Organic",Mace,7/23/2020,5:28 AM,jcb,ACTIVA,$17357.04
-986,Diego,"Chicken - Leg, Boneless",Eba,8/26/2020,12:16 AM,diners-club-enroute,ACTIVA,$15733.17
-987,Betteann,Silicone Paper 16.5x24,Gradeigh,3/26/2021,4:59 AM,maestro,ACTIVA,$5545.77
-988,Gaven,Jello - Assorted,Josephina,9/10/2020,8:09 AM,jcb,ACTIVA,$6321.01
-989,Parke,Lettuce - Red Leaf,Brandea,3/4/2021,6:08 PM,mastercard,ACTIVA,$6935.92
-990,Kristin,Carbonated Water - Cherry,Omero,10/6/2020,12:36 AM,mastercard,ACTIVA,$7128.55
-991,Rosabel,Soup - French Onion,Aila,2/25/2021,4:50 PM,jcb,ACTIVA,$5502.24
-992,Marney,Venison - Ground,Bald,8/24/2020,9:09 PM,bankcard,ACTIVA,$13177.28
-993,Ferdinand,Squid - Breaded,Bella,6/27/2020,4:33 AM,jcb,ACTIVA,$8889.60
-994,Reba,Onions - Red,Jody,10/31/2020,9:32 AM,jcb,ACTIVA,$9051.65
-995,Tiebold,Parsley - Fresh,Guglielma,11/22/2020,2:34 AM,jcb,ACTIVA,$15020.38
-996,Jacquelin,"Turkey - Whole, Fresh",Ross,3/3/2021,10:51 PM,switch,ACTIVA,$8526.29
-997,Melisa,Thyme - Fresh,Christen,7/24/2020,9:35 PM,jcb,ACTIVA,$14984.46
-998,Sidney,"Pork - Sausage, Medium",Rancell,11/24/2020,2:04 PM,visa-electron,ACTIVA,$15897.31
-999,Hans,Tea - Herbal Orange Spice,Ted,8/29/2020,10:29 PM,bankcard,ACTIVA,$17633.37
-1000,Shayla,Salmon Atl.whole 8 - 10 Lb,Diana,8/13/2020,10:02 AM,diners-club-international,ACTIVA,$14550.13
+Morley;Bols Melon Liqueur;Linnie;28-2724105;2020/9/7;17:04;1;visa;1;40.03
+Vannie;Kellogs Raisan Bran Bars;Emmeline;85-5069574;2020/9/8;18:04;2;mastercard;2;91.64
+Lyn;Carbonated Water - Blackberry;Alvie;83-7349278;2020/9/9;19:04;3;bankcard;3;77.25
+Wiley;Mountain Dew;Nickey;20-6172659;2020/9/10;20:04;4;bankcard;4;77.75
+Dorrie;Sponge Cake Mix - Chocolate;Ana;23-0391503;2020/9/11;21:04;5;china-unionpay;5;64.08
+Mellisa;Bandage - Fexible 1x3;Kaleb;99-2371001;2020/9/12;22:04;6;americanexpress;6;45.65
+Cora;Devonshire Cream;Jamil;05-1397279;2020/9/13;23:04;7;bankcard;7;32.49
+Teresina;Capers - Ox Eye Daisy;Jeff;97-0984484;2020/9/14;00:04;8;visa;8;98.94
+Isac;Mix Pina Colada;Torrey;34-0017280;2020/9/15;01:04;9;mastercard;9;1.17
+Caritta;Beer - Heinekin;Kerr;33-0404421;2020/9/16;02:04;10;mastercard;10;55.07
+Kingsley;Beer - Sleemans Cream Ale;Blake;64-6651318;2020/9/17;03:04;11;americanexpress;11;54.07
+August;Tea - Earl Grey;Rey;55-7947139;2020/9/18;04:04;12;maestro;12;10.47
+Rose;The Pop Shoppe - Lime Rickey;Kenyon;73-9984835;2020/9/19;05:04;13;americanexpress;13;82.55
+Wilden;Oil - Macadamia;Sharlene;43-7284796;2020/9/20;06:04;14;china-unionpay;14;29.39
+Horst;Cookies - Oreo  4 Pack;Peterus;42-7214301;2020/9/21;07:04;15;instapayment;15;28.11
+Andree;Juice - Orange 1.89l;Midge;91-5334000;2020/9/22;08:04;16;mastercard;16;6.64
+Lena;Wine - Riesling Dr. Pauly;Brett;31-1246300;2020/9/23;09:04;17;visa;17;56.52
+Natassia;Lentils - Green ;Madge;84-8220786;2020/9/24;10:04;18;americanexpress;18;29.58
+Marlene;Tray - 16in Rnd Blk;Giovanna;64-5420647;2020/9/25;11:04;19;maestro;19;48.56
+Meggi;Pepper - Chillies;Ursuline;32-4321055;2020/9/26;12:04;20;maestro;20;58.82
+Dori;Beer - Sleemans Honey Brown;Kyrstin;20-4831007;2020/9/27;13:04;21;instapayment;21;45.9
+Silvan;Beans - Black Bean;Phineas;98-0576572;2020/9/28;14:04;22;laser;22;43.21
+Kelly;Wine - Riesling Dr. Pauly;Adrienne;39-9177274;2020/9/29;15:04;23;jcb;23;77.22
+Joseito;Tea Leaves - Oolong;Emiline;97-1331411;2020/9/30;16:04;24;instapayment;24;90.17
+Amelie;Milk - 2% 250 Ml;Vern;20-7575089;2020/10/1;17:04;25;laser;25;10.04
+Maritsa;Dried Apple;Marjy;03-8162505;2020/10/2;18:04;26;bankcard;26;6.12
+Adrian;Cornflakes;Josephina;13-9213111;2020/10/3;19:04;27;laser;27;23.02
+Kimberley;Pepper - Black;Barnard;01-4777520;2020/10/4;20:04;28;maestro;28;24.22
+Bearnard;Wine - Red;Levy;09-9916242;2020/10/5;21:04;29;laser;29;7.87
+Parry;Wine - Stoneliegh Sauvignon;Hermia;28-0623036;2020/10/6;22:04;30;maestro;30;64.85
+Lara;Vermouth - Sweet;Ravid;91-9430523;2020/10/7;23:04;31;americanexpress;31;71.61
+Nerissa;Milk - 2%;Alan;15-5250222;2020/10/8;00:04;32;americanexpress;32;75.73
+Kinna;Sobe - Orange Carrot;Adrian;66-8130353;2020/10/9;01:04;33;instapayment;33;78.65
+Rana;Ham - Virginia;Velma;99-3729743;2020/10/10;02:04;34;china-unionpay;34;26.04
+Gayleen;Beer - Sleemans Cream Ale;Blondy;31-1056645;2020/10/11;03:04;35;maestro;35;40.4
+Gayle;Carrots - Jumbo;Yancy;63-0764913;2020/10/12;04:04;36;bankcard;36;45.96
+Sutherlan;Wine - Periguita Fonseca;Hagen;63-7313808;2020/10/13;05:04;37;china-unionpay;37;19.55
+Allyn;Cafe Royale;Bibi;67-9995473;2020/10/14;06:04;38;instapayment;38;33.05
+Padget;Beans - Fine;Donnamarie;30-0635240;2020/10/15;07:04;39;americanexpress;39;5.34
+Glynda;Sauce - Hoisin;Alejandrina;99-9114931;2020/10/16;08:04;40;visa;40;41.27
+Manuel;Mayonnaise;Jody;70-3546201;2020/10/17;09:04;41;visa;41;11.54
+Dillie;Table Cloth - 53x69 Colour;Kassey;53-9887888;2020/10/18;10:04;42;bankcard;42;9.65
+Patrice;Cup - 8oz Coffee Perforated;Caren;13-2271644;2020/10/19;11:04;43;laser;43;34.79
+Lynnelle;Juice - Pineapple;Thornton;18-3201906;2020/10/20;12:04;44;maestro;44;46.24
+Filide;Bread - Hamburger Buns;Codie;27-8830124;2020/10/21;13:04;45;bankcard;45;69.93
+Florian;Thyme - Dried;Chantal;28-3246315;2020/10/22;14:04;46;maestro;46;34.33
+Garwood;Drambuie;Ariella;23-5609851;2020/10/23;15:04;47;americanexpress;47;22.48
+Blake;Pasta - Canelloni;Mair;67-5984411;2020/10/24;16:04;48;visa;48;63.09
+Aleksandr;Nut - Pecan;Field;62-4512355;2020/10/25;17:04;49;americanexpress;49;36.62
+Clementia;Nut - Almond;Yoshiko;91-4611584;2020/10/26;18:04;50;jcb;50;96.61
+Shandie;Tuna - Fresh;Garth;57-9512810;2020/10/27;19:04;51;maestro;51;21.97
+Queenie;Veal - Inside;Kenn;03-2722444;2020/10/28;20:04;52;mastercard;52;84.57
+Alina;Lamb - Bones;Paddy;54-7697045;2020/10/29;21:04;53;china-unionpay;53;64.56
+Link;Cabbage - Savoy;Aidan;31-8958130;2020/10/30;22:04;54;laser;54;9.65
+Gunar;Rum - Mount Gay Eclipes;Richmond;39-5751479;2020/10/31;23:04;55;jcb;55;16.92
+Robenia;Puree - Pear;Aubrie;75-8196875;2020/11/1;00:04;56;americanexpress;56;35.91
+Cortie;Flower - Leather Leaf Fern;Ana;81-2704677;2020/11/2;01:04;57;instapayment;57;34.51
+Idalia;Ham - Procutinni;Cordula;59-8101905;2020/11/3;02:04;58;china-unionpay;58;26.43
+Harriette;Mousse - Banana Chocolate;Gertie;19-9129174;2020/11/4;03:04;59;jcb;59;15.09
+Amabel;Noodles - Steamed Chow Mein;Prescott;73-7167585;2020/11/5;04:04;60;china-unionpay;60;92.61
+Avrom;Tea - Herbal - 6 Asst;Kendell;67-4007624;2020/11/6;05:04;61;americanexpress;61;85.75
+Gunner;Plastic Wrap;Odella;79-8432808;2020/11/7;06:04;62;jcb;62;61.53
+Catha;Wine - Barbera Alba Doc 2001;Ethan;39-6877423;2020/11/8;07:04;63;americanexpress;63;52.85
+Osgood;Tea - Grapefruit Green Tea;Katrine;32-5740020;2020/11/9;08:04;64;maestro;64;21.03
+Lonna;Truffle - Whole Black Peeled;Quintana;55-8217969;2020/11/10;09:04;65;laser;65;72.77
+Arlee;Aromat Spice / Seasoning;Billy;33-7958102;2020/11/11;10:04;66;china-unionpay;66;83.21
+Shawn;Mustard - Seed;Fletch;00-8285736;2020/11/12;11:04;67;mastercard;67;68.19
+Agatha;Pastry - French Mini Assorted;Richie;49-9978722;2020/11/13;12:04;68;maestro;68;89.49
+Sioux;Beer - Guiness;Danette;73-5238487;2020/11/14;13:04;69;instapayment;69;58.86
+Glynnis;Olives - Kalamata;Missy;76-3866644;2020/11/15;14:04;70;visa;70;10.32
+Myrle;Pears - Anjou;Muffin;81-5862370;2020/11/16;15:04;71;jcb;71;45.84
+Rita;Cumin - Ground;Shellysheldon;90-2054021;2020/11/17;16:04;72;americanexpress;72;59.43
+Alika;Spice - Paprika;Margret;19-9920216;2020/11/18;17:04;73;instapayment;73;96.71
+Dahlia;Milk - Homo;Sidoney;74-7006368;2020/11/19;18:04;74;laser;74;38.63
+Francesca;Shrimp - 16 - 20 Cooked;Miner;86-9349445;2020/11/20;19:04;75;mastercard;75;99.13
+Ingeborg;Apple - Delicious;Glory;74-6714800;2020/11/21;20:04;76;mastercard;76;46.75
+Marena;Liqueur Banana;Tori;32-0780038;2020/11/22;21:04;77;instapayment;77;91.89
+Doti;Wine - Tio Pepe Sherry Fino;Celene;78-9548922;2020/11/23;22:04;78;americanexpress;78;33.5
+Verile;Thermometer Digital;Devina;57-8082504;2020/11/24;23:04;79;jcb;79;96.84
+Ilka;Broom Handle;Germana;06-3243106;2020/11/25;00:04;80;americanexpress;80;80.23
+Alfreda;Ecolab - Medallion;Miles;21-2758705;2020/11/26;01:04;81;mastercard;81;15.78
+Drew;Fish - Soup Base;Vale;84-9444375;2020/11/27;02:04;82;china-unionpay;82;56.51
+Saudra;Salt And Pepper Mix - White;Dennie;98-4376488;2020/11/28;03:04;83;mastercard;83;36.06
+Ham;Beef - Bones;Noll;16-0832376;2020/11/29;04:04;84;jcb;84;48.79
+Marshall;Tomatoes - Vine Ripe;Durward;96-6542444;2020/11/30;05:04;85;americanexpress;85;20.18
+Orrin;Cod - Fillets;Barbaraanne;70-8927762;2020/12/1;06:04;86;instapayment;86;91.27
+Nicol;Seedlings - Clamshell;Jaymie;02-1527485;2020/12/2;07:04;87;bankcard;87;44.67
+Anders;Tomatoes - Orange;Barton;60-0568307;2020/12/3;08:04;88;laser;88;53.26
+Westbrook;Bread Base - Toscano;Marge;39-0237290;2020/12/4;09:04;89;mastercard;89;90.89
+Wendye;Tea - Orange Pekoe;Carson;72-9528077;2020/12/5;10:04;90;laser;90;28.33
+Larine;Mustard - Dry;Amerigo;59-5848928;2020/12/6;11:04;91;maestro;91;53.17
+Emlynne;Chocolate Bar - Oh Henry;Cati;00-9187429;2020/12/7;12:04;92;instapayment;92;58.47
+Essy;Steamers White;Bobbette;78-1616894;2020/12/8;13:04;93;china-unionpay;93;57.39
+Gayle;Truffle - Whole Black Peeled;Liesa;81-1450041;2020/12/9;14:04;94;china-unionpay;94;83.61
+Kristen;Graham Cracker Mix;Zsazsa;61-0692029;2020/12/10;15:04;95;china-unionpay;95;32.07
+Fayre;Icecream - Dstk Cml And Fdg;Shae;44-1308918;2020/12/11;16:04;96;instapayment;96;11.11
+Ian;Butter Sweet;Flinn;78-3625219;2020/12/12;17:04;97;maestro;97;73.01
+Jodee;Bread - Roll;Jeremiah;71-9256261;2020/12/13;18:04;98;americanexpress;98;17.95
+Jennette;Water - Aquafina Vitamin;Crissie;37-1323724;2020/12/14;19:04;99;americanexpress;99;78.25
+Patrice;Juice - Apple;Gael;87-0726908;2020/12/15;20:04;100;mastercard;100;61.22
+Leanna;Flower - Dish Garden;Rowney;31-3644813;2020/12/16;21:04;101;laser;101;78.32
+Martha;Iced Tea Concentrate;Trefor;06-6390497;2020/12/17;22:04;102;china-unionpay;102;3.39
+Aubrette;Tomatoes - Hot House;Georgie;19-1924823;2020/12/18;23:04;103;laser;103;88.91
+Massimiliano;Bacardi Mojito;Eleanor;49-0266867;2020/12/19;00:04;104;bankcard;104;20.13
+Bil;Cod - Fillets;Nico;84-7174697;2020/12/20;01:04;105;maestro;105;35.26
+Pauli;Flour - Whole Wheat;Eberhard;91-4216576;2020/12/21;02:04;106;instapayment;106;66.09
+Bess;Monkfish Fresh - Skin Off;Carol-jean;66-9096612;2020/12/22;03:04;107;visa;107;55.15
+Kasper;Cherries - Fresh;Bink;30-1378158;2020/12/23;04:04;108;americanexpress;108;38.66
+Farrand;Pan Grease;Aryn;21-2237450;2020/12/24;05:04;109;visa;109;41.43
+Brooke;Wine - Montecillo Rioja Crianza;Rodi;82-9617729;2020/12/25;06:04;110;instapayment;110;32.04
+Lenette;Breadfruit;Dannel;14-5987216;2020/12/26;07:04;111;visa;111;46.79
+Robinson;Bag Stand;Kristy;83-8686148;2020/12/27;08:04;112;americanexpress;112;77.28
+Allison;Cheese - Goat;Hewe;78-1094855;2020/12/28;09:04;113;visa;113;7.55
+Quinn;Spring Roll Veg Mini;Rodrique;14-9867597;2020/12/29;10:04;114;americanexpress;114;43.54
+Jodie;Table Cloth 81x81 White;Cristie;70-8218040;2020/12/30;11:04;115;visa;115;77.68
+Adlai;Tomatoes - Vine Ripe;Hedy;13-9469752;2020/12/31;12:04;116;china-unionpay;116;87.2
+Whitman;Foam Dinner Plate;Brietta;71-5198880;2021/1/1;13:04;117;jcb;117;69.06
+Wittie;Pepper - Gypsy Pepper;Garland;48-7794339;2021/1/2;14:04;118;mastercard;118;87.79
+Sondra;Scallops - In Shell;Risa;50-9742431;2021/1/3;15:04;119;mastercard;119;65.03
+Ingrim;Pork - Suckling Pig;Darelle;47-7184022;2021/1/4;16:04;120;instapayment;120;58.45
+Fredericka;Nantucket Pine Orangebanana;Isa;66-3825912;2021/1/5;17:04;121;bankcard;121;33.96
+Ilysa;Juice - Clamato;Mercedes;31-8947181;2021/1/6;18:04;122;jcb;122;11.02
+Rogerio;Syrup - Monin;Ophelia;40-4003992;2021/1/7;19:04;123;bankcard;123;67.16
+Madonna;Shrimp - 100 / 200 Cold Water;Udell;99-4774577;2021/1/8;20:04;124;americanexpress;124;58.02
+Valaria;Wine - Bouchard La Vignee Pinot;Padriac;46-4205851;2021/1/9;21:04;125;americanexpress;125;80.67
+Francois;Lobster - Cooked;Freeland;95-8758905;2021/1/10;22:04;126;visa;126;55.07
+Dorie;Pasta - Penne;Gaspar;13-6214491;2021/1/11;23:04;127;jcb;127;66.65
+Bartholomeo;Trout - Hot Smkd;Rosemaria;82-7942098;2021/1/12;00:04;128;bankcard;128;65.43
+Lorette;Loquat;Nealy;89-0310641;2021/1/13;01:04;129;mastercard;129;38.12
+Lora;Table Cloth 53x69 White;Kaleb;35-5273361;2021/1/14;02:04;130;bankcard;130;92.62
+Bell;Puree - Kiwi;Riki;26-8356525;2021/1/15;03:04;131;mastercard;131;67.27
+Adair;Cognac - Courvaisier;Hedvig;57-2030515;2021/1/16;04:04;132;jcb;132;12.86
+Janith;Wine - Prosecco Valdobiaddene;Cassandre;02-0475937;2021/1/17;05:04;133;laser;133;77.84
+Killian;Wine - Chianti Classico Riserva;Chandler;19-4049409;2021/1/18;06:04;134;americanexpress;134;98.91
+Godwin;Wine - Beaujolais Villages;Mandy;27-8043392;2021/1/19;07:04;135;maestro;135;70.91
+Agneta;Island Oasis - Pina Colada;Lexis;90-4462067;2021/1/20;08:04;136;laser;136;97.22
+Nestor;Cauliflower;Raoul;25-8162351;2021/1/21;09:04;137;mastercard;137;80.77
+Christie;Bagel - Everything Presliced;Melisse;07-4308571;2021/1/22;10:04;138;mastercard;138;72.05
+Gun;Fuji Apples;Sisile;79-5669829;2021/1/23;11:04;139;americanexpress;139;52.24
+Gretchen;Ham - Cooked;Micheal;29-8672409;2021/1/24;12:04;140;instapayment;140;49.25
+Harlen;Wine - Riesling Alsace Ac 2001;Gaelan;21-9552312;2021/1/25;13:04;141;laser;141;92.42
+Rory;Halibut - Whole;Brook;98-1533579;2021/1/26;14:04;142;mastercard;142;28.56
+Tremayne;Wine - Cousino Macul Antiguas;Maggy;04-7614278;2021/1/27;15:04;143;instapayment;143;85.28
+Martica;Yams;Fleurette;95-7785266;2021/1/28;16:04;144;jcb;144;51.74
+Erda;Pasta - Lasagna Noodle;Lotta;08-1466836;2021/1/29;17:04;145;maestro;145;15.27
+Mischa;Curry Powder Madras;Jolynn;56-8927033;2021/1/30;18:04;146;bankcard;146;49.14
+Romain;Beef - Striploin;Ellissa;58-1665120;2021/1/31;19:04;147;mastercard;147;98.25
+Magda;Flour - Fast / Rapid;Gracie;15-1864446;2021/2/1;20:04;148;laser;148;18.3
+Cameron;Cheese - Goat With Herbs;Marys;97-2170878;2021/2/2;21:04;149;bankcard;149;73.83
+Urban;Lamb Shoulder Boneless Nz;Junie;12-9280735;2021/2/3;22:04;150;bankcard;150;38
+Marlon;Longos - Burritos;Jeremie;35-3197499;2021/2/4;23:04;151;china-unionpay;151;69.01
+Gracia;Chicken - Whole Roasting;Myra;61-7973975;2021/2/5;00:04;152;instapayment;152;37.45
+Abbott;Cheese - Mascarpone;Benn;04-7240197;2021/2/6;01:04;153;mastercard;153;3.8
+Hattie;Butter - Unsalted;Clarinda;65-2866769;2021/2/7;02:04;154;bankcard;154;14.74
+Dorthy;Tea - Herbal Sweet Dreams;Terrye;69-1362362;2021/2/8;03:04;155;jcb;155;26.76
+Emmerich;Bagel - Ched Chs Presliced;Felicio;58-3192606;2021/2/9;04:04;156;bankcard;156;53.43
+Giulietta;Beef Dry Aged Tenderloin Aaa;Bord;81-5688555;2021/2/10;05:04;157;bankcard;157;51.93
+Brandi;Nut - Pecan;Niven;00-0340811;2021/2/11;06:04;158;mastercard;158;15.24
+Randene;Wasabi Paste;Murry;67-1960785;2021/2/12;07:04;159;china-unionpay;159;25.96
+Leonerd;Sauce - Vodka Blush;Haze;44-4695595;2021/2/13;08:04;160;americanexpress;160;91.54
+Nicky;Emulsifier;Kenton;98-1658429;2021/2/14;09:04;161;americanexpress;161;80.84
+Ringo;Rootbeer;Karmen;17-6964068;2021/2/15;10:04;162;instapayment;162;17.91
+Oates;Wine - Kwv Chenin Blanc South;Teriann;30-2153856;2021/2/16;11:04;163;maestro;163;79.21
+Gaspard;Jam - Marmalade;Maggi;26-6741535;2021/2/17;12:04;164;laser;164;47.04
+Kaile;Nut - Hazelnut;Hermann;31-8834880;2021/2/18;13:04;165;maestro;165;93.68
+Netty;Wine - Red;Abdul;93-8338868;2021/2/19;14:04;166;visa;166;34.66
+Shirleen;Oil - Hazelnut;Ashien;12-2988757;2021/2/20;15:04;167;china-unionpay;167;94.29
+Genna;Asparagus - Green;Delora;85-1098912;2021/2/21;16:04;168;maestro;168;53.58
+Drona;Wine - Prem Select Charddonany;Webb;59-8894396;2021/2/22;17:04;169;jcb;169;68.65
+Jude;Ham - Proscuitto;Ludovico;32-4779827;2021/2/23;18:04;170;visa;170;6.72
+Ilario;Canadian Emmenthal;Emerson;31-9930922;2021/2/24;19:04;171;maestro;171;97.69
+Bill;Pepperoni Slices;Noland;97-1986887;2021/2/25;20:04;172;jcb;172;12.98
+Bram;Petit Baguette;Manuel;75-8647499;2021/2/26;21:04;173;bankcard;173;36.07
+Ellene;Lidsoupcont Rp12dn;Pearla;14-5201783;2021/2/27;22:04;174;americanexpress;174;41.49
+Winny;Spring Roll Veg Mini;Kevyn;79-4147211;2021/2/28;23:04;175;laser;175;86.07
+Myron;Wine - Prem Select Charddonany;Ripley;03-3307583;2021/3/1;00:04;176;americanexpress;176;37.22
+Tiena;Fruit Salad Deluxe;Jacinda;28-3566420;2021/3/2;01:04;177;china-unionpay;177;24.76
+Farlee;Sugar - Brown;Gaylord;56-1929614;2021/3/3;02:04;178;visa;178;25.38
+Allegra;Lidsoupcont Rp12dn;Nicola;80-6702403;2021/3/4;03:04;179;laser;179;15.51
+Anetta;Nut - Macadamia;Andres;53-2773346;2021/3/5;04:04;180;bankcard;180;53.31
+Heindrick;Raisin - Golden;Ransom;12-2263649;2021/3/6;05:04;181;bankcard;181;79.42
+Laure;Spinach - Packaged;Sven;92-3968228;2021/3/7;06:04;182;visa;182;23.15
+Baily;Milk - Chocolate 500ml;Hinze;62-4556171;2021/3/8;07:04;183;china-unionpay;183;30.61
+Laurene;Crab - Claws;Rudolf;77-8506934;2021/3/9;08:04;184;bankcard;184;87.21
+Kristin;White Baguette;Natka;27-3572628;2021/3/10;09:04;185;americanexpress;185;86.58
+Lem;Beef - Kindney;Alix;69-9509399;2021/3/11;10:04;186;visa;186;92.18
+Aloysius;Nantucket - Carrot Orange;Petronia;51-6675366;2021/3/12;11:04;187;jcb;187;21.32
+Cecilla;Bread - Pain Au Liat X12;Howie;71-1380006;2021/3/13;12:04;188;bankcard;188;74.84
+Tandie;Pasta - Shells;Jaime;66-0012031;2021/3/14;13:04;189;laser;189;96.78
+Hadley;Beef Cheek Fresh;Paulina;40-7836094;2021/3/15;14:04;190;china-unionpay;190;38.29
+Layla;Chocolate - Compound Coating;Darrick;84-0483029;2021/3/16;15:04;191;instapayment;191;11.78
+Saleem;Ranchero - Primerba;Martina;66-8138664;2021/3/17;16:04;192;china-unionpay;192;47.62
+Wendeline;Ice - Clear;Aubrey;85-9517393;2021/3/18;17:04;193;bankcard;193;78.31
+Karney;Compound - Mocha;Bay;64-2140619;2021/3/19;18:04;194;china-unionpay;194;85.65
+Bell;Nut - Almond;Valencia;39-7037316;2021/3/20;19:04;195;mastercard;195;12.56
+Fanchette;Puree - Guava;Ford;69-6224708;2021/3/21;20:04;196;visa;196;24.66
+Alis;Pastry - Chocolate Chip Muffin;Sergei;28-1724301;2021/3/22;21:04;197;china-unionpay;197;58.4
+Violetta;Fib N9 - Prague Powder;Sue;66-6801946;2021/3/23;22:04;198;visa;198;83.35
+Douglas;Jack Daniels;Freddy;88-3779645;2021/3/24;23:04;199;maestro;199;27.89
+Fawne;Star Anise;Vincent;20-0880634;2021/3/25;00:04;200;laser;200;79.02
+Norma;Barramundi;Arlee;04-6948852;2021/3/26;01:04;201;bankcard;201;94.86
+Dion;Wine - Magnotta;Elvira;19-7436625;2021/3/27;02:04;202;china-unionpay;202;98.45
+Cobbie;Sugar - Fine;Katey;29-2928188;2021/3/28;03:04;203;visa;203;67.49
+Haydon;Sugar - White Packet;Waylen;94-8838189;2021/3/29;04:04;204;laser;204;68.99
+Aldous;Potatoes - Peeled;Dionis;48-3442211;2021/3/30;05:04;205;visa;205;14.42
+Bliss;Pie Pecan;Fons;32-6558157;2021/3/31;06:04;206;china-unionpay;206;47.34
+Paulo;Coconut - Shredded;Addy;85-8241467;2021/4/1;07:04;207;mastercard;207;97.77
+Griffith;Tomatoes - Plum;Charlot;45-4065067;2021/4/2;08:04;208;maestro;208;16.14
+Town;Cheese - Brick With Pepper;Moise;98-1963652;2021/4/3;09:04;209;maestro;209;22.12
+Letta;Pickles - Gherkins;Maible;29-9423251;2021/4/4;10:04;210;mastercard;210;15.32
+Xena;Ecolab - Lime - A - Way 4/4 L;Claudette;10-9158500;2021/4/5;11:04;211;mastercard;211;77.94
+Maddalena;Wine - Sake;Ardath;70-9981530;2021/4/6;12:04;212;mastercard;212;99.82
+Maxy;Muffin - Zero Transfat;Dorette;53-5129103;2021/4/7;13:04;213;china-unionpay;213;94.73
+Monroe;Lid - 16 Oz And 32 Oz;Gael;96-5899568;2021/4/8;14:04;214;bankcard;214;3.25
+Delmor;Bread - Roll;Evelyn;42-0986347;2021/4/9;15:04;215;maestro;215;36.94
+Annaliese;Mushroom - Chanterelle Frozen;Colan;27-4058094;2021/4/10;16:04;216;china-unionpay;216;1.37
+Andros;Alize Sunset;Janka;98-0477375;2021/4/11;17:04;217;china-unionpay;217;22.69
+Dwayne;Cheese - Marble;Fernando;28-4828538;2021/4/12;18:04;218;laser;218;7.81
+Gay;Mussels - Frozen;Johnette;48-3247243;2021/4/13;19:04;219;instapayment;219;45.53
+Quent;Aspic - Light;Marlow;50-9736992;2021/4/14;20:04;220;jcb;220;44.74
+Nev;Beets - Candy Cane;Flora;32-3062058;2021/4/15;21:04;221;china-unionpay;221;27.45
+Vernice;Irish Cream - Butterscotch;Billy;85-9127656;2021/4/16;22:04;222;americanexpress;222;3.61
+Lurette;Cleaner - Bleach;Emlen;86-0825820;2021/4/17;23:04;223;maestro;223;10.54
+Matthew;Squash - Acorn;Roselle;33-5846947;2021/4/18;00:04;224;bankcard;224;27.04
+Gerianne;Tea - Herbal Orange Spice;Baxie;31-1649937;2021/4/19;01:04;225;jcb;225;33.68
+Jone;Beans - Navy;Mariann;28-5224593;2021/4/20;02:04;226;maestro;226;11.93
+Efren;Wine - Rosso Toscano Igt;Cassey;73-0165689;2021/4/21;03:04;227;china-unionpay;227;83.85
+Ted;Garbage Bag - Clear;Cynthea;50-8597978;2021/4/22;04:04;228;instapayment;228;7.2
+Guss;Tomatillo;Katee;57-6909945;2021/4/23;05:04;229;mastercard;229;30.52
+Archibald;Pepper - White;Micah;59-5512222;2021/4/24;06:04;230;maestro;230;17.01
+Hyatt;Fish - Atlantic Salmon;Neddie;91-5523569;2021/4/25;07:04;231;mastercard;231;53.02
+Moina;Radish;Abel;07-3611690;2021/4/26;08:04;232;americanexpress;232;40.21
+Carney;Wine - German Riesling;Robbie;01-1340866;2021/4/27;09:04;233;bankcard;233;2.16
+Ronny;Juice - Ocean Spray Kiwi;Lind;56-1749732;2021/4/28;10:04;234;instapayment;234;50.62
+Vivienne;Mahi Mahi;Norma;74-9208886;2021/4/29;11:04;235;visa;235;61.59
+Boniface;Pate - Cognac;Pasquale;45-1037185;2021/4/30;12:04;236;bankcard;236;14.14
+Wakefield;Wine - Gato Negro Cabernet;Estelle;87-7106587;2021/5/1;13:04;237;visa;237;25.38
+Constancia;Sausage - Blood Pudding;Naoma;96-5840374;2021/5/2;14:04;238;visa;238;43.3
+Alphonso;Wine - Magnotta - Belpaese;Onfre;62-7671027;2021/5/3;15:04;239;maestro;239;93.6
+Aylmer;Wine - Magnotta - Cab Sauv;Miguela;70-6085320;2021/5/4;16:04;240;bankcard;240;97.27
+Dwayne;Ginger - Ground;Lauralee;23-2592404;2021/5/5;17:04;241;visa;241;82.05
+Normand;Bamboo Shoots - Sliced;Ellswerth;56-8921812;2021/5/6;18:04;242;americanexpress;242;37.71
+Nicolas;Carbonated Water - Blackberry;Luther;12-5109860;2021/5/7;19:04;243;bankcard;243;22.42
+Amil;Bacardi Breezer - Tropical;Kaleb;01-7101380;2021/5/8;20:04;244;bankcard;244;85.48
+Katine;Pasta - Lasagne;Abe;18-7825199;2021/5/9;21:04;245;china-unionpay;245;52.14
+Zelig;Bread Base - Toscano;Candis;55-3141609;2021/5/10;22:04;246;bankcard;246;86.68
+Minerva;Cheese - Le Cru Du Clocher;Grete;71-5611462;2021/5/11;23:04;247;visa;247;61.86
+Sigismond;Kellogs Raisan Bran Bars;Wilbert;91-2145083;2021/5/12;00:04;248;jcb;248;78.07
+Lorine;Crab - Dungeness;Jessamyn;57-0481645;2021/5/13;01:04;249;laser;249;2.98
+Chadd;Chef Hat 20cm;Tasia;36-6443421;2021/5/14;02:04;250;maestro;250;76.3
+Pierette;Lamb - Loin Chops;Phyllida;52-0446409;2021/5/15;03:04;251;instapayment;251;94.43
+Tammie;Shichimi Togarashi Peppeers;Maurita;01-8796781;2021/5/16;04:04;252;mastercard;252;20.35
+Ada;Turkey Leg With Drum And Thigh;Bernadette;59-3114206;2021/5/17;05:04;253;laser;253;16.39
+Aila;Ham - Smoked;Annemarie;81-6246283;2021/5/18;06:04;254;instapayment;254;56.42
+Cris;Green Scrubbie Pad H.duty;Vikki;83-4679507;2021/5/19;07:04;255;jcb;255;26.65
+Ruggiero;Bagelers - Cinn / Brown;Granthem;68-9649872;2021/5/20;08:04;256;maestro;256;21.91
+Maridel;Veal - Round;Melany;05-8672933;2021/5/21;09:04;257;visa;257;94.07
+Bren;Juice - Pineapple;Vachel;85-6561118;2021/5/22;10:04;258;laser;258;56.82
+Wendye;Bandage - Flexible Neon;Nananne;03-8947202;2021/5/23;11:04;259;bankcard;259;63.16
+Munroe;Tuna - Salad Premix;Salomon;57-0923679;2021/5/24;12:04;260;laser;260;80.01
+Nolana;Tea - English Breakfast;Saul;38-8618261;2021/5/25;13:04;261;laser;261;35.03
+Averell;Kiwi Gold Zespri;Guinevere;28-7089358;2021/5/26;14:04;262;americanexpress;262;5.55
+Wyatan;V8 - Tropical Blend;Osbert;65-7117230;2021/5/27;15:04;263;americanexpress;263;99.73
+Skip;Cloves - Whole;Tedda;02-0038538;2021/5/28;16:04;264;mastercard;264;66.43
+Carly;Chocolate - Liqueur Cups With Foil;Zena;37-5166744;2021/5/29;17:04;265;china-unionpay;265;43.13
+Fidole;Salt - Kosher;Davis;05-4556877;2021/5/30;18:04;266;jcb;266;50.24
+Shaine;Wine - Segura Viudas Aria Brut;Sherwin;31-5744569;2021/5/31;19:04;267;mastercard;267;79.22
+Letitia;Cheese - Feta;Oberon;18-3218478;2021/6/1;20:04;268;mastercard;268;10.53
+Barthel;Cake - Mini Potato Pancake;Milo;64-3177646;2021/6/2;21:04;269;visa;269;48.37
+Alexandro;Pastry - Lemon Danish - Mini;Alice;53-6757498;2021/6/3;22:04;270;china-unionpay;270;82.86
+Kyrstin;Shrimp - Black Tiger 16/20;Elbertina;53-7938817;2021/6/4;23:04;271;mastercard;271;38.82
+Doris;Rice - Brown;Cordell;96-0535578;2021/6/5;00:04;272;americanexpress;272;8.58
+Kristopher;Pepper - Sorrano;Reggie;94-8503353;2021/6/6;01:04;273;china-unionpay;273;10.07
+Kimberley;Cookie Dough - Double;Jorrie;54-0731008;2021/6/7;02:04;274;visa;274;56.48
+Allister;Ice Cream Bar - Hagen Daz;Jewelle;61-3586933;2021/6/8;03:04;275;instapayment;275;74.15
+Mark;Juice - Orange;Pru;22-9316753;2021/6/9;04:04;276;laser;276;36.43
+Eloisa;Glucose;Isabelle;21-0452470;2021/6/10;05:04;277;china-unionpay;277;40.08
+Myranda;Cactus Pads;Ransom;44-3498389;2021/6/11;06:04;278;instapayment;278;42.06
+Toni;Pastry - Apple Large;Dotty;00-6098659;2021/6/12;07:04;279;china-unionpay;279;30.17
+Ainslie;Juice - Ocean Spray Kiwi;Willa;91-6422889;2021/6/13;08:04;280;americanexpress;280;96.46
+Emelen;Beans - Fine;Cyrill;25-0240594;2021/6/14;09:04;281;maestro;281;44.52
+Eustacia;Marjoram - Fresh;Gweneth;22-7243117;2021/6/15;10:04;282;maestro;282;47.9
+Tori;Leeks - Baby;Pauly;27-2769412;2021/6/16;11:04;283;china-unionpay;283;38.21
+Chad;Edible Flower - Mixed;Roxi;59-2680083;2021/6/17;12:04;284;china-unionpay;284;30.99
+Gabriell;Filo Dough;Dugald;28-9517553;2021/6/18;13:04;285;americanexpress;285;40.56
+Clevie;Jolt Cola - Red Eye;Coleen;70-7834041;2021/6/19;14:04;286;instapayment;286;71.4
+Cullie;Honey - Liquid;Wallache;60-4019145;2021/6/20;15:04;287;jcb;287;35.76
+Suzanne;Salsify;Connor;30-2063537;2021/6/21;16:04;288;jcb;288;3.92
+Brianne;Quail Eggs - Canned;Jessey;92-3129161;2021/6/22;17:04;289;maestro;289;30.24
+Adler;Strawberries - California;Knox;67-4406282;2021/6/23;18:04;290;china-unionpay;290;25.81
+Georgetta;Ecolab - Hobart Washarm End Cap;Simone;59-7054112;2021/6/24;19:04;291;laser;291;77.89
+Janine;Milk - Skim;Patience;98-6142411;2021/6/25;20:04;292;mastercard;292;95.14
+Lib;Syrup - Monin - Passion Fruit;Charlie;67-7223369;2021/6/26;21:04;293;instapayment;293;1.82
+Carleton;Sauce - Gravy;Alexandre;91-5638559;2021/6/27;22:04;294;americanexpress;294;63.61
+Nickolas;Bread - Flat Bread;Beatrix;05-5282054;2021/6/28;23:04;295;china-unionpay;295;98.24
+Lucais;Steampan Lid;Mariele;16-3865477;2021/6/29;00:04;296;americanexpress;296;57.64
+Gilli;Scotch - Queen Anne;Dotty;79-8064691;2021/6/30;01:04;297;instapayment;297;98.38
+Brew;Muffin Mix - Corn Harvest;Noelani;95-0595425;2021/7/1;02:04;298;laser;298;38.44
+Jerrold;Soup - Campbells Beef Stew;Elora;24-3378783;2021/7/2;03:04;299;laser;299;80.79
+Cherida;Cranberries - Frozen;Hastings;22-2632376;2021/7/3;04:04;300;jcb;300;12.25
+Dyane;Cookies Cereal Nut;Aila;28-8406383;2021/7/4;05:04;301;bankcard;301;88.78
+Aaren;Sole - Dover;Constantine;12-6345133;2021/7/5;06:04;302;instapayment;302;57.34
+Ennis;Cheese - Brie Roitelet;Ilaire;49-6446589;2021/7/6;07:04;303;instapayment;303;16.78
+Osgood;Ostrich - Fan Fillet;Renie;24-6656111;2021/7/7;08:04;304;china-unionpay;304;25.55
+Jarret;Bread - Rye;Deina;57-1656196;2021/7/8;09:04;305;americanexpress;305;7.62
+Chaddy;Beef - Inside Round;Dilly;13-1510096;2021/7/9;10:04;306;maestro;306;82.81
+Adan;Lamb - Rack;Shane;71-9062848;2021/7/10;11:04;307;visa;307;80.53
+Morie;Apple - Delicious;Cedric;04-7417393;2021/7/11;12:04;308;china-unionpay;308;81.64
+Anallese;Crackers Cheez It;Kingsley;37-9341681;2021/7/12;13:04;309;mastercard;309;14.85
+Sioux;Soup - Campbells Beef Stew;Cynthea;23-6929180;2021/7/13;14:04;310;bankcard;310;20.06
+Florie;Vacuum Bags 12x16;Boycey;27-1483616;2021/7/14;15:04;311;maestro;311;54.06
+Cordelie;Nut - Chestnuts;Cynthea;74-5898387;2021/7/15;16:04;312;instapayment;312;76.81
+Beitris;Cheese - Mix;Nana;74-9805685;2021/7/16;17:04;313;bankcard;313;34.49
+Wendi;Foam Cup 6 Oz;Ted;44-8750931;2021/7/17;18:04;314;jcb;314;42.33
+Dallon;Beans - Black Bean;Avrit;38-3823426;2021/7/18;19:04;315;instapayment;315;9.18
+Gav;Glycerine;Norby;94-9312501;2021/7/19;20:04;316;americanexpress;316;66.93
+Wylma;Wine - Periguita Fonseca;Hermia;24-7627312;2021/7/20;21:04;317;maestro;317;10.22
+Hannie;Soup - Knorr;Daisie;07-0553007;2021/7/21;22:04;318;jcb;318;30.55
+Sidonnie;Cookie Dough - Chocolate Chip;Irma;21-0256382;2021/7/22;23:04;319;americanexpress;319;27.42
+Vaughan;Iced Tea - Lemon;Vivien;78-1384537;2021/7/23;00:04;320;jcb;320;50.66
+Emory;Trout - Smoked;Zita;99-6183974;2021/7/24;01:04;321;americanexpress;321;95.85
+Pren;Water - Evian 355 Ml;Cordy;41-1197649;2021/7/25;02:04;322;china-unionpay;322;26.87
+Gretchen;Soda Water - Club Soda;Wyn;95-2217296;2021/7/26;03:04;323;instapayment;323;34.69
+Jobyna;Bread - White;Merla;12-8593605;2021/7/27;04:04;324;instapayment;324;70.61
+Karlie;Wine - Black Tower Qr;Brigitte;27-4701414;2021/7/28;05:04;325;visa;325;21.26
+Beatrix;Bandage - Fexible 1x3;Ferdinanda;75-8836713;2021/7/29;06:04;326;maestro;326;47.54
+Jojo;Beets - Mini Golden;Dari;66-9759002;2021/7/30;07:04;327;bankcard;327;65.68
+Tiebold;Wine - Tribal Sauvignon;Cleopatra;95-3423835;2021/7/31;08:04;328;americanexpress;328;27.24
+Parker;Flour - Strong;Christan;17-7636136;2021/8/1;09:04;329;laser;329;86.54
+Saundra;Cheese - Mascarpone;Patricio;64-5113034;2021/8/2;10:04;330;mastercard;330;43.25
+Corrine;Garlic Powder;Nance;25-1779537;2021/8/3;11:04;331;visa;331;57.73
+Audrye;Squid Ink;Worden;32-5035593;2021/8/4;12:04;332;visa;332;82.18
+Franni;Beef - Top Sirloin - Aaa;Celine;91-4714059;2021/8/5;13:04;333;jcb;333;72.69
+Andy;Tofu - Firm;Laurence;46-3792297;2021/8/6;14:04;334;bankcard;334;63.84
+Pearl;Beef - Roasted;Cynthia;06-5117805;2021/8/7;15:04;335;jcb;335;75.76
+Wanda;Muffin Mix - Corn Harvest;Mathian;87-4607627;2021/8/8;16:04;336;bankcard;336;55.44
+Elfrieda;Wine - Red;Lorrie;03-0900810;2021/8/9;17:04;337;bankcard;337;80.38
+Jeanette;Cheese - Parmesan Cubes;Xever;59-6317093;2021/8/10;18:04;338;bankcard;338;57.74
+Lara;Towel - Roll White;Adelaide;58-9855839;2021/8/11;19:04;339;china-unionpay;339;24.99
+Paton;Onion - Dried;Pen;35-6638122;2021/8/12;20:04;340;maestro;340;91.62
+Caren;Appetizer - Chicken Satay;Deirdre;56-5158832;2021/8/13;21:04;341;mastercard;341;59.28
+Darline;Towel Multifold;Homere;87-0097658;2021/8/14;22:04;342;instapayment;342;6.96
+Constantia;Sugar - White Packet;Dari;22-3785380;2021/8/15;23:04;343;mastercard;343;27.17
+Normie;Pears - Bartlett;Camel;43-8806165;2021/8/16;00:04;344;china-unionpay;344;74.71
+Deidre;Chips Potato Salt Vinegar 43g;Loralyn;47-6889320;2021/8/17;01:04;345;laser;345;96.75
+Ferd;Thyme - Fresh;Clarisse;88-6848761;2021/8/18;02:04;346;mastercard;346;53.82
+Travus;Papadam;Keven;29-9821471;2021/8/19;03:04;347;laser;347;70.64
+Dewey;Red Snapper - Fillet;Kaylee;29-3017056;2021/8/20;04:04;348;laser;348;5.71
+Jacky;Cleaner - Pine Sol;Jeannine;72-8340647;2021/8/21;05:04;349;china-unionpay;349;66.84
+Lauritz;Cheese - Brie;Aurelia;11-0685650;2021/8/22;06:04;350;jcb;350;65.81
+Feodora;Onions - Red Pearl;Hailee;09-6409519;2021/8/23;07:04;351;mastercard;351;97.03
+Amata;Chinese Foods - Cantonese;Noelani;78-4118874;2021/8/24;08:04;352;mastercard;352;52.94
+Violet;Island Oasis - Strawberry;Luis;78-3765184;2021/8/25;09:04;353;americanexpress;353;70.32
+Tilly;Ice Cream Bar - Hageen Daz To;Yank;85-7108056;2021/8/26;10:04;354;maestro;354;98.67
+Minetta;Flower - Carnations;Zitella;12-9372792;2021/8/27;11:04;355;mastercard;355;31.27
+Laurice;Coffee Cup 12oz 5342cd;Cosme;37-3407632;2021/8/28;12:04;356;americanexpress;356;55.66
+Kienan;Soap - Hand Soap;Chilton;05-2760044;2021/8/29;13:04;357;jcb;357;4.63
+Der;Wine - German Riesling;Clint;73-6390542;2021/8/30;14:04;358;maestro;358;95.69
+Vivi;Bread - Raisin;Randa;82-9431574;2021/8/31;15:04;359;jcb;359;70.68
+Jackqueline;Spice - Onion Powder Granulated;Nina;34-8128541;2021/9/1;16:04;360;china-unionpay;360;92.06
+Malvin;Coffee - French Vanilla Frothy;Merry;59-4278862;2021/9/2;17:04;361;mastercard;361;70.17
+Ingar;Mustard - Dry;Evan;95-7540387;2021/9/3;18:04;362;instapayment;362;87.43
+Duane;Cake - Mini Cheesecake;Christel;16-2330356;2021/9/4;19:04;363;laser;363;45.24
+Karlyn;Wine - Masi Valpolocell;Aindrea;74-3836160;2021/9/5;20:04;364;visa;364;27.82
+Carmon;Milk - Chocolate 500ml;Roseanna;31-4647372;2021/9/6;21:04;365;maestro;365;4.07
+Kane;Danishes - Mini Raspberry;Mellisent;47-5939856;2021/9/7;22:04;366;china-unionpay;366;57.59
+Ruthanne;Butter - Unsalted;Ariella;99-2475758;2021/9/8;23:04;367;americanexpress;367;96.59
+Karen;Kolrabi;Louella;50-3456334;2021/9/9;00:04;368;maestro;368;3.14
+Noell;Nantucket - 518ml;Deanne;56-9523374;2021/9/10;01:04;369;jcb;369;98.14
+Ola;Bread - Rolls;Abbey;84-7830540;2021/9/11;02:04;370;instapayment;370;62.23
+Clarisse;Puree - Mango;Jamima;33-4566410;2021/9/12;03:04;371;laser;371;66.93
+Sammie;Ostrich - Prime Cut;Rafael;95-2791495;2021/9/13;04:04;372;china-unionpay;372;94.97
+Thurston;Tuna - Canned;Evin;71-4887584;2021/9/14;05:04;373;mastercard;373;98.52
+Cleavland;Mustard - Seed;Alvinia;46-3677609;2021/9/15;06:04;374;china-unionpay;374;5.35
+Lianne;Icecream Cone - Areo Chocolate;Dedra;74-4102975;2021/9/16;07:04;375;maestro;375;72.51
+Hobie;Cheese - Mascarpone;Ivie;94-8205088;2021/9/17;08:04;376;jcb;376;41.87
+Janette;Mussels - Frozen;Zola;19-1465495;2021/9/18;09:04;377;laser;377;79.49
+Shaylynn;Corn Shoots;Reggie;23-2081094;2021/9/19;10:04;378;instapayment;378;47.94
+Care;Bread - Roll;Gaston;84-8621380;2021/9/20;11:04;379;jcb;379;6.35
+Celle;Syrup - Monin - Passion Fruit;Lindon;17-4189151;2021/9/21;12:04;380;maestro;380;58.06
+Betti;Food Colouring - Orange;Vasili;81-5943582;2021/9/22;13:04;381;visa;381;37.77
+Karoly;Mushroom - White Button;Aguie;09-0275713;2021/9/23;14:04;382;instapayment;382;80.71
+Ninetta;Breadfruit;Hunter;70-2372427;2021/9/24;15:04;383;china-unionpay;383;10.07
+Meaghan;Pastry - Apple Muffins - Mini;Bartholomeus;76-8907600;2021/9/25;16:04;384;jcb;384;37.76
+Patsy;Transfer Sheets;Andros;56-8716824;2021/9/26;17:04;385;americanexpress;385;74.71
+Eleanor;General Purpose Trigger;Frederik;87-3959009;2021/9/27;18:04;386;visa;386;4.55
+Heath;Chocolate - Milk;Abbie;57-5854008;2021/9/28;19:04;387;maestro;387;96.74
+Betta;Sauce - Hoisin;Trudie;62-6659802;2021/9/29;20:04;388;bankcard;388;82.44
+Charmain;Wine - Sogrape Mateus Rose;Ivar;41-0573666;2021/9/30;21:04;389;jcb;389;97.01
+Alidia;Veal - Tenderloin;Bat;10-3693696;2021/10/1;22:04;390;laser;390;80.38
+Nobe;Pasta - Cheese / Spinach Bauletti;Floyd;10-4361148;2021/10/2;23:04;391;maestro;391;86.75
+Robinson;Veal Inside - Provimi;Kendall;04-5872449;2021/10/3;00:04;392;laser;392;27.98
+Margo;Stock - Beef;Mable;58-2867381;2021/10/4;01:04;393;bankcard;393;58.94
+Laure;Butcher Twine 4r;Denys;21-7219860;2021/10/5;02:04;394;china-unionpay;394;5.56
+Benton;Daves Island Stinger;Marie-ann;05-2861658;2021/10/6;03:04;395;instapayment;395;56.03
+Lira;Horseradish - Prepared;Blondie;41-4493589;2021/10/7;04:04;396;maestro;396;20.95
+Rivkah;Artichokes - Knobless;Vitia;27-2827508;2021/10/8;05:04;397;maestro;397;8.16
+Gill;Cabbage - Nappa;Eba;52-1996787;2021/10/9;06:04;398;mastercard;398;24.85
+Marney;Beef - Bones;Shep;18-6798684;2021/10/10;07:04;399;china-unionpay;399;20.39
+Brenden;Nantucket - Pomegranate Pear;Ruthie;25-6312257;2021/10/11;08:04;400;jcb;400;56.85
+Izzy;Chocolate - Pistoles;Audry;34-3595151;2021/10/12;09:04;401;mastercard;401;26.49
+Shayla;Bar Energy Chocchip;Misti;99-3028251;2021/10/13;10:04;402;laser;402;52.78
+Clyde;Bread Cranberry Foccacia;Helli;18-7666232;2021/10/14;11:04;403;jcb;403;50.09
+Godfry;Tea - Grapefruit Green Tea;Crin;22-0579552;2021/10/15;12:04;404;mastercard;404;21.25
+Maryanna;Dip - Tapenade;Tracy;37-7403921;2021/10/16;13:04;405;instapayment;405;37.02
+Kalindi;Wine - Mas Chicet Rose;Bunni;29-3821012;2021/10/17;14:04;406;bankcard;406;56.52
+Giff;Cape Capensis - Fillet;Gertrudis;41-1556616;2021/10/18;15:04;407;mastercard;407;40.33
+Demott;Sobe - Green Tea;Thain;49-4266423;2021/10/19;16:04;408;maestro;408;77.37
+Tracy;Wine - Alsace Gewurztraminer;Kyle;19-3560576;2021/10/20;17:04;409;jcb;409;61.75
+Bartolemo;Danishes - Mini Cheese;Ripley;09-0443828;2021/10/21;18:04;410;jcb;410;5.065
+Faye;Lettuce - Belgian Endive;Sonya;39-7849807;2021/10/22;19:04;411;bankcard;411;26.38
+Ennis;Coconut - Shredded;Jesus;91-8495303;2021/10/23;20:04;412;laser;412;27.72
+Moreen;Wine - Chateau Bonnet;Philomena;70-7539291;2021/10/24;21:04;413;china-unionpay;413;43.59
+Eolande;Wine - Red;Tildy;91-0873312;2021/10/25;22:04;414;visa;414;53.53
+Cull;Stock - Beef;Olav;85-6760334;2021/10/26;23:04;415;jcb;415;1.39
+Helenelizabeth;Flour - Corn;Mackenzie;24-9093011;2021/10/27;00:04;416;mastercard;416;38.22
+Farley;Garbag Bags - Black;Giuseppe;08-1248600;2021/10/28;01:04;417;china-unionpay;417;92.55
+Hortense;Cheese - Perron Cheddar;Aguie;87-7507828;2021/10/29;02:04;418;instapayment;418;55.76
+Aviva;Puff Pastry - Sheets;Herc;71-7784961;2021/10/30;03:04;419;visa;419;61.84
+Gibbie;Cheese - Manchego;Flss;81-0410854;2021/10/31;04:04;420;maestro;420;50.68
+Mirna;Pork - Smoked Back Bacon;Terza;14-0835278;2021/11/1;05:04;421;visa;421;60.38
+Miran;Ecolab Crystal Fusion;Justina;66-4675690;2021/11/2;06:04;422;americanexpress;422;92.37
+Dorris;Soup - Cream Of Broccoli;Grant;97-6228378;2021/11/3;07:04;423;visa;423;57.05
+Gregg;Soho Lychee Liqueur;Malina;89-7985161;2021/11/4;08:04;424;instapayment;424;77.48
+Lorant;Whmis - Spray Bottle Trigger;Carlo;27-5860981;2021/11/5;09:04;425;americanexpress;425;59.86
+Berenice;Muffin - Mix - Creme Brule 15l;Kristine;38-2511390;2021/11/6;10:04;426;bankcard;426;95.28
+Paulie;Parsley - Dried;Grace;49-9867073;2021/11/7;11:04;427;visa;427;1.45
+Hector;Beef - Kindney;Ced;39-2932399;2021/11/8;12:04;428;laser;428;34.72
+Freeman;Spic And Span All Purpose;Bradney;27-6887119;2021/11/9;13:04;429;laser;429;52.21
+Alejandra;Easy Off Oven Cleaner;Bianca;55-4459981;2021/11/10;14:04;430;americanexpress;430;9.24
+Donielle;Turkey Tenderloin Frozen;Gerrard;97-8821208;2021/11/11;15:04;431;americanexpress;431;62.06
+Candy;Bread - Frozen Basket Variety;Aurie;98-1013555;2021/11/12;16:04;432;maestro;432;43.34
+Cherry;Longos - Greek Salad;Susan;32-7524419;2021/11/13;17:04;433;bankcard;433;80.94
+Alessandro;Lid - 10;Devondra;19-0596175;2021/11/14;18:04;434;jcb;434;57.23
+Shanta;Table Cloth 72x144 White;Wallis;30-7215706;2021/11/15;19:04;435;china-unionpay;435;18.94
+Lynna;Cheese - Cheddar;Lazare;24-8802216;2021/11/16;20:04;436;maestro;436;35.77
+Elton;Pasta - Angel Hair;Lia;07-1115447;2021/11/17;21:04;437;americanexpress;437;57.82
+Chad;Cleaner - Bleach;Hakim;68-5064125;2021/11/18;22:04;438;instapayment;438;37.95
+Hatty;Cookies Cereal Nut;Obed;87-7437760;2021/11/19;23:04;439;china-unionpay;439;74.96
+Georgianna;Juice - Cranberry;Elenore;99-9693141;2021/11/20;00:04;440;laser;440;54.44
+Gelya;Foam Tray S2;Pasquale;89-7665178;2021/11/21;01:04;441;china-unionpay;441;48.05
+Sibley;Juice - Lagoon Mango;Gussi;53-9351521;2021/11/22;02:04;442;visa;442;28.79
+Marlene;Crab - Claws;Dasie;17-7909334;2021/11/23;03:04;443;jcb;443;58.18
+Verile;Jam - Raspberry;Laurette;59-3296584;2021/11/24;04:04;444;instapayment;444;24.64
+Miguel;Beef - Bresaola;Florida;64-2326173;2021/11/25;05:04;445;bankcard;445;32.37
+Padgett;Bread - Sour Batard;Bar;91-5648920;2021/11/26;06:04;446;maestro;446;77.06
+Sheelah;Mince Meat - Filling;Zorine;02-4590130;2021/11/27;07:04;447;maestro;447;7.16
+Vicki;Crab - Meat Combo;Rosaleen;49-9083846;2021/11/28;08:04;448;jcb;448;8.93
+Rodger;Chocolate - Semi Sweet;Lacie;08-1786054;2021/11/29;09:04;449;jcb;449;79.51
+Claudette;Shark - Loin;Immanuel;29-8550254;2021/11/30;10:04;450;laser;450;80.24
+Joya;Sauce - Soya;Burke;00-8876443;2021/12/1;11:04;451;mastercard;451;34.85
+Kitty;Muffin Hinge Container 6;Eugenie;60-4784970;2021/12/2;12:04;452;mastercard;452;87.37
+Wyatt;Yogurt - Cherry;Chrystel;14-5717439;2021/12/3;13:04;453;mastercard;453;34.24
+Gabriele;Sugar - Crumb;Tomlin;80-8427146;2021/12/4;14:04;454;laser;454;71.32
+Reena;Tart Shells - Sweet;Toiboid;38-0609710;2021/12/5;15:04;455;bankcard;455;99.39
+Gawain;Kellogs Cereal In A Cup;Ruthie;25-5162528;2021/12/6;16:04;456;maestro;456;26.19
+Brennen;Table Cloth 62x120 White;Alfie;59-7189304;2021/12/7;17:04;457;laser;457;66.54
+Clyde;Table Cloth 54x54 Colour;Florencia;74-2344623;2021/12/8;18:04;458;laser;458;18.77
+Bernadina;Wine - Redchard Merritt;Sherwood;67-0373429;2021/12/9;19:04;459;china-unionpay;459;58.83
+Wiatt;Pepper - Jalapeno;Cheslie;29-7080656;2021/12/10;20:04;460;laser;460;74.81
+Bernie;Tarragon - Primerba;Gil;72-0357367;2021/12/11;21:04;461;visa;461;70.78
+Kittie;Mangostein;Doug;31-5959659;2021/12/12;22:04;462;visa;462;74.95
+Aime;Bread - Crusty Italian Poly;Bevan;09-7744389;2021/12/13;23:04;463;bankcard;463;52.86
+Dickie;Quail - Whole;Chevalier;51-7253579;2021/12/14;00:04;464;laser;464;79.06
+Maighdiln;Bread - Focaccia Quarter;Sterne;97-8430897;2021/12/15;01:04;465;mastercard;465;68.09
+Murry;Soup Campbells Beef With Veg;Welbie;45-3684106;2021/12/16;02:04;466;americanexpress;466;84.59
+Janene;Vacuum Bags 12x16;Christoph;72-5285289;2021/12/17;03:04;467;americanexpress;467;8.36
+Donall;Potatoes - Mini White 3 Oz;Kara;21-9695206;2021/12/18;04:04;468;instapayment;468;32.82
+Charlena;Gingerale - Diet - Schweppes;Orin;73-8431280;2021/12/19;05:04;469;mastercard;469;26.77
+Marys;Milk - Skim;Cacilia;22-3671179;2021/12/20;06:04;470;china-unionpay;470;59.34
+Sascha;Beans - Butter Lrg Lima;Sig;56-5542901;2021/12/21;07:04;471;jcb;471;4.15
+Silva;Coffee Beans - Chocolate;Marlin;57-0447330;2021/12/22;08:04;472;laser;472;32.87
+Lelia;Toamtoes 6x7 Select;Deni;47-2547170;2021/12/23;09:04;473;visa;473;50.48
+Carmel;Wine - Red;Christoph;27-4769019;2021/12/24;10:04;474;china-unionpay;474;62.48
+Yolanthe;Grand Marnier;Kahaleel;33-3677675;2021/12/25;11:04;475;mastercard;475;45.87
+Samara;Coriander - Seed;Peria;39-8215925;2021/12/26;12:04;476;visa;476;62.44
+Maura;Pate - Liver;Gaby;33-4589886;2021/12/27;13:04;477;instapayment;477;25.84
+Tomkin;Salmon - Sockeye Raw;Coleen;70-0664161;2021/12/28;14:04;478;visa;478;35.09
+Germaine;Sobe - Cranberry Grapefruit;Cordelie;94-8619763;2021/12/29;15:04;479;visa;479;86.24
+Wenonah;Lambcasing;Corney;11-6478674;2021/12/30;16:04;480;bankcard;480;27.89
+Winna;Coffee - Espresso;Giacopo;34-9116350;2021/12/31;17:04;481;laser;481;20.64
+Angelica;Puree - Pear;Tan;05-9482982;2022/1/1;18:04;482;americanexpress;482;61.57
+Newton;Lamb - Bones;Carola;84-3636259;2022/1/2;19:04;483;jcb;483;42.64
+Brigida;Table Cloth 144x90 White;Donnie;15-5576885;2022/1/3;20:04;484;mastercard;484;47.72
+Melosa;Coffee - French Vanilla Frothy;Celina;92-2552598;2022/1/4;21:04;485;americanexpress;485;13.79
+Torre;Lamb - Ground;Deonne;74-7279185;2022/1/5;22:04;486;visa;486;68.56
+Alis;Cream - 18%;Blondell;48-2184838;2022/1/6;23:04;487;jcb;487;60.89
+Etti;Flavouring - Orange;Biddy;81-0284475;2022/1/7;00:04;488;bankcard;488;94.49
+Meredeth;Pork - Tenderloin;Bill;45-4223058;2022/1/8;01:04;489;bankcard;489;18.87
+Callean;Tomato - Plum With Basil;Ginnie;35-9736700;2022/1/9;02:04;490;china-unionpay;490;4.21
+Hurleigh;Clams - Bay;Alejandra;16-5830236;2022/1/10;03:04;491;jcb;491;54.08
+Henriette;Bread - French Stick;James;73-7648754;2022/1/11;04:04;492;instapayment;492;80.47
+Cirillo;Fuji Apples;Kellsie;47-4474817;2022/1/12;05:04;493;americanexpress;493;62.16
+Malinda;Bread - Roll;Welsh;88-5836933;2022/1/13;06:04;494;jcb;494;64.55
+Lorne;Bread - Raisin Walnut Oval;Philippe;91-4941816;2022/1/14;07:04;495;mastercard;495;19.86
+Tamarah;Macaroons - Homestyle Two Bit;Sukey;31-4870340;2022/1/15;08:04;496;laser;496;77.58
+Fletch;Truffle Shells - White Chocolate;Michaella;14-2712441;2022/1/16;09:04;497;jcb;497;19.75
+Basil;Brandy Cherry - Mcguinness;Tammara;91-9186700;2022/1/17;10:04;498;americanexpress;498;73.71
+Flossy;Lid Tray - 16in Dome;Ania;21-3216077;2022/1/18;11:04;499;laser;499;90.67
+Danica;Table Cloth 120 Round White;Katie;34-5293145;2022/1/19;12:04;500;visa;500;19.55
+Goldina;Table Cloth - 53x69 Colour;Marci;55-4901399;2022/1/20;13:04;501;instapayment;501;12.35
+Kristien;Amarula Cream;Eunice;49-8941317;2022/1/21;14:04;502;visa;502;54.53
+Daveta;Juice - Apple;Dalis;94-9273729;2022/1/22;15:04;503;bankcard;503;74.66
+Tripp;Cake Slab;Gaven;25-4263310;2022/1/23;16:04;504;instapayment;504;10.84
+Kara-lynn;Paper Towel Touchless;Dorella;62-7259310;2022/1/24;17:04;505;laser;505;13.47
+Latrina;Bowl 12 Oz - Showcase 92012;Tamara;55-6206499;2022/1/25;18:04;506;bankcard;506;65.84
+Kore;Spaghetti Squash;Blondie;80-8110562;2022/1/26;19:04;507;instapayment;507;82.44
+Aviva;Cheese - Swiss;Agna;99-2449001;2022/1/27;20:04;508;visa;508;73.24
+Doreen;Beef - Ox Tongue;Elaina;33-4183649;2022/1/28;21:04;509;instapayment;509;76.75
+Kelly;Oil - Olive Bertolli;Elihu;84-3167142;2022/1/29;22:04;510;laser;510;82.26
+Mabel;Cheese - Brie Roitelet;Francesca;50-9564622;2022/1/30;23:04;511;maestro;511;43.22
+Bamby;Coffee - Decaffeinato Coffee;Evy;17-7911622;2022/1/31;00:04;512;mastercard;512;47.79
+Alleyn;Calaloo;Gareth;29-2748075;2022/2/1;01:04;513;bankcard;513;99.01
+Hubie;Veal - Insides;Robby;43-4153575;2022/2/2;02:04;514;visa;514;2.86
+Bertina;Flour - Masa De Harina Mexican;Mohandis;26-1364001;2022/2/3;03:04;515;instapayment;515;27.28
+Christian;Pork - Loin;Drusie;05-3155493;2022/2/4;04:04;516;mastercard;516;95.79
+Maribelle;Muffin Mix - Blueberry;Perren;95-2299362;2022/2/5;05:04;517;instapayment;517;46.55
+Tull;Bread - Rye;Pascal;95-2064403;2022/2/6;06:04;518;jcb;518;99.99
+Mick;Pepper - Orange;Ottilie;05-0660885;2022/2/7;07:04;519;jcb;519;91.18
+Tades;Bread Crumbs - Japanese Style;Joscelin;44-6868082;2022/2/8;08:04;520;instapayment;520;87.36
+Chrystal;Dooleys Toffee;Giovanni;98-8873293;2022/2/9;09:04;521;americanexpress;521;90.73
+Fransisco;Chinese Foods - Chicken;Alyda;64-7294346;2022/2/10;10:04;522;instapayment;522;74.65
+Pepi;Tea Leaves - Oolong;Marlin;06-4889735;2022/2/11;11:04;523;laser;523;9.34
+Nikola;Lamb Leg - Bone - In Nz;Berty;99-8054621;2022/2/12;12:04;524;bankcard;524;17.42
+Irv;Bread Crumbs - Japanese Style;Fabio;72-0254760;2022/2/13;13:04;525;jcb;525;78.22
+Honey;Sprouts - Alfalfa;Emelita;76-5508955;2022/2/14;14:04;526;maestro;526;72.15
+Hakeem;Salami - Genova;Harriette;13-8722699;2022/2/15;15:04;527;americanexpress;527;32.93
+Georgianne;Lobster - Baby;Dredi;37-9166235;2022/2/16;16:04;528;mastercard;528;94.05
+Odille;Oil - Shortening - All - Purpose;Nanine;91-1584831;2022/2/17;17:04;529;mastercard;529;46.73
+Fredericka;Cookie - Oatmeal;Renae;98-2557472;2022/2/18;18:04;530;maestro;530;23.94
+Mela;Food Colouring - Blue;Eilis;77-6313424;2022/2/19;19:04;531;bankcard;531;5.27
+Marja;Langers - Cranberry Cocktail;Morlee;05-8361574;2022/2/20;20:04;532;mastercard;532;39.53
+Kyla;Dill Weed - Fresh;Kimmie;51-4240030;2022/2/21;21:04;533;china-unionpay;533;29.01
+Arabel;Cocoa Butter;Faunie;12-4871963;2022/2/22;22:04;534;bankcard;534;76.57
+Adham;Wine - White;Dallas;53-8265405;2022/2/23;23:04;535;bankcard;535;85.06
+Arlinda;Cornish Hen;Gabie;18-1580557;2022/2/24;00:04;536;maestro;536;52.25
+Mommy;Pepper - Green;Maurizia;59-2817579;2022/2/25;01:04;537;americanexpress;537;56.59
+Connie;Skirt - 24 Foot;Cariotta;24-4684929;2022/2/26;02:04;538;bankcard;538;8.54
+Myranda;Wine - Magnotta - Cab Franc;Ignaz;31-4064325;2022/2/27;03:04;539;jcb;539;77.56
+Sherri;Veal - Osso Bucco;Hersh;92-5764581;2022/2/28;04:04;540;mastercard;540;3.56
+Louis;Lid - 10;Myranda;66-8553061;2022/3/1;05:04;541;laser;541;8.57
+Corny;Table Cloth 81x81 Colour;Almeta;30-6519372;2022/3/2;06:04;542;americanexpress;542;63.32
+Dory;Pork Salted Bellies;Bunnie;86-2004295;2022/3/3;07:04;543;americanexpress;543;2.82
+Zea;Salmon - Atlantic;Kathryn;36-8031567;2022/3/4;08:04;544;maestro;544;86.99
+Vevay;Coffee Cup 8oz 5338cd;Freida;30-4762219;2022/3/5;09:04;545;china-unionpay;545;37.74
+Claudius;Longos - Chicken Wings;Kelsi;59-9396115;2022/3/6;10:04;546;maestro;546;85.26
+Alberto;Turnip - White;Deni;13-9590895;2022/3/7;11:04;547;visa;547;69.75
+Ced;Nori Sea Weed;Gregg;90-1071304;2022/3/8;12:04;548;americanexpress;548;20.26
+Roslyn;Sugar - Fine;Ariel;94-4214555;2022/3/9;13:04;549;instapayment;549;78.46
+Chariot;Cornish Hen;Jordan;91-3778029;2022/3/10;14:04;550;laser;550;91.12
+Yolanda;Turnip - White;Melvyn;14-3078868;2022/3/11;15:04;551;americanexpress;551;8.02
+Elwin;Cookie Trail Mix;Valli;54-6226583;2022/3/12;16:04;552;maestro;552;89.13
+Fifine;Beans - Fine;Gillie;68-4047964;2022/3/13;17:04;553;instapayment;553;70.82
+Othilia;Sugar - Splenda Sweetener;Mohammed;27-2857504;2022/3/14;18:04;554;laser;554;9.21
+Vanna;Eggroll;Chrysler;08-9621259;2022/3/15;19:04;555;china-unionpay;555;7.77
+Barnie;Cheese - Cheddar With Claret;Eden;33-8425585;2022/3/16;20:04;556;americanexpress;556;28.56
+Rafaela;Bread - White;Hammad;45-8407115;2022/3/17;21:04;557;maestro;557;84.46
+Marley;Steel Wool S.o.s;Benjamin;04-7221122;2022/3/18;22:04;558;china-unionpay;558;80.19
+Dud;Beef - Tender Tips;Gretel;40-0401884;2022/3/19;23:04;559;jcb;559;69.84
+Melony;Bread - Bistro Sour;Seamus;17-0717142;2022/3/20;00:04;560;jcb;560;37.95
+Bear;Pail For Lid 1537;Richmond;41-2742389;2022/3/21;01:04;561;americanexpress;561;86.77
+Huberto;Chicken - Ground;Violet;06-2534415;2022/3/22;02:04;562;instapayment;562;79.33
+Vidovic;Yogurt - Blueberry;Pauli;85-6315459;2022/3/23;03:04;563;china-unionpay;563;2.14
+Oswell;Eggs - Extra Large;Harriet;21-1217111;2022/3/24;04:04;564;visa;564;36.21
+Ferguson;Wine - Red;Wren;01-5691822;2022/3/25;05:04;565;mastercard;565;55.64
+Jillayne;Eggs - Extra Large;Merrill;54-1871194;2022/3/26;06:04;566;bankcard;566;5.38
+Rosaline;Vermouth - Sweet;Marni;92-2457082;2022/3/27;07:04;567;china-unionpay;567;50.76
+Joyan;Avocado;Laney;59-0087825;2022/3/28;08:04;568;bankcard;568;81.61
+Sayre;Butter - Salted;Brinn;88-8690855;2022/3/29;09:04;569;china-unionpay;569;34.32
+Wilden;Appetizer - Escargot Puff;Morena;15-4729803;2022/3/30;10:04;570;maestro;570;11.42
+Mozelle;Chives - Fresh;Emlen;40-6615360;2022/3/31;11:04;571;visa;571;59.59
+Jocko;Garam Marsala;Marchelle;66-8179734;2022/4/1;12:04;572;laser;572;60.25
+Emanuele;Cake Circle;Violante;65-0833292;2022/4/2;13:04;573;china-unionpay;573;58.75
+Ollie;Versatainer Nc - 888;Ferdy;92-1181955;2022/4/3;14:04;574;bankcard;574;87.18
+Brit;Onions - Cippolini;Marilee;89-0546602;2022/4/4;15:04;575;visa;575;17.44
+Brett;Sauce - Hollandaise;Vivianne;26-8151893;2022/4/5;16:04;576;bankcard;576;39.19
+Lynn;Food Colouring - Blue;Ike;30-1407807;2022/4/6;17:04;577;maestro;577;19.73
+Rudd;Sponge Cake Mix - Vanilla;Nanci;39-7941355;2022/4/7;18:04;578;laser;578;72.59
+Margarethe;Sprouts - Alfalfa;Nata;27-5875136;2022/4/8;19:04;579;mastercard;579;63.03
+Aubrie;Hagen Daza - Dk Choocolate;Karrah;06-1696528;2022/4/9;20:04;580;instapayment;580;47.54
+Christi;Pastry - Cheese Baked Scones;Care;09-7300500;2022/4/10;21:04;581;bankcard;581;25.36
+Noella;Pasta - Penne Primavera;Gorden;56-5712558;2022/4/11;22:04;582;jcb;582;20.59
+Maure;Chocolate - Milk;Ariana;98-3055609;2022/4/12;23:04;583;instapayment;583;64.44
+Brandon;Beef - Kobe Striploin;Freddi;14-9362934;2022/4/13;00:04;584;china-unionpay;584;90.71
+Jobina;Soupcontfoam16oz 116con;Chiquia;18-2962365;2022/4/14;01:04;585;bankcard;585;49.22
+Holt;Filo Dough;Cecelia;74-8993316;2022/4/15;02:04;586;china-unionpay;586;99.36
+Delcine;Muffin Mix - Chocolate Chip;Veronika;24-5711294;2022/4/16;03:04;587;china-unionpay;587;8.28
+Jessika;Cinnamon - Ground;Robby;40-7907752;2022/4/17;04:04;588;visa;588;57.13
+Alfonso;Nut - Hazelnut;Eugine;19-3379992;2022/4/18;05:04;589;mastercard;589;53.51
+Leora;Wine - Kwv Chenin Blanc South;Vivie;94-5091003;2022/4/19;06:04;590;bankcard;590;46.46
+Gram;Pie Shell - 9;Alameda;72-7449038;2022/4/20;07:04;591;china-unionpay;591;7.05
+Candace;Sprouts - Alfalfa;Sly;86-4236227;2022/4/21;08:04;592;americanexpress;592;12.61
+Ricca;Wine - Red;Ardene;57-0562518;2022/4/22;09:04;593;americanexpress;593;57.63
+Leonelle;Fireball Whisky;Fin;61-8245649;2022/4/23;10:04;594;visa;594;8.79
+Mela;Lamb Tenderloin Nz Fr;Ethelbert;09-9439620;2022/4/24;11:04;595;maestro;595;43.36
+Jeana;Dooleys Toffee;Jenni;35-2620756;2022/4/25;12:04;596;laser;596;3.17
+Essa;Heavy Duty Dust Pan;Hester;97-4503182;2022/4/26;13:04;597;bankcard;597;58.53
+Glennis;Lychee;Sterne;46-1062142;2022/4/27;14:04;598;instapayment;598;29.57
+Olympia;Glaze - Apricot;Pepito;18-8788349;2022/4/28;15:04;599;mastercard;599;39.17
+Vinita;Juice - Orange;Audy;52-6843722;2022/4/29;16:04;600;maestro;600;36.57
+Conroy;Container - Clear 32 Oz;Skylar;82-5859668;2022/4/30;17:04;601;bankcard;601;40.4
+Virgil;Lobak;Gerhardine;96-8956726;2022/5/1;18:04;602;laser;602;26.99
+Cullen;Soup - Campbells Broccoli;Cyndie;11-2071781;2022/5/2;19:04;603;instapayment;603;97.43
+Caryn;Ecolab Digiclean Mild Fm;Madelyn;90-9132201;2022/5/3;20:04;604;laser;604;89.91
+Gothart;Calypso - Pineapple Passion;Rochella;96-7151745;2022/5/4;21:04;605;mastercard;605;37.78
+Cate;Food Colouring - Orange;Meredith;67-3897420;2022/5/5;22:04;606;instapayment;606;21.44
+Alvin;Bread - Olive;Robbin;18-2302859;2022/5/6;23:04;607;americanexpress;607;12.13
+Jessie;Turnip - White;Bastian;63-9817603;2022/5/7;00:04;608;mastercard;608;43.57
+Sandor;Jam - Marmalade;Reta;26-0436475;2022/5/8;01:04;609;bankcard;609;14.63
+Zonda;Salami - Genova;Katinka;91-4239064;2022/5/9;02:04;610;americanexpress;610;98.55
+Jonell;Corn Shoots;Otha;00-2790529;2022/5/10;03:04;611;americanexpress;611;11.87
+Sidonnie;Oil - Avocado;Hollie;51-4027941;2022/5/11;04:04;612;maestro;612;19.75
+Dorthy;Beer - Fruli;Rheta;91-1692805;2022/5/12;05:04;613;bankcard;613;91.92
+Windy;Appetizer - Crab And Brie;Chere;73-7075694;2022/5/13;06:04;614;laser;614;70.04
+Blondelle;Gingerale - Diet - Schweppes;Lisbeth;46-0920519;2022/5/14;07:04;615;bankcard;615;30.2
+Beniamino;Snapple Lemon Tea;Beryl;99-3294817;2022/5/15;08:04;616;instapayment;616;11.79
+Vanny;Calypso - Strawberry Lemonade;Margeaux;19-5569198;2022/5/16;09:04;617;mastercard;617;14.55
+Susana;Ketchup - Tomato;Noni;44-3122928;2022/5/17;10:04;618;laser;618;31.21
+Jesse;Zucchini - Yellow;Aylmer;81-3077855;2022/5/18;11:04;619;mastercard;619;20.23
+Onfroi;Doilies - 8;Gallard;21-0060349;2022/5/19;12:04;620;china-unionpay;620;23.64
+Trent;Compound - Pear;Fallon;43-6936126;2022/5/20;13:04;621;instapayment;621;37.74
+Loralyn;Beef - Ox Tongue;Filippa;72-2050293;2022/5/21;14:04;622;visa;622;37.81
+Matthew;Roe - Lump Fish;Mandi;89-0557998;2022/5/22;15:04;623;instapayment;623;25.26
+Papageno;Mudslide;Anabel;03-4239866;2022/5/23;16:04;624;china-unionpay;624;3.23
+Teddy;Veal - Slab Bacon;Claudie;67-1971398;2022/5/24;17:04;625;instapayment;625;9.16
+Cristen;Onions - Cippolini;Brad;58-5100662;2022/5/25;18:04;626;visa;626;42.4
+Daron;Mace;Andee;01-5800571;2022/5/26;19:04;627;jcb;627;1.144
+Otis;Chevril;Dirk;25-0896086;2022/5/27;20:04;628;instapayment;628;91.8
+Rafi;Wine - Casillero Del Diablo;Earl;13-6670838;2022/5/28;21:04;629;jcb;629;56.56
+Patsy;Soup - Campbells;Elenore;19-9926689;2022/5/29;22:04;630;americanexpress;630;21.75
+Saree;Sauce - Fish 25 Ozf Bottle;Barde;53-5725897;2022/5/30;23:04;631;mastercard;631;79.24
+Amii;Gatorade - Fruit Punch;Rutherford;48-2801502;2022/5/31;00:04;632;visa;632;27.83
+Clay;Oil - Sesame;Rubina;52-5600829;2022/6/1;01:04;633;bankcard;633;8.72
+Fleurette;Soap - Hand Soap;Cale;46-8038705;2022/6/2;02:04;634;visa;634;81.84
+Caresa;Nut - Pumpkin Seeds;Faunie;79-4667397;2022/6/3;03:04;635;visa;635;35.84
+Lilla;Soup - Campbells - Chicken Noodle;Brianna;52-9105594;2022/6/4;04:04;636;americanexpress;636;1.57
+Thorin;Wine - Saint Emilion Calvet;Nellie;15-3246547;2022/6/5;05:04;637;maestro;637;11.77
+Eugen;Chives - Fresh;Kacy;48-3015719;2022/6/6;06:04;638;mastercard;638;46.13
+Bliss;Wine - Cotes Du Rhone;Nathan;13-2920641;2022/6/7;07:04;639;jcb;639;78.81
+Karee;Yogurt - French Vanilla;Arlan;00-4907903;2022/6/8;08:04;640;bankcard;640;42.41
+Boothe;Eel Fresh;Olivia;27-7011875;2022/6/9;09:04;641;bankcard;641;75.88
+Roshelle;Glass - Juice Clear 5oz 55005;Marilin;53-3428497;2022/6/10;10:04;642;bankcard;642;38.14
+Orren;Chicken Thigh - Bone Out;Simon;58-4554316;2022/6/11;11:04;643;americanexpress;643;81.35
+Giustina;Dry Ice;Hildegaard;54-4629805;2022/6/12;12:04;644;mastercard;644;97.59
+Eberhard;Cheese - Bocconcini;Julina;17-7732306;2022/6/13;13:04;645;americanexpress;645;70.69
+Gilberte;Cheese - Taleggio D.o.p.;Boony;03-8014110;2022/6/14;14:04;646;instapayment;646;37.43
+Wildon;Kiwi;Brennan;63-1836963;2022/6/15;15:04;647;instapayment;647;99.76
+Hilda;Squash - Guords;Judye;38-3101175;2022/6/16;16:04;648;instapayment;648;97.94
+Gael;Chutney Sauce - Mango;Thane;86-6130539;2022/6/17;17:04;649;bankcard;649;89.95
+Norri;Lobak;Ferdie;08-4297174;2022/6/18;18:04;650;americanexpress;650;67.26
+Maryann;Long Island Ice Tea;Ade;27-5995556;2022/6/19;19:04;651;americanexpress;651;81.57
+Leoline;Juice - Propel Sport;Herculie;14-5148090;2022/6/20;20:04;652;americanexpress;652;53.75
+Kerry;Pepper - Yellow Bell;Fernando;97-1125022;2022/6/21;21:04;653;laser;653;15.76
+Kamillah;Mushroom - Portebello;Zachary;81-1428645;2022/6/22;22:04;654;china-unionpay;654;60.32
+Adey;Flour - Buckwheat;Olga;02-2114291;2022/6/23;23:04;655;maestro;655;90.59
+Cooper;Beer - Sleeman Fine Porter;Julissa;11-5042180;2022/6/24;00:04;656;visa;656;27.68
+Ginelle;Brandy - Orange;Aindrea;15-5054323;2022/6/25;01:04;657;bankcard;657;81.44
+Casandra;Myers Planters Punch;Thia;71-6670081;2022/6/26;02:04;658;china-unionpay;658;81.96
+Dale;Muffin - Mix - Bran And Maple 15l;Anne-marie;78-7412476;2022/6/27;03:04;659;americanexpress;659;63.94
+Lucie;Chocolate - Dark Callets;Burtie;32-0511612;2022/6/28;04:04;660;china-unionpay;660;19.52
+Hadleigh;Marjoram - Fresh;Simona;04-4309654;2022/6/29;05:04;661;visa;661;49.95
+Moina;Wine - Piper Heidsieck Brut;Sky;04-8546223;2022/6/30;06:04;662;laser;662;78.25
+Elsey;Pie Shells 10;Deidre;86-0471705;2022/7/1;07:04;663;bankcard;663;21.88
+Alric;Wine - Magnotta - Red;Aldous;79-3969322;2022/7/2;08:04;664;visa;664;33.27
+Tyson;Dried Figs;Nial;82-4498076;2022/7/3;09:04;665;visa;665;20.37
+Dmitri;Muffin - Mix - Strawberry Rhubarb;Travis;23-3784389;2022/7/4;10:04;666;visa;666;31.18
+Teressa;Pork - Bacon;Aliza;18-6700603;2022/7/5;11:04;667;laser;667;37.75
+Lolita;Lamb - Leg;Margette;59-5533531;2022/7/6;12:04;668;laser;668;50.91
+Sheree;Tuna - Fresh;Edsel;28-6739307;2022/7/7;13:04;669;americanexpress;669;62.91
+Egan;Wine - Semi Dry Riesling Vineland;Ambrosi;12-5376399;2022/7/8;14:04;670;mastercard;670;92.27
+Matthus;Pie Filling - Apple;Prue;02-5027515;2022/7/9;15:04;671;mastercard;671;26.3
+Philis;Sauce - Soya;Montague;88-1673093;2022/7/10;16:04;672;maestro;672;88.11
+Leanor;Plate Foam Laminated 9in Blk;Alain;60-2685724;2022/7/11;17:04;673;china-unionpay;673;19.84
+Marlena;Soup - Campbells;Nap;11-9481987;2022/7/12;18:04;674;bankcard;674;85.65
+Janifer;Sauce - Caesar Dressing;Jareb;47-5357751;2022/7/13;19:04;675;mastercard;675;82.07
+Stephannie;Loaf Pan - 2 Lb;Sasha;24-1675724;2022/7/14;20:04;676;laser;676;88.37
+Arvy;Apple - Macintosh;Lisetta;52-3590209;2022/7/15;21:04;677;americanexpress;677;11.31
+Ketti;Pork - Sausage;Dianne;12-3714431;2022/7/16;22:04;678;americanexpress;678;68.37
+Noella;Carbonated Water - Orange;Jeremias;89-1620913;2022/7/17;23:04;679;jcb;679;96.04
+Jessica;Quail - Jumbo;Jefferson;75-2912066;2022/7/18;00:04;680;laser;680;73.42
+Roxie;Beer - Corona;Costanza;37-3265447;2022/7/19;01:04;681;china-unionpay;681;79.17
+Shaw;Bar Special K;Pavlov;66-8423355;2022/7/20;02:04;682;instapayment;682;4.73
+Birdie;Trueblue - Blueberry 12x473ml;Eberhard;55-5018952;2022/7/21;03:04;683;bankcard;683;11.76
+Sib;Cheese - Oka;Ravid;41-1228512;2022/7/22;04:04;684;instapayment;684;37.75
+Sharity;Longos - Chicken Caeser Salad;Brandais;40-1685497;2022/7/23;05:04;685;mastercard;685;98.61
+Jaquenetta;Spinach - Frozen;Madelaine;07-6089980;2022/7/24;06:04;686;bankcard;686;48.18
+Binky;Cup - 8oz Coffee Perforated;Austen;78-4463862;2022/7/25;07:04;687;china-unionpay;687;66.65
+Nonna;Oil - Grapeseed Oil;Janetta;51-1843342;2022/7/26;08:04;688;maestro;688;6.22
+Fanny;Soup - Campbells Asian Noodle;Archibald;70-7991844;2022/7/27;09:04;689;americanexpress;689;65.05
+Keri;Wine - Red;Enrica;16-3757617;2022/7/28;10:04;690;instapayment;690;30.07
+Tiffi;Pork - Ham Hocks - Smoked;Daisi;38-4735849;2022/7/29;11:04;691;visa;691;94.56
+Jandy;Longos - Chicken Curried;Irma;37-3645839;2022/7/30;12:04;692;laser;692;19.28
+Riordan;Cookie Dough - Double;Nikaniki;81-8338121;2022/7/31;13:04;693;china-unionpay;693;28.19
+Alasdair;Corn - On The Cob;Allx;72-9113659;2022/8/1;14:04;694;china-unionpay;694;14.01
+Cecil;Quinoa;Kat;33-1873459;2022/8/2;15:04;695;china-unionpay;695;42.61
+Ewen;Lamb Leg - Bone - In Nz;Paige;61-9477384;2022/8/3;16:04;696;maestro;696;79.24
+Meg;Cheese Cloth No 60;Drake;62-8926110;2022/8/4;17:04;697;maestro;697;40.96
+Raychel;Cheese - Le Cru Du Clocher;Howard;95-2047936;2022/8/5;18:04;698;mastercard;698;34.47
+Dorrie;Soup Campbells - Italian Wedding;Fernandina;89-1637152;2022/8/6;19:04;699;instapayment;699;31.94
+Kelci;Sobe - Tropical Energy;Kittie;27-4596003;2022/8/7;20:04;700;bankcard;700;64.75
+Ondrea;Jerusalem Artichoke;Tannie;22-9450121;2022/8/8;21:04;701;visa;701;85.94
+Karrie;Lid - 3oz Med Rec;Stanley;14-5307757;2022/8/9;22:04;702;laser;702;90.8
+Odelle;Appetizer - Chicken Satay;Lilian;68-0429591;2022/8/10;23:04;703;mastercard;703;37.57
+Brier;Pop Shoppe Cream Soda;Edsel;84-6225201;2022/8/11;00:04;704;instapayment;704;31.14
+Allie;Hot Chocolate - Individual;Agata;76-2221830;2022/8/12;01:04;705;jcb;705;14.38
+Karole;Yogurt - Raspberry;Margalo;90-5771307;2022/8/13;02:04;706;instapayment;706;65.19
+Susann;Pasta - Penne;Pail;97-3868327;2022/8/14;03:04;707;jcb;707;67.82
+Garrick;Chocolate Eclairs;Liam;79-1592926;2022/8/15;04:04;708;americanexpress;708;94.99
+Spencer;Cake - Cake Sheet Macaroon;Laurens;12-5316053;2022/8/16;05:04;709;china-unionpay;709;70.5
+Luke;Frangelico;Jaclin;13-4567661;2022/8/17;06:04;710;americanexpress;710;28.22
+Joelle;Ham - Proscuitto;Althea;31-1223065;2022/8/18;07:04;711;instapayment;711;30.71
+Nona;Pears - Anjou;Lenci;66-2213987;2022/8/19;08:04;712;laser;712;1.35
+Leesa;Ginger - Ground;Iseabal;39-1349155;2022/8/20;09:04;713;laser;713;17.07
+Aili;Chocolate - Milk;Binny;71-7035418;2022/8/21;10:04;714;bankcard;714;94.94
+Read;Chicken - White Meat With Tender;Felipe;53-6688488;2022/8/22;11:04;715;maestro;715;56.77
+Dorothy;Grapes - Black;Elvyn;99-3625850;2022/8/23;12:04;716;mastercard;716;98.31
+Loella;Sherbet - Raspberry;Bryan;65-5410908;2022/8/24;13:04;717;laser;717;49.34
+Ally;Veal Inside - Provimi;Horatia;14-0187883;2022/8/25;14:04;718;visa;718;74.34
+Blanch;Vinegar - Tarragon;Joellen;40-6582464;2022/8/26;15:04;719;visa;719;30.25
+Ellette;Orange Roughy 6/8 Oz;Ianthe;36-7270717;2022/8/27;16:04;720;mastercard;720;5.54
+Zsa zsa;Pork - Bones;Kirk;81-8850959;2022/8/28;17:04;721;mastercard;721;90.51
+Irena;Irish Cream - Butterscotch;Leopold;01-4453452;2022/8/29;18:04;722;china-unionpay;722;70.94
+Jaime;Pear - Prickly;Derick;65-5319719;2022/8/30;19:04;723;china-unionpay;723;71.41
+Melania;Beans - Long;Sapphire;12-1488119;2022/8/31;20:04;724;laser;724;79.29
+Joyan;Soup - Base Broth Beef;Jude;20-7330429;2022/9/1;21:04;725;mastercard;725;8.38
+Leland;Rum - Light;Ellis;80-3337030;2022/9/2;22:04;726;laser;726;4.55
+Georgetta;Water - Evian 355 Ml;Odell;13-9025371;2022/9/3;23:04;727;americanexpress;727;98.7
+Lorne;Oil - Margarine;Madelon;89-1595600;2022/9/4;00:04;728;china-unionpay;728;74.59
+Kimball;Bread - French Baquette;Fairlie;08-5409222;2022/9/5;01:04;729;americanexpress;729;82.09
+Beryl;Cream - 35%;Celka;04-7390237;2022/9/6;02:04;730;jcb;730;54.17
+Hansiain;Wine - White;Nadya;21-4817402;2022/9/7;03:04;731;mastercard;731;52.58
+Lanny;Food Colouring - Green;Rubin;71-9667664;2022/9/8;04:04;732;china-unionpay;732;66.18
+Daron;Chicken - Diced;Jacky;08-0252865;2022/9/9;05:04;733;jcb;733;94.67
+Ken;Aspic - Light;Bartel;50-4962317;2022/9/10;06:04;734;china-unionpay;734;51.14
+Winne;Wine - Ruffino Chianti Classico;Doralynne;48-9069341;2022/9/11;07:04;735;visa;735;44.35
+Tiffy;Truffle Cups - Brown;Marjory;74-8363089;2022/9/12;08:04;736;instapayment;736;73.05
+Bonnie;Flour - Bread;John;03-8236868;2022/9/13;09:04;737;mastercard;737;78.95
+Bordie;Pail - 15l White;Belicia;92-5648045;2022/9/14;10:04;738;americanexpress;738;45.43
+Karl;Schnappes Peppermint - Walker;Kermy;22-9953961;2022/9/15;11:04;739;maestro;739;31.27
+Sadella;Egg Patty Fried;Alejandro;72-7595449;2022/9/16;12:04;740;maestro;740;54.82
+Windy;Daikon Radish;Son;84-8660084;2022/9/17;13:04;741;visa;741;32.26
+Stuart;Cheese - Blue;Leroy;05-1419578;2022/9/18;14:04;742;visa;742;27.61
+Enrica;Mousse - Mango;Reider;57-7740083;2022/9/19;15:04;743;bankcard;743;27.54
+Lyssa;Potatoes - Idaho 100 Count;Luca;85-4543542;2022/9/20;16:04;744;instapayment;744;12.84
+Peggy;Capers - Ox Eye Daisy;Maible;92-4790477;2022/9/21;17:04;745;bankcard;745;86.17
+Corrie;Cheese - Parmigiano Reggiano;Ivar;15-5860984;2022/9/22;18:04;746;bankcard;746;72.09
+Nancey;Pail - 15l White;Johnath;93-3788815;2022/9/23;19:04;747;laser;747;6.57
+Mark;Syrup - Kahlua Chocolate;Druci;14-9899554;2022/9/24;20:04;748;visa;748;58.34
+Grove;Stock - Beef;Raimund;70-7220694;2022/9/25;21:04;749;bankcard;749;36.32
+Ruddie;Oil - Margarine;Ahmed;38-1487303;2022/9/26;22:04;750;visa;750;42.83
+Viki;Mayonnaise - Individual Pkg;Olenka;51-6905688;2022/9/27;23:04;751;bankcard;751;39.84
+Dallas;Beer - Sleemans Cream Ale;Drusilla;83-7100764;2022/9/28;00:04;752;instapayment;752;96.4
+Pammi;Poppy Seed;Zilvia;85-6955225;2022/9/29;01:04;753;visa;753;44.91
+Jefferey;Gelatine Leaves - Envelopes;Rurik;50-3032018;2022/9/30;02:04;754;china-unionpay;754;62.85
+Sawyere;Chicken - White Meat;Erich;83-3574312;2022/10/1;03:04;755;visa;755;84.23
+Zeb;Ice Cream - Strawberry;Giraldo;92-9725148;2022/10/2;04:04;756;china-unionpay;756;26.26
+Lonnard;Nut - Almond;Lisabeth;50-8320391;2022/10/3;05:04;757;china-unionpay;757;80.26
+Dorise;Wine - Jaboulet Cotes Du Rhone;Jacky;84-9132852;2022/10/4;06:04;758;maestro;758;9.94
+Kasper;Bread - Pita;Ramsey;35-3884106;2022/10/5;07:04;759;bankcard;759;59.14
+Garrick;Grapes - Red;Nevsa;25-7216827;2022/10/6;08:04;760;bankcard;760;24.02
+Liane;Galliano;Harlen;89-1453419;2022/10/7;09:04;761;visa;761;18.09
+Sibeal;Grenadillo;Ogdon;66-3820432;2022/10/8;10:04;762;mastercard;762;69.43
+Justino;Lime Cordial - Roses;Gennie;27-9556408;2022/10/9;11:04;763;maestro;763;37.38
+Cherie;Sauce - Soya;Skipper;30-0817890;2022/10/10;12:04;764;americanexpress;764;85.23
+Jourdan;Sobe - Green Tea;Hieronymus;28-9174461;2022/10/11;13:04;765;bankcard;765;88.88
+Bette;Nantucket Pine Orangebanana;Dante;39-1213494;2022/10/12;14:04;766;maestro;766;93.95
+Hewe;Sprouts - Peppercress;Boigie;10-1250743;2022/10/13;15:04;767;instapayment;767;37.06
+Tarrah;Bar Mix - Pina Colada;Nikolai;60-8184361;2022/10/14;16:04;768;bankcard;768;96.68
+Leigh;Pants Custom Dry Clean;Lovell;64-5162066;2022/10/15;17:04;769;bankcard;769;35.16
+Lorelle;Flour - Bran;Lida;45-0384811;2022/10/16;18:04;770;americanexpress;770;37.53
+Langston;Breakfast Quesadillas;Elianore;09-5015375;2022/10/17;19:04;771;americanexpress;771;31.84
+Jerrome;Pasta - Linguini;Sergio;80-4219253;2022/10/18;20:04;772;visa;772;24.83
+Alikee;Longan;Kathlin;65-0594463;2022/10/19;21:04;773;laser;773;1.92
+Merle;Flavouring - Raspberry;Barnard;23-6006275;2022/10/20;22:04;774;bankcard;774;7.85
+Sylvester;Bread Crumbs - Japanese Style;Weston;53-9311060;2022/10/21;23:04;775;maestro;775;29.32
+Tierney;Rabbit - Legs;Norton;03-6481170;2022/10/22;00:04;776;china-unionpay;776;94.04
+Donna;Quail Eggs - Canned;Thorin;90-7402697;2022/10/23;01:04;777;bankcard;777;86.22
+Eleen;Cactus Pads;Herman;90-7459331;2022/10/24;02:04;778;instapayment;778;74.46
+Sapphira;Loquat;Marysa;01-4441229;2022/10/25;03:04;779;americanexpress;779;65.51
+Lyndsey;Transfer Sheets;Osmund;12-6183957;2022/10/26;04:04;780;visa;780;49.25
+Alfonse;Juice - Cranberry;Karly;05-7123208;2022/10/27;05:04;781;maestro;781;64.31
+Matt;Seedlings - Buckwheat;Lennie;54-5265562;2022/10/28;06:04;782;instapayment;782;82.05
+Camille;Sword Pick Asst;Catherin;22-3675776;2022/10/29;07:04;783;mastercard;783;76.75
+Petronille;Wine - Red;Tome;23-8106348;2022/10/30;08:04;784;visa;784;62.53
+Mavis;Puree - Kiwi;Ronalda;25-4396115;2022/10/31;09:04;785;jcb;785;69.09
+Sherie;Pasta - Penne Primavera;Malinde;72-5376712;2022/11/1;10:04;786;mastercard;786;31.37
+Amandi;Table Cloth 120 Round White;Vinni;38-4582783;2022/11/2;11:04;787;maestro;787;73.64
+Catherine;Coke - Classic;Donnie;79-8410167;2022/11/3;12:04;788;china-unionpay;788;87.59
+Marieann;Wine - Chardonnay South;Ogdan;61-6091794;2022/11/4;13:04;789;maestro;789;76.02
+Mart;Chicken - Soup Base;Rachel;06-1403901;2022/11/5;14:04;790;bankcard;790;37.38
+Tallou;Lettuce - Red Leaf;Tobie;14-3674516;2022/11/6;15:04;791;bankcard;791;46.93
+Gilbertine;Creme De Banane - Marie;Christophe;29-7583940;2022/11/7;16:04;792;china-unionpay;792;98.27
+Dasha;Cheese - Sheep Milk;North;87-6091383;2022/11/8;17:04;793;maestro;793;29.27
+Putnem;Cheese - Brie;Berkly;17-1541788;2022/11/9;18:04;794;mastercard;794;23.56
+Ramona;Wine - Beringer Founders Estate;Baird;29-6643868;2022/11/10;19:04;795;jcb;795;21.79
+Claudius;Bread - Bistro White;Amabel;60-2187788;2022/11/11;20:04;796;china-unionpay;796;72.69
+Delmar;Squid - Breaded;Dorelle;96-2446134;2022/11/12;21:04;797;mastercard;797;33.43
+Horst;Muffin Mix - Chocolate Chip;Dave;41-1455490;2022/11/13;22:04;798;bankcard;798;9.83
+Willy;Chocolate - Milk;Lesly;64-9929881;2022/11/14;23:04;799;laser;799;76.24
+Randolf;Nut - Peanut;Felita;79-9020104;2022/11/15;00:04;800;americanexpress;800;95.32
+Dorita;Beef - Top Butt Aaa;Bron;87-0738384;2022/11/16;01:04;801;instapayment;801;67.45
+Milly;Beef - Prime Rib Aaa;Maxi;95-5619098;2022/11/17;02:04;802;maestro;802;51.63
+Alvie;Pail - 4l White;Desmond;11-9907121;2022/11/18;03:04;803;laser;803;8.14
+Rosina;Juice - Lagoon Mango;Cirillo;30-1392556;2022/11/19;04:04;804;instapayment;804;90.08
+Nicholle;Appetizer - Assorted Box;Elysee;75-9201464;2022/11/20;05:04;805;laser;805;57.36
+Ettore;Wine - Ruffino Chianti;Jamison;79-9374270;2022/11/21;06:04;806;visa;806;62.99
+Port;Oysters - Smoked;Birgitta;95-7236222;2022/11/22;07:04;807;bankcard;807;90.13
+Anselma;Shrimp - 31/40;Zacherie;77-3099443;2022/11/23;08:04;808;bankcard;808;4.86
+Rahal;Onions - Red;Darius;64-1577793;2022/11/24;09:04;809;mastercard;809;67.57
+Carol-jean;Snapple Raspberry Tea;Christin;60-3557361;2022/11/25;10:04;810;laser;810;49.41
+Babette;Veal - Insides Provini;Briggs;47-2656318;2022/11/26;11:04;811;mastercard;811;34.58
+Fidelity;Cleaner - Lime Away;Genna;87-2413122;2022/11/27;12:04;812;instapayment;812;36.49
+Hannah;Lid Coffeecup 12oz D9542b;Ami;90-9477099;2022/11/28;13:04;813;jcb;813;28.49
+Marnie;Coffee - Ristretto Coffee Capsule;Remy;02-3959377;2022/11/29;14:04;814;china-unionpay;814;99.55
+Gillan;Lime Cordial - Roses;Cristine;56-8296553;2022/11/30;15:04;815;instapayment;815;49.4
+Ashley;Chicken - Leg;Melesa;10-6813674;2022/12/1;16:04;816;instapayment;816;54.48
+Demott;Pastrami;Brandie;87-2766440;2022/12/2;17:04;817;china-unionpay;817;80.59
+Gannie;Cheese - Romano;Issiah;32-9877860;2022/12/3;18:04;818;visa;818;13.52
+Timothea;Chips Potato Salt Vinegar 43g;Filberte;82-5328634;2022/12/4;19:04;819;instapayment;819;53.39
+Annaliese;Beef - Short Ribs;Constancia;74-4652757;2022/12/5;20:04;820;china-unionpay;820;38.04
+Dorthy;Lamb - Whole Head Off;Barbie;60-0235209;2022/12/6;21:04;821;china-unionpay;821;36.49
+Beatrix;Tuna - Yellowfin;Christy;46-7998462;2022/12/7;22:04;822;china-unionpay;822;41.51
+Enid;Carrots - Jumbo;Phelia;11-1366052;2022/12/8;23:04;823;mastercard;823;68.71
+Tulley;Brandy Apricot;Conny;94-1840120;2022/12/9;00:04;824;bankcard;824;2.04
+Debbie;Cheese - Le Cru Du Clocher;Dominik;74-7079674;2022/12/10;01:04;825;bankcard;825;70.01
+Audrye;Fruit Salad Deluxe;Mal;47-2732060;2022/12/11;02:04;826;china-unionpay;826;30.83
+Jock;White Fish - Filets;Talyah;54-6586377;2022/12/12;03:04;827;americanexpress;827;29.61
+Loretta;Pasta - Orzo;Kym;18-6703802;2022/12/13;04:04;828;visa;828;75.07
+Torrence;Apricots - Halves;Jaine;94-6150323;2022/12/14;05:04;829;mastercard;829;8.74
+Pennie;Squeeze Bottle;Basilio;61-6560597;2022/12/15;06:04;830;mastercard;830;56.15
+Steward;Langers - Cranberry Cocktail;Andrus;26-0479948;2022/12/16;07:04;831;jcb;831;16.63
+Jock;Tart Shells - Sweet;Port;70-6063736;2022/12/17;08:04;832;americanexpress;832;20.71
+Lily;Food Colouring - Blue;Olive;73-4060174;2022/12/18;09:04;833;mastercard;833;67.78
+Zacharia;Snapple - Mango Maddness;Hally;95-1354566;2022/12/19;10:04;834;americanexpress;834;6.27
+Jade;Cheese - Bakers Cream Cheese;Selby;00-7894564;2022/12/20;11:04;835;instapayment;835;55.55
+Gallagher;Fruit Mix - Light;Nichole;58-3801103;2022/12/21;12:04;836;maestro;836;7.27
+Melvyn;Currants;Clarke;16-2066087;2022/12/22;13:04;837;bankcard;837;87.13
+Jefferson;Pepper - Red Bell;Linn;90-3818750;2022/12/23;14:04;838;jcb;838;12.78
+Mellisent;Glucose;Gilles;03-7669605;2022/12/24;15:04;839;americanexpress;839;31.51
+Bary;Scallops - U - 10;Nicky;98-0770690;2022/12/25;16:04;840;americanexpress;840;25.42
+Christoforo;Crab Meat Claw Pasteurise;Tine;85-9403444;2022/12/26;17:04;841;americanexpress;841;69.96
+Prudence;Eggwhite Frozen;Mercedes;16-9684282;2022/12/27;18:04;842;maestro;842;66.92
+Allie;Butter - Salted;Orazio;71-8542476;2022/12/28;19:04;843;mastercard;843;17.96
+Jamal;Energy Drink Red Bull;Rockie;54-1927810;2022/12/29;20:04;844;americanexpress;844;83.06
+Carola;Shichimi Togarashi Peppeers;Sylvan;02-5230602;2022/12/30;21:04;845;americanexpress;845;44.75
+Frederick;Boogies;Shana;38-5104203;2022/12/31;22:04;846;americanexpress;846;4.18
+Lammond;Beans - Black Bean;Dorette;99-0405295;2023/1/1;23:04;847;mastercard;847;25.57
+Obie;Cake Slab;Victoria;42-5395566;2023/1/2;00:04;848;jcb;848;49.78
+Gennifer;General Purpose Trigger;Kellby;99-6865076;2023/1/3;01:04;849;bankcard;849;95.61
+Wylie;Rice Paper;Bernita;27-5865762;2023/1/4;02:04;850;bankcard;850;3.39
+Mina;Juice - Apple 284ml;Merrill;46-9721273;2023/1/5;03:04;851;mastercard;851;72.97
+Dare;Beef - Cow Feet Split;Kippy;58-3099349;2023/1/6;04:04;852;china-unionpay;852;88.03
+Arlan;Island Oasis - Magarita Mix;Theodora;53-9181709;2023/1/7;05:04;853;maestro;853;17.32
+Reamonn;Milk Powder;Karlotte;78-9741375;2023/1/8;06:04;854;bankcard;854;61.8
+Natalya;Juice - Apple;Forrest;99-5896426;2023/1/9;07:04;855;laser;855;51.97
+Laurent;Cumin - Whole;Gloriana;14-6913765;2023/1/10;08:04;856;maestro;856;39.08
+Vina;Wine - Periguita Fonseca;Aharon;64-4890921;2023/1/11;09:04;857;instapayment;857;17.7
+Benny;Kirsch - Schloss;Tore;28-4398055;2023/1/12;10:04;858;maestro;858;60.99
+Ursuline;Shichimi Togarashi Peppeers;Ulick;76-9297442;2023/1/13;11:04;859;visa;859;72.55
+Darcee;Turkey - Oven Roast Breast;Vite;15-8254049;2023/1/14;12:04;860;instapayment;860;13.66
+Kamila;Beef - Baby;Jacquelin;81-8320242;2023/1/15;13:04;861;maestro;861;33.51
+Carlos;Turkey - Breast;Stafford;10-6132616;2023/1/16;14:04;862;maestro;862;67.28
+Adelbert;Container Clear 8 Oz;Robbie;39-6543433;2023/1/17;15:04;863;bankcard;863;10.72
+Katrina;Tart Shells - Savory;Wendi;55-2544470;2023/1/18;16:04;864;laser;864;27.55
+Terrence;Lettuce - Red Leaf;Yardley;79-0329227;2023/1/19;17:04;865;mastercard;865;81.25
+Ogdan;Sparkling Wine - Rose;Farah;75-0556615;2023/1/20;18:04;866;maestro;866;77.85
+Sheba;Chips Potato Reg 43g;Melvin;79-1908015;2023/1/21;19:04;867;maestro;867;20.63
+Kipp;Chocolate Liqueur - Godet White;Shay;86-8888948;2023/1/22;20:04;868;instapayment;868;92.96
+Clementius;Bacardi Breezer - Tropical;Elvin;43-2744415;2023/1/23;21:04;869;bankcard;869;40.65
+Gustaf;Pepper - Cayenne;Brett;62-0840051;2023/1/24;22:04;870;instapayment;870;35.42
+Boigie;Coffee - Decafenated;Far;04-4551843;2023/1/25;23:04;871;china-unionpay;871;55.82
+Enrique;Soup Knorr Chili With Beans;Jo ann;56-4813626;2023/1/26;00:04;872;china-unionpay;872;88.06
+Verina;Fondant - Icing;Wilfred;44-2677001;2023/1/27;01:04;873;bankcard;873;35.89
+Consolata;Wine - Magnotta - Cab Sauv;Sylas;58-6830531;2023/1/28;02:04;874;visa;874;69.22
+Phaidra;Curry Powder Madras;Eydie;05-4058900;2023/1/29;03:04;875;laser;875;28.53
+Lorianne;Icecream Cone - Areo Chocolate;Somerset;35-5319288;2023/1/30;04:04;876;instapayment;876;16.11
+Nerty;Boogies;Dane;88-2579972;2023/1/31;05:04;877;americanexpress;877;7.44
+Reese;Soup - Campbells Mushroom;Kerry;93-5709498;2023/2/1;06:04;878;americanexpress;878;8.11
+Julissa;Jam - Raspberry;Morton;88-9054384;2023/2/2;07:04;879;visa;879;64.03
+Eileen;Beer - Sleeman Fine Porter;Holt;83-4023791;2023/2/3;08:04;880;instapayment;880;7.01
+Sara-ann;Tofu - Soft;Wayland;97-7483544;2023/2/4;09:04;881;jcb;881;36.59
+Gabriela;Gooseberry;Yelena;86-5224784;2023/2/5;10:04;882;laser;882;10.45
+Daffy;Syrup - Chocolate;Rockie;87-8745440;2023/2/6;11:04;883;americanexpress;883;45.2
+Bendick;Doilies - 5;Ingaberg;58-4652217;2023/2/7;12:04;884;visa;884;39.94
+Maddy;Chocolate Eclairs;Casandra;48-5348662;2023/2/8;13:04;885;mastercard;885;99.21
+Emeline;Beans - Long;Mace;54-6609061;2023/2/9;14:04;886;china-unionpay;886;36.57
+Shell;Lid Coffee Cup 8oz Blk;Deni;47-1384788;2023/2/10;15:04;887;jcb;887;26.55
+Had;Mushroom - Shitake;Ilario;60-4038956;2023/2/11;16:04;888;jcb;888;80.58
+Marjorie;Cheese - Mozzarella;Mariann;80-5205002;2023/2/12;17:04;889;bankcard;889;89.92
+Theadora;Sage - Ground;Cherrita;00-4532979;2023/2/13;18:04;890;laser;890;96.64
+Corrianne;Table Cloth 72x144 White;Cybill;88-4708150;2023/2/14;19:04;891;jcb;891;98.85
+Dominga;Chips - Doritos;Norene;16-6717064;2023/2/15;20:04;892;visa;892;18.55
+Corina;Soup - Boston Clam Chowder;Finlay;38-3346242;2023/2/16;21:04;893;mastercard;893;81.03
+Pedro;Yeast Dry - Fermipan;Patrice;12-8918566;2023/2/17;22:04;894;laser;894;79.85
+Ad;Sprouts - Alfalfa;Robbi;65-9909171;2023/2/18;23:04;895;visa;895;15.17
+Binky;Sugar - Individual Portions;Hakeem;30-0302738;2023/2/19;00:04;896;instapayment;896;7.91
+Washington;Fennel - Seeds;Jedidiah;40-3835463;2023/2/20;01:04;897;china-unionpay;897;96.88
+Yoshi;Beer - Paulaner Hefeweisse;Ibbie;83-1711270;2023/2/21;02:04;898;laser;898;32.58
+Enrichetta;Kippers - Smoked;Lucio;58-7438952;2023/2/22;03:04;899;laser;899;33.81
+Brandy;Dehydrated Kelp Kombo;Bay;39-8111427;2023/2/23;04:04;900;laser;900;11.43
+Joel;Bar - Granola Trail Mix Fruit Nut;Amy;32-6580992;2023/2/24;05:04;901;mastercard;901;75.36
+Carlene;Sauce - Fish 25 Ozf Bottle;Hallsy;93-7751387;2023/2/25;06:04;902;jcb;902;9.87
+Coriss;Oneshot Automatic Soap System;Yuma;64-7838189;2023/2/26;07:04;903;maestro;903;17.09
+Chery;Flour - Semolina;Gabriele;94-9914884;2023/2/27;08:04;904;visa;904;52.66
+Enrico;Nantucket Cranberry Juice;Carmita;65-1668256;2023/2/28;09:04;905;maestro;905;9.97
+Boonie;Wine - Taylors Reserve;Marja;12-3537952;2023/3/1;10:04;906;laser;906;34.69
+Tamarra;Compound - Passion Fruit;Umberto;26-8103147;2023/3/2;11:04;907;bankcard;907;49.41
+Janaya;Cookies Cereal Nut;Royal;57-2116404;2023/3/3;12:04;908;mastercard;908;1.77
+Sibel;Beef - Bones;Leeland;55-5681333;2023/3/4;13:04;909;visa;909;55.29
+Chrotoem;Juice - Pineapple;Boycey;50-3056589;2023/3/5;14:04;910;instapayment;910;76.11
+Agathe;Pork - Smoked Back Bacon;Stacy;73-0106516;2023/3/6;15:04;911;bankcard;911;42.28
+Lester;Taro Leaves;Deva;23-7750024;2023/3/7;16:04;912;laser;912;92.08
+Werner;Filling - Mince Meat;Berti;71-1999967;2023/3/8;17:04;913;maestro;913;23.68
+Joana;Napkin - Cocktail;Kara;42-6824797;2023/3/9;18:04;914;bankcard;914;65.67
+Noby;Bay Leaf;Dom;51-7894336;2023/3/10;19:04;915;mastercard;915;87.26
+Codi;Pork - Caul Fat;Celinda;18-0201647;2023/3/11;20:04;916;laser;916;73.09
+Marcy;Cheese - Cottage Cheese;Riccardo;75-2798196;2023/3/12;21:04;917;jcb;917;86.05
+Guss;Green Tea Refresher;Ashlee;56-4091645;2023/3/13;22:04;918;laser;918;85.48
+Penelope;Bag - Regular Kraft 20 Lb;Stormi;94-9317679;2023/3/14;23:04;919;maestro;919;84.76
+Daren;Soda Water - Club Soda;Ketti;14-8217638;2023/3/15;00:04;920;mastercard;920;90.6
+Fiann;Muffin Mix - Oatmeal;Lucias;39-2846185;2023/3/16;01:04;921;americanexpress;921;65.57
+Aidan;Juice - Orange;Bryanty;17-1590141;2023/3/17;02:04;922;americanexpress;922;91.64
+Saundra;Beef - Ground Lean Fresh;Winna;42-9225199;2023/3/18;03:04;923;visa;923;96.45
+Wallace;Chicken - Ground;Lucia;58-9308060;2023/3/19;04:04;924;americanexpress;924;73.56
+Gael;Smoked Tongue;Giffard;31-3829805;2023/3/20;05:04;925;maestro;925;12.22
+Eudora;Magnotta Bel Paese Red;Ida;44-0840462;2023/3/21;06:04;926;jcb;926;51.03
+Ella;Appetizer - Tarragon Chicken;Emma;54-4791340;2023/3/22;07:04;927;americanexpress;927;65.89
+Brittani;Beer - True North Strong Ale;Willard;65-1190164;2023/3/23;08:04;928;americanexpress;928;85.6
+Brinn;Dooleys Toffee;Dolph;67-8610649;2023/3/24;09:04;929;maestro;929;66.61
+Jannel;Broom And Broom Rack White;Sondra;78-0130585;2023/3/25;10:04;930;maestro;930;66.62
+Sylas;Mushroom - Trumpet;Matthus;49-0378168;2023/3/26;11:04;931;americanexpress;931;92.73
+Claude;Calaloo;Ethelda;34-2021833;2023/3/27;12:04;932;instapayment;932;23.93
+Ramona;Sugar - Fine;Pippa;97-0670927;2023/3/28;13:04;933;americanexpress;933;90.46
+Rozina;Cup - Translucent 7 Oz Clear;Deloris;69-0075680;2023/3/29;14:04;934;jcb;934;70.19
+Elisabet;Eggroll;Guthrie;19-8350777;2023/3/30;15:04;935;mastercard;935;59.44
+Corny;Glass - Juice Clear 5oz 55005;Giles;71-2415182;2023/3/31;16:04;936;china-unionpay;936;31.27
+Stevena;Pasta - Fett Alfredo;Bendite;55-7880379;2023/4/1;17:04;937;americanexpress;937;50.76
+Erina;Butter Ripple - Phillips;Nancy;75-8010202;2023/4/2;18:04;938;visa;938;88.53
+Colin;Liqueur Banana;Tami;11-9689646;2023/4/3;19:04;939;americanexpress;939;49.11
+Hamish;Cheese - Pont Couvert;Silva;62-0519646;2023/4/4;20:04;940;china-unionpay;940;27.89
+Carney;Soup - Chicken And Wild Rice;Beverlee;27-5127565;2023/4/5;21:04;941;americanexpress;941;73.71
+Nicolai;Pears - Bartlett;Galvan;93-8564637;2023/4/6;22:04;942;laser;942;48.36
+Pauly;Nori Sea Weed;Lanny;51-7367993;2023/4/7;23:04;943;bankcard;943;79.91
+Earl;Pastry - Cheese Baked Scones;Reginald;70-4637723;2023/4/8;00:04;944;maestro;944;34.39
+Grantley;Appetizer - Smoked Salmon / Dill;Leelah;89-4175367;2023/4/9;01:04;945;mastercard;945;5.11
+Claudia;Bag - Bread;Maximilian;76-7305822;2023/4/10;02:04;946;visa;946;50.49
+Garnette;Flour - Teff;Kameko;13-1896024;2023/4/11;03:04;947;jcb;947;74.13
+Giorgia;Gingerale - Diet - Schweppes;Amata;97-3413144;2023/4/12;04:04;948;bankcard;948;38.39
+Todd;Wasabi Paste;Berna;10-2281189;2023/4/13;05:04;949;instapayment;949;82.04
+Nickolai;Wine - Shiraz Wolf Blass Premium;Jacklin;08-1719227;2023/4/14;06:04;950;americanexpress;950;21.74
+Prince;Snapple Raspberry Tea;Sly;50-8222354;2023/4/15;07:04;951;americanexpress;951;8.37
+Becka;Beef - Tenderlion;Maurizio;61-3727827;2023/4/16;08:04;952;americanexpress;952;17.81
+Gabey;Wine - Vidal Icewine Magnotta;Chelsy;84-9079078;2023/4/17;09:04;953;china-unionpay;953;1.98
+Anthea;Bread - Focaccia Quarter;Vera;36-5979034;2023/4/18;10:04;954;bankcard;954;58.51
+Eddy;Sprouts - Alfalfa;Lelah;44-6724496;2023/4/19;11:04;955;americanexpress;955;33.9
+Ranique;Whmis - Spray Bottle Trigger;Byrom;24-6447622;2023/4/20;12:04;956;jcb;956;49.59
+Mallissa;Wine - Delicato Merlot;Eugene;06-2234981;2023/4/21;13:04;957;china-unionpay;957;97.33
+Elinore;Venison - Racks Frenched;Jimmie;31-1563791;2023/4/22;14:04;958;americanexpress;958;46.39
+Quinn;Lamb - Sausage Casings;Norby;64-2727304;2023/4/23;15:04;959;maestro;959;94.19
+Elisabetta;Wine - Red;Susie;50-9693771;2023/4/24;16:04;960;mastercard;960;51.7
+Rosalia;Spring Roll Veg Mini;Melodee;77-4938888;2023/4/25;17:04;961;bankcard;961;40.04
+Almeda;Onions - Red Pearl;Muffin;88-9583531;2023/4/26;18:04;962;jcb;962;13.74
+Neilla;Shrimp - Tiger 21/25;Jaclyn;40-8638817;2023/4/27;19:04;963;china-unionpay;963;21.95
+Neall;Sugar - Sweet N Low;Phillie;84-7459673;2023/4/28;20:04;964;visa;964;73.38
+Jourdan;Pastry - Banana Tea Loaf;Winona;89-5023137;2023/4/29;21:04;965;americanexpress;965;23.58
+Munmro;Straws - Cocktale;Sig;16-9022481;2023/4/30;22:04;966;laser;966;36.36
+Cristabel;Lobster - Tail 6 Oz;Doe;68-5097653;2023/5/1;23:04;967;laser;967;87.08
+Dorette;Blueberries - Frozen;Milena;05-3226779;2023/5/2;00:04;968;americanexpress;968;12.15
+Rudolfo;Sauce Tomato Pouch;Hortensia;22-7923939;2023/5/3;01:04;969;laser;969;74.16
+Mickie;Pork - Suckling Pig;Ora;71-4491765;2023/5/4;02:04;970;mastercard;970;70.29
+Aldous;Pepper - Green Thai;Sterling;55-2272988;2023/5/5;03:04;971;jcb;971;59.96
+Andrea;Jam - Blackberry;Charissa;00-9951185;2023/5/6;04:04;972;americanexpress;972;6.15
+Kimmi;Pastry - Cherry Danish - Mini;Clayson;30-2560626;2023/5/7;05:04;973;mastercard;973;2.69
+Lorette;Cheese - Cream Cheese;Darcy;32-1190079;2023/5/8;06:04;974;bankcard;974;47.39
+Odelia;Pork - Backfat;Chrissy;19-5464222;2023/5/9;07:04;975;china-unionpay;975;27.7
+Clare;Appetizer - Shrimp Puff;Clementia;18-4632617;2023/5/10;08:04;976;visa;976;89.04
+Annora;Silicone Paper 16.5x24;Mickie;84-3926238;2023/5/11;09:04;977;mastercard;977;57.55
+Deina;Veal - Loin;Anne;84-4064450;2023/5/12;10:04;978;laser;978;11.66
+Anthea;Juice - Apple;Vanya;65-2840662;2023/5/13;11:04;979;jcb;979;78.94
+Essie;Rice - Brown;Caroline;02-8738418;2023/5/14;12:04;980;instapayment;980;61.85
+Yorgos;Mushroom - Shitake;Currie;16-5451806;2023/5/15;13:04;981;laser;981;52.85
+Skyler;Flour - Cake;Daune;11-6816520;2023/5/16;14:04;982;mastercard;982;93.83
+Gordon;Tomatoes - Hot House;Ynes;83-5451765;2023/5/17;15:04;983;instapayment;983;54.52
+Anatola;Straws - Cocktale;Sela;31-2185581;2023/5/18;16:04;984;mastercard;984;2.61
+Kat;Celery;Karry;15-4758709;2023/5/19;17:04;985;bankcard;985;27.96
+Myer;Olives - Green;Tann;20-8201117;2023/5/20;18:04;986;maestro;986;97.8
+Shandie;Gelatine Leaves - Envelopes;Shaine;16-5772885;2023/5/21;19:04;987;bankcard;987;17.73
+Marybelle;Beef Cheek Fresh;Karlen;35-5807041;2023/5/22;20:04;988;americanexpress;988;1.45
+Keven;Wine - Magnotta - Cab Sauv;Natka;38-3030853;2023/5/23;21:04;989;jcb;989;69.27
+Yalonda;Napkin Colour;Riki;32-0697180;2023/5/24;22:04;990;visa;990;2.85
+Emmeline;Capicola - Hot;Elston;01-0864006;2023/5/25;23:04;991;americanexpress;991;24.37
+Kimberley;Dates;Hirsch;08-2455147;2023/5/26;00:04;992;visa;992;61.54
+Arturo;Rice - 7 Grain Blend;Fanya;92-8136374;2023/5/27;01:04;993;visa;993;51.89
+Morley;Beets - Pickled;Olivier;08-5862108;2023/5/28;02:04;994;jcb;994;94.08
+Hi;Pork - Tenderloin;Patricio;88-4217908;2023/5/29;03:04;995;jcb;995;49.44
+Irma;Tendrils - Baby Pea;Rafaela;80-0273587;2023/5/30;04:04;996;bankcard;996;93.09
+Gare;Pastry - Plain Baked Croissant;Daria;09-7677913;2023/5/31;05:04;997;mastercard;997;87.79
+Aylmar;Tea - Vanilla Chai;Cristy;50-1248648;2023/6/1;06:04;998;maestro;998;88.38
+Nevil;Beef - Tenderloin Tails;Ardene;59-6387959;2023/6/2;07:04;999;instapayment;999;73.08
+Ferdinande;Lettuce - Treviso;Ranice;35-6454201;2023/6/3;17:04;1000;jcb;1000;88.02

@@ -17,6 +17,10 @@ public class ClientAccount extends RestaurantMembers implements Serializable{
 			this.observations=observations;
 			this.customerStatus=MembersStatus.ACTIVA;
 		}
+		
+		public ClientAccount(String firstName) {
+			super(firstName, null, null);
+		}
 	
 		public String getAddress() {
 			return address;
@@ -49,5 +53,13 @@ public class ClientAccount extends RestaurantMembers implements Serializable{
 		public void setCustomerStatus(MembersStatus customerStatus) {
 			this.customerStatus=customerStatus;
 		}
+
+		@Override
+		public String toString() {
+			return "ClientAccount [address=" + address + ", phoneNumber=" + phoneNumber + ", observations="
+					+ observations + ", customerStatus=" + customerStatus + "]";
+		}
+		
+		
 
 }
