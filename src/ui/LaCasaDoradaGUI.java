@@ -7,13 +7,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
@@ -21,6 +18,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -443,7 +443,6 @@ public class LaCasaDoradaGUI{
         	mainPane.getChildren().setAll(menuPane);
         	
         	txtDateUpdate.setText(laCasaDorada.dateUpdate());
-        	
      	}else if(!laCasaDorada.validateEmployee(userName, password)) {
      		loginErrorAlert();
      	}
@@ -1511,6 +1510,18 @@ public class LaCasaDoradaGUI{
         
         tcTypeOfProductName.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductName"));
         tcTypeOfProductStatus.setCellValueFactory(new PropertyValueFactory<RestaurantTypeOfProduct, String>("typeOfProductStatus"));
+        
+        tcTypeOfProductName.setCellFactory(TextFieldTableCell.forTableColumn());
+        
+        tcTypeOfProductName.setOnEditCommit(data -> {
+            System.out.println("New first name: " +  data.getNewValue());
+            System.out.println("Old first name: " + data.getOldValue());
+
+            RestaurantTypeOfProduct type = data.getRowValue();
+            type.setTypeOfProductName(data.getNewValue());
+
+            System.out.println(type);
+        });
     }
     
     public void loadTypesOfProductTable(ActionEvent event) throws IOException {

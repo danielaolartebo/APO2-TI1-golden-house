@@ -1,7 +1,6 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Arrays;
 
 public class ProductQuantity implements Serializable{
 
