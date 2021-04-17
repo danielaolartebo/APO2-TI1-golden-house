@@ -239,18 +239,28 @@ public class LaCasaDorada implements Serializable{
 	
 	
 	public void importOrderData(String fileName) throws IOException {
-		/*BufferedReader or = new BufferedReader(new FileReader(fileName));
-		String line = or.readLine();
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		String line = br.readLine();
 		while(line!=null) {
-			String[] parts = line.split(",");
-			String[] products = parts[1].split("-");
-			double[] quantity = ;
-			addOrder(parts[0], products, parts[2], parts[3], parts[4], parts[5], );
+			String[] parts = line.split(";");
+			ClientAccount client = new ClientAccount(parts[0]);
+			EmployeeAccount employee = new EmployeeAccount(parts[2]);
+			String[] products = parts[1].split(",");
+			double [] quantity = new double[1];
+			quantity[0] = Double.parseDouble(parts[6]);
+			int number = Integer.parseInt(parts[8]);
+			double priceTotal = Double.parseDouble(parts[9]); 
+			String dates=parts[4]; String times=parts[5];
+			String[] arrayDates = dates.split("/");
+			LocalDate date = LocalDate.of(Integer.parseInt(arrayDates[0]),Integer.parseInt(arrayDates[1]), Integer.parseInt(arrayDates[2]));
+			String[] arrayTimes = times.split(":");
+			LocalTime time = LocalTime.of(Integer.parseInt(arrayTimes[0]),Integer.parseInt(arrayTimes[1].substring(0,2)));
+			addOrder(client, products, employee, parts[3], date, time, quantity, parts[7], number, priceTotal);
 			line = br.readLine();
 		}
-		br.close(); */
+		br.close(); 
 	}
-	//client, product, employee, code, date, time, quantity, observations, number, priceTotal
+	
 	public void importCustomerData(String fileName) throws IOException{
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = br.readLine();
@@ -305,7 +315,6 @@ public class LaCasaDorada implements Serializable{
 	public RestaurantProduct findProduct(String name){
 		boolean found = false;
 		RestaurantProduct tempProduct=null;
-		System.out.println(name);
 		for (int i=0; i < products.size() && !found;i++) {
 			if(products.get(i).getName().equals(name)) {
 				tempProduct = products.get(i);
@@ -315,6 +324,21 @@ public class LaCasaDorada implements Serializable{
 		}
 		return tempProduct;
 	}
+	
+	/* public double[] findQuantity(String[] products){
+		boolean found = false;
+		double[] tempQuantity=null;
+		for (int i=0; i < products.length && !found;i++) {
+			if(orders.get(i).getQuantityArray().equals(products)) {
+				tempQuantity = products.get(i);
+				found = true;
+				System.out.println("Encontré cantidad");
+			}
+		}
+		return tempQuantity;
+	} */
+	
+	
 	
 	public RestaurantIngredient findIngredient(String ingredientName) {
 		boolean found = false;

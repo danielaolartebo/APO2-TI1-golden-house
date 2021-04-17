@@ -984,20 +984,6 @@ public class LaCasaDoradaGUI{
         observableList = FXCollections.observableArrayList(laCasaDorada.getProductQuantity());
         miniTbCreateOrder.setItems(observableList);
     }
-    
-    @FXML
-    public void statusRequested(ActionEvent event) throws IOException{
-    	Order or = this.tbOrderList.getSelectionModel().getSelectedItem();
-    	
-    	if(or == null) {
-    		selectAnOptionAlert();
-    	}else{
-    		or.setOrderStatus(Status.SOLICITADO);
-    		saveData();
-    		this.tbOrderList.refresh();
-    		orderWasUpdated();
-    	}
-    } 
 
     @FXML
     public void statusProcessed(ActionEvent event) throws IOException{
@@ -1005,15 +991,15 @@ public class LaCasaDoradaGUI{
     	
     	if(or == null) {
     		selectAnOptionAlert();
-    	}else{
+    	}else if(or.getOrderStatus().equals(Status.ENVIADO) || or.getOrderStatus().equals(Status.ENTREGADO)) {
+    		cannotBeUpdated();
+    	}else {
     		or.setOrderStatus(Status.EN_PROCESO);
     		saveData();
     		this.tbOrderList.refresh();
     		orderWasUpdated();
     	}
     }
-
-    
     
     @FXML
     public void statusSent(ActionEvent event) throws IOException{
@@ -1021,7 +1007,9 @@ public class LaCasaDoradaGUI{
     	
     	if(or == null) {
     		selectAnOptionAlert();
-    	}else{
+    	}else if(or.getOrderStatus().equals(Status.ENTREGADO) || or.getOrderStatus().equals(Status.SOLICITADO)){
+    		cannotBeUpdated();
+    	}else {
     		or.setOrderStatus(Status.ENVIADO);
     		saveData();
     		this.tbOrderList.refresh();
@@ -1035,6 +1023,8 @@ public class LaCasaDoradaGUI{
     	
     	if(or == null) {
     		selectAnOptionAlert();
+    	}else if(or.getOrderStatus().equals(Status.SOLICITADO) || or.getOrderStatus().equals(Status.EN_PROCESO)){
+    		cannotBeUpdated();
     	}else{
     		or.setOrderStatus(Status.ENTREGADO);
     		saveData();
@@ -2179,6 +2169,15 @@ public class LaCasaDoradaGUI{
 	    alert.setTitle("Eliminar item error");
 	    alert.setHeaderText("");
 	    alert.setContentText("El item no se puede eliminar porque está en uso");
+	    alert.showAndWait();
+   	}
+    
+
+    private void cannotBeUpdated() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("Actualizar item error");
+	    alert.setHeaderText("");
+	    alert.setContentText("El estado del item no se puede actualizar porque no cumple con el orden");
 	    alert.showAndWait();
    	}
     

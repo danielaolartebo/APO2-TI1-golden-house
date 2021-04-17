@@ -33,14 +33,14 @@ public class Order implements Serializable{
 		this.quantity=quantity;
 		this.observations=observations;
 		this.order=Status.SOLICITADO;
-
 		this.setNumber(number);
 		nameEmployee = employee.getFirstName();
 		nameClient= client.getFirstName();
 		this.number=number;
 		this.priceTotal=priceTotal;
-
 	}
+	
+	
 
 	public ClientAccount getClient() {
 		return client;
