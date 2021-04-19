@@ -63,6 +63,11 @@
             <TextField fx:id="txtFirstName" layoutX="323.0" layoutY="263.0" prefHeight="35.0" prefWidth="290.0" />
             <TextField fx:id="txtLastName" layoutX="321.0" layoutY="330.0" prefHeight="35.0" prefWidth="290.0" />
             <TextField fx:id="txtId" layoutX="323.0" layoutY="388.0" prefHeight="35.0" prefWidth="290.0" />
+            <Label fx:id="txtHourUpdate" layoutX="681.0" layoutY="553.0" prefHeight="17.0" prefWidth="97.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </center>

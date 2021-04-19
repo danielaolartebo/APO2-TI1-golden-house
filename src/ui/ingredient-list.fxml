@@ -55,6 +55,11 @@
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
+            <Label fx:id="txtHourUpdate" layoutX="667.0" layoutY="65.0" prefHeight="17.0" prefWidth="97.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </center>

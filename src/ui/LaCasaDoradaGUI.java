@@ -7,10 +7,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
@@ -18,9 +21,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -39,6 +40,7 @@ import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
+import javafx.util.Duration;
 import model.ClientAccount;
 import model.EmployeeAccount;
 import model.MembersStatus;
@@ -54,6 +56,8 @@ public class LaCasaDoradaGUI{
 	
 	String hours,minutes, seconds;
 	Thread show;
+	
+	private String currentAccount;
 	private LaCasaDorada laCasaDorada;
 	
 	// MINI TABLE VIEW IN CREATE PRODUCT SCREEN 
@@ -416,6 +420,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent signInPane = (Parent) fxmlLoader.load();
     	mainPane.getChildren().setAll(signInPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+             
     }
     
     @FXML
@@ -437,10 +451,20 @@ public class LaCasaDoradaGUI{
      	String password=txtPassword.getText();
      	
      	if(laCasaDorada.validateEmployee(userName, password)) {
+     		currentAccount = userName;
      		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
         	fxmlLoader.setController(this);
         	Parent menuPane = fxmlLoader.load();
         	mainPane.getChildren().setAll(menuPane);
+        	
+        	Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+                LocalTime currentTime = LocalTime.now();
+                txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+            }),
+                    new KeyFrame(Duration.seconds(1))
+            );
+            clock.setCycleCount(Animation.INDEFINITE);
+            clock.play();
         	
         	txtDateUpdate.setText(laCasaDorada.dateUpdate());
      	}else if(!laCasaDorada.validateEmployee(userName, password)) {
@@ -466,6 +490,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent signInPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(signInPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -482,10 +516,21 @@ public class LaCasaDoradaGUI{
         	
         	accountCreatedAlert();
         	laCasaDorada.addEmployee(userName, password, firstName, lastName, id);
+        	saveData();
         	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sign-in.fxml"));
         	fxmlLoader.setController(this);
         	Parent signInPane = fxmlLoader.load();
         	mainPane.getChildren().setAll(signInPane);
+
+            Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+                LocalTime currentTime = LocalTime.now();
+                txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+            }),
+                    new KeyFrame(Duration.seconds(1))
+            );
+            clock.setCycleCount(Animation.INDEFINITE);
+            clock.play();
+
         	}else {
         		employeeValidationAlert();
         	}
@@ -502,6 +547,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent signInPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(signInPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -511,6 +566,15 @@ public class LaCasaDoradaGUI{
     	Parent customerListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(customerListPane);
     	initializeCustomerTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
     }
 
     @FXML
@@ -520,6 +584,16 @@ public class LaCasaDoradaGUI{
     	Parent employeeListPane = fxmlLoader.load();
     	mainPane.setCenter(employeeListPane);
     	initializeEmployeeTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
 
     @FXML
@@ -529,6 +603,16 @@ public class LaCasaDoradaGUI{
     	Parent orderListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(orderListPane);
     	initializeOrderTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
 
     @FXML
@@ -538,6 +622,16 @@ public class LaCasaDoradaGUI{
     	Parent productListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(productListPane);
     	initializeProductTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -546,6 +640,15 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent createOrderPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createOrderPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
 
     	setUpAddOrder();
     	initializeMiniOrderTableView();
@@ -565,7 +668,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent createIngredientTypeOfProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createIngredientTypeOfProductPane);
-    	
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
 
     @FXML
@@ -574,8 +686,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent createProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createProductPane);
-    	
-    	
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     	setUpAddIngredientandTypeOfProduct();
     	initializeMiniProductTableView();
     }
@@ -586,6 +706,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent createIngredientTypeOfProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createIngredientTypeOfProductPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -594,6 +724,16 @@ public class LaCasaDoradaGUI{
     	fxmlLoader.setController(this);
     	Parent createCustomerPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(createCustomerPane);
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -603,6 +743,16 @@ public class LaCasaDoradaGUI{
     	Parent orderListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(orderListPane);
     	initializeOrderTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -612,6 +762,16 @@ public class LaCasaDoradaGUI{
     	Parent updateProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateProductPane);
     	initializeProductTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -621,6 +781,16 @@ public class LaCasaDoradaGUI{
     	Parent updateIngredientTypeOfProductPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateIngredientTypeOfProductPane);
     	initializeTypeOfProductTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -630,6 +800,16 @@ public class LaCasaDoradaGUI{
     	Parent ingredientListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(ingredientListPane);
     	initializeIngredientTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -639,6 +819,16 @@ public class LaCasaDoradaGUI{
     	Parent updateEmployeeAccountPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(updateEmployeeAccountPane);
     	initializeEmployeeTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -648,6 +838,16 @@ public class LaCasaDoradaGUI{
     	Parent userListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(userListPane);
     	initializeUserTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
     
     @FXML
@@ -657,6 +857,16 @@ public class LaCasaDoradaGUI{
     	Parent customerListPane = fxmlLoader.load();
     	mainPane.getChildren().setAll(customerListPane);
     	initializeCustomerTableView();
+
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime currentTime = LocalTime.now();
+            txtHourUpdate.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+
     }
    
     /*
@@ -861,7 +1071,7 @@ public class LaCasaDoradaGUI{
 		    alert.setTitle("Encontrando el cliente");
 		    alert.setHeaderText("");
 		    alert.setContentText("Cliente encontrado \n"
-		    		+" La busqueda tardó: "+(end-start)+" nanosegundos.");
+		    		+" La busqueda tardï¿½: "+(end-start)+" nanosegundos.");
 		    alert.showAndWait();
 		    
 		   
@@ -1715,6 +1925,18 @@ public class LaCasaDoradaGUI{
     	mainPane.getChildren().setAll(menuPane);
     	laCasaDorada.getProductQuantity().clear();
     	laCasaDorada.setPriceTotal(0);
+    	
+    	ArrayList<ProductQuantity> quant = new ArrayList<>(miniTbCreateOrder.getItems());
+    	double [] quantity =new double [quant.size()];
+    	//double quantity1=0;
+    	
+    	if(quant!=null) {
+    		for(int i=0; i<quant.size() || i<laCasaDorada.getProducts().size();i++) {
+    			double quantity1 = laCasaDorada.getProducts().get(i).getProductCount();
+    			quantity1=quantity1-quantity[i];
+    			System.out.println(quantity1+"-"+quantity[i]);
+    		}
+    	}
     }
     
     @FXML
@@ -1753,6 +1975,7 @@ public class LaCasaDoradaGUI{
         	System.out.println(product);
         	System.out.println(client);
         	laCasaDorada.addOrder(laCasaDorada.findClient(client), nameProduct , laCasaDorada.findEmployee(employee), code, date, time, quantity1,observations, number, priceTotal);
+        	laCasaDorada.orderAmountEmployee(priceTotal, currentAccount);
         	laCasaDorada.getProductQuantity().clear();
         	laCasaDorada.setPriceTotal(0);
         	COaddQuantity.clear(); COobservations.clear();
@@ -1791,7 +2014,7 @@ public class LaCasaDoradaGUI{
 		    alert.setTitle("Encontrando el cliente");
 		    alert.setHeaderText("");
 		    alert.setContentText("Cliente encontrado \n"
-		    		+" La busqueda tardó: "+(end-start)+" nanosegundos.");
+		    		+" La busqueda tardï¿½: "+(end-start)+" nanosegundos.");
 		    alert.showAndWait();
 		    
 		   
@@ -1844,6 +2067,7 @@ public class LaCasaDoradaGUI{
     	}else {
     		System.out.println(quantity);
     		laCasaDorada.addProductQuantity(product, quantity, laCasaDorada.findPrice(price));
+    		laCasaDorada.productCount(product, quantity);
     		
     		miniTbCreateOrder.refresh();
     		totalOrder.setText(String.valueOf(priceT));
@@ -1948,6 +2172,16 @@ public class LaCasaDoradaGUI{
 
         laCasaDorada.exportProductData(file.getAbsolutePath());
     }
+    
+
+    @FXML
+    public void exportOrderReport(ActionEvent event) throws IOException{
+    	FileChooser fc = new FileChooser();
+    	fc.getExtensionFilters().addAll(new ExtensionFilter("Text", "*.csv"));
+    	File file = fc.showSaveDialog(menuPane.getScene().getWindow());
+    	
+    	laCasaDorada.exportOrderData(file.getAbsolutePath());
+    }
 
     @FXML
     public void importCustomerData(ActionEvent event) throws IOException{
@@ -2045,7 +2279,7 @@ public class LaCasaDoradaGUI{
     @FXML
     private void validationErrorAlert() {
     	Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Error de validación");
+	    alert.setTitle("Error de validaciï¿½n");
 	    alert.setHeaderText("");
 	    alert.setContentText("Llene todos los espacios");
 	    alert.showAndWait();
@@ -2056,7 +2290,7 @@ public class LaCasaDoradaGUI{
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Log in incorrecto");
 	    alert.setHeaderText("");
-	    alert.setContentText("El usuario o contraseña no coinciden");
+	    alert.setContentText("El usuario o contraseï¿½a no coinciden");
 	    alert.showAndWait();
 	}
     
@@ -2083,7 +2317,7 @@ public class LaCasaDoradaGUI{
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Error");
 	    alert.setHeaderText("");
-	    alert.setContentText("Seleccione una opción");
+	    alert.setContentText("Seleccione una opciï¿½n");
 	    alert.showAndWait();
 	}
     
@@ -2168,7 +2402,7 @@ public class LaCasaDoradaGUI{
     	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("Eliminar item error");
 	    alert.setHeaderText("");
-	    alert.setContentText("El item no se puede eliminar porque está en uso");
+	    alert.setContentText("El item no se puede eliminar porque estï¿½ en uso");
 	    alert.showAndWait();
    	}
     

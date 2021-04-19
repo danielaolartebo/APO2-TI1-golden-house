@@ -366,20 +366,67 @@ public class LaCasaDorada implements Serializable{
 	
 	public void exportEmployeeData(String fileName) throws IOException{
         PrintWriter pw = new PrintWriter(fileName);
+        String starting = "00:00:00";
+        String finish = "-23:59:59";
+        String range = "Rango de fecha: ";
+        String date = " del día ";
+        String money = "Dinero total del empleado: ";
+        String orders = "Pedidos totales del empleado: ";
         for(EmployeeAccount empl : employees){
-          pw.println(empl.getFirstName() +SEPARATE+empl.getLastName() +SEPARATE+empl.getId()+SEPARATE+empl.getEmployeeStatus());
+          pw.println(empl.getFirstName() +SEPARATE+empl.getLastName()+SEPARATE+
+        		  empl.getId()+SEPARATE+empl.getEmployeeStatus()+SEPARATE+
+        		  range+starting+finish+date+LocalDate.now()+SEPARATE+
+        		  money+empl.getPriceTotal()+SEPARATE+
+        		  orders+empl.getAmountOrders());
+          empl.setAmountOrders(0);
+          empl.setPriceTotal(0);
         }
+        
+        
         pw.close();
     }
 	
 	public void exportProductData(String fileName) throws FileNotFoundException{
         PrintWriter pw = new PrintWriter(fileName);
+        String count = "Cantidad de veces que se pidió el producto: ";
+        String starting = "00:00:00";
+        String finish = "-23:59:59";
+        String range = "Rango de fecha: ";
+        String date = " del día ";
         for(RestaurantProduct prod : products){
-          pw.println(prod.getName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+prod.getIngredientsOfProduct());
+          pw.println(prod.getName()+SEPARATE+prod.getTypeOfProduct()+SEPARATE+
+        		  prod.getSizeOfProduct()+SEPARATE+prod.getPriceOfProduct()+SEPARATE+
+        		  prod.getIngredientsOfProduct()+SEPARATE+range+starting+finish+date+LocalDate.now()+SEPARATE+count+prod.getProductCount());
+          prod.setProductCount(0);
         }
         pw.close();
     }
-
+	
+	public void exportOrderData(String fileName) throws FileNotFoundException {
+		PrintWriter pw = new PrintWriter(fileName);
+		String address = "";
+		String phone = "";
+		String starting = "00:00:00";
+        String finish = "-23:59:59";
+        String range = "Rango de fecha: ";
+        String date = " del día ";
+		for(Order order : orders) {
+			
+			for(int i=0; i<clients.size();i++) {
+				if(order.getNameClient().equals(clients.get(i).getFirstName())) {
+					address = clients.get(i).getAddress();
+					phone = clients.get(i).getPhoneNumber();
+				}
+			}
+			
+			pw.println(order.getNameClient()+SEPARATE+address+SEPARATE+phone+SEPARATE+
+					order.getNameEmployee()+SEPARATE+order.getOrderStatus()+SEPARATE+
+					order.getDate()+SEPARATE+order.getTime()+SEPARATE+order.getObservations()+SEPARATE+
+					order.getProduct()+SEPARATE+order.getQuantity()+SEPARATE+range+starting+finish+date+LocalDate.now());
+		}
+		pw.close();
+	}
+	
 	
 	public void sortByIngredientName() {
 		boolean changed=true;
@@ -443,8 +490,36 @@ public class LaCasaDorada implements Serializable{
 	}
 
 	
-	
-	
-	
+	public void orderAmountEmployee(double totalPrice, String account) {
 		
+		for(int i=0; i<employees.size() ; i++) {
+			if(employees.get(i).getUserName().equals(account)) {
+				int amountOrder = employees.get(i).getAmountOrders();
+				amountOrder+=1;
+				employees.get(i).setAmountOrders(amountOrder);
+				double priceTotal = employees.get(i).getPriceTotal();
+				priceTotal += totalPrice;
+				employees.get(i).setPriceTotal(priceTotal);
+				
+			}
+		}	
+	}
+	
+	
+	public void productCount(String product, double count) {
+		for(int i=0; i<products.size();i++) {
+			if(products.get(i).getName().equals(product)) {
+				double productCount = products.get(i).getProductCount();
+				productCount+=count;
+				products.get(i).setProductCount(productCount);
+			}
+		}
+	}
+	
+	public void deleteProductCount() {
+		for(RestaurantProduct prod : products) {
+			prod.setProductCount(0);
+		}
+	}
+	
 }

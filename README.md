@@ -16,3 +16,6 @@ Segunda entrega:
 3. La opción de importar funciona en las 2 opciones.
 4. Ahora las ordenes tienen de orden de actualización de estado. 
 5. Ya se puede actualizar la lista de tipos de productos. 
+6. Ahora el programa permite generar los dos reportes (a) y (b) con la fecha del día que se generó el archivo, cantidad de dinero y pedidos elaborados por un empleado, y la cantidad de veces que se ha pedido un producto.
+7. Se añadió la opción de exportar un archivo csv con la información de los pedidos. 
+8. Se implementó en todas las pantallas un label que muestra siempre la hora actual y se recorre automáticamente.

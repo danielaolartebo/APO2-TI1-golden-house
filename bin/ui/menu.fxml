@@ -125,6 +125,7 @@
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#exportEmployeeReport" text="Reporte de empleados" />
                   <MenuItem mnemonicParsing="false" onAction="#exportProductReport" text="Reporte de producto" />
+                  <MenuItem mnemonicParsing="false" onAction="#exportOrderReport" text="Reporte de pedidos" />
                </items>
             </Menu>
         </menus>

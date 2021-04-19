@@ -12,6 +12,7 @@ public class RestaurantProduct implements Serializable{
 	private double priceOfProduct;
 	private String[] ingredientsOfProduct;
 	private MembersStatus productStatus;
+	private double productCount;
 	
 	public RestaurantProduct(String name, String typeOfProduct, String[] ingredientsOfProduct, String sizeOfProduct, double priceOfProduct) {
 		this.name = name;
@@ -20,6 +21,7 @@ public class RestaurantProduct implements Serializable{
 		this.sizeOfProduct=sizeOfProduct;
 		this.priceOfProduct=priceOfProduct;
 		this.productStatus=MembersStatus.ACTIVA;
+		this.productCount =0;
 	}
 	
 	public String getName() {
@@ -91,6 +93,14 @@ public class RestaurantProduct implements Serializable{
 		}else {
 			return -1;
 		}
+	}
+
+	public double getProductCount() {
+		return productCount;
+	}
+
+	public void setProductCount(double productCount) {
+		this.productCount = productCount;
 	}
 
 

@@ -69,6 +69,11 @@
                   <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
                </font>
             </Label>
+            <Label fx:id="txtHourUpdate" layoutX="676.0" layoutY="547.0" prefHeight="17.0" prefWidth="97.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </center>
